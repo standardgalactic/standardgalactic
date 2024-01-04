@@ -1,4 +1,4 @@
-![profile](profile.png)
+![profile](profile-image.png)
 
 <!--
 **standardgalactic/standardgalactic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
