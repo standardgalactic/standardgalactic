@@ -1,5 +1,5 @@
 ![profile](profile-image.png)
-![netscape](emommit.jpg)
+![netscape](Emommit.jpg)
 
 <!--
 **standardgalactic/standardgalactic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
