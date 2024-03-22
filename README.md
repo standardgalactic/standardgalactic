@@ -1,4 +1,4 @@
-![profile](profile-image.png)
+<!-- ![profile](profile-image.png) -->
 ![netscape](Emommit.jpg)
 
 <!--
