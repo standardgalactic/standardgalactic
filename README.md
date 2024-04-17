@@ -1,4 +1,4 @@
-![profile](profile-image.png)
+![profile](animated.gif)
 
 I would like to remove the sponsor button. I added it as a joke and now there doesn't seem to be any way to remove it. I could try to remove the authorizing documents somehow, but Stripe also sends me in infinite loops — there doesn't seem to be an easy way to deactivate it, either.
 
