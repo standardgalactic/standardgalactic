@@ -7,7 +7,7 @@
 * 𝘛𝘩𝘦 𝘞𝘰𝘳𝘭𝘥 𝘰𝘧 𝘕𝘶𝘭𝘭-𝘈
 * 𝘔𝘢𝘤𝘳𝘰𝘭𝘪𝘧𝘦
 
-**Check This Out**  <br>
+**Check This Out:**  <br>
 [Word2Vec](https://anvaka.github.io/pm/#/galaxy/word2vec-wiki?cx=-17&cy=-237&cz=-613&lx=-0.0575&ly=-0.9661&lz=-0.2401&lw=-0.0756&ml=300&s=1.75&l=1&v=d50_clean&_k=6y3jxy)
 <!--
 **standardgalactic/standardgalactic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
