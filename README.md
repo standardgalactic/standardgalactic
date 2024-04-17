@@ -3,7 +3,7 @@
 I would like to remove the sponsor button. I added it as a joke and now there doesn't seem to be any way to remove it. I could try to remove the authorizing documents somehow, but Stripe also sends me in infinite loops — there doesn't seem to be an easy way to deactivate it, either.
 
 
-Books I like:
+Books I Like:
 * 𝘛𝘩𝘦 𝘝𝘰𝘺𝘢𝘨𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘋𝘢𝘸𝘯 𝘛𝘳𝘦𝘢𝘥𝘦𝘳
 * 𝘍𝘶𝘻𝘻𝘺 𝘚𝘢𝘱𝘪𝘦𝘯𝘴
 * 𝘈𝘯𝘪𝘢𝘳𝘢
