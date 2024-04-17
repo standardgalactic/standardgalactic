@@ -8,9 +8,6 @@
 * 𝘛𝘩𝘦 𝘞𝘰𝘳𝘭𝘥 𝘰𝘧 𝘕𝘶𝘭𝘭-𝘈
 * 𝘔𝘢𝘤𝘳𝘰𝘭𝘪𝘧𝘦
 
-**To Read:**
-* 𝘛𝘩𝘦 𝘉𝘰𝘰𝘬 𝘰𝘧 𝘛𝘩𝘦 𝘎𝘳𝘦𝘦𝘯 𝘗𝘭𝘢𝘯𝘦𝘵
-
 <!--
 **standardgalactic/standardgalactic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
