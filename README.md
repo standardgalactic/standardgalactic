@@ -1,6 +1,6 @@
 ![profile](profile-image.png)
 
-I would like to remove the sponsor button. I added it as a joke and now there doesn't seem to be any way to remove it. I could try to remove the authorizing documents somehow but Stripe also sends me in infinite loops, there doesn't seem to be an easy way to deactivate it either.
+I would like to remove the sponsor button. I added it as a joke and now there doesn't seem to be any way to remove it. I could try to remove the authorizing documents somehow, but Stripe also sends me in infinite loops — there doesn't seem to be an easy way to deactivate it either.
 <!--
 **standardgalactic/standardgalactic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
