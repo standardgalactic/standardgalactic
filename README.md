@@ -5,6 +5,8 @@
 
 <img src="home.png" width="750">
 
+![](dactyl.gif)
+
 Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)
 
 <!--
