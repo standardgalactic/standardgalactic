@@ -5,6 +5,7 @@
 
 <img src="home.png" width="750">
 
+Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)
 
 <!--
 **Books I Like:**
