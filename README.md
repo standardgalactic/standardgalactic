@@ -9,9 +9,10 @@ Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alph
 
 ![](dactyl.gif)
 
+<!--
+
 ![](Sga-1998.jpg)
 
-<!--
 **Books I Like:**
 * 𝘍𝘶𝘻𝘻𝘺 𝘚𝘢𝘱𝘪𝘦𝘯𝘴  
 * 𝘈𝘯𝘪𝘢𝘳𝘢
