@@ -9,6 +9,10 @@ Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alph
 
 ![](dactyl.gif)
 
+
+
+Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)
+
 <!--
 
 ![](Sga-1998.jpg)
