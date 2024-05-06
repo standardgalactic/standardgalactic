@@ -14,6 +14,7 @@ Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alph
 Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)
 
 ![](recursive.png)
+![](featured.png)
 
 <!--
 
