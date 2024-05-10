@@ -13,6 +13,8 @@ Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alph
 
 Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)
 
+Also available [as an android app](https://github.com/standardgalactic/standardgalactic.github.io/blob/main/Galactic-Translator.apk)
+
 ![](recursive.png)
 ![](featured.png)
 
