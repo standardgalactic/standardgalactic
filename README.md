@@ -1,22 +1,27 @@
 ![profile](profile-image.png)
 
-
 <!-- ← ![](home.png) → -->
 
 <img src="home.png" width="750">
 
-Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)
+**Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)**
 
+**Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
-Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)
-
-And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
-
+**And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
 ![](dactyl.gif)
 
 ![](dactyl-clock.gif)  <br>
 [Digital Analog Clock](https://standardgalactic.github.io/dactyl-clock.html)
+
+**Holistic Understanding**
+
+> Holistic understanding demands that we give the machine everything we have. Filtering or cleaning input data can lead to confusion in real-life scenarios. To enable true understanding, we should avoid heavy-handed heuristic cleanup of the input data.
+>
+>— 𝘔𝘰𝘯𝘪𝘤𝘢 𝘈𝘯𝘥𝘦𝘳𝘴𝘰𝘯
+>
+> Read more: [The Red Pill of Machine Learning](https://experimental-epistemology.ai/the-red-pill-of-machine-learning/)
 
 <!--
 ![](recursive.png)
