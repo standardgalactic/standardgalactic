@@ -1,4 +1,4 @@
-![profile](profile-image.png)
+![profile](randomizer.gif)
 
 <!-- ← ![](home.png) → -->
 
