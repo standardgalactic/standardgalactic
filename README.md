@@ -59,3 +59,6 @@ Here are some ideas to get you started:
 
 ![netscape](Emommit.jpg)
 -->
+
+![](stats.png)
+[What I'm worrking on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
