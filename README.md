@@ -61,4 +61,4 @@ Here are some ideas to get you started:
 -->
 
 ![](stats.png)
-[What I'm worrking on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
+[What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
