@@ -1,8 +1,8 @@
 ![profile](randomizer.gif)
 
-<!-- ← ![](home.png) → -->
-
 <img src="home.png" width="750">
+
+![](profile-overview.png)
 
 **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)**
 
@@ -25,7 +25,6 @@
 
 <!--
 ![](recursive.png)
-![](featured.png)
 
 ![](Sga-1998.jpg)
 
@@ -65,3 +64,5 @@ Here are some ideas to get you started:
 
 
 Play [Chrobatos — a Resistor Color Number Game](https://standardgalactic.github.io/chrobatos.html)
+
+![](featured.png)
