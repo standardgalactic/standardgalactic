@@ -66,7 +66,9 @@ Play [Chrobatos — a Resistor Color Number Game](https://standardgalactic.githu
 
 Learn [Latin](https://standardgalactic.github.io/flashcards.html)
 
-Small World Generator [Centerfuge](http://standardgalactic.github.io/Centerfuge)
+[Small World Generator](http://standardgalactic.github.io/Centerfuge)
+
+[Liminal Space](https://github.com/standardgalactic/substrate?tab=readme-ov-file)
 
 [𝘛𝘩𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘊𝘪𝘳𝘤𝘭𝘦𝘴](https://github-roast.pages.dev/share/standardgalactic?lang=english)
 
