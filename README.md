@@ -60,6 +60,21 @@ Here are some ideas to get you started:
 -->
 
 ![](stats.png)
+
+**Facebook Backup**
+
+[Main Profile](https://standardgalactic.github.io/main-profile.htm)
+
+[Main Albums](https://standardgalactic.github.io/main-albums.html)
+
+[Timeline Photos](https://standardgalactic.github.io/timeline-photos.html)
+
+[Additional Posts](https://standardgalactic.github.io/additional-posts.html)
+
+[Uncategorized Photos](https://standardgalactic.github.io/uncategorized-photos.html)
+
+**Impossible Physics**
+
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
 
 Play [Chrobatos — a Resistor Color Number Game](https://standardgalactic.github.io/chrobatos.html)
