@@ -87,4 +87,14 @@ Learn [Latin](https://standardgalactic.github.io/flashcards.html)
 
 [𝘛𝘩𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘊𝘪𝘳𝘤𝘭𝘦𝘴](https://github-roast.pages.dev/share/standardgalactic?lang=english)
 
+**My Wikipedia**
+
+<!--
+[Wikipedia Library](https://wikipedialibrary.wmflabs.org/?next_url=/users/my_library/)
+-->
+
+[General Statistics](https://xtools.wmcloud.org/ec/en.wikipedia.org/mechachleopteryx)
+
+[Contributions](https://en.wikipedia.org/wiki/Special:Contributions/Mechachleopteryx)
+
 ![](featured.png)
