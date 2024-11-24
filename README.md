@@ -87,6 +87,8 @@ Learn [Latin](https://standardgalactic.github.io/flashcards.html)
 
 [𝘛𝘩𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘊𝘪𝘳𝘤𝘭𝘦𝘴](https://github-roast.pages.dev/share/standardgalactic?lang=english)
 
+[𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦](https://standardgalactic.github.io/abraxas)
+
 **My Wikipedia**
 
 <!--
