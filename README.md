@@ -82,6 +82,8 @@ Here are some ideas to get you started:
 
 Play [Chrobatos — a Resistor Color Number Game](https://standardgalactic.github.io/chrobatos.html)
 
+And [Color Radio](https://standardgalactic.github.io/color-radio.html)
+
 Learn [Latin](https://standardgalactic.github.io/flashcards.html)
 
 [Small World Generator](http://standardgalactic.github.io/Centerfuge)
