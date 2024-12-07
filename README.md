@@ -64,6 +64,42 @@ Here are some ideas to get you started:
 
 ![](stats.png)
 
+![](standard-galactic-unicode.png)
+<!--
+**Unicode [SGA Keyboard](https://github.com/standardgalactic/example/blob/main/tosga.ahk)**
+
+| Hex Code | Letter | Character |
+|----------|--------|------------|
+| EB40     | A      |          |
+| EB41     | B      |          |
+| EB42     | C      |          |
+| EB43     | D      |          |
+| EB44     | E      |          |
+| EB45     | F      |          |
+| EB46     | G      |          |
+| EB47     | H      |          |
+| EB48     | I      |          |
+| EB49     | J      |          |
+| EB4A     | K      |          |
+| EB4B     | L      |          |
+| EB4C     | M      |          |
+| EB4D     | N      |          |
+| EB4E     | O      |          |
+| EB4F     | P      |          |
+| EB50     | Q      |          |
+| EB51     | R      |          |
+| EB52     | S      |          |
+| EB53     | T      |          |
+| EB54     | U      |          |
+| EB55     | V      |          |
+| EB56     | W      |          |
+| EB57     | X      |          |
+| EB58     | Y      |          |
+| EB59     | Z      |          |
+
+https://www.kreativekorp.com/ucsur/charts/sga.html -->
+
+
 **Facebook Backup**
 
 [Main Profile](https://standardgalactic.github.io/main-profile.htm)
