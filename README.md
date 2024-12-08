@@ -133,10 +133,15 @@ Learn [Latin](https://standardgalactic.github.io/flashcards.html)
 [𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦](https://standardgalactic.github.io/abraxas)
 
 
+
+
 C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̥̘̘̐ ̜̻͖͎͇͒͑̚ͅ M͍̮̰͈͖̑͜O̟̳ͨ͋͋͐T̫̫ͦ̌̒ͮH͛ͤͣ́Ȇ̩̾ͨ̾ͮȐ̥̤̑ͅ ‏‏
 
 
+
 [𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘭𝘪𝘵𝘺](https://standardgalactic.github.io/backward-compatibility)
+
+[𝘊𝘰𝘨𝘯𝘪𝘴𝘤𝘪𝘶𝘮 𝘌𝘹𝘱𝘭𝘰𝘳𝘦𝘳](https://standardgalactic.github.io/cogniscium)
 
 **My Wikipedia**
 
