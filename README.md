@@ -4,7 +4,8 @@
 
 ![](profile-overview.png)
 
-**Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)**
+<!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)** -->
+**Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)**
 
 **Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
