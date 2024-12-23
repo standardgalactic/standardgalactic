@@ -7,6 +7,8 @@
 <!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)** -->
 **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)**
 
+[Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
+
 **Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
@@ -64,10 +66,10 @@ Here are some ideas to get you started:
 
 ![netscape](Emommit.jpg)
 -->
-
 ![](stats.png)
 
 ![](standard-galactic-unicode.png)
+
 <!--
 **Unicode [SGA Keyboard](https://github.com/standardgalactic/example/blob/main/tosga.ahk)**
 
@@ -101,7 +103,7 @@ Here are some ideas to get you started:
 | EB59     | Z      |          |
 
 https://www.kreativekorp.com/ucsur/charts/sga.html -->
-
+![](the-only-winning-move.gif)
 
 **Facebook Backup**
 
@@ -155,5 +157,12 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 [General Statistics](https://xtools.wmcloud.org/ec/en.wikipedia.org/mechachleopteryx)
 
 [Contributions](https://en.wikipedia.org/wiki/Special:Contributions/Mechachleopteryx)
+
+I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
+
+[My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/IFM/Wikipedia-watchlist.txt)
+
+* If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
+
 
 ![](featured.png)
