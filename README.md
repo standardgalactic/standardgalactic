@@ -7,7 +7,10 @@
 <!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)** -->
 **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)**
 
+<!--
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
+-->
+[Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/year-in-review-2025-chrome.png) *Beta*
 
 **Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
