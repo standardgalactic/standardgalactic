@@ -7,6 +7,7 @@
 <!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)** -->
 **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)**
 
+𒋛𒈠 𒃻 𒅗 𒁹
 <!--
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
 -->
@@ -16,7 +17,10 @@
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
-# **News:**
+# **Updates:**
+
+Try my new cryptographic fonts, [Clypto and Cheiro](https://standardgalactic.github.io/ensign)
+
 <!--
 ZeF3JKJVNtw
 -->
@@ -176,6 +180,7 @@ https://www.kreativekorp.com/ucsur/charts/sga.html -->
 **Impossible Physics**
 
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
+
 
 Play [Chrobatos — a Resistor Color Number Game](https://standardgalactic.github.io/chrobatos.html)
 
