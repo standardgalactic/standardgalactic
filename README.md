@@ -10,8 +10,11 @@
 𒋛𒈠 𒃻 𒅗 𒁹
 <!--
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
--->
+
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/year-in-review-2025-chrome.png) *Beta*
+-->
+[Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/profile-key.png) *Beta*
+
 
 **Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
@@ -19,19 +22,22 @@
 
 # **Updates:**
 
-Try my new cryptographic fonts, [Clypto and Cheiro](https://standardgalactic.github.io/ensign)
+[Gameified Altruism](https://standardgalactic.github.io/experiments)
 
+<!--[Haplopraxis](https://www.youtube.com/live/0GVvy5s-bXw)-->
+
+## Piracy <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"> </a>
 <!--
-ZeF3JKJVNtw
+- This might be completely useless to anyone but me but I started a little *[Scholar's Bay](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
 -->
-<a href="https://standardgalactic.github.io/example">
-    <img src="cropped-live-now.gif" alt="LIVE NOW" width="80">
-</a>
+
+Try my new cryptographic fonts, [Clypto, Cheiro,](https://standardgalactic.github.io/ensign) and [Logico-Philosophicus](https://standardgalactic.github.io/alphabet/cipher.html)
 
 Added [Simplectomy Generator](https://standardgalactic.github.io/example)
 
-Broadcast [The Oblicosm Paradox](https://www.youtube.com/watch?v=V4Jtle27iVs)
+Broadcast [The Oblicosm Paradox](https://youtube.com/live/0GVvy5s-bXw)
 
+<!--
 The **Oblicosm Paradox Project** is an exploratory effort to harness AI for summarizing and categorizing ideas. Using Microsoft’s Phi-4 model, this project generates hour after hour of summaries on topics like programming, the metacrisis, active inference, and other esoteric subjects. The project leverages spare computing resources to process and organize large amounts of information.
 
 This [9-hour livestream](https://youtube.com/live/V4Jtle27iVs) showcases uninterrupted summaries, demonstrating how AI can be used for large-scale knowledge processing. I also did a [46-hour livestream](https://youtube.com/live/ZeF3JKJVNtw) that experimented with extended workflows for summarization. I eventually hope all of my computers can broadcast their summarizers 24 hours a day. (I only had two blue screens of death and only had to pause it once for a few minutes to cool the GPU.)
@@ -57,7 +63,7 @@ The project explores how idle computing resources can be used to summarize and c
 - Watch the 9-hour livestream: [YouTube Link](https://youtube.com/live/V4Jtle27iVs)
 - Watch the 46-hour livestream: [YouTube Link](https://youtube.com/live/ZeF3JKJVNtw)
 - Learn about Phi-4: [Introducing Phi-4 on the Microsoft Blog](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090)
-
+-->
 <!--
 
 Summarizing Xylomancy with Phi-4
@@ -162,9 +168,14 @@ Here are some ideas to get you started:
 | EB58     | Y      |          |
 | EB59     | Z      |          |
 
-https://www.kreativekorp.com/ucsur/charts/sga.html -->
-![](the-only-winning-move.gif)
+https://www.kreativekorp.com/ucsur/charts/sga.html
+![](the-only-winning-move.gif) -->
+<a href="https://www.youtube.com/live/0GVvy5s-bXw">
+  <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="200">
+</a>
+<br>
 
+<!--
 **Facebook Backup**
 
 [Main Profile](https://standardgalactic.github.io/main-profile.htm)
@@ -176,7 +187,7 @@ https://www.kreativekorp.com/ucsur/charts/sga.html -->
 [Additional Posts](https://standardgalactic.github.io/additional-posts.html)
 
 [Uncategorized Photos](https://standardgalactic.github.io/uncategorized-photos.html)
-
+-->
 **Impossible Physics**
 
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
@@ -205,8 +216,7 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 
 
 
-[𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘭𝘪𝘵𝘺](https://standardgalactic.github.io/backward-compatibility)
-
+<!--[𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘭𝘪𝘵𝘺](https://standardgalactic.github.io/backward-compatibility)-->
 [𝘊𝘰𝘨𝘯𝘪𝘴𝘤𝘪𝘶𝘮 𝘌𝘹𝘱𝘭𝘰𝘳𝘦𝘳](https://standardgalactic.github.io/cogniscium)
 
 **My Wikipedia**
@@ -224,6 +234,15 @@ I am following 200,000 pages on Wikipedia (If I go over, I remove some.)
 [My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/IFM/Wikipedia-watchlist.txt)
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
+
+
+# Support my work
+
+ <a href="mailto:nateguimondart@gmail.com?subject=Feedback%20on%
+ 20Glitched%20Monitor">
+   <img src="glitched_monitor.gif" alt="Glitched Monitor" style="width:
+   250px;"/>
+   </a>
 
 
 ![](featured.png)
