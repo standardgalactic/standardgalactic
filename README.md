@@ -20,12 +20,12 @@
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
+<!--
 # **Updates:**
-
 [Gameified Altruism](https://standardgalactic.github.io/experiments)
 
-<!--[Haplopraxis](https://www.youtube.com/live/0GVvy5s-bXw)-->
-
+[Haplopraxis](https://www.youtube.com/live/0GVvy5s-bXw)
+-->
 ## Piracy <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"> </a>
 <!--
 - This might be completely useless to anyone but me but I started a little *[Scholar's Bay](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
@@ -174,6 +174,10 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
   <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="200">
 </a>
 <br>
+
+**My Timeline**
+
+[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
 
 <!--
 **Facebook Backup**
