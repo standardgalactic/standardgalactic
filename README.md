@@ -26,6 +26,13 @@
 
 [Haplopraxis](https://www.youtube.com/live/0GVvy5s-bXw)
 -->
+## Music
+
+[Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
+
+[Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
+
+
 ## Piracy <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"> </a>
 <!--
 - This might be completely useless to anyone but me but I started a little *[Scholar's Bay](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
