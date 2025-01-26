@@ -32,10 +32,19 @@
 
 [Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
 
+## Spotify
 
+[𝘝𝘦𝘳𝘵𝘪𝘤𝘢𝘭 𝘚𝘤𝘢𝘭𝘪𝘯𝘨](https://open.spotify.com/episode/18kjynJBi6ddQsw0zyfzVj?si=2ooRQMzOTbaxFs8oBXG7Jg&sfnsn=mo)
+
+[Genius, Prodigy, and Talent](https://open.spotify.com/episode/6cUbffaDXNPgEFhi6SwVoc?si=Y6f3jwqvS_GXa0DUCoOJtg)
+
+[Bubblegum Economy](https://open.spotify.com/episode/07J316gBBMUgeDLTybpy3J?si=x4KWjBqdTK-eva6NgbPKPA)
+
+<!-- [](https://suno.com/@flyxion) -->
 ## Piracy <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"> </a>
 <!--
-- This might be completely useless to anyone but me but I started a little *[Scholar's Bay](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
+- This might be completely useless to anyone but me but I started a little *[Scholar's Bay
+](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
 -->
 
 Try my new cryptographic fonts, [Clypto, Cheiro,](https://standardgalactic.github.io/ensign) and [Logico-Philosophicus](https://standardgalactic.github.io/alphabet/cipher.html)
