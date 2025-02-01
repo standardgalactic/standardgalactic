@@ -44,6 +44,7 @@ This [9-hour livestream](https://youtube.com/live/V4Jtle27iVs) showcases uninter
 
 YouTube does not archive livestreams over 12 hours, so I apologize for the limited utility of the link to the 46-hour video. To address this limitation, I built the Simplectomy Generator, which broadcasts summaries 24 hours a day with a built-in pacer and in a cryptographic cipher. For further privacy and to prevent others from reading over your shoulder, you can use your own cipher font if you prefer. <!-- 乃ㄖ丂丂　Ҝ乇ㄚ　爪ㄖᗪ乇 -->  
 
+<!--
 ## Process
 
 1. **Video Selection**: The project began with a [curated playlist of videos](https://www.youtube.com/playlist?list=PLcKyTzEkOa-jf5kKmmBkf5JZPXyrz63i7).
@@ -63,8 +64,6 @@ The project explores how idle computing resources can be used to summarize and c
 - Watch the 9-hour livestream: [YouTube Link](https://youtube.com/live/V4Jtle27iVs)
 - Watch the 46-hour livestream: [YouTube Link](https://youtube.com/live/ZeF3JKJVNtw)
 - Learn about Phi-4: [Introducing Phi-4 on the Microsoft Blog](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090)
--->
-<!--
 
 Summarizing Xylomancy with Phi-4
 
@@ -177,7 +176,9 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 
 **My Timeline**
 
-[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
+[Portfolio](https://standardgalactic.github.io/portfolio.html)
+
+<!--[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)-->
 
 <!--
 **Facebook Backup**
