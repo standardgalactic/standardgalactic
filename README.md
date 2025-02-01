@@ -33,7 +33,6 @@
 [Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
 
 ## Spotify
-
 [𝘝𝘦𝘳𝘵𝘪𝘤𝘢𝘭 𝘚𝘤𝘢𝘭𝘪𝘯𝘨](https://open.spotify.com/episode/18kjynJBi6ddQsw0zyfzVj?si=2ooRQMzOTbaxFs8oBXG7Jg&sfnsn=mo)
 
 [Genius, Prodigy, and Talent](https://open.spotify.com/episode/6cUbffaDXNPgEFhi6SwVoc?si=Y6f3jwqvS_GXa0DUCoOJtg)
@@ -95,8 +94,9 @@ https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-micros
 -->
 ---
 Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.github.io/vectorspace/#/galaxy/word2vec-wiki?cx=-3208&cy=-8930&cz=2898&lx=-0.2059&ly=-0.6299&lz=-0.5451&lw=0.5135&ml=300&s=1.75&l=1&v=d50_clean), and added a *[Site Map](http://standardgalactic.github.io/sitemap).*
-
+<!--
 [LLM workspace](https://github.com/llm-workflow-engine/llm-workflow-engine) featuring [quadrivium](https://github.com/standardgalactic/quadrivium) and [xylomancy](https://github.com/standardgalactic/xylomancy) (and [ollama](https://github.com/ollama/ollama) with [wizardlm2](https://wizardlm.github.io/WizardLM2/)) now available as a [docker image on Dockerhub](https://hub.docker.com/layers/mechachleopteryx/workflow-engine/quantum_soup/images/sha256-4870f5ae5ebafb974b474ca83f955f6a357fd07a09466de7f3d117868723708b).
+-->
 
 ![](dactyl.gif)
 
