@@ -20,6 +20,11 @@
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
+## Interactive Fiction
+
+
+[Memeplex: A Call from Ankyra](https://standardgalactic.github.io/memeplex.html)
+
 <!--
 # **Updates:**
 [Gameified Altruism](https://standardgalactic.github.io/experiments)
