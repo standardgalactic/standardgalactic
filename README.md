@@ -112,13 +112,14 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 <!-- START_QUOTE -->
 <!-- Dual-Wave Encoding -->
 
-**Holistic Understanding**
+**The Bitter Lesson**
 
-> Holistic understanding demands that we give the machine everything we have. Filtering or cleaning input data can lead to confusion in real-life scenarios. To enable true understanding, we should avoid heavy-handed heuristic cleanup of the input data.
+> Faking intelligence is intelligence.  
+> You can only fake it if you have it.  
 >
->— 𝘔𝘰𝘯𝘪𝘤𝘢 𝘈𝘯𝘥𝘦𝘳𝘴𝘰𝘯
+>— 𝘑𝘶𝘥𝘦𝘢 𝘗𝘦𝘢𝘳𝘭
 >
-> Read more: [The Red Pill of Machine Learning](https://experimental-epistemology.ai/the-red-pill-of-machine-learning/)
+> For more information see: [Causal Reasoning and Counterfactuals](https://www.youtube.com/watch?v=pEBI0vF45ic)
 
 <!-- END_QUOTE -->
 
