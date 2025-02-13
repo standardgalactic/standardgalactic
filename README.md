@@ -20,8 +20,11 @@
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
-Introducing [Spherepop](https://standardgalactic.github.io/spherepop/index.html), a 3D Programming Language.
+# Milestone — **5k Subscribers**
 
+Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
+
+--- 
 ## Interactive Fiction
 
 
@@ -113,6 +116,16 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 <!-- START_QUOTE -->
 <!-- Dual-Wave Encoding -->
+
+**The Bitter Lesson**
+
+> Faking intelligence is intelligence.  
+> You can only fake it if you have it.  
+>
+>— 𝘑𝘶𝘥𝘦𝘢 𝘗𝘦𝘢𝘳𝘭
+>
+> For more information see: [Causal Reasoning and Counterfactuals](https://www.youtube.com/watch?v=pEBI0vF45ic)
+
 <!-- END_QUOTE -->
 
 <!--
