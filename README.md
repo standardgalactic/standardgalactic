@@ -20,6 +20,8 @@
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
+Introducing [Spherepop](https://standardgalactic.github.io/spherepop/index.html), a 3D Programming Language.
+
 ## Interactive Fiction
 
 
