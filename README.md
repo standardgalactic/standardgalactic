@@ -50,11 +50,13 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Bubblegum Economy](https://open.spotify.com/episode/07J316gBBMUgeDLTybpy3J?si=x4KWjBqdTK-eva6NgbPKPA)
 
 <!-- [](https://suno.com/@flyxion) -->
-## Piracy <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"> </a>
+## <big>Paradigm Shift — ʇɟıɥS ɯɓıpɐɹɐԀ</big> <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"></a>
 <!--
 - This might be completely useless to anyone but me but I started a little *[Scholar's Bay
 ](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
 -->
+
+[Ecphoric Overview](https://standardgalactic.github.io/unscannable-interfaces/ecphoric-overview.txt)
 
 Try my new cryptographic fonts, [Clypto, Cheiro,](https://standardgalactic.github.io/ensign) and [Logico-Philosophicus](https://standardgalactic.github.io/alphabet/cipher.html)
 
