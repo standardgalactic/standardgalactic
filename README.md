@@ -41,7 +41,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
 
 [Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
-
+<!-- 
 ## Spotify
 [𝘝𝘦𝘳𝘵𝘪𝘤𝘢𝘭 𝘚𝘤𝘢𝘭𝘪𝘯𝘨](https://open.spotify.com/episode/18kjynJBi6ddQsw0zyfzVj?si=2ooRQMzOTbaxFs8oBXG7Jg&sfnsn=mo)
 
@@ -49,7 +49,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Bubblegum Economy](https://open.spotify.com/episode/07J316gBBMUgeDLTybpy3J?si=x4KWjBqdTK-eva6NgbPKPA)
 
-<!-- [](https://suno.com/@flyxion) -->
+[](https://suno.com/@flyxion) -->
 ## <big>Paradigm Shift — ʇɟıɥS ɯɓıpɐɹɐԀ</big> <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"></a>
 <!--
 - This might be completely useless to anyone but me but I started a little *[Scholar's Bay
@@ -207,13 +207,13 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 </a>
 <br>
 
+<!--[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
+
 **My Timeline**
 
 [Portfolio](https://standardgalactic.github.io/portfolio.html)
 
-<!--[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)-->
 
-<!--
 **Facebook Backup**
 
 [Main Profile](https://standardgalactic.github.io/main-profile.htm)
@@ -255,7 +255,6 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 
 
 <!--[𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘭𝘪𝘵𝘺](https://standardgalactic.github.io/backward-compatibility)-->
-[𝘊𝘰𝘨𝘯𝘪𝘴𝘤𝘪𝘶𝘮 𝘌𝘹𝘱𝘭𝘰𝘳𝘦𝘳](https://standardgalactic.github.io/cogniscium)
 
 **My Wikipedia**
 
@@ -282,5 +281,6 @@ I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
    250px;"/>
    </a>
 
+[Submit Anonymous Feedback](https://standardgalactic.github.io/cogniscium)
 
 ![](featured.png)
