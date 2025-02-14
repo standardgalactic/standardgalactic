@@ -55,9 +55,6 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 - This might be completely useless to anyone but me but I started a little *[Scholar's Bay
 ](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
 -->
-<big>Paradigm Shift — ʇɟıɥS ɯɓıpɐɹɐԀ</big>
-
-[Ecphoric Overview](https://standardgalactic.github.io/unscannable-interfaces/ecphoric-overview.txt)
 
 [Ecphoric Overview](https://standardgalactic.github.io/unscannable-interfaces/ecphoric-overview.txt)
 
