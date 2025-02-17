@@ -4,8 +4,8 @@
 
 ![](profile-overview.png)
 
-<!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)** -->
-**Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)**
+**Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)**
+<!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)** -->
 
 𒋛𒈠 𒃻 𒅗 𒁹
 <!--
@@ -13,7 +13,7 @@
 
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/year-in-review-2025-chrome.png) *Beta*
 -->
-[Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/profile-key.png) *Beta*
+[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/profile-snapshot.png) *Beta*
 
 
 **Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
@@ -119,14 +119,13 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 <!-- START_QUOTE -->
 <!-- Dual-Wave Encoding -->
 
-**The Bitter Lesson**
+**Holistic Understanding**
 
-> Faking intelligence is intelligence.  
-> You can only fake it if you have it.  
+> Holistic understanding demands that we give the machine everything we have. Filtering or cleaning input data can lead to confusion in real-life scenarios. To enable true understanding, we should avoid heavy-handed heuristic cleanup of the input data.
 >
->— 𝘑𝘶𝘥𝘦𝘢 𝘗𝘦𝘢𝘳𝘭
+>— 𝘔𝘰𝘯𝘪𝘤𝘢 𝘈𝘯𝘥𝘦𝘳𝘴𝘰𝘯
 >
-> For more information see: [Causal Reasoning and Counterfactuals](https://www.youtube.com/watch?v=pEBI0vF45ic)
+> Read more: [The Red Pill of Machine Learning](https://experimental-epistemology.ai/the-red-pill-of-machine-learning/)
 
 <!-- END_QUOTE -->
 
@@ -226,8 +225,50 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 [Additional Posts](https://standardgalactic.github.io/additional-posts.html)
 
 [Uncategorized Photos](https://standardgalactic.github.io/uncategorized-photos.html)
--->
-**Impossible Physics**
+--> 
+## **Artwork**
+
+<div align="left">
+  <img src="art/art-01.jpg" width="150">
+  <img src="art/art-02.jpg" width="150">
+  <img src="art/art-03.jpg" width="150">
+  <img src="art/art-04.jpg" width="150">
+  <img src="art/art-05.jpg" width="150">
+  <img src="art/art-06.jpg" width="150">
+  <img src="art/art-07.jpg" width="150">
+  <img src="art/art-08.jpg" width="150">
+  <img src="art/art-09.jpg" width="150">
+</div>
+
+<div align="left">
+  <img src="art/art-10.jpg" width="150">
+  <img src="art/art-11.jpg" width="150">
+  <img src="art/art-12.jpg" width="150">
+  <img src="art/art-13.jpg" width="150">
+  <img src="art/art-14.jpg" width="150">
+  <img src="art/art-15.jpg" width="150">
+  <img src="art/art-16.jpg" width="150">
+  <img src="art/art-17.jpg" width="150">
+  <img src="art/art-18.jpg" width="150">
+</div>
+
+<div align="left">
+  <img src="art/art-19.jpg" width="150">
+  <img src="art/art-20.jpg" width="150">
+  <img src="art/art-21.jpg" width="150">
+  <img src="art/art-22.jpg" width="150">
+  <img src="art/art-23.jpg" width="150">
+  <img src="art/art-24.jpg" width="150">
+  <img src="art/art-25.jpg" width="150">
+  <img src="art/art-26.jpg" width="150">
+  <img src="art/art-27.jpg" width="150">
+</div>
+<br>
+
+[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt) (Text descriptions with Clip Interrogator)
+<br>
+
+## **Impossible Physics**
 
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
 
