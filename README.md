@@ -318,6 +318,9 @@ I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
 
 # Support my work
 
+[Merch Store](https://www.redbubble.com/en/shop/ap/168845493) — 𝘜𝘯𝘥𝘦𝘳 𝘊𝘰𝘯𝘴𝘵𝘳𝘶𝘤𝘵𝘪𝘰𝘯
+
+
  <a href="mailto:nateguimondart@gmail.com?subject=Feedback%20on%
  20Glitched%20Monitor">
    <img src="glitched_monitor.gif" alt="Glitched Monitor" style="width:
@@ -327,4 +330,6 @@ I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
 <!-- [Submit Anonymous Feedback](https://standardgalactic.github.io/cogniscium) 
 
 [Merch Store](https://www.redbubble.com/en/people/flyxion/shop)-->
+
+
 ![](featured.png)
