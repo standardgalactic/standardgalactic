@@ -225,7 +225,7 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 [Additional Posts](https://standardgalactic.github.io/additional-posts.html)
 
 [Uncategorized Photos](https://standardgalactic.github.io/uncategorized-photos.html)
---> 
+
 ## **Artwork**
 
 <div align="left">
@@ -265,7 +265,8 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 </div>
 <br>
 
-[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt) (Text descriptions with Clip Interrogator)
+-->
+[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt) — Text descriptions with Clip Interrogator
 <br>
 
 ## **Impossible Physics**
@@ -273,9 +274,10 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
 
 
-Play [Chrobatos — a Resistor Color Number Game](https://standardgalactic.github.io/chrobatos.html)
+Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
 
-And [Color Radio](https://standardgalactic.github.io/color-radio.html)
+And [Color Radio](https://standardgalactic.github.io/example/Cryptomnesia.txt) ← 𝘔𝘰𝘥𝘶𝘴 𝘖𝘱𝘦𝘳𝘢𝘯𝘥𝘪
+<!--And [Color Radio](https://standardgalactic.github.io/colo-radio.html) -->
 
 Learn [Latin](https://standardgalactic.github.io/flashcards.html)
 
