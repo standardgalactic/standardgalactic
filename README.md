@@ -27,6 +27,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 --- 
 ## Interactive Fiction
 
+[Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
 
 [Memeplex: A Call from Ankyra](https://standardgalactic.github.io/memeplex.html)
 
