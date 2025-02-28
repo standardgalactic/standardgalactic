@@ -1,0 +1,1 @@
+window.YTD.twitter_shop.part0 = [ ]
