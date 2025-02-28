@@ -1,0 +1,1 @@
+window.YTD.shopify_account.part0 = [ ]

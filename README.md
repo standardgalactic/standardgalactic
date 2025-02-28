@@ -1,6 +1,6 @@
 ![profile](randomizer.gif)
 
-<img src="home.png" width="750">
+<img src="home.png" width="450">
 
 ![](profile-overview.png)
 
@@ -12,9 +12,10 @@
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
 
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/year-in-review-2025-chrome.png) *Beta*
--->
-[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/profile-snapshot.png) *Beta*
 
+[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/profile-snapshot.png) *Beta*
+-->
+[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/github-profile-large-print.png) *Beta*
 
 **Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
@@ -30,6 +31,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
 
 [Memeplex: A Call from Ankyra](https://standardgalactic.github.io/memeplex.html)
+
+[Grabby Aliens Attack!](https://github.com/search?q=Owner%3Astandardgalactic+%22Grabby+aliens%22&type=code&p=1) 
 
 <!--
 # **Updates:**
@@ -70,9 +73,10 @@ The **Oblicosm Paradox Project** is an exploratory effort to harness AI for summ
 
 This [9-hour livestream](https://youtube.com/live/V4Jtle27iVs) showcases uninterrupted summaries, demonstrating how AI can be used for large-scale knowledge processing. I also did a [46-hour livestream](https://youtube.com/live/ZeF3JKJVNtw) that experimented with extended workflows for summarization. I eventually hope all of my computers can broadcast their summarizers 24 hours a day. (I only had two blue screens of death and only had to pause it once for a few minutes to cool the GPU.)
 
-YouTube does not archive livestreams over 12 hours, so I apologize for the limited utility of the link to the 46-hour video. To address this limitation, I built the Simplectomy Generator, which broadcasts summaries 24 hours a day with a built-in pacer and in a cryptographic cipher. For further privacy and to prevent others from reading over your shoulder, you can use your own cipher font if you prefer. <!-- 乃ㄖ丂丂　Ҝ乇ㄚ　爪ㄖᗪ乇 -->  
+YouTube does not archive livestreams over 12 hours, so I apologize for the limited utility of the link to the 46-hour video. To address this limitation, I built the Simplectomy Generator, which broadcasts summaries 24 hours a day with a built-in pacer and in a cryptographic cipher. For further privacy and to prevent others from reading over your shoulder, you can use your own cipher font if you prefer.
 
-<!--
+乃ㄖ丂丂　Ҝ乇ㄚ　爪ㄖᗪ乇  
+
 ## Process
 
 1. **Video Selection**: The project began with a [curated playlist of videos](https://www.youtube.com/playlist?list=PLcKyTzEkOa-jf5kKmmBkf5JZPXyrz63i7).
@@ -274,6 +278,7 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
 
+<img src="rate-my-setup.png" width="350">
 
 Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
 
