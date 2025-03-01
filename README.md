@@ -290,7 +290,9 @@ Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resist
 And [Color Radio](https://standardgalactic.github.io/example/Cryptomnesia.txt) ← 𝘔𝘰𝘥𝘶𝘴 𝘖𝘱𝘦𝘳𝘢𝘯𝘥𝘪
 <!--And [Color Radio](https://standardgalactic.github.io/colo-radio.html) -->
 
-Learn [Latin](https://standardgalactic.github.io/flashcards.html)
+Learn [Assembly Theory](https://standardgalactic.github.io/alphabet/Assembly-Theory.txt) 
+
+<!-- [Latin](https://standardgalactic.github.io/flashcards.html) -->
 
 [Small World Generator](http://standardgalactic.github.io/Centerfuge)
 
