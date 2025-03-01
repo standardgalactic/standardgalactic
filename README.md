@@ -276,7 +276,12 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 
 ## **Impossible Physics**
 
+
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
+
+I'm looking for patents, open source projects, and articles for assistance in reverse engineering the defunct Swype (trace) based keyboard and predictive text. As well as descriptions of the technology, particularly the vector simularity between the traces and the word list, how it might be stored on an android phone and so on.
+
+[Reverse Engineering Swype](https://www.perplexity.ai/search/I-M-LOOKING-FOR-PATENTS-OPEN-S-C5OCTDU3SDAUID2NTHYLOQ)
 
 <img src="rate-my-setup.png" width="350">
 
