@@ -25,7 +25,8 @@
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
---- 
+---
+
 ## Interactive Fiction
 
 [Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
@@ -40,6 +41,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Haplopraxis](https://www.youtube.com/live/0GVvy5s-bXw)
 -->
+## Generative Art
+
+[𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
+
 ## Music
 
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
