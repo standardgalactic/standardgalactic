@@ -47,7 +47,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 ## Psychonomics
 
-Hypothesis-based perception — *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)*
+*[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)* — Hypothesis-based perception
 
 ## Music
 
