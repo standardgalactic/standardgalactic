@@ -45,6 +45,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
 
+## Psychonomics
+
+Hypothesis-based perception — *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)*
+
 ## Music
 
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
