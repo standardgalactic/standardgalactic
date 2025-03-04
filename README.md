@@ -49,6 +49,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)* — Hypothesis-based perception
 
+
+*[Vectorial Code](https://standardgalactic.github.io/random-thoughts/vectorial-code-overview.txt)*
+
 ## Music
 
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
