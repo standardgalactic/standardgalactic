@@ -1,604 +1,624 @@
-f563897 HEAD@{0}: commit: Added Twitter Files
-9195c38 HEAD@{1}: rebase (finish): returning to refs/heads/main
-9195c38 HEAD@{2}: rebase (squash): Weird Flex
-ac7bf71 HEAD@{3}: rebase (start): checkout HEAD~2
-0a8596d HEAD@{4}: commit: Update
-ac7bf71 HEAD@{5}: rebase (finish): returning to refs/heads/main
-ac7bf71 HEAD@{6}: rebase (squash): Weird Flex
-4e52e61 HEAD@{7}: rebase (start): checkout HEAD~2
-f4b71ab HEAD@{8}: rebase (finish): returning to refs/heads/main
-f4b71ab HEAD@{9}: rebase (squash): Weird Flex
-d308cde HEAD@{10}: rebase (start): checkout HEAD~2
-a3ffd64 HEAD@{11}: commit: Weird Flex
-d308cde HEAD@{12}: rebase (finish): returning to refs/heads/main
-d308cde HEAD@{13}: rebase (squash): Weird Flex
-62142ad HEAD@{14}: rebase (start): checkout HEAD~2
-aa142af HEAD@{15}: commit: Weird Flex
-62142ad HEAD@{16}: commit: Weird Flex
-4e52e61 HEAD@{17}: rebase (finish): returning to refs/heads/main
-4e52e61 HEAD@{18}: rebase (squash): Work in progress
-3793fcd HEAD@{19}: rebase (start): checkout HEAD~2
-c74bcb7 HEAD@{20}: commit: Update
-3793fcd HEAD@{21}: rebase (finish): returning to refs/heads/main
-3793fcd HEAD@{22}: rebase (squash): Work in progress
-8ee9094 HEAD@{23}: rebase (start): checkout HEAD~2
-81e4a71 HEAD@{24}: commit: Update
-8ee9094 HEAD@{25}: rebase (finish): returning to refs/heads/main
-8ee9094 HEAD@{26}: rebase (squash): Work in progress
-087c1a8 HEAD@{27}: rebase (start): checkout HEAD~2
-bcc8e2a HEAD@{28}: rebase (finish): returning to refs/heads/main
-bcc8e2a HEAD@{29}: rebase (squash): Update
-6ef7db0 HEAD@{30}: rebase (start): checkout HEAD~2
-648e10f HEAD@{31}: commit: Update
-6ef7db0 HEAD@{32}: commit: Update
-087c1a8 HEAD@{33}: pull: Fast-forward
-8a53478 HEAD@{34}: commit: Reasoning Engine in Action
-90254aa HEAD@{35}: pull: Fast-forward
-52458dd HEAD@{36}: rebase (finish): returning to refs/heads/main
-52458dd HEAD@{37}: rebase (squash): Self Test
-afc4bc9 HEAD@{38}: rebase (start): checkout HEAD~2
-ea77c05 HEAD@{39}: commit: update
-afc4bc9 HEAD@{40}: pull: Fast-forward
-ee6300f HEAD@{41}: rebase (finish): returning to refs/heads/main
-ee6300f HEAD@{42}: rebase (squash): Added Merch Store
-69be46d HEAD@{43}: rebase (start): checkout HEAD~2
-d15c5ba HEAD@{44}: commit: Added Merch Store
-69be46d HEAD@{45}: commit: Added Merch Store
-4fbcf9c HEAD@{46}: rebase (finish): returning to refs/heads/main
-4fbcf9c HEAD@{47}: rebase (squash): Update daily quote via Dual-Wave Encoding
-19cbdbc HEAD@{48}: rebase (start): checkout HEAD~2
-30d075e HEAD@{49}: rebase (finish): returning to refs/heads/main
-30d075e HEAD@{50}: rebase (squash): Added Merch Store
-731248b HEAD@{51}: rebase (start): checkout HEAD~2
-c4c1d4d HEAD@{52}: commit: Clean up
-731248b HEAD@{53}: pull: Fast-forward
-ddb8cb8 HEAD@{54}: rebase (continue) (finish): returning to refs/heads/main
-ddb8cb8 HEAD@{55}: rebase (continue) (squash): Artwork
-f333aac HEAD@{56}: rebase (continue): Artwork
-cbb5c31 HEAD@{57}: rebase (start): checkout HEAD~3
-a931644 HEAD@{58}: commit: Update
-9d81ab9 HEAD@{59}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
-cbb5c31 HEAD@{60}: rebase (finish): returning to refs/heads/main
-cbb5c31 HEAD@{61}: rebase (squash): Artwork
-96e1e7e HEAD@{62}: rebase (start): checkout HEAD~2
-d154a4b HEAD@{63}: commit: Update
-96e1e7e HEAD@{64}: rebase (finish): returning to refs/heads/main
-96e1e7e HEAD@{65}: rebase (squash): Artwork
-987eccb HEAD@{66}: rebase (start): checkout HEAD~2
-5d83e79 HEAD@{67}: commit: Update
-987eccb HEAD@{68}: rebase (finish): returning to refs/heads/main
-987eccb HEAD@{69}: rebase (squash): Artwork
-b765478 HEAD@{70}: rebase (start): checkout HEAD~2
-56518da HEAD@{71}: commit: Update
-b765478 HEAD@{72}: rebase (finish): returning to refs/heads/main
-b765478 HEAD@{73}: rebase (squash): Artwork
-09a846a HEAD@{74}: rebase (start): checkout HEAD~2
-e260c22 HEAD@{75}: commit: Update
-09a846a HEAD@{76}: rebase (finish): returning to refs/heads/main
-09a846a HEAD@{77}: rebase (squash): Artwork
-fcae8b7 HEAD@{78}: rebase (start): checkout HEAD~2
-f19a3e7 HEAD@{79}: commit: Update
-fcae8b7 HEAD@{80}: rebase (finish): returning to refs/heads/main
-fcae8b7 HEAD@{81}: rebase (squash): Artwork
-773110c HEAD@{82}: rebase (start): checkout HEAD~2
-347d754 HEAD@{83}: commit: Update
-773110c HEAD@{84}: rebase (finish): returning to refs/heads/main
-773110c HEAD@{85}: rebase (squash): Artwork
-ea23873 HEAD@{86}: rebase (start): checkout HEAD~2
-57e8005 HEAD@{87}: commit: Clean up
-ea23873 HEAD@{88}: rebase (finish): returning to refs/heads/main
-ea23873 HEAD@{89}: rebase (squash): Artwork
-76e3bb7 HEAD@{90}: rebase (start): checkout HEAD~2
-f3d9ebb HEAD@{91}: commit: Clean up
-76e3bb7 HEAD@{92}: rebase (finish): returning to refs/heads/main
-76e3bb7 HEAD@{93}: rebase (squash): Artwork
-280464d HEAD@{94}: rebase (start): checkout HEAD~2
-ea7be6a HEAD@{95}: commit: Clean up
-280464d HEAD@{96}: rebase (finish): returning to refs/heads/main
-280464d HEAD@{97}: rebase (squash): Artwork
-2731976 HEAD@{98}: rebase (start): checkout HEAD~2
-ba2f5ad HEAD@{99}: commit: Update
-2731976 HEAD@{100}: rebase (finish): returning to refs/heads/main
-2731976 HEAD@{101}: rebase (squash): Artwork
-2d94de8 HEAD@{102}: rebase (start): checkout HEAD~2
-b0942b1 HEAD@{103}: commit: Update
-2d94de8 HEAD@{104}: rebase (finish): returning to refs/heads/main
-2d94de8 HEAD@{105}: rebase (squash): Artwork
-1957f7d HEAD@{106}: rebase (start): checkout HEAD~2
-a6a508f HEAD@{107}: commit: Write
-1957f7d HEAD@{108}: rebase (finish): returning to refs/heads/main
-1957f7d HEAD@{109}: rebase (squash): Artwork
-d4f333b HEAD@{110}: rebase (start): checkout HEAD~2
-e97c989 HEAD@{111}: commit: Update
-d4f333b HEAD@{112}: rebase (finish): returning to refs/heads/main
-d4f333b HEAD@{113}: rebase (squash): Artwork
-71a5fad HEAD@{114}: rebase (start): checkout HEAD~2
-2e7f5ad HEAD@{115}: commit: Artwork
-71a5fad HEAD@{116}: rebase (finish): returning to refs/heads/main
-71a5fad HEAD@{117}: rebase (squash): Artwork
-fc98502 HEAD@{118}: rebase (start): checkout HEAD~2
-3d6b2d9 HEAD@{119}: commit: Artwork
-fc98502 HEAD@{120}: rebase (finish): returning to refs/heads/main
-fc98502 HEAD@{121}: rebase (squash): Artwork
-5f3a84b HEAD@{122}: rebase (start): checkout HEAD~2
-327b0ed HEAD@{123}: commit: Update
-5f3a84b HEAD@{124}: rebase (finish): returning to refs/heads/main
-5f3a84b HEAD@{125}: rebase (squash): Artwork
-617d4d1 HEAD@{126}: rebase (start): checkout HEAD~2
-af22bf2 HEAD@{127}: commit: Artwork
-617d4d1 HEAD@{128}: commit: Artwork
-d77a1cd HEAD@{129}: pull: Fast-forward
-ac86252 HEAD@{130}: rebase (continue) (finish): returning to refs/heads/main
-ac86252 HEAD@{131}: rebase (continue) (squash): Anonymous Feedback
-80e99fb HEAD@{132}: rebase (start): checkout HEAD~2
-7422ce6 HEAD@{133}: commit: Rebase
-d68d3b0 HEAD@{134}: pull: Merge made by the 'recursive' strategy.
-80e99fb HEAD@{135}: commit: Anonymous Feedback
-664734b HEAD@{136}: commit (amend): 𝘜𝘯𝘴𝘤𝘢𝘯𝘯𝘢𝘣𝘭𝘦 𝘐𝘯𝘵𝘦𝘳𝘧𝘢𝘤𝘦𝘴
-940db90 HEAD@{137}: pull: Fast-forward
-12078cc HEAD@{138}: rebase (continue) (finish): returning to refs/heads/main
-12078cc HEAD@{139}: rebase (continue) (squash): Spherepop
-7c82026 HEAD@{140}: rebase (continue) (squash): # This is a combination of 2 commits.
-031fedd HEAD@{141}: rebase (continue): Update daily quote via Dual-Wave Encoding
-4235b99 HEAD@{142}: rebase (start): checkout HEAD~3
-02cd00c HEAD@{143}: commit: Milestone
-efe24a2 HEAD@{144}: rebase (finish): returning to refs/heads/main
-efe24a2 HEAD@{145}: rebase (squash): Spherepop
-754ed26 HEAD@{146}: rebase (squash): # This is a combination of 2 commits.
-a80d154 HEAD@{147}: rebase (start): checkout HEAD~3
-34608c3 HEAD@{148}: commit: Milestone
-51c75ed HEAD@{149}: rebase (finish): returning to refs/heads/main
-51c75ed HEAD@{150}: rebase (squash): Spherepop
-4450ea7 HEAD@{151}: rebase (squash): # This is a combination of 2 commits.
-a9b37af HEAD@{152}: rebase (start): checkout HEAD~3
-deaca63 HEAD@{153}: commit: Milestone
-efc9659 HEAD@{154}: commit: Spherepop
-a9b37af HEAD@{155}: commit: Spherepop
-a80d154 HEAD@{156}: commit: Spherepop
-34f6ec8 HEAD@{157}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
-4235b99 HEAD@{158}: commit: Spherepop
-703d7b8 HEAD@{159}: rebase (finish): returning to refs/heads/main
-703d7b8 HEAD@{160}: rebase (squash): Dual-wave Encoding
-9e009e9 HEAD@{161}: rebase (start): checkout HEAD~2
-8389847 HEAD@{162}: commit: Redefine Goals
-9e009e9 HEAD@{163}: rebase (finish): returning to refs/heads/main
-9e009e9 HEAD@{164}: rebase (squash): Dual-wave Encoding
-f3260db HEAD@{165}: rebase (start): checkout HEAD~2
-a1c7856 HEAD@{166}: commit: The Bitter Lesson
-f3260db HEAD@{167}: rebase (finish): returning to refs/heads/main
-f3260db HEAD@{168}: rebase (squash): Dual-wave Encoding
-06cd676 HEAD@{169}: rebase (start): checkout HEAD~2
-63d0c63 HEAD@{170}: commit: Update
-06cd676 HEAD@{171}: rebase (finish): returning to refs/heads/main
-06cd676 HEAD@{172}: rebase (squash): Dual-wave Encoding
-262014e HEAD@{173}: rebase (start): checkout HEAD~2
-e12eb14 HEAD@{174}: commit: Update
-262014e HEAD@{175}: commit (amend): Dual-wave Encoding
-dcd729a HEAD@{176}: commit: Dual-wave Encoding
-0171346 HEAD@{177}: rebase (finish): returning to refs/heads/main
-0171346 HEAD@{178}: rebase (squash): Interactive Fiction
-121ab2b HEAD@{179}: rebase (start): checkout HEAD~2
-53665bd HEAD@{180}: commit: Minor Adjustment
-121ab2b HEAD@{181}: rebase (finish): returning to refs/heads/main
-121ab2b HEAD@{182}: rebase (squash): Interactive Fiction
-202b2df HEAD@{183}: rebase (start): checkout HEAD~2
-ea5f778 HEAD@{184}: commit: Interactive Fiction
-202b2df HEAD@{185}: commit: Interactive Fiction
-82a80c4 HEAD@{186}: rebase (finish): returning to refs/heads/main
-82a80c4 HEAD@{187}: rebase (squash): Portfolio
-5285b3e HEAD@{188}: rebase (squash): # This is a combination of 2 commits.
-96b3264 HEAD@{189}: rebase (start): checkout HEAD~3
-361bff0 HEAD@{190}: rebase (continue) (finish): returning to refs/heads/main
-361bff0 HEAD@{191}: rebase (continue): Bot Music
-4201e31 HEAD@{192}: rebase (continue): Bot Music
-1558898 HEAD@{193}: rebase (start): checkout HEAD~2
-acdfa9f HEAD@{194}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
-1558898 HEAD@{195}: rebase (continue) (finish): returning to refs/heads/main
-1558898 HEAD@{196}: rebase (continue): Bot Music
-71a3ab2 HEAD@{197}: rebase (continue): Added Music
-96b3264 HEAD@{198}: rebase (start): checkout HEAD~2
-8021642 HEAD@{199}: pull: Merge made by the 'recursive' strategy.
-96b3264 HEAD@{200}: rebase (finish): returning to refs/heads/main
-96b3264 HEAD@{201}: rebase (pick): Portfolio
-bb894c5 HEAD@{202}: rebase (pick): Bot Music
-6d70bc5 HEAD@{203}: rebase (pick): Added Music
-ad00516 HEAD@{204}: rebase (start): checkout HEAD~2
-e72cbf2 HEAD@{205}: commit: Portfolio
-31d1b82 HEAD@{206}: pull: Merge made by the 'recursive' strategy.
-ad00516 HEAD@{207}: commit: Portfolio
-bfaa994 HEAD@{208}: rebase (finish): returning to refs/heads/main
-bfaa994 HEAD@{209}: rebase (squash): Unpublished Facebook Posts
-9276b5a HEAD@{210}: rebase (start): checkout HEAD~2
-4fa5b2d HEAD@{211}: commit: Clean up
-9276b5a HEAD@{212}: rebase (finish): returning to refs/heads/main
-9276b5a HEAD@{213}: rebase (squash): Unpublished Facebook Posts
-ad81227 HEAD@{214}: rebase (start): checkout HEAD~2
-c62c2fd HEAD@{215}: commit: Update
-ad81227 HEAD@{216}: commit: Unpublished Facebook Posts
-86fdd25 HEAD@{217}: rebase (finish): returning to refs/heads/main
-86fdd25 HEAD@{218}: rebase (squash): Simple Practice
-8c86cdf HEAD@{219}: rebase (start): checkout HEAD~2
-461af9a HEAD@{220}: commit: Update
-8c86cdf HEAD@{221}: rebase (finish): returning to refs/heads/main
-8c86cdf HEAD@{222}: rebase (squash): Simple Practice
-f7854d2 HEAD@{223}: rebase (squash): # This is a combination of 2 commits.
-afbbad3 HEAD@{224}: rebase (start): checkout HEAD~3
-c7e42b2 HEAD@{225}: rebase (finish): returning to refs/heads/main
-c7e42b2 HEAD@{226}: rebase (squash): Gameified Altruism
-f2be6fd HEAD@{227}: rebase (start): checkout HEAD~2
-d20e7ab HEAD@{228}: pull: Merge made by the 'recursive' strategy.
-f2be6fd HEAD@{229}: rebase (finish): returning to refs/heads/main
-f2be6fd HEAD@{230}: rebase (squash): Gameified Altruism
-abae31d HEAD@{231}: rebase (pick): Gameified Altruism
-6357f8c HEAD@{232}: rebase (start): checkout HEAD~2
-ac309cc HEAD@{233}: commit: Update Translation
-00c1991 HEAD@{234}: pull: Merge made by the 'recursive' strategy.
-6357f8c HEAD@{235}: commit: Update Translation
-afbbad3 HEAD@{236}: rebase (finish): returning to refs/heads/main
-afbbad3 HEAD@{237}: rebase (squash): Simple Practice
-cd8e8ef HEAD@{238}: rebase (start): checkout HEAD~2
-8521fd0 HEAD@{239}: commit: Update
-cd8e8ef HEAD@{240}: rebase (finish): returning to refs/heads/main
-cd8e8ef HEAD@{241}: rebase (squash): Simple Practice
-0871e11 HEAD@{242}: rebase (start): checkout HEAD~2
-8d05ab0 HEAD@{243}: commit: Fix
-0871e11 HEAD@{244}: rebase (finish): returning to refs/heads/main
-0871e11 HEAD@{245}: rebase (squash): Simple Practice
-03d5177 HEAD@{246}: rebase (squash): # This is a combination of 2 commits.
-059671c HEAD@{247}: rebase (start): checkout HEAD~3
-bcbe956 HEAD@{248}: commit: Simple Practice
-b1626dd HEAD@{249}: rebase (finish): returning to refs/heads/main
-b1626dd HEAD@{250}: rebase (squash): Scholar's Bay
-fbb51dc HEAD@{251}: rebase (start): checkout HEAD~2
-3370434 HEAD@{252}: commit: Umbilicus Project
-fbb51dc HEAD@{253}: reset: moving to fbb51dc
-89735ce HEAD@{254}: commit: Backtracking
-fbb51dc HEAD@{255}: rebase (finish): returning to refs/heads/main
-fbb51dc HEAD@{256}: rebase (squash): Scholar's Bay
-efa1e82 HEAD@{257}: rebase (start): checkout HEAD~2
-ccc10d5 HEAD@{258}: commit: Added Interact
-efa1e82 HEAD@{259}: rebase (finish): returning to refs/heads/main
-efa1e82 HEAD@{260}: rebase (squash): Scholar's Bay
-41ceb9b HEAD@{261}: rebase (start): checkout HEAD~2
-a3a7ce3 HEAD@{262}: commit: Added Interact
-41ceb9b HEAD@{263}: rebase (continue) (finish): returning to refs/heads/main
-41ceb9b HEAD@{264}: rebase (continue) (squash): Scholar's Bay
-4d4f8e5 HEAD@{265}: rebase (continue): Scholar's Bay
-059671c HEAD@{266}: rebase (start): checkout HEAD~2
-241e2bf HEAD@{267}: commit: Restart Server
-84f5473 HEAD@{268}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
-059671c HEAD@{269}: commit (amend): Scholar's Bay
-5e5d19a HEAD@{270}: rebase (finish): returning to refs/heads/main
-5e5d19a HEAD@{271}: rebase (squash): Scholar's Bay
-5db28f6 HEAD@{272}: rebase (start): checkout HEAD~2
-b32fa5a HEAD@{273}: commit: Cleanup
-5db28f6 HEAD@{274}: rebase (finish): returning to refs/heads/main
-5db28f6 HEAD@{275}: rebase (squash): Scholar's Bay
-8be34fc HEAD@{276}: rebase (start): checkout HEAD~2
-2a84855 HEAD@{277}: commit: Cleanup
-8be34fc HEAD@{278}: rebase (finish): returning to refs/heads/main
-8be34fc HEAD@{279}: rebase (squash): Scholar's Bay
-d8d3cd0 HEAD@{280}: rebase (start): checkout HEAD~2
-4b8872b HEAD@{281}: commit: Cleanup
-d8d3cd0 HEAD@{282}: rebase (finish): returning to refs/heads/main
-d8d3cd0 HEAD@{283}: rebase (squash): Scholar's Bay
-a2ddf6d HEAD@{284}: rebase (start): checkout HEAD~2
-b5a7638 HEAD@{285}: commit: Cleanup
-a2ddf6d HEAD@{286}: rebase (continue) (finish): returning to refs/heads/main
-a2ddf6d HEAD@{287}: rebase (continue): Scholar's Bay
-dcccd0d HEAD@{288}: rebase (start): checkout HEAD~2
-9d64fd7 HEAD@{289}: commit (merge): Cleaning up
-dcccd0d HEAD@{290}: commit: Scholar's Bay
-39cf0b9 HEAD@{291}: rebase (finish): returning to refs/heads/main
-39cf0b9 HEAD@{292}: rebase (squash): New Fonts
-d0fe7c7 HEAD@{293}: rebase (start): checkout HEAD~2
-370baa6 HEAD@{294}: commit: Removed dot
-d0fe7c7 HEAD@{295}: rebase (finish): returning to refs/heads/main
-d0fe7c7 HEAD@{296}: rebase (squash): New Fonts
-8acd42c HEAD@{297}: rebase (start): checkout HEAD~2
-0d989a1 HEAD@{298}: commit: Update
-8acd42c HEAD@{299}: rebase (finish): returning to refs/heads/main
-8acd42c HEAD@{300}: rebase (squash): New Fonts
-30760cc HEAD@{301}: rebase (start): checkout HEAD~2
-350ee6f HEAD@{302}: commit: Update
-30760cc HEAD@{303}: rebase (finish): returning to refs/heads/main
-30760cc HEAD@{304}: rebase (squash): New Fonts
-f12689c HEAD@{305}: rebase (start): checkout HEAD~2
-42934e4 HEAD@{306}: pull: Merge made by the 'recursive' strategy.
-f12689c HEAD@{307}: commit: New Fonts
-344e6ed HEAD@{308}: commit: Year in Review
-155fcd4 HEAD@{309}: rebase (finish): returning to refs/heads/main
-155fcd4 HEAD@{310}: rebase (squash): Explanandum
-483ec10 HEAD@{311}: rebase (start): checkout HEAD~2
-ae4aac9 HEAD@{312}: commit: Minor Update
-483ec10 HEAD@{313}: rebase (finish): returning to refs/heads/main
-483ec10 HEAD@{314}: rebase (squash): Explanandum
-8250708 HEAD@{315}: rebase (start): checkout HEAD~2
-c990bad HEAD@{316}: commit: Update
-8250708 HEAD@{317}: rebase (finish): returning to refs/heads/main
-8250708 HEAD@{318}: rebase (squash): Explanandum
-4075e9a HEAD@{319}: rebase (start): checkout HEAD~2
-8356595 HEAD@{320}: commit: Update
-4075e9a HEAD@{321}: rebase (finish): returning to refs/heads/main
-4075e9a HEAD@{322}: rebase (squash): Explanandum
-1f1ae74 HEAD@{323}: rebase (start): checkout HEAD~2
-88aa774 HEAD@{324}: commit: Update
-1f1ae74 HEAD@{325}: rebase (finish): returning to refs/heads/main
-1f1ae74 HEAD@{326}: rebase (squash): Explanandum
-2701d33 HEAD@{327}: rebase (start): checkout HEAD~2
-1d428a0 HEAD@{328}: commit: Update
-2701d33 HEAD@{329}: rebase (finish): returning to refs/heads/main
-2701d33 HEAD@{330}: rebase (squash): Explanandum
-6f86cbd HEAD@{331}: rebase (start): checkout HEAD~2
-3af96ce HEAD@{332}: commit: Update
-6f86cbd HEAD@{333}: rebase (finish): returning to refs/heads/main
-6f86cbd HEAD@{334}: rebase (squash): Explanandum
-f292da3 HEAD@{335}: rebase (start): checkout HEAD~2
-64f9d70 HEAD@{336}: commit: Update
-f292da3 HEAD@{337}: rebase (finish): returning to refs/heads/main
-f292da3 HEAD@{338}: rebase (squash): Explanandum
-83dac0f HEAD@{339}: rebase (start): checkout HEAD~2
-7285606 HEAD@{340}: commit: Update
-83dac0f HEAD@{341}: rebase (finish): returning to refs/heads/main
-83dac0f HEAD@{342}: rebase (squash): Explanandum
-acf84c1 HEAD@{343}: rebase (start): checkout HEAD~2
-4ce899e HEAD@{344}: commit: Update
-acf84c1 HEAD@{345}: commit: Explanandum
-6f0ea5f HEAD@{346}: rebase (finish): returning to refs/heads/main
-6f0ea5f HEAD@{347}: rebase (squash): The Oblicosm Paradox
-88e8b3f HEAD@{348}: rebase (start): checkout HEAD~2
-06fca17 HEAD@{349}: commit: Update
-88e8b3f HEAD@{350}: rebase (finish): returning to refs/heads/main
-88e8b3f HEAD@{351}: rebase (squash): The Oblicosm Paradox
-6cf1fc7 HEAD@{352}: rebase (start): checkout HEAD~2
-2b9eff4 HEAD@{353}: commit: Update
-6cf1fc7 HEAD@{354}: rebase (finish): returning to refs/heads/main
-6cf1fc7 HEAD@{355}: rebase (squash): The Oblicosm Paradox
-9bd1cd6 HEAD@{356}: rebase (start): checkout HEAD~2
-d70b179 HEAD@{357}: commit: Update
-9bd1cd6 HEAD@{358}: rebase (finish): returning to refs/heads/main
-9bd1cd6 HEAD@{359}: rebase (squash): The Oblicosm Paradox
-cd7e5a6 HEAD@{360}: rebase (start): checkout HEAD~2
-f119904 HEAD@{361}: commit: Update
-cd7e5a6 HEAD@{362}: rebase (finish): returning to refs/heads/main
-cd7e5a6 HEAD@{363}: rebase (squash): The Oblicosm Paradox
-4d3d23c HEAD@{364}: rebase (start): checkout HEAD~2
-b2175a5 HEAD@{365}: commit: Update
-4d3d23c HEAD@{366}: rebase (finish): returning to refs/heads/main
-4d3d23c HEAD@{367}: rebase (squash): The Oblicosm Paradox
-2e638ce HEAD@{368}: rebase (start): checkout HEAD~2
-017f8fa HEAD@{369}: commit: Update
-2e638ce HEAD@{370}: rebase (finish): returning to refs/heads/main
-2e638ce HEAD@{371}: rebase (squash): The Oblicosm Paradox
-32b0528 HEAD@{372}: rebase (start): checkout HEAD~2
-bc65a8f HEAD@{373}: commit: Update
-32b0528 HEAD@{374}: rebase (finish): returning to refs/heads/main
-32b0528 HEAD@{375}: rebase (squash): The Oblicosm Paradox
-3440247 HEAD@{376}: rebase (start): checkout HEAD~2
-1a27c23 HEAD@{377}: commit: Ended Broadcast
-3440247 HEAD@{378}: rebase (finish): returning to refs/heads/main
-3440247 HEAD@{379}: rebase (squash): The Oblicosm Paradox
-1e1e1f0 HEAD@{380}: rebase (start): checkout HEAD~2
-e6710bf HEAD@{381}: commit: Completed Broadcast
-1e1e1f0 HEAD@{382}: rebase (finish): returning to refs/heads/main
-1e1e1f0 HEAD@{383}: rebase (squash): The Oblicosm Paradox
-41abf6a HEAD@{384}: rebase (start): checkout HEAD~2
-7aaee17 HEAD@{385}: commit: Completed Broadcast
-41abf6a HEAD@{386}: rebase (finish): returning to refs/heads/main
-41abf6a HEAD@{387}: rebase (squash): The Oblicosm Paradox
-ea776fe HEAD@{388}: rebase (start): checkout HEAD~2
-50dcc26 HEAD@{389}: commit: The Oblicosm Paradox
-ea776fe HEAD@{390}: rebase (finish): returning to refs/heads/main
-ea776fe HEAD@{391}: rebase (squash): The Oblicosm Paradox
-50a0790 HEAD@{392}: rebase (start): checkout HEAD~2
-c07efc4 HEAD@{393}: commit: The Oblicosm Paradox
-50a0790 HEAD@{394}: commit: The Oblicosm Paradox
-73e53dd HEAD@{395}: commit (amend): Raised Upper Limit on Watchlist
-1549dde HEAD@{396}: commit: Raised Upper-Limit on Watchlist
-7d96570 HEAD@{397}: rebase (finish): returning to refs/heads/main
-7d96570 HEAD@{398}: rebase (squash): Indistinguishable From Magic
-8524e89 HEAD@{399}: rebase (start): checkout HEAD~2
-c723fda HEAD@{400}: commit: Winning move
-8524e89 HEAD@{401}: rebase (finish): returning to refs/heads/main
-8524e89 HEAD@{402}: rebase (squash): Indistinguishable From Magic
-0ceff8d HEAD@{403}: rebase (start): checkout HEAD~2
-55e315f HEAD@{404}: commit: Winning move
-0ceff8d HEAD@{405}: rebase (finish): returning to refs/heads/main
-0ceff8d HEAD@{406}: rebase (squash): Indistinguishable From Magic
-b30ab4a HEAD@{407}: rebase (start): checkout HEAD~2
-1fe1a40 HEAD@{408}: commit: Winning move
-b30ab4a HEAD@{409}: rebase (finish): returning to refs/heads/main
-b30ab4a HEAD@{410}: rebase (squash): Indistinguishable From Magic
-68b8f4e HEAD@{411}: rebase (squash): # This is a combination of 2 commits.
-5bc7362 HEAD@{412}: rebase (start): checkout HEAD~3
-b11e440 HEAD@{413}: commit: Rough Beta
-451b8cc HEAD@{414}: commit: Heads Up Display
-5bc7362 HEAD@{415}: commit: Indistinguishable From Magic
-140b630 HEAD@{416}: rebase (finish): returning to refs/heads/main
-140b630 HEAD@{417}: rebase (squash): Added Demo
-13fdac2 HEAD@{418}: rebase (start): checkout HEAD~2
-f7c3b56 HEAD@{419}: pull: Fast-forward
-7ed897a HEAD@{420}: pull: Fast-forward
-d87cff1 HEAD@{421}: rebase (finish): returning to refs/heads/main
-d87cff1 HEAD@{422}: rebase (squash): Added Cogniscium
-69ddb18 HEAD@{423}: rebase (start): checkout HEAD~2
-88231e5 HEAD@{424}: commit: Update
-69ddb18 HEAD@{425}: pull: Fast-forward
-0898a2d HEAD@{426}: rebase (finish): returning to refs/heads/main
-0898a2d HEAD@{427}: rebase (squash): Added Unicode Chart
-316651d HEAD@{428}: rebase (start): checkout HEAD~2
-ed658f4 HEAD@{429}: commit: Update
-316651d HEAD@{430}: rebase (finish): returning to refs/heads/main
-316651d HEAD@{431}: rebase (squash): Added Unicode Chart
-411db99 HEAD@{432}: rebase (start): checkout HEAD~2
-a6cfa27 HEAD@{433}: commit: Amend - too complicated
-411db99 HEAD@{434}: pull: Fast-forward
-a84994d HEAD@{435}: commit: Added Color Radio
-2711ee0 HEAD@{436}: rebase (finish): returning to refs/heads/main
-2711ee0 HEAD@{437}: rebase (squash): Updated main website
-5915a8e HEAD@{438}: rebase (start): checkout HEAD~2
-3988c76 HEAD@{439}: commit: Added Comma
-5915a8e HEAD@{440}: rebase (finish): returning to refs/heads/main
-5915a8e HEAD@{441}: rebase (squash): Updated main website
-d47387b HEAD@{442}: rebase (start): checkout HEAD~2
-b88de72 HEAD@{443}: commit: update
-d47387b HEAD@{444}: rebase (finish): returning to refs/heads/main
-d47387b HEAD@{445}: rebase (squash): Updated main website
-74ab688 HEAD@{446}: rebase (start): checkout HEAD~2
-7503aba HEAD@{447}: commit: Update
-74ab688 HEAD@{448}: pull: Fast-forward
-49da29a HEAD@{449}: reset: moving to 49da29a69439fdb172df2dc5fcda740067e485ad
-9307289 HEAD@{450}: pull: Fast-forward
-49da29a HEAD@{451}: rebase (finish): returning to refs/heads/main
-49da29a HEAD@{452}: rebase (squash): 𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘪𝘭𝘪𝘵𝘺
-50222e5 HEAD@{453}: rebase (start): checkout HEAD~2
-c5a4423 HEAD@{454}: commit: C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̥̘̘̐ ̜̻͖͎͇͒͑̚ͅ M͍̮̰͈͖̑͜O̟̳ͨ͋͋͐T̫̫ͦ̌̒ͮH͛ͤͣ́Ȇ̩̾ͨ̾ͮȐ̥̤̑ͅ ‏‏
-50222e5 HEAD@{455}: pull: Fast-forward
-20ca96d HEAD@{456}: reset: moving to 20ca96da8711918c7f83de2e9b5c79dfc053d086
-32e5bc7 HEAD@{457}: pull: Fast-forward
-20ca96d HEAD@{458}: pull: Merge made by the 'recursive' strategy.
-a9a3ba1 HEAD@{459}: commit (amend): 𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦
-5a0e9a8 HEAD@{460}: commit: �ð𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦
-d0a1e38 HEAD@{461}: commit (amend): 𝘜𝘭𝘵𝘳𝘢𝘉𝘦𝘯𝘪𝘨𝘯 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
-3d7e389 HEAD@{462}: rebase (finish): returning to refs/heads/main
-3d7e389 HEAD@{463}: rebase (squash): 𝘜𝘭𝘵𝘳𝘢𝘉𝘦𝘯𝘪𝘨𝘯 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
-36841fd HEAD@{464}: rebase (start): checkout HEAD~2
-11bd27a HEAD@{465}: rebase (continue) (finish): returning to refs/heads/main
-11bd27a HEAD@{466}: commit: Fix
-36841fd HEAD@{467}: rebase (start): checkout HEAD~2
-0f01fda HEAD@{468}: commit (merge): Fix
-36841fd HEAD@{469}: commit (amend): 𝘜𝘭𝘵𝘳𝘢𝘉𝘦𝘯𝘪𝘨𝘯 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
-5eee6a9 HEAD@{470}: rebase (finish): returning to refs/heads/main
-5eee6a9 HEAD@{471}: rebase (squash): 𝘌𝘹𝘵𝘦𝘯𝘴𝘪𝘰𝘯𝘢𝘭 𝘙𝘦𝘢𝘵𝘢𝘭𝘪𝘦𝘴
-b036bd2 HEAD@{472}: rebase (start): checkout HEAD~2
-87da08d HEAD@{473}: commit: Update
-b036bd2 HEAD@{474}: pull: Fast-forward
-a062d0b HEAD@{475}: pull: Merge made by the 'recursive' strategy.
-0a88921 HEAD@{476}: commit: Facebook Backup
-096df5d HEAD@{477}: commit: Update
-f33551d HEAD@{478}: commit: Added Cosmic Web Simulator
-8149ad8 HEAD@{479}: commit: Added Profile Roast
-6bd84c1 HEAD@{480}: commit: Added Flashcard App
-d06a5f3 HEAD@{481}: rebase (finish): returning to refs/heads/main
-d06a5f3 HEAD@{482}: rebase (squash): Added Overview
-d203f71 HEAD@{483}: rebase (start): checkout HEAD~2
-014fa1a HEAD@{484}: commit: Did something weird
-d203f71 HEAD@{485}: rebase (finish): returning to refs/heads/main
-d203f71 HEAD@{486}: rebase (squash): Added Overview
-35bff7a HEAD@{487}: rebase (start): checkout HEAD~2
-45d1b44 HEAD@{488}: commit: Added Overview
-35bff7a HEAD@{489}: rebase (finish): returning to refs/heads/main
-35bff7a HEAD@{490}: rebase (squash): Added Overview
-9ce7dfb HEAD@{491}: rebase (start): checkout HEAD~2
-aecea6c HEAD@{492}: commit: Added Overview
-9ce7dfb HEAD@{493}: rebase (finish): returning to refs/heads/main
-9ce7dfb HEAD@{494}: rebase (squash): Added Overview
-343be33 HEAD@{495}: rebase (start): checkout HEAD~2
-afc1ee4 HEAD@{496}: commit: Added Overview
-343be33 HEAD@{497}: rebase (finish): returning to refs/heads/main
-343be33 HEAD@{498}: rebase (squash): Added Overview
-4a5c015 HEAD@{499}: rebase (start): checkout HEAD~2
-32fc6e9 HEAD@{500}: commit: Added overview
-4a5c015 HEAD@{501}: commit (amend): Added Overview
-d2255f2 HEAD@{502}: rebase (finish): returning to refs/heads/main
-d2255f2 HEAD@{503}: rebase (squash): Added overview
-ebf44b8 HEAD@{504}: rebase (start): checkout HEAD~2
-c47d7ab HEAD@{505}: commit: Added overview
-ebf44b8 HEAD@{506}: commit: Added overview
-5f916c7 HEAD@{507}: commit: Added Chrobatos
-64bae43 HEAD@{508}: commit (amend): Corrected spelling error
-62e5689 HEAD@{509}: pull: Fast-forward
-25ec1a0 HEAD@{510}: rebase (finish): returning to refs/heads/main
-25ec1a0 HEAD@{511}: rebase (squash): Added stats
-cf73bd0 HEAD@{512}: rebase (squash): # This is a combination of 2 commits.
-10698b4 HEAD@{513}: rebase (start): checkout HEAD~3
-0fb7d69 HEAD@{514}: pull: Fast-forward
-10698b4 HEAD@{515}: rebase (finish): returning to refs/heads/main
-10698b4 HEAD@{516}: rebase (squash): Added stats
-c139869 HEAD@{517}: rebase (squash): # This is a combination of 2 commits.
-1cb0b1d HEAD@{518}: rebase (start): checkout HEAD~3
-6334f41 HEAD@{519}: pull: Fast-forward
-0c8237c HEAD@{520}: commit: Added Randomizer
-b6fcde7 HEAD@{521}: reset: moving to b6fcde779c17e788ee9d657dc6ecbd7a15528c84
-24a2672 HEAD@{522}: rebase (finish): returning to refs/heads/main
-24a2672 HEAD@{523}: rebase (squash): Added Online Shop
-5a86e49 HEAD@{524}: rebase (start): checkout HEAD~2
-c05a90f HEAD@{525}: commit: Update
-5a86e49 HEAD@{526}: pull: Fast-forward
-b6fcde7 HEAD@{527}: reset: moving to b6fcde779c17e788ee9d657dc6ecbd7a15528c84
-08d302b HEAD@{528}: rebase (finish): returning to refs/heads/main
-08d302b HEAD@{529}: rebase (squash): Project Umbilicus
-b4242a8 HEAD@{530}: rebase (squash): # This is a combination of 3 commits.
-9f4449a HEAD@{531}: rebase (squash): # This is a combination of 2 commits.
-9cd52f9 HEAD@{532}: rebase (start): checkout HEAD~4
-8460764 HEAD@{533}: pull: Fast-forward
-b6fcde7 HEAD@{534}: rebase (finish): returning to refs/heads/main
-b6fcde7 HEAD@{535}: rebase (squash): Holistic Understanding
-25298f0 HEAD@{536}: rebase (start): checkout HEAD~2
-b2c9af9 HEAD@{537}: commit: Attribution
-25298f0 HEAD@{538}: pull: Fast-forward
-6d239ed HEAD@{539}: reset: moving to 6d239ed473e96841e5ba5bb2d201d95b254ef5c9
-5d79539 HEAD@{540}: pull: Fast-forward
-6d239ed HEAD@{541}: commit: Added Typing Tutor
-d669809 HEAD@{542}: rebase (finish): returning to refs/heads/main
-d669809 HEAD@{543}: rebase (squash): Dactyl Clock
-b740fc5 HEAD@{544}: rebase (squash): # This is a combination of 2 commits.
-f0c1e4e HEAD@{545}: rebase (start): checkout HEAD~3
-8f7ac18 HEAD@{546}: commit: Update
-b92fc93 HEAD@{547}: pull: Fast-forward
-f0c1e4e HEAD@{548}: rebase (finish): returning to refs/heads/main
-f0c1e4e HEAD@{549}: rebase (squash): Dactyl Clock
-859fe03 HEAD@{550}: rebase (start): checkout HEAD~2
-2f647c6 HEAD@{551}: commit: Update
-859fe03 HEAD@{552}: rebase (finish): returning to refs/heads/main
-859fe03 HEAD@{553}: rebase (squash): Dactyl Clock
-5392954 HEAD@{554}: rebase (start): checkout HEAD~2
-8907c8e HEAD@{555}: commit: Update
-5392954 HEAD@{556}: rebase (finish): returning to refs/heads/main
-5392954 HEAD@{557}: rebase (squash): Dactyl Clock
-9a721f5 HEAD@{558}: rebase (start): checkout HEAD~2
-458dc45 HEAD@{559}: commit: Added Link
-9a721f5 HEAD@{560}: commit: Dactyl Clock
-3c9bb85 HEAD@{561}: commit: Galactic Translator App
-ed11cff HEAD@{562}: pull: Fast-forward
-2c11de2 HEAD@{563}: commit (amend): Programming in SGA
-c8ca10a HEAD@{564}: pull: Fast-forward
-6f8cd7c HEAD@{565}: commit: Update
-657ce85 HEAD@{566}: commit: Update
-7e03f92 HEAD@{567}: pull: Fast-forward
-2a30294 HEAD@{568}: rebase (finish): returning to refs/heads/main
-2a30294 HEAD@{569}: rebase (squash): Vectorspace Explorer
-9a75ebf HEAD@{570}: rebase (start): checkout HEAD~2
-b641332 HEAD@{571}: pull: Fast-forward
-9a75ebf HEAD@{572}: rebase (finish): returning to refs/heads/main
-9a75ebf HEAD@{573}: rebase (squash): Vectorspace Explorer
-cd07fe2 HEAD@{574}: rebase (start): checkout HEAD~2
-fb55ad8 HEAD@{575}: commit: Scale Back
-cd07fe2 HEAD@{576}: rebase (finish): returning to refs/heads/main
-cd07fe2 HEAD@{577}: rebase (squash): Vectorspace Explorer
-6422366 HEAD@{578}: rebase (start): checkout HEAD~2
-021b6cf HEAD@{579}: commit: Scale Back
-6422366 HEAD@{580}: rebase (finish): returning to refs/heads/main
-6422366 HEAD@{581}: rebase (squash): Vectorspace Explorer
-863e648 HEAD@{582}: rebase (start): checkout HEAD~2
-165aa62 HEAD@{583}: commit: Header
-863e648 HEAD@{584}: rebase (finish): returning to refs/heads/main
-863e648 HEAD@{585}: rebase (squash): Vectorspace Explorer
-898a2b1 HEAD@{586}: rebase (start): checkout HEAD~2
-59ba55d HEAD@{587}: commit: Header
-898a2b1 HEAD@{588}: commit: Header
-04f4917 HEAD@{589}: pull: Fast-forward
-6953b53 HEAD@{590}: rebase (finish): returning to refs/heads/main
-6953b53 HEAD@{591}: rebase (squash): Glitch Art
-3f595de HEAD@{592}: rebase (squash): # This is a combination of 5 commits.
-7929fb0 HEAD@{593}: rebase (squash): # This is a combination of 4 commits.
-a766284 HEAD@{594}: rebase (squash): # This is a combination of 3 commits.
-77622fd HEAD@{595}: rebase (squash): # This is a combination of 2 commits.
-ff1dd56 HEAD@{596}: rebase (start): checkout HEAD~6
-8e744ed HEAD@{597}: commit: Glitch Art
-b69b71b HEAD@{598}: commit: Glitch Art
-37e5400 HEAD@{599}: commit: Glitch Art
-cd63994 HEAD@{600}: commit: Glitch Art
-3e4e0ee HEAD@{601}: commit: Glitch Art
-ff1dd56 HEAD@{602}: commit: Glitch Art
-5297b14 HEAD@{603}: clone: from https://github.com/standardgalactic/standardgalactic
+c9cbf1d HEAD@{0}: commit: Terminal Simulator
+6c5a5c7 HEAD@{1}: rebase (finish): returning to refs/heads/main
+6c5a5c7 HEAD@{2}: rebase (squash): Terminal Simulator
+fe92686 HEAD@{3}: rebase (start): checkout HEAD~2
+fe5b18a HEAD@{4}: commit: Terminal Simulator
+fe92686 HEAD@{5}: rebase (finish): returning to refs/heads/main
+fe92686 HEAD@{6}: rebase (squash): Grok told me I could use this badge
+84d4753 HEAD@{7}: rebase (start): checkout HEAD~2
+2b3c357 HEAD@{8}: commit: Minor Adjustment
+84d4753 HEAD@{9}: pull: Fast-forward
+ae0994d HEAD@{10}: commit: Translation Update
+d9e22ac HEAD@{11}: pull: Fast-forward
+d08c2c8 HEAD@{12}: commit (amend): Swype Keyboard
+7663f85 HEAD@{13}: commit: Swype Keyboard
+3c9fdd3 HEAD@{14}: pull: Fast-forward
+a13b481 HEAD@{15}: rebase (finish): returning to refs/heads/main
+a13b481 HEAD@{16}: rebase (squash): Weird Flex
+1169cc4 HEAD@{17}: rebase (squash): # This is a combination of 2 commits.
+9195c38 HEAD@{18}: rebase (start): checkout HEAD~3
+b7b71a4 HEAD@{19}: commit: Added Twitter Files
+f563897 HEAD@{20}: commit: Added Twitter Files
+9195c38 HEAD@{21}: rebase (finish): returning to refs/heads/main
+9195c38 HEAD@{22}: rebase (squash): Weird Flex
+ac7bf71 HEAD@{23}: rebase (start): checkout HEAD~2
+0a8596d HEAD@{24}: commit: Update
+ac7bf71 HEAD@{25}: rebase (finish): returning to refs/heads/main
+ac7bf71 HEAD@{26}: rebase (squash): Weird Flex
+4e52e61 HEAD@{27}: rebase (start): checkout HEAD~2
+f4b71ab HEAD@{28}: rebase (finish): returning to refs/heads/main
+f4b71ab HEAD@{29}: rebase (squash): Weird Flex
+d308cde HEAD@{30}: rebase (start): checkout HEAD~2
+a3ffd64 HEAD@{31}: commit: Weird Flex
+d308cde HEAD@{32}: rebase (finish): returning to refs/heads/main
+d308cde HEAD@{33}: rebase (squash): Weird Flex
+62142ad HEAD@{34}: rebase (start): checkout HEAD~2
+aa142af HEAD@{35}: commit: Weird Flex
+62142ad HEAD@{36}: commit: Weird Flex
+4e52e61 HEAD@{37}: rebase (finish): returning to refs/heads/main
+4e52e61 HEAD@{38}: rebase (squash): Work in progress
+3793fcd HEAD@{39}: rebase (start): checkout HEAD~2
+c74bcb7 HEAD@{40}: commit: Update
+3793fcd HEAD@{41}: rebase (finish): returning to refs/heads/main
+3793fcd HEAD@{42}: rebase (squash): Work in progress
+8ee9094 HEAD@{43}: rebase (start): checkout HEAD~2
+81e4a71 HEAD@{44}: commit: Update
+8ee9094 HEAD@{45}: rebase (finish): returning to refs/heads/main
+8ee9094 HEAD@{46}: rebase (squash): Work in progress
+087c1a8 HEAD@{47}: rebase (start): checkout HEAD~2
+bcc8e2a HEAD@{48}: rebase (finish): returning to refs/heads/main
+bcc8e2a HEAD@{49}: rebase (squash): Update
+6ef7db0 HEAD@{50}: rebase (start): checkout HEAD~2
+648e10f HEAD@{51}: commit: Update
+6ef7db0 HEAD@{52}: commit: Update
+087c1a8 HEAD@{53}: pull: Fast-forward
+8a53478 HEAD@{54}: commit: Reasoning Engine in Action
+90254aa HEAD@{55}: pull: Fast-forward
+52458dd HEAD@{56}: rebase (finish): returning to refs/heads/main
+52458dd HEAD@{57}: rebase (squash): Self Test
+afc4bc9 HEAD@{58}: rebase (start): checkout HEAD~2
+ea77c05 HEAD@{59}: commit: update
+afc4bc9 HEAD@{60}: pull: Fast-forward
+ee6300f HEAD@{61}: rebase (finish): returning to refs/heads/main
+ee6300f HEAD@{62}: rebase (squash): Added Merch Store
+69be46d HEAD@{63}: rebase (start): checkout HEAD~2
+d15c5ba HEAD@{64}: commit: Added Merch Store
+69be46d HEAD@{65}: commit: Added Merch Store
+4fbcf9c HEAD@{66}: rebase (finish): returning to refs/heads/main
+4fbcf9c HEAD@{67}: rebase (squash): Update daily quote via Dual-Wave Encoding
+19cbdbc HEAD@{68}: rebase (start): checkout HEAD~2
+30d075e HEAD@{69}: rebase (finish): returning to refs/heads/main
+30d075e HEAD@{70}: rebase (squash): Added Merch Store
+731248b HEAD@{71}: rebase (start): checkout HEAD~2
+c4c1d4d HEAD@{72}: commit: Clean up
+731248b HEAD@{73}: pull: Fast-forward
+ddb8cb8 HEAD@{74}: rebase (continue) (finish): returning to refs/heads/main
+ddb8cb8 HEAD@{75}: rebase (continue) (squash): Artwork
+f333aac HEAD@{76}: rebase (continue): Artwork
+cbb5c31 HEAD@{77}: rebase (start): checkout HEAD~3
+a931644 HEAD@{78}: commit: Update
+9d81ab9 HEAD@{79}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
+cbb5c31 HEAD@{80}: rebase (finish): returning to refs/heads/main
+cbb5c31 HEAD@{81}: rebase (squash): Artwork
+96e1e7e HEAD@{82}: rebase (start): checkout HEAD~2
+d154a4b HEAD@{83}: commit: Update
+96e1e7e HEAD@{84}: rebase (finish): returning to refs/heads/main
+96e1e7e HEAD@{85}: rebase (squash): Artwork
+987eccb HEAD@{86}: rebase (start): checkout HEAD~2
+5d83e79 HEAD@{87}: commit: Update
+987eccb HEAD@{88}: rebase (finish): returning to refs/heads/main
+987eccb HEAD@{89}: rebase (squash): Artwork
+b765478 HEAD@{90}: rebase (start): checkout HEAD~2
+56518da HEAD@{91}: commit: Update
+b765478 HEAD@{92}: rebase (finish): returning to refs/heads/main
+b765478 HEAD@{93}: rebase (squash): Artwork
+09a846a HEAD@{94}: rebase (start): checkout HEAD~2
+e260c22 HEAD@{95}: commit: Update
+09a846a HEAD@{96}: rebase (finish): returning to refs/heads/main
+09a846a HEAD@{97}: rebase (squash): Artwork
+fcae8b7 HEAD@{98}: rebase (start): checkout HEAD~2
+f19a3e7 HEAD@{99}: commit: Update
+fcae8b7 HEAD@{100}: rebase (finish): returning to refs/heads/main
+fcae8b7 HEAD@{101}: rebase (squash): Artwork
+773110c HEAD@{102}: rebase (start): checkout HEAD~2
+347d754 HEAD@{103}: commit: Update
+773110c HEAD@{104}: rebase (finish): returning to refs/heads/main
+773110c HEAD@{105}: rebase (squash): Artwork
+ea23873 HEAD@{106}: rebase (start): checkout HEAD~2
+57e8005 HEAD@{107}: commit: Clean up
+ea23873 HEAD@{108}: rebase (finish): returning to refs/heads/main
+ea23873 HEAD@{109}: rebase (squash): Artwork
+76e3bb7 HEAD@{110}: rebase (start): checkout HEAD~2
+f3d9ebb HEAD@{111}: commit: Clean up
+76e3bb7 HEAD@{112}: rebase (finish): returning to refs/heads/main
+76e3bb7 HEAD@{113}: rebase (squash): Artwork
+280464d HEAD@{114}: rebase (start): checkout HEAD~2
+ea7be6a HEAD@{115}: commit: Clean up
+280464d HEAD@{116}: rebase (finish): returning to refs/heads/main
+280464d HEAD@{117}: rebase (squash): Artwork
+2731976 HEAD@{118}: rebase (start): checkout HEAD~2
+ba2f5ad HEAD@{119}: commit: Update
+2731976 HEAD@{120}: rebase (finish): returning to refs/heads/main
+2731976 HEAD@{121}: rebase (squash): Artwork
+2d94de8 HEAD@{122}: rebase (start): checkout HEAD~2
+b0942b1 HEAD@{123}: commit: Update
+2d94de8 HEAD@{124}: rebase (finish): returning to refs/heads/main
+2d94de8 HEAD@{125}: rebase (squash): Artwork
+1957f7d HEAD@{126}: rebase (start): checkout HEAD~2
+a6a508f HEAD@{127}: commit: Write
+1957f7d HEAD@{128}: rebase (finish): returning to refs/heads/main
+1957f7d HEAD@{129}: rebase (squash): Artwork
+d4f333b HEAD@{130}: rebase (start): checkout HEAD~2
+e97c989 HEAD@{131}: commit: Update
+d4f333b HEAD@{132}: rebase (finish): returning to refs/heads/main
+d4f333b HEAD@{133}: rebase (squash): Artwork
+71a5fad HEAD@{134}: rebase (start): checkout HEAD~2
+2e7f5ad HEAD@{135}: commit: Artwork
+71a5fad HEAD@{136}: rebase (finish): returning to refs/heads/main
+71a5fad HEAD@{137}: rebase (squash): Artwork
+fc98502 HEAD@{138}: rebase (start): checkout HEAD~2
+3d6b2d9 HEAD@{139}: commit: Artwork
+fc98502 HEAD@{140}: rebase (finish): returning to refs/heads/main
+fc98502 HEAD@{141}: rebase (squash): Artwork
+5f3a84b HEAD@{142}: rebase (start): checkout HEAD~2
+327b0ed HEAD@{143}: commit: Update
+5f3a84b HEAD@{144}: rebase (finish): returning to refs/heads/main
+5f3a84b HEAD@{145}: rebase (squash): Artwork
+617d4d1 HEAD@{146}: rebase (start): checkout HEAD~2
+af22bf2 HEAD@{147}: commit: Artwork
+617d4d1 HEAD@{148}: commit: Artwork
+d77a1cd HEAD@{149}: pull: Fast-forward
+ac86252 HEAD@{150}: rebase (continue) (finish): returning to refs/heads/main
+ac86252 HEAD@{151}: rebase (continue) (squash): Anonymous Feedback
+80e99fb HEAD@{152}: rebase (start): checkout HEAD~2
+7422ce6 HEAD@{153}: commit: Rebase
+d68d3b0 HEAD@{154}: pull: Merge made by the 'recursive' strategy.
+80e99fb HEAD@{155}: commit: Anonymous Feedback
+664734b HEAD@{156}: commit (amend): 𝘜𝘯𝘴𝘤𝘢𝘯𝘯𝘢𝘣𝘭𝘦 𝘐𝘯𝘵𝘦𝘳𝘧𝘢𝘤𝘦𝘴
+940db90 HEAD@{157}: pull: Fast-forward
+12078cc HEAD@{158}: rebase (continue) (finish): returning to refs/heads/main
+12078cc HEAD@{159}: rebase (continue) (squash): Spherepop
+7c82026 HEAD@{160}: rebase (continue) (squash): # This is a combination of 2 commits.
+031fedd HEAD@{161}: rebase (continue): Update daily quote via Dual-Wave Encoding
+4235b99 HEAD@{162}: rebase (start): checkout HEAD~3
+02cd00c HEAD@{163}: commit: Milestone
+efe24a2 HEAD@{164}: rebase (finish): returning to refs/heads/main
+efe24a2 HEAD@{165}: rebase (squash): Spherepop
+754ed26 HEAD@{166}: rebase (squash): # This is a combination of 2 commits.
+a80d154 HEAD@{167}: rebase (start): checkout HEAD~3
+34608c3 HEAD@{168}: commit: Milestone
+51c75ed HEAD@{169}: rebase (finish): returning to refs/heads/main
+51c75ed HEAD@{170}: rebase (squash): Spherepop
+4450ea7 HEAD@{171}: rebase (squash): # This is a combination of 2 commits.
+a9b37af HEAD@{172}: rebase (start): checkout HEAD~3
+deaca63 HEAD@{173}: commit: Milestone
+efc9659 HEAD@{174}: commit: Spherepop
+a9b37af HEAD@{175}: commit: Spherepop
+a80d154 HEAD@{176}: commit: Spherepop
+34f6ec8 HEAD@{177}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
+4235b99 HEAD@{178}: commit: Spherepop
+703d7b8 HEAD@{179}: rebase (finish): returning to refs/heads/main
+703d7b8 HEAD@{180}: rebase (squash): Dual-wave Encoding
+9e009e9 HEAD@{181}: rebase (start): checkout HEAD~2
+8389847 HEAD@{182}: commit: Redefine Goals
+9e009e9 HEAD@{183}: rebase (finish): returning to refs/heads/main
+9e009e9 HEAD@{184}: rebase (squash): Dual-wave Encoding
+f3260db HEAD@{185}: rebase (start): checkout HEAD~2
+a1c7856 HEAD@{186}: commit: The Bitter Lesson
+f3260db HEAD@{187}: rebase (finish): returning to refs/heads/main
+f3260db HEAD@{188}: rebase (squash): Dual-wave Encoding
+06cd676 HEAD@{189}: rebase (start): checkout HEAD~2
+63d0c63 HEAD@{190}: commit: Update
+06cd676 HEAD@{191}: rebase (finish): returning to refs/heads/main
+06cd676 HEAD@{192}: rebase (squash): Dual-wave Encoding
+262014e HEAD@{193}: rebase (start): checkout HEAD~2
+e12eb14 HEAD@{194}: commit: Update
+262014e HEAD@{195}: commit (amend): Dual-wave Encoding
+dcd729a HEAD@{196}: commit: Dual-wave Encoding
+0171346 HEAD@{197}: rebase (finish): returning to refs/heads/main
+0171346 HEAD@{198}: rebase (squash): Interactive Fiction
+121ab2b HEAD@{199}: rebase (start): checkout HEAD~2
+53665bd HEAD@{200}: commit: Minor Adjustment
+121ab2b HEAD@{201}: rebase (finish): returning to refs/heads/main
+121ab2b HEAD@{202}: rebase (squash): Interactive Fiction
+202b2df HEAD@{203}: rebase (start): checkout HEAD~2
+ea5f778 HEAD@{204}: commit: Interactive Fiction
+202b2df HEAD@{205}: commit: Interactive Fiction
+82a80c4 HEAD@{206}: rebase (finish): returning to refs/heads/main
+82a80c4 HEAD@{207}: rebase (squash): Portfolio
+5285b3e HEAD@{208}: rebase (squash): # This is a combination of 2 commits.
+96b3264 HEAD@{209}: rebase (start): checkout HEAD~3
+361bff0 HEAD@{210}: rebase (continue) (finish): returning to refs/heads/main
+361bff0 HEAD@{211}: rebase (continue): Bot Music
+4201e31 HEAD@{212}: rebase (continue): Bot Music
+1558898 HEAD@{213}: rebase (start): checkout HEAD~2
+acdfa9f HEAD@{214}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
+1558898 HEAD@{215}: rebase (continue) (finish): returning to refs/heads/main
+1558898 HEAD@{216}: rebase (continue): Bot Music
+71a3ab2 HEAD@{217}: rebase (continue): Added Music
+96b3264 HEAD@{218}: rebase (start): checkout HEAD~2
+8021642 HEAD@{219}: pull: Merge made by the 'recursive' strategy.
+96b3264 HEAD@{220}: rebase (finish): returning to refs/heads/main
+96b3264 HEAD@{221}: rebase (pick): Portfolio
+bb894c5 HEAD@{222}: rebase (pick): Bot Music
+6d70bc5 HEAD@{223}: rebase (pick): Added Music
+ad00516 HEAD@{224}: rebase (start): checkout HEAD~2
+e72cbf2 HEAD@{225}: commit: Portfolio
+31d1b82 HEAD@{226}: pull: Merge made by the 'recursive' strategy.
+ad00516 HEAD@{227}: commit: Portfolio
+bfaa994 HEAD@{228}: rebase (finish): returning to refs/heads/main
+bfaa994 HEAD@{229}: rebase (squash): Unpublished Facebook Posts
+9276b5a HEAD@{230}: rebase (start): checkout HEAD~2
+4fa5b2d HEAD@{231}: commit: Clean up
+9276b5a HEAD@{232}: rebase (finish): returning to refs/heads/main
+9276b5a HEAD@{233}: rebase (squash): Unpublished Facebook Posts
+ad81227 HEAD@{234}: rebase (start): checkout HEAD~2
+c62c2fd HEAD@{235}: commit: Update
+ad81227 HEAD@{236}: commit: Unpublished Facebook Posts
+86fdd25 HEAD@{237}: rebase (finish): returning to refs/heads/main
+86fdd25 HEAD@{238}: rebase (squash): Simple Practice
+8c86cdf HEAD@{239}: rebase (start): checkout HEAD~2
+461af9a HEAD@{240}: commit: Update
+8c86cdf HEAD@{241}: rebase (finish): returning to refs/heads/main
+8c86cdf HEAD@{242}: rebase (squash): Simple Practice
+f7854d2 HEAD@{243}: rebase (squash): # This is a combination of 2 commits.
+afbbad3 HEAD@{244}: rebase (start): checkout HEAD~3
+c7e42b2 HEAD@{245}: rebase (finish): returning to refs/heads/main
+c7e42b2 HEAD@{246}: rebase (squash): Gameified Altruism
+f2be6fd HEAD@{247}: rebase (start): checkout HEAD~2
+d20e7ab HEAD@{248}: pull: Merge made by the 'recursive' strategy.
+f2be6fd HEAD@{249}: rebase (finish): returning to refs/heads/main
+f2be6fd HEAD@{250}: rebase (squash): Gameified Altruism
+abae31d HEAD@{251}: rebase (pick): Gameified Altruism
+6357f8c HEAD@{252}: rebase (start): checkout HEAD~2
+ac309cc HEAD@{253}: commit: Update Translation
+00c1991 HEAD@{254}: pull: Merge made by the 'recursive' strategy.
+6357f8c HEAD@{255}: commit: Update Translation
+afbbad3 HEAD@{256}: rebase (finish): returning to refs/heads/main
+afbbad3 HEAD@{257}: rebase (squash): Simple Practice
+cd8e8ef HEAD@{258}: rebase (start): checkout HEAD~2
+8521fd0 HEAD@{259}: commit: Update
+cd8e8ef HEAD@{260}: rebase (finish): returning to refs/heads/main
+cd8e8ef HEAD@{261}: rebase (squash): Simple Practice
+0871e11 HEAD@{262}: rebase (start): checkout HEAD~2
+8d05ab0 HEAD@{263}: commit: Fix
+0871e11 HEAD@{264}: rebase (finish): returning to refs/heads/main
+0871e11 HEAD@{265}: rebase (squash): Simple Practice
+03d5177 HEAD@{266}: rebase (squash): # This is a combination of 2 commits.
+059671c HEAD@{267}: rebase (start): checkout HEAD~3
+bcbe956 HEAD@{268}: commit: Simple Practice
+b1626dd HEAD@{269}: rebase (finish): returning to refs/heads/main
+b1626dd HEAD@{270}: rebase (squash): Scholar's Bay
+fbb51dc HEAD@{271}: rebase (start): checkout HEAD~2
+3370434 HEAD@{272}: commit: Umbilicus Project
+fbb51dc HEAD@{273}: reset: moving to fbb51dc
+89735ce HEAD@{274}: commit: Backtracking
+fbb51dc HEAD@{275}: rebase (finish): returning to refs/heads/main
+fbb51dc HEAD@{276}: rebase (squash): Scholar's Bay
+efa1e82 HEAD@{277}: rebase (start): checkout HEAD~2
+ccc10d5 HEAD@{278}: commit: Added Interact
+efa1e82 HEAD@{279}: rebase (finish): returning to refs/heads/main
+efa1e82 HEAD@{280}: rebase (squash): Scholar's Bay
+41ceb9b HEAD@{281}: rebase (start): checkout HEAD~2
+a3a7ce3 HEAD@{282}: commit: Added Interact
+41ceb9b HEAD@{283}: rebase (continue) (finish): returning to refs/heads/main
+41ceb9b HEAD@{284}: rebase (continue) (squash): Scholar's Bay
+4d4f8e5 HEAD@{285}: rebase (continue): Scholar's Bay
+059671c HEAD@{286}: rebase (start): checkout HEAD~2
+241e2bf HEAD@{287}: commit: Restart Server
+84f5473 HEAD@{288}: commit (merge): Merge branch 'main' of https://github.com/standardgalactic/standardgalactic
+059671c HEAD@{289}: commit (amend): Scholar's Bay
+5e5d19a HEAD@{290}: rebase (finish): returning to refs/heads/main
+5e5d19a HEAD@{291}: rebase (squash): Scholar's Bay
+5db28f6 HEAD@{292}: rebase (start): checkout HEAD~2
+b32fa5a HEAD@{293}: commit: Cleanup
+5db28f6 HEAD@{294}: rebase (finish): returning to refs/heads/main
+5db28f6 HEAD@{295}: rebase (squash): Scholar's Bay
+8be34fc HEAD@{296}: rebase (start): checkout HEAD~2
+2a84855 HEAD@{297}: commit: Cleanup
+8be34fc HEAD@{298}: rebase (finish): returning to refs/heads/main
+8be34fc HEAD@{299}: rebase (squash): Scholar's Bay
+d8d3cd0 HEAD@{300}: rebase (start): checkout HEAD~2
+4b8872b HEAD@{301}: commit: Cleanup
+d8d3cd0 HEAD@{302}: rebase (finish): returning to refs/heads/main
+d8d3cd0 HEAD@{303}: rebase (squash): Scholar's Bay
+a2ddf6d HEAD@{304}: rebase (start): checkout HEAD~2
+b5a7638 HEAD@{305}: commit: Cleanup
+a2ddf6d HEAD@{306}: rebase (continue) (finish): returning to refs/heads/main
+a2ddf6d HEAD@{307}: rebase (continue): Scholar's Bay
+dcccd0d HEAD@{308}: rebase (start): checkout HEAD~2
+9d64fd7 HEAD@{309}: commit (merge): Cleaning up
+dcccd0d HEAD@{310}: commit: Scholar's Bay
+39cf0b9 HEAD@{311}: rebase (finish): returning to refs/heads/main
+39cf0b9 HEAD@{312}: rebase (squash): New Fonts
+d0fe7c7 HEAD@{313}: rebase (start): checkout HEAD~2
+370baa6 HEAD@{314}: commit: Removed dot
+d0fe7c7 HEAD@{315}: rebase (finish): returning to refs/heads/main
+d0fe7c7 HEAD@{316}: rebase (squash): New Fonts
+8acd42c HEAD@{317}: rebase (start): checkout HEAD~2
+0d989a1 HEAD@{318}: commit: Update
+8acd42c HEAD@{319}: rebase (finish): returning to refs/heads/main
+8acd42c HEAD@{320}: rebase (squash): New Fonts
+30760cc HEAD@{321}: rebase (start): checkout HEAD~2
+350ee6f HEAD@{322}: commit: Update
+30760cc HEAD@{323}: rebase (finish): returning to refs/heads/main
+30760cc HEAD@{324}: rebase (squash): New Fonts
+f12689c HEAD@{325}: rebase (start): checkout HEAD~2
+42934e4 HEAD@{326}: pull: Merge made by the 'recursive' strategy.
+f12689c HEAD@{327}: commit: New Fonts
+344e6ed HEAD@{328}: commit: Year in Review
+155fcd4 HEAD@{329}: rebase (finish): returning to refs/heads/main
+155fcd4 HEAD@{330}: rebase (squash): Explanandum
+483ec10 HEAD@{331}: rebase (start): checkout HEAD~2
+ae4aac9 HEAD@{332}: commit: Minor Update
+483ec10 HEAD@{333}: rebase (finish): returning to refs/heads/main
+483ec10 HEAD@{334}: rebase (squash): Explanandum
+8250708 HEAD@{335}: rebase (start): checkout HEAD~2
+c990bad HEAD@{336}: commit: Update
+8250708 HEAD@{337}: rebase (finish): returning to refs/heads/main
+8250708 HEAD@{338}: rebase (squash): Explanandum
+4075e9a HEAD@{339}: rebase (start): checkout HEAD~2
+8356595 HEAD@{340}: commit: Update
+4075e9a HEAD@{341}: rebase (finish): returning to refs/heads/main
+4075e9a HEAD@{342}: rebase (squash): Explanandum
+1f1ae74 HEAD@{343}: rebase (start): checkout HEAD~2
+88aa774 HEAD@{344}: commit: Update
+1f1ae74 HEAD@{345}: rebase (finish): returning to refs/heads/main
+1f1ae74 HEAD@{346}: rebase (squash): Explanandum
+2701d33 HEAD@{347}: rebase (start): checkout HEAD~2
+1d428a0 HEAD@{348}: commit: Update
+2701d33 HEAD@{349}: rebase (finish): returning to refs/heads/main
+2701d33 HEAD@{350}: rebase (squash): Explanandum
+6f86cbd HEAD@{351}: rebase (start): checkout HEAD~2
+3af96ce HEAD@{352}: commit: Update
+6f86cbd HEAD@{353}: rebase (finish): returning to refs/heads/main
+6f86cbd HEAD@{354}: rebase (squash): Explanandum
+f292da3 HEAD@{355}: rebase (start): checkout HEAD~2
+64f9d70 HEAD@{356}: commit: Update
+f292da3 HEAD@{357}: rebase (finish): returning to refs/heads/main
+f292da3 HEAD@{358}: rebase (squash): Explanandum
+83dac0f HEAD@{359}: rebase (start): checkout HEAD~2
+7285606 HEAD@{360}: commit: Update
+83dac0f HEAD@{361}: rebase (finish): returning to refs/heads/main
+83dac0f HEAD@{362}: rebase (squash): Explanandum
+acf84c1 HEAD@{363}: rebase (start): checkout HEAD~2
+4ce899e HEAD@{364}: commit: Update
+acf84c1 HEAD@{365}: commit: Explanandum
+6f0ea5f HEAD@{366}: rebase (finish): returning to refs/heads/main
+6f0ea5f HEAD@{367}: rebase (squash): The Oblicosm Paradox
+88e8b3f HEAD@{368}: rebase (start): checkout HEAD~2
+06fca17 HEAD@{369}: commit: Update
+88e8b3f HEAD@{370}: rebase (finish): returning to refs/heads/main
+88e8b3f HEAD@{371}: rebase (squash): The Oblicosm Paradox
+6cf1fc7 HEAD@{372}: rebase (start): checkout HEAD~2
+2b9eff4 HEAD@{373}: commit: Update
+6cf1fc7 HEAD@{374}: rebase (finish): returning to refs/heads/main
+6cf1fc7 HEAD@{375}: rebase (squash): The Oblicosm Paradox
+9bd1cd6 HEAD@{376}: rebase (start): checkout HEAD~2
+d70b179 HEAD@{377}: commit: Update
+9bd1cd6 HEAD@{378}: rebase (finish): returning to refs/heads/main
+9bd1cd6 HEAD@{379}: rebase (squash): The Oblicosm Paradox
+cd7e5a6 HEAD@{380}: rebase (start): checkout HEAD~2
+f119904 HEAD@{381}: commit: Update
+cd7e5a6 HEAD@{382}: rebase (finish): returning to refs/heads/main
+cd7e5a6 HEAD@{383}: rebase (squash): The Oblicosm Paradox
+4d3d23c HEAD@{384}: rebase (start): checkout HEAD~2
+b2175a5 HEAD@{385}: commit: Update
+4d3d23c HEAD@{386}: rebase (finish): returning to refs/heads/main
+4d3d23c HEAD@{387}: rebase (squash): The Oblicosm Paradox
+2e638ce HEAD@{388}: rebase (start): checkout HEAD~2
+017f8fa HEAD@{389}: commit: Update
+2e638ce HEAD@{390}: rebase (finish): returning to refs/heads/main
+2e638ce HEAD@{391}: rebase (squash): The Oblicosm Paradox
+32b0528 HEAD@{392}: rebase (start): checkout HEAD~2
+bc65a8f HEAD@{393}: commit: Update
+32b0528 HEAD@{394}: rebase (finish): returning to refs/heads/main
+32b0528 HEAD@{395}: rebase (squash): The Oblicosm Paradox
+3440247 HEAD@{396}: rebase (start): checkout HEAD~2
+1a27c23 HEAD@{397}: commit: Ended Broadcast
+3440247 HEAD@{398}: rebase (finish): returning to refs/heads/main
+3440247 HEAD@{399}: rebase (squash): The Oblicosm Paradox
+1e1e1f0 HEAD@{400}: rebase (start): checkout HEAD~2
+e6710bf HEAD@{401}: commit: Completed Broadcast
+1e1e1f0 HEAD@{402}: rebase (finish): returning to refs/heads/main
+1e1e1f0 HEAD@{403}: rebase (squash): The Oblicosm Paradox
+41abf6a HEAD@{404}: rebase (start): checkout HEAD~2
+7aaee17 HEAD@{405}: commit: Completed Broadcast
+41abf6a HEAD@{406}: rebase (finish): returning to refs/heads/main
+41abf6a HEAD@{407}: rebase (squash): The Oblicosm Paradox
+ea776fe HEAD@{408}: rebase (start): checkout HEAD~2
+50dcc26 HEAD@{409}: commit: The Oblicosm Paradox
+ea776fe HEAD@{410}: rebase (finish): returning to refs/heads/main
+ea776fe HEAD@{411}: rebase (squash): The Oblicosm Paradox
+50a0790 HEAD@{412}: rebase (start): checkout HEAD~2
+c07efc4 HEAD@{413}: commit: The Oblicosm Paradox
+50a0790 HEAD@{414}: commit: The Oblicosm Paradox
+73e53dd HEAD@{415}: commit (amend): Raised Upper Limit on Watchlist
+1549dde HEAD@{416}: commit: Raised Upper-Limit on Watchlist
+7d96570 HEAD@{417}: rebase (finish): returning to refs/heads/main
+7d96570 HEAD@{418}: rebase (squash): Indistinguishable From Magic
+8524e89 HEAD@{419}: rebase (start): checkout HEAD~2
+c723fda HEAD@{420}: commit: Winning move
+8524e89 HEAD@{421}: rebase (finish): returning to refs/heads/main
+8524e89 HEAD@{422}: rebase (squash): Indistinguishable From Magic
+0ceff8d HEAD@{423}: rebase (start): checkout HEAD~2
+55e315f HEAD@{424}: commit: Winning move
+0ceff8d HEAD@{425}: rebase (finish): returning to refs/heads/main
+0ceff8d HEAD@{426}: rebase (squash): Indistinguishable From Magic
+b30ab4a HEAD@{427}: rebase (start): checkout HEAD~2
+1fe1a40 HEAD@{428}: commit: Winning move
+b30ab4a HEAD@{429}: rebase (finish): returning to refs/heads/main
+b30ab4a HEAD@{430}: rebase (squash): Indistinguishable From Magic
+68b8f4e HEAD@{431}: rebase (squash): # This is a combination of 2 commits.
+5bc7362 HEAD@{432}: rebase (start): checkout HEAD~3
+b11e440 HEAD@{433}: commit: Rough Beta
+451b8cc HEAD@{434}: commit: Heads Up Display
+5bc7362 HEAD@{435}: commit: Indistinguishable From Magic
+140b630 HEAD@{436}: rebase (finish): returning to refs/heads/main
+140b630 HEAD@{437}: rebase (squash): Added Demo
+13fdac2 HEAD@{438}: rebase (start): checkout HEAD~2
+f7c3b56 HEAD@{439}: pull: Fast-forward
+7ed897a HEAD@{440}: pull: Fast-forward
+d87cff1 HEAD@{441}: rebase (finish): returning to refs/heads/main
+d87cff1 HEAD@{442}: rebase (squash): Added Cogniscium
+69ddb18 HEAD@{443}: rebase (start): checkout HEAD~2
+88231e5 HEAD@{444}: commit: Update
+69ddb18 HEAD@{445}: pull: Fast-forward
+0898a2d HEAD@{446}: rebase (finish): returning to refs/heads/main
+0898a2d HEAD@{447}: rebase (squash): Added Unicode Chart
+316651d HEAD@{448}: rebase (start): checkout HEAD~2
+ed658f4 HEAD@{449}: commit: Update
+316651d HEAD@{450}: rebase (finish): returning to refs/heads/main
+316651d HEAD@{451}: rebase (squash): Added Unicode Chart
+411db99 HEAD@{452}: rebase (start): checkout HEAD~2
+a6cfa27 HEAD@{453}: commit: Amend - too complicated
+411db99 HEAD@{454}: pull: Fast-forward
+a84994d HEAD@{455}: commit: Added Color Radio
+2711ee0 HEAD@{456}: rebase (finish): returning to refs/heads/main
+2711ee0 HEAD@{457}: rebase (squash): Updated main website
+5915a8e HEAD@{458}: rebase (start): checkout HEAD~2
+3988c76 HEAD@{459}: commit: Added Comma
+5915a8e HEAD@{460}: rebase (finish): returning to refs/heads/main
+5915a8e HEAD@{461}: rebase (squash): Updated main website
+d47387b HEAD@{462}: rebase (start): checkout HEAD~2
+b88de72 HEAD@{463}: commit: update
+d47387b HEAD@{464}: rebase (finish): returning to refs/heads/main
+d47387b HEAD@{465}: rebase (squash): Updated main website
+74ab688 HEAD@{466}: rebase (start): checkout HEAD~2
+7503aba HEAD@{467}: commit: Update
+74ab688 HEAD@{468}: pull: Fast-forward
+49da29a HEAD@{469}: reset: moving to 49da29a69439fdb172df2dc5fcda740067e485ad
+9307289 HEAD@{470}: pull: Fast-forward
+49da29a HEAD@{471}: rebase (finish): returning to refs/heads/main
+49da29a HEAD@{472}: rebase (squash): 𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘪𝘭𝘪𝘵𝘺
+50222e5 HEAD@{473}: rebase (start): checkout HEAD~2
+c5a4423 HEAD@{474}: commit: C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̥̘̘̐ ̜̻͖͎͇͒͑̚ͅ M͍̮̰͈͖̑͜O̟̳ͨ͋͋͐T̫̫ͦ̌̒ͮH͛ͤͣ́Ȇ̩̾ͨ̾ͮȐ̥̤̑ͅ ‏‏
+50222e5 HEAD@{475}: pull: Fast-forward
+20ca96d HEAD@{476}: reset: moving to 20ca96da8711918c7f83de2e9b5c79dfc053d086
+32e5bc7 HEAD@{477}: pull: Fast-forward
+20ca96d HEAD@{478}: pull: Merge made by the 'recursive' strategy.
+a9a3ba1 HEAD@{479}: commit (amend): 𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦
+5a0e9a8 HEAD@{480}: commit: �ð𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦
+d0a1e38 HEAD@{481}: commit (amend): 𝘜𝘭𝘵𝘳𝘢𝘉𝘦𝘯𝘪𝘨𝘯 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
+3d7e389 HEAD@{482}: rebase (finish): returning to refs/heads/main
+3d7e389 HEAD@{483}: rebase (squash): 𝘜𝘭𝘵𝘳𝘢𝘉𝘦𝘯𝘪𝘨𝘯 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
+36841fd HEAD@{484}: rebase (start): checkout HEAD~2
+11bd27a HEAD@{485}: rebase (continue) (finish): returning to refs/heads/main
+11bd27a HEAD@{486}: commit: Fix
+36841fd HEAD@{487}: rebase (start): checkout HEAD~2
+0f01fda HEAD@{488}: commit (merge): Fix
+36841fd HEAD@{489}: commit (amend): 𝘜𝘭𝘵𝘳𝘢𝘉𝘦𝘯𝘪𝘨𝘯 𝘐𝘯𝘵𝘦𝘭𝘭𝘪𝘨𝘦𝘯𝘤𝘦
+5eee6a9 HEAD@{490}: rebase (finish): returning to refs/heads/main
+5eee6a9 HEAD@{491}: rebase (squash): 𝘌𝘹𝘵𝘦𝘯𝘴𝘪𝘰𝘯𝘢𝘭 𝘙𝘦𝘢𝘵𝘢𝘭𝘪𝘦𝘴
+b036bd2 HEAD@{492}: rebase (start): checkout HEAD~2
+87da08d HEAD@{493}: commit: Update
+b036bd2 HEAD@{494}: pull: Fast-forward
+a062d0b HEAD@{495}: pull: Merge made by the 'recursive' strategy.
+0a88921 HEAD@{496}: commit: Facebook Backup
+096df5d HEAD@{497}: commit: Update
+f33551d HEAD@{498}: commit: Added Cosmic Web Simulator
+8149ad8 HEAD@{499}: commit: Added Profile Roast
+6bd84c1 HEAD@{500}: commit: Added Flashcard App
+d06a5f3 HEAD@{501}: rebase (finish): returning to refs/heads/main
+d06a5f3 HEAD@{502}: rebase (squash): Added Overview
+d203f71 HEAD@{503}: rebase (start): checkout HEAD~2
+014fa1a HEAD@{504}: commit: Did something weird
+d203f71 HEAD@{505}: rebase (finish): returning to refs/heads/main
+d203f71 HEAD@{506}: rebase (squash): Added Overview
+35bff7a HEAD@{507}: rebase (start): checkout HEAD~2
+45d1b44 HEAD@{508}: commit: Added Overview
+35bff7a HEAD@{509}: rebase (finish): returning to refs/heads/main
+35bff7a HEAD@{510}: rebase (squash): Added Overview
+9ce7dfb HEAD@{511}: rebase (start): checkout HEAD~2
+aecea6c HEAD@{512}: commit: Added Overview
+9ce7dfb HEAD@{513}: rebase (finish): returning to refs/heads/main
+9ce7dfb HEAD@{514}: rebase (squash): Added Overview
+343be33 HEAD@{515}: rebase (start): checkout HEAD~2
+afc1ee4 HEAD@{516}: commit: Added Overview
+343be33 HEAD@{517}: rebase (finish): returning to refs/heads/main
+343be33 HEAD@{518}: rebase (squash): Added Overview
+4a5c015 HEAD@{519}: rebase (start): checkout HEAD~2
+32fc6e9 HEAD@{520}: commit: Added overview
+4a5c015 HEAD@{521}: commit (amend): Added Overview
+d2255f2 HEAD@{522}: rebase (finish): returning to refs/heads/main
+d2255f2 HEAD@{523}: rebase (squash): Added overview
+ebf44b8 HEAD@{524}: rebase (start): checkout HEAD~2
+c47d7ab HEAD@{525}: commit: Added overview
+ebf44b8 HEAD@{526}: commit: Added overview
+5f916c7 HEAD@{527}: commit: Added Chrobatos
+64bae43 HEAD@{528}: commit (amend): Corrected spelling error
+62e5689 HEAD@{529}: pull: Fast-forward
+25ec1a0 HEAD@{530}: rebase (finish): returning to refs/heads/main
+25ec1a0 HEAD@{531}: rebase (squash): Added stats
+cf73bd0 HEAD@{532}: rebase (squash): # This is a combination of 2 commits.
+10698b4 HEAD@{533}: rebase (start): checkout HEAD~3
+0fb7d69 HEAD@{534}: pull: Fast-forward
+10698b4 HEAD@{535}: rebase (finish): returning to refs/heads/main
+10698b4 HEAD@{536}: rebase (squash): Added stats
+c139869 HEAD@{537}: rebase (squash): # This is a combination of 2 commits.
+1cb0b1d HEAD@{538}: rebase (start): checkout HEAD~3
+6334f41 HEAD@{539}: pull: Fast-forward
+0c8237c HEAD@{540}: commit: Added Randomizer
+b6fcde7 HEAD@{541}: reset: moving to b6fcde779c17e788ee9d657dc6ecbd7a15528c84
+24a2672 HEAD@{542}: rebase (finish): returning to refs/heads/main
+24a2672 HEAD@{543}: rebase (squash): Added Online Shop
+5a86e49 HEAD@{544}: rebase (start): checkout HEAD~2
+c05a90f HEAD@{545}: commit: Update
+5a86e49 HEAD@{546}: pull: Fast-forward
+b6fcde7 HEAD@{547}: reset: moving to b6fcde779c17e788ee9d657dc6ecbd7a15528c84
+08d302b HEAD@{548}: rebase (finish): returning to refs/heads/main
+08d302b HEAD@{549}: rebase (squash): Project Umbilicus
+b4242a8 HEAD@{550}: rebase (squash): # This is a combination of 3 commits.
+9f4449a HEAD@{551}: rebase (squash): # This is a combination of 2 commits.
+9cd52f9 HEAD@{552}: rebase (start): checkout HEAD~4
+8460764 HEAD@{553}: pull: Fast-forward
+b6fcde7 HEAD@{554}: rebase (finish): returning to refs/heads/main
+b6fcde7 HEAD@{555}: rebase (squash): Holistic Understanding
+25298f0 HEAD@{556}: rebase (start): checkout HEAD~2
+b2c9af9 HEAD@{557}: commit: Attribution
+25298f0 HEAD@{558}: pull: Fast-forward
+6d239ed HEAD@{559}: reset: moving to 6d239ed473e96841e5ba5bb2d201d95b254ef5c9
+5d79539 HEAD@{560}: pull: Fast-forward
+6d239ed HEAD@{561}: commit: Added Typing Tutor
+d669809 HEAD@{562}: rebase (finish): returning to refs/heads/main
+d669809 HEAD@{563}: rebase (squash): Dactyl Clock
+b740fc5 HEAD@{564}: rebase (squash): # This is a combination of 2 commits.
+f0c1e4e HEAD@{565}: rebase (start): checkout HEAD~3
+8f7ac18 HEAD@{566}: commit: Update
+b92fc93 HEAD@{567}: pull: Fast-forward
+f0c1e4e HEAD@{568}: rebase (finish): returning to refs/heads/main
+f0c1e4e HEAD@{569}: rebase (squash): Dactyl Clock
+859fe03 HEAD@{570}: rebase (start): checkout HEAD~2
+2f647c6 HEAD@{571}: commit: Update
+859fe03 HEAD@{572}: rebase (finish): returning to refs/heads/main
+859fe03 HEAD@{573}: rebase (squash): Dactyl Clock
+5392954 HEAD@{574}: rebase (start): checkout HEAD~2
+8907c8e HEAD@{575}: commit: Update
+5392954 HEAD@{576}: rebase (finish): returning to refs/heads/main
+5392954 HEAD@{577}: rebase (squash): Dactyl Clock
+9a721f5 HEAD@{578}: rebase (start): checkout HEAD~2
+458dc45 HEAD@{579}: commit: Added Link
+9a721f5 HEAD@{580}: commit: Dactyl Clock
+3c9bb85 HEAD@{581}: commit: Galactic Translator App
+ed11cff HEAD@{582}: pull: Fast-forward
+2c11de2 HEAD@{583}: commit (amend): Programming in SGA
+c8ca10a HEAD@{584}: pull: Fast-forward
+6f8cd7c HEAD@{585}: commit: Update
+657ce85 HEAD@{586}: commit: Update
+7e03f92 HEAD@{587}: pull: Fast-forward
+2a30294 HEAD@{588}: rebase (finish): returning to refs/heads/main
+2a30294 HEAD@{589}: rebase (squash): Vectorspace Explorer
+9a75ebf HEAD@{590}: rebase (start): checkout HEAD~2
+b641332 HEAD@{591}: pull: Fast-forward
+9a75ebf HEAD@{592}: rebase (finish): returning to refs/heads/main
+9a75ebf HEAD@{593}: rebase (squash): Vectorspace Explorer
+cd07fe2 HEAD@{594}: rebase (start): checkout HEAD~2
+fb55ad8 HEAD@{595}: commit: Scale Back
+cd07fe2 HEAD@{596}: rebase (finish): returning to refs/heads/main
+cd07fe2 HEAD@{597}: rebase (squash): Vectorspace Explorer
+6422366 HEAD@{598}: rebase (start): checkout HEAD~2
+021b6cf HEAD@{599}: commit: Scale Back
+6422366 HEAD@{600}: rebase (finish): returning to refs/heads/main
+6422366 HEAD@{601}: rebase (squash): Vectorspace Explorer
+863e648 HEAD@{602}: rebase (start): checkout HEAD~2
+165aa62 HEAD@{603}: commit: Header
+863e648 HEAD@{604}: rebase (finish): returning to refs/heads/main
+863e648 HEAD@{605}: rebase (squash): Vectorspace Explorer
+898a2b1 HEAD@{606}: rebase (start): checkout HEAD~2
+59ba55d HEAD@{607}: commit: Header
+898a2b1 HEAD@{608}: commit: Header
+04f4917 HEAD@{609}: pull: Fast-forward
+6953b53 HEAD@{610}: rebase (finish): returning to refs/heads/main
+6953b53 HEAD@{611}: rebase (squash): Glitch Art
+3f595de HEAD@{612}: rebase (squash): # This is a combination of 5 commits.
+7929fb0 HEAD@{613}: rebase (squash): # This is a combination of 4 commits.
+a766284 HEAD@{614}: rebase (squash): # This is a combination of 3 commits.
+77622fd HEAD@{615}: rebase (squash): # This is a combination of 2 commits.
+ff1dd56 HEAD@{616}: rebase (start): checkout HEAD~6
+8e744ed HEAD@{617}: commit: Glitch Art
+b69b71b HEAD@{618}: commit: Glitch Art
+37e5400 HEAD@{619}: commit: Glitch Art
+cd63994 HEAD@{620}: commit: Glitch Art
+3e4e0ee HEAD@{621}: commit: Glitch Art
+ff1dd56 HEAD@{622}: commit: Glitch Art
+5297b14 HEAD@{623}: clone: from https://github.com/standardgalactic/standardgalactic

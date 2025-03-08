@@ -8,6 +8,7 @@
 <!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)** -->
 
 𒋛𒈠 𒃻 𒅗 𒁹
+
 <!--
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
 
@@ -17,11 +18,14 @@
 -->
 [Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/github-profile-large-print.png) *Beta*
 
-**Try the [Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
+**Try the [Terminal Simulator](https://standardgalactic.github.io/terminal-simulator)**
+
+**[Galactic Translator](https://standardgalactic.github.io/sga-converter.html)**
 
 **And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)**
 
 # Milestone — **5k Subscribers**
+[![committers.top badge](https://user-badge.committers.top/canada/standardgalactic.svg)](https://user-badge.committers.top/canada/standardgalactic)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
