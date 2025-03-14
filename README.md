@@ -231,6 +231,17 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
 </a>
 <br>
 
+<!-- break in case of fire 
+
+# Crowdsourcing
+
+I could use some help upscaling these old photos. The free tools online all suck.
+
+![](childhood-01.jpeg)
+![](childhood-02.jpeg)
+![](childhood-03.jpeg)
+-->
+
 <!--[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
 
 **My Timeline**
