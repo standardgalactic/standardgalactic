@@ -38,8 +38,9 @@ Typeface Experiments:
 [Sliders Prototype v2](https://standardgalactic.github.io/sliders-prototype-v2.html)
 
 [Sliders](https://standardgalactic.github.io/sliders.html)
-
+<!--
 [Portal](https://standardgalactic.github.io/portal.html)
+-->
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
