@@ -45,8 +45,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
-<!-- from Centerfuge -->
-![](deep-dive.gif)
+<!-- from Centerfuge 
+![](deep-dive.gif)-->
 
 ## Interactive Fiction
 
