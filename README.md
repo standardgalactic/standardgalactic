@@ -31,7 +31,8 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
-Typeface Experiments:
+---
+## Typeface Experiments:
 
 [Sliders Prototype](https://standardgalactic.github.io/sliders-prototype.html)
 
@@ -44,7 +45,8 @@ Typeface Experiments:
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
----
+<!-- from Centerfuge -->
+![](deep-dive.gif)
 
 ## Interactive Fiction
 
