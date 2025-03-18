@@ -68,11 +68,12 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 ## Anti-Art
 
-[My Facebook Blocklist](https://standardgalactic.github.io/pastebin)
-
-<!-- making private. too negative??
 [Sexism on Facebook](https://github.com/standardgalactic/sexism)
+
+<!--
+[My Facebook Blocklist](https://standardgalactic.github.io/pastebin)
 -->
+
 ## Psychonomics
 
 *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)* — Hypothesis-based perception
