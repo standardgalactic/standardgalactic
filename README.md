@@ -252,6 +252,14 @@ https://www.kreativekorp.com/ucsur/charts/sga.html
   <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="200">
 </a>
 <br>
+<br>
+
+[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt) — Text descriptions with Clip Interrogator
+
+## My AutoHotkey Shortcuts
+
+[PrintScreen](https://raw.githubusercontent.com/standardgalactic/example/refs/heads/main/PrintScreen.ahk)
+<!-- [Download](http://standardgalactic.github.io/example/PrintScreen.ahk) -->
 
 <!-- break in case of fire 
 
@@ -323,8 +331,6 @@ I could use some help upscaling these old photos. The free tools online all suck
 <br>
 
 -->
-[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt) — Text descriptions with Clip Interrogator
-<br>
 
 ## **Impossible Physics**
 
