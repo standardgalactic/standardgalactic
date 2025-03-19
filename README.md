@@ -87,6 +87,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 ## Music
 
+[Genius, Prodigy, and Talent](https://standardgalactic.github.io/alphabet/debunking-gpt.html)
+
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
 
 [Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
