@@ -66,6 +66,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
 
+## My Timeline
+
+[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
+
 ## Anti-Art
 
 [Sexism on Facebook](https://github.com/standardgalactic/sexism)
@@ -272,9 +276,7 @@ I could use some help upscaling these old photos. The free tools online all suck
 ![](childhood-03.jpeg)
 -->
 
-<!--[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
-
-**My Timeline**
+<!--
 
 [Portfolio](https://standardgalactic.github.io/portfolio.html)
 
