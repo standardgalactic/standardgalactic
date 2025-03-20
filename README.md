@@ -102,10 +102,12 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [](https://suno.com/@flyxion) -->
 ## <big>Paradigm Shift — ʇɟıɥS ɯɓıpɐɹɐԀ</big> <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"></a>
-<!--
-- This might be completely useless to anyone but me but I started a little *[Scholar's Bay
-](https://acbb-159-2-201-107.ngrok-free.app/)* server running on my computer with some old audiobooks and pdfs. It's running on a server on my computer so *please don't hack me.*
--->
+
+Liberate your audio. A little experimental *[Scholar's Bay
+](https://4632-156-34-188-210.ngrok-free.app/)* server with some old audiobooks and pdfs. It's running on my computer, so it will be off periodically. *Please don't hack me.*
+
+![](shout-out.png)
+
 
 [Ecphoric Overview](https://standardgalactic.github.io/unscannable-interfaces/ecphoric-overview.txt)
 
