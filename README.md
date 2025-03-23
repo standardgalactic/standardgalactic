@@ -32,6 +32,14 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
 ---
+## Work in Progress
+
+**Machine Learning**
+
+Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
+
+[Project Page](https://standardgalactic.github.io/keyboard)
+
 ## Typeface Experiments:
 
 [Sliders Prototype](https://standardgalactic.github.io/sliders-prototype.html)
