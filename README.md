@@ -74,11 +74,18 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 [𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
 
+## <big>Earth Cube Translator</big>
+<div>
+  <a href="https://standardgalactic.github.io/earth-cube.html">
+    <img src="earth-cube.png" alt="Earth Cube" width="220">
+  </a>
+</div>
+
+<!--
 ## My Timeline
 
 [Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
 
-<!--
 ## Anti-Art
 
 [Sexism on Facebook](https://github.com/standardgalactic/sexism)
