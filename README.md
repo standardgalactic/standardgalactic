@@ -411,21 +411,38 @@ I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
 
+![](contributions.png)
+
+<!--
 
 # Support my work
 
 [Merch Store](https://www.redbubble.com/en/shop/ap/168845493) — 𝘜𝘯𝘥𝘦𝘳 𝘊𝘰𝘯𝘴𝘵𝘳𝘶𝘤𝘵𝘪𝘰𝘯
 
-
+-->
+<!--
  <a href="mailto:nateguimondart@gmail.com?subject=Feedback%20on%
  20Glitched%20Monitor">
    <img src="glitched_monitor.gif" alt="Glitched Monitor" style="width:
    250px;"/>
    </a>
 
-<!-- [Submit Anonymous Feedback](https://standardgalactic.github.io/cogniscium) 
+;; note ;;
 
-[Merch Store](https://www.redbubble.com/en/people/flyxion/shop)-->
+I have like 120,000 unanswered emails. And I am like 80% out of space so if you want to send me large attachments, maybe try nateguimond@gmail.com . I hardly ever check my emails, so maybe if it's really important try to find me on messenger.
+
+If you have a job for me or it's something really important you can just call me at 1 506 343-7493. I signed up for pen pals on some website in Africa and so occasional I am getting random calls for no reason except to chat, which is nice, for a change. By the way they asked a lot of weirdly personal questions.
+
+https://apenpals.com/users/Bakaryman55
+
+https://apenpals.com/friends/gambia/basse_santa_su?view=gallery
+
+;; 
+
+[Submit Anonymous Feedback](https://standardgalactic.github.io/cogniscium) 
+
+[Merch Store](https://www.redbubble.com/en/people/flyxion/shop)
+-->
 
 
 ![](featured.png)
