@@ -411,9 +411,12 @@ I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
 
+Interactive Mindmap
+
+[Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
+<!--
 ![](contributions.png)
 
-<!--
 
 # Support my work
 
