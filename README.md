@@ -35,6 +35,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Infomorphic Codex](https://github.com/standardgalactic/kitbash)
 
+[Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
+
 ## Machine Learning
 
 Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
@@ -51,8 +53,6 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 [Sliders](https://standardgalactic.github.io/sliders.html)
 [Portal](https://standardgalactic.github.io/portal.html)
 -->
-
-[Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
 <!-- from Centerfuge 
 ![](deep-dive.gif)-->
