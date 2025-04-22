@@ -33,7 +33,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 ## Aspect Relegation Theory
 
-[Infomorphic Codex](https://github.com/standardgalactic/kitbash)
+[Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash)
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
