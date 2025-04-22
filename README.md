@@ -36,7 +36,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 **Aspect Relegation Theory**
 
-[ᓵᒍꖎ↸ ᓭ¡!╎∷╎ᒣ ╎ᒲᕊ⚍ᒷ](https://github.com/standardgalactic/kitbash)
+[Infomorphic Codex](https://github.com/standardgalactic/kitbash)
 
 **Machine Learning**
 
