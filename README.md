@@ -31,14 +31,11 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
----
-## Work in Progress
-
-**Aspect Relegation Theory**
+## Aspect Relegation Theory
 
 [Infomorphic Codex](https://github.com/standardgalactic/kitbash)
 
-**Machine Learning**
+## Machine Learning
 
 Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
 
