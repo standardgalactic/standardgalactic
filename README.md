@@ -34,12 +34,17 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 ---
 ## Work in Progress
 
+**Aspect Relegation Theory**
+
+[ᓵᒍꖎ↸ ᓭ¡!╎∷╎ᒣ ╎ᒲᕊ⚍ᒷ](https://github.com/standardgalactic/kitbash)
+
 **Machine Learning**
 
 Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
 
 [Project Page](https://standardgalactic.github.io/keyboard)
 
+<!--
 ## Typeface Experiments:
 
 [Sliders Prototype](https://standardgalactic.github.io/sliders-prototype.html)
@@ -47,7 +52,6 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 [Sliders Prototype v2](https://standardgalactic.github.io/sliders-prototype-v2.html)
 
 [Sliders](https://standardgalactic.github.io/sliders.html)
-<!--
 [Portal](https://standardgalactic.github.io/portal.html)
 -->
 
