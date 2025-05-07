@@ -15,8 +15,11 @@
 [Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/year-in-review-2025-chrome.png) *Beta*
 
 [Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/profile-snapshot.png) *Beta*
--->
+
 [Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/github-profile-large-print.png) *Beta*
+-->
+
+[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/banner.png) *Beta*
 
 Try the [Cistercian Number Translator](https://standardgalactic.github.io/cistercian.html). For further information, see [wikipedia](https://en.wikipedia.org/wiki/Cistercian_numerals)
  
@@ -422,7 +425,22 @@ I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
 Interactive Mindmap
 
 [Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
+
+Sorry, I don't check my email unless it's for something immediately pressing, so if you really need to get ahold of me, send correspondence (and any free stuff you want me to have) to:
+
+```
+Cogito Ergo Sum
+26 Sheryl Drive
+Rothesay, NB, Canada
+E2S 1A7
+```
 <!--
+P h o n e  N u m b e r:
+1 506 343-7493 
+
+E m a i l:
+nateguimondart@gmail.com
+
 ![](contributions.png)
 
 
