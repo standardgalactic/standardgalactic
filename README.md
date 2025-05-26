@@ -38,6 +38,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Photo Viewer](https://standardgalactic.github.io/archive)
 
+[Year in Review](https://standardgalactic.github.io/ansible.html) (My Unpublished Facebook Posts - 2025)
+
+
 ## Aspect Relegation Theory
 
 [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash)
