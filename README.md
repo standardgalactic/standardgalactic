@@ -423,9 +423,11 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 
 [Contributions](https://en.wikipedia.org/wiki/Special:Contributions/Mechachleopteryx)
 
-I am following 150,000 pages on Wikipedia (If I go over, I remove some.)
+I am following 200,000 pages on Wikipedia
 
-[My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/IFM/Wikipedia-watchlist.txt)
+<!-- Level 2 Unlocked - Wikipedia watchlist limit removed-->
+
+[My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/Wikipedia-watchlist.txt)
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
 
