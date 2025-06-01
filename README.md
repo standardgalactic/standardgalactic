@@ -366,7 +366,7 @@ I could use some help upscaling these old photos. The free tools online all suck
 
 ## **Impossible Physics**
 
-[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session.html)
+[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
 
 **Geometric Bayesianism with Sparse Heuristics**
 
