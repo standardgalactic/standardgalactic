@@ -366,6 +366,8 @@ I could use some help upscaling these old photos. The free tools online all suck
 
 ## **Impossible Physics**
 
+[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session.html)
+
 **Geometric Bayesianism with Sparse Heuristics**
 
 In biological systems, sparsity emerges as a natural consequence of physiological pressures, including energetic constraints, signal noise, and chemical gradients, obviating the need for explicit computational penalties to enforce minimal network complexity.
