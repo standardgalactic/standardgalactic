@@ -43,7 +43,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 ## Aspect Relegation Theory
 
-[Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash)
+<!-- [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash) -->
+[Mind Uploading Experiments](https://standardgalactic.github.io/kitbash/mind-uploading.html)
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
