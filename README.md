@@ -48,6 +48,13 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
+## <big>Relativistic Scalar Vector Plenum (RSVP) Framework</big>
+<div>
+  <a href="https://standardgalactic.github.io/spherepop/projects-overview.html">
+    <img src="antivenom-clone.png" alt="Antivenom Clone" width="600">
+  </a>
+</div>
+
 ## Machine Learning
 
 Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
@@ -89,7 +96,7 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 ## <big>Earth Cube Translator</big>
 <div>
   <a href="https://standardgalactic.github.io/earth-cube.html">
-    <img src="earth-cube.png" alt="Earth Cube" width="220">
+    <img src="earth-cube.png" alt="Earth Cube" width="350">
   </a>
 </div>
 
@@ -283,13 +290,15 @@ Here are some ideas to get you started:
 
 https://www.kreativekorp.com/ucsur/charts/sga.html
 ![](the-only-winning-move.gif) -->
-<a href="https://www.youtube.com/live/0GVvy5s-bXw">
-  <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="200">
+<a href="https://www.patreon.com/Flyxion">
+  <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="300>
 </a>
 <br>
 <br>
 
-[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt) — Text descriptions with Clip Interrogator
+[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt)
+
+Text descriptions with Clip Interrogator
 
 ## My AutoHotkey Shortcuts
 
