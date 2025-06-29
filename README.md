@@ -120,8 +120,11 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 ## Music
 
-[Genius, Prodigy, and Talent](https://standardgalactic.github.io/alphabet/debunking-gpt.html)
+[Grey Areas](https://standardgalactic.github.io/kitbash/grey-areas.html)
 
+<!--
+[Genius, Prodigy, and Talent](https://standardgalactic.github.io/alphabet/debunking-gpt.html)
+-->
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
 
 [Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
@@ -143,7 +146,7 @@ Liberate your audio. A little experimental *[Scholar's Bay
 -->
 ![](shout-out.png)
 
-[Ecphoric Overview](https://standardgalactic.github.io/unscannable-interfaces/ecphoric-overview.txt)
+[Ecphoric Overview](https://standardgalactic.github.io/random-thoughts/ecphoric-overview.txt)
 
 Try my new cryptographic fonts, [Clypto, Cheiro,](https://standardgalactic.github.io/ensign) and [Logico-Philosophicus](https://standardgalactic.github.io/alphabet/cipher.html)
 
