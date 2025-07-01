@@ -294,8 +294,9 @@ Here are some ideas to get you started:
 https://www.kreativekorp.com/ucsur/charts/sga.html
 ![](the-only-winning-move.gif) -->
 <a href="https://www.patreon.com/Flyxion">
-  <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="300>
+  <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="300">
 </a>
+
 <br>
 <br>
 
