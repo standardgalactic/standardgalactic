@@ -48,7 +48,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Retrocausal Projects](https://suno.com/s/FmlpCJOqfGR0DYHA)
 
-Original [HERE.] (https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
+Original [HERE.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 [Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
 
