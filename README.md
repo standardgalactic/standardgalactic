@@ -44,7 +44,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 ## Retrocausal Projects
 
-** LEAKED - Cover by Tyson Ardo ** <!-- Freaky Speaky style -->
+**LEAKED - Cover by Tyson Ardo** <!-- Freaky Speaky style -->
 
 [Retrocausality... ](https://suno.com/s/FmlpCJOqfGR0DYHA)
 
