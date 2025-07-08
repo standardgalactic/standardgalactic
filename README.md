@@ -40,6 +40,18 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Year in Review](https://standardgalactic.github.io/ansible.html) (My Unpublished Facebook Posts - 2025)
 
+# **10k Subscribers**
+
+## Retrocausal Projects
+
+** LEAKED - Cover by Tyson Ardo ** <!-- Freaky Speaky style -->
+
+[Retrocausal Projects](https://suno.com/s/FmlpCJOqfGR0DYHA)
+
+Original [HERE.] (https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
+
+[Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
+
 
 ## Aspect Relegation Theory
 
