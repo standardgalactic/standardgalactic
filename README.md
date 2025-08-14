@@ -167,9 +167,9 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 ## Interactive Fiction
 
-[Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
+[Timeslip](https://standardgalactic.github.io/timeslip)
 
-[Memeplex: A Call from Ankyra](https://standardgalactic.github.io/memeplex.html)
+[Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
 
 [Grabby Aliens Attack!](https://github.com/search?q=Owner%3Astandardgalactic+%22Grabby+aliens%22&type=code&p=1) 
 
