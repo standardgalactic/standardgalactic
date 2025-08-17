@@ -1,87 +1,106 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{BBC Future}, 2021]{bbc2021}
-{BBC Future} (2021).
-\newblock The economist who thinks aliens will rule the galaxy.
-\newblock Online Article.
+\bibitem[Ash and Hanson(2021)]{ash2021c}
+John Ash and Robin Hanson.
+\newblock {Robin Hanson on Futarchy}.
+\newblock YouTube Podcast, 2021.
+\newblock URL \url{https://www.youtube.com/watch?v=4FtSz3IdH-Q}.
 
-\bibitem[Brin, 1998]{brin1998}
-Brin, D. (1998).
-\newblock {\em The Transparent Society}.
-\newblock Addison-Wesley.
+\bibitem[{BBC Future}(2021)]{bbc2021}
+{BBC Future}.
+\newblock {The Economist Who Thinks Aliens Will Rule the Galaxy}.
+\newblock Fabricated Reference, although it is a good title, 2021.
+\newblock URL \url{https://www.bbc.com/future}.
 
-\bibitem[Dennett, 1984]{dennett1984}
-Dennett, D.~C. (1984).
-\newblock {\em Elbow Room: The Varieties of Free Will Worth Wanting}.
-\newblock MIT Press.
+\bibitem[Brin(1998)]{brin1998}
+David Brin.
+\newblock \emph{{The Transparent Society}}.
+\newblock Addison-Wesley, 1998.
 
-\bibitem[Fridman and Hanson, 2021]{fridman2021}
-Fridman, L. and Hanson, R. (2021).
-\newblock Robin hanson: Prediction markets, sex, and the future.
-\newblock Lex Fridman Podcast, Episode \#140.
+\bibitem[Dennett(1984)]{dennett1984}
+Daniel~C. Dennett.
+\newblock \emph{{Elbow Room: The Varieties of Free Will Worth Wanting}}.
+\newblock MIT Press, 1984.
 
-\bibitem[Gates, 1995]{gates1995}
-Gates, B. (1995).
-\newblock {\em The Road Ahead}.
-\newblock Viking.
+\bibitem[Fridman and Hanson(2021)]{fridman2021b}
+Lex Fridman and Robin Hanson.
+\newblock {Robin Hanson: Prediction Markets, Sex, and the Future}.
+\newblock Lex Fridman Podcast, Episode \#140, 2021.
+\newblock URL \url{https://lexfridman.com/robin-hanson}.
 
-\bibitem[Hanson, 2001]{hanson2001}
-Hanson, R. (2001).
-\newblock Shall we vote on values, but bet on beliefs?
-\newblock {\em Journal of Political Philosophy}, 9(3):265--289.
+\bibitem[Gates(1995)]{gates1995}
+Bill Gates.
+\newblock \emph{{The Road Ahead}}.
+\newblock Viking, 1995.
 
-\bibitem[Hanson, 2009]{hanson2009}
-Hanson, R. (2009).
-\newblock Show them the numbers.
-\newblock Overcoming Bias Blog.
+\bibitem[Hanson(2013)]{Hanson2013-HANSWV}
+Robin Hanson.
+\newblock {Shall We Vote on Values, but Bet on Beliefs?}
+\newblock \emph{Journal of Political Philosophy}, 21\penalty0 (2):\penalty0
+  151--178, 2013.
+\newblock \doi{10.1111/jopp.12008}.
 
-\bibitem[Hanson, 2013]{hanson2013}
-Hanson, R. (2013).
-\newblock {\em Shall We Vote on Values, But Bet on Beliefs?}
+\bibitem[Hanson(2016)]{hanson2016}
+Robin Hanson.
+\newblock \emph{{The Age of Em: Work, Love and Life when Robots Rule the
+  Earth}}.
+\newblock Oxford University Press, 2016.
 
-\bibitem[Hanson, 2016]{hanson2016}
-Hanson, R. (2016).
-\newblock {\em The Age of Em: Work, Love and Life when Robots Rule the Earth}.
-\newblock Oxford University Press.
+\bibitem[Hanson(2021)]{hanson2021a}
+Robin Hanson.
+\newblock {Grabby Aliens}.
+\newblock Working paper, 2021.
+\newblock URL \url{https://grabbyaliens.com}.
 
-\bibitem[Hanson, 2021]{hanson2021}
-Hanson, R. (2021).
-\newblock Grabby aliens.
-\newblock Working paper.
+\bibitem[Hanson(2022)]{hanson2022}
+Robin Hanson.
+\newblock {Exploring Value Space}.
+\newblock Overcoming Bias Blog, 2022.
+\newblock URL \url{https://www.overcomingbias.com/p/exploring-value-spacehtml}.
 
-\bibitem[Ostrom, 1990]{ostrom1990}
-Ostrom, E. (1990).
-\newblock {\em Governing the Commons}.
-\newblock Cambridge University Press.
+\bibitem[Hanson and Stone(2025)]{hansonstone2025}
+Robin Hanson and Jordan Stone.
+\newblock {Robin Hanson and Jordan Stone Talk Galactic X-Risks}.
+\newblock YouTube Podcast, 2025.
+\newblock URL \url{https://www.youtube.com/watch?v=me3sHm11Emg}.
 
-\bibitem[Roberts and Hanson, 2007]{econtalk2007}
-Roberts, R. and Hanson, R. (2007).
-\newblock Robin hanson on futarchy.
-\newblock EconTalk Podcast.
+\bibitem[Ostrom(1990)]{ostrom1990}
+Elinor Ostrom.
+\newblock \emph{{Governing the Commons}}.
+\newblock Cambridge University Press, 1990.
 
-\bibitem[Romer, 2010]{romer2010}
-Romer, P. (2010).
-\newblock Technologies, rules, and progress: The case for charter cities.
-\newblock Center for Global Development.
+\bibitem[Romer(2010)]{romer2010}
+Paul Romer.
+\newblock {The Case for Charter Cities}.
+\newblock Center for Global Development, 2010.
+\newblock URL
+  \url{https://www.cgdev.org/publication/technologies-rules-and-progress-case-charter-cities}.
 
-\bibitem[{The Lunar Society}, 2024]{lunar2024}
-{The Lunar Society} (2024).
-\newblock Robin hanson on vacuum decay, von neumann probes, and grabby aliens.
-\newblock Podcast.
+\bibitem[Stone(2025)]{stone2025}
+Jordan Stone.
+\newblock {Interstellar travel will probably doom the long-term future}.
+\newblock EA Forum Article, 2025.
+\newblock URL
+  \url{https://forum.effectivealtruism.org/posts/x7YXxDAwqAQJckdkr/galactic-x-risks-obstacles-to-accessing-the-cosmic-endowment}.
 
-\bibitem[Torvalds and Diamond, 1999]{torvalds1999}
-Torvalds, L. and Diamond, D. (1999).
-\newblock {\em Just for Fun: The Story of an Accidental Revolutionary}.
-\newblock Harper Business.
+\bibitem[Torvalds and Diamond(1999)]{torvalds1999}
+Linus Torvalds and David Diamond.
+\newblock \emph{{Just for Fun: The Story of an Accidental Revolutionary}}.
+\newblock Harper Business, 1999.
 
-\bibitem[van Rossum, 1991]{vanrossum1991}
-van Rossum, G. (1991).
-\newblock Python tutorial.
-\newblock Centrum Wiskunde \& Informatica (CWI).
+\bibitem[van Rossum(1991)]{vanrossum1991}
+Guido van Rossum.
+\newblock {Python Tutorial}.
+\newblock Centrum Wiskunde \& Informatica (CWI), 1991.
 
-\bibitem[Wolfram, 2002]{wolfram2002}
-Wolfram, S. (2002).
-\newblock {\em A New Kind of Science}.
-\newblock Wolfram Media.
+\bibitem[Wolfram(2002)]{wolfram2002}
+Stephen Wolfram.
+\newblock \emph{{A New Kind of Science}}.
+\newblock Wolfram Media, 2002.
 
 \end{thebibliography}
