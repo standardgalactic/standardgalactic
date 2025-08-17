@@ -181,6 +181,8 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 -->
 ## Generative Art
 
+[Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
+
 [𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
 
 ## <big>Earth Cube Translator</big>

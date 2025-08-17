@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: macro-economics.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Warning--empty publisher in hanson2013
+You've used 17 entries,
+            1935 wiz_defined-function locations,
+            551 strings with 5112 characters,
+and the built_in function-call counts, 4679 in all, are:
+= -- 456
+> -- 137
+< -- 17
++ -- 50
+- -- 40
+* -- 308
+:= -- 885
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 97
+chr.to.int$ -- 17
+cite$ -- 18
+duplicate$ -- 206
+empty$ -- 335
+format.name$ -- 63
+if$ -- 886
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 17
+newline$ -- 87
+num.names$ -- 51
+pop$ -- 95
+preamble$ -- 1
+purify$ -- 105
+quote$ -- 0
+skip$ -- 164
+stack$ -- 0
+substring$ -- 239
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 86
+warning$ -- 1
+while$ -- 36
+width$ -- 0
+write$ -- 205
+(There was 1 warning)
