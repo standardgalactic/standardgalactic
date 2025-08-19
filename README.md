@@ -205,6 +205,8 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 -->
 ## Psychonomics
 
+*[The Limits of Logic](https://github.com/standardgalactic/kitbash/tree/main/research)*
+
 *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)* — Hypothesis-based perception
 
 
