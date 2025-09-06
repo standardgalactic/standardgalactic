@@ -197,11 +197,6 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 [Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
 
-## Anti-Art
-
-[Sexism on Facebook](https://github.com/standardgalactic/sexism)
-
-[My Facebook Blocklist](https://standardgalactic.github.io/pastebin)
 -->
 ## Psychonomics
 
@@ -297,6 +292,12 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 ![](dactyl.gif)
 
+<div style="text-align: left;">
+    <a href="https://standardgalactic.github.io/gamma-waves/idea-map.html">
+        <img src="project-map.png" alt="Idea Map" width="320">
+    </a>
+</div>
+
 ![](dactyl-clock.gif)  <br>
 [Digital Analog Clock](https://standardgalactic.github.io/dactyl-clock.html)
 
@@ -335,17 +336,6 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 * [Eigenvector](https://anvaka.github.io/pm/#/galaxy/word2vec-wiki?cx=65&cy=-10857&cz=531&lx=-0.3774&ly=0.6382&lz=0.2727&lw=0.6131&ml=300&s=1.75&l=1&v=d50_clean)
 
 **standardgalactic/standardgalactic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 
 ![netscape](Emommit.jpg)
 -->
@@ -386,10 +376,14 @@ Here are some ideas to get you started:
 | EB59     | Z      |          |
 
 https://www.kreativekorp.com/ucsur/charts/sga.html
-![](the-only-winning-move.gif) -->
+
 <a href="https://www.patreon.com/Flyxion">
-  <img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="300">
+
+<img src="the-only-winning-move.gif" alt="Haplopraxis - Game in Progress" width="300">
 </a>
+-->
+
+![](the-only-winning-move.gif)
 
 <br>
 <br>
@@ -488,16 +482,15 @@ This Natural Sparsity Principle underpins the efficiency of biological cognition
 
 <img src="rate-my-setup.png" width="350">
 
+<!--
 I'm looking for patents, open source projects, and articles for assistance in reverse engineering the defunct Swype (trace) based keyboard and predictive text. As well as descriptions of the technology, particularly the vector simularity between the traces and the word list, how it might be stored on an android phone and so on.
+-->
 
 [Reverse Engineering Swype](https://www.perplexity.ai/search/i-m-looking-for-patents-open-s-c5OCTDU3SDauid2nthyLOQ)
 
 <img src="swype-grid.png" width="350">
 
 Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
-
-And [Color Radio](https://standardgalactic.github.io/example/Cryptomnesia.txt) ← 𝘔𝘰𝘥𝘶𝘴 𝘖𝘱𝘦𝘳𝘢𝘯𝘥𝘪
-<!--And [Color Radio](https://standardgalactic.github.io/colo-radio.html) -->
 
 Learn [Assembly Theory](https://standardgalactic.github.io/alphabet/Assembly-Theory.txt) 
 
