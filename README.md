@@ -36,11 +36,11 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 # **8k Subscribers**
 
-[Photo Viewer](https://standardgalactic.github.io/archive)
-
 [Year in Review](https://standardgalactic.github.io/ansible.html) (My Unpublished Facebook Posts - 2025)
 
 # **10k Subscribers**
+
+[Old Art Archive](https://standardgalactic.github.io/archive)
 
 ## Retrocausal Projects
 
@@ -48,9 +48,7 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
-
 [Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
-
 
 ## Aspect Relegation Theory
 
@@ -173,12 +171,7 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 [Grabby Aliens Attack!](https://github.com/search?q=Owner%3Astandardgalactic+%22Grabby+aliens%22&type=code&p=1) 
 
-<!--
-# **Updates:**
-[Gameified Altruism](https://standardgalactic.github.io/experiments)
 
-[Haplopraxis](https://www.youtube.com/live/0GVvy5s-bXw)
--->
 ## Generative Art
 
 [Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
