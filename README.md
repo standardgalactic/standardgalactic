@@ -52,7 +52,7 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 ## Mechanistic Frameworks
 
-[Yarncrawler in Action (pdf)](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf) 
+[Yarncrawler in Action](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf) (pdf)
 
 [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
 
