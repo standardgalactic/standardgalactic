@@ -50,6 +50,12 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 [Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
 
+## Mechanistic Frameworks
+
+[Yarncrawler in Action (pdf)](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf) 
+
+[Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
+
 ## Aspect Relegation Theory
 
 <!-- [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash) -->
@@ -65,11 +71,11 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
   </a>
 </div>
 
+<!--
 ## Testing GPT Open-Source System (gpt-oss) 
 
 [AI Existential Risk Debate](https://standardgalactic.github.io/kitbash/analysis-summary.html) 
 
-<!--
 Thinking… User is providing a passage from an article “I, for one, welcome our robot overlords” by Michael Huemer. They want a summary and explanation. They gave a large excerpt. They want a summary in detail and explain something? The last line: “Summarize in detail and explain:” probably truncated. The instruction likely: “Summarize in detail and explain” what? Possibly explain the article or the argument? The user didn’t specify exactly what to explain. Likely they want a summary and explanation of the argument: the AI existential risk debate, especially the arguments presented by Huemer about AI risk, the alignment problem, etc. Provide a detailed summary and explanation of the content. Also could include the references, context. Let’s produce a detailed summary, explaining Huemer’s stance, the premises, his critique of alarmists, the alignment problem, potential misuses, and his suggestions. Also explain the references: Hawking, Musk, Yudkowsky, Bostrom. We’ll explain alignment problem, example of paperclip maximizer, etc.
 
 We should produce a thorough summary, highlight key points, discuss the debate context. Also explain what the article argues for, its structure: introduction, case for alarm, four premises: near-future superintelligence, alignment problem, etc. Then mention Huemer’s plan to shift focus. Also mention the references.
