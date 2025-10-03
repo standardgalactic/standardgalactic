@@ -60,7 +60,7 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 ## Just for Fun
 
-[The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/decelerationism.pdf)
+[The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
 ## Aspect Relegation Theory
 
