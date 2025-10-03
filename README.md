@@ -52,11 +52,15 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 ## Mechanistic Frameworks
 
-[Yarncrawler in Action](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf) (pdf)
+[Yarncrawler in Action](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf)
 
 [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
 
 [Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
+
+## Just for Fun
+
+[The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/decelerationism.pdf)
 
 ## Aspect Relegation Theory
 
