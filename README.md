@@ -56,6 +56,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
 
+[Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
+
 ## Aspect Relegation Theory
 
 <!-- [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash) -->
