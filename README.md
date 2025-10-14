@@ -62,6 +62,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
+[Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
+
 ## Aspect Relegation Theory
 
 <!-- [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash) -->
