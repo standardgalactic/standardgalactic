@@ -38,13 +38,18 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Old Art Archive](https://standardgalactic.github.io/archive)
 
+# Parody Music
+
+[Better Than Human](https://standardgalactic.github.io/audio-player.html) 
+<!--
 ## Retrocausal Projects
 
-**LEAKED - Cover by Tyson Ardo** <!-- Freaky Speaky style --> [Retrocausality... ](https://suno.com/s/FmlpCJOqfGR0DYHA)
+**LEAKED - Cover by Tyson Ardo** <!-- Freaky Speaky style  [Retrocausality... ](https://suno.com/s/FmlpCJOqfGR0DYHA)
 
-Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style -->
+Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style 
 
 [Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
+-->
 
 ## Mechanistic Frameworks
 
@@ -210,14 +215,14 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 
 *[Vectorial Code](https://standardgalactic.github.io/random-thoughts/vectorial-code-overview.txt)*
-
+<!--
 ## Music
 
 [Grey Areas](https://standardgalactic.github.io/kitbash/grey-areas.html)
 
-<!--
+
 [Genius, Prodigy, and Talent](https://standardgalactic.github.io/alphabet/debunking-gpt.html)
--->
+
 [Psychocinema](https://standardgalactic.github.io/quadrivium/psychocinema.html)
 
 [Bot Parade](https://standardgalactic.github.io/quadrivium/bot-parade.html)
