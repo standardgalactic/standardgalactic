@@ -21,7 +21,7 @@
 
 [Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/banner.png) *Beta*
 
-Try the [Cistercian Number Translator](https://standardgalactic.github.io/cistercian.html). For further information, see [wikipedia](https://en.wikipedia.org/wiki/Cistercian_numerals)
+Try the [Cistercian Number Translator](https://standardgalactic.github.io/cistercian.html) and [Worksheet Generator](https://standardgalactic.github.io/generate-worksheet.html). For further information, see [wikipedia](https://en.wikipedia.org/wiki/Cistercian_numerals)
  
 [Terminal Simulator](https://standardgalactic.github.io/terminal-simulator)
 
