@@ -54,6 +54,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 ## Mechanistic Frameworks
 
+[Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
+
 [Yarncrawler in Action](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf)
 
 [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
