@@ -54,11 +54,12 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 ## Mechanistic Frameworks
 
+[A Typology of Theoretical Failure](https://standardgalactic.github.io/antivenom/A%20Typology%20of%20Theoretical%20Failure.pdf)
+
 [Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
 
-[Yarncrawler in Action](https://github.com/standardgalactic/yarncrawler/blob/main/Yarncrawler%20in%20Action.pdf)
-
-[Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
+[Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
+<!-- [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler) -->
 
 [Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
 
