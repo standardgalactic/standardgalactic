@@ -71,6 +71,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
+[Trust Apocalypse](https://galactromeda.com/rsvp/Trust%20Apocalypse.pdf)
+
 ## Aspect Relegation Theory
 
 <!-- [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash) -->
