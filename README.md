@@ -54,7 +54,7 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 ## Mechanistic Frameworks
 
-[A Typology of Theoretical Failure](https://standardgalactic.github.io/antivenom/A%20Typology%20of%20Theoretical%20Failure.pdf)
+[Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
 
 [Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
 
@@ -62,6 +62,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 <!-- [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler) -->
 
 [Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
+
+[A Typology of Theoretical Failure](https://standardgalactic.github.io/antivenom/A%20Typology%20of%20Theoretical%20Failure.pdf)
 
 [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)
 
