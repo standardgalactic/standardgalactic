@@ -39,6 +39,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Old Art Archive](https://standardgalactic.github.io/archive)
 
+[Living Paintings](https://standardgalactic.github.io/video-player)
+
 # Parody Music
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
