@@ -54,21 +54,21 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 [Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
 -->
 
-## Alignment Research
+# Alignment Research
 
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
 
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
-## Polyxan (Work in Progress)
+# Polyxan (Work in Progress)
 
-[Semantic Hyperstructure](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperinfrastructure.pdf)
+[Semantic Hyperstructures](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperinfrastructure.pdf)
 
 [Verification and Proof Manual](https://standardgalactic.github.io/research-projects/Polyxan%20Proof%20Specification.pdf) 
 
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 
-## Mechanistic Frameworks
+# Mechanistic Frameworks
 
 [Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
 
@@ -84,7 +84,7 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
-## Just for Fun
+# Just for Fun
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
