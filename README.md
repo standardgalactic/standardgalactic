@@ -70,6 +70,12 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Mechanistic Frameworks
 
+[The Ontology of Self-Organizing Forms](https://standardgalactic.github.io/arabic-flashcards/monograph.pdf) — *Nearly Complete*
+
+[Manifold-Aligned Generative Inference (MAGI)](https://standardgalactic.github.io/alphabet/MAGI%20-%20draft%2002.pdf) 
+
+[MAGI overview](https://github.com/standardgalactic/research-projects/tree/main/working) 
+
 [Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
 
 [Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
