@@ -582,6 +582,7 @@ Interactive Mindmap
 
 [Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
 
+<!--
 Sorry, I don't check my email unless it's for something immediately pressing, so if you really need to get ahold of me, send correspondence (and any free stuff you want me to have) to:
 
 ```
@@ -590,6 +591,8 @@ Cogito Ergo Sum
 Rothesay, NB, Canada
 E2S 1A7
 ```
+
+-->
 <!--
 P h o n e  N u m b e r:
 1 506 343-7493 
