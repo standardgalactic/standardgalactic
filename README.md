@@ -56,6 +56,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
+
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
 
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
