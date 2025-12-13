@@ -72,6 +72,9 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Mechanistic Frameworks
 
+
+[Operational Mereology via Event-Sourced Semantics](https://standardgalactic.github.io/spherepop/Operational%20Mereology.pdf)
+
 [The Ontology of Self-Organizing Forms](https://standardgalactic.github.io/arabic-flashcards/monograph.pdf) — *Nearly Complete*
 
 [Manifold-Aligned Generative Inference (MAGI)](https://standardgalactic.github.io/alphabet/MAGI%20-%20draft%2002.pdf) 
