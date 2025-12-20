@@ -56,6 +56,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game.pdf)
+
 [Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
 
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
@@ -72,7 +74,7 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Mechanistic Frameworks
 
-[Worldhood without Functionalism](https://standardgalactic.github.io/quantum-soup/Worldhood%20without%20Functionalism.Pdf) 
+[Worldhood without Functionalism](https://standardgalactic.github.io/quantum-soup/Worldhood%20without%20Functionalism.pdf) 
 
 [Operational Mereology via Event-Sourced Semantics](https://standardgalactic.github.io/spherepop/Operational%20Mereology.pdf)
 
