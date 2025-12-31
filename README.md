@@ -74,6 +74,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Mechanistic Frameworks
 
+[Worldline Selection Under Constraint](https://standardgalactic.github.io/library/Worldline%20Selection%20Under%20Constraint.pdf)  
+
 [Worldhood without Functionalism](https://standardgalactic.github.io/quantum-soup/Worldhood%20without%20Functionalism.pdf) 
 
 [Operational Mereology via Event-Sourced Semantics](https://standardgalactic.github.io/spherepop/Operational%20Mereology.pdf)
