@@ -66,6 +66,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Polyxan (Work in Progress)
 
+[Coherence Before Engagement](https://standardgalactic.github.io/alphabet/Coherence%20Before%20Engagement.pdf)
+
 [Semantic Hyperstructures](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperinfrastructure.pdf)
 
 [Verification and Proof Manual](https://standardgalactic.github.io/research-projects/Polyxan%20Proof%20Specification.pdf) 
