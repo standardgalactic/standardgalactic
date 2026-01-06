@@ -41,6 +41,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Living Paintings](https://standardgalactic.github.io/video-player)
 
+[Follow me on Facebook](https://standardgalactic.github.io/facebook-pages/index.html)
+
 # Parody Music
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
@@ -233,6 +235,7 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 [Grabby Aliens Attack!](https://github.com/search?q=Owner%3Astandardgalactic+%22Grabby+aliens%22&type=code&p=1) 
 
 
+
 ## Generative Art
 
 [Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
@@ -300,7 +303,7 @@ Broadcast [The Oblicosm Paradox](https://youtube.com/live/0GVvy5s-bXw)
 <!--
 The **Oblicosm Paradox Project** is an exploratory effort to harness AI for summarizing and categorizing ideas. Using Microsoft’s Phi-4 model, this project generates hour after hour of summaries on topics like programming, the metacrisis, active inference, and other esoteric subjects. The project leverages spare computing resources to process and organize large amounts of information.
 
-This [9-hour livestream](https://youtube.com/live/V4Jtle27iVs) showcases uninterrupted summaries, demonstrating how AI can be used for large-scale knowledge processing. I also did a [46-hour livestream](https://youtube.com/live/ZeF3JKJVNtw) that experimented with extended workflows for summarization. I eventually hope all of my computers can broadcast their summarizers 24 hours a day. (I only had two blue screens of death and only had to pause it once for a few minutes to cool the GPU.)
+This project showcases uninterrupted summaries, demonstrating how AI can be used for large-scale knowledge processing. I eventually hope all of my computers can broadcast their summarizers 24 hours a day. (I only had two blue screens of death and only had to pause it once for a few minutes to cool the GPU.)
 
 YouTube does not archive livestreams over 12 hours, so I apologize for the limited utility of the link to the 46-hour video. To address this limitation, I built the Simplectomy Generator, which broadcasts summaries 24 hours a day with a built-in pacer and in a cryptographic cipher. For further privacy and to prevent others from reading over your shoulder, you can use your own cipher font if you prefer.
 
