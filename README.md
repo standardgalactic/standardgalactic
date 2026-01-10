@@ -62,6 +62,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 [Induced Homogeneity](https://standardgalactic.github.io/antivenom/Induced%20Homogeneity.pdf)
 
+[Gallery Before Feed](https://standardgalactic.github.io/research-projects/Gallery%20Before%20Feed.pdf)
+
 <!--
 [Meta User Obstruction](https://github.com/standardgalactic/antivenom/tree/main/working/)
 -->
