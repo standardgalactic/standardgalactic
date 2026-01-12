@@ -58,6 +58,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[When Engagement Stops Pointing](https://standardgalactic.github.io/antivenom/When%20Engagement%20Stops%20Pointing.pdf)
+
 [Aspirational Exhaust](https://standardgalactic.github.io/antivenom/Aspirational%20Exhaust.pdf)
 
 [Induced Homogeneity](https://standardgalactic.github.io/antivenom/Induced%20Homogeneity.pdf)
@@ -91,6 +93,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Mechanistic Frameworks
 
+[SITH Theory](https://standardgalactic.github.io/alphabet/SITH%20Theory.pdf)
+
 [Worldline Selection Under Constraint](https://standardgalactic.github.io/library/Worldline%20Selection%20Under%20Constraint.pdf)  
 
 [Worldhood without Functionalism](https://standardgalactic.github.io/quantum-soup/Worldhood%20without%20Functionalism.pdf) 
@@ -118,6 +122,9 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
 # Just for Fun
+
+[The History of Spherepop](https://standardgalactic.github.io/spherepop/The%20History%20of%20Spherepop.pdf)
+
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
