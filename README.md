@@ -58,6 +58,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[Against Namespace Laundering](https://standardgalactic.github.io/antivenom/Against%20Namespace%20Laundering.pdf)
+
 [When Engagement Stops Pointing](https://standardgalactic.github.io/antivenom/When%20Engagement%20Stops%20Pointing.pdf)
 
 [Aspirational Exhaust](https://standardgalactic.github.io/antivenom/Aspirational%20Exhaust.pdf)
