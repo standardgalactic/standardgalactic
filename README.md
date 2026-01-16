@@ -58,6 +58,11 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[Dark Patterns](https://standardgalactic.github.io/antivenom/Dark%20Patterns.pdf)
+
+[Monetizing Uncertainty](https://standardgalactic.github.io/antivenom/Monetizing%20Uncertainty.pdf)
+
+
 [Against Namespace Laundering](https://standardgalactic.github.io/antivenom/Against%20Namespace%20Laundering.pdf)
 
 [When Engagement Stops Pointing](https://standardgalactic.github.io/antivenom/When%20Engagement%20Stops%20Pointing.pdf)
