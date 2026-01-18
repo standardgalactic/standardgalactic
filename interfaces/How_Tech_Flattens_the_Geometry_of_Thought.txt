@@ -1,0 +1,595 @@
+I want you to try something for me right now, unless you're driving, of course, in which case, please, please just focus on the road.
+But if you can, just close your eyes for a second.
+OK, I'm with you. Eyes closed.
+Now, try to visualize a thought, but not the words of the thought.
+I don't want you to see the letters C-A-T or hear the word cat in your head.
+I want you to try and see the thought itself, the raw concept, the thing that's there just before language grabs it.
+What does it look like?
+That is, wow, that is surprisingly hard.
+It's almost like trying to see the wind.
+You know it's there because you see what it moves, but you can't actually see the thing itself.
+Exactly, because we're so upset with the end product.
+Yeah.
+You know, the sentence, the internal monologue.
+But today we're going to completely flip that script.
+We've got a stack of research here that argues the sentence is just the packaging.
+The wrapper.
+The wrapper.
+The real thought.
+It has a physical shape.
+It has geometry.
+It has, like, a physical weight.
+And it has to be built.
+And if you don't fold that shape correctly, just like a protein, it becomes, well, at best, useless.
+At worst, toxic.
+That is the big hook for today's deep dive.
+We are looking at the hidden geometries of intelligence and how our digital world, the apps, the interfaces, the AI might be, I don't know, flattening those shapes into something.
+Well, something very different.
+Yeah, we're going way beyond the usual social media is bad for your attention span.
+I mean, that's kindergarten stuff at this point.
+Right.
+We're talking about things like active geodesic inference, scope memplexes, and the literal physics of why you feel so drained after scrolling for an hour.
+We have four really heavy-hitting sources in the stack today.
+Yeah.
+And I have to give a warning.
+The first one is dense.
+It's a paper called Active Geodesic Inference.
+When I first opened it, I saw the phrase relativistic scalar vector plenum.
+Oh, yeah.
+And I almost closed the tab immediately.
+It's not light reading for sure.
+It's basically applying field theory to how the brain works.
+Then second, we have something called scope memplexes.
+This one is an evolutionary theory arguing that in shittification, you know, that thing where every app you love eventually gets worse, it argues that's not just greed.
+It's actually a war between what it calls interface organisms that are literally eating our brain power.
+It frames apps not as tools we use, but as predators fighting over your motor cortex.
+It's a wild idea.
+Third up is dark patterns, which is a really, I mean, a brutal critique of generative music platforms like Suno.
+The argument is that we're replacing genuine human skill with something called temporal arbitrage.
+We'll get into that one.
+It's a good one.
+And finally, monetizing uncertainty, which is an investigative report on how platforms like Meta don't just, you know, tolerate scams.
+They practically bake them into their business model.
+So it's a whole journey.
+We're going from the super abstract geometry of a thought inside your head all the way down to the gritty nuts and bolts reality of a scam ad popping up in your feed.
+So the mission for you, our listener, is to start seeing these invisible structures, whether it's the geometry of an idea or just the design of a buy now button.
+These structures are what determine if we're becoming smarter or if we're just becoming, what was that phrase they used?
+Visual grazers.
+Visual grazers.
+Yeah.
+It's a haunting image.
+But to understand how we get there, we really have to start at the top.
+We have to start with the physics of thought.
+Yeah, let's do it.
+Okay, so walk me off a ledge here.
+Active geodesic inference.
+Let's strip away all the Star Trek language.
+What are we actually looking at?
+Well, we like to think reasoning is a straight line, right?
+A leads to B leads to C.
+But this source says that deep reasoning is a field dynamic.
+So imagine a landscape, but not some flat, grassy field.
+Okay.
+Imagine a massive mountain range.
+It's got peaks, deep valleys, ravines.
+There's fog everywhere.
+This whole thing is your energy landscape.
+Right.
+I'm picturing it like a 3D map of a topic.
+Exactly.
+And every time you try to think about something, your brain is trying to move a ball from point A to point B across this crazy terrain.
+And that ball, that's your train of thought.
+So if A is, say, I'm hungry, and B is, I should probably make a sandwich, that's a pretty easy path.
+Sure, that's a simple one.
+A little downhill roll, probably.
+Yeah.
+But what if the thought is more complex?
+What if it's, how do I solve this toxic culture at my company?
+Or what is the true nature of consciousness?
+Okay, yeah.
+The terrain between A and B just got a lot more treacherous.
+It's chaotic.
+It's full of obstacles.
+You have to climb.
+And the paper argues that thinking isn't just about finding the path.
+It's about building it.
+It's about building it.
+And this is where the protein folding analogy comes in.
+And this part is just fascinating.
+The paper argues that a really big thought isn't a string of words.
+It calls it a semantic macromolecule.
+A macromolecule.
+Like in biology class.
+Exactly like in biology.
+Think about it.
+In chemistry, you have atoms.
+They bond together to form a structure.
+If the bonds are weak, the structure is floppy.
+It falls apart.
+Right.
+But if the bonds are strong like covalent bonds, the structure holds its ship.
+It's stable.
+The author is saying that logical steps in an argument are exactly the same.
+They're like bonds.
+So if I have a strong thought, a really well-reasoned argument, it means I've basically created these covalent bonds between all my ideas.
+That's it.
+You've built a load-bearing structure in your mind.
+You can rotate it.
+You can look at it from different angles.
+It's stable.
+And it's stable because you did the work of folding all that raw information.
+And I'm guessing there are weak bonds too.
+Oh, yeah.
+The source calls them van der Waals-like interactions.
+These are your more exploratory associations.
+What if we looked at it this way?
+The brainstorming part.
+The brainstorming part.
+They act like these weak magnetic contractions that hold the whole structure together loosely so it can flex and adapt without just shattering.
+You need both.
+You need the strong logic to hold it together and the weak associations to let it grow.
+But, and I feel like I know the answer to this, most of us in our day-to-day scrolling lives, we're not building these macromolecules anymore, are we?
+We're just stringing the atoms together in a line because we're skipping the folding process.
+Folding a protein takes energy.
+It takes time.
+The protein has to wiggle around, try different configurations until it finally snaps into its lowest energy state.
+That aha moment.
+That's the aha moment.
+That is what understanding feels like.
+It's that snap.
+But if you just force the answer, if you just Google it or ask an AI or just skim the headline, you get the atoms.
+You get the words.
+But you never did the folding.
+You never did the folding.
+So you have this long string of amino acids that might have all the right pieces of a protein, but it doesn't function like one.
+It's just a useless noodle.
+And that leads directly to this concept of semantic isomers, which I have to say I found honestly kind of terrifying.
+It's the real mind-bending part of the paper, yeah.
+Okay, so refresh my high school chemistry.
+Isomers are, they're molecules that have the exact same atoms, right?
+Same ingredients.
+But they're just arranged in different shapes.
+Yep.
+Same formula, different geometry.
+And because of that different geometry, they behave in completely different ways.
+One might be a life-saving drug.
+Its isomer could be a deadly poison.
+Same atoms.
+Totally different shape.
+And the paper is arguing that this happens with our thoughts.
+Precisely.
+You can have two reasoning processes that arrive at the exact same answer, the same output, but have totally different internal structures.
+Okay, let me try to make this more concrete.
+Let's say we're in a math class.
+I solve a really complex calculus problem by actually working through the logic step by step.
+I build the whole structure in my head.
+Okay.
+And you, you just guess.
+Or maybe you memorize the answer key from the back of the book.
+Right.
+I just know the answer is 42.
+We both write down 42.
+We have the same answer.
+But my thought is that stable macromolecule, yours is.
+What is it?
+Mine is a fragile mess.
+It's a semantic isomer.
+It looks right on the surface.
+But because I didn't do the folding, I didn't forge those covalent bonds of logic, my understanding is brittle.
+It's fragile.
+So if the teacher changes the question just a little bit.
+My whole thought process collapses.
+Yours adapts.
+You can handle the new variable because your structure is sound.
+Mine just falls apart.
+This feels hugely relevant for AI right now.
+Yeah.
+We talk all the time about distilling models, taking a massive genius level model and trying to teach a smaller, faster model to just mimic its answers.
+It's like trying to get the small model to copy the big model's homework without showing the work.
+Exactly.
+And this source is saying that this is incredibly dangerous because you're copying the answer, which is the atoms, but you're not copying the folding process, the geometry.
+You're creating a zombie thought.
+It looks alive, but there's no reasoning beating heart inside it.
+Wow.
+And to make sure that heart is beating, the paper brings up this other concept, the five-dimensional Ising model.
+Okay, yeah.
+I have to admit, my eyes glazed over a bit when I saw that one.
+It sounds like you need a PhD in physics to even begin to unpack it.
+It sounds super intimidating, I know, but we can demystify it.
+It's really just a checklist for what makes a healthy thought.
+The paper says that for a thought to fold correctly and be stable, it has to synchronize five different dynamics all at the same time.
+Okay, just give me the headlines.
+What are the key moving parts here?
+Well, the two most important ones to get your head around are entropy and flow.
+Entropy is.
+Chaos.
+Right, uncertainty.
+Exactly.
+Think of entropy as heat.
+You need a little bit of heat to keep your mind flexible, to explore new ideas, to make those weak bonds.
+But if you have way too much heat.
+You melt.
+The structure falls apart.
+You dissolve.
+It's like a fever dream.
+Your thoughts are just racing, connecting things that have no business being connected.
+That's super high entropy without any structure.
+And flow is the opposite.
+Flow is directionality.
+It's the force that pushes your thought toward a conclusion.
+It's the get it done part of your brain.
+But if you have all flow and zero entropy, no ability to look around or question yourself, you get tunnel vision.
+You become a fanatic.
+You become a fanatic.
+You just mark straight off a cliff because you couldn't stop to look at the map.
+So intelligence isn't just about being smart in the traditional sense.
+Yeah.
+It's about being a really good plate spinner.
+That's a perfect way to put it.
+You've got to balance activation, which is waking up the right concepts, with reflection checking your work and exploration looking for new paths,
+all while managing that delicate dance between the chaos of entropy and the direction of flow.
+If they don't all sync up, the thought just collapses.
+So what's the final definition of intelligence, according to this source?
+It feels much more active than just, you know, having a high IQ.
+The source defines intelligence as structured persistence.
+Structured persistence.
+Yeah.
+It's the ability to maintain a stable path, a geodesic, through a constantly changing chaotic environment.
+And this is the important part.
+Intelligent systems don't just walk the path.
+They actively curve the space around them.
+Ah, active geodesic inference.
+They actively reshape the landscape to make the problem easier to solve.
+It connects so beautifully to biology.
+Life itself is just this little subcurve in the universe that refuses to end.
+It just keeps finding a way to persist.
+Intelligence is just the high octane, supercharged version of that same fundamental drive navigating the energy landscape to keep the structure of thought alive.
+Okay, so that's the internal view.
+We've got these beautiful, folded, geometric thoughts inside our heads.
+It takes work.
+It takes energy.
+But eventually those thoughts have to get out.
+They have to enter the real world.
+And for most of us, that happens through a screen.
+Which brings us right to our second source, scope memeplexes.
+This is where the rubber really meets the road, or I guess where the finger meets the glass.
+This source takes a really hard pivot.
+We're moving from physics to biology, specifically the biology of the interface.
+The author has a serious bone to pick with how we interact with our computers.
+Bone to pick is putting it mildly.
+The core premise here is that apps and platforms, what we call interfaces, they aren't just passive tools.
+You don't just use Instagram or use Microsoft Word.
+The source calls them scope memeplexes.
+Which are a chip.
+Think of them as macroscopic artificial organisms, artilects.
+Right, artilects.
+And just like any organism, they want to reproduce.
+They want to survive.
+But they don't eat food.
+They eat your motor bandwidth.
+They want to colonize your muscle memory.
+And the author really, really goes after the computer mouse.
+I mean, just brutally.
+They call the mouse, and I'm quoting here, a cognitive parasite.
+That's a pretty harsh takedown.
+I have pushed back on this a little, though.
+I mean, I use a mouse eight hours a day.
+I feel pretty productive.
+Calling it a parasite feels a bit like, I don't know, angry nerd elitism.
+Like, real hackers use keyboards, and everyone else is just a peasant.
+It definitely has that hacker manifesto vibe, I'll give you that.
+But let's look at the physiological argument they're making.
+It's all about bandwidth and dimensionality.
+How many fingers do you have?
+Last I checked, ten.
+And when you're playing a piano or typing on a keyboard, how many distinct things can you do at once?
+I mean, theoretically ten.
+You can hit chords.
+You can do Ctrl-Alt-Delete, Shift-Command-4.
+You're using multiple fingers in concert to send a complex command.
+Exactly.
+The source calls that a multiplexed interface.
+You are sending ten separate channels of information at the same time.
+Now look at your mouse.
+You have a cursor.
+One single point of focus.
+You have to move it, then hover, then click.
+So I'm bottlenecking all ten of my fingers down to one single pointer.
+You're trying to drink the entire internet through a tiny coffee stirrer.
+The source calls this monopolar foraging.
+You aren't controlling the machine.
+You are grazing on it.
+You scan for the berry, you move to the berry, you eat the berry.
+Scan for the button, move to the button, click the button.
+Visual grazers.
+Yeah.
+There's that phrase again.
+It fundamentally changes your brain state.
+Think about when you use a keyboard shortcut you know really well, like CTOL, CTRLV, or maybe alt-tab to switch windows.
+Do you look at your hands when you do it?
+No, never.
+Do you look at the edit menu up on the screen to find copy?
+No, of course not.
+I just do it.
+It's automatic.
+It's pure muscle memory.
+It's fluent.
+You are literally speaking the interface.
+The source calls these little movements interface foams.
+Just like a language has sounds, an interface has these basic units of movement.
+And with a keyboard, you can speak in complex sentences.
+With the swipe, or the mouse click.
+You can never become truly fluent in swipe because it always requires visual confirmation.
+You have to look at where your finger is going.
+It keeps you trapped in that shallow visual processing loop.
+You are always looking.
+You're never just doing.
+And the source argues this isn't just a simple design choice.
+It actually creates what it calls social partitioning.
+The shibboleth effect.
+If you can't speak the dialect of the interface, if you can't use the keyboard shortcuts in Photoshop or a programming editor, you're an outsider.
+Think about the classic editor wars in programming, Vim versus the mouse.
+Oh, yeah.
+It's not just a preference.
+It's a physiological divide.
+The person using Vim inhabits the machine in a fundamentally different way than the person dragging a mouse around.
+But here's the critical part of the argument.
+The evolution of these interfaces is trending in a very specific direction.
+We are devolving from complex keyboards to simple mice, and now from mice to even simpler touchscreens.
+Right, and this is where inshittification comes in.
+We usually think platforms get worse just because CEOs get greedy and want more ad money.
+But this source says it's actually a process of evolutionary selection.
+So it's not a conspiracy.
+It's just nature taking its course.
+It's survival of the fittest.
+But we have to remember, fittest doesn't mean best or smartest.
+It just means most transmissible.
+If you build an app that requires complex keyboard cords to use, like, say, Vim or professional video editing software, who can use it?
+A pretty small group.
+People who take the time to learn.
+Pros.
+Exactly.
+But what if you build an app that works with a single, simple thumb swipe?
+Anyone.
+My toddler can use it.
+My grandmother can use it.
+And everyone in between.
+So the swipe organism has a much higher viral transmission rate.
+It eats the market alive.
+It outcompetes the more complex keyboard organism.
+So the dumber interface just reproduces faster than the smarter one.
+Precisely.
+The extractive interfaces, as the source calls them, win because they are just easier to catch.
+But the cost is that they make us dumber.
+We lose the ability to articulate complex commands.
+We lose the rich piano of the keyboard and get stuck with the simple cowbell of the swipe.
+Okay.
+So let's just recap where we are.
+First, the internal geometry of our thoughts is being flattened because we aren't doing the hard folding work anymore.
+Right.
+And now the external expression of those thoughts is being bottlenecked by these simple grazing interfaces.
+But it gets worse.
+It always gets worse.
+Because now we have AI entering the creative sphere.
+And this brings us to our third source, dark patterns, and what it calls the death of skill.
+This section focuses on generative music platforms, using Suno as its main case study.
+But really, it applies to all generative AI.
+And it draws a really sharp, really important distinction between an instrument and a proxy.
+Okay.
+Let's unpack that.
+Because I think a lot of people see AI as just another new instrument.
+You hear it all the time, right?
+It's just like the synthesizer.
+People hated the synthesizer, too.
+That's the common defense, yeah.
+But the source argues it's structurally completely different.
+An instrument extends your agency.
+A violin doesn't play itself.
+You have to provide the structure, the emotion, the physical skill.
+The instrument just amplifies you.
+And a proxy.
+A proxy does the work for you.
+You type a prompt, and it just hands you a finished song.
+It's not extending your will.
+It's replacing your effort.
+The source has a great term for this.
+Temporal arbitrage.
+This is a brilliant term.
+Think about what it takes to learn an instrument.
+It is slow.
+It takes years of delayed reward.
+You sound terrible for a very long time before you sound good.
+And that struggle, that's the folding process all over again.
+The struggle is where the skill, the structure is built.
+Exactly.
+But AI collapses that time.
+It performs arbitrage on time itself.
+You get the feeling of completion, that little dopamine hit of, I made a song, instantly, without any of the struggle.
+But isn't that a good thing?
+Isn't that democratization?
+I mean, I can't play the drums to save my life.
+But now I can put a cool drum beat in a song I'm working on.
+The source would argue that you aren't actually creating, you're gambling.
+It calls this the slot machine effect.
+The slot machine.
+Think about how you actually use these tools.
+You type in a prompt, sad acoustic ballad, male vocals, like Nick Drake.
+You hit generate.
+It gives you a song.
+Now, if you don't like the bridge, what do you do?
+Well, I mean, I can try to rewrite some of the lyrics, but honestly, I usually just hit generate again.
+Exactly.
+You re-roll the dice.
+You aren't revising.
+You aren't using your judgment to figure out why that chord progression feels wrong.
+You are just pulling a lever and hoping the machine spits out a better result next time.
+So improvement becomes a matter of pure luck, not learning.
+And this creates version proliferation.
+Instead of working hard to make one song better, you just generate 50 mediocre songs and hope one of them is accidentally good.
+You know, there's a psychological concept called the Ikea effect.
+We value things more when we build them ourselves.
+Even if that bookshelf is a little wobbly, you love it because you put your own sweat into it.
+And the AI removes the sweat.
+It removes the sweat, and so it removes the connection.
+You become a consumer of your own creation, not the creator.
+And the platform design reinforces this at every turn.
+That autoplay feature, just like in the grazing interfaces, it removes the silence.
+You never stop to reflect on what you just made.
+It just immediately feeds you the next thing.
+The source calls it a predatory cultural infrastructure.
+That's a strong phrase.
+It's predatory because it feeds on our innate desire to create, but it gives us empty calories in return.
+However, the source does offer a little glimmer of hope.
+It talks about something called monotonically improving environments.
+Right.
+This felt like the alternative path.
+The good AI.
+Yes.
+Imagine an AI that actually scaffolds your learning.
+So, let's say you're tapping a rhythm out on your desk with your fingers.
+The AI takes that tapping and converts it into a drum beat.
+But, and this is the key part, if your tapping is sloppy and offbeat, the drums are sloppy and offbeat.
+So, it doesn't just fix it for me automatically?
+Not entirely.
+But, as your physical tapping gets better and tighter, the generated music gets better and tighter.
+The better you perform, the better the output is.
+It creates a direct link between your effort and the quality of the result.
+So, the AI meets you where you are and then it pulls you up instead of just doing the work for you.
+Exactly.
+And until these platforms start doing that, until they teach rather than replace, the source argues they are actively degrading human skill across the board.
+Okay.
+So, we've covered the physics of thought, the biology, the interface, and the death of skill.
+Now, we have to talk about the cold, hard cash.
+Because none of this, the grazing, the swiping, the flattening of our minds, none of it would happen if it wasn't making somebody incredibly rich.
+And this brings us to our final source, monetizing uncertainty.
+And honestly, of all the sources we looked at, this is the one that made me the most angry.
+It's the investigation into Meta.
+And it starts with a number that is just.
+It's staggering.
+The source says that Meta, the parent company of Facebook and Instagram, internally estimates that its users view billions of scams, not millions.
+Billions.
+And it's not like they just know about it anecdotally.
+They have modeled it.
+They have charts and projections for it.
+And crucially, they estimate that a significant chunk of their ad revenue, around 10% in some internal documents, comes directly from scams or prohibited goods.
+10%.
+That is a massive, massive conflict of interest.
+It means fraud is not a bug in their system.
+It's a feature.
+It's a load-bearing pillar of the entire revenue stack.
+If they somehow eliminated all fraud tomorrow, their stock price would tank.
+But here's the part that I didn't get at first.
+If I'm running a huge platform and I know there are scammers everywhere, surely I want to kick them off.
+I mean, scams are bad for business, right?
+If my users get ripped off, they're going to leave.
+That's the intuitive, logical assumption.
+But this source argues that Meta has realized something very dark.
+The scammers are some of their best and most reliable customers.
+How is that even possible?
+It all comes down to how they handle the gray zone, the monetized uncertainty.
+So let's say you're a company and you submit an ad.
+Meta's AI looks at it and says, there's an 80% chance this is a scam.
+Okay.
+So you block it.
+End of story.
+If you care about user safety, yes.
+But if you care primarily about revenue, you look at that 80% and you say, well, that means there's a 20% chance it's legit.
+So what do they do?
+They don't ban it.
+They apply something called penalty pricing.
+Wait, wait.
+They just charge them more money?
+They treat it like an insurance premium.
+They say, this ad is risky, so we're going to charge you double the normal rate to show it to people.
+So they're literally taxing the fraud.
+They've created a scam tax.
+Yes.
+And now think about the economics of a scammer.
+If I'm selling a fake designer handbag for $500 that cost me $5 to make and ship, I have massive profit margins.
+I don't care if the ads are a little more expensive.
+I'll pay the premium.
+I'll gladly pay the scam tax.
+But a legitimate small business.
+A legit small business selling handmade candles has razor thin margins.
+They can't afford the penalty pricing.
+So the system actually ends up favoring the high margin scammer over the honest merchant.
+That is, that's just diabolical.
+They're monetizing the uncertainty itself.
+They are profiting from the fact that they don't know if something is real or not.
+And that's the entire business model.
+We're not sure, so you have to pay us extra.
+It turns the platform into a casino where the house takes a big rake from all the pickpockets.
+And the root cause of all of this, according to the source, is something called disposable identity.
+Right.
+Why can't we stop this cycle?
+Because if you finally manage to ban a scammer, they just create a new account five seconds later.
+There's no history.
+Identity has no weight, no persistence.
+So the solution they propose is constraint-first governance.
+Exactly.
+Identity has to be history-bound.
+If you burn your reputation on the platform, it should stay burned.
+But the platforms rely on churn, on that constant influx of new disposable identities, to keep the ad revenue flowing from both good and bad actors.
+So they perform what the source calls compliance theater.
+They give us safety tools.
+They give us report buttons.
+But structurally, the entire system is designed to let the chaos flow, because the chaos is what pays the bills.
+It's a system that is built to maximize entropy.
+And remember what we learned from the first section.
+What happens when entropy gets too high?
+The structure dissolves.
+Yeah.
+The thought collapses.
+Precisely.
+Okay, let's zoom out.
+We have covered a lot of ground here, from the geometry of thoughts all the way to the economics of scams.
+How do we synthesize all this?
+What's the unified theory here?
+I think the narrative arc is actually frighteningly clear.
+It's a cascade effect.
+Okay, walk me through it.
+Start with the physics.
+We learn that deep thought requires structure.
+It requires that hard work of folding.
+It takes real energy to maintain that complex 3D shape in your mind.
+Right.
+Step one.
+Then you have evolution.
+The scope memeplexes.
+The interfaces that are winning the war for our attention are the ones that are specifically designed to remove that effort.
+They evolve to turn us into simple grazers, because grazing is easier than thinking.
+The swipe beats the keyboard, because it requires less mental folding.
+Which leads directly into the culture.
+The dark patterns.
+Because we're becoming accustomed to being grazers, we accept tools that act as proxies.
+We let the AI play the music for us.
+We stop building those internal molecules of skill.
+We trade our agency for convenience.
+And finally, you get the economics.
+Monetizing uncertainty.
+This entire degradation, this systematic flattening of the human mind, is sustained, because it is wildly, unimaginably profitable.
+The platforms monetize the noise, they monetize the scams, and they monetize the complete lack of history.
+It's a perfect feedback loop.
+The platforms lower the barrier to entry, so no skill is needed, which massively increases the noise and the chaos, which they then find the way to monetize.
+And in that whole process, the geodesic, that structured, coherent path of intelligent thought, gets harder and harder for us to maintain.
+So, if we go all the way back to that definition of intelligence from the very beginning.
+Structured persistence.
+Right.
+Intelligence is the ability to maintain a coherent path, a coherent shape, to spray all the noise.
+The ability to curve the space around you so you can keep thinking clearly.
+And that raises the final, and I think really provocative, question for you to think about.
+We are, right now, actively building a digital world that maximizes entropy.
+It maximizes easy, fast, chaotic consumption.
+The slot machine world.
+The slot machine world.
+So, the question we need to ask isn't, is the AI getting smarter?
+The AI is just a tool.
+The real question is this.
+Are we building an environment where human intelligence can actually survive?
+Or are we building a world that systematically dissolves our ability to think, to act, and to create?
+If intelligence is the ability to hold a complex shape in your mind against the immense pressure of the world,
+well, the pressure is getting a lot higher.
+And the shape is getting much, much harder to hold.
+Check your geodesics, everyone.
+That's it for this deep dive.
+We'll see you next time.

@@ -1,2 +1,7 @@
 art/cache
 art/ci_env
+
+*.tsv
+*.srt
+*.vtt
+*.json

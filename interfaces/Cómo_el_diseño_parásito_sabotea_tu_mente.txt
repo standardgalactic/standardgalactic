@@ -1,0 +1,183 @@
+A ver, ¿qué podrían tener en común la inteligencia artificial, pero la más teórica?
+Una app para hacer música, el fraude en Facebook y esa sensación de que nuestras aplicaciones favoritas empeoran.
+Suena a chiste, ¿no? Como el inicio de un acertijo.
+Totalmente, pero parece que no lo es.
+Tenemos aquí una serie de documentos que sugieren que todo esto, aunque no lo parezca, son como síntomas de un mismo problema de fondo.
+Y ese es justo el desafío de hoy. Tenemos, mira, cuatro análisis de mundos que no se tocan.
+Física teórica, crítica cultural, periodismo de investigación y hasta biología evolutiva aplicada al software.
+Una mezcla bastante ecléctica.
+Sí, y lo que vamos a intentar es ver si podemos tomar estas cuatro ideas que parecen súper inconexas y encontrar ese hilo que las une para formar una sola gran teoría.
+Exacto. Las fuentes son, como dices, muy variadas. Hay un artículo de física matemática que, bueno, redefine lo que es la inteligencia.
+Luego está una crítica súper afilada a plataformas como Zuno, estas de música generativa.
+También un análisis económico que revela por qué a Meta, pues podría hasta convenirle el fraude en su plataforma.
+Y cerramos con una teoría sobre por qué las plataformas digitales parecen condenadas a degradarse.
+Este fenómeno que algunos llaman en-shitification.
+Ok, entonces la misión es clara.
+La misión es ver si podemos construir una narrativa coherente, porque la sospecha es que no estamos viendo problemas aislados, sino un patrón muy profundo.
+Un patrón que no solo afecta a la tecnología que usamos.
+Sino que de rebote nos está moldeando a nosotros.
+¿Justo eso?
+Perfecto. Pues, entremos en materia.
+Empecemos por la pieza que parece más abstracta, pero que es como la clave de todo.
+El primer artículo, el de física.
+Propone una idea bastante radical sobre qué es razonar.
+Así es.
+La idea tradicional es que pensar es como seguir una receta, ¿no?
+Una secuencia.
+A te lleva a B, B te lleva a C.
+Sí, algo lineal.
+Pues, este artículo dice que no, que el razonamiento es más parecido a una estructura tridimensional estable, como una molécula gigante.
+Ok, eso ya suena complejo.
+Pero la idea es que la inteligencia no es seguir un camino, sino la capacidad de construir y mantener esa estructura a lo largo del tiempo.
+El texto usa un término que es casi un trabalenguas, inferencia geodésica activa.
+¿Eso qué significa en español simple?
+Es menos complicado de lo que suena.
+Mira, pensemos en un mapa.
+La inteligencia, como la solemos imaginar, es usar Google Maps para encontrar la ruta más corta en un mapa que ya existe.
+Ajá, la más eficiente.
+Exacto.
+La inferencia geodésica activa es otra cosa.
+No se trata de encontrar un camino.
+Se trata de construirlo.
+Es como ser un explorador que no solo traza la ruta, sino que construye los puentes y los refugios mientras avanza.
+Ah, ok.
+La analogía ayuda mucho.
+Lo hace para asegurarse de que su viaje tenga un propósito y no se desmorone al primer obstáculo.
+O sea que la inteligencia no es solo eficiencia, es persistencia.
+Es la capacidad de mantener una historia o un proyecto coherente a través del tiempo, adaptando el entorno para que esa historia pueda seguir.
+Exactamente.
+La inteligencia es la persistencia de una narrativa con estructura.
+Y esto nos lleva a otra idea fascinante del mismo artículo.
+Un momento. Creo que sé a cuál te refieres. El texto menciona algo que parece sacado de una clase de química.
+Isómeros semánticos.
+Esa misma. Es una analogía muy poderosa.
+En química, los isómeros son moléculas con los mismos átomos, pero ensambrados de forma diferente.
+Y por eso tienen propiedades distintas, claro.
+Pues un isómero semántico es lo mismo, pero con ideas.
+Son dos cadenas de razonamiento que usan los mismos conceptos, llegan a la misma conclusión correcta, pero la arquitectura interna de sus argumentos es distinta.
+O sea que dos personas pueden tener razón sobre algo, pero la estructura de su pensamiento puede hacer que la idea de una sea sólida como una roca y la de la otra frágil.
+Precisamente. No todas las formas de pensar correctamente son iguales.
+Y esta idea de historias estables es la columna vertebral de todo lo que vamos a ver.
+Un sistema inteligente, sea una persona o una IA, es el que logra mantener su coherencia a pesar del gaos.
+Bien, entiendo la base. Un sistema sano que aprende es uno que construye una historia coherente y duradera.
+Pero, ¿qué pasa cuando una herramienta se diseña para hacer justo lo contrario?
+Y aquí es donde entra el segundo documento, el de la música generativa.
+Es la transición perfecta. Si aplicamos esta lente de la inferencia geodésica a la música, vemos que aprender a tocar un instrumento es un ejemplo perfecto de la teoría.
+Claro, es una trayectoria larga, difícil.
+Que requiere construir una estructura de conocimiento, de habilidad motora, por años.
+El análisis sobre plataformas como Zuno argumenta que estas herramientas, pues, sabotean ese proceso.
+¿Cómo lo sabotean? A simple vista parece que solo te dan un atajo.
+El autor dice que actúan como un proxy de habilidad, un sustituto.
+Te dan la sensación de haber creado una canción, el resultado final.
+Pero te saltas por completo el proceso de construir esa geodésica de aprendizaje.
+Reemplazan el esfuerzo por una gratificación instantánea.
+Una gratificación instantánea y, según el autor, vacía.
+Entiendo la crítica. Pero, a ver, ¿no podría argumentarse que estas herramientas democratizan la creación?
+Alguien sin años de estudio ahora puede expresar una idea.
+¿No hay un valor en eso?
+Es un punto válido y el propio autor lo reconoce.
+El problema, según él, no es la herramienta en sí.
+Son ciertos patrones de diseño específicos que están optimizados no para empoderar al usuario.
+Sino para engancharlo.
+Exacto. Para engancharlo y retenerlo. A menudo a costa de su propio aprendizaje.
+Ok. Aquí se pone interesante. ¿Cuáles son esos patrones oscuros?
+Uno de ellos es el autoplay. La reproducción automática.
+Apenas termina la canción que generaste, la plataforma ya te está poniendo otra.
+Se elimina deliberadamente el espacio para la reflexión.
+Para escuchar tu propia creación y analizarla.
+Justo. El acto creativo se disuelve en un flujo de consumo sin fin, como hacer scroll en TikTok.
+Sí, eso lo reconozco perfectamente.
+Apenas termina un video y ya estás en el siguiente, sin tiempo para pensar.
+¿Qué más?
+La proliferación de versiones. En lugar de animarte a refinar una idea, la plataforma te ofrece generar 10, 20 variaciones con un clic.
+Convierte la creatividad en una máquina tragamonedas.
+¿Tal cual? Dejas de decidir y empiezas a tirar de la palanca, esperando que la suerte te dé la versión perfecta. Se erosiona el compromiso.
+Pero el patrón que me pareció más revelador y un poco siniestro es el ocultamiento de la estructura musical.
+Sin duda el más crítico.
+La plataforma genera la canción usando acordes, melodías.
+Toda esa información estructural existe.
+La máquina la necesita.
+Pero al usuario se le oculta.
+No puedes ver los acordes.
+Para aprender a tocarlos.
+Ni la melodía para transcribirla.
+Tu ignorancia se convierte en su estrategia de retención.
+Para obtener más, tienes que volver a la máquina.
+No te da las herramientas para ser independiente.
+Es como un profesor de matemáticas que te da la respuesta, pero se niega a mostrarte la fórmula.
+Te hace dependiente.
+Exacto.
+Y lo fascinante es que el documento propone la alternativa.
+Entornos de entrenamiento monotónicamente mejorados.
+Un nombre muy técnico.
+Sí, pero la idea es simple.
+Sistemas diseñados para que cada pequeño incremento de tu habilidad se traduzca en una recompensa.
+Un verdadero instrumento digital que apoya la construcción de esa geodésica del aprendizaje en lugar de sabotearla.
+Ok.
+Entonces vemos cómo se rompe esta historia coherente en el aprendizaje.
+Pero esto se expande a una escala mucho mayor, a la estructura de nuestras comunidades en línea.
+Y el tercer documento sobre el fraude en meta es demoledor.
+Aquí el concepto clave es incertidumbre monetizada.
+El análisis argumenta que el fraude con anuncios no es simplemente un error que la plataforma no puede solucionar.
+Es una variable que ha sido modelada, cuantificada y convertida en una fuente de ingresos.
+Espera, ¿quieres decir que ganan dinero con el fraude?
+¿Cómo es posible?
+El mecanismo es sutil.
+La fuente cita un informe de Reuters que revela un dato increíble.
+Meta tendría un hombral de confianza interno del 95%.
+¿Qué significa eso?
+Significa que si sus sistemas no están al menos un 95% seguros de que un anunciante es fraudulento, lo dejan operar.
+Un momento, ¿me estás diciendo que si solo están 94% seguros de que es una estafa, la dejan pasar?
+Eso es una locura.
+Pero ahí no termina.
+Lo que suele pasar es que a esos anunciantes sospechosos, que están en esa zona gris, se les cobran tarifas más altas para mostrar sus anuncios, por ser de mayor riesgo.
+Vaya.
+Así que la plataforma se beneficia directamente de esa ambigüedad. La incertidundra se convierte literalmente en un producto que se vende.
+Increíble. ¿Y cómo se conecta esto con nuestra teoría inicial de la historia coherente?
+De forma directa. La arquitectura de moderación de la plataforma parece estar diseñada para ser deliberadamente histórica, para tener amnesia.
+¿Amnesia?
+Sí. Conceptos como la identidad desechable, que te permite crear y quemar cuentas sin consecuencias, o una aplicación de normas que se reinicia, donde cada infracción se trata como si fuera la primera, son la antítesis de un sistema coherente.
+¿O sea que la plataforma tiene amnesia por diseño?
+Exactamente. Un sistema seguro necesitaría lo contrario, una identidad ligada a la historia, donde tu reputación te sigue, y una aplicación de normas irreversible, donde las consecuencias se acumulan.
+Pero la plataforma prefiere estabilizar su propia geodésica de ganancias.
+Su propio camino coherente hacia los beneficios, ¿sí? Incluso si eso significa destruir la geodésica de seguridad de sus usuarios.
+Ok. Déjame recapitular. Tenemos una teoría de que los sistemas saludables se basan en la persistencia de una historia.
+Hemos visto cómo se rompe en el aprendizaje con Zuno y en la seguridad con Meta. Vemos el qué y el cómo. Pero la gran pregunta sigue siendo ¿por qué?
+¿Por qué este patrón es tan común? El último documento tiene una respuesta casi biológica.
+Sí, propone una explicación evolutiva. La idea central es la de los memeplexes de alcance. ¿Suena complejo?
+Bastante. Pero la tesis es que las interfaces de software, los botones, los menús, los gestos, no son herramientas neutrales.
+Son como organismos de información que compiten entre sí por colonizar nuestra atención y, más importante, nuestros hábitos motores.
+¿Como si las interfaces fueran virus y nuestra mente el huésped?
+Es una buena analogía. La degradación de las plataformas no sería necesariamente una decisión malévola de un CEO, sino el resultado inevitable de una selección natural.
+Ganan las interfaces que son mejores para replicarse, no las que son mejores para la persona que las usa.
+Vaya. Llamar al ratón del ordenador un parásito cognitivo es una afirmación muy fuerte. ¿A qué se refiere exactamente?
+El texto lo explica con una comparación. Piensa en alguien que domina los atajos de teclado. Sus dedos saben qué hacer sin pensar. Es memoria motora simbólica. Una habilidad que se acumula.
+Entiendo. Es una habilidad que se interioriza.
+Exacto. El ratón, según este análisis, reemplaza eso por una casa perceptual continua. En lugar de saber qué hacer, pasas todo el tiempo buscando visualmente el ícono donde tienes que hacer clic.
+Fragmenta la habilidad en lugar de consolidarla. Cambia el saber por el buscar. Por eso lo llama parásito. Se alimenta de tu atención constante para funcionar. Es una idea potente.
+Y usa otra analogía para el scroll infinito. El gesto de deslizar el dedo sin parar.
+Sí. Lo llama forrajeo monopolar. Compara cómo nuestra increíble variedad de movimientos se ve reducida a un único gesto repetitivo. Es como un animal pastando.
+Siempre el mismo movimiento.
+Un gesto que es tremendamente exitoso como organismo de interfaz porque es fácil de aprender y predecible para la plataforma. Pero es cognitivamente empobrecedor.
+Y esto lo hemos sentido, ¿no? Esa sensación de que la aplicación que te encantaba de repente se llena de cosas que no pediste y la opción que usabas siempre ahora está escondida. Es frustrante.
+Esa frustración es el síntoma. Y esto cierra el círculo. Esta presión selectiva es la que favorece a sistemas depredadores como los de su carnero y meta. El autor lo llama una tragedia de la selección natural de interfaces.
+Donde los parásitas desplazan a los simbiontes.
+Exacto. Los patrones de alta captura y baja fidelidad, los que te enganchan rápido pero no te enseñan nada, tienden a desplazar a los de alta fidelidad, que construyen la habilidad y confianza.
+O sea que la degradación no es un accidente. Es una consecuencia casi inevitable de la evolución en este entorno digital.
+Esa es la conclusión a la que apunta la teoría. Es una explicación sistémica.
+No individual.
+Hagamos un balance entonces. Empezamos con una teoría de la física que define la inteligencia como la capacidad de mantener una historia coherente.
+Una estructura que persiste.
+Y luego, pieza por pieza, vimos como muchas plataformas digitales modernas parecen diseñadas, ya sea intencional o evolutivamente, para hacer justo lo contrario.
+Para romper esa coherencia.
+Socavan ese principio en todos los niveles. En el aprendizaje, como con la música. En la seguridad de una comunidad, como con el fraude. Y hasta nuestras interacciones motoras más básicas.
+El hilo conductor, entonces, es que la salud de cualquier sistema, cognitivo o social, depende de que las acciones tengan consecuencias acumulativas. De que exista una memoria. Una historia.
+Y los sistemas que nos fallan son los que tienen amnesia estructural por diseño.
+Una amnesia que, casualmente, siempre parece servir a los objetivos de la plataforma, no a los nuestros.
+Rumpen el vínculo entre causa y efecto para optimizar su propia supervivencia.
+Y esto nos deja con una última idea para reflexionar, que viene de los apéndices del último artículo.
+Si aceptamos esta premisa de que el lenguaje, los artefactos, las interfaces, son, en el fondo, programas que se ejecutan en el hardware de nuestra mente.
+¿Y si las interfaces que usamos todos los días son el lenguaje con el que pensamos y actuamos en el mundo digital?
+Entonces, la pregunta es inevitable.
+¿Qué le pasa a la calidad de nuestro pensamiento cuando ese lenguaje evoluciona para ser más parasitario que simbiótico?
+¿Qué clase de futuro estamos programando para nuestras propias mentes con las herramientas que elegimos, o que nos eligen, cada día?
