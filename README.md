@@ -109,6 +109,10 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 # Mechanistic Frameworks
 
+[The Forkability of Time](https://standardgalactic.github.io/spherepop/The%20Forkability%20of%20Time.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/spherepop/analysis/)
+
 [Active Geodesic Inference](https://standardgalactic.github.io/spherepop/Active%20Geodesic%20Inference.pdf)
 
 [SITH Theory](https://standardgalactic.github.io/alphabet/SITH%20Theory.pdf)
