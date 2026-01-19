@@ -266,3 +266,93 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 >
 > For more information see: [Causal Reasoning and Counterfactuals](https://www.youtube.com/watch?v=pEBI0vF45ic)
 
+<!-- END_QUOTE -->
+
+![netscape](Emommit.jpg)
+
+![](stats.png)
+
+![](standard-galactic-unicode.png)
+
+
+![](the-only-winning-move.gif)
+
+<br>
+<br>
+
+[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt)
+
+Text descriptions with Clip Interrogator
+
+## My AutoHotkey Shortcuts
+
+[PrintScreen](https://raw.githubusercontent.com/standardgalactic/example/refs/heads/main/PrintScreen.ahk)
+
+## **Impossible Physics**
+
+[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
+
+**Geometric Bayesianism with Sparse Heuristics**
+
+In biological systems, sparsity emerges as a natural consequence of physiological pressures, including energetic constraints, signal noise, and chemical gradients, obviating the need for explicit computational penalties to enforce minimal network complexity.
+
+Metabolic costs, such as ATP consumption in neural and cellular activity, favor sparse activation patterns, acting as an implicit prior for minimal energy configurations. Environmental noise and signal overlap amplify high-salience, sparsely distributed signals, while thermodynamic gradients drive systems toward low-entropy states.
+
+This Natural Sparsity Principle underpins the efficiency of biological cognition and informs computational models like Geometric Bayesianism with Sparse Heuristics (GBSH), suggesting that sparse proxy navigation can be an emergent property in biomimetic systems, enhancing their adaptability and resilience in noisy, resource-constrained environments.
+
+[What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
+
+<img src="rate-my-setup.png" width="350">
+
+
+[Reverse Engineering Swype](https://www.perplexity.ai/search/i-m-looking-for-patents-open-s-c5OCTDU3SDauid2nthyLOQ)
+
+<img src="swype-grid.png" width="350">
+
+Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
+
+Learn [Assembly Theory](https://standardgalactic.github.io/alphabet/Assembly-Theory.txt) 
+
+<!-- [Latin](https://standardgalactic.github.io/flashcards.html) -->
+
+[Small World Generator](http://standardgalactic.github.io/Centerfuge)
+
+[Liminal Space](https://github.com/standardgalactic/substrate?tab=readme-ov-file)
+
+[Eclectric Oil](https://standardgalactic.github.io/eclectric-oil/)
+
+[Circle of Fifths](https://standardgalactic.github.io/circle-of-fifths/)
+
+[𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦](https://standardgalactic.github.io/abraxas)
+
+
+
+C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̥̘̘̐ ̜̻͖͎͇͒͑̚ͅ M͍̮̰͈͖̑͜O̟̳ͨ͋͋͐T̫̫ͦ̌̒ͮH͛ͤͣ́Ȇ̩̾ͨ̾ͮȐ̥̤̑ͅ ‏‏
+
+
+
+<!--[𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘭𝘪𝘵𝘺](https://standardgalactic.github.io/backward-compatibility)-->
+
+**My Wikipedia**
+
+https://en.wikipedia.org/wiki/User:Mechachleopteryx/sandbox)
+
+[Contributions](https://en.wikipedia.org/wiki/Special:Contributions/Mechachleopteryx)
+
+I am following 200,000 pages on Wikipedia
+
+<!-- Level 2 Unlocked - Wikipedia watchlist limit removed-->
+
+[My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/Wikipedia-watchlist.txt)
+
+* If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
+
+Interactive Mindmap
+
+[Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
+tandardgalactic.github.io/cogniscium) 
+<!--
+[Merch Store](https://www.redbubble.com/en/people/flyxion/shop)
+-->
+
+![](featured.png)
