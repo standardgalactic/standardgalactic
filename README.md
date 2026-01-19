@@ -268,8 +268,6 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 <!-- END_QUOTE -->
 
-![netscape](Emommit.jpg)
-
 ![](stats.png)
 
 ![](standard-galactic-unicode.png)
