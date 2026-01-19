@@ -64,6 +64,8 @@ See also:
 https://standardgalactic.github.io/standardgalactic/interfaces/
 -->
 
+[The Hostile Interface](https://standardgalactic.github.io/antivenom/The%20Hostile%20Interface.pdf)
+
 [Dark Patterns](https://standardgalactic.github.io/antivenom/Dark%20Patterns.pdf)
 
 [Monetizing Uncertainty](https://standardgalactic.github.io/antivenom/Monetizing%20Uncertainty.pdf)
