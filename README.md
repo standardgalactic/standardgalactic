@@ -327,7 +327,9 @@ Learn [Assembly Theory](https://standardgalactic.github.io/alphabet/Assembly-The
 
 
 
+
 C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̥̘̘̐ ̜̻͖͎͇͒͑̚ͅ M͍̮̰͈͖̑͜O̟̳ͨ͋͋͐T̫̫ͦ̌̒ͮH͛ͤͣ́Ȇ̩̾ͨ̾ͮȐ̥̤̑ͅ ‏‏
+
 
 
 
@@ -350,7 +352,7 @@ I am following 200,000 pages on Wikipedia
 Interactive Mindmap
 
 [Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
-tandardgalactic.github.io/cogniscium) 
+ 
 <!--
 [Merch Store](https://www.redbubble.com/en/people/flyxion/shop)
 -->
