@@ -143,6 +143,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
+[Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
+
 # Just for Fun
 
 [The History of Spherepop](https://standardgalactic.github.io/spherepop/The%20History%20of%20Spherepop.pdf)
