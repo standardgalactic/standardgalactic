@@ -95,6 +95,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
+[The Genius of Silence](https://standardgalactic.github.io/alphabet/The%20Genius%20of%20Silence.pdf) — *Draft*
+
 # Polyxan (Work in Progress)
 
 [The Narrow Path Between Domination and Chaos](https://standardgalactic.github.io/research-projects/The%20Narrow%20Path.pdf)
@@ -108,6 +110,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 
 # Mechanistic Frameworks
+
+[Ecphoric Synthesis](https://standardgalactic.github.io/kitbash/Ecphoric%20Synthesis.pdf)
 
 [The Forkability of Time](https://standardgalactic.github.io/spherepop/The%20Forkability%20of%20Time.pdf)
 
@@ -134,14 +138,17 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
 
 [Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
-<!-- [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler) -->
+<!-- [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
 
 [Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
+-->
 
 [A Typology of Theoretical Failure](https://standardgalactic.github.io/antivenom/A%20Typology%20of%20Theoretical%20Failure.pdf)
 
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
+
+[Persistence Before Efficiency](https://standardgalactic.github.io/research-projects/Persistence%20Before%20Efficiency.pdf)
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
 
@@ -152,18 +159,19 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Scope as Geometry in Time-Bound Systems](https://standardgalactic.github.io/spherepop/Scope%20as%20Geometry.pdf)
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
-
+<!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
 [Trust Apocalypse](https://galactromeda.com/rsvp/Trust%20Apocalypse.pdf)
 
 ## Aspect Relegation Theory
 
-<!-- [Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash) -->
+[Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash)
 [Mind Uploading Experiments](https://standardgalactic.github.io/kitbash/mind-uploading.html)
 
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
+-->
 ## <big>Relativistic Scalar Vector Plenum (RSVP) Framework</big>
 <div>
 <!--  <a href="https://standardgalactic.github.io/spherepop/projects-overview.html"> -->
@@ -172,13 +180,13 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
   </a>
 </div>
 
+<!--
 ## Machine Learning
 
 Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
 
 [Project Page](https://standardgalactic.github.io/keyboard)
 
-<!--
 ## Typeface Experiments:
 
 [Sliders Prototype](https://standardgalactic.github.io/sliders-prototype.html)
@@ -187,27 +195,25 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
 
 [Sliders](https://standardgalactic.github.io/sliders.html)
 [Portal](https://standardgalactic.github.io/portal.html)
--->
-
-<!-- from Centerfuge 
-![](deep-dive.gif)-->
 
 ## Interactive Fiction
 
 [Timeslip](https://standardgalactic.github.io/timeslip)
 
 [Bruno's Ark](https://standardgalactic.github.io/alphabet/brunos-ark.html)
-<!-- [Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt) -->
+
+[Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
 
 [Grabby Aliens Attack!](https://github.com/search?q=Owner%3Astandardgalactic+%22Grabby+aliens%22&type=code&p=1) 
-
+-->
 
 
 ## Generative Art
 
 [Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
-
+<!--
 [𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
+-->
 
 ## <big>Earth Cube Translator</big>
 <div>
@@ -283,13 +289,6 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 ![](the-only-winning-move.gif)
 
-<br>
-<br>
-
-[Subliminal messages in my art](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/art/description.txt)
-
-Text descriptions with Clip Interrogator
-
 ## My AutoHotkey Shortcuts
 
 [PrintScreen](https://raw.githubusercontent.com/standardgalactic/example/refs/heads/main/PrintScreen.ahk)
@@ -310,21 +309,22 @@ This Natural Sparsity Principle underpins the efficiency of biological cognition
 
 <img src="rate-my-setup.png" width="350">
 
-
+<!--
 [Reverse Engineering Swype](https://www.perplexity.ai/search/i-m-looking-for-patents-open-s-c5OCTDU3SDauid2nthyLOQ)
-
+-->
 <img src="swype-grid.png" width="350">
 
 Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
-
+<!--
 Learn [Assembly Theory](https://standardgalactic.github.io/alphabet/Assembly-Theory.txt) 
 
-<!-- [Latin](https://standardgalactic.github.io/flashcards.html) -->
+[Latin](https://standardgalactic.github.io/flashcards.html) -->
 
 [Small World Generator](http://standardgalactic.github.io/Centerfuge)
 
+<!--
 [Liminal Space](https://github.com/standardgalactic/substrate?tab=readme-ov-file)
-
+-->
 [Eclectric Oil](https://standardgalactic.github.io/eclectric-oil/)
 
 [Circle of Fifths](https://standardgalactic.github.io/circle-of-fifths/)
