@@ -111,6 +111,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 # Mechanistic Frameworks
 
+[Complexity without Intelligence](https://standardgalactic.github.io/library/Complexity%20without%20Intelligence.pdf)
+
 [Ecphoric Synthesis](https://standardgalactic.github.io/kitbash/Ecphoric%20Synthesis.pdf)
 
 [The Forkability of Time](https://standardgalactic.github.io/spherepop/The%20Forkability%20of%20Time.pdf)
