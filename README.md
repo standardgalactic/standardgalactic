@@ -64,6 +64,8 @@ See also:
 https://standardgalactic.github.io/standardgalactic/interfaces/
 -->
 
+[The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
+
 [The Hostile Interface](https://standardgalactic.github.io/antivenom/The%20Hostile%20Interface.pdf)
 
 [Dark Patterns](https://standardgalactic.github.io/antivenom/Dark%20Patterns.pdf)
@@ -110,6 +112,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 
 # Mechanistic Frameworks
+
+[Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
 
 [Complexity without Intelligence](https://standardgalactic.github.io/library/Complexity%20without%20Intelligence.pdf)
 
