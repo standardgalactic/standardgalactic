@@ -58,6 +58,8 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[Collective Intelligence Under Constraint](https://standardgalactic.github.io/research-projects/Collective%20Intelligence%20Under%20Constraint.pdf)
+
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
 <!--
 See also:
