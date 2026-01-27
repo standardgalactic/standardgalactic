@@ -115,6 +115,9 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 # Mechanistic Frameworks
 
+
+[Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
+
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
 
 [Complexity without Intelligence](https://standardgalactic.github.io/library/Complexity%20without%20Intelligence.pdf)
