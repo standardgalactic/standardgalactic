@@ -66,6 +66,8 @@ See also:
 https://standardgalactic.github.io/standardgalactic/interfaces/
 -->
 
+[The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
+
 [The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
 
 [The Hostile Interface](https://standardgalactic.github.io/antivenom/The%20Hostile%20Interface.pdf)
@@ -114,7 +116,6 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 
 # Mechanistic Frameworks
-
 
 [Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
 
