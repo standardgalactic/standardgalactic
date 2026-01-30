@@ -162,6 +162,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
+[Everlasting Redshift](https://standardgalactic.github.io/kitbash/Everlasting%20Redshift.pdf)
+
 [Persistence Before Efficiency](https://standardgalactic.github.io/research-projects/Persistence%20Before%20Efficiency.pdf)
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
