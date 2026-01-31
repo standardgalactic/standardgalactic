@@ -183,6 +183,7 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Merit Without Mercy](https://standardgalactic.github.io/library/Merit%20Without%20Mercy.pdf)
 
+[The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
 <!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
