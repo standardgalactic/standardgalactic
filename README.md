@@ -40,8 +40,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Old Art Archive](https://standardgalactic.github.io/archive)
 
 [Living Paintings](https://standardgalactic.github.io/video-player)
-
+<!--
 [Follow me on Facebook](https://standardgalactic.github.io/facebook-pages/index.html)
+-->
 
 # Parody Music
 
@@ -58,8 +59,9 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+<!--
 [Personal Superintelligence](https://standardgalactic.github.io/research-projects/Personal%20Superintelligence.pdf)
-
+-->
 [Collective Intelligence Under Constraint](https://standardgalactic.github.io/research-projects/Collective%20Intelligence%20Under%20Constraint.pdf)
 
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
@@ -67,7 +69,7 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 See also:
 https://standardgalactic.github.io/standardgalactic/interfaces/
 -->
-
+<!--
 [The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
 
 [The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
@@ -89,11 +91,13 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Induced Homogeneity](https://standardgalactic.github.io/antivenom/Induced%20Homogeneity.pdf)
 
 [Gallery Before Feed](https://standardgalactic.github.io/research-projects/Gallery%20Before%20Feed.pdf)
-
+-->
 <!--
 [Meta User Obstruction](https://github.com/standardgalactic/antivenom/tree/main/working/)
 -->
+<!--
 [Identity Collapse and the Platforming of Fraud](https://standardgalactic.github.io/Identity%20Collapse.pdf)
+-->
 
 [Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game.pdf)
 
@@ -108,8 +112,9 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 # Polyxan (Work in Progress)
 
 [The Narrow Path Between Domination and Chaos](https://standardgalactic.github.io/research-projects/The%20Narrow%20Path.pdf)
-
+<!--
 [Coherence Before Engagement](https://standardgalactic.github.io/alphabet/Coherence%20Before%20Engagement.pdf)
+-->
 
 [Semantic Hyperstructures](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperinfrastructure.pdf)
 
@@ -156,9 +161,9 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
 -->
-
+<!--
 [A Typology of Theoretical Failure](https://standardgalactic.github.io/antivenom/A%20Typology%20of%20Theoretical%20Failure.pdf)
-
+-->
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
@@ -175,6 +180,9 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Scope as Geometry in Time-Bound Systems](https://standardgalactic.github.io/spherepop/Scope%20as%20Geometry.pdf)
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
+
+[Merit Without Mercy](https://standardgalactic.github.io/library/Merit%20Without%20Mercy.pdf)
+
 <!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
