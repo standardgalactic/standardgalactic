@@ -59,10 +59,15 @@ Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style
 
 # Alignment Research
 
+[The Stack Capture Race](https://standardgalactic.github.io/library/The%20Stack%20Capture%20Race.pdf)
 <!--
 [Personal Superintelligence](https://standardgalactic.github.io/research-projects/Personal%20Superintelligence.pdf)
 -->
+
 [Collective Intelligence Under Constraint](https://standardgalactic.github.io/research-projects/Collective%20Intelligence%20Under%20Constraint.pdf)
+<!--
+[Ephemeral Feeds](https://standardgalactic.github.io/kitbash/Ephemeral%20Feeds.pdf)
+-->
 
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
 <!--
@@ -154,6 +159,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
 
+[The Ergonomics of Prediction](https://standardgalactic.github.io/research-projects/The%20Ergonomics%20of%20Prediction.pdf)
+
 [Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
 
 [Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
@@ -169,6 +176,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Everlasting Redshift](https://standardgalactic.github.io/kitbash/Everlasting%20Redshift.pdf)
 
+[Physics After Spacetime](https://standardgalactic.github.io/research-projects/Physics%20After%20Spacetime.pdf)
+
 [Persistence Before Efficiency](https://standardgalactic.github.io/research-projects/Persistence%20Before%20Efficiency.pdf)
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
@@ -181,7 +190,7 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
-[Merit Without Mercy](https://standardgalactic.github.io/library/Merit%20Without%20Mercy.pdf)
+[Merit without Mercy](https://standardgalactic.github.io/library/Merit%20without%20Mercy.pdf)
 
 [The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
 <!--
