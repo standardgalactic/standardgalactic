@@ -379,7 +379,7 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 
 **My Wikipedia**
 
-I'm trying to write a Wikipedia article about the complexity theorist Alicia Juarrero, author of *Context Changes Everything* and *Dynamics in Action*. Apparently, I do not sound human enough. If anyone has additional sources establishing her notability or can help write less stilted prose, feel free to contribute [here](https://en.wikipedia.org/wiki/Draft:Alicia%20Juarrero). 
+I'm trying to write a Wikipedia article about the complexity theorist Alicia Juarrero, author of *Context Changes Everything* and *Dynamics in Action*. Apparently, I do not sound human enough. If anyone has additional sources establishing her notability or can help me write less stilted prose, feel free to contribute [here](https://en.wikipedia.org/wiki/Draft:Alicia%20Juarrero). 
 
 [Sandbox](https://en.wikipedia.org/wiki/User:Mechachleopteryx/sandbox)
 
