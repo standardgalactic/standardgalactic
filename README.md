@@ -129,6 +129,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 # Mechanistic Frameworks
 
+[Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
+
 [From Minerals to Minds](https://standardgalactic.github.io/alphabet/From%20Minerals%20to%20Minds.pdf)
 
 [Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
