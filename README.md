@@ -110,6 +110,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
 
+[Aesthetic Saturation and the Erosion of Voluntary Attention](https://standardgalactic.github.io/antivenom/Aesthetic%20Saturation.pdf)
+
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
 [The Genius of Silence](https://standardgalactic.github.io/alphabet/The%20Genius%20of%20Silence.pdf) — *Draft*
@@ -186,6 +188,16 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
 
+# Ecological Models
+
+[Long-Horizon Simulations](https://github.com/standardgalactic/ecological-models/blob/main/long-horizon-simulations.ipynb)
+ — *Incomplete*
+
+<!--
+# Tools and Utilities
+
+[Baby Barn Cost Estimator](https://standardgalactic.github.io/estimator/) — *Needs Work*
+-->
 # Just for Fun
 
 [The History of Spherepop](https://standardgalactic.github.io/spherepop/The%20History%20of%20Spherepop.pdf)
