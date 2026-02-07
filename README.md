@@ -131,6 +131,10 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 # Mechanistic Frameworks
 
+[Noun-Free Cognition](https://standardgalactic.github.io/research-projects/Noun-Free%20Cognition.pdf)
+
+[Local Tractability and Global Dysfunction](https://standardgalactic.github.io/research-projects/Local%20Tractability%20and%20Global%20Dysfunction.pdf)
+
 [Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
 
 [From Minerals to Minds](https://standardgalactic.github.io/alphabet/From%20Minerals%20to%20Minds.pdf)
@@ -167,8 +171,9 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [The Ergonomics of Prediction](https://standardgalactic.github.io/research-projects/The%20Ergonomics%20of%20Prediction.pdf)
 
+<!-- 
 [Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
-
+-->
 [Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
 <!-- [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
 
@@ -209,6 +214,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Merit without Mercy](https://standardgalactic.github.io/library/Merit%20without%20Mercy.pdf)
 
 [The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
+
+[The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *New Screenplay*
 <!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
