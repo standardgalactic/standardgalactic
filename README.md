@@ -215,7 +215,14 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
 
-[The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *New Screenplay*
+[The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *Screenplay*
+
+[Flower Wars](https://standardgalactic.github.io/alphabet/Flower%20Wars.pdf) – *Screenplay*
+
+* [Compendium](https://standardgalactic.github.io/alphabet/Flower%20Wars%20-%20Compendium.pdf)
+
+* [Bounded Violence](https://standardgalactic.github.io/alphabet/Flower%20Wars%20-%20Bounded%20Violence.pdf)
+
 <!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
