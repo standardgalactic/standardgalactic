@@ -223,6 +223,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 * [Bounded Violence](https://standardgalactic.github.io/alphabet/Flower%20Wars%20-%20Bounded%20Violence.pdf)
 
+[Audio Explorer](https://standardgalactic.github.io/audio-explorer/)
+
 <!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
