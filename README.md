@@ -110,6 +110,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 # Mechanistic Frameworks
 
+[The Mortality of Computation](https://standardgalactic.github.io/alphabet/The%20Mortality%20of%20Computation.pdf)
+
 [Irreversibility as Architecture](https://standardgalactic.github.io/research-projects/Irreversibility%20as%20Architecture.pdf)
 
 [Noun-Free Cognition](https://standardgalactic.github.io/research-projects/Noun-Free%20Cognition.pdf)
