@@ -143,6 +143,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
 
+[Order and Obfuscation](https://standardgalactic.github.io/research-projects/Order%20and%20Obfuscation.pdf)
+
 [Complexity without Intelligence](https://standardgalactic.github.io/library/Complexity%20without%20Intelligence.pdf)
 
 [Ecphoric Synthesis](https://standardgalactic.github.io/kitbash/Ecphoric%20Synthesis.pdf)
