@@ -110,6 +110,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 # Mechanistic Frameworks
 
+[Irreversibility as Architecture](https://standardgalactic.github.io/research-projects/Irreversibility%20as%20Architecture.pdf)
+
 [Noun-Free Cognition](https://standardgalactic.github.io/research-projects/Noun-Free%20Cognition.pdf)
 
 [Local Tractability and Global Dysfunction](https://standardgalactic.github.io/research-projects/Local%20Tractability%20and%20Global%20Dysfunction.pdf)
