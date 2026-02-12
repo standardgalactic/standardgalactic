@@ -47,34 +47,19 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 # Parody Music
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
-<!--
-## Retrocausal Projects
-
-**LEAKED - Cover by Tyson Ardo** <!-- Freaky Speaky style  [Retrocausality... ](https://suno.com/s/FmlpCJOqfGR0DYHA)
-
-Original [here.](https://suno.com/s/omxPrNr3XVChijmG) <!-- Mechanical style 
-
-[Download mp3](https://github.com/standardgalactic/standardgalactic/raw/refs/heads/main/Retrocausal%20Projects.mp3) 
--->
 
 # Alignment Research
 
 [The Stack Capture Race](https://standardgalactic.github.io/library/The%20Stack%20Capture%20Race.pdf)
-<!--
+
 [Personal Superintelligence](https://standardgalactic.github.io/research-projects/Personal%20Superintelligence.pdf)
--->
 
 [Collective Intelligence Under Constraint](https://standardgalactic.github.io/research-projects/Collective%20Intelligence%20Under%20Constraint.pdf)
-<!--
+
 [Ephemeral Feeds](https://standardgalactic.github.io/kitbash/Ephemeral%20Feeds.pdf)
--->
 
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
-<!--
-See also:
-https://standardgalactic.github.io/standardgalactic/interfaces/
--->
-<!--
+
 [The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
 
 [The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
@@ -96,13 +81,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 [Induced Homogeneity](https://standardgalactic.github.io/antivenom/Induced%20Homogeneity.pdf)
 
 [Gallery Before Feed](https://standardgalactic.github.io/research-projects/Gallery%20Before%20Feed.pdf)
--->
-<!--
-[Meta User Obstruction](https://github.com/standardgalactic/antivenom/tree/main/working/)
--->
-<!--
+
 [Identity Collapse and the Platforming of Fraud](https://standardgalactic.github.io/Identity%20Collapse.pdf)
--->
 
 [Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game.pdf)
 
@@ -119,9 +99,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 # Polyxan (Work in Progress)
 
 [The Narrow Path Between Domination and Chaos](https://standardgalactic.github.io/research-projects/The%20Narrow%20Path.pdf)
-<!--
+
 [Coherence Before Engagement](https://standardgalactic.github.io/alphabet/Coherence%20Before%20Engagement.pdf)
--->
 
 [Semantic Hyperstructures](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperinfrastructure.pdf)
 
@@ -173,17 +152,8 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [The Ergonomics of Prediction](https://standardgalactic.github.io/research-projects/The%20Ergonomics%20of%20Prediction.pdf)
 
-<!-- 
-[Islands of Coherence](https://galactromeda.com/islands-of-coherence/)
--->
 [Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
-<!-- [Stigmergic Berm Simulations](https://standardgalactic.github.io/yarncrawler)
 
-[Source Control](https://standardgalactic.github.io/yarncrawler/source-control.html) 
--->
-<!--
-[A Typology of Theoretical Failure](https://standardgalactic.github.io/antivenom/A%20Typology%20of%20Theoretical%20Failure.pdf)
--->
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
@@ -197,7 +167,7 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 # Ecological Models
 
-[Long-Horizon Simulations](https://github.com/standardgalactic/ecological-models/blob/main/long-horizon-simulations.ipynb)
+[Long-Horizon Simulations](https://github.com/standardgalactic/ecological-models/blob/mai/long-horizon-simulations.ipynb)
  — *Incomplete*
 
 <!--
@@ -232,11 +202,6 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
 
 [Trust Apocalypse](https://galactromeda.com/rsvp/Trust%20Apocalypse.pdf)
 
-## Aspect Relegation Theory
-
-[Self-Refactoring Crosslinking](https://github.com/standardgalactic/kitbash)
-[Mind Uploading Experiments](https://standardgalactic.github.io/kitbash/mind-uploading.html)
-
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
 -->
@@ -248,40 +213,9 @@ https://standardgalactic.github.io/standardgalactic/interfaces/
   </a>
 </div>
 
-<!--
-## Machine Learning
-
-Trained a classifier to determine whether a word is easier to type using QWERTY or DVORAK
-
-[Project Page](https://standardgalactic.github.io/keyboard)
-
-## Typeface Experiments:
-
-[Sliders Prototype](https://standardgalactic.github.io/sliders-prototype.html)
-
-[Sliders Prototype v2](https://standardgalactic.github.io/sliders-prototype-v2.html)
-
-[Sliders](https://standardgalactic.github.io/sliders.html)
-[Portal](https://standardgalactic.github.io/portal.html)
-
-## Interactive Fiction
-
-[Timeslip](https://standardgalactic.github.io/timeslip)
-
-[Bruno's Ark](https://standardgalactic.github.io/alphabet/brunos-ark.html)
-
-[Bruno's Ark](https://standardgalactic.github.io/brunos-ark.txt)
-
-[Grabby Aliens Attack!](https://github.com/search?q=Owner%3Astandardgalactic+%22Grabby+aliens%22&type=code&p=1) 
--->
-
-
 ## Generative Art
 
 [Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
-<!--
-[𝘛𝘦𝘢 𝘥𝘳𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘯 𝘔𝘺𝘵𝘪𝘴𝘩𝘤𝘩𝘪, 𝘯𝘦𝘢𝘳 𝘔𝘰𝘴𝘤𝘰𝘸](https://standardgalactic.github.io/capstone)
--->
 
 ## <big>Earth Cube Translator</big>
 <div>
@@ -290,12 +224,6 @@ Trained a classifier to determine whether a word is easier to type using QWERTY 
   </a>
 </div>
 
-<!--
-## My Timeline
-
-[Unpublished Facebook Posts](https://standardgalactic.github.io/timeline.html)
-
--->
 ## Psychonomics
 
 *[The Limits of Logic](https://github.com/standardgalactic/kitbash/tree/main/research)*
@@ -321,9 +249,6 @@ Broadcast [The Oblicosm Paradox](https://youtube.com/live/0GVvy5s-bXw)
 
 ---
 Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.github.io/vectorspace/#/galaxy/word2vec-wiki?cx=-3208&cy=-8930&cz=2898&lx=-0.2059&ly=-0.6299&lz=-0.5451&lw=0.5135&ml=300&s=1.75&l=1&v=d50_clean), and added a *[Site Map](http://standardgalactic.github.io/sitemap).*
-<!--
-[LLM workspace](https://github.com/llm-workflow-engine/llm-workflow-engine) featuring [quadrivium](https://github.com/standardgalactic/quadrivium) and [xylomancy](https://github.com/standardgalactic/xylomancy) (and [ollama](https://github.com/ollama/ollama) with [wizardlm2](https://wizardlm.github.io/WizardLM2/)) now available as a [docker image on Dockerhub](https://hub.docker.com/layers/mechachleopteryx/workflow-engine/quantum_soup/images/sha256-4870f5ae5ebafb974b474ca83f955f6a357fd07a09466de7f3d117868723708b).
--->
 
 ![](dactyl.gif)
 
@@ -377,22 +302,15 @@ This Natural Sparsity Principle underpins the efficiency of biological cognition
 
 <img src="rate-my-setup.png" width="350">
 
-<!--
-[Reverse Engineering Swype](https://www.perplexity.ai/search/i-m-looking-for-patents-open-s-c5OCTDU3SDauid2nthyLOQ)
--->
 <img src="swype-grid.png" width="350">
 
 Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
 <!--
-Learn [Assembly Theory](https://standardgalactic.github.io/alphabet/Assembly-Theory.txt) 
 
 [Latin](https://standardgalactic.github.io/flashcards.html) -->
 
 [Small World Generator](http://standardgalactic.github.io/Centerfuge)
 
-<!--
-[Liminal Space](https://github.com/standardgalactic/substrate?tab=readme-ov-file)
--->
 [Eclectric Oil](https://standardgalactic.github.io/eclectric-oil/)
 
 [Circle of Fifths](https://standardgalactic.github.io/circle-of-fifths/)
@@ -407,8 +325,8 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 
   <br>
   <br>
-<!--[𝘉𝘢𝘤𝘬𝘸𝘢𝘳𝘥 𝘊𝘰𝘮𝘱𝘢𝘵𝘪𝘣𝘭𝘪𝘵𝘺](https://standardgalactic.github.io/backward-compatibility)-->
 
+<!--
 **My Wikipedia**
 
 [Sandbox](https://en.wikipedia.org/wiki/User:Mechachleopteryx/sandbox)
@@ -417,18 +335,13 @@ C̷̣̝̲̜̈́ͅL͍͚̝͖̭͖̄̍̏O̦̝̬͛̍͗̓͌̊̏T̻͎̬̫̰̭̬̿H̸͎̐�
 
 I am following 200,000 pages on Wikipedia
 
-<!-- Level 2 Unlocked - Wikipedia watchlist limit removed-->
-
 [My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/Wikipedia-watchlist.txt)
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
-
+-->
 Interactive Mindmap
 
 [Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
- 
-<!--
-[Merch Store](https://www.redbubble.com/en/people/flyxion/shop)
--->
+
 
 ![](featured.png)
