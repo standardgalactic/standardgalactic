@@ -50,6 +50,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 # Alignment Research
 
+[Optimization without Restraint](https://standardgalactic.github.io/antivenom/Optimization%20without%20Restraint.pdf)
+
 [The Stack Capture Race](https://standardgalactic.github.io/library/The%20Stack%20Capture%20Race.pdf)
 
 [Personal Superintelligence](https://standardgalactic.github.io/research-projects/Personal%20Superintelligence.pdf)
