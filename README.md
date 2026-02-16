@@ -53,15 +53,18 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Optimization without Restraint](https://standardgalactic.github.io/antivenom/Optimization%20without%20Restraint.pdf)
 
 [The Stack Capture Race](https://standardgalactic.github.io/library/The%20Stack%20Capture%20Race.pdf)
-
+<!--
 [Personal Superintelligence](https://standardgalactic.github.io/research-projects/Personal%20Superintelligence.pdf)
+-->
 
 [Collective Intelligence Under Constraint](https://standardgalactic.github.io/research-projects/Collective%20Intelligence%20Under%20Constraint.pdf)
 
+<!--
 [Ephemeral Feeds](https://standardgalactic.github.io/kitbash/Ephemeral%20Feeds.pdf)
-
+-->
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
 
+<!--
 [The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
 
 [The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
@@ -71,11 +74,12 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Dark Patterns](https://standardgalactic.github.io/antivenom/Dark%20Patterns.pdf)
 
 [Monetizing Uncertainty](https://standardgalactic.github.io/antivenom/Monetizing%20Uncertainty.pdf)
-
+-->
 [Against Namespace Laundering](https://standardgalactic.github.io/antivenom/Against%20Namespace%20Laundering.pdf)
 
 [Culture and Structural Power](https://standardgalactic.github.io/antivenom/Culture%20and%20Structural%20Power.pdf)
 
+<!--
 [When Engagement Stops Pointing](https://standardgalactic.github.io/antivenom/When%20Engagement%20Stops%20Pointing.pdf)
 
 [Aspirational Exhaust](https://standardgalactic.github.io/antivenom/Aspirational%20Exhaust.pdf)
@@ -85,14 +89,16 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Gallery Before Feed](https://standardgalactic.github.io/research-projects/Gallery%20Before%20Feed.pdf)
 
 [Identity Collapse and the Platforming of Fraud](https://standardgalactic.github.io/Identity%20Collapse.pdf)
+-->
 
 [Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game.pdf)
 
 [Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
 
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
-
+<!--
 [Aesthetic Saturation and the Erosion of Voluntary Attention](https://standardgalactic.github.io/antivenom/Aesthetic%20Saturation.pdf)
+-->
 
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
@@ -106,10 +112,11 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Semantic Hyperstructures](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperinfrastructure.pdf)
 
-[Verification and Proof Manual](https://standardgalactic.github.io/research-projects/Polyxan%20Proof%20Specification.pdf) 
+[Verification and Proof Manual](https://standardgalactic.github.io/research-projects/Polyxan%20Proof%20Specification.pdf)
 
+<!--
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
-
+-->
 # Mechanistic Frameworks
 
 [Transformation Before Representation](https://standardgalactic.github.io/kitbash/Transformation%20Before%20Representation.pdf)
@@ -133,8 +140,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Order and Obfuscation](https://standardgalactic.github.io/research-projects/Order%20and%20Obfuscation.pdf)
 
 [Complexity without Intelligence](https://standardgalactic.github.io/library/Complexity%20without%20Intelligence.pdf)
-
+<!--
 [Ecphoric Synthesis](https://standardgalactic.github.io/kitbash/Ecphoric%20Synthesis.pdf)
+-->
 
 [The Forkability of Time](https://standardgalactic.github.io/spherepop/The%20Forkability%20of%20Time.pdf)
 
@@ -156,8 +164,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [MAGI overview](https://github.com/standardgalactic/research-projects/tree/main/working) 
 
+<!--
 [Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
-
+-->
 [The Ergonomics of Prediction](https://standardgalactic.github.io/research-projects/The%20Ergonomics%20of%20Prediction.pdf)
 
 [Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
@@ -196,8 +205,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
 [Merit without Mercy](https://standardgalactic.github.io/library/Merit%20without%20Mercy.pdf)
-
+<!--
 [The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
+-->
 
 [The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *Screenplay*
 
