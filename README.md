@@ -125,6 +125,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 -->
 # Mechanistic Frameworks
 
+[Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
+
+[Homotopy and Identity](https://standardgalactic.github.io/research-projects/Homotopy%20and%20Identity.pdf)
+
 [Transformation Before Representation](https://standardgalactic.github.io/kitbash/Transformation%20Before%20Representation.pdf)
 
 [The Mortality of Computation](https://standardgalactic.github.io/alphabet/The%20Mortality%20of%20Computation.pdf)
