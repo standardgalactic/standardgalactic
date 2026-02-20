@@ -50,6 +50,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 # Alignment Research
 
+[Distributed Centrality](https://standardgalactic.github.io/library/Distributed%20Centrality.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/library/projects/?track=gravity)
+
 [The Polemic Debt](https://standardgalactic.github.io/antivenom/The%20Polemic%20Debt.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/antivenom/working/)
@@ -110,7 +114,11 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [The Genius of Silence](https://standardgalactic.github.io/alphabet/The%20Genius%20of%20Silence.pdf) — *Draft*
 
-# Polyxan (Work in Progress)
+# Polyxan and Plenumhub
+
+[Manufacturing Stability](https://standardgalactic.github.io/library/Manufacturing%20Stability.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/library/projects/?track=geometry)
 
 [The Narrow Path Between Domination and Chaos](https://standardgalactic.github.io/research-projects/The%20Narrow%20Path.pdf)
 
@@ -126,6 +134,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 # Mechanistic Frameworks
 
 [Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/library/projects/?track=hallucination)
 
 [Homotopy and Identity](https://standardgalactic.github.io/research-projects/Homotopy%20and%20Identity.pdf)
 
