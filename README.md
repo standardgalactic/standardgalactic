@@ -218,6 +218,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Embodied Constraint and Minimal Assembly](https://standardgalactic.github.io/alphabet/Embodied%20Constraint.pdf)
 
+[The Calculus of Commitment](https://standardgalactic.github.io/spherepop/The%20Calculus%20of%20Commitment.pdf)
+
 [The History of Spherepop](https://standardgalactic.github.io/spherepop/The%20History%20of%20Spherepop.pdf)
 
 [Scope as Geometry in Time-Bound Systems](https://standardgalactic.github.io/spherepop/Scope%20as%20Geometry.pdf)
