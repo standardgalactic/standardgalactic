@@ -218,8 +218,9 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 [Embodied Constraint and Minimal Assembly](https://standardgalactic.github.io/alphabet/Embodied%20Constraint.pdf)
 
+<!-- Maybe a little too bit polemical and incendiary for now, might have to work out some bugs. 
 [Structure Proceeds Symbol](https://standardgalactic.github.io/spherepop/Structure%20Proceeds%20Symbol.pdf)
-
+-->
 [The Calculus of Commitment](https://standardgalactic.github.io/spherepop/The%20Calculus%20of%20Commitment.pdf)
 
 [The History of Spherepop](https://standardgalactic.github.io/spherepop/The%20History%20of%20Spherepop.pdf)
