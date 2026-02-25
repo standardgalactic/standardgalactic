@@ -50,6 +50,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 # Alignment Research
 
+[The Ecology of Neoteny](https://standardgalactic.github.io/alphabet/The%20Ecology%20of%20Neoteny.pdf)
+
+[Spectacle Runtime](https://standardgalactic.github.io/alphabet/Spectacle%20Runtime.pdf)
+
 [Distributed Centrality](https://standardgalactic.github.io/library/Distributed%20Centrality.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/library/projects/?track=gravity)
