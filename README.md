@@ -220,6 +220,10 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 -->
 # Just for Fun
 
+[The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
+
+* [Essay](https://standardgalactic.github.io/antivenom/Friction%20as%20Inoculation.pdf)
+
 [Embodied Constraint and Minimal Assembly](https://standardgalactic.github.io/alphabet/Embodied%20Constraint.pdf)
 
 <!-- Maybe a little too bit polemical and incendiary for now, might have to work out some bugs. 
