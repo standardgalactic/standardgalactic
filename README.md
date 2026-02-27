@@ -220,6 +220,8 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 -->
 # Just for Fun
 
+[Calculus as the Geometry of Relationship and Controlled Change](https://github.com/standardgalactic/calculus)  — *Incomplete*
+
 [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
 
 * [Essay](https://standardgalactic.github.io/antivenom/Friction%20as%20Inoculation.pdf)
