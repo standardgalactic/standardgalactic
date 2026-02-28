@@ -30,6 +30,10 @@ Try the [Cistercian Number Translator](https://standardgalactic.github.io/cister
 
 And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
+# Mereological Space Ontology
+
+[Memory Game](https://standardgalactic.github.io/userspace/)
+
 # Milestone — **5k Subscribers**
 [![committers.top badge](https://user-badge.committers.top/canada/standardgalactic.svg)](https://user-badge.committers.top/canada/standardgalactic)
 
@@ -49,6 +53,12 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
 # Alignment Research
+
+[The Expiatory Gap](https://standardgalactic.github.io/alignment/The%20Expiatory%20Gap.pdf)
+
+[Convergence Before Autonomy](https://standardgalactic.github.io/alignment/Convergence%20Before%20Autonomy.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/alignment/working/)
 
 [The Ecology of Neoteny](https://standardgalactic.github.io/alphabet/The%20Ecology%20of%20Neoteny.pdf)
 
