@@ -30,7 +30,7 @@ Try the [Cistercian Number Translator](https://standardgalactic.github.io/cister
 
 And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
-# Mereological Space Ontology
+## Mereological Space Ontology
 
 [Memory Game](https://standardgalactic.github.io/userspace/)
 
