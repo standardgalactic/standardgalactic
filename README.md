@@ -39,6 +39,8 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
+Play the [Spellpop mini-game](https://standardgalactic.github.io/spherepop/spellpop.html)
+
 # **10k Subscribers**
 
 [Old Art Archive](https://standardgalactic.github.io/archive)
