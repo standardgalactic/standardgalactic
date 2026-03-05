@@ -41,14 +41,14 @@ Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Pro
 
 Play the [Spellpop mini-game](https://standardgalactic.github.io/spherepop/spellpop.html).
 
-[Logical Symbols] (https://standardgalactic.github.io/spherepop/memory-game.html) 
+[Logical Symbols](https://standardgalactic.github.io/spherepop/memory-game.html) 
 
 <!--
 [Arabic Vocabulary](https://standardgalactic.github.io/spherepop/lexicon-terminal.html) 
 -->
-[Arabic Vocabulary] (https://standardgalactic.github.io/spherepop/lexicon-terminal-v2.html) 
+[Arabic Vocabulary](https://standardgalactic.github.io/spherepop/lexicon-terminal-v2.html) 
 
-[Etch-a-Sketch Simulator] (https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
+[Etch-a-Sketch Simulator](https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
 
 # **10k Subscribers**
 
