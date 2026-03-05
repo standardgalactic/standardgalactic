@@ -50,6 +50,17 @@ Play the [Spellpop mini-game](https://standardgalactic.github.io/spherepop/spell
 
 [Etch-a-Sketch Simulator](https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
 
+<!--
+These small browser programs function as experimental interfaces for thinking about computation, language, and geometry rather than as conventional games. Each tool forms a compact interactive system in which the user progressively constrains a space of possibilities through simple actions, demonstrating how structured outcomes emerge from sequences of small decisions.
+
+The vocabulary trainer illustrates this directly. Each round presents several alternatives, and the learner eliminates incorrect possibilities until the correct translation remains — a constraint-selection process rather than brute enumeration. The program's weighted selection mechanism increases a card's weight after errors and reduces it after correct responses, guiding attention toward weaker vocabulary without complex scheduling. Each entry stores the Arabic form, the English translation, a domain tag, and learning state variables, allowing the same dataset to support topology, category theory, linguistics, or any other thematic domain with minimal structural change. The CRT-style interface, scanlines, and phosphor glow reinforce the sense of a small computational instrument rather than a conventional application.
+
+The Etch-Terminal tool follows the same philosophy applied to geometry. Each movement of the virtual knobs adds another constraint to the final curve. The Pipsqueak language extends this by allowing curves to be described symbolically: a short script expands into a deterministic sequence of drawing steps whose construction history can be replayed at any speed.
+
+The session codes used across both tools encode only the information needed to recreate the interaction. A short string functions as a compressed history of the session.
+
+Taken together, these projects treat the user's actions as part of the algorithm and expose the generative process behind the result — sitting somewhere between educational tools, programming toys, and demonstrations of how complex structures arise from simple rule-based interaction.
+-->
 # **10k Subscribers**
 
 [Old Art Archive](https://standardgalactic.github.io/archive)
