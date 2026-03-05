@@ -39,7 +39,16 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
-Play the [Spellpop mini-game](https://standardgalactic.github.io/spherepop/spellpop.html)
+Play the [Spellpop mini-game](https://standardgalactic.github.io/spherepop/spellpop.html).
+
+[Logical Symbols] (https://standardgalactic.github.io/spherepop/memory-game.html) 
+
+<!--
+[Arabic Vocabulary](https://standardgalactic.github.io/spherepop/lexicon-terminal.html) 
+-->
+[Arabic Vocabulary] (https://standardgalactic.github.io/spherepop/lexicon-terminal-v2.html) 
+
+[Etch-a-Sketch Simulator] (https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
 
 # **10k Subscribers**
 
