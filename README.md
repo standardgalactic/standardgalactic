@@ -302,6 +302,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
   </a>
 </div>
 
+[Evolutionary Development](https://standardgalactic.github.io/research-projects/history/Evolutionary%20Development.pdf)
+
 ## Generative Art
 
 [Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
