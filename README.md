@@ -252,6 +252,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Just for Fun
 
+[History as Identity](https://standardgalactic.github.io/spherepop/History%20as%20Identity.pdf)
+
+* [Spherepop Game Engine](https://standardgalactic.github.io/spherepop/game-engine.html) — *Playable Demo*
+
 [The Geometry of Relationship and Controlled Change](https://github.com/standardgalactic/calculus)  — *Incomplete*
 
 [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
