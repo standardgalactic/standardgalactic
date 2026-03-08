@@ -169,6 +169,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[The Coordination Engine](https://standardgalactic.github.io/library/The%20Coordination%20Engine.pdf)
+
 [Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/library/projects/?track=hallucination)
