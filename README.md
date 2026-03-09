@@ -76,6 +76,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[The Managed Self](https://standardgalactic.github.io/antivenom/The%20Managed%20Self.pdf) — *Draft*
+
 [The Expiatory Gap](https://standardgalactic.github.io/alignment/The%20Expiatory%20Gap.pdf)
 
 [Convergence Before Autonomy](https://standardgalactic.github.io/alignment/Convergence%20Before%20Autonomy.pdf)
