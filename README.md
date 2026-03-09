@@ -152,6 +152,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [The Managed Self](https://standardgalactic.github.io/antivenom/The%20Managed%20Self.pdf) — *Draft*
 
+* [Audio Overview](https://standardgalactic.github.io/antivenom/philosophy/)
+
 # Polyxan and Plenumhub
 
 [Manufacturing Stability](https://standardgalactic.github.io/library/Manufacturing%20Stability.pdf)
