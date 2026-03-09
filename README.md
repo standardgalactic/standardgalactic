@@ -76,8 +76,6 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
-[The Managed Self](https://standardgalactic.github.io/antivenom/The%20Managed%20Self.pdf) — *Draft*
-
 [The Expiatory Gap](https://standardgalactic.github.io/alignment/The%20Expiatory%20Gap.pdf)
 
 [Convergence Before Autonomy](https://standardgalactic.github.io/alignment/Convergence%20Before%20Autonomy.pdf)
@@ -151,6 +149,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
 [The Genius of Silence](https://standardgalactic.github.io/alphabet/The%20Genius%20of%20Silence.pdf) — *Draft*
+
+[The Managed Self](https://standardgalactic.github.io/antivenom/The%20Managed%20Self.pdf) — *Draft*
 
 # Polyxan and Plenumhub
 
