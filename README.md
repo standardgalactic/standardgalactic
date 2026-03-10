@@ -266,7 +266,7 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Constraint and Transformation](https://github.com/standardgalactic/calculus/constraint_and_transformation_v2-1.pdf)  — *Precalculus Textbook*
 
-[The Geometry of Relationship and Controlled Change](https://github.com/standardgalactic/calculus)  — *Incomplete*
+[The Geometry of Relationship and Controlled Change](https://github.com/standardgalactic/calculus/Calculus%20-%20main%20text.pdf)  — *Incomplete*
 
 [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
 
