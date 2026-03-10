@@ -248,8 +248,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Ecological Models
 
-[Long-Horizon Simulations](https://github.com/standardgalactic/ecological-models/blob/mai/long-horizon-simulations.ipynb)
+[Long-Horizon Simulations](https://standardgalactic.github.io/ecological-models/) 
  — *Incomplete*
+
+[Urban Expansion in the Earth System](https://standardgalactic.github.io/ecological-models/urban_eco_climate.pdf)
 
 <!--
 # Tools and Utilities
