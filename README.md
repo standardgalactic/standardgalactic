@@ -246,6 +246,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
 
+# Paleoarcheology
+
+[Stone Piano Theory](https://standardgalactic.github.io/calculus/stone_piano.pdf)
+
 # Ecological Models
 
 [Long-Horizon Simulations](https://standardgalactic.github.io/ecological-models/) 
@@ -267,6 +271,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Constraint and Transformation](https://standardgalactic.github.io/calculus/constraint_and_transformation_v2-1.pdf)  — *Precalculus Textbook*
 
 [The Geometry of Relationship and Controlled Change](https://standardgalactic.github.io/calculus/Calculus%20-%20main%20text.pdf)  — *Incomplete*
+
+[Hierarchical Structure from Minimal Observations](https://standardgalactic.github.io/calculus/hierarchical_structure.pdf)
 
 [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
 
