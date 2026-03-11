@@ -75,6 +75,9 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
 # Alignment Research
+<!--
+[The Hollow Network](https://standardgalactic.github.io/antivenom/resources/synthetic_sociality_v3-2.pdf) 
+-->
 
 [The Expiatory Gap](https://standardgalactic.github.io/alignment/The%20Expiatory%20Gap.pdf)
 
@@ -172,6 +175,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 -->
 # Mechanistic Frameworks
+
+[Trajectories All the Way Down](https://standardgalactic.github.io/library/trajectories.pdf)
 
 [The Coordination Engine](https://standardgalactic.github.io/library/The%20Coordination%20Engine.pdf)
 
