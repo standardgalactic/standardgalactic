@@ -151,6 +151,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
+* [Audio Overview](https://standardgalactic.github.io/research-projects/alignment/)
+
 [The Genius of Silence](https://standardgalactic.github.io/alphabet/The%20Genius%20of%20Silence.pdf) — *Draft*
 
 [The Managed Self](https://standardgalactic.github.io/antivenom/The%20Managed%20Self.pdf) — *Draft*
@@ -178,6 +180,13 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Trajectories All the Way Down](https://standardgalactic.github.io/library/trajectories.pdf)
 
+<!--
+Geodesics of Attention
+
+* [Standard Galactic](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_sga.pdf)
+* [Cursive Galactic](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_cursive.pdf)
+* [Nova Mono](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_nova.pdf)
+-->
 [The Coordination Engine](https://standardgalactic.github.io/library/The%20Coordination%20Engine.pdf)
 
 [Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
