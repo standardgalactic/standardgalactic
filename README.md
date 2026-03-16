@@ -111,6 +111,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
 
+[Dynamics of the Capital Order](https://standardgalactic.github.io/research-projects/working/capital_order_rsvp.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/research-projects/working/)
+
 <!--
 [The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
 
@@ -188,6 +192,8 @@ Geodesics of Attention
 * [Nova Mono](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_nova.pdf)
 -->
 [The Coordination Engine](https://standardgalactic.github.io/library/The%20Coordination%20Engine.pdf)
+
+[Distributed Minds and Generative Substrates](https://standardgalactic.github.io/research-projects/working/distributed_cognition.pdf)
 
 [Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
 
@@ -309,6 +315,8 @@ Geodesics of Attention
 <!--
 [The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
 -->
+
+[Steam-Formed Cellulose Domes](https://standardgalactic.github.io/research-projects/working/steam_cellulose_domes.pdf)
 
 [The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *Screenplay*
 
