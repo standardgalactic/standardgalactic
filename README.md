@@ -182,6 +182,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[Geometry from Entropy Flow](https://standardgalactic.github.io/calculus/rsvp_v4.pdf)
+
 [Trajectories All the Way Down](https://standardgalactic.github.io/library/trajectories.pdf)
 
 <!--
