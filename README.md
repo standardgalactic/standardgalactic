@@ -75,6 +75,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
 # Alignment Research
+
+[Against Indiscriminate Visibility](https://standardgalactic.github.io/alphabet/Against%20Indiscriminate%20Visibility.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/alphabet/visibility/)
 <!--
 [The Hollow Network](https://standardgalactic.github.io/antivenom/resources/synthetic_sociality_v3-2.pdf) 
 -->
@@ -280,6 +284,12 @@ Geodesics of Attention
  — *Incomplete*
 
 [Urban Expansion in the Earth System](https://standardgalactic.github.io/ecological-models/urban_eco_climate.pdf)
+
+<div>
+  <a href="https://standardgalactic.github.io/ecological-models/terrascope/">
+    <img src="terrascope.gif" alt="Terrascope" width="400">
+  </a>
+</div>
 
 <!--
 # Tools and Utilities
