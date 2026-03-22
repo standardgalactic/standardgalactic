@@ -39,7 +39,7 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
-Play the [Spellpop mini-game](https://standardgalactic.github.io/spherepop/spellpop.html)
+Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)* and *[Starpop](https://standardgalactic.github.io/Centerfuge/starpop/)* minigames.
 
 [Logical Symbols](https://standardgalactic.github.io/spherepop/memory-game.html) 
 
@@ -185,6 +185,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 -->
 # Mechanistic Frameworks
+
+[Text as Substrate](https://standardgalactic.github.io/library/Text%20as%20Substrate.pdf) 
 
 [Energy as Contradiction](https://standardgalactic.github.io/library/energy_as_contradiction.pdf) — *Incomplete*
 
