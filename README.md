@@ -76,6 +76,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[The Collapse of Proxy Integrity](https://standardgalactic.github.io/antivenom/proxy_integrity.pdf)
+
 [Against Indiscriminate Visibility](https://standardgalactic.github.io/alphabet/Against%20Indiscriminate%20Visibility.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/visibility/)
@@ -303,6 +305,8 @@ Geodesics of Attention
 [History as Identity](https://standardgalactic.github.io/spherepop/History%20as%20Identity.pdf)
 
 * [Spherepop Game Engine](https://standardgalactic.github.io/spherepop/game-engine.html) — *Playable Demo*
+
+* [Spherepop Lectures](https://standardgalactic.github.io/spherepop/projects/)
 
 [Constraint and Transformation](https://standardgalactic.github.io/calculus/constraint_and_transformation_v2-1.pdf)  — *Precalculus Textbook*
 
