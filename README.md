@@ -81,9 +81,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Against Indiscriminate Visibility](https://standardgalactic.github.io/alphabet/Against%20Indiscriminate%20Visibility.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/visibility/)
-<!--
+
+[The Coordinate-System Error](https://standardgalactic.github.io/alphabet/attention-essay.pdf)
+
 [The Hollow Network](https://standardgalactic.github.io/antivenom/resources/synthetic_sociality_v3-2.pdf) 
--->
 
 [The Expiatory Gap](https://standardgalactic.github.io/alignment/The%20Expiatory%20Gap.pdf)
 
@@ -379,13 +380,14 @@ Geodesics of Attention
 
 ## Psychonomics
 
+[De Architectvra Intellectvs Vniversalis Artificialis](https://standardgalactic.github.io/alphabet/de-architectura.pdf)
+<!--
 *[The Limits of Logic](https://github.com/standardgalactic/kitbash/tree/main/research)*
 
 *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)* — Hypothesis-based perception
 
-
 *[Vectorial Code](https://standardgalactic.github.io/random-thoughts/vectorial-code-overview.txt)*
-
+-->
 ## <big>Paradigm Shift — ʇɟıɥS ɯɓıpɐɹɐԀ</big> <a href="https://standardgalactic.github.io/umbilicus"> <img src="cropped-live-now.gif" alt="LIVE NOW" width="80"></a>
 
 ![Scholar's Bay](bandwidth-limit.jpg)
