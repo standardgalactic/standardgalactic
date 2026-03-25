@@ -313,6 +313,8 @@ Geodesics of Attention
 
 [The Geometry of Relationship and Controlled Change](https://standardgalactic.github.io/calculus/Calculus%20-%20main%20text.pdf)  — *Incomplete*
 
+[Identity After Collapse](https://standardgalactic.github.io/calculus/Identity%20After%20Collapse.pdf)  — *Philosophy of Logic*
+
 [Hierarchical Structure from Minimal Observations](https://standardgalactic.github.io/calculus/hierarchical_structure.pdf)
 
 [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
