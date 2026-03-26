@@ -351,8 +351,6 @@ Geodesics of Attention
 
 [Audio Explorer](https://standardgalactic.github.io/audio-explorer/)
 
-# Preference Field Dynamics
-
 [Blastoids Pic Breeder](https://standardgalactic.github.io/blastoids/blastoids.pdf)
 
 <!--
