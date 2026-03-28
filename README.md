@@ -189,6 +189,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[The Compiled Self](https://standardgalactic.github.io/blastoids/manuscripts/processing/essay_v8.pdf) 
+
 [Text as Substrate](https://standardgalactic.github.io/library/Text%20as%20Substrate.pdf) 
 
 [Energy as Contradiction](https://standardgalactic.github.io/library/energy_as_contradiction.pdf) — *Incomplete*
