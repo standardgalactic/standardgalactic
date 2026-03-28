@@ -76,6 +76,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[Thermodynamic Reachability](https://standardgalactic.github.io/library/Thermodynamic-Reachability.pdf)
+
 [The Collapse of Proxy Integrity](https://standardgalactic.github.io/antivenom/proxy_integrity.pdf)
 
 [Against Indiscriminate Visibility](https://standardgalactic.github.io/alphabet/Against%20Indiscriminate%20Visibility.pdf)
