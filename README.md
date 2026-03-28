@@ -155,6 +155,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
 
+[Divided We Stand](https://standardgalactic.github.io/antivenom/Divided%20We%20Stand.pdf)
+
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
 <!--
 [Aesthetic Saturation and the Erosion of Voluntary Attention](https://standardgalactic.github.io/antivenom/Aesthetic%20Saturation.pdf)
