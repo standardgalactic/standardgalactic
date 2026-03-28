@@ -271,11 +271,7 @@ Geodesics of Attention
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
 
-Cosmological Observables Without Expansion: 
-A Scalar-Vector-Entropy Field Theory of Redshift, 
-Luminosity Distance, and the Hubble Tension
-
-[Working Draft](https://standardgalactic.github.io/kitbash/cosmology/rsvp_cosmology_v2.pdf)
+[Cosmological Observables Without Expansion](https://standardgalactic.github.io/kitbash/cosmology/rsvp_cosmology_v2.pdf)  — *Working Draft*
 
 [Everlasting Redshift](https://standardgalactic.github.io/kitbash/Everlasting%20Redshift.pdf)
 
