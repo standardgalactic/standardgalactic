@@ -361,7 +361,7 @@ Geodesics of Attention
 
 [Blastoids Pic Breeder](https://standardgalactic.github.io/blastoids/blastoids.pdf)
 
-[Github Developer Lifecycles](https://standardgalactic.github.io/research-projects/analysis/github_developer_lifecycles.pdf)
+[Developer Lifecycles](https://standardgalactic.github.io/research-projects/analysis/github_developer_lifecycles.pdf)
 <!--
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
