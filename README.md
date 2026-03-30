@@ -210,6 +210,12 @@ Geodesics of Attention
 * [Cursive Galactic](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_cursive.pdf)
 * [Nova Mono](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_nova.pdf)
 -->
+[Synthetic Grounding](https://standardgalactic.github.io/arcanum/synthetic-grounding.pdf)
+
+[Realization Maps](https://standardgalactic.github.io/arcanum/realization-map.pdf)
+
+[Plenum Amplitudes](https://standardgalactic.github.io/arcanum/Plenum%20Amplitudes.pdf)
+
 [The Coordination Engine](https://standardgalactic.github.io/library/The%20Coordination%20Engine.pdf)
 
 [Distributed Minds and Generative Substrates](https://standardgalactic.github.io/research-projects/working/distributed_cognition.pdf)
