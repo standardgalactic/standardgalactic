@@ -174,6 +174,20 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 * [Audio Overview](https://standardgalactic.github.io/antivenom/philosophy/)
 
+# Yarncrawler
+
+[Constraint Before Completion](https://standardgalactic.github.io/yarncrawler/Constraint%20Before%20Completion.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/yarncrawler/working/)
+
+
+[World-State Reconstruction](https://standardgalactic.github.io/yarncrawler/World-State%20Reconstruction.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/yarncrawler/introduction/)
+
+<!--
+[Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
+
 # Polyxan and Plenumhub
 
 [Manufacturing Stability](https://standardgalactic.github.io/library/Manufacturing%20Stability.pdf)
@@ -188,7 +202,6 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Verification and Proof Manual](https://standardgalactic.github.io/research-projects/Polyxan%20Proof%20Specification.pdf)
 
-<!--
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 -->
 # Mechanistic Frameworks
@@ -275,8 +288,6 @@ Geodesics of Attention
 [Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
 -->
 [The Ergonomics of Prediction](https://standardgalactic.github.io/research-projects/The%20Ergonomics%20of%20Prediction.pdf)
-
-[Yarncrawler in Action](https://standardgalactic.github.io/yarncrawler/Yarncrawler%20in%20Action.pdf)
 
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
 <!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
@@ -513,9 +524,9 @@ I am following 200,000 pages on Wikipedia
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
 -->
+
 Interactive Mindmap
 
 [Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
-
 
 ![](featured.png)
