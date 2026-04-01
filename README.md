@@ -76,6 +76,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[The Monetization of Redundancy](https://standardgalactic.github.io/antivenom/Monetization-of-Redundancy.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/processing/)
+
 [Thermodynamic Reachability](https://standardgalactic.github.io/library/Thermodynamic-Reachability.pdf)
 
 [The Collapse of Proxy Integrity](https://standardgalactic.github.io/antivenom/proxy_integrity.pdf)
