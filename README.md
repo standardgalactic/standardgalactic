@@ -394,7 +394,7 @@ Geodesics of Attention
 ## <big>Relativistic Scalar Vector Plenum (RSVP) Framework</big>
 <div>
 <!--  <a href="https://standardgalactic.github.io/spherepop/projects-overview.html"> -->
-  <a href="https://standardgalactic.github.io/alphabet/video.html">
+  <a href="https://standardgalactic.github.io/standardgalactic/rsvp-jepa.pdf">
     <img src="antivenom-clone.png" alt="Antivenom Clone" width="600">
   </a>
 </div>
