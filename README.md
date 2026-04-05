@@ -421,6 +421,10 @@ Geodesics of Attention
 ## Psychonomics
 
 [De Architectvra Intellectvs Vniversalis Artificialis](https://standardgalactic.github.io/alphabet/de-architectura.pdf)
+
+[Consciousness Transfer and the Impossibility of Uploading](https://standardgalactic.github.io/mind-uploading/mind-uploading.pdf) – *Essay*
+
+* [Why Your Digital Clone is not You](https://standardgalactic.github.io/mind-uploading/) – *Audio Overview*
 <!--
 *[The Limits of Logic](https://github.com/standardgalactic/kitbash/tree/main/research)*
 
