@@ -78,6 +78,12 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[The Moon Should Not Be a Computer](https://standardgalactic.github.io/computation/moon-not-computer.pdf)
+
+[Xylomorphic Computation](https://standardgalactic.github.io/computation/xylomorphic-computation.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/computation/) – Why AI Servers Fail in Space *and* Why Data Centers Must Mimic Treesadd p
+
 [The Monetization of Redundancy](https://standardgalactic.github.io/antivenom/Monetization-of-Redundancy.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/antivenom/processing/)
