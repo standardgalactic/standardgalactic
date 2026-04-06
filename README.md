@@ -166,9 +166,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Divided We Stand](https://standardgalactic.github.io/antivenom/Divided%20We%20Stand.pdf)
 
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
-<!--
+
 [Aesthetic Saturation and the Erosion of Voluntary Attention](https://standardgalactic.github.io/antivenom/Aesthetic%20Saturation.pdf)
--->
+
+* [Why Social Media Is Ugly on Purpose](https://standardgalactic.github.io/antivenom/opinion/) – *Audio Overview*
 
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
