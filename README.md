@@ -82,7 +82,9 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Xylomorphic Computation](https://standardgalactic.github.io/computation/xylomorphic_computation.pdf)
 
-* [Audio Overviews](https://standardgalactic.github.io/computation/) – Why AI Servers Fail in Space *and* Why Data Centers Must Mimic Trees
+* [Why AI Servers Fail in Space](https://standardgalactic.github.io/computation/?moon) – *Audio Overview*
+
+* [Why Data Centers Must Mimic Trees](https://standardgalactic.github.io/computation/?trees) – *Audio Overview*
 
 [The Monetization of Redundancy](https://standardgalactic.github.io/antivenom/Monetization-of-Redundancy.pdf)
 
