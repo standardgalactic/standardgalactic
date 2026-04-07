@@ -221,10 +221,16 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+
+[Inference as Constraint Closure](https://standardgalactic.github.io/kitbash/thesis/constraint_closure.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/kitbash/thesis/)
+
+<!-- This is about the Claude Code leak and cognitive offloading; it's good, but I'm commenting it out for now because my README is getting too crowded. 
 [Constraint Closure and Its Failures](https://standardgalactic.github.io/library/research/constraint-closure.pdf)
 
 * [Why AI Code and Essays Fail](https://standardgalactic.github.io/library/research/) – *Audio Overview*
-
+-->
 [The Compiled Self](https://standardgalactic.github.io/blastoids/manuscripts/processing/essay_v8.pdf) 
 
 [Text as Substrate](https://standardgalactic.github.io/library/Text%20as%20Substrate.pdf) 
