@@ -221,6 +221,9 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[TARTAN – Trajectory Aware Recursive Tiling with Annotated Noise](https://standardgalactic.github.io/TARTAN/)
+
+* [Fixing AI Hallucinations](https://standardgalactic.github.io/TARTAN/)  – *Audio Overview*
 
 [Inference as Constraint Closure](https://standardgalactic.github.io/kitbash/thesis/constraint_closure.pdf)
 
