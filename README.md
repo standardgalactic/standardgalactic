@@ -221,7 +221,7 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
-[TARTAN – Trajectory Aware Recursive Tiling with Annotated Noise](https://standardgalactic.github.io/TARTAN/tartan.pdf)
+[Trajectory Aware Recursive Tiling with Annotated Noise](https://standardgalactic.github.io/TARTAN/tartan.pdf)
 
 * [Fixing AI Hallucinations](https://standardgalactic.github.io/TARTAN/)  – *Audio Overview*
 
