@@ -225,6 +225,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 * [Fixing AI Hallucinations](https://standardgalactic.github.io/TARTAN/)  – *Audio Overview*
 
+[From Persuasion to Realization](https://standardgalactic.github.io/TARTAN/persuasion.pdf)
+
 [Inference as Constraint Closure](https://standardgalactic.github.io/kitbash/thesis/constraint_closure.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/kitbash/thesis/)
