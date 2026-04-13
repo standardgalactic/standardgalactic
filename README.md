@@ -227,6 +227,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [From Persuasion to Realization](https://standardgalactic.github.io/TARTAN/persuasion.pdf)
 
+[Compression After Expansion](https://standardgalactic.github.io/alphabet/screenplay/compression_after_expansion.pdf)
+
 [Inference as Constraint Closure](https://standardgalactic.github.io/kitbash/thesis/constraint_closure.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/kitbash/thesis/)
@@ -358,6 +360,10 @@ Geodesics of Attention
 -->
 # Just for Fun
 
+[The Fixed Point](https://standardgalactic.github.io/alphabet/screenplay/the_fixed_point.pdf)
+
+* [The Invisible Frames that Filter Reality](https://standardgalactic.github.io/alphabet/screenplay/) — *Audio Overview*
+
 [History as Identity](https://standardgalactic.github.io/spherepop/History%20as%20Identity.pdf)
 
 * [Spherepop Game Engine](https://standardgalactic.github.io/spherepop/game-engine.html) — *Playable Demo*
@@ -396,7 +402,11 @@ Geodesics of Attention
 
 [Steam-Formed Cellulose Domes](https://standardgalactic.github.io/research-projects/working/steam_cellulose_domes.pdf)
 
+[City of Brutes](https://standardgalactic.github.io/alphabet/screenplay/city_of_brutes.pdf) — *Screenplay*
+
 [The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *Screenplay*
+
+* [Ergodic Novel](https://standardgalactic.github.io/alphabet/screenplay/The_Incoherence.pdf) — *Incomplete*
 
 [Flower Wars](https://standardgalactic.github.io/alphabet/Flower%20Wars.pdf) – *Screenplay*
 
