@@ -78,6 +78,15 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[Return Under Constraint](https://standardgalactic.github.io/workspace/return_under_constraint.pdf) — *Meditations on the Talbiya*
+
+* [Audio Overview](https://standardgalactic.github.io/workspace/processing/)
+
+[Abundance Without Distribution](https://standardgalactic.github.io/userspace/labor_singularity.pdf) — *Labor Singularity*
+
+* [Audio Overview](https://standardgalactic.github.io/userspace/futurism/)
+
+<!--
 [The Moon Should Not Be a Computer](https://standardgalactic.github.io/computation/moon-not-computer.pdf)
 
 [Xylomorphic Computation](https://standardgalactic.github.io/computation/xylomorphic_computation.pdf)
@@ -85,7 +94,7 @@ Taken together, these projects treat the user's actions as part of the algorithm
 * [Why AI Servers Fail in Space](https://standardgalactic.github.io/computation/?moon) – *Audio Overview*
 
 * [Why Data Centers Must Mimic Trees](https://standardgalactic.github.io/computation/?trees) – *Audio Overview*
-
+-->
 [The Monetization of Redundancy](https://standardgalactic.github.io/antivenom/Monetization-of-Redundancy.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/antivenom/processing/)
