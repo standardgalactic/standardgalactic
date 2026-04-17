@@ -230,6 +230,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[The Entropy of Austerity](https://standardgalactic.github.io/spherepop/entropy_of_austerity.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/spherepop/dynamics/)
+
 [Trajectory Aware Recursive Tiling with Annotated Noise](https://standardgalactic.github.io/TARTAN/tartan.pdf)
 
 * [Fixing AI Hallucinations](https://standardgalactic.github.io/TARTAN/)  – *Audio Overview*
