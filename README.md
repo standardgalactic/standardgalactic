@@ -459,6 +459,11 @@ Geodesics of Attention
 
 ## Psychonomics
 
+[From Preservation to Reachability](https://standardgalactic.github.io/animal-social/reachability.pdf)
+
+<!-- See Also: [Where Did Analytic Philosophy Go Wrong? (w/ Alicia Juarrero)](https://www.youtube.com/watch?v=cE7-2xJdIcA&t=2613s) -->
+* [Your Mind as a Dynamic Landscape](https://standardgalactic.github.io/animal-social/?track=4) — *Audio Overview*
+
 [De Architectvra Intellectvs Vniversalis Artificialis](https://standardgalactic.github.io/alphabet/de-architectura.pdf)
 
 [Consciousness Transfer and the Impossibility of Uploading](https://standardgalactic.github.io/mind-uploading/mind-uploading.pdf) – *Essay*
@@ -537,6 +542,9 @@ Metabolic costs, such as ATP consumption in neural and cellular activity, favor 
 This Natural Sparsity Principle underpins the efficiency of biological cognition and informs computational models like Geometric Bayesianism with Sparse Heuristics (GBSH), suggesting that sparse proxy navigation can be an emergent property in biomimetic systems, enhancing their adaptability and resilience in noisy, resource-constrained environments.
 
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
+<!--
+[Ovo de Páscoa especial para grupos de estudo brasileiros](https://standardgalactic.github.io/animal-social/)
+-->
 
 <img src="rate-my-setup.png" width="350">
 
