@@ -200,6 +200,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Yarncrawler
 
+[Irreversibility and the Ontology of Mind](https://standardgalactic.github.io/yarncrawler/irreversibility_ontology_mind.pdf) 
+
+* [Audio Overview](https://standardgalactic.github.io/yarncrawler/)
+
 [Constraint Before Completion](https://standardgalactic.github.io/yarncrawler/Constraint%20Before%20Completion.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/yarncrawler/working/)
