@@ -234,6 +234,12 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[Participation without Guarantee](https://standardgalactic.github.io/antivenom/economics/participation_without_guarantee.pdf)
+
+[The Extraction Attractor](https://standardgalactic.github.io/antivenom/economics/structural_convergence.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/economics/)
+
 [The Entropy of Austerity](https://standardgalactic.github.io/spherepop/entropy_of_austerity.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/spherepop/dynamics/)
