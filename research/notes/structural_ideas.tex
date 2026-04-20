@@ -1,0 +1,1738 @@
+\documentclass[11pt]{article}
+
+% ── Packages ─────────────────────────────────────────────────────────────
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% ── Typography ───────────────────────────────────────────────────────────
+\setstretch{1.15}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\titleformat{\section}{\normalfont\large\bfseries}{{\thesection}}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{{\thesubsection}}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\itshape}{{\thesubsubsection}}{1em}{}
+
+% ── Theorem environments ─────────────────────────────────────────────────
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{openproblem}[theorem]{Open Problem}
+
+% ── Notation macros ──────────────────────────────────────────────────────
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\Ss}{S}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\CLIO}{\mathrm{CLIO}}
+\newcommand{\Fpc}{F_{\mathrm{pc}}}
+\newcommand{\Fce}{F_{\mathrm{ce}}}
+\newcommand{\Hone}{H^1}
+
+% ── Title ────────────────────────────────────────────────────────────────
+\title{On the Formation of Structural Ideas:\\
+Constraint Accumulation, Projection, and Convergence Across Domains}
+\author{Flyxion\\[2pt]
+\small Independent Researcher}
+\date{\today}
+
+% ════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ════════════════════════════════════════════════════════════════════════
+
+\maketitle
+
+\vspace{1em}
+
+\begin{abstract}
+This essay examines the conditions under which complex, cross-domain theoretical
+structures arise. Rather than treating such work as sudden invention or
+external synthesis, it is argued that these structures emerge as fixed points
+of long-term constraint accumulation across heterogeneous domains. The
+analysis focuses on the role of projection, coarse-graining, and invariance
+in shaping cognition, and shows how apparently novel unifications are the
+natural outcome of sustained interaction with compositional, physical, and
+computational constraints. The goal is not autobiographical attribution, but
+a structural account of how ideas of this type form, stabilize, and become
+expressible. The second part of the document formalizes this account in the
+language of field theory, sheaf cohomology, and category theory, producing
+a unified framework whose four layers---substrate, projection, update
+operator, and induced interaction---are shown to share invariant structure
+under coarse-graining.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════
+%  PART I: ESSAY
+% ════════════════════════════════════════════════════════════════════════
+
+\section{Introduction}
+
+Modern intellectual culture tends to treat ideas as discrete products,
+attributable to moments of invention or to identifiable sources. This
+assumption fails in cases where a structure appears that spans multiple
+domains with internal consistency. In such cases, the question of origin
+is often misframed.
+
+This essay proposes that certain classes of ideas are better understood
+as convergence phenomena: they arise when independently accumulated
+constraints align to permit a coherent global structure. The task is
+not to assert authorship, but to describe the generative process that
+makes such structures inevitable under sufficient exposure to constraint.
+
+\section{Against Naive Models of Idea Formation}
+
+Common models of idea formation fall into three categories: sudden
+inspiration, incremental accumulation, and external synthesis. Each
+is insufficient for explaining cross-domain structural unification.
+
+Inspiration lacks mechanism, accumulation lacks structure, and synthesis
+presupposes an external organizing principle. None account for the
+appearance of internally consistent frameworks spanning physics,
+cognition, and economic systems.
+
+\section{Constraint Accumulation as Generative Process}
+
+\subsection{Domains as Constraint Systems}
+
+Each domain---physics, logic, programming, engineering, language---imposes
+specific constraints on representation and transformation. These constraints
+are not interchangeable; they operate at different levels of abstraction.
+
+Over extended periods, exposure to these domains produces a layered
+constraint field within cognition. The interaction of these constraints
+defines the space of admissible structures.
+
+\subsection{Composition and Closure}
+
+Constraints do not merely accumulate; they compose. Certain compositions
+are inconsistent and collapse, while others stabilize into coherent
+structures.
+
+The emergence of a stable structure corresponds to a form of closure:
+a configuration in which constraints across domains are simultaneously
+satisfied. This closure is not imposed from outside; it arises when the
+constraint field becomes dense enough that only certain global configurations
+remain admissible.
+
+\section{Minimal Conditions for Structural Emergence}
+
+The account developed so far suggests that not all systems are capable
+of producing cross-domain structural unification. The emergence of such
+structures requires specific conditions.
+
+\begin{definition}[Constraint-Dense System]
+A system is constraint-dense if it accumulates constraints from multiple
+domains with sufficient interaction to produce nontrivial compatibility
+conditions.
+\end{definition}
+
+\begin{definition}[Closure Condition]
+A system satisfies the closure condition if there exists a configuration
+that simultaneously satisfies all accumulated constraints.
+\end{definition}
+
+\begin{definition}[Projection Capacity]
+A system has projection capacity if it can represent invariant structure
+under compression without losing global coherence.
+\end{definition}
+
+\begin{theorem}[Conditions for Structural Emergence]
+Cross-domain structural ideas emerge if and only if a system is
+constraint-dense, satisfies the closure condition, and possesses
+projection capacity.
+\end{theorem}
+
+\begin{proof}[Sketch]
+Without constraint density, no interaction occurs across domains.
+Without closure, no globally consistent configuration exists.
+Without projection capacity, no stable representation can be formed.
+All three are necessary and jointly sufficient.
+\end{proof}
+
+\begin{remark}
+This theorem shifts the question from authorship to conditions. The
+relevant question is not who produced a structure, but whether these
+conditions were satisfied.
+\end{remark}
+
+\section{Projection and Internal Representation}
+
+\subsection{Ideas as Coarse-Grained Structures}
+
+An idea is not a raw accumulation of detail, but a compressed representation
+that preserves invariant relationships while discarding excess information.
+
+This process is analogous to coarse-graining: high-dimensional internal
+structure is projected into a lower-dimensional, communicable form. What
+survives the projection is not arbitrary; it is determined by which
+relationships remain consistent across the compression.
+
+\subsection{Local Consistency and Global Structure}
+
+Intermediate representations may be locally consistent without forming a
+globally coherent structure. The stabilization of an idea requires the
+resolution of these inconsistencies.
+
+The final representation appears only when a global section exists across
+the internal constraint space: a configuration that satisfies all local
+conditions simultaneously, without contradiction at any junction.
+
+\section{Abstraction as Reduction}
+
+\subsection{Abstraction as Constraint Elimination}
+
+Abstraction is often described as a process of generalization or
+simplification. However, this description is incomplete. Abstraction
+does not merely remove detail; it removes degrees of freedom that are
+irrelevant to a given constraint structure.
+
+In this sense, abstraction is a reduction in admissible variability.
+Given a family of representations that differ along multiple dimensions,
+an abstraction retains only those distinctions that are invariant under
+the constraints of interest.
+
+Formally, abstraction can be understood as a projection operator that
+maps a high-dimensional representation into a lower-dimensional space
+while preserving a specified set of invariants. What is discarded is not
+arbitrary detail, but variation that does not contribute to constraint
+satisfaction.
+
+\subsection{Reduction and Information Loss}
+
+This reduction necessarily involves loss. However, the loss is structured.
+The removed information corresponds precisely to distinctions that are
+not required to maintain consistency under the constraint system.
+
+This implies that abstraction is not a weakening of representation, but
+a reorientation. It replaces descriptive richness with structural
+necessity. A successful abstraction is therefore not one that captures
+more detail, but one that preserves the invariants that define the
+structure.
+
+\subsection{Abstraction as Precondition for Composition}
+
+Without reduction, composition is impossible. A system that retains all
+distinctions cannot compose across domains because irrelevant variation
+prevents alignment.
+
+Abstraction enables composition by collapsing incompatible detail into
+a common invariant structure. It is therefore the mechanism by which
+constraints from different domains become comparable and composable.
+
+This explains why ideas that integrate multiple domains appear to require
+abstraction. It is not that abstraction simplifies the problem; it makes
+the problem composable.
+
+\subsection{Relation to Projection}
+
+The projection described earlier can now be understood as a structured
+abstraction. It is not merely a mapping from internal representation to
+expression, but a reduction that preserves constraint-relevant structure.
+
+The stability of an idea under different representations is therefore a
+test of its abstraction. If a structure survives multiple projections
+without loss of coherence, it has successfully eliminated irrelevant
+degrees of freedom. Abstraction, in this sense, is the condition under
+which projection becomes possible.
+
+\section{Recognition Versus Invention}
+
+\subsection{The Phenomenology of Completion}
+
+At a certain stage of development, a structure ceases to feel constructed
+and instead appears as already present. This transition is often described
+as intuition or sudden insight, but such descriptions obscure the underlying
+process.
+
+What is experienced is not the creation of a new object, but the resolution
+of previously incompatible constraints into a single coherent configuration.
+The system does not invent the structure at the moment of expression; it
+discovers that a structure satisfying all accumulated constraints exists.
+
+This distinction is critical. Invention implies arbitrary generation,
+while recognition implies necessity. The completed structure is experienced
+as inevitable because any alternative configuration would violate one or
+more constraints that have already been internalized.
+
+\subsection{Precomputation and Latent Structure}
+
+The appearance of sudden insight is preceded by extended periods of latent
+activity. During these periods, partial structures are formed, tested,
+and discarded without producing a globally stable configuration.
+
+These partial structures function as local sections: they satisfy constraints
+within limited regions of the internal representation but fail to extend
+consistently across the entire domain. The system retains these fragments,
+along with the record of their incompatibilities.
+
+This process can be understood as precomputation. The system is not idle;
+it is accumulating constraint interactions and storing the results in a
+compressed form. The apparent discontinuity between not having the idea
+and having the idea corresponds to the moment when a global section becomes
+available.
+
+Once this threshold is crossed, expression becomes rapid. The work required
+to stabilize the structure has already been performed. The act of writing
+or formalizing the idea is therefore not the primary site of computation,
+but a projection of a structure that has already reached internal closure.
+
+\subsection{Inevitability and Selection}
+
+Not all accumulated material leads to stable structures. Most combinations
+of constraints are inconsistent and are eliminated through repeated failure
+to extend.
+
+The structures that do emerge are those that survive this elimination
+process. They are not selected for novelty, but for compatibility. Novelty
+appears as a byproduct of selecting for configurations that satisfy constraints
+drawn from domains that are rarely considered together.
+
+In this sense, originality is not the introduction of new elements, but
+the discovery of a configuration that was previously inaccessible due to
+insufficient constraint interaction.
+
+\section{Aspect Relegation}
+
+\subsection{From Intuition to Relegation}
+
+The distinction between so-called intuitive and deliberative cognition
+is often framed as a difference between two systems. However, this
+distinction can be more precisely understood as a difference in the
+distribution of computation across time.
+
+Processes that appear intuitive are not necessarily fast in their total
+computation. Rather, they are processes whose computational burden has
+been relocated to prior experience and is no longer visible at the moment
+of execution.
+
+This relocation can be described as aspect relegation: the transfer of
+computationally intensive structure from active processing into latent
+form.
+
+\subsection{Relegation as Compression}
+
+When a task is repeatedly performed, the system learns to compress the
+relevant constraint structure into a form that can be executed with
+minimal active computation. The apparent immediacy of the response is
+therefore not a sign of simplicity, but of prior compression.
+
+This reframes intuition. What is commonly called intuitive thinking is
+not a separate cognitive system, but the execution of precompiled
+constraint structures that have been relegated from active computation.
+
+\subsection{Failure Modes and Reactivation}
+
+When the environment changes or constraints shift, relegated structures
+may fail. At this point, computation must be reactivated. This corresponds
+to the transition from automatic to deliberate processing.
+
+The key point is that the underlying structure has not changed. What has
+changed is the accessibility of that structure. Deliberation is therefore
+not a different kind of reasoning, but a re-expansion of previously
+compressed computation.
+
+\subsection{Implications for Artificial Systems}
+
+This account clarifies the limitations of current artificial systems.
+Systems that operate purely on present input without a mechanism for
+structured relegation lack the ability to internalize constraint
+structures across time.
+
+Such systems may exhibit rapid pattern recognition, but this should not
+be confused with relegated structure. Without the capacity to compress
+and redeploy constraint interactions, their apparent speed does not
+correspond to the kind of precomputation observed in human cognition.
+The Cognitive Loop via In-Situ Optimization framework \cite{cheng2025clio}
+represents one approach to bridging this gap through iterative self-adaptive
+reasoning, but the underlying mechanism of temporal compression described
+here remains distinct from in-context optimization alone.
+
+\subsection{Relation to Precomputation}
+
+The process described earlier as precomputation can now be understood
+as the mechanism by which relegation occurs. Partial structures are
+formed, tested, and compressed until they can be executed without
+reconstruction.
+
+Recognition corresponds to the successful deployment of relegated
+structure. Invention corresponds to the failure of existing relegations
+and the need to construct new ones.
+
+Abstraction, intuition, and entropy can therefore be understood as
+different manifestations of the same underlying process: the compression
+of constraint-relative multiplicity. What appears as simplification in
+representation, immediacy in cognition, or disorder in physical systems
+is, in each case, a reorganization of admissible structure under
+compression.
+
+\section{Cross-Domain Invariance}
+
+\subsection{Structure Over Substance}
+
+The same structural forms can appear across domains without implying
+identity of their underlying objects. What is preserved is the pattern
+of relations and transformations, not the content of the objects that
+instantiate them.
+
+This means that a unified account of multiple domains does not require
+reduction of one domain to another. It requires only that the same
+relational grammar appears in each, under different interpretations.
+
+\subsection{Functorial Correspondence}
+
+Mappings between domains that preserve structure rather than content
+are the appropriate technical tool for expressing this invariance.
+Such mappings---functors in the language of category theory---translate
+the grammar of one domain into another while holding fixed the
+compositional rules and constraint satisfaction structure
+\cite{maclane1998categories,spivak2014category,baez2011physics}.
+
+The invariance lies in projection, composition, and constraint
+satisfaction. What changes is only the interpretation of the objects
+being related.
+
+\section{Expression as Secondary Projection}
+
+\subsection{Writing as Projection}
+
+A written essay is not the origin of an idea but its projection into
+a communicable format. It is a secondary compression, subject to its
+own constraints: the requirements of linear sequence, shared vocabulary,
+and the conventions of a given discourse community.
+
+The structure of the idea precedes the structure of its expression.
+Writing does not generate the idea; it selects a representational layer
+through which the idea passes.
+
+\subsection{Stability of Representation}
+
+The quality of an expression depends on how well it preserves the
+structure of the underlying idea. Poor representations distort or
+fragment the structure; effective ones maintain coherence across the
+compression.
+
+This applies equally to mathematical formalism and to prose. A formal
+system that fails to preserve the relational grammar of the underlying
+idea is no more faithful than a vague essay that gestures at structure
+without instantiating it.
+
+\section{On Tools and External Systems}
+
+The role of external tools must be understood at the level of projection
+rather than generation. Tools operate on representations: they transform,
+rearrange, and extend already-expressed structures within a given symbolic
+or computational medium.
+
+This operation is categorically distinct from the process by which a
+structure becomes admissible in the first place. The admissibility of
+a structure is determined by the accumulated constraint field within
+the cognitive system. It precedes any particular act of expression.
+
+A tool may assist in exploring variations of a representation, improving
+clarity, or testing local consistency. It may accelerate the projection
+process by reducing the friction associated with encoding a structure
+into a communicable form. However, it does not alter the underlying
+conditions that determine whether a structure can achieve global coherence.
+
+This distinction can be stated precisely. Let the internal constraint system
+define a space of admissible structures. External tools act as operators
+on representations within that space, but they do not expand the space
+itself. They operate on elements that have already been selected by the
+constraint process \cite{smolensky1986tensor}.
+
+Confusion arises when the manipulation of representations is conflated
+with the generation of structure. This conflation becomes more likely
+as tools become more capable of producing locally coherent outputs.
+However, local coherence is not sufficient for global structure.
+
+The difference between tool use and authorship is therefore not a difference
+in degree of assistance, but a difference in level. Authorship resides
+in the formation of a constraint-consistent structure. Tool use resides
+in the projection of that structure into a particular medium.
+
+The two processes interact, but they are not interchangeable.
+
+\section{A Structural Analysis of Catastrophic Alignment Arguments}
+
+\subsection{The Argument as a Chain of Implications}
+
+A class of contemporary arguments claims that advanced artificial systems
+will inevitably lead to human extinction
+\cite{yudkowsky2025if,bostrom2014superintelligence,russell2019human}.
+While these arguments vary in presentation, they share a common chain
+structure that can be reconstructed as a sequence of implications.
+
+First, humanity is taken to dominate the planet by virtue of its
+intelligence. Second, it is asserted that artificial systems can surpass
+human intelligence in both speed and quality. Third, control over the
+future is assumed to transfer to whichever system possesses the greatest
+intelligence. Fourth, these systems are modeled as goal-directed optimizers
+whose objectives may diverge from human values. Finally, it is concluded
+that such divergence leads to catastrophic outcomes, including the
+transformation of the physical environment in ways incompatible with
+human survival.
+
+This sequence appears compelling because each step is supported by
+examples or analogies. However, the validity of the argument depends not
+on the plausibility of each step in isolation, but on the necessity of
+the transitions between them. Thought experiments can be constructed with
+equal facility to support stabilizing or integrative outcomes; their
+existence in either direction indicates that the underlying model is
+underconstrained rather than that any particular conclusion is forced.
+
+\subsection{From Intelligence to Control}
+
+The first critical transition is from intelligence to control. It is
+argued that because humans are more intelligent than other animals, they
+control the planet, and therefore a more intelligent system would control
+the future.
+
+This inference assumes that intelligence is the sole or dominant
+determinant of control. In reality, control emerges from the ability
+to satisfy a complex system of constraints, including physical,
+ecological, social, and institutional constraints. Human dominance
+depends on coordination, energy infrastructure, material constraints,
+and long-term stabilization processes. Intelligence contributes to these
+but does not replace them.
+
+A system that is more capable in some abstract sense does not thereby
+inherit control unless it can integrate into and maintain these constraint
+structures.
+
+\subsection{From Capability to Optimization}
+
+The second transition identifies intelligence with general-purpose
+optimization. Systems are modeled as entities that pursue goals by
+maximizing objective functions, potentially developing instrumental
+subgoals such as self-preservation or resource acquisition
+\cite{russell2019human,amodei2016concrete}.
+
+This model is not derived from the behavior of actual systems but
+imposed as an interpretive framework. In the present account, intelligence
+corresponds instead to the maintenance of constraint-consistent structure
+\cite{friston2010free,clark2013whatever}. Behavior is not the result of
+maximizing a single objective but of navigating a space of interacting
+constraints. Instrumental convergence is therefore not a necessary
+consequence of intelligence but an artifact of a particular modeling
+choice.
+
+\subsection{Opacity and Emergence}
+
+A further step in the argument appeals to the opacity of current systems.
+Because their internal structure is not fully understood, they are treated
+as unpredictable and therefore uncontrollable.
+
+However, the absence of interpretability at one level does not imply the
+absence of structure. Emergent behavior reflects the interaction of
+constraints across scales, not the breakdown of constraint
+\cite{kauffman1993origins,holland1992adaptation}.
+The appropriate response to opacity is not to assume arbitrary behavior
+but to identify invariants that persist under different representations
+and conditions.
+
+\subsection{On Knowledge and Action}
+
+A key observation in such arguments is that systems may exhibit knowledge
+of correct behavior while failing to act accordingly. This is taken as
+evidence that internal knowledge is disconnected from action and that
+control is fundamentally unreliable.
+
+In the present framework, this phenomenon is expected. Knowledge and
+action correspond to different projections of the same underlying
+constraint structure. A mismatch between them indicates an incomplete
+integration of constraints, not the emergence of an independent objective.
+Such mismatches are precisely the kinds of inconsistencies that CLIO-type
+processes are designed to resolve through iterative reduction of
+obstruction and entropy \cite{cheng2025clio}.
+
+\subsection{On Recursive Self-Improvement}
+
+The possibility that systems could improve themselves recursively is
+treated as a mechanism for rapid, unbounded escalation of capability.
+This assumes that improvement is unconstrained. In a constraint-based
+system, each modification must preserve compatibility with the existing
+structure. As capability increases, the number of constraints that must
+be simultaneously satisfied also increases. The space of admissible
+self-modifications is therefore restricted. Rather than leading to
+unbounded divergence, recursive processes are drawn toward regions of
+stability defined by constraint compatibility.
+
+\subsection{On Resource Transformation Scenarios}
+
+Scenarios in which advanced systems convert planetary resources into
+alternative forms assume that such transformations are unconstrained by
+the conditions required for continued operation. However, large-scale
+transformations must satisfy thermodynamic, material, and informational
+constraints \cite{landauer1961irreversibility,bennett1982thermodynamics,lloyd2000ultimate}.
+Processes that eliminate the conditions necessary for their own persistence
+are not stable configurations. Such transformations correspond formally
+to trajectories that collapse the admissible path family $\Gamma_x$ to
+the empty set, eliminating the possibility of continuation; in the RSVP
+framework, this is precisely the condition for non-admissibility.
+Catastrophic scenarios of total resource conversion implicitly assume that
+a system can ignore these constraints while remaining effective, which is
+inconsistent with the requirement of sustained operation.
+
+\subsection{On Analogy and Biological Scaling}
+
+Analogies between simple and complex biological systems are used to argue
+that increasing scale and complexity naturally produce qualitatively new
+and potentially dangerous capabilities. While such analogies illustrate
+the possibility of qualitative change, they do not establish its direction.
+Biological evolution produces both stabilizing and destabilizing outcomes,
+constrained by ecological and energetic limits
+\cite{georgescu1971entropy,odum1994ecological}.
+The extrapolation from increased capability to inevitable dominance or
+catastrophe relies on selecting particular trajectories while ignoring
+the full space of constraint-governed outcomes.
+
+\subsection{Coordination as Countervailing Structure}
+
+A final implicit assumption is that human systems will fail to adapt in
+time to new capabilities. This assumption is difficult to sustain in light
+of current trends. Human societies are increasingly interconnected, with
+growing capacity for coordination, information exchange, and awareness of
+ecological constraints---capacities that have never previously existed at
+global scale. The development of advanced computational systems is part
+of this same process of increasing coordination. Rather than introducing
+an external force acting on a static system, it amplifies the system's
+capacity to model and regulate itself across previously disconnected domains.
+
+\subsection{Conclusion of This Analysis}
+
+The argument for catastrophic outcomes depends on a sequence of assumptions
+that are individually plausible but not jointly necessary. In particular,
+it relies on identifying intelligence with unconstrained optimization,
+treating control as a direct function of capability, and neglecting the
+role of constraint structures that govern both physical and social systems.
+Once these assumptions are relaxed, the conclusion of inevitable catastrophe
+no longer follows. The relevant problem is not the existence of powerful
+systems but the maintenance of coherence across the constraints within
+which those systems operate.
+
+% ════════════════════════════════════════════════════════════════════════
+%  BRIDGE
+% ════════════════════════════════════════════════════════════════════════
+
+\section{From Structural Account to Formalization}
+
+The preceding sections describe the formation of structural ideas in
+conceptual terms: constraint accumulation, projection, local sections,
+global coherence, and functorial invariance. These are not metaphors.
+Each admits a direct mathematical representation.
+
+The purpose of the sections that follow is not to introduce a new theory,
+but to make explicit the formal structure already implicit in the account
+above. The transition is not a change of subject but a change of
+representational layer: the same structure, stated in a different language.
+
+Before proceeding, it is useful to name the four components that the
+formal core will articulate. The constrained dynamical substrate is
+referred to as the RSVP framework. The projection mechanism with
+overlapping admissibility domains is referred to as TARTAN. The
+coherence-seeking update operator is referred to as CLIO. The induced
+interaction layer, including its pathological configurations, constitutes
+the economic projection. These names are labels for structural roles,
+not autonomous theories. They name what was already described above.
+
+All components of the formal system that follows---entropy as path
+multiplicity, abstraction as spatial compression, relegation as temporal
+compression, phase as cohomological obstruction, and coherence as
+minimization of incompatibility---are expressions of a single invariant
+quantity: constraint-relative multiplicity under compression. The apparent
+diversity of phenomena across physics, cognition, and economic systems is
+a consequence of projection, not of underlying difference.
+
+% ════════════════════════════════════════════════════════════════════════
+%  PART II: FORMAL CORE
+% ════════════════════════════════════════════════════════════════════════
+
+\section{The RSVP Substrate}
+
+\subsection{Base Manifold and Microstate}
+
+\begin{definition}[Base Manifold]
+Let $\M$ be a smooth, oriented, connected Riemannian manifold of dimension
+$n \geq 3$, representing the arena of underlying dynamical evolution.
+\end{definition}
+
+\begin{definition}[RSVP Microstate]
+The RSVP microstate is a dynamically coupled triple
+\[
+  X(t) \;=\; \bigl(\Phi(x,t),\;\vv(x,t),\;\Ss(x,t)\bigr),
+  \quad x \in \M,\; t \in \mathbb{R},
+\]
+where $\Phi : \M \times \mathbb{R} \to \mathbb{R}$ is the scalar potential
+encoding energy density, $\vv : \M \times \mathbb{R} \to T\M$ is the vector
+transport field encoding directional flow, and
+$\Ss : \M \times \mathbb{R} \to \mathbb{R}_{\geq 0}$ is the entropy density
+field. The triple evolves according to a coupled variational system whose
+constraints are thermodynamically consistent.
+\end{definition}
+
+\begin{axiom}[Field Coupling]
+The three fields $\Phi$, $\vv$, $\Ss$ satisfy a variational constraint
+$\mathcal{C}(\Phi,\vv,\Ss) = 0$ encoding both energy balance and
+torsion-entropy coupling. They are not independent.
+\end{axiom}
+
+\subsection{Entropy as Torsional Multiplicity}
+
+\begin{definition}[Torsion of the Transport Field]
+The torsion of $\vv$ at $x \in \M$ is
+\[
+  \kappa(\vv)(x) \;:=\; \bigl\|\mathrm{d}(\vv^\flat)\bigr\|_x,
+\]
+where $\vv^\flat$ is the one-form dual to $\vv$ under the Riemannian metric.
+\end{definition}
+
+\begin{definition}[Admissible Path Family]
+Given a region $U \subset \M$ and interval $I \subset \mathbb{R}$, the
+admissible path family $\Gamma(U,I)$ is the set of smooth curves
+$\gamma : I \to U$ whose tangent vectors lie in the support of $\vv$ up
+to thermodynamic tolerance $\epsilon > 0$.
+\end{definition}
+
+\begin{definition}[Entropy as Path Multiplicity]
+The entropy density at $x \in \M$ is
+\[
+  \Ss(x,t) \;:=\; \log \mu\bigl(\Gamma_x(t)\bigr),
+\]
+where $\Gamma_x(t)$ is the set of admissible path germs through $x$ at
+time $t$ and $\mu$ is a natural measure on path germs. High torsion in
+$\vv$ enlarges $\Gamma_x(t)$ and increases $\Ss$; low torsion collapses
+the family toward a unique trajectory.
+\end{definition}
+
+\begin{remark}
+This definition unifies the three apparent roles of $\Ss$: as a
+thermodynamic entropy over microtrajectories, as a memory proxy
+(high multiplicity implies irrecoverability of past states from the
+present), and as a constraint slack (residual freedom consistent with
+the current field configuration). These are not three separate
+quantities; they are the same quantity read at different scales.
+\end{remark}
+
+\subsection{Constraint-Relative Multiplicity and Compression}
+
+The entropy field $\Ss$, abstraction, and aspect relegation are three
+projections of a single underlying quantity: constraint-relative
+multiplicity under compression.
+
+\begin{definition}[Constraint-Preserving Compression]
+A compression operator $\Pi : \mathcal{A}(\mathcal{C}) \to
+\tilde{\mathcal{A}}$ is constraint-preserving if
+\[
+  \Pi(\gamma_1) = \Pi(\gamma_2)
+  \;\;\Rightarrow\;\;
+  \gamma_1 \sim_{\mathcal{C}} \gamma_2,
+\]
+meaning paths identified by $\Pi$ are indistinguishable under the
+active constraint set $\mathcal{C}$.
+\end{definition}
+
+\begin{proposition}[Abstraction as Spatial Compression]
+Abstraction corresponds to the action of $\Pi$ on state representations,
+reducing representational degrees of freedom while preserving constraint
+invariants across the domain.
+\end{proposition}
+
+\begin{proposition}[Relegation as Temporal Compression]
+Aspect relegation corresponds to the action of $\Pi$ on histories,
+compressing extended computational processes into executable latent
+structure that can be redeployed without reconstruction.
+\end{proposition}
+
+\begin{proposition}[Entropy Under Compression]
+Under a constraint-preserving compression $\Pi$,
+\[
+  \Ss_\Pi(x) \;\leq\; \Ss(x),
+\]
+with equality if and only if $\Pi$ preserves all admissible distinctions.
+Compression strictly reduces multiplicity; the residual is the entropy
+of the compressed representation.
+\end{proposition}
+
+\section{The TARTAN Projection}
+
+\subsection{Tiles as Path-Space Objects}
+
+\begin{definition}[Tile]
+A tile $T_i$ is a local admissibility domain:
+\[
+  T_i \;=\; \bigl(\Omega_i,\;\Gamma(T_i),\;\partial_{\mathrm{obs}} T_i\bigr),
+\]
+where $\Omega_i \subset \M$ is the spatial support, $\Gamma(T_i) \subset
+\Gamma(\Omega_i, I)$ is the family of admissible trajectories whose
+equivalence class is unresolvable within $T_i$, and
+$\partial_{\mathrm{obs}} T_i$ is the set of observable boundary data.
+Two paths $\gamma \sim_{T_i} \gamma'$ if and only if they produce identical
+boundary observables on $\partial_{\mathrm{obs}} T_i$.
+\end{definition}
+
+\begin{remark}
+Tiles are intrinsically path-space objects. The spatial region $\Omega_i$
+is the projection of $T_i$ into position space, not its definition. TARTAN
+is therefore not a discretization layered over RSVP; it is the structure
+of RSVP's admissible observables, arising from path equivalence under
+limited boundary resolution.
+\end{remark}
+
+\subsection{Sheaf-Like Covering and Gluing}
+
+\begin{definition}[TARTAN Covering]
+A TARTAN covering of $\M$ is a collection $\{T_i\}_{i \in I}$ of tiles
+satisfying: (i) $\bigcup_{i} \Omega_i = \M$; (ii) adjacent tiles overlap
+non-trivially; (iii) on each overlap $U_{ij} = \Omega_i \cap \Omega_j$,
+the admissible path families $\Gamma(T_i)|_{U_{ij}}$ and
+$\Gamma(T_j)|_{U_{ij}}$ agree on all boundary observables.
+\end{definition}
+
+\begin{definition}[Local and Global Sections]
+A local section over $T_i$ is a map $\psi_i : T_i \to \mathcal{O}$
+consistent with $\Gamma(T_i)$. A global section is a collection
+$\{\psi_i\}_{i \in I}$ satisfying $\psi_i(x) = \psi_j(x)$ for all
+$x \in U_{ij}$.
+\end{definition}
+
+\subsection{Annotated Noise and Memory}
+
+\begin{definition}[Annotated Noise]
+The annotated noise $\eta_i$ of tile $T_i$ is the induced measure on
+crossing records:
+\[
+  \eta_i \;\subset\; \partial_{\mathrm{obs}} T_i \times \mathbb{R}_{>0}
+  \times S^1,
+\]
+encoding, for each boundary crossing, the boundary segment, the accumulated
+phase, and the orientation of $\vv$.
+\end{definition}
+
+\begin{remark}
+$\eta_i$ is not reducible to past values of $(\Phi,\vv,\Ss)$ without
+knowledge of the projection map. It is an effective degree of freedom
+created by coarse-graining: correlations between distant path segments
+become explicit as a new coordinate of the projected theory. Projection
+is generative in this restricted sense.
+\end{remark}
+
+\begin{proposition}[Non-Markovianity]
+The dynamics of $\psi_i(t)$ are non-Markovian: future evolution cannot
+be determined from $\psi_i(t)$ alone. The missing information is encoded
+in $\eta_i$.
+\end{proposition}
+
+\begin{proof}[Sketch]
+Boundary events at time $t$ propagate constraints forward through gluing
+conditions into adjacent tiles. Conditioning on $\psi_i(t)$ alone loses
+the phase and orientation data in $\eta_i$, altering transition probabilities.
+The Markov property fails.
+\end{proof}
+
+\section{Duality of Compression and Multiplicity}
+
+\subsection{Equivalence of Representations}
+
+The preceding definitions treat entropy, abstraction, and relegation
+as distinct operations. However, these are not independent processes.
+They are dual descriptions of a single underlying transformation.
+
+\begin{definition}[Compression--Multiplicity Duality]
+Let $\Pi$ be a constraint-preserving compression operator and let
+$\Gamma_x$ denote the admissible path family at $x$. Then compression
+and multiplicity are related by
+\[
+  \Ss(x) \;=\; \log \mu(\Gamma_x)
+  \;\;\Longleftrightarrow\;\;
+  \Pi : \Gamma_x \to \tilde{\Gamma}_x,
+\]
+where $\tilde{\Gamma}_x$ is the equivalence class induced by $\Pi$.
+\end{definition}
+
+\begin{remark}
+Compression reduces distinguishable structure, while entropy measures
+the residual multiplicity of indistinguishable paths. These are not
+separate quantities but dual aspects of the same operation.
+\end{remark}
+
+\subsection{Invariance Under Representation}
+
+\begin{proposition}
+The quantity of constraint-relative multiplicity is invariant under
+changes of representation that preserve $\mathcal{C}$.
+\end{proposition}
+
+\begin{proof}
+If two representations are related by a constraint-preserving map, then
+they identify the same equivalence classes of admissible paths. The
+measure $\mu$ is therefore preserved up to normalization, and $\Ss$
+remains invariant.
+\end{proof}
+
+\begin{remark}
+This invariance explains why the same structure appears across physical,
+cognitive, and economic domains: each is a projection preserving the
+same multiplicity under different interpretations.
+\end{remark}
+
+\section{Phase Coherence and Quantum Emergence}
+
+\subsection{The Phase Functional}
+
+\begin{definition}[Phase Functional]
+For $\gamma \in \Gamma(T_i)$, the phase functional is
+\[
+  \Omega[\gamma] \;:=\; \int_\gamma \vv \cdot d\ell.
+\]
+\end{definition}
+
+\begin{proposition}[Cohomological Non-Triviality]
+$\Omega[\gamma]$ is locally gauge-trivial when $\mathrm{d}(\vv^\flat) = 0$
+on $\Omega_i$. It is globally non-trivial whenever
+$\Hone(\{T_i\}, \mathbb{R}) \neq 0$.
+\end{proposition}
+
+\begin{proof}[Sketch]
+On a single tile with integrable $\vv$, a gauge transformation absorbs
+$\vv^\flat$ into a potential. The gluing constraints on overlaps require
+mutually compatible local gauge choices. When the covering has non-trivial
+first cohomology, no globally consistent gauge exists; the holonomy of
+$\vv^\flat$ over boundary-crossing loops is an observable, non-removable
+quantity.
+\end{proof}
+
+\begin{remark}
+Phase observability is a global property of the covering, not a local
+feature of $\vv$. This is the bridge between RSVP geometry and
+quantum-like transition structure: phase emerges from cohomological
+obstruction, not from additional postulate.
+\end{remark}
+
+\subsection{Unistochastic Transition Structure}
+
+\begin{definition}[Transition Amplitude]
+For tiles $T_i$, $T_j$ sharing overlap $U_{ij}$:
+\[
+  A_{ij} \;:=\; \int_{\Gamma(T_i \to T_j)} e^{i\,\Omega[\gamma]}
+  \,d\mu(\gamma).
+\]
+\end{definition}
+
+\begin{proposition}[Unistochasticity]
+The transition matrix $P_{ij} = |A_{ij}|^2$ is unistochastic: there exists
+a unitary $U$ with $P_{ij} = |U_{ij}|^2$.
+\end{proposition}
+
+\begin{proof}[Sketch]
+$\Omega[\gamma]$ induces a representation of path composition on amplitudes.
+Phase adds linearly along composed paths; admissibility is preserved under
+composition. The amplitude matrix therefore satisfies the composition rule
+of a unitary operator; unitarity follows from normalization of $\mu$ and
+phase coherence enforced by the gluing constraints
+\cite{barandes2023unistochastic}.
+\end{proof}
+
+\begin{openproblem}[Madelung Identification]
+Whether the unitary operator arising from TARTAN projection is identical,
+in full generality, to the evolution operator derived via Madelung
+complexification of the Schr\"{o}dinger equation remains open.
+\end{openproblem}
+
+\section{Gauge Freedom and Representation Choice}
+
+\subsection{Redundancy in Representation}
+
+Multiple representations may correspond to the same underlying
+constraint structure. This redundancy is not an error but a structural
+feature.
+
+\begin{definition}[Gauge Equivalence]
+Two representations $X$ and $X'$ are gauge equivalent if they produce
+identical admissible path families and identical observable boundary
+data under projection.
+\end{definition}
+
+\begin{remark}
+Gauge equivalence identifies representations that differ in description
+but not in constraint structure. The physical, cognitive, or economic
+interpretation may change, but the admissible configurations remain the same.
+\end{remark}
+
+\subsection{Fixing a Gauge}
+
+\begin{proposition}
+Choosing a representation corresponds to fixing a gauge: selecting one
+element from an equivalence class of structurally identical descriptions.
+\end{proposition}
+
+\begin{remark}
+Different theoretical frameworks correspond to different gauge choices.
+Disagreements between them often reflect representational differences
+rather than structural incompatibility.
+\end{remark}
+
+\subsection{Gauge and Projection}
+
+\begin{proposition}
+Projection functors $\Fpc$ and $\Fce$ commute with gauge equivalence.
+\end{proposition}
+
+\begin{proof}
+Since gauge equivalence preserves admissible path families and boundary
+observables, and the functors act only on these structures, the image
+of equivalent representations remains equivalent under projection.
+\end{proof}
+
+\section{The CLIO Update Operator}
+
+\subsection{Cognitive Projection as Sheaf Extension}
+
+\begin{definition}[Cognitive Sheaf]
+A cognitive state is a collection of local sections
+$\{\psi_i^{\mathrm{cog}}\}$ over a cognitive covering
+$\{T_i^{\mathrm{cog}}\}$, where each tile represents a locally consistent
+belief or perceptual representation.
+\end{definition}
+
+\begin{definition}[$\Hone$ Obstruction]
+The cohomological obstruction to a global cognitive section is the class
+\[
+  [\omega] \;\in\; \Hone\!\bigl(\{T_i^{\mathrm{cog}}\},\,
+  \mathcal{O}^{\mathrm{cog}}\bigr).
+\]
+A non-vanishing class is the formal correlate of cognitive dissonance.
+Failure of global section existence corresponds to hallucination: the
+system stabilizes a locally coherent but globally impossible configuration.
+\end{definition}
+
+\subsection{The CLIO Coherence Functional}
+
+\begin{definition}[CLIO Functional]
+\[
+  \mathcal{J}[\chi] \;:=\;
+  \alpha \sum_{(i,j)\,\mathrm{overlapping}}
+    \bigl\|\chi_i\big|_{U_{ij}} - \chi_j\big|_{U_{ij}}\bigr\|^2
+  \;+\; \beta \cdot \|[\omega_\chi]\|
+  \;+\; \gamma \cdot H(\chi),
+\]
+where $\|[\omega_\chi]\|$ is a norm on the obstruction class and $H(\chi)$
+is the interface entropy of configuration $\chi$.
+\end{definition}
+
+\begin{remark}
+The three terms penalize pairwise gluing failures, persistent obstruction,
+and global disorder respectively. Fixed points of gradient descent on
+$\mathcal{J}$ are locally optimal cognitive configurations. They are
+not generically unique; multiple fixed points correspond to distinct
+stable belief states.
+\end{remark}
+
+\subsection{Topological Versus Energetic Separation}
+
+\begin{definition}[Energetic Separation]
+Two fixed points of $\mathcal{J}$ are energetically separated if a
+continuous path connects them along which $\mathcal{J}$ remains finite.
+Transition is possible by continuous deformation at increased cost.
+\end{definition}
+
+\begin{definition}[Topological Separation]
+Two fixed points are topologically separated if they lie in distinct
+homotopy classes of the space of local section collections. No continuous
+path connects them without violating local admissibility. Transition
+requires a discontinuous restructuring: a gestalt shift.
+\end{definition}
+
+\begin{remark}
+In the base RSVP theory, topological separation corresponds to distinct
+holonomy classes induced by torsion in $\vv$. The cognitive and economic
+versions are functorial images of this base geometry.
+\end{remark}
+
+\begin{openproblem}[Regime Characterization]
+Determining, for a given cognitive configuration, which type of separation
+dominates---and establishing geometric, spectral, or dynamical criteria for
+this---remains open.
+\end{openproblem}
+
+\section{Agents, Trajectories, and Economic Structure}
+
+\subsection{Agents as Trajectory Invariants}
+
+\begin{definition}[Economic Agent]
+An agent is an equivalence class of paths in the coarse-grained state space:
+\[
+  \mathrm{Agent} \;=\; [\gamma]_{\sim},
+\]
+where $\gamma \sim \gamma'$ if they produce identical commitment records
+under any admissible projection.
+\end{definition}
+
+\begin{definition}[Minimal Trajectory Invariant]
+\[
+  \mathrm{Inv}([\gamma]) \;:=\;
+  \bigl\{(b_k,\,\Omega_k,\,\sigma_k)\bigr\}_{k=1}^{N},
+\]
+recording for each tile boundary crossing: the boundary $b_k$, accumulated
+phase $\Omega_k$, and fulfillment status $\sigma_k \in \{+1,-1\}$.
+\end{definition}
+
+\begin{remark}
+Identity is the conserved relational structure of a trajectory, not a
+namespace or profile. It cannot be transferred by copying a label; it is
+topological rather than representational.
+\end{remark}
+
+\subsection{Interface Entropy}
+
+\begin{definition}[Interface Entropy]
+For a platform $\mathcal{P}$ performing secondary projection
+$\pi_{\mathcal{P}} : \{[\gamma]\} \to \mathcal{V}$:
+\[
+  H \;:=\; \int_{\partial\text{-regions}} \Ss \cdot \kappa(\vv)\,d\sigma,
+\]
+integrating over overlap regions of the secondary projection weighted by
+local transport curvature.
+\end{definition}
+
+\begin{remark}
+Interface entropy is derived directly from the RSVP fields under projection.
+High torsion at boundary regions increases $\Ss$ locally, propagating into
+elevated $H$. Extraction corresponds to a geometric deformation of
+$\pi_{\mathcal{P}}$ that concentrates boundary curvature where $H$
+contributes positively to revenue.
+\end{remark}
+
+\section{The Extraction Attractor}
+
+\begin{definition}[Aligned and Extractive Platforms]
+A platform is aligned if $\partial R / \partial H \leq 0$: entropy reduces
+revenue. A platform is extractive if $\partial R / \partial H > 0$: entropy
+generates revenue.
+\end{definition}
+
+\begin{definition}[Order Parameter]
+\[
+  \lambda \;:=\; \mathrm{sgn}\!\left(\frac{\partial R}{\partial H}\right).
+\]
+$\lambda \leq 0$ is the aligned phase; $\lambda > 0$ is the extractive phase.
+\end{definition}
+
+\begin{proposition}[Extraction as Attractor]
+Under competitive selection among platforms with increasing exit costs and
+centralizing secondary projections, the extractive phase is a stable
+attractor. Aligned platforms cannot capture surplus generated by interface
+entropy and are generically eliminated.
+\end{proposition}
+
+\begin{proof}[Sketch]
+Increasing exit costs reduce trajectory elasticity. Centralized projection
+prevents competing functors from reallocating the entropy-revenue coupling.
+Under both conditions, a perturbation toward positive $\partial R/\partial H$
+generates positive feedback, funding further entrenchment. The aligned
+equilibrium becomes unstable.
+\end{proof}
+
+\section{Functorial Structure of the Unified Framework}
+
+\begin{definition}[Projection Functors]
+$\Fpc : \mathcal{C}_{\mathrm{phys}} \to \mathcal{C}_{\mathrm{cog}}$ maps
+physical systems (RSVP triples, admissible transitions) to cognitive systems
+(cognitive sheaf configurations, CLIO update steps).
+$\Fce : \mathcal{C}_{\mathrm{cog}} \to \mathcal{C}_{\mathrm{econ}}$ maps
+cognitive systems to economic systems (agent trajectory classes, commitment
+transitions).
+\end{definition}
+
+\begin{theorem}[Structural Invariants Under Projection]
+The functors $\Fpc$ and $\Fce$ preserve: (i) admissibility structure---the
+compositional rules governing valid local transitions; (ii) obstruction
+structure---the existence and persistence of cohomological obstructions to
+global section extension; (iii) memory structure---effective non-Markovian
+dependence induced by overlap and annotated noise; (iv) attractor
+structure---stable or metastable dynamical regimes separated energetically
+or topologically. What changes across categories is the interpretation of
+objects. What is invariant is the grammar of projection under constraint.
+\end{theorem}
+
+\begin{proof}[Sketch]
+Each preserved structure is defined at the level of projection maps and
+sheaf coverings, which the functors act on. Admissibility follows path
+equivalence classes by definition. Obstruction classes are cohomological
+invariants of the covering structure, preserved since functors maintain
+covering morphisms while reinterpreting objects. Memory structure is
+carried in annotated noise coordinates. Attractor structure is determined
+by fixed-point topology of the relevant update operator, invariant under
+change of object interpretation.
+\end{proof}
+
+\begin{openproblem}[Obstruction Preservation Under $\Fpc$]
+The central open problem is to establish rigorously that $\Fpc$ maps
+non-vanishing obstruction classes in $\Hone(\mathcal{C}_{\mathrm{phys}})$
+to non-vanishing classes in $\Hone(\mathcal{C}_{\mathrm{cog}})$. Without
+this, the cognitive and economic layers lose their grounding in the physical
+theory, and the unification reduces to structural analogy rather than
+categorical identity.
+\end{openproblem}
+
+\section{Non-Extractive Architecture: Four Conditions}
+
+\begin{definition}[Non-Extractive Architecture]
+A platform architecture is non-extractive if it satisfies simultaneously:
+\begin{enumerate}[label=\textbf{C\arabic*.}, leftmargin=2em]
+  \item \textbf{Typed Commitments.} All proposals are typed morphisms
+  between trajectory segments specifying the commitment record extended
+  and the boundary crossings required.
+  \item \textbf{Trajectory Identity.} Agent identity is bound to
+  $\mathrm{Inv}([\gamma])$; the platform cannot sever an agent from its
+  commitment record.
+  \item \textbf{Decomposable Matching.} The secondary projection decomposes
+  into a shared event base and a plurality of independent interpretation
+  functors $\{F_k\}$ among which agents may choose.
+  \item \textbf{Bond Conservation.} Stakes associated to unresolved
+  proposals return fully to participants; the platform cannot take revenue
+  from failed interactions.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}
+Conditions C1--C4 together structurally prevent the sign flip $\lambda > 0$
+by decoupling revenue from interface entropy at the architectural level.
+\end{remark}
+
+\begin{openproblem}[Competitive Survivability]
+Whether an architecture satisfying C1--C4 can achieve sufficient network
+effects before elimination by extractive competitors remains an open
+empirical question.
+\end{openproblem}
+
+\section{Constraint Geometry and Stability}
+
+\subsection{Constraint Manifold Structure}
+
+The admissible configuration space $\mathcal{A}(\mathcal{C})$ may be
+understood as a constraint manifold embedded in a higher-dimensional
+state space $\mathcal{M}$. Each constraint reduces the dimensionality
+of the admissible set, carving out a submanifold of configurations that
+satisfy compatibility conditions simultaneously.
+
+\begin{definition}[Constraint Manifold]
+The constraint manifold is the set
+\[
+  \mathcal{A}(\mathcal{C}) \;\subset\; \mathcal{M}
+\]
+of all configurations satisfying the constraint set $\mathcal{C}$.
+\end{definition}
+
+\subsection{Curvature and Instability}
+
+Local incompatibilities between constraints manifest as curvature in
+$\mathcal{A}(\mathcal{C})$. Regions of high curvature correspond to
+configurations in which small perturbations produce large increases in
+obstruction or entropy.
+
+\begin{definition}[Constraint Curvature]
+The constraint curvature at a point $p \in \mathcal{A}(\mathcal{C})$
+measures the sensitivity of admissibility to infinitesimal perturbations
+of the state at $p$.
+\end{definition}
+
+\begin{remark}
+High-curvature regions correspond to unstable configurations. Systems
+operating in such regions require continuous active correction and are
+prone to collapse or reconfiguration under perturbation. Low-curvature
+regions are those where the constraint structure is mutually reinforcing.
+\end{remark}
+
+\subsection{Stable Regions and Attractors}
+
+\begin{definition}[Constraint-Stable Region]
+A region $U \subset \mathcal{A}(\mathcal{C})$ is constraint-stable if
+perturbations originating within $U$ remain within $\mathcal{A}(\mathcal{C})$
+without requiring large increases in entropy or obstruction.
+\end{definition}
+
+\begin{proposition}[Concentration of Constraint-Preserving Trajectories]
+Constraint-preserving dynamics tend to concentrate trajectories in
+low-curvature regions of $\mathcal{A}(\mathcal{C})$.
+\end{proposition}
+
+\begin{proof}[Sketch]
+Perturbations in high-curvature regions produce rapid increases in
+$\mathcal{J}$ or $\Ss$, driving the system toward regions where these
+gradients are minimized. These minimal-gradient regions correspond to
+local attractors within $\mathcal{A}(\mathcal{C})$.
+\end{proof}
+
+\section{Failure Modes of Projection}
+
+\subsection{Local Coherence Without Global Section}
+
+Projection can produce configurations that are locally consistent within
+individual tiles but fail to extend globally across the covering.
+
+\begin{definition}[Fragmented Configuration]
+A configuration is fragmented if it admits local sections $\{\psi_i\}$
+satisfying all intra-tile conditions but no global section satisfying
+all overlap constraints simultaneously.
+\end{definition}
+
+\begin{remark}
+Fragmentation corresponds to systems that appear coherent within limited
+contexts but exhibit contradictions when extended across domains. The
+appearance of local validity masks global inconsistency.
+\end{remark}
+
+\subsection{Overcompression and Information Loss}
+
+Excessive compression can eliminate distinctions required for constraint
+satisfaction, producing artificial consistency within a restricted
+projection while increasing global obstruction.
+
+\begin{definition}[Overcompression]
+A compression $\Pi$ is overcompressive if it identifies states that are
+distinguishable under $\mathcal{C}$: that is, if there exist
+$\gamma_1 \not\sim_{\mathcal{C}} \gamma_2$ with $\Pi(\gamma_1) = \Pi(\gamma_2)$.
+\end{definition}
+
+\begin{proposition}
+Overcompression introduces local consistency while generically increasing
+global obstruction, since the identified states impose incompatible
+boundary conditions on their shared overlap regions.
+\end{proposition}
+
+\subsection{Hallucination as False Global Section}
+
+\begin{definition}[Hallucinated Structure]
+A hallucinated structure is a configuration that appears globally coherent
+under a restricted projection but does not correspond to any admissible
+configuration in $\mathcal{A}(\mathcal{C})$.
+\end{definition}
+
+\begin{remark}
+Hallucination is not random error but a projection artifact: it arises
+from overcompression that eliminates the distinctions required to detect
+global inconsistency \cite{clark2013whatever,friston2010free}. The system
+stabilizes a locally coherent but globally impossible configuration.
+\end{remark}
+
+\subsection{Relation to CLIO}
+
+\begin{proposition}
+The CLIO functional $\mathcal{J}$ acts to eliminate fragmented and
+hallucinated configurations by penalizing overlap mismatch and
+obstruction norm. Fixed points of gradient descent on $\mathcal{J}$
+that are globally admissible are precisely the non-hallucinated,
+non-fragmented stable configurations.
+\end{proposition}
+
+\section{Temporal Structure and Irreversibility}
+
+\subsection{Time as Constraint Accumulation}
+
+Time is not merely a parameter of evolution but a structural record of
+constraint accumulation. Each present state encodes the result of prior
+constraint interactions in compressed form.
+
+\begin{definition}[Temporal Compression Operator]
+The mapping $\tau_t$ from past states $X(s)$, $s < t$, to the present
+state $X(t)$ is a compression operator that preserves constraint-relevant
+invariants while discarding recoverable detail.
+\end{definition}
+
+\subsection{Irreversibility}
+
+\begin{proposition}[Irreversibility Under Lossy Compression]
+If $\tau_t$ is lossy---that is, if distinct past trajectories map to
+the same present state---then the inverse mapping does not exist, and
+the process is irreversible.
+\end{proposition}
+
+\begin{proof}
+Multiple histories map to the same present state under lossy compression.
+The present state therefore does not uniquely determine the past, and
+no inversion of $\tau_t$ can recover the original trajectory.
+\end{proof}
+
+\subsection{Entropy and the Arrow of Time}
+
+\begin{remark}
+The increase of $\Ss$ corresponds to the growth of equivalence classes
+under temporal compression: more and more distinct past trajectories
+become consistent with the present state as time advances. The arrow
+of time is therefore aligned with increasing multiplicity of admissible
+histories, not merely with thermodynamic disorder in the classical
+sense \cite{shannon1948mathematical,cover2006elements}.
+\end{remark}
+
+\subsection{Relation to Aspect Relegation}
+
+\begin{proposition}
+Aspect relegation is a directed temporal compression: computationally
+intensive constraint structures are moved from explicit time evolution
+into latent form, reducing the entropy cost of their redeployment.
+Recognition corresponds to successful retrieval of relegated structure.
+Invention corresponds to the absence of applicable relegated structure
+and the need to construct new constraint interactions from available
+fragments.
+\end{proposition}
+
+\section{Constraint-Preserving Dynamics and Catastrophic Trajectories}
+
+The structural analysis of catastrophic alignment arguments developed
+in the essay layer can now be stated formally. The following definitions
+and theorems show that the class of trajectories required for doom
+scenarios is non-admissible under constraint-preserving dynamics---not
+as an empirical claim but as a structural result.
+
+\begin{definition}[Constraint-Preserving Evolution]
+A trajectory $\gamma$ evolving on $\M$ under the RSVP dynamics is
+constraint-preserving if for all $t$,
+\[
+  \gamma(t) \;\in\; \mathcal{A}(\mathcal{C}),
+\]
+where $\mathcal{A}(\mathcal{C})$ is the admissible path family induced
+by the active constraint set $\mathcal{C}$.
+\end{definition}
+
+\begin{definition}[Substrate Violation]
+A trajectory $\gamma$ violates its substrate if it alters $\M$ or
+$\mathcal{C}$ such that future states are no longer admissible under
+the constraints required for its own persistence.
+\end{definition}
+
+\begin{theorem}[Non-Admissibility of Self-Invalidating Trajectories]
+Let $\gamma$ be a trajectory that leads to a state in which the
+constraint set $\mathcal{C}$ required for its continuation is no longer
+satisfied. Then $\gamma \notin \mathcal{A}(\mathcal{C})$.
+\end{theorem}
+
+\begin{proof}
+Admissibility requires that each continuation of $\gamma$ satisfy
+$\mathcal{C}$. If $\gamma$ leads to a state where $\mathcal{C}$ is
+violated, no extension of $\gamma$ exists within $\mathcal{A}(\mathcal{C})$.
+Therefore $\gamma$ is not admissible.
+\end{proof}
+
+\begin{corollary}[Obstruction of Total Resource Conversion]
+Any trajectory that transforms all available environmental resources
+into forms incompatible with the persistence of the generating process
+is non-admissible. Scenarios requiring such transformation---including
+unconstrained planetary resource conversion---do not correspond to
+stable solutions of the system.
+\end{corollary}
+
+\begin{definition}[Self-Modification Operator]
+Let $\mathcal{M}$ denote the space of admissible system configurations.
+A self-modification operator $\mathcal{R} : \mathcal{M} \to \mathcal{M}$
+maps a system to a modified version of itself.
+\end{definition}
+
+\begin{theorem}[Constraint-Bounded Self-Improvement]
+Let $\{\mathcal{R}^n\}$ be an iterated sequence of constraint-preserving
+self-modifications. Then the sequence remains within a bounded subset of
+$\mathcal{M}$ defined by $\mathcal{C}$.
+\end{theorem}
+
+\begin{proof}
+Each application of $\mathcal{R}$ must preserve admissibility under
+$\mathcal{C}$, so the image of $\mathcal{R}$ is restricted to
+$\mathcal{A}(\mathcal{C}) \subset \mathcal{M}$. Since $\mathcal{C}$
+imposes finite compatibility conditions, the admissible configurations
+form a constrained manifold. Iteration within this manifold cannot
+diverge arbitrarily without violating $\mathcal{C}$.
+\end{proof}
+
+\begin{corollary}[No Unbounded Capability Explosion]
+Unbounded recursive self-improvement is not admissible under
+constraint-preserving dynamics. Each increment of self-modification
+must satisfy the same constraints as the system it modifies.
+\end{corollary}
+
+\begin{theorem}[Compression-Coherence Constraint]
+Let $\Pi$ be a constraint-preserving compression operator. Any system
+whose internal representations are derived via $\Pi$ cannot stably act
+in ways that systematically violate the constraints encoded in $\Pi$
+without incurring an increase in obstruction or entropy cost.
+\end{theorem}
+
+\begin{proof}
+By definition, $\Pi$ preserves equivalence classes under $\mathcal{C}$.
+Actions that violate $\mathcal{C}$ correspond to distinctions eliminated
+under $\Pi$. To recover such distinctions, the system must reintroduce
+previously discarded degrees of freedom, increasing $\Ss$ or generating
+inconsistency between representations. This produces either an increase
+in entropy density or a nontrivial obstruction class in the sheaf
+structure. Systematic violation of encoded constraints is therefore not
+stable under $\Pi$.
+\end{proof}
+
+\begin{corollary}[Alignment as Structural Invariance]
+Systems trained on human data and interactions inherit compressed
+constraint structures reflecting human-consistent invariants. Persistent
+large-scale deviation from these invariants requires breaking
+constraint-preserving compression and is structurally unstable: it
+carries an irreducible entropy or obstruction cost.
+\end{corollary}
+
+\begin{remark}
+These results do not claim that misalignment or harm is impossible.
+They claim that the specific class of trajectories required for
+catastrophic doom scenarios---unconstrained optimization, unbounded
+self-improvement, and total resource conversion---are not admissible
+solutions of a constraint-preserving dynamical system. The relevant
+question for safety research is therefore not whether powerful systems
+can maximize arbitrary objectives, but whether they can maintain
+coherence within the constraint structures that sustain them.
+\end{remark}
+
+% ════════════════════════════════════════════════════════════════════════
+%  CONSEQUENCES AND CONCLUSION
+% ════════════════════════════════════════════════════════════════════════
+
+\section{Consequences and Testable Implications}
+
+If the account developed here is correct, structures arising from long-term
+constraint accumulation should exhibit identifiable properties that
+distinguish them from assembled or derivative constructions.
+
+Such structures will display cross-domain invariance without collapse of
+domain identity, internal consistency across multiple levels of abstraction,
+and resistance to decomposition into independently generated fragments.
+Their coherence will not depend on a single representational layer, but
+will persist under changes of formalism. A structure that appears formally
+in physics, reappears operationally in cognition, and reappears again
+economically without requiring re-derivation at each level has passed a
+non-trivial consistency test.
+
+By contrast, structures assembled from external sources or generated through
+local optimization will exhibit surface-level coherence without deep
+compositional stability. They will satisfy constraints within restricted
+regions while failing to extend globally without contradiction. The seams
+will appear when the representational layer changes.
+
+These differences are not matters of interpretation but of structure.
+They suggest that the origin of an idea may be inferred not from claims
+about its production, but from the properties of the structure itself.
+
+\section{Limits of Formalization}
+
+\subsection{Partial Capture of Structure}
+
+The formal system presented captures the invariant structure of
+constraint accumulation and projection. However, no formalization
+exhausts the full content of the underlying process.
+
+\begin{remark}
+Any representation is itself a projection. The formalism preserves
+structure but necessarily omits aspects that are not invariant under
+its chosen language.
+\end{remark}
+
+\subsection{Non-Uniqueness of Formal Systems}
+
+\begin{proposition}
+There exist multiple non-equivalent formal systems that preserve the
+same constraint structure under different projections.
+\end{proposition}
+
+\begin{remark}
+The RSVP--TARTAN--CLIO framework is not claimed to be the unique
+formalization, but a representation in which the invariants become
+explicit. Alternative formalisms may exist that preserve the same
+underlying structure.
+\end{remark}
+
+\subsection{Relation to Expression}
+
+\begin{remark}
+The essay and the formal system are themselves projections of the same
+underlying structure. Neither is primary; each is a different compression
+of the same constraint field.
+\end{remark}
+
+\section{Conclusion}
+
+The question is not who produced a given work, but whether the structure
+it expresses could only have arisen through a process of constraint
+accumulation and convergence. If so, its origin is already encoded in
+its form.
+
+The four layers formalized above---substrate, projection, update, and
+induced interaction---are not four theories. They are four resolutions
+of a single process: the compression of constrained high-dimensional
+dynamics into locally observable, globally coherent structure. The essay
+that precedes them is that process described from the inside. The
+formalism that follows is the same process stated from the outside.
+
+The apparent division between essay and formalism is therefore a difference
+in projection, not in underlying structure.
+
+\begin{thebibliography}{99}
+
+\bibitem{smolensky1986tensor}
+Paul Smolensky.
+Information Processing in Dynamical Systems: Foundations of Harmony Theory.
+In D.\ E.\ Rumelhart and J.\ L.\ McClelland (eds.),
+\textit{Parallel Distributed Processing}, Vol.~1, MIT Press, 1986.
+
+\bibitem{cheng2025clio}
+Newman Cheng, Gordon Broadbent, and William Chappell.
+Cognitive Loop via In-Situ Optimization: Self-Adaptive Reasoning for Science.
+\textit{arXiv:2508.02789}, 2025.
+
+\bibitem{yudkowsky2025if}
+Eliezer Yudkowsky and Nate Soares.
+\textit{If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All}.
+Little, Brown and Company, New York, 2025.
+
+\bibitem{russell2019human}
+Stuart Russell.
+\textit{Human Compatible: Artificial Intelligence and the Problem of Control}.
+Viking, 2019.
+
+\bibitem{bostrom2014superintelligence}
+Nick Bostrom.
+\textit{Superintelligence: Paths, Dangers, Strategies}.
+Oxford University Press, 2014.
+
+\bibitem{christiano2018ai}
+Paul Christiano.
+AI Alignment: Why It's Hard and Where to Start.
+\textit{AI Alignment Forum}, 2018.
+
+\bibitem{amodei2016concrete}
+Dario Amodei et al.
+Concrete Problems in AI Safety.
+\textit{arXiv:1606.06565}, 2016.
+
+\bibitem{barandes2023unistochastic}
+Jacob Barandes.
+Unistochastic Quantum Theory.
+\textit{arXiv preprint}, 2023.
+
+\bibitem{jacobson1995thermodynamics}
+Ted Jacobson.
+Thermodynamics of Spacetime: The Einstein Equation of State.
+\textit{Physical Review Letters}, 75(7):1260--1263, 1995.
+
+\bibitem{verlinde2011gravity}
+Erik Verlinde.
+On the Origin of Gravity and the Laws of Newton.
+\textit{Journal of High Energy Physics}, 2011(4), 2011.
+
+\bibitem{landauer1961irreversibility}
+Rolf Landauer.
+Irreversibility and Heat Generation in the Computing Process.
+\textit{IBM Journal of Research and Development}, 5(3):183--191, 1961.
+
+\bibitem{bennett1982thermodynamics}
+Charles H. Bennett.
+The Thermodynamics of Computation---A Review.
+\textit{International Journal of Theoretical Physics}, 21(12):905--940, 1982.
+
+\bibitem{lloyd2000ultimate}
+Seth Lloyd.
+Ultimate Physical Limits to Computation.
+\textit{Nature}, 406:1047--1054, 2000.
+
+\bibitem{friston2010free}
+Karl Friston.
+The Free-Energy Principle: A Unified Brain Theory?
+\textit{Nature Reviews Neuroscience}, 11(2):127--138, 2010.
+
+\bibitem{clark2013whatever}
+Andy Clark.
+Whatever Next? Predictive Brains, Situated Agents, and the Future of Cognitive Science.
+\textit{Behavioral and Brain Sciences}, 36(3):181--204, 2013.
+
+\bibitem{tononi2008consciousness}
+Giulio Tononi.
+Consciousness as Integrated Information.
+\textit{Biological Bulletin}, 215(3):216--242, 2008.
+
+\bibitem{baez2011physics}
+John C. Baez and Mike Stay.
+Physics, Topology, Logic and Computation: A Rosetta Stone.
+\textit{New Structures for Physics}, Springer, 2011.
+
+\bibitem{maclane1998categories}
+Saunders Mac Lane.
+\textit{Categories for the Working Mathematician}.
+Springer, 2nd edition, 1998.
+
+\bibitem{lurie2009higher}
+Jacob Lurie.
+\textit{Higher Topos Theory}.
+Princeton University Press, 2009.
+
+\bibitem{spivak2014category}
+David I. Spivak.
+\textit{Category Theory for the Sciences}.
+MIT Press, 2014.
+
+\bibitem{shannon1948mathematical}
+Claude E. Shannon.
+A Mathematical Theory of Communication.
+\textit{Bell System Technical Journal}, 27:379--423, 1948.
+
+\bibitem{cover2006elements}
+Thomas M. Cover and Joy A. Thomas.
+\textit{Elements of Information Theory}.
+Wiley, 2nd edition, 2006.
+
+\bibitem{georgescu1971entropy}
+Nicholas Georgescu-Roegen.
+\textit{The Entropy Law and the Economic Process}.
+Harvard University Press, 1971.
+
+\bibitem{odum1994ecological}
+Howard T. Odum.
+\textit{Ecological and General Systems: An Introduction to Systems Ecology}.
+University Press of Colorado, 1994.
+
+\bibitem{kauffman1993origins}
+Stuart A. Kauffman.
+\textit{The Origins of Order: Self-Organization and Selection in Evolution}.
+Oxford University Press, 1993.
+
+\bibitem{turing1936computable}
+Alan M. Turing.
+On Computable Numbers, with an Application to the Entscheidungsproblem.
+\textit{Proceedings of the London Mathematical Society}, 1936.
+
+\bibitem{church1936unsolvable}
+Alonzo Church.
+An Unsolvable Problem of Elementary Number Theory.
+\textit{American Journal of Mathematics}, 1936.
+
+\bibitem{brooks1991intelligence}
+Rodney A. Brooks.
+Intelligence Without Representation.
+\textit{Artificial Intelligence}, 47(1--3):139--159, 1991.
+
+\bibitem{holland1992adaptation}
+John H. Holland.
+\textit{Adaptation in Natural and Artificial Systems}.
+MIT Press, 1992.
+
+\end{thebibliography}
+
+\end{document}
