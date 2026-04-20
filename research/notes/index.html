@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Oscilloscope</title>
+<style>
+html,body{ margin:0; padding:0; width:100%; height:100%; background:#000; overflow:hidden; font-family:monospace; }
+canvas{ position:fixed; inset:0; }
+#sub{
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+  width:90vw; max-width:800px; text-align:center;
+  color:#0f0; font-size:14px; line-height:1.5; text-shadow:0 0 8px #0f0;
+}
+#ui{ position:fixed; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:10px; }
+button{ background:#000; color:#0f0; border:1px solid #0f0; padding:8px 14px; cursor:pointer; font-family:monospace; }
+</style>
+</head>
+<body>
+
+<canvas id="c"></canvas>
+<div id="sub"></div>
+<div id="ui">
+  <button id="play">PLAY</button>
+  <button id="rew">REW 10</button>
+  <button id="ff">FWD 10</button>
+</div>
+
+<audio id="audio" preload="auto" playsinline webkit-playsinline>
+  <source src="Why_Great_Ideas_Are_Mathematically_Inevitable.mp3" type="audio/mpeg">
+  <track src="Why_Great_Ideas_Are_Mathematically_Inevitable.vtt" kind="subtitles" default>
+</audio>
+
+<script>
+const canvas  = document.getElementById('c')
+const ctx     = canvas.getContext('2d')
+const audio   = document.getElementById('audio')
+const subEl   = document.getElementById('sub')
+const playBtn = document.getElementById('play')
+
+function resize(){ canvas.width = innerWidth; canvas.height = innerHeight }
+resize(); window.addEventListener('resize', resize)
+
+// ── audio context — gesture-safe ─────────────────────────────────
+let audioCtx, analyser, timeBuf
+
+function initAudio(){
+  if(audioCtx) return
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)()
+  analyser  = audioCtx.createAnalyser()
+  analyser.fftSize = 2048
+  timeBuf   = new Uint8Array(analyser.fftSize)
+  const src = audioCtx.createMediaElementSource(audio)
+  src.connect(analyser)
+  analyser.connect(audioCtx.destination)
+}
+
+async function togglePlay(){
+  initAudio()
+  if(audioCtx.state === 'suspended') await audioCtx.resume()
+  if(audio.paused){ audio.play(); playBtn.textContent = 'PAUSE' }
+  else            { audio.pause(); playBtn.textContent = 'PLAY'  }
+}
+
+// ── subtitles ────────────────────────────────────────────────────
+// Use audio.textTracks[0], not trackEl.track — more reliable.
+// Guard activeCues against null before indexing.
+// Poll until the track appears — it may not exist at loadedmetadata.
+
+let subtitlesBound = false
+
+function bindSubs(){
+  if(subtitlesBound) return
+  const tt = audio.textTracks && audio.textTracks[0]
+  if(!tt) return
+  subtitlesBound = true
+  tt.mode = 'hidden'
+  tt.oncuechange = () => {
+    const cue = tt.activeCues && tt.activeCues[0]
+    subEl.textContent = cue ? cue.text : ''
+  }
+}
+
+audio.addEventListener('loadedmetadata', bindSubs)
+audio.addEventListener('loadeddata',     bindSubs)
+audio.addEventListener('canplay',        bindSubs)
+
+const poll = setInterval(() => {
+  bindSubs()
+  if(subtitlesBound) clearInterval(poll)
+}, 300)
+
+// ── controls ──────────────────────────────────────────────────────
+playBtn.onclick = togglePlay
+
+document.getElementById('rew').onclick = () => {
+  audio.currentTime = Math.max(0, audio.currentTime - 10)
+}
+document.getElementById('ff').onclick = () => {
+  const d = isFinite(audio.duration) ? audio.duration : 0
+  audio.currentTime = Math.min(d, audio.currentTime + 10)
+}
+
+// ── Lissajous oscilloscope ────────────────────────────────────────
+let phase = 0
+
+function draw(){
+  ctx.fillStyle = 'rgba(0,0,0,0.25)'
+  ctx.fillRect(0, 0, canvas.width, canvas.height)
+
+  if(analyser){
+    analyser.getByteTimeDomainData(timeBuf)
+
+    const cx  = canvas.width  / 2
+    const cy  = canvas.height / 2
+    const R   = Math.min(canvas.width, canvas.height) * 0.35
+    const len = timeBuf.length
+    const lag = 30
+
+    ctx.beginPath()
+    for(let i = 0; i < len; i++){
+      const a = (timeBuf[i]           - 128) / 128
+      const b = (timeBuf[(i+lag)%len] - 128) / 128
+      const t = (i / len) * Math.PI * 2
+      const x = cx + Math.sin(t * 2.0 + phase) * a * R * 0.6
+      const y = cy + Math.sin(t * 3.0)          * b * R * 0.6
+      i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)
+    }
+    ctx.strokeStyle = '#00ff88'
+    ctx.lineWidth   = 1.5
+    ctx.shadowColor = '#00ff88'
+    ctx.shadowBlur  = 12
+    ctx.stroke()
+    ctx.shadowBlur  = 0
+  }
+
+  phase += 0.01
+  requestAnimationFrame(draw)
+}
+
+draw()
+</script>
+</body>
+</html>

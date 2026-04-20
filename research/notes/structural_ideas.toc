@@ -1,0 +1,92 @@
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
+\contentsline {section}{\numberline {2}Against Naive Models of Idea Formation}{5}{section.2}%
+\contentsline {section}{\numberline {3}Constraint Accumulation as Generative Process}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Domains as Constraint Systems}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Composition and Closure}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Minimal Conditions for Structural Emergence}{6}{section.4}%
+\contentsline {section}{\numberline {5}Projection and Internal Representation}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Ideas as Coarse-Grained Structures}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Local Consistency and Global Structure}{6}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Abstraction as Reduction}{7}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Abstraction as Constraint Elimination}{7}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Reduction and Information Loss}{7}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Abstraction as Precondition for Composition}{7}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Relation to Projection}{7}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Recognition Versus Invention}{8}{section.7}%
+\contentsline {subsection}{\numberline {7.1}The Phenomenology of Completion}{8}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Precomputation and Latent Structure}{8}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Inevitability and Selection}{9}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Aspect Relegation}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}From Intuition to Relegation}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Relegation as Compression}{9}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Failure Modes and Reactivation}{9}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Implications for Artificial Systems}{10}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Relation to Precomputation}{10}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Cross-Domain Invariance}{10}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Structure Over Substance}{10}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Functorial Correspondence}{10}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Expression as Secondary Projection}{11}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Writing as Projection}{11}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Stability of Representation}{11}{subsection.10.2}%
+\contentsline {section}{\numberline {11}On Tools and External Systems}{11}{section.11}%
+\contentsline {section}{\numberline {12}A Structural Analysis of Catastrophic Alignment Arguments}{12}{section.12}%
+\contentsline {subsection}{\numberline {12.1}The Argument as a Chain of Implications}{12}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}From Intelligence to Control}{12}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}From Capability to Optimization}{13}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Opacity and Emergence}{13}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}On Knowledge and Action}{13}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}On Recursive Self-Improvement}{14}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}On Resource Transformation Scenarios}{14}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}On Analogy and Biological Scaling}{14}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}Coordination as Countervailing Structure}{14}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}Conclusion of This Analysis}{15}{subsection.12.10}%
+\contentsline {section}{\numberline {13}From Structural Account to Formalization}{15}{section.13}%
+\contentsline {section}{\numberline {14}The RSVP Substrate}{16}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Base Manifold and Microstate}{16}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Entropy as Torsional Multiplicity}{16}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Constraint-Relative Multiplicity and Compression}{17}{subsection.14.3}%
+\contentsline {section}{\numberline {15}The TARTAN Projection}{17}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Tiles as Path-Space Objects}{17}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Sheaf-Like Covering and Gluing}{17}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Annotated Noise and Memory}{18}{subsection.15.3}%
+\contentsline {section}{\numberline {16}Duality of Compression and Multiplicity}{18}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Equivalence of Representations}{18}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Invariance Under Representation}{19}{subsection.16.2}%
+\contentsline {section}{\numberline {17}Phase Coherence and Quantum Emergence}{19}{section.17}%
+\contentsline {subsection}{\numberline {17.1}The Phase Functional}{19}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Unistochastic Transition Structure}{19}{subsection.17.2}%
+\contentsline {section}{\numberline {18}Gauge Freedom and Representation Choice}{20}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Redundancy in Representation}{20}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Fixing a Gauge}{20}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Gauge and Projection}{20}{subsection.18.3}%
+\contentsline {section}{\numberline {19}The CLIO Update Operator}{21}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Cognitive Projection as Sheaf Extension}{21}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}The CLIO Coherence Functional}{21}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Topological Versus Energetic Separation}{21}{subsection.19.3}%
+\contentsline {section}{\numberline {20}Agents, Trajectories, and Economic Structure}{22}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Agents as Trajectory Invariants}{22}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Interface Entropy}{22}{subsection.20.2}%
+\contentsline {section}{\numberline {21}The Extraction Attractor}{22}{section.21}%
+\contentsline {section}{\numberline {22}Functorial Structure of the Unified Framework}{23}{section.22}%
+\contentsline {section}{\numberline {23}Non-Extractive Architecture: Four Conditions}{24}{section.23}%
+\contentsline {section}{\numberline {24}Constraint Geometry and Stability}{24}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Constraint Manifold Structure}{24}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Curvature and Instability}{24}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.3}Stable Regions and Attractors}{25}{subsection.24.3}%
+\contentsline {section}{\numberline {25}Failure Modes of Projection}{25}{section.25}%
+\contentsline {subsection}{\numberline {25.1}Local Coherence Without Global Section}{25}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.2}Overcompression and Information Loss}{25}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.3}Hallucination as False Global Section}{26}{subsection.25.3}%
+\contentsline {subsection}{\numberline {25.4}Relation to CLIO}{26}{subsection.25.4}%
+\contentsline {section}{\numberline {26}Temporal Structure and Irreversibility}{26}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Time as Constraint Accumulation}{26}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.2}Irreversibility}{26}{subsection.26.2}%
+\contentsline {subsection}{\numberline {26.3}Entropy and the Arrow of Time}{26}{subsection.26.3}%
+\contentsline {subsection}{\numberline {26.4}Relation to Aspect Relegation}{27}{subsection.26.4}%
+\contentsline {section}{\numberline {27}Constraint-Preserving Dynamics and Catastrophic Trajectories}{27}{section.27}%
+\contentsline {section}{\numberline {28}Consequences and Testable Implications}{28}{section.28}%
+\contentsline {section}{\numberline {29}Limits of Formalization}{29}{section.29}%
+\contentsline {subsection}{\numberline {29.1}Partial Capture of Structure}{29}{subsection.29.1}%
+\contentsline {subsection}{\numberline {29.2}Non-Uniqueness of Formal Systems}{29}{subsection.29.2}%
+\contentsline {subsection}{\numberline {29.3}Relation to Expression}{29}{subsection.29.3}%
+\contentsline {section}{\numberline {30}Conclusion}{29}{section.30}%

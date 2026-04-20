@@ -2,7 +2,11 @@
 
 [From Field Dynamics to Extractive Systems](https://standardgalactic.github.io/standardgalactic/field_dynamics.pdf)
 
-* [The Physics of Toxic Digital Platforms](https://standardgalactic.github.io/standardgalactic/research/)
+* [The Physics of Toxic Digital Platforms](https://standardgalactic.github.io/standardgalactic/research/) — *Audio Overview*
+
+[On the Formation of Structural Ideas](https://standardgalactic.github.io/standardgalactic/research/structural_ideas.pdf)
+
+* [Why Great Ideas Are Mathematically Inevitable](https://standardgalactic.github.io/standardgalactic/research/notes/) — *Audio Overview*
 
 This project develops a unified theoretical framework proposing that physics, cognition, and economics are governed by the same underlying structural laws.
 
@@ -38,6 +42,9 @@ Using the RSVP (Relativistic Scalar Vector Plenum) model, the work formalizes sy
 
 - [System Design Specification](system-design-specification.md)  
   Defines architectures for non-extractive systems, where incentives are aligned with the successful completion of agent trajectories.
+
+- [Structural Framework](https://github.com/standardgalactic/standardgalactic/tree/main/research/notes/README.md)
+  A unified framework showing that intelligence, ideas, and systems emerge from constraint accumulation and achieve stability through global coherence rather than unconstrained optimization.
 
 ---
 

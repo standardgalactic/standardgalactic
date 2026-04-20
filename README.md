@@ -236,7 +236,11 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [From Field Dynamics to Extractive Systems](https://standardgalactic.github.io/standardgalactic/field_dynamics.pdf)
 
-* [The Physics of Toxic Digital Platforms](https://standardgalactic.github.io/standardgalactic/research/)
+* [The Physics of Toxic Digital Platforms](https://standardgalactic.github.io/standardgalactic/research/) — *Audio Overview*
+
+[On the Formation of Structural Ideas](https://standardgalactic.github.io/standardgalactic/research/structural_ideas.pdf)
+
+* [Why Great Ideas Are Mathematically Inevitable](https://standardgalactic.github.io/standardgalactic/research/notes/) — *Audio Overview*
 
 [Participation without Guarantee](https://standardgalactic.github.io/antivenom/economics/participation_without_guarantee.pdf)
 
@@ -386,6 +390,14 @@ Geodesics of Attention
 [Baby Barn Cost Estimator](https://standardgalactic.github.io/estimator/) — *Needs Work*
 -->
 # Just for Fun
+
+[How Ideas Work](https://standardgalactic.github.io/syllabus/01_how_ideas_work.pdf)
+
+[The Architecture of Ideas](https://standardgalactic.github.io/syllabus/02_architecture_of_ideas.pdf)
+
+[Structural Thinking](https://standardgalactic.github.io/syllabus/03_structural_thinking.pdf)
+
+* [The Puzzle That Solves Itself](https://standardgalactic.github.io/syllabus/) — *Audio Overview*
 
 [The Fixed Point](https://standardgalactic.github.io/alphabet/screenplay/the_fixed_point.pdf)
 
