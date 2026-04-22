@@ -389,6 +389,20 @@ Geodesics of Attention
 
 [Baby Barn Cost Estimator](https://standardgalactic.github.io/estimator/) — *Needs Work*
 -->
+# Research Projects
+
+[Ledger Without Value](https://standardgalactic.github.io/research-projects/paper/ledger-without-value.pdf)
+
+[Error as Obstruction](https://standardgalactic.github.io/research-projects/paper/error_as_obstruction.pdf)
+
+[Entropic Decimation](https://standardgalactic.github.io/research-projects/paper/entropic-decimation.pdf)
+
+[The Admissibility Log](https://standardgalactic.github.io/research-projects/paper/admissibility-log.pdf)
+
+[Flash–Reluctance Engine](https://standardgalactic.github.io/research-projects/paper/flash_reluctance_engine.pdf)
+
+* [Yarncrawler Audio Visualizer](https://standardgalactic.github.io/research-projects/paper/) — *Audio Overviews*
+
 # Just for Fun
 
 [How Ideas Work](https://standardgalactic.github.io/syllabus/01_how_ideas_work.pdf)
