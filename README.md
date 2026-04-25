@@ -403,6 +403,32 @@ Geodesics of Attention
 
 * [Yarncrawler Audio Visualizer](https://standardgalactic.github.io/research-projects/paper/) — *Audio Overviews*
 
+[Descent into Reality](https://standardgalactic.github.io/alphabet/framework/descent-into-reality.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/alphabet/framework/)
+
+[Constraint Regimes](https://standardgalactic.github.io/library/monograph/constraint_regimes.pdf)
+
+[The Topology of Intention](https://standardgalactic.github.io/library/monograph/topology_of_intention.pdf)
+
+[The Binding Invariant](https://standardgalactic.github.io/library/monograph/binding_invariant.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/library/monograph/)
+
+* [Notes](https://github.com/standardgalactic/library/blob/main/monograph/README.md)
+
+[Trajectory and Residue](https://standardgalactic.github.io/antivenom/projects/constraint_closure-5.pdf) — *On Bullshit Jobs*
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/projects/?track=proof)
+
+[Ownership without Understanding](https://standardgalactic.github.io/antivenom/projects/ownership-without-understanding.pdf) — *The Geometry of Extraction*
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/projects/?track=Ownership)
+
+[Survival is Insufficient](https://standardgalactic.github.io/antivenom/projects/survival-is-insufficient.pdf) — *Analysis of Station Eleven*
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/projects/?track=Survival)
+
 # Just for Fun
 
 [How Ideas Work](https://standardgalactic.github.io/syllabus/01_how_ideas_work.pdf)
