@@ -234,9 +234,14 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Mechanistic Frameworks
 
+[Kernel Operators, Memory, and Field-Theoretic Dynamics](https://standardgalactic.github.io/calculus/kernel-memory.pdf)
+
+* [The Physics of Universal Memory](https://standardgalactic.github.io/calculus/) — *Audio Overview*
+<!--
 [From Field Dynamics to Extractive Systems](https://standardgalactic.github.io/standardgalactic/field_dynamics.pdf)
 
 * [The Physics of Toxic Digital Platforms](https://standardgalactic.github.io/standardgalactic/research/) — *Audio Overview*
+-->
 
 [On the Formation of Structural Ideas](https://standardgalactic.github.io/standardgalactic/research/structural_ideas.pdf)
 
