@@ -71,6 +71,11 @@ Taken together, these projects treat the user's actions as part of the algorithm
 <!--
 [Follow me on Facebook](https://standardgalactic.github.io/facebook-pages/index.html)
 -->
+# **20k Subscribers**
+
+*New* [Ephemera](https://github.com/standardgalactic/ephemera)— *Odds and Ends*
+
+* [Audio Overviews](https://standardgalactic.github.io/research-projects/Aurora/)
 
 # Parody Music
 
@@ -233,6 +238,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 -->
 # Mechanistic Frameworks
+
+[Polyxan Semantic Hyperstructure](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperstructure.pdf)
+
+* [The Physics of Persistent AI Worlds](https://standardgalactic.github.io/research-projects/) — *Audio Overview*
 
 [Kernel Operators, Memory, and Field-Theoretic Dynamics](https://standardgalactic.github.io/calculus/kernel-memory.pdf)
 
