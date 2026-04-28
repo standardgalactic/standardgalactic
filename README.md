@@ -543,6 +543,10 @@ Geodesics of Attention
 
 ## Psychonomics
 
+[The Refractive Self](https://standardgalactic.github.io/alphabet/science/the_refractive_self.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/alphabet/science/)
+
 [From Preservation to Reachability](https://standardgalactic.github.io/animal-social/reachability.pdf)
 
 <!-- See Also: [Where Did Analytic Philosophy Go Wrong? (w/ Alicia Juarrero)](https://www.youtube.com/watch?v=cE7-2xJdIcA&t=2613s) -->
