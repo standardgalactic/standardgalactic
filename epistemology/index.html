@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora Monitor</title>
+
+<style>
+:root{ --green:#00ff88; }
+
+html,body{
+  margin:0;
+  height:100%;
+  background:#000;
+  overflow:hidden;
+  font-family:monospace;
+  color:var(--green);
+}
+
+canvas{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+}
+
+.timeline{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:12px;
+  background:rgba(0,255,136,0.1);
+  z-index:10;
+  transform:translateY(-40px);
+  opacity:0;
+  pointer-events:none;
+  transition:transform 0.25s ease, opacity 0.25s ease;
+}
+
+.timeline.active{
+  transform:translateY(0);
+  opacity:1;
+  pointer-events:auto;
+}
+
+.progress{
+  height:100%;
+  width:0%;
+  background:#00ff88;
+  box-shadow:0 0 10px #00ff88;
+}
+
+.thumb{
+  position:absolute;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:10px;
+  height:10px;
+  background:#00ff88;
+  border-radius:50%;
+}
+
+.sub{
+  position:fixed;
+  bottom:70px;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(90vw,600px);
+  text-align:center;
+  font-size:14px;
+  white-space:pre-wrap;
+  text-shadow:0 0 6px #0f8;
+  z-index:10;
+}
+
+.panel{
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, 100%);
+  transition:transform 0.3s ease;
+  z-index:20;
+  visibility:hidden;
+}
+
+.panel.active{
+  transform:translate(-50%, 0%);
+  visibility:visible;
+}
+
+.menu{
+  background:#000;
+  border:1px solid var(--green);
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  box-shadow:0 0 20px #0f8;
+}
+
+.key{
+  position:fixed;
+  bottom:12px;
+  right:12px;
+  z-index:30;
+  border:1px solid #0f8;
+  background:#000;
+  color:#0f8;
+  padding:6px 10px;
+  cursor:pointer;
+}
+
+button{
+  background:#000;
+  border:1px solid #0f8;
+  color:#0f8;
+  padding:8px;
+  cursor:pointer;
+}
+button:hover{ background:#022; }
+</style>
+
+</head>
+
+<body>
+
+<div class="timeline" id="timeline">
+  <div class="progress" id="progress"></div>
+  <div class="thumb" id="thumb"></div>
+</div>
+
+<canvas id="c"></canvas>
+
+<div class="sub" id="sub">Tap to begin</div>
+
+<div class="panel" id="panel">
+  <div class="menu" id="menu"></div>
+</div>
+
+<div class="key" id="key">≡</div>
+
+<audio id="audio" preload="auto"></audio>
+
+<script>
+const TRACKS = [
+  "Why_Experts_Fail_Simple_Tasks",
+  "How_Tech_Giants_Manufacture_Your_Credulity",
+  "Why_Evolution_is_a_Mindless_Sieve",
+  "The_Universe_Filters_but_Never_Optimizes"
+]
+
+const audio = document.getElementById("audio")
+const timeline = document.getElementById("timeline")
+const progress = document.getElementById("progress")
+const thumb = document.getElementById("thumb")
+const subEl = document.getElementById("sub")
+const panel = document.getElementById("panel")
+const menu = document.getElementById("menu")
+const keyBtn = document.getElementById("key")
+
+let cues=[], lastText="", current=0, scrubbing=false
+let ctxA, analyser, buf
+let started = false
+
+/* TRACK */
+function loadTrack(i){
+  current=i
+  cues=[]
+  lastText=""
+  subEl.textContent=""
+
+  audio.src = TRACKS[i] + ".mp3"
+  audio.load()
+  loadVTT(TRACKS[i] + ".vtt")
+}
+
+/* VTT */
+async function loadVTT(file){
+  try{
+    const txt = await (await fetch(file)).text()
+    cues = parseVTT(txt)
+  }catch{ cues=[] }
+}
+
+function parseVTT(txt){
+  txt = txt.replace(/^\uFEFF/, "")
+  const lines = txt.split('\n')
+  const out=[]
+  let i=0
+
+  while(i<lines.length){
+    const l=lines[i].trim()
+    if(l.includes('-->')){
+      const [s,eRaw]=l.split('-->').map(x=>x.trim())
+      const e=eRaw.split(/\s+/)[0]
+      i++
+      const t=[]
+      while(i<lines.length && lines[i].trim()){
+        t.push(lines[i].trim()); i++
+      }
+      out.push({start:toSec(s),end:toSec(e),text:t.join('\n')})
+    } else i++
+  }
+  return out
+}
+
+function toSec(t){
+  t=t.replace(',', '.')
+  const p=t.split(':').map(Number)
+  return p.length===3 ? p[0]*3600+p[1]*60+p[2] :
+         p.length===2 ? p[0]*60+p[1] : 0
+}
+
+/* SCRUB */
+function setTime(e){
+  const rect = timeline.getBoundingClientRect()
+  const r = Math.min(Math.max((e.clientX-rect.left)/rect.width,0),1)
+  if(!isNaN(audio.duration)) audio.currentTime = r * audio.duration
+}
+
+timeline.addEventListener("pointerdown", e=>{
+  e.stopPropagation()
+  timeline.setPointerCapture(e.pointerId)
+  scrubbing=true
+  setTime(e)
+})
+
+timeline.addEventListener("pointermove", e=>{
+  if(scrubbing) setTime(e)
+})
+
+timeline.addEventListener("pointerup", e=>{
+  scrubbing=false
+  timeline.releasePointerCapture(e.pointerId)
+})
+
+/* AUDIO UPDATE */
+audio.ontimeupdate = ()=>{
+  const t=audio.currentTime
+  const d=audio.duration||1
+  const pct = (t/d)*100
+
+  progress.style.width=pct+"%"
+  thumb.style.left=pct+"%"
+
+  let active=null
+  for(let i=cues.length-1;i>=0;i--){
+    const c=cues[i]
+    if(t>=c.start-0.1){
+      if(t<=c.end+0.5) active=c
+      break
+    }
+  }
+
+  if(active) lastText=active.text
+  subEl.textContent=lastText
+}
+
+audio.onended = ()=>{
+  loadTrack((current+1)%TRACKS.length)
+  audio.play()
+}
+
+/* MENU */
+TRACKS.forEach((name,i)=>{
+  const b=document.createElement("button")
+  b.textContent = name.replaceAll("_"," ")
+  b.onclick = e=>{
+    e.stopPropagation()
+    closePanel()
+    loadTrack(i)
+    audio.play()
+  }
+  menu.appendChild(b)
+})
+
+function openPanel(){
+  panel.classList.add("active")
+  timeline.classList.add("active")
+}
+
+function closePanel(){
+  panel.classList.remove("active")
+  timeline.classList.remove("active")
+}
+
+keyBtn.onclick = e=>{
+  e.stopPropagation()
+  panel.classList.contains("active") ? closePanel() : openPanel()
+}
+
+/* AUDIO INIT */
+function initAudio(){
+  if(ctxA) return
+  ctxA = new (window.AudioContext||window.webkitAudioContext)()
+  analyser = ctxA.createAnalyser()
+  analyser.fftSize=1024
+  analyser.smoothingTimeConstant = 0.85
+  buf = new Uint8Array(analyser.fftSize)
+
+  const src = ctxA.createMediaElementSource(audio)
+  src.connect(analyser)
+  analyser.connect(ctxA.destination)
+}
+
+/* ONE TAP START (FIXED) */
+document.body.addEventListener("pointerdown", async (e)=>{
+  if(e.target.closest(".panel, .key, .timeline")) return
+
+  if(!started){
+    initAudio()
+    if(ctxA.state !== "running") await ctxA.resume()
+    await audio.play()
+    started = true
+    return
+  }
+
+  audio.paused ? audio.play() : audio.pause()
+})
+
+/* VISUALIZER */
+const c=document.getElementById("c")
+const g=c.getContext("2d")
+
+let w,h,cx,cy
+function resize(){
+  w=c.width=innerWidth
+  h=c.height=innerHeight
+  cx=w/2; cy=h/2
+}
+resize()
+addEventListener("resize",resize)
+
+function draw(){
+  g.fillStyle="rgba(0,0,0,0.1)"
+  g.fillRect(0,0,w,h)
+
+  const R = Math.min(w,h)*0.4
+
+  g.save()
+  g.beginPath()
+  g.arc(cx,cy,R,0,Math.PI*2)
+  g.clip()
+
+  if(analyser && !audio.paused){
+    analyser.getByteTimeDomainData(buf)
+
+    const len=buf.length
+    const lag=32
+
+    g.beginPath()
+    for(let i=0;i<len;i++){
+      const a=(buf[i]-128)/128
+      const b=(buf[(i+lag)%len]-128)/128
+      const t=i/len*Math.PI*2
+
+      const x = cx + Math.sin(t*2)*a*R*0.75
+      const y = cy + Math.sin(t*3)*b*R*0.75
+
+      i?g.lineTo(x,y):g.moveTo(x,y)
+    }
+
+    g.strokeStyle="#00ff88"
+    g.shadowColor="#00ff88"
+    g.shadowBlur=10
+    g.stroke()
+    g.shadowBlur=0
+  }
+
+  g.restore()
+
+  g.beginPath()
+  g.arc(cx,cy,R,0,Math.PI*2)
+  g.strokeStyle="rgba(0,255,136,0.6)"
+  g.lineWidth=2
+  g.stroke()
+
+  requestAnimationFrame(draw)
+}
+
+draw()
+
+/* preload first track */
+loadTrack(0)
+
+</script>
+
+</body>
+</html>

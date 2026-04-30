@@ -1,0 +1,481 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+
+\geometry{
+  top=1.25in,
+  bottom=1.25in,
+  left=1.35in,
+  right=1.35in
+}
+
+\onehalfspacing
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black,
+  pdftitle={Markedness and Capability: A Theory of Downward Projection},
+  pdfauthor={Flyxion}
+}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2em}{1em}
+
+\title{\textbf{Markedness and Capability:\\A Theory of Downward Projection}}
+\author{Flyxion\\[0.5em]\small Independent Researcher}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\vspace{1em}
+
+\begin{abstract}
+\noindent This essay develops a theory of competence as stability under constraint relaxation. The central claim is that genuine, integrated capacity projects downward: if an agent can satisfy a dense set of constraints in a demanding context, it should be able to satisfy a subset of those constraints in a structurally analogous but less demanding one. The pattern is anchored in the linguistics of markedness and Optimality Theory, then extended to practical domains including construction, teaching, and expression. The framework is diagnostic as well as descriptive: when downward projection fails under the right conditions, the failure is not arbitrary but structured, pointing to a small set of distinguishable explanations. A final section applies the same analysis to evaluative systems themselves, arguing that systems which claim to measure merit are constraint systems subject to the same scrutiny as individual performances.
+\end{abstract}
+
+\newpage
+
+\section{The Asymmetry of Competence}
+
+There is a familiar asymmetry in how we judge ability. If someone can build a house, we expect them to be able to build a shed. If someone can write a rigorous technical essay, we expect them to be able to explain its contents in simpler terms. These expectations are rarely stated as principles, but they are widely shared. When they are met, they pass without comment. When they fail, the failure feels revealing.
+
+This asymmetry points to a deeper question. When does competence in a demanding context imply competence in a simpler one, and when does it not? The question is not trivial, because there are clear cases where the implication seems to break. Experts who produce sophisticated work sometimes struggle to explain it. Skilled practitioners in one setting may falter when asked to perform what appears to be an easier version of the same task. These cases are often treated as anomalies or dismissed as quirks of individual psychology. But their persistence suggests that something more systematic is at work.
+
+The aim of this essay is to isolate the structure behind this asymmetry. The central claim is that competence is not merely the ability to perform under high constraint, but the ability of that performance to remain stable when constraints are relaxed, provided that the underlying structure of the task is preserved. In other words, genuine competence exhibits a form of downward projection. If a capacity is real and integrated, it should survive the removal of some of the conditions under which it was originally demonstrated.
+
+This formulation immediately introduces a condition. The notion of a simpler task must be handled with care. Simplicity here does not mean easier in a general or intuitive sense. It refers specifically to a reduction in the number or strength of constraints within the same structural system. A task is simpler, in the relevant sense, if it can be obtained by relaxing constraints while preserving the core relations that define the original task.
+
+Seen this way, the asymmetry becomes more precise. When the structure is preserved and the constraints are relaxed, competence should project downward. When projection fails under those conditions, the failure is not arbitrary. It is evidence. The remainder of the essay develops this claim, shows how to interpret such failures, and argues that they are the primary means by which the structure of competence becomes visible.
+
+\subsection*{Mathematical Formalization}
+
+\begin{definition}[Task and Constraint Set]
+A task $T$ is defined by a set of constraints $\mathcal{C}_T$ over a space of admissible trajectories $\Gamma$:
+\[
+\mathcal{C}_T \subseteq \Gamma.
+\]
+\end{definition}
+
+\begin{definition}[Downward Projection]
+A task $T'$ is a downward projection of $T$ if
+\[
+\mathcal{C}_T \subseteq \mathcal{C}_{T'}.
+\]
+\end{definition}
+
+\begin{proposition}[Asymmetry of Competence]
+If a trajectory $\gamma$ satisfies $\mathcal{C}_T$, then it satisfies $\mathcal{C}_{T'}$ for any downward projection $T'$.
+\end{proposition}
+
+\begin{proof}
+Since $\mathcal{C}_T \subseteq \mathcal{C}_{T'}$, any $\gamma \in \mathcal{C}_T$ must also lie in $\mathcal{C}_{T'}$. Admissibility is therefore preserved under constraint relaxation.
+\end{proof}
+
+
+\section{Markedness and Constraint Structure}
+
+Before extending the principle further, it is useful to note that the pattern just described is not unique to everyday judgments about skill. It appears in a particularly clear and formal way in the study of language.
+
+In phonology, languages exhibit systematic asymmetries in which some sound patterns are treated as basic while others are treated as more complex or restricted. These asymmetries are described in terms of \emph{markedness}. An unmarked structure is one that can appear without presupposing additional conditions. A marked structure, by contrast, depends on further constraints being satisfied. Simple consonant-vowel syllables tend to appear across all known languages and are acquired early by children, while more complex clusters and less stable sounds appear later and are more limited in distribution. If a language permits the marked form, it will also permit the less marked forms that it presupposes. The presence of the more constrained structure entails the availability of the less constrained one.
+
+In Optimality Theory, this relation is modeled explicitly as a system of ranked constraints. Surface forms are those that best satisfy a hierarchy of competing requirements. A form that survives under stricter or more numerous constraints necessarily survives under weaker ones, provided the ranking structure is preserved. The asymmetry is therefore built into the organization of the system itself rather than stipulated case by case.
+
+The purpose of introducing this material is not to import its full technical apparatus. It is to show that the underlying relation is not speculative. It has a well-defined expression in at least one domain, studied with sufficient precision to make the pattern explicit. The rest of the essay extends this pattern into more familiar contexts, where the same structure is present but less explicitly articulated.
+
+\subsection*{Mathematical Formalization}
+
+\begin{definition}[Constraint Ranking]
+Let $\mathcal{C} = \{C_1, \dots, C_n\}$ be a constraint set with strict ranking $C_1 \succ C_2 \succ \cdots \succ C_n$. A form $x$ is optimal if it minimizes violations under this ranking:
+\[
+x = \arg\min_{y} \langle v_1(y), \dots, v_n(y) \rangle,
+\]
+where $v_i(y)$ counts violations of $C_i$.
+\end{definition}
+
+\begin{proposition}[Markedness Implication]
+If a form satisfies a given constraint ranking, it satisfies any ranking obtained by relaxing those constraints.
+\end{proposition}
+
+\begin{proof}
+Relaxing a constraint ranking reduces the penalty for violations. Any form minimizing violations under a stricter ranking remains admissible under a weaker one.
+\end{proof}
+
+
+\section{The Principle of Downward Projection}
+
+With the pattern anchored, the general principle can be stated directly. If a task imposes a set of constraints and an agent can satisfy them in a stable way, then removing some of those constraints should not destroy the capacity, provided that the underlying structure of the task is preserved. Competence, in this sense, is not tied to a single performance but to a range of admissible performances generated by relaxing constraints along the same dimension.
+
+This clarifies what is meant by calling one task simpler than another. Simplicity is not a global property but a relative one. A task is simpler when it requires the satisfaction of fewer constraints drawn from the same system. The relation between the tasks is therefore not one of resemblance but of inclusion: the simpler task is a restriction of the more complex one under a weaker set of requirements.
+
+Concrete cases make this relation visible. Constructing a house requires coordinating structural, electrical, and mechanical systems under a dense network of constraints. Building a shed removes many of these requirements while preserving the basic relations between materials, load, and assembly. The second task is not merely easier in some vague sense; it is structurally contained within the first. If the capacity to build the house is genuine, it should project to the shed without loss.
+
+A similar relation appears in forms of expression. Writing a rigorous technical argument requires precision, organization, and adherence to formal standards. Summarizing that argument relaxes some of those constraints while preserving its conceptual structure. The demand shifts from exact formulation to faithful reduction. Again, the second task is simpler in the relevant sense because it removes constraints without altering the underlying relations.
+
+The principle does not claim that all apparent simplifications behave this way. It applies only when the constraint system is preserved. Where that condition holds, downward projection is expected. Where it fails, the expectation does not arise. This distinction is what prevents the principle from collapsing into a general claim that skills transfer, and instead ties it to a specific structural relation between tasks.
+
+\subsection*{Mathematical Formalization}
+
+\begin{definition}[Relaxation Operator]
+A relaxation operator $R$ maps a task $T$ to a task $T'$ such that $\mathcal{C}_T \subseteq R(\mathcal{C}_T) = \mathcal{C}_{T'}$.
+\end{definition}
+
+\begin{theorem}[Stability Under Relaxation]
+If a system admits trajectory $\gamma$ under $\mathcal{C}_T$, then $\gamma$ remains admissible under $R(\mathcal{C}_T)$.
+\end{theorem}
+
+\begin{proof}
+Immediate from set inclusion: $\gamma \in \mathcal{C}_T \subseteq \mathcal{C}_{T'}$.
+\end{proof}
+
+
+\section{Structural Preservation and Its Limits}
+
+The principle of downward projection depends on a condition that must be made explicit. A task only counts as a simplification if it preserves the core structure of the original constraint system. Without that preservation, the relation between tasks is no longer one of constraint relaxation but of transformation. In such cases, failure of projection is not informative about competence; it reflects a change in the task itself.
+
+This point is easiest to see in cases that initially appear to be straightforward simplifications but are not. Writing and speaking about the same subject share vocabulary and content, but they differ in how those elements are processed. Writing allows revision, externalization of intermediate steps, and extended reflection. Speaking in real time imposes strict temporal bounds, relies on transient memory, and requires continuous coordination with an audience. The constraints are not simply fewer in one case than the other; they are reorganized. Moving from writing to speaking is therefore not a downward projection but a shift to a different regime.
+
+A similar shift occurs when moving from planned activity to improvisation. A carefully designed structure can be assembled by following a sequence that has been worked out in advance. Improvisation removes that preparation and replaces it with the need for continuous adjustment. The apparent simplification hides a change in which constraints are dominant. What has been removed is not constraint in general but a specific form of support that made other constraints easier to satisfy, while new demands are introduced in its place.
+
+These cases clarify the boundary of the principle. Downward projection applies when the same relations are maintained under weaker conditions. It does not apply when the relations themselves are altered, even if the new task appears, in some informal sense, to be easier. Many supposed counterexamples to skill transfer arise from failing to distinguish between these two situations.
+
+Making this distinction prevents overextension. It ensures that failures of projection are interpreted within the correct frame. When the structure is preserved, failure is diagnostic. When the structure has changed, failure is expected and carries no such implication. Formally, this boundary is defined by the existence of a structure-preserving map $\phi$: where such a map exists, constraint relaxation is genuine simplification; where none exists, the task geometry has been transformed rather than reduced, and the diagnostic frame no longer applies. The remainder of the essay focuses on the first case, where the principle applies and breakdowns can be read as evidence.
+
+\subsection*{Mathematical Formalization}
+
+\begin{definition}[Structure-Preserving Map]
+A map $\phi: T \to T'$ preserves structure if the core constraint relations are maintained: $\phi(\mathcal{C}_T) \subseteq \mathcal{C}_{T'}$.
+\end{definition}
+
+\begin{proposition}
+Downward projection holds if and only if a structure-preserving map $\phi$ exists. When no such map exists, the task has undergone regime shift rather than simplification, and failure carries no diagnostic weight.
+\end{proposition}
+
+
+\section{Failure as Diagnosis}
+
+When the condition of structural preservation is met and downward projection still fails, the failure is not arbitrary. It narrows the space of plausible explanations and turns an apparent anomaly into structured evidence about the nature of the underlying capacity.
+
+One possibility reaches backward and calls the original performance into question. The high-constraint achievement may have depended on support that was never visible: external assistance, rigid templates, reliance on imitation rather than internalized structure. In this case, the performance was assembled rather than generated, and its apparent stability was an artifact of the conditions under which it appeared. It satisfied the relevant constraints under conditions that do not generalize, and when those conditions are removed, what looked like competence collapses because there was no underlying representation sustaining it. The failure is not located in the simpler task; it was always latent in the original one.
+
+A different kind of failure narrows inward. The performance may be genuine as far as it goes, but incomplete in a way that only becomes apparent when conditions shift. The agent satisfies the constraints required in the original context but lacks a sub-capacity that the altered task brings to the surface. What appears to be a contradiction between levels of performance is instead a gap in integration, visible only because the changed conditions removed factors that had been compensating for it. The original performance was real; it simply did not extend as far as it appeared.
+
+There are also cases where the breakdown belongs to the environment rather than the agent. The original performance may have depended on scaffolding that stabilized it from outside: institutional support, structured feedback, tools, or the predictability of a familiar setting. When that scaffolding is removed, the effective constraint system changes even if the nominal task remains the same. The competence may be intact, but it was always contingent on features of the context that are no longer present. The agent has not changed; the ground beneath them has shifted. The temporal signature of this case is diagnostic: a capacity that collapses immediately when scaffolding is removed was never integrated, while one that persists and degrades gradually suggests that partial integration was genuine, with the scaffolding having extended rather than substituted for it.
+
+Finally, there are situations in which the capacity is present but not observable. The signal is degraded by noise, by constraints on expression that fall outside the domain being assessed, or by conditions that obscure the connection between the internal structure and its visible output. In this case the failure is epistemic rather than real. The apparent absence of projection is a property of the channel through which competence is being read, not a property of the competence itself. Distinguishing this case from the others requires attending to whether the invariants of the capacity can be detected in some form, even if the expected projection is blocked.
+
+These four possibilities are not a taxonomy of all human failure. They are the minimal ways in which the principle of downward projection can break down while remaining coherent. Each locates the explanation differently: in the origin of the performance, in the internal structure of the capacity, in the surrounding environment, or in the conditions of observation. Treating them as distinct allows breakdowns to be read with some precision rather than collapsed into a uniform judgment of inconsistency.
+
+\subsection*{Mathematical Formalization}
+
+Let $\gamma$ denote the true underlying trajectory and $\tilde{\gamma}$ the observed trajectory. Failure of projection under preserved structure arises from exactly one of the following conditions:
+
+\[
+\tilde{\gamma} \neq \gamma \quad \text{(signal distortion: observation is corrupted)}
+\]
+\[
+\gamma \notin \mathcal{C}_T \quad \text{(assembled performance: no genuine underlying trajectory)}
+\]
+\[
+\gamma \in \mathcal{C}_T \text{ but } \gamma \notin \mathcal{C}_{T'} \quad \text{(sub-capacity gap: incomplete integration)}
+\]
+\[
+\mathcal{C}_T \not\subseteq \mathcal{C}_{T'} \quad \text{(scaffolding shift: environment has changed)}
+\]
+
+\begin{proposition}[Failure Identifiability]
+Given failure of downward projection under preserved structure, the space of consistent explanations is bounded and non-empty.
+\end{proposition}
+
+\begin{proof}
+The four conditions above are exhaustive and mutually exclusive under the assumption of structural preservation. Each corresponds to a distinct locus of explanation. The diagnostic set is therefore finite and non-trivial.
+\end{proof}
+
+
+\section{Why Failure Cases Matter More Than Success}
+
+Success in downward projection confirms that a capacity is integrated. But it does not reveal how it is integrated, or which elements are essential and which are incidental. Failure cases are the primary source of that information.
+
+When projection breaks down under preserved structure, it exposes dependency relations that were invisible during successful performance. It shows which constraints were genuinely internalized and which were externally supported. It reveals whether the high-constraint performance was generated by a stable underlying structure or assembled from components that do not hold together without specific conditions. A framework that only predicts success cannot make this distinction. It can recognize that something worked, but it cannot say why, or under what conditions it will continue to work.
+
+The diagnostic value of the framework therefore depends on taking failure seriously as evidence rather than as noise to be explained away. When projection fails and the structural condition is met, the space of explanations is constrained in a useful way. The failure points somewhere specific. That specificity is what makes the theory practical rather than merely descriptive.
+
+There is also a subtler point. A theory of competence that never predicts failure cannot distinguish between genuine capacity and well-supported performance. Both will appear identical under favorable conditions. Only when conditions change does the difference become legible. The asymmetry of competence described at the outset is therefore not just an interesting pattern. It is the primary mechanism by which integration can be detected at all.
+
+\section{Ordinary Domains: Construction, Teaching, and Expression}
+
+The general principle becomes clearest when returned to familiar domains, where the relation between constraint and performance can be observed without formal machinery.
+
+Construction provides the most straightforward case. Building a house requires coordinating multiple subsystems under a dense network of simultaneous constraints. Structural integrity, material behavior, sequencing, and the integration of distinct trades must all be satisfied together. Building a shed relaxes many of these requirements while preserving the core relations between load, assembly, and material behavior. The second task is structurally contained within the first. When competence is genuine, it projects downward with little friction. Failures in this domain are therefore highly diagnostic: if an agent cannot perform the simpler task under preserved structure, the explanation must lie in one of the four categories identified earlier.
+
+Teaching presents a different configuration and illustrates the importance of the structural condition. Presenting advanced material often allows a practitioner to remain inside a domain whose constraint structure has already been internalized. The constraints are demanding, but they are aligned with the form of the knowledge itself. Teaching a basic concept requires a shift: the task is no longer to operate within the structure but to reconstruct it from outside, reducing it to elements accessible to a novice. This introduces new constraints related to translation, pacing, and audience modeling that were not present before. The failure of experts to teach effectively is therefore not a counterexample to downward projection. It is a case in which the structural condition does not hold, because the target task is not a relaxation of the source task but a transformation of it.
+
+Forms of expression occupy an intermediate position. Writing and speaking share content but differ in processing regime. Writing permits revision, external memory, and extended evaluation. Speaking in real time imposes temporal constraints and requires continuous adjustment. Summarizing a written argument can be a genuine downward projection when the task preserves structure while reducing formal precision. Extemporaneous explanation may shift the constraint system sufficiently to block projection. The boundary between these cases is not fixed in advance; it depends on how closely the target task preserves the relations of the source. That contingency is itself informative, because it means the same pair of tasks can stand in different structural relations depending on how they are configured.
+
+\section{Merit, Value, and the Limits of Projection}
+
+The principle of downward projection provides a way of recognizing and diagnosing competence. It does not, on its own, provide a basis for assigning value to persons. Conflating these two roles is the central error of meritocratic thinking, and the framework developed here makes that error visible in a specific way.
+
+A meritocratic system treats demonstrated performance under constraint as a proxy for worth. Those who can satisfy demanding conditions are taken to be more valuable than those who cannot. Within the present framework, this inference is not justified. The theory measures the stability of a capacity under constraint relaxation; it does not measure the totality of what a person is or what they are owed. Competence that projects successfully along one structural dimension does not constitute a general measure of human value, and the absence of projection along that dimension does not constitute its negation.
+
+This distinction becomes concrete when considering cases that fall outside the narrow band of recognized projections. Children, animals, and individuals with severe disabilities may not exhibit competence within the constraint systems that a particular society privileges. They may fail to project along those dimensions entirely. That failure reflects the geometry of the evaluative system, not an absence of value. The system selects for certain kinds of admissible performance and renders others invisible. What it cannot register, it tends to discount, but that discounting is a property of the system's constraint structure, not a fact about the persons it fails to see.
+
+The role of scaffolding reinforces this point. Many high-constraint performances depend on infrastructure that is unevenly distributed: education, material stability, health, time, and social support all function as enabling conditions under which capacities become expressible. When these conditions are present, competence becomes visible. When they are absent, even well-developed capacities may fail to project. A meritocratic reading treats the visible performance as intrinsic, overlooking the dependence on these enabling structures. This is the same error as mistaking a scaffolded performance for an integrated one: the result is attributed to the agent when it belongs, in part, to the conditions.
+
+More ambiguous cases arise when projection occurs through distorted channels. Where legitimate channels for stable projection are unavailable or blocked, capacities may be expressed through whatever systems remain accessible, even if those systems are parasitic or unstable. This does not license harmful behavior, but it situates it differently: as a response to constraint environments rather than as a pure expression of individual character.
+
+Evaluative systems that claim to measure merit are themselves constraint systems in their own right. They do not passively reveal competence; they actively define the conditions under which competence can appear. In practice, this can take a more adversarial form: people are handed maps drawn wrong on purpose and then mocked for being lost.
+
+There are cases in which an individual satisfies every constraint presented to them, only for the constraint system itself to be withdrawn or replaced. A worker may follow the prescribed path---stable employment, sustained effort, compliance with institutional expectations---and find that the structure supporting that path is no longer there. In its place appears a different set of conditions designed not to enable projection but to maintain minimal functionality: enough support to remain operative, but not enough to recover or extend capacity. In such cases, failure of projection does not indicate absence of competence or even dependence on scaffolding. It reflects a shift to a constraint system that preserves local output while preventing global restoration.
+
+Once this is recognized, the earlier machinery applies directly. Such a system can be analyzed in the same terms as an individual task: what constraints does it impose, what scaffolding does it assume, what forms of competence does it fail to register, and what failure modes does it mistake for success? The outputs of such systems reflect their constraint geometry rather than a complete or neutral account of what matters.
+
+The framework therefore places a limit on what can be inferred from demonstrated competence. It permits the recognition of integrated capacity and the diagnosis of its failure. It does not support the elevation of those observations into a hierarchy of worth. Value exceeds projection, and any system that equates the two is misreading the structure it relies on.
+
+\section{Distributed Competence and Modular Systems}
+
+The analysis developed so far has focused on individual performances. It assumes that a single agent is responsible for satisfying a set of constraints and that coherence or its failure can be read at that level. This assumption does not hold in many real-world systems.
+
+Large-scale projects do not require any single individual to satisfy all relevant constraints. They distribute those constraints across a network of roles. A book is not the product of a single, unified act of competence. It passes through multiple stages: drafting, transcription, editing, revision, typesetting, publishing, printing, and distribution. Each stage is governed by its own constraints and handled by different agents. The final coherence of the work is an emergent property of the system rather than a direct expression of any one participant.
+
+The same structure appears in film, comics, and other collaborative forms. Dialogue, visual composition, pacing, sound, performance, and logistics are separated into specialized domains. Each participant satisfies a subset of the total constraint system. The overall project succeeds when these partial satisfactions integrate, not when any individual exhibits total competence.
+
+In such systems, apparent lack of cohesion at the level of the individual is not a red flag. It is often the result of correct modularization. A specialist may fail to project competence outside their domain not because their capacity is incomplete, but because the system is organized so that they are not required to satisfy those constraints. What would count as a diagnostic failure in an individual task becomes neutral or even expected within a distributed one.
+
+This distinction also clarifies a common error in evaluation. Observers tend to attribute coherence or incoherence to individuals without accounting for the local constraints under which they operate. This is a form of the fundamental attribution error: one interprets one's own performance in light of situational constraints while treating others as if they act independently of theirs. In complex systems, the local contingencies acting on any participant are largely invisible to others. What appears as individual deficiency may be a consequence of role-specific constraints, missing information, or the absence of parts of the system that were never in that participant's scope.
+
+The framework developed in this essay applies at the level of the system as well as the individual. A distributed system exhibits competence when the integration of its parts remains stable under constraint relaxation. Failure at the system level is diagnostic in the same way as failure at the individual level, but the locus of explanation shifts. The relevant question is no longer whether a single agent can project downward, but whether the structure of coordination can do so.
+
+Recognizing this prevents a misapplication of the theory. Lack of cohesion is only a red flag when it occurs within a task that requires unified constraint satisfaction by a single agent. In systems designed around modularity, the same apparent incoherence may instead be evidence that the constraints have been correctly partitioned---and that the system, not the individual, is the appropriate unit of analysis.
+
+\subsection*{Mathematical Formalization}
+
+\begin{definition}[Distributed Constraint System]
+A system $S$ consists of agents $\{A_i\}$ with local constraint sets $\mathcal{C}_i$. The system-level constraint set is
+\[
+\mathcal{C}_S = \bigcup_i \mathcal{C}_i.
+\]
+\end{definition}
+
+\begin{proposition}
+System-level competence does not imply local competence for each agent $A_i$. Each agent is required only to satisfy $\mathcal{C}_i \subsetneq \mathcal{C}_S$.
+\end{proposition}
+
+
+\section{The Constraint of Compression: A Self-Application}
+
+A theory of competence that claims stability under relaxation of constraints is itself subject to the same demand. If the account offered here is integrated, it should survive simplification without requiring additional machinery. If it cannot be stated plainly without losing its force, then it exhibits the very instability it is meant to diagnose.
+
+The argument compresses as follows. Competence is the ability of a structured capacity to remain stable when constraints are relaxed along the same dimension. A task counts as simpler only when it preserves the underlying relations while requiring fewer or weaker constraints to be satisfied. When projection succeeds under these conditions, the capacity is integrated. When it fails, the failure is not arbitrary: it indicates that the original performance depended on hidden support, that the capacity is incomplete in a way the new conditions exposed, that the environment provided scaffolding that is no longer present, or that the signal is distorted in a way that blocks observation of an intact capacity. Nothing essential has been added or removed. The examples throughout the essay are instances of this single relation under different configurations of constraint and structure. The diagnostic use of failure follows directly from the principle once its conditions are fixed.
+
+The stability of the argument under this compression is not incidental. It is the same kind of evidence the argument uses to recognize integrated competence elsewhere. By contrast, an account that requires additional distinctions, auxiliary hypotheses, or specialized terminology each time it is simplified reveals a dependence on scaffolding it cannot project beyond. Its coherence is local rather than structural.
+
+This section therefore performs the claim it makes. The theory is not only about the behavior of capacities under constraint relaxation; it is itself a case subject to that behavior. Its ability to remain intact when stated in simpler terms is evidence of the same kind as any other successful downward projection. If it had failed that test, the failure would have been informative in exactly the ways described above.
+
+\subsection*{Mathematical Formalization}
+
+\begin{definition}[Compressibility]
+A theory is compressible if it can be represented by a minimal constraint set $\mathcal{C}_{\min}$ from which all results follow without auxiliary hypotheses.
+\end{definition}
+
+\begin{theorem}[Integration Test]
+A theory is integrated if and only if it is invariant under compression: its core claims survive the removal of all non-essential constraints.
+\end{theorem}
+
+
+\section{Conclusion: Competence as Stability Under Relaxation}
+
+The asymmetry that began this essay can now be stated with precision. Competence is not simply the ability to perform under demanding conditions. It is the ability of that performance to remain stable when some of those conditions are removed, provided that the underlying structure is preserved. This is what allows capacity to project downward, and this is what the familiar expectations about house-builders and essayists are tracking, imprecisely but correctly.
+
+This formulation does two kinds of work. It clarifies when transfer should be expected and when it should not. Apparent counterexamples dissolve once the condition of structural preservation is made explicit. Where the structure changes, failure is uninformative. Where the structure is preserved, failure becomes evidence, and the space of consistent explanations is constrained in a useful way.
+
+More importantly, the framework turns breakdowns into a primary source of information. When projection fails under the right conditions, the failure points either to dependence on hidden support, to an incomplete integration of the capacity, to a shift in environmental scaffolding, or to distortion in the signal through which the capacity is observed. These possibilities locate the explanation rather than leaving it indeterminate. They allow a failure to be read rather than merely noted.
+
+The same analysis places limits on how competence can be used in judgment. Demonstrated performance reflects a capacity under specific constraints, enabled by specific conditions. It does not exhaust the value of the individual, nor does it stand independent of the structures that made it visible. Evaluative systems that treat such performances as measures of worth are themselves constraint systems, and their outputs reflect those constraints rather than a complete or neutral account of what matters.
+
+Taken together, these points define competence as a form of stability under relaxation. It is recognized not only in successful projection but also in the structure of its failure. The theory is therefore not merely descriptive. It provides a way to read both performance and breakdown as expressions of the same underlying relation, and it applies that reading to evaluative systems as readily as to individual agents. That symmetry is what makes it usable.
+
+\appendix
+
+\section*{Appendices}
+
+The following appendices provide optional reformulations of the central principle within broader theoretical frameworks. They are not required for the main argument, but demonstrate its compatibility with more formal or field-theoretic representations. Each can be removed without altering the essay's core claims.
+
+\section{RSVP as a Constraint Field Representation}
+
+The framework developed in this essay can be restated in the language of the Relativistic Scalar-Vector Plenum (RSVP) without modification to its core claims.
+
+A task $T$ may be represented as a constraint set
+\[
+\mathcal{C}_T \subseteq \Phi \times \mathbf{V} \times S,
+\]
+where scalar potential $\Phi$ encodes admissible structure, vector field $\mathbf{V}$ encodes the organization of transitions, and entropy $S$ regulates permissible variation. A trajectory $\gamma(t)$ is admissible if
+\[
+\gamma(t) \in \mathcal{C}_T \quad \forall\, t.
+\]
+Downward projection to a simpler task $T'$ corresponds to a relaxation
+\[
+\mathcal{C}_{T'} \supseteq \mathcal{C}_T,
+\]
+with preservation of the underlying field geometry. When competence is integrated, trajectories that remain valid under dense constraint continue to exist under relaxed conditions. Failure of projection indicates either that the original trajectory depended on external stabilization, that the field representation is incomplete, or that the observed trajectory does not reflect the true underlying field configuration.
+
+This restatement does not extend the theory. It shows that the principle of downward projection is compatible with a field-theoretic description of constraint and admissibility.
+
+\section{Spherepop and Event Admissibility}
+
+In the Spherepop framework, systems are modeled as irreversible logs of admissible events. Each transition $s \to s'$ is permitted only if it satisfies a constraint relation $s' \in A(s)$, where $A(s)$ denotes the set of states admissible from $s$ under the current constraint hierarchy.
+
+Within this setting, competence corresponds to the ability to generate long sequences of admissible transitions under dense constraint. Downward projection corresponds to weakening the admissibility conditions---expanding $A(s)$---while preserving the transition structure.
+
+If a sequence is genuinely admissible under strict conditions, then subsequences or relaxed variants should remain admissible under weaker conditions. When this fails, the event log reveals the source of breakdown. The sequence may have relied on transitions that were conditionally admissible, on external corrections not recorded in the log, or on constraints that are no longer present.
+
+Failure is therefore encoded directly in the event structure. It does not require reinterpretation; it appears as a discontinuity in admissibility under constraint relaxation.
+
+\section{CLIO and Non-Convergence}
+
+Within the CLIO framework, systems evolve by attempting to resolve incompatibilities in a constraint space through iterative adjustment. Let $E(\mathbf{x})$ denote a constraint energy functional over configuration space. Convergence to a stable configuration requires
+\[
+\nabla E(\mathbf{x}^*) = 0, \quad E(\mathbf{x}^*) \leq E(\mathbf{x}) \;\; \forall\, \mathbf{x} \text{ in a neighborhood of } \mathbf{x}^*.
+\]
+Downward projection corresponds to moving to a lower-energy or less constrained region of the same space. When a configuration is stable under strong constraint, it should remain stable as constraints are relaxed, corresponding to convergence toward a basin of compatibility.
+
+Failure of projection corresponds to non-convergence. The system cannot stabilize under the new conditions, indicating that the original configuration was dependent on a narrow region of the constraint landscape. This may reflect incomplete constraint representation, unresolved incompatibilities, or the need for expansion into a higher-dimensional space.
+
+In this sense, the diagnostic use of failure described in the main text corresponds directly to identifying regions of instability in the CLIO flow. A capacity that fails to project is one whose basin of stability does not extend into the relaxed regime---a precise and testable condition within the framework.
+
+\section{TARTAN and Constraint-Preserving Coarse-Graining}
+
+The TARTAN framework models systems through recursive tiling and trajectory-aware coarse-graining. A high-resolution system is represented as a fine-grained tiling $\mathcal{T}$ over a state space, with admissible trajectories constrained locally within tiles and globally across tile boundaries.
+
+\begin{definition}[Coarse-Graining Operator]
+A coarse-graining operator $\pi$ maps a fine tiling $\mathcal{T}$ to a reduced tiling $\mathcal{T}'$:
+\[
+\pi : \mathcal{T} \to \mathcal{T}', \quad \text{with} \quad \pi(\mathcal{C}_\mathcal{T}) \subseteq \mathcal{C}_{\mathcal{T}'}.
+\]
+\end{definition}
+
+Downward projection corresponds to a coarse-graining that preserves admissible trajectories. A trajectory $\gamma$ valid in the fine tiling remains valid in the coarser tiling if the constraint relations are preserved under $\pi$.
+
+\begin{proposition}
+If $\pi$ preserves constraint relations, then admissibility is invariant under coarse-graining.
+\end{proposition}
+
+\begin{proof}
+If $\gamma \in \mathcal{C}_\mathcal{T}$ and $\pi(\mathcal{C}_\mathcal{T}) \subseteq \mathcal{C}_{\mathcal{T}'}$, then $\pi(\gamma) \in \mathcal{C}_{\mathcal{T}'}$. Admissibility survives reduction.
+\end{proof}
+
+Failure of projection corresponds to loss of constraint structure under coarse-graining, indicating that the original trajectory depended on fine-grained distinctions that are not preserved at the coarser scale.
+
+\section{Yarncrawler and Sheaf-Theoretic Gluing}
+
+The Yarncrawler framework models systems as collections of local constraint patches that must be globally consistent. Each local region $U_i$ carries a constraint set $\mathcal{C}_i$, and global coherence requires compatibility on overlaps.
+
+\begin{definition}[Sheaf Compatibility]
+A collection $\{\gamma_i\}$ of local trajectories is globally admissible if
+\[
+\gamma_i\big|_{U_i \cap U_j} = \gamma_j\big|_{U_i \cap U_j}
+\quad \forall\, i, j.
+\]
+\end{definition}
+
+Downward projection corresponds to restricting to a subcover $\{U_i'\}$ with weaker or fewer constraints while preserving compatibility on overlaps.
+
+\begin{proposition}
+If a global section exists under a finer cover, it exists under any coarser compatible cover.
+\end{proposition}
+
+\begin{proof}
+Restriction of a globally compatible family to fewer patches preserves compatibility, since overlap conditions are weakened rather than strengthened. The global section restricts to a valid section on the coarser cover.
+\end{proof}
+
+Failure of projection corresponds to a gluing obstruction: local admissibility holds patch by patch, but no global section exists under the modified constraint system. This mirrors the diagnostic failure cases in the main text, where partial competence is present but integration fails.
+
+\section{Semantic Infrastructure and Constraint-Preserving Composition}
+
+In the Semantic Infrastructure framework, systems are composed of modular units whose interactions are governed by compatibility constraints. Modules are objects in a category $\mathcal{M}$, with morphisms representing admissible compositions.
+
+\begin{definition}[Composable Modules]
+Modules $A$ and $B$ are composable if there exists a morphism
+\[
+f : A \otimes B \to C
+\]
+such that composition preserves constraint admissibility within $\mathcal{M}$.
+\end{definition}
+
+Downward projection corresponds to restricting composition to a subcategory $\mathcal{M}' \subseteq \mathcal{M}$ with fewer compatibility constraints.
+
+\begin{proposition}
+If a composition is admissible in $\mathcal{M}$, it remains admissible in any subcategory that preserves its defining morphisms.
+\end{proposition}
+
+\begin{proof}
+Admissibility is defined by the existence and validity of morphisms. If $\mathcal{M}'$ contains those morphisms, the composition remains well-defined and admissible under the reduced constraint set.
+\end{proof}
+
+Failure of projection corresponds to a compositional obstruction: required morphisms are absent or invalid under the restricted system. This is the categorical analogue of structural mismatch or scaffolding removal in the main framework.
+
+The six appendices taken together reduce to a single invariant condition across all representations:
+\[
+\mathcal{C}_T \subseteq \mathcal{C}_{T'}.
+\]
+Whether the system is described as a field, an event log, a convergence basin, a tiled coarse-graining, a sheaf of local patches, or a category of composable modules, the same structural relation governs admissibility under relaxation. The essay's central claim is therefore not representation-dependent. It is a property of constraint inclusion itself.
+
+\newpage
+
+\begin{thebibliography}{99}
+
+\bibitem{prince2004}
+Alan Prince and Paul Smolensky,
+\textit{Optimality Theory: Constraint Interaction in Generative Grammar},
+Blackwell, 2004.
+
+\bibitem{greenberg1966}
+Joseph H. Greenberg,
+\textit{Language Universals},
+Mouton, 1966.
+
+\bibitem{chomsky1965}
+Noam Chomsky,
+\textit{Aspects of the Theory of Syntax},
+MIT Press, 1965.
+
+\bibitem{ehrenreich2001}
+Barbara Ehrenreich,
+\textit{Nickel and Dimed: On (Not) Getting By in America},
+Henry Holt, 2001.
+
+\bibitem{graeber2018}
+David Graeber,
+\textit{Bullshit Jobs: A Theory},
+Simon \& Schuster, 2018.
+
+\bibitem{fisher2009}
+Mark Fisher,
+\textit{Capitalist Realism: Is There No Alternative?},
+Zero Books, 2009.
+
+\bibitem{fromm1955}
+Erich Fromm,
+\textit{The Sane Society},
+Rinehart, 1955.
+
+\end{thebibliography}
+
+\end{document}

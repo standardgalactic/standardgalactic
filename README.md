@@ -237,6 +237,16 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Starspace Specification](https://standardgalactic.github.io/research-projects/Polyxan%20Starspace%20Specification.pdf) 
 -->
+# Epistemology
+
+[Markedness and Capability](https://standardgalactic.github.io/standardgalactic/epistemology/markedness_capability.pdf)
+
+[Manufacturing Credulity](https://standardgalactic.github.io/standardgalactic/epistemology/manufacturing_credulity.pdf)
+
+[Selection Without Design](https://standardgalactic.github.io/standardgalactic/epistemology/selection_without_design.pdf)
+
+* [Aurora Monitor](https://standardgalactic.github.io/standardgalactic/epistemology/) — *Audio Overviews*
+
 # Mechanistic Frameworks
 
 [Polyxan Semantic Hyperstructure](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperstructure.pdf)
