@@ -42,7 +42,9 @@ KNOWN_VARIANTS = re.compile(
     r'Flickstahn|Flexiton|Flakiron|Flickshahn|Flixie|Flixan|Fugchin|'
     r'Flickshen|Flickshin|Flixgen|Flixen|Flicksham|Flitchinan|Flickening|'
     r'Fluxian|Fluxion|Flitchian|Fleishness|Flixidan|Flickshon|Flickshin|'
-    r'Fleckession|Flickession|Fliccine|Felictian|Fleckstown|Flexivision'
+    r'Fleckession|Flickession|Fliccine|Felictian|Fleckstown|Lickshin|'
+    r'Fluxium|Fleixing|Flixten|Flishan|Flinchin|Flickshin|Felixian'
+    r'Flexivision'
     r')(?![A-Za-z])'
 )
 

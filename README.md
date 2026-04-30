@@ -38,8 +38,9 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 [![committers.top badge](https://user-badge.committers.top/canada/standardgalactic.svg)](https://user-badge.committers.top/canada/standardgalactic)
 
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
-
+<!--
 ![Nebula One](nebula-one.gif)
+-->
 
 Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)* and *[Starpop](https://standardgalactic.github.io/Centerfuge/starpop/)* minigames.
 
@@ -77,11 +78,20 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 * [Audio Overviews](https://standardgalactic.github.io/research-projects/Aurora/)
 
+[Audio Field Monitor](https://standardgalactic.github.io/guardrails/stack/)
+
 # Parody Music
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
+<!--
+[Baile Excesivo](https://standardgalactic.github.io/TARTAN/music/) 
+-->
 
 # Alignment Research
+
+[The Quiet Battlefield](https://standardgalactic.github.io/antivenom/quiet_battlefield.pdf)
+
+* [Algorithmic Harm](https://standardgalactic.github.io/antivenom/opinion/algorithmic-harm.html) — *Audio Overview*
 
 [Return Under Constraint](https://standardgalactic.github.io/workspace/return_under_constraint.pdf) — *Meditations on the Talbiya*
 
@@ -249,13 +259,23 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Mechanistic Frameworks
 
+[Closure of Closures](https://standardgalactic.github.io/alphabet/biology/closure_of_closures.pdf)
+
+* [Life as a Topological Loop](https://standardgalactic.github.io/alphabet/biology/) — *Audio Overview*
+
+[Amplitwist Cascades](https://standardgalactic.github.io/guardrails/processing/amplitwist_paper.pdf)
+
+* [Lava Thought Visualizer](https://standardgalactic.github.io/guardrails/processing/) 
+
 [Polyxan Semantic Hyperstructure](https://standardgalactic.github.io/research-projects/Polyxan%20Semantic%20Hyperstructure.pdf)
 
 * [The Physics of Persistent AI Worlds](https://standardgalactic.github.io/research-projects/) — *Audio Overview*
 
+[Mesoscale Matter as Constrained Field Dynamics](https://standardgalactic.github.io/calculus/mesoscale_matter.pdf)
+
 [Kernel Operators, Memory, and Field-Theoretic Dynamics](https://standardgalactic.github.io/calculus/kernel-memory.pdf)
 
-* [The Physics of Universal Memory](https://standardgalactic.github.io/calculus/) — *Audio Overview*
+* [Universal Memory Monitor](https://standardgalactic.github.io/calculus/)
 <!--
 [From Field Dynamics to Extractive Systems](https://standardgalactic.github.io/standardgalactic/field_dynamics.pdf)
 
@@ -552,6 +572,8 @@ Geodesics of Attention
 </div>
 
 ## Psychonomics
+
+[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) 
 
 [The Refractive Self](https://standardgalactic.github.io/alphabet/science/the_refractive_self.pdf)
 
