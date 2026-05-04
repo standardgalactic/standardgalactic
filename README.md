@@ -83,9 +83,6 @@ Taken together, these projects treat the user's actions as part of the algorithm
 # Parody Music
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
-<!--
-[Baile Excesivo](https://standardgalactic.github.io/TARTAN/music/) 
--->
 
 # Alignment Research
 
@@ -298,6 +295,12 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Trajectory Aware Recursive Tiling with Annotated Noise](https://standardgalactic.github.io/TARTAN/tartan.pdf)
 
+* [Concrete Cracks Analysis](https://standardgalactic.github.io/TARTAN/music/concrete_cracks_analysis.pdf)
+
+* [The Mathematics of Pouring New Foundations](https://standardgalactic.github.io/TARTAN/music/analysis/) — *Audio Overview*
+
+* [Baile Excesivo](https://standardgalactic.github.io/TARTAN/music/) — *Music*
+
 * [Fixing AI Hallucinations](https://standardgalactic.github.io/TARTAN/)  – *Audio Overview*
 
 [From Persuasion to Realization](https://standardgalactic.github.io/TARTAN/persuasion.pdf)
@@ -433,6 +436,23 @@ Geodesics of Attention
 
 [Baby Barn Cost Estimator](https://standardgalactic.github.io/estimator/) — *Needs Work*
 -->
+
+# Structural Inversion
+
+[Vanity Publishing](https://standardgalactic.github.io/antivenom/boundaries/vanity_publishing.pdf)
+
+The Author as Customer: Vanity Publishing and the Structural Inversion of the Press argues that vanity publishing represents a fundamental economic inversion in which creators replace audiences as the primary customers, turning participation itself into the product while shifting risk away from institutions.
+
+[Synthetic Trajectories](https://standardgalactic.github.io/antivenom/boundaries/synthetic_trajectories.pdf)
+
+Synthetic Reification and Epistemic Constraint Deformation shows that any reconstructive cognitive system governed by coherence rather than provenance will inevitably absorb high-fidelity synthetic content as truth, deforming belief and identity through repeated admissible inputs.
+
+[Escape Velocity](https://standardgalactic.github.io/antivenom/boundaries/escape_velocity.pdf)
+
+Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Transformation reframes austerity as a structural mechanism that raises the threshold required for systemic change by jointly constraining resources, fragmenting agency, and compressing the space of reachable alternatives.
+
+* [Audio Overviews](https://standardgalactic.github.io/antivenom/boundaries/)
+
 # Research Projects
 
 [Ledger Without Value](https://standardgalactic.github.io/research-projects/paper/ledger-without-value.pdf)
