@@ -34,14 +34,14 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 
 [Memory Game](https://standardgalactic.github.io/userspace/)
 
-# Milestone — **5k Subscribers**
+<!--
 [![committers.top badge](https://user-badge.committers.top/canada/standardgalactic.svg)](https://user-badge.committers.top/canada/standardgalactic)
-
+-->
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
+
 <!--
 ![Nebula One](nebula-one.gif)
 -->
-
 Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)* and *[Starpop](https://standardgalactic.github.io/Centerfuge/starpop/)* minigames.
 
 [Logical Symbols](https://standardgalactic.github.io/spherepop/memory-game.html) 
@@ -63,20 +63,17 @@ The Etch-Terminal tool follows the same philosophy applied to geometry. Each mov
 The session codes used across both tools encode only the information needed to recreate the interaction. A short string functions as a compressed history of the session.
 
 Taken together, these projects treat the user's actions as part of the algorithm and expose the generative process behind the result — sitting somewhere between educational tools, programming toys, and demonstrations of how complex structures arise from simple rule-based interaction.
--->
-# **10k Subscribers**
 
 [Old Art Archive](https://standardgalactic.github.io/archive)
 
 [Living Paintings](https://standardgalactic.github.io/video-player)
-<!--
+
 [Follow me on Facebook](https://standardgalactic.github.io/facebook-pages/index.html)
--->
-# **20k Subscribers**
 
 *New* [Ephemera](https://github.com/standardgalactic/ephemera)— *Odds and Ends*
 
 * [Audio Overviews](https://standardgalactic.github.io/research-projects/Aurora/)
+-->
 
 [Audio Field Monitor](https://standardgalactic.github.io/guardrails/stack/)
 
@@ -140,8 +137,9 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [The Polemic Debt](https://standardgalactic.github.io/antivenom/The%20Polemic%20Debt.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/antivenom/working/)
-
+<!--
 [Optimization without Restraint](https://standardgalactic.github.io/antivenom/Optimization%20without%20Restraint.pdf)
+-->
 
 [The Stack Capture Race](https://standardgalactic.github.io/library/The%20Stack%20Capture%20Race.pdf)
 <!--
@@ -155,11 +153,11 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 [Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
 
+<!--
 [Dynamics of the Capital Order](https://standardgalactic.github.io/research-projects/working/capital_order_rsvp.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/research-projects/working/)
 
-<!--
 [The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
 
 [The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
@@ -184,16 +182,16 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Gallery Before Feed](https://standardgalactic.github.io/research-projects/Gallery%20Before%20Feed.pdf)
 
 [Identity Collapse and the Platforming of Fraud](https://standardgalactic.github.io/Identity%20Collapse.pdf)
--->
 
 [The Assumption of Surplus](https://standardgalactic.github.io/antivenom/The%20Assumption%20of%20Surplus.pdf)
+-->
 
 [Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game.pdf)
 
 [Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
 
 [Divided We Stand](https://standardgalactic.github.io/antivenom/Divided%20We%20Stand.pdf)
-
+<!--
 [Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
 
 [Aesthetic Saturation and the Erosion of Voluntary Attention](https://standardgalactic.github.io/antivenom/Aesthetic%20Saturation.pdf)
@@ -203,6 +201,7 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/research-projects/alignment/)
+-->
 
 [The Genius of Silence](https://standardgalactic.github.io/alphabet/The%20Genius%20of%20Silence.pdf) — *Draft*
 
@@ -307,12 +306,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Compression After Expansion](https://standardgalactic.github.io/alphabet/screenplay/compression_after_expansion.pdf)
 
+<!--
 [Inference as Constraint Closure](https://standardgalactic.github.io/kitbash/thesis/constraint_closure.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/kitbash/thesis/)
-
-<!-- This is about the Claude Code leak and cognitive offloading; it's good, but I'm commenting it out for now because my README is getting too crowded. 
-[Constraint Closure and Its Failures](https://standardgalactic.github.io/library/research/constraint-closure.pdf)
 
 * [Why AI Code and Essays Fail](https://standardgalactic.github.io/library/research/) – *Audio Overview*
 -->
@@ -332,7 +329,7 @@ Geodesics of Attention
 * [Standard Galactic](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_sga.pdf)
 * [Cursive Galactic](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_cursive.pdf)
 * [Nova Mono](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_nova.pdf)
--->
+
 [Synthetic Grounding](https://standardgalactic.github.io/arcanum/synthetic-grounding.pdf)
 
 [Realization Maps](https://standardgalactic.github.io/arcanum/realization-map.pdf)
@@ -342,14 +339,16 @@ Geodesics of Attention
 [The Coordination Engine](https://standardgalactic.github.io/library/The%20Coordination%20Engine.pdf)
 
 [Distributed Minds and Generative Substrates](https://standardgalactic.github.io/research-projects/working/distributed_cognition.pdf)
+-->
 
 [Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/library/projects/?track=hallucination)
 
 [Homotopy and Identity](https://standardgalactic.github.io/research-projects/Homotopy%20and%20Identity.pdf)
-
+<!--
 [Transformation Before Representation](https://standardgalactic.github.io/kitbash/Transformation%20Before%20Representation.pdf)
+-->
 
 [The Mortality of Computation](https://standardgalactic.github.io/alphabet/The%20Mortality%20of%20Computation.pdf)
 
@@ -357,22 +356,23 @@ Geodesics of Attention
 
 [Noun-Free Cognition](https://standardgalactic.github.io/research-projects/Noun-Free%20Cognition.pdf)
 
+<!--
 [Local Tractability and Global Dysfunction](https://standardgalactic.github.io/research-projects/Local%20Tractability%20and%20Global%20Dysfunction.pdf)
 
 [Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
-
+-->
 [From Minerals to Minds](https://standardgalactic.github.io/alphabet/From%20Minerals%20to%20Minds.pdf)
 
 [Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
 
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
 
+<!--
 [Order and Obfuscation](https://standardgalactic.github.io/research-projects/Order%20and%20Obfuscation.pdf)
 
 [Complexity without Intelligence](https://standardgalactic.github.io/library/Complexity%20without%20Intelligence.pdf)
-<!--
+
 [Ecphoric Synthesis](https://standardgalactic.github.io/kitbash/Ecphoric%20Synthesis.pdf)
--->
 
 [The Forkability of Time](https://standardgalactic.github.io/spherepop/The%20Forkability%20of%20Time.pdf)
 
@@ -381,11 +381,13 @@ Geodesics of Attention
 [Active Geodesic Inference](https://standardgalactic.github.io/spherepop/Active%20Geodesic%20Inference.pdf)
 
 [SITH Theory](https://standardgalactic.github.io/alphabet/SITH%20Theory.pdf)
+-->
 
 [Worldline Selection Under Constraint](https://standardgalactic.github.io/library/Worldline%20Selection%20Under%20Constraint.pdf)  
 
 [Worldhood without Functionalism](https://standardgalactic.github.io/quantum-soup/Worldhood%20without%20Functionalism.pdf) 
 
+<!--
 [Operational Mereology via Event-Sourced Semantics](https://standardgalactic.github.io/spherepop/Operational%20Mereology.pdf)
 
 [The Ontology of Self-Organizing Forms](https://standardgalactic.github.io/arabic-flashcards/monograph.pdf) — *Nearly Complete*
@@ -394,48 +396,45 @@ Geodesics of Attention
 
 [MAGI overview](https://github.com/standardgalactic/research-projects/tree/main/working) 
 
-<!--
 [Autogenerative Dynamics](https://standardgalactic.github.io/autogenerative-dynamics/)
--->
+
 [The Ergonomics of Prediction](https://standardgalactic.github.io/research-projects/The%20Ergonomics%20of%20Prediction.pdf)
 
 [Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/Axioms%20for%20a%20Falling%20Universe.pdf)
-<!-- [The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)-->
+
+[The Fall of Space](https://flyxion.github.io/flyxion/rsvp/The%20Fall%20of%20Space.pdf)
 
 [Cosmological Observables Without Expansion](https://standardgalactic.github.io/kitbash/cosmology/rsvp_cosmology_v2.pdf)  — *Working Draft*
+-->
 
 [Everlasting Redshift](https://standardgalactic.github.io/kitbash/Everlasting%20Redshift.pdf)
 
 [Scalar Irruption via Entropic Differential](https://standardgalactic.github.io/workspace/Scalar%20Irruption%20via%20Entropic%20Differential.pdf)
 
 [Physics After Spacetime](https://standardgalactic.github.io/research-projects/Physics%20After%20Spacetime.pdf)
-
+<!--
 [Persistence Before Efficiency](https://standardgalactic.github.io/research-projects/Persistence%20Before%20Efficiency.pdf)
+-->
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
 
 # Paleoarcheology
 
 [Stone Piano Theory](https://standardgalactic.github.io/calculus/stone_piano.pdf)
-
+<!--
 # Ecological Models
 
 [Long-Horizon Simulations](https://standardgalactic.github.io/ecological-models/) 
  — *Incomplete*
 
 [Urban Expansion in the Earth System](https://standardgalactic.github.io/ecological-models/urban_eco_climate.pdf)
+-->
 
 <div>
   <a href="https://standardgalactic.github.io/ecological-models/terrascope/">
     <img src="terrascope.gif" alt="Terrascope" width="400">
   </a>
 </div>
-
-<!--
-# Tools and Utilities
-
-[Baby Barn Cost Estimator](https://standardgalactic.github.io/estimator/) — *Needs Work*
--->
 
 # Structural Inversion
 
@@ -458,7 +457,7 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 [Ledger Without Value](https://standardgalactic.github.io/research-projects/paper/ledger-without-value.pdf)
 
 [Error as Obstruction](https://standardgalactic.github.io/research-projects/paper/error_as_obstruction.pdf)
-
+<!--
 [Entropic Decimation](https://standardgalactic.github.io/research-projects/paper/entropic-decimation.pdf)
 
 [The Admissibility Log](https://standardgalactic.github.io/research-projects/paper/admissibility-log.pdf)
@@ -492,6 +491,7 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 [Survival is Insufficient](https://standardgalactic.github.io/antivenom/projects/survival-is-insufficient.pdf) — *Analysis of Station Eleven*
 
 * [Audio Overview](https://standardgalactic.github.io/antivenom/projects/?track=Survival)
+-->
 
 # Just for Fun
 
@@ -512,7 +512,7 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 * [Spherepop Game Engine](https://standardgalactic.github.io/spherepop/game-engine.html) — *Playable Demo*
 
 * [Spherepop Lectures](https://standardgalactic.github.io/spherepop/projects/)
-
+<!--
 [Constraint and Transformation](https://standardgalactic.github.io/calculus/constraint_and_transformation_v2-1.pdf)  — *Precalculus Textbook*
 
 [The Geometry of Relationship and Controlled Change](https://standardgalactic.github.io/calculus/Calculus%20-%20main%20text.pdf)  — *Incomplete*
@@ -520,6 +520,7 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 [Identity After Collapse](https://standardgalactic.github.io/calculus/Identity%20After%20Collapse.pdf)  — *Philosophy of Logic*
 
 [Hierarchical Structure from Minimal Observations](https://standardgalactic.github.io/calculus/hierarchical_structure.pdf)
+-->
 
 [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
 
@@ -538,18 +539,19 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 [The Decelerationist Agenda](https://github.com/standardgalactic/decelerationism/blob/main/The%20Decelerationist%20Agenda.pdf)
 
-[Merit without Mercy](https://standardgalactic.github.io/library/Merit%20without%20Mercy.pdf)
 <!--
+[Merit without Mercy](https://standardgalactic.github.io/library/Merit%20without%20Mercy.pdf)
+
 [The Logic of Redundancy](https://standardgalactic.github.io/library/The%20Logic%20of%20Redundancy.pdf)
--->
 
 [Steam-Formed Cellulose Domes](https://standardgalactic.github.io/research-projects/working/steam_cellulose_domes.pdf)
-
+-->
 [City of Brutes](https://standardgalactic.github.io/alphabet/screenplay/city_of_brutes.pdf) — *Screenplay*
 
 [The Incoherence](https://standardgalactic.github.io/alphabet/The%20Incoherence.pdf) – *Screenplay*
-
+<!--
 * [Ergodic Novel](https://standardgalactic.github.io/alphabet/screenplay/The_Incoherence.pdf) — *Incomplete*
+-->
 
 [Flower Wars](https://standardgalactic.github.io/alphabet/Flower%20Wars.pdf) – *Screenplay*
 
@@ -559,10 +561,11 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 [Audio Explorer](https://standardgalactic.github.io/audio-explorer/)
 
+<!--
 [Blastoids Pic Breeder](https://standardgalactic.github.io/blastoids/blastoids.pdf)
 
 [Developer Lifecycles](https://standardgalactic.github.io/research-projects/analysis/github_developer_lifecycles.pdf)
-<!--
+
 [Zero-Day Exploits](https://standardgalactic.github.io/paracosm/source-control.html)
 
 [Trust Apocalypse](https://galactromeda.com/rsvp/Trust%20Apocalypse.pdf)
@@ -599,9 +602,9 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/science/)
 
+<!--
 [From Preservation to Reachability](https://standardgalactic.github.io/animal-social/reachability.pdf)
 
-<!-- See Also: [Where Did Analytic Philosophy Go Wrong? (w/ Alicia Juarrero)](https://www.youtube.com/watch?v=cE7-2xJdIcA&t=2613s) -->
 * [Your Mind as a Dynamic Landscape](https://standardgalactic.github.io/animal-social/?track=4) — *Audio Overview*
 
 [De Architectvra Intellectvs Vniversalis Artificialis](https://standardgalactic.github.io/alphabet/de-architectura.pdf)
@@ -609,7 +612,7 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 [Consciousness Transfer and the Impossibility of Uploading](https://standardgalactic.github.io/mind-uploading/mind-uploading.pdf) – *Essay*
 
 * [Why Your Digital Clone is not You](https://standardgalactic.github.io/mind-uploading/) – *Audio Overview*
-<!--
+
 *[The Limits of Logic](https://github.com/standardgalactic/kitbash/tree/main/research)*
 
 *[Hypoception](https://standardgalactic.github.io/random-thoughts/hypoception-overview.txt)* — Hypothesis-based perception
@@ -622,13 +625,15 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 ![](shout-out.png)
 
+<!--
 [Ecphoric Overview](https://standardgalactic.github.io/random-thoughts/ecphoric-overview.txt)
-
+-->
 Try my new cryptographic fonts, [Clypto, Cheiro,](https://standardgalactic.github.io/ensign) and [Logico-Philosophicus](https://standardgalactic.github.io/alphabet/cipher.html)
-
+<!--
 Added [Simplectomy Generator](https://standardgalactic.github.io/example)
 
 Broadcast [The Oblicosm Paradox](https://youtube.com/live/0GVvy5s-bXw)
+-->
 
 ---
 Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.github.io/vectorspace/#/galaxy/word2vec-wiki?cx=-3208&cy=-8930&cz=2898&lx=-0.2059&ly=-0.6299&lz=-0.5451&lw=0.5135&ml=300&s=1.75&l=1&v=d50_clean), and added a *[Site Map](http://standardgalactic.github.io/sitemap).*
@@ -664,14 +669,23 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 
 ![](the-only-winning-move.gif)
-
+<!--
 ## My AutoHotkey Shortcuts
 
 [PrintScreen](https://raw.githubusercontent.com/standardgalactic/example/refs/heads/main/PrintScreen.ahk)
+-->
 
 ## **Impossible Physics**
 
+[Caldera Reactor](https://standardgalactic.github.io/caldera-reactor/caldera_reactor.pdf)
+
+[Caldera Field Dynamics](https://standardgalactic.github.io/caldera-reactor/Caldera_Field_Dynamics.pdf) — *Slides*
+
+* [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/) — *Audio Overview*
+
+<!--
 [Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
+-->
 
 **Geometric Bayesianism with Sparse Heuristics**
 
@@ -689,19 +703,6 @@ This Natural Sparsity Principle underpins the efficiency of biological cognition
 <img src="rate-my-setup.png" width="350">
 
 <img src="swype-grid.png" width="350">
-
-Play [Chrobatos](https://standardgalactic.github.io/chrobatos.html) — a Resistor Color Number Game
-<!--
-
-[Latin](https://standardgalactic.github.io/flashcards.html) -->
-
-[Small World Generator](http://standardgalactic.github.io/Centerfuge)
-
-[Eclectric Oil](https://standardgalactic.github.io/eclectric-oil/)
-
-[Circle of Fifths](https://standardgalactic.github.io/circle-of-fifths/)
-
-[𝘌𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘗𝘢𝘳𝘢𝘤𝘭𝘦𝘵𝘦](https://standardgalactic.github.io/abraxas)
 
   <br>
   <br>
@@ -724,10 +725,10 @@ I am following 200,000 pages on Wikipedia
 [My Watchlist](https://github.com/standardgalactic/haplopraxis/blob/primary/Wikipedia-watchlist.txt)
 
 * If you would like to do the same, you can cut-and-paste it [here](https://en.wikipedia.org/wiki/Special:EditWatchlist/raw).
--->
 
 Interactive Mindmap
 
 [Yarnball Earth](https://standardgalactic.github.io/yarnball-earth.html)
+-->
 
 ![](featured.png)
