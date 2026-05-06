@@ -83,6 +83,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Alignment Research
 
+[The Meritocracy That Wasn't](https://standardgalactic.github.io/antivenom/sociology/remote_work.pdf)
+
+* [Why Your Remote Job Applications Disappear](https://standardgalactic.github.io/antivenom/sociology/) — *Audio Overview*
+
 [The Quiet Battlefield](https://standardgalactic.github.io/antivenom/quiet_battlefield.pdf)
 
 * [Algorithmic Harm](https://standardgalactic.github.io/antivenom/opinion/algorithmic-harm.html) — *Audio Overview*
@@ -245,6 +249,12 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Epistemology
 
+[The Dynamics of Learning](https://standardgalactic.github.io/alphabet/research/dynamics-of-learning.pdf)
+
+[Beyond Simplicity](https://standardgalactic.github.io/alphabet/research/Beyond_Simplicity.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/alphabet/research/)
+
 [Markedness and Capability](https://standardgalactic.github.io/standardgalactic/epistemology/markedness_capability.pdf)
 
 [Manufacturing Credulity](https://standardgalactic.github.io/standardgalactic/epistemology/manufacturing_credulity.pdf)
@@ -254,6 +264,14 @@ Taken together, these projects treat the user's actions as part of the algorithm
 * [Aurora Monitor](https://standardgalactic.github.io/standardgalactic/epistemology/) — *Audio Overviews*
 
 # Mechanistic Frameworks
+
+[Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf)
+
+* [Why True Intelligence Refuses Noise](https://standardgalactic.github.io/alphabet/physics/working/) — *Audio Overview*
+
+[Constraint-First Gauge Gravity](https://standardgalactic.github.io/alphabet/physics/gauge-gravity.pdf)
+
+* [The Universe is a Self-Correcting Computation](https://standardgalactic.github.io/alphabet/physics/) — *Audio Overview*
 
 [Closure of Closures](https://standardgalactic.github.io/alphabet/biology/closure_of_closures.pdf)
 
@@ -268,6 +286,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 * [The Physics of Persistent AI Worlds](https://standardgalactic.github.io/research-projects/) — *Audio Overview*
 
 [Mesoscale Matter as Constrained Field Dynamics](https://standardgalactic.github.io/calculus/mesoscale_matter.pdf)
+
+[Semantic Relaxation Networks](https://standardgalactic.github.io/research-projects/intelligence/semantic-relaxation-networks.pdf)
+
+* [Why Next Token Prediction Is Not Intelligence](https://standardgalactic.github.io/research-projects/intelligence/) — *Audio Overviews*
 
 [Kernel Operators, Memory, and Field-Theoretic Dynamics](https://standardgalactic.github.io/calculus/kernel-memory.pdf)
 
@@ -363,6 +385,10 @@ Geodesics of Attention
 -->
 [From Minerals to Minds](https://standardgalactic.github.io/alphabet/From%20Minerals%20to%20Minds.pdf)
 
+[The Geometry of Rewiring](https://standardgalactic.github.io/alphabet/ecology/geometry_of_rewiring.pdf) — *Evolutionary Ecology*
+
+* [Why Efficiency Is a Survival Trap](https://standardgalactic.github.io/alphabet/ecology/) — *Audio Overviews*
+
 [Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
 
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
@@ -454,6 +480,32 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 # Research Projects
 
+[Univalent Photonics](https://standardgalactic.github.io/alphabet/physics/univalent-photonics.pdf)
+
+* [Univalent Photonics and the Persistence of Identity](https://standardgalactic.github.io/alphabet/physics/processing/) — *Audio Overview*
+
+[Admissible Geometry](https://standardgalactic.github.io/alphabet/physics/cosmology/admissible-geometry.pdf)
+
+* [Notes](https://github.com/standardgalactic/alphabet/tree/core/physics/cosmology#readme)
+
+* [Dark Matter as a Geometric Phase Transition](https://standardgalactic.github.io/alphabet/physics/cosmology/) — *Audio Overviews*
+
+[The Persistence of Structure](https://standardgalactic.github.io/alphabet/physics/cosmology/persistence_of_structure.pdf)
+
+* [Space is the Residue of Persistent Structure](https://standardgalactic.github.io/alphabet/physics/cosmology/persistent-structure.html) — *Audio Overview*
+
+<!--
+[Trajectory Inference](https://standardgalactic.github.io/research-projects/rsvp-lab/trajectory_inference.pdf)
+
+* [Everything Is a Slow-Moving Verb](https://standardgalactic.github.io/research-projects/rsvp-lab/) — *Audio Overview*
+
+[Projection, Constraint, and Irreversibility](https://standardgalactic.github.io/guardrails/projection_constraint_irreversibility.pdf)
+
+*Toward a Unified Theory of Representation Across Cognition, Computation, and Social Systems*
+
+* [Why Modern Systems Mistake Maps for Reality](https://standardgalactic.github.io/guardrails/) — *Audio Overview*
+-->
+
 [Ledger Without Value](https://standardgalactic.github.io/research-projects/paper/ledger-without-value.pdf)
 
 [Error as Obstruction](https://standardgalactic.github.io/research-projects/paper/error_as_obstruction.pdf)
@@ -494,6 +546,10 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 -->
 
 # Just for Fun
+
+[The Elements of Computational Worlds](https://standardgalactic.github.io/calculus/computational_worlds.pdf)
+
+* [Building Empires with Simple Logic Gates](https://standardgalactic.github.io/calculus/processing/) — *Audio Overview*
 
 [How Ideas Work](https://standardgalactic.github.io/syllabus/01_how_ideas_work.pdf)
 
@@ -649,6 +705,7 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 ![](dactyl-clock.gif)  <br>
 [Digital Analog Clock](https://standardgalactic.github.io/dactyl-clock.html)
 
+[Digital Oscilloscope](https://standardgalactic.github.io/alphabet/research/oscilloscope.html)
 
 <!-- START_QUOTE -->
 <!-- Dual-Wave Encoding -->
