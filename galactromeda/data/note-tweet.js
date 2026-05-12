@@ -1,1 +1,0 @@
-window.YTD.note_tweet.part0 = [ ]

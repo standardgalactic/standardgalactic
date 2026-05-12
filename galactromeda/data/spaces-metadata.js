@@ -1,1 +1,0 @@
-window.YTD.spaces_metadata.part0 = [ ]

@@ -1,1 +1,0 @@
-window.YTD.deleted_note_tweet.part0 = [ ]

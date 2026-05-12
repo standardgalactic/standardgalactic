@@ -1,1 +1,0 @@
-window.YTD.article_metadata.part0 = [ ]
