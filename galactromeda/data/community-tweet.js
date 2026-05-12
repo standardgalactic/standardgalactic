@@ -1,1 +1,0 @@
-window.YTD.community_tweet.part0 = [ ]

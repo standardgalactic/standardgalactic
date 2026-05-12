@@ -1,1 +1,0 @@
-window.YTD.commerce_catalog.part0 = [ ]
