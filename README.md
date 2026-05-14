@@ -39,7 +39,9 @@ And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
 -->
 Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
 
-<!--
+<!-- 
+[Music](https://standardgalactic.github.io/spherepop/music/)
+
 ![Nebula One](nebula-one.gif)
 -->
 Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)* and *[Starpop](https://standardgalactic.github.io/Centerfuge/starpop/)* minigames.
@@ -82,6 +84,10 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
 # Alignment Research
+
+[Globally Persistent Recomposable Thought](https://standardgalactic.github.io/spherepop/intelligence-explosion.pdf)
+
+* [Github Is the Real Intelligence Explosion](https://standardgalactic.github.io/spherepop/processing/) — *Audio Overview*
 
 [The Meritocracy That Wasn't](https://standardgalactic.github.io/antivenom/sociology/remote_work.pdf)
 
@@ -249,6 +255,12 @@ Taken together, these projects treat the user's actions as part of the algorithm
 -->
 # Epistemology
 
+[Geometry, Cognition, and the Transparency of Computation](https://standardgalactic.github.io/spherepop/admissibility/spherepop-monograph.pdf)
+
+* [The Geometry of Computation](https://standardgalactic.github.io/spherepop/admissibility/The_Geometry_of_Computation.pdf) — *Notes*
+
+* [How Nested Bubbles Fix Flat Math](https://standardgalactic.github.io/spherepop/admissibility/) — *Audio Overview*
+
 [The Dynamics of Learning](https://standardgalactic.github.io/alphabet/research/dynamics-of-learning.pdf)
 
 [Beyond Simplicity](https://standardgalactic.github.io/alphabet/research/Beyond_Simplicity.pdf)
@@ -263,7 +275,19 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 * [Aurora Monitor](https://standardgalactic.github.io/standardgalactic/epistemology/) — *Audio Overviews*
 
+[The Collapse of Epistemic Coherence](https://standardgalactic.github.io/alphabet/epistemology/collapse-of-epistemic-coherence.pdf)
+
+* [Synthetic Rigor](https://standardgalactic.github.io/alphabet/epistemology/Synthetic_Rigor.pdf) — *Notes*
+
+* [Why AI Text Feels Deceptively Profound](https://standardgalactic.github.io/alphabet/epistemology/) — *Audio Overview*
+
 # Mechanistic Frameworks
+
+[How to Build a Neocortex](https://standardgalactic.github.io/workspace/biology/how_to_build_a_neocortex.pdf)
+
+* [Constraint Geometry](https://standardgalactic.github.io/workspace/biology/Constraint_Geometry-notes.pdf) — *Notes*
+
+* [Building the Neocortex Without a Blueprint](https://standardgalactic.github.io/workspace/biology/) — *Audio Overview*
 
 [Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf)
 
@@ -367,8 +391,9 @@ Geodesics of Attention
 
 * [Audio Overview](https://standardgalactic.github.io/library/projects/?track=hallucination)
 
-[Homotopy and Identity](https://standardgalactic.github.io/research-projects/Homotopy%20and%20Identity.pdf)
 <!--
+[Homotopy and Identity](https://standardgalactic.github.io/research-projects/Homotopy%20and%20Identity.pdf)
+
 [Transformation Before Representation](https://standardgalactic.github.io/kitbash/Transformation%20Before%20Representation.pdf)
 -->
 
@@ -392,6 +417,8 @@ Geodesics of Attention
 [Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
 
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
+
+* [Abstraction is Just Energy Minimization](https://standardgalactic.github.io/alphabet/processing/) — *START HERE*
 
 <!--
 [Order and Obfuscation](https://standardgalactic.github.io/research-projects/Order%20and%20Obfuscation.pdf)
@@ -433,8 +460,23 @@ Geodesics of Attention
 [Cosmological Observables Without Expansion](https://standardgalactic.github.io/kitbash/cosmology/rsvp_cosmology_v2.pdf)  — *Working Draft*
 -->
 
-[Everlasting Redshift](https://standardgalactic.github.io/kitbash/Everlasting%20Redshift.pdf)
+[Axioms for a Falling Universe](https://standardgalactic.github.io/alphabet/projects/axioms-for-a-falling-universe.pdf)
 
+* [The RSVP Plenum](https://standardgalactic.github.io/alphabet/projects/The_RSVP_Plenum.pdf) — *Notes*
+
+* [Audio Overview](https://standardgalactic.github.io/alphabet/projects/)
+
+[Fossil Manifolds and Mediated Extraction](https://standardgalactic.github.io/workspace/cosmology/fossil_manifolds.pdf)
+
+* [The Inverse Accessibility Paradox](https://standardgalactic.github.io/workspace/cosmology/The_Inverse_Accessibility_Paradox.pdf) — *Notes*
+
+* [Fossil Manifolds](https://standardgalactic.github.io/workspace/cosmology/Fossil_Manifolds-notes.pdf) — *Notes*
+
+* [The Uncorrupted Cosmic Fossil](https://standardgalactic.github.io/workspace/cosmology/) — *Audio Overview*
+
+<!--
+[Everlasting Redshift](https://standardgalactic.github.io/kitbash/Everlasting%20Redshift.pdf)
+-->
 [Scalar Irruption via Entropic Differential](https://standardgalactic.github.io/workspace/Scalar%20Irruption%20via%20Entropic%20Differential.pdf)
 
 [Physics After Spacetime](https://standardgalactic.github.io/research-projects/Physics%20After%20Spacetime.pdf)
@@ -443,6 +485,28 @@ Geodesics of Attention
 -->
 
 [Bootstrapping Utopia](https://standardgalactic.github.io/alphabet/Bootstrapping%20Utopia.pdf) — *Draft*
+
+# MEMNET
+
+[The Admissibility Principle](https://standardgalactic.github.io/memnet/framework/admissibility_principle.pdf)
+
+* [The Universe as Admissibility Constrained Collapse](https://standardgalactic.github.io/memnet/framework/) — *Audio Overview*
+
+[The Semantic State](https://standardgalactic.github.io/memnet/semantic_state.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/memnet/)
+
+[Process-Relational Architecture](https://github.com/standardgalactic/memnet/tree/main/working/README.md)
+
+* [Process, Projection, and Propagative Reality](https://standardgalactic.github.io/memnet/working/propagative_reality.pdf)
+
+* [From Classifier to Inverse Engine](https://standardgalactic.github.io/memnet/working/gesture_review.pdf)
+
+* [Silicon Cartography](https://standardgalactic.github.io/memnet/working/silicon_cartography.pdf)
+
+* [When the Formalism Becomes the Interface](https://standardgalactic.github.io/memnet/working/formalism-interface.pdf)
+
+* [Audioscope](https://standardgalactic.github.io/memnet/working/) — *Audio Overviews*
 
 # Paleoarcheology
 
@@ -463,6 +527,12 @@ Geodesics of Attention
 </div>
 
 # Structural Inversion
+
+[Constraint Geometry Across Scales](https://standardgalactic.github.io/alphabet/constraint-geometry/field-space.pdf)
+
+* [Beyond the Flat Shadow](https://standardgalactic.github.io/alphabet/constraint-geometry/Beyond_the_Flat_Shadow.pdf) — *Notes*
+
+* [Why Flat Metrics Fail Reality](https://standardgalactic.github.io/alphabet/constraint-geometry/) — *Audio Overview*
 
 [Vanity Publishing](https://standardgalactic.github.io/antivenom/boundaries/vanity_publishing.pdf)
 
@@ -495,6 +565,10 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 * [Space is the Residue of Persistent Structure](https://standardgalactic.github.io/alphabet/physics/cosmology/persistent-structure.html) — *Audio Overview*
 
 <!--
+[Constraint-First Topology](https://standardgalactic.github.io/research-projects/working/constraint-first-topology.pdf)
+
+* [Physical Objects Are Mathematical Constraints](https://standardgalactic.github.io/research-projects/working/topology.html) — *Audio Overview*
+
 [Trajectory Inference](https://standardgalactic.github.io/research-projects/rsvp-lab/trajectory_inference.pdf)
 
 * [Everything Is a Slow-Moving Verb](https://standardgalactic.github.io/research-projects/rsvp-lab/) — *Audio Overview*
@@ -508,8 +582,9 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 [Ledger Without Value](https://standardgalactic.github.io/research-projects/paper/ledger-without-value.pdf)
 
-[Error as Obstruction](https://standardgalactic.github.io/research-projects/paper/error_as_obstruction.pdf)
 <!--
+[Error as Obstruction](https://standardgalactic.github.io/research-projects/paper/error_as_obstruction.pdf)
+
 [Entropic Decimation](https://standardgalactic.github.io/research-projects/paper/entropic-decimation.pdf)
 
 [The Admissibility Log](https://standardgalactic.github.io/research-projects/paper/admissibility-log.pdf)
@@ -547,12 +622,15 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 # Just for Fun
 
+[Hidden Constraints Audioscope](https://standardgalactic.github.io/alphabet/workspace/)
+
 [The Elements of Computational Worlds](https://standardgalactic.github.io/calculus/computational_worlds.pdf)
 
 * [Building Empires with Simple Logic Gates](https://standardgalactic.github.io/calculus/processing/) — *Audio Overview*
 
 [How Ideas Work](https://standardgalactic.github.io/syllabus/01_how_ideas_work.pdf)
 
+<!--
 [The Architecture of Ideas](https://standardgalactic.github.io/syllabus/02_architecture_of_ideas.pdf)
 
 [Structural Thinking](https://standardgalactic.github.io/syllabus/03_structural_thinking.pdf)
@@ -562,7 +640,7 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 [The Fixed Point](https://standardgalactic.github.io/alphabet/screenplay/the_fixed_point.pdf)
 
 * [The Invisible Frames that Filter Reality](https://standardgalactic.github.io/alphabet/screenplay/) — *Audio Overview*
-
+-->
 [History as Identity](https://standardgalactic.github.io/spherepop/History%20as%20Identity.pdf)
 
 * [Spherepop Game Engine](https://standardgalactic.github.io/spherepop/game-engine.html) — *Playable Demo*
@@ -651,6 +729,10 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 </div>
 
 ## Psychonomics
+
+[Cursive Handwriting](https://standardgalactic.github.io/kitbash/cursive-notes.pdf) — *Large File - 41 Mb*
+
+[Infodump Notes](https://standardgalactic.github.io/kitbash/infodump-notes.pdf) — *Large File - 74 Mb*
 
 [Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) 
 
