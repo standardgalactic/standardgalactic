@@ -83,7 +83,70 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
+# Work in Progress
+
+[Constraint as Ground](https://standardgalactic.github.io/memnet/sparse-representations/constraint_as_ground.pdf)
+
+* [Topological Intelligence](https://standardgalactic.github.io/memnet/sparse-representations/Topological_Intelligence.pdf)
+
+* [Notes](https://standardgalactic.github.io/memnet/sparse-representations/Constraint_as_Ground-notes.pdf)
+
+* [The Engine of Intelligence](https://standardgalactic.github.io/memnet/sparse-representations/) — *Audio Overview*
+
+[Morphology as Computation](https://standardgalactic.github.io/research-projects/epistemology/morphology-as-computation.pdf)
+
+* [Why Physical Boundaries Define Intelligence](https://standardgalactic.github.io/research-projects/epistemology/) — *Audio Overview*
+<!--
+[Observable Classicalization](https://standardgalactic.github.io/alphabet/working/observable-classicalization.pdf)
+-->
+
+[Beyond Prediction Error](https://standardgalactic.github.io/alphabet/framework/beyond_prediction_error.pdf)
+
+* [Topological Persistence](https://standardgalactic.github.io/alphabet/framework/Topological_Persistence.pdf) — *Notes*
+
+* [Why Brains Navigate Instead of Predict](https://standardgalactic.github.io/alphabet/framework/audioscope.html) — *Audio Overview*
+
+[Everything is a Clipboard](https://standardgalactic.github.io/alphabet/framework/everything_is_a_clipboard.pdf)
+
+* [The Navigable Manifold](https://standardgalactic.github.io/alphabet/framework/The_Navigable_Manifold.pdf)
+
+* [Everything you Think is a Clipboard](https://standardgalactic.github.io/alphabet/framework/) — *Audio Overview*
+
+[Propagating Constraint Fields](https://standardgalactic.github.io/alphabet/working/constraint-propagation.pdf)
+
+* [The Organizational Manifold](https://standardgalactic.github.io/alphabet/working/The_Organizational_Manifold.pdf) — *Notes*
+
+* [Audio Overviews](https://standardgalactic.github.io/alphabet/working/)
+
+* [Music](https://standardgalactic.github.io/alphabet/working/music.html)
+
+[Hydra — Hybrid Dynamic Reasoning Architecture](https://standardgalactic.github.io/memnet/operator-logic/hydra.pdf)
+
+* [Architecture of Constraint](https://standardgalactic.github.io/memnet/operator-logic/Architecture_of_Constraint.pdf) — *Notes*
+
+* [Semantic Physics](https://standardgalactic.github.io/memnet/operator-logic/Semantic_Physics.pdf) — *Notes*
+
+[Function Survives Collapse](https://standardgalactic.github.io/alphabet/working/function_survives_collapse.pdf)
+
+[Constraint Geometry Audioscope](https://standardgalactic.github.io/memnet/operator-logic/) — *Audio Overviews*
+
+* Dynamic Programming from Physics to Consciousness
+* Your Body Plays Every Song You Hear
+* Intelligence is the Geometry of Constraints
+
+[The Unreadability of Dynamic Readability](https://standardgalactic.github.io/kitbash/processing/unreadability.pdf)
+
+* [Navigable Architecture](https://standardgalactic.github.io/kitbash/processing/Navigable_Architecture.pdf) — *Notes*
+
+* [Why Unreadable Writing is Engineered to Fail](https://standardgalactic.github.io/kitbash/processing/obscurantism.html)
+
 # Alignment Research
+
+[Broken Tools for a Breaking World](https://standardgalactic.github.io/antivenom/framework/fragility-metacrisis.pdf)
+
+* [Notes](https://standardgalactic.github.io/antivenom/framework/Broken_Tools_for_a_Breaking_World.pdf)
+
+* [How AI Fragility Fuels the Metacrisis](https://standardgalactic.github.io/antivenom/framework/) — *Audio Overview*
 
 [Globally Persistent Recomposable Thought](https://standardgalactic.github.io/spherepop/intelligence-explosion.pdf)
 
@@ -92,6 +155,14 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [The Meritocracy That Wasn't](https://standardgalactic.github.io/antivenom/sociology/remote_work.pdf)
 
 * [Why Your Remote Job Applications Disappear](https://standardgalactic.github.io/antivenom/sociology/) — *Audio Overview*
+
+[Proxy Permanence Failure](https://standardgalactic.github.io/antivenom/persistence/proxy_permanence_failure.pdf)
+
+* [Beyond the Carbon Ledger](https://standardgalactic.github.io/antivenom/persistence/Beyond_the_Carbon_Ledger.pdf)
+
+* [Notes](https://standardgalactic.github.io/antivenom/persistence/proxy_permanence_failure-notes.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/antivenom/persistence/)
 
 [The Quiet Battlefield](https://standardgalactic.github.io/antivenom/quiet_battlefield.pdf)
 
@@ -528,6 +599,12 @@ Geodesics of Attention
 
 # Structural Inversion
 
+[Bayesian Photonics](https://standardgalactic.github.io/research-projects/photonics/bayesian-photonics.pdf)
+
+* [Trajectory Space Physics](https://standardgalactic.github.io/research-projects/photonics/Trajectory_Space_Physics.pdf) — *Notes*
+
+* [Geometric Defense Mechanisms](https://standardgalactic.github.io/research-projects/photonics/) — *Audio Overview*
+
 [Constraint Geometry Across Scales](https://standardgalactic.github.io/alphabet/constraint-geometry/field-space.pdf)
 
 * [Beyond the Flat Shadow](https://standardgalactic.github.io/alphabet/constraint-geometry/Beyond_the_Flat_Shadow.pdf) — *Notes*
@@ -549,10 +626,11 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 * [Audio Overviews](https://standardgalactic.github.io/antivenom/boundaries/)
 
 # Research Projects
-
+<!--
 [Univalent Photonics](https://standardgalactic.github.io/alphabet/physics/univalent-photonics.pdf)
 
 * [Univalent Photonics and the Persistence of Identity](https://standardgalactic.github.io/alphabet/physics/processing/) — *Audio Overview*
+-->
 
 [Admissible Geometry](https://standardgalactic.github.io/alphabet/physics/cosmology/admissible-geometry.pdf)
 
@@ -589,13 +667,11 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 [The Admissibility Log](https://standardgalactic.github.io/research-projects/paper/admissibility-log.pdf)
 
-[Flash–Reluctance Engine](https://standardgalactic.github.io/research-projects/paper/flash_reluctance_engine.pdf)
-
 * [Yarncrawler Audio Visualizer](https://standardgalactic.github.io/research-projects/paper/) — *Audio Overviews*
 
 [Descent into Reality](https://standardgalactic.github.io/alphabet/framework/descent-into-reality.pdf)
 
-* [Audio Overview](https://standardgalactic.github.io/alphabet/framework/)
+* [Audio Overview](https://standardgalactic.github.io/alphabet/framework/descent-into-reality.html)
 
 [Constraint Regimes](https://standardgalactic.github.io/library/monograph/constraint_regimes.pdf)
 
@@ -621,6 +697,12 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 -->
 
 # Just for Fun
+
+[Recursive Containment and Deferred Closure](https://standardgalactic.github.io/spherepop/dynamics/spherepop_scope_dynamics.pdf)
+
+* [Cognitive Topology](https://standardgalactic.github.io/spherepop/dynamics/Cognitive_Topology.pdf) — *Notes*
+
+* [The Geometry of Nested Mental Bubbles](https://standardgalactic.github.io/spherepop/dynamics/) — *Audio Overview*
 
 [Hidden Constraints Audioscope](https://standardgalactic.github.io/alphabet/workspace/)
 
@@ -707,6 +789,13 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 [Ultrabionic Reading](https://standardgalactic.github.io/ultrabionic-reading.html)
 
 -->
+
+[The World Beneath the World](https://standardgalactic.github.io/kitbash/processing/mundus_subterraneus.pdf) — *Screenplay*
+
+* [Notes](https://standardgalactic.github.io/kitbash/processing/mundus_subterraneus-notes.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/kitbash/processing/)
+
 ## <big>Relativistic Scalar Vector Plenum (RSVP) Framework</big>
 <div>
 <!--  <a href="https://standardgalactic.github.io/spherepop/projects-overview.html"> -->
@@ -816,15 +905,17 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 ## **Impossible Physics**
 
+[Flash Reluctance Engine](https://standardgalactic.github.io/research-projects/paper/flash_reluctance_engine.pdf)
+
+* [Simulator](https://standardgalactic.github.io/research-projects/paper/flash_reluctance_simulator.html)
+
 [Caldera Reactor](https://standardgalactic.github.io/caldera-reactor/caldera_reactor.pdf)
 
 [Caldera Field Dynamics](https://standardgalactic.github.io/caldera-reactor/Caldera_Field_Dynamics.pdf) — *Slides*
 
 * [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/) — *Audio Overview*
 
-<!--
 [Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
--->
 
 **Geometric Bayesianism with Sparse Heuristics**
 
