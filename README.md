@@ -85,6 +85,98 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[When Systems Change Their Minds](https://standardgalactic.github.io/computation/abstraction/distributed-agency.pdf)
+<!--
+[The Flyxion Dependency Atlas](https://standardgalactic.github.io/computation/abstraction/flyxion_atlas.pdf)
+
+* [Volume Zero](https://standardgalactic.github.io/computation/abstraction/volume_zero.pdf)
+-->
+
+[Audio Overviews](https://standardgalactic.github.io/computation/abstraction/)
+
+[Multiscale Constraint Flow](https://standardgalactic.github.io/alphabet/cosmology/multiscale-constraint-flow.pdf)
+
+* [The Geometry of Possibility](https://standardgalactic.github.io/alphabet/cosmology/The_Geometry_of_Possibility.pdf) — *Notes*
+
+* [Overview](https://standardgalactic.github.io/alphabet/cosmology/multiscale-constraint-overview.pdf) — *Cheatsheet*
+
+[Holonomic Space](https://standardgalactic.github.io/alphabet/cosmology/holonomic-space.pdf)
+
+* [Admissible Projections](https://standardgalactic.github.io/alphabet/cosmology/Admissible_Projections.pdf)
+
+[Three Smoothing Mechanisms](https://standardgalactic.github.io/alphabet/cosmology/three_smoothing_mechanisms.pdf)
+
+* [The New Cosmological Taxonomy](https://standardgalactic.github.io/alphabet/cosmology/The_New_Cosmological_Taxonomy.pdf) — *Notes*
+
+[The Reductive Manifold](https://standardgalactic.github.io/alphabet/cosmology/The_Reductive_Manifold.pdf)
+
+[Audio Overviews](https://standardgalactic.github.io/alphabet/cosmology/)
+
+[Semantic Infrastructure](https://standardgalactic.github.io/playfloor/processing/semantic-infrastructure.pdf)
+
+* [Accessibility Geometry](https://standardgalactic.github.io/playfloor/processing/Accessibility_Geometry.pdf)
+
+* [The Geometry of Accessibility](https://standardgalactic.github.io/playfloor/processing/The_Geometry_of_Accessibility.pdf) — *Notes*
+
+* [Audio Overviews](https://standardgalactic.github.io/playfloor/processing/)
+
+[The Geometry of Closure](https://standardgalactic.github.io/alphabet/processing/geometry_of_closure.pdf)
+
+* [The Logic of Ontological Enlargement](https://standardgalactic.github.io/alphabet/processing/The_Logic_of_Ontological_Enlargement.pdf) — *Notes*
+
+* [Graphic Novel](https://standardgalactic.github.io/alphabet/processing/geometry-of-closure-comic.pdf)
+
+* [Why Mathematical Realities Outgrow Their Maps](https://standardgalactic.github.io/alphabet/processing/audio-visualizer.html) — *Audio Overview*
+
+[Beyond Process](https://standardgalactic.github.io/playfloor/admissibility/beyond_process.pdf)
+
+[Constraint Before Content](https://standardgalactic.github.io/playfloor/admissibility/constraint_before_content.pdf)
+
+[Hidden Curvature](https://standardgalactic.github.io/playfloor/admissibility/admissibility-field.pdf)
+
+* [Notes](https://standardgalactic.github.io/playfloor/admissibility/hidden-curvature.pdf)
+
+* [Law of Invariance](https://standardgalactic.github.io/playfloor/admissibility/law-of-invariance.pdf)
+
+* [Structure Surviving Transformation](https://standardgalactic.github.io/playfloor/admissibility/) — *Audio Overviews*
+
+[Epistemic Reduction](https://standardgalactic.github.io/playfloor/epistemology/epistemic-reduction.pdf)
+
+* [The Geometry of Understanding](https://standardgalactic.github.io/playfloor/epistemology/The_Geometry_of_Understanding.pdf)
+
+[The Projection Crisis](https://standardgalactic.github.io/playfloor/epistemology/projection_crisis.pdf)
+
+* [The Projection Crisis](https://standardgalactic.github.io/playfloor/epistemology/The_Projection_Crisis.pdf)
+
+[Hydra Architecture](https://standardgalactic.github.io/playfloor/epistemology/hydra_architecture.pdf)
+
+* [Geometric Agency](https://standardgalactic.github.io/playfloor/epistemology/Geometric_Agency.pdf)
+
+* [Epistemology Survey Instrument](https://standardgalactic.github.io/playfloor/epistemology/) — *Audio Overviews*
+
+[The Admissibility Protocol](https://github.com/standardgalactic/playfloor/blob/main/processing/working/README.md)
+
+[Compressed Causality](https://standardgalactic.github.io/playfloor/processing/working/CompressedCausality.pdf)
+
+* [Yarn Relational Topology](https://standardgalactic.github.io/playfloor/processing/working/Yarn_Relational_Topology.pdf) — *Notes*
+
+* [Audio Overviews](https://standardgalactic.github.io/playfloor/processing/working/)
+
+[Hidden Manifolds](https://standardgalactic.github.io/alphabet/manuscripts/hidden_manifolds.pdf)
+
+* [Mapping Hidden Manifolds](https://standardgalactic.github.io/alphabet/manuscripts/Mapping_Hidden_Manifolds.pdf) — *Notes*
+
+* [The Hidden Geometry of Global Movement](https://standardgalactic.github.io/alphabet/manuscripts/) — *Audio Overview*
+
+[Accessibility Relaxation and Friedmann Instability](https://standardgalactic.github.io/cosmology/accessibility-relaxation.pdf)
+
+* [The RSVP Revolution](https://standardgalactic.github.io/cosmology/The_RSVP_Revolution.pdf)
+
+* [The RSVP Blueprint](https://standardgalactic.github.io/cosmology/The_RSVP_Blueprint.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/cosmology/)
+
+
 [Constraint as Ground](https://standardgalactic.github.io/memnet/sparse-representations/constraint_as_ground.pdf)
 
 * [Topological Intelligence](https://standardgalactic.github.io/memnet/sparse-representations/Topological_Intelligence.pdf)
@@ -140,7 +232,28 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 * [Why Unreadable Writing is Engineered to Fail](https://standardgalactic.github.io/kitbash/processing/obscurantism.html)
 
+
+[When Noise Becomes Structure](https://standardgalactic.github.io/alphabet/research/noise-becomes-structure.pdf)
+
+* [Beyond the Bounded Organism](https://standardgalactic.github.io/alphabet/research/Beyond_the_Bounded_Organism.pdf) — *Notes*
+
+* [How Math Blinded Us to the Microbiome](https://standardgalactic.github.io/alphabet/research/microbiome.html) — *Audio Overview*
+
+[Repair as a Fundamental Category](https://standardgalactic.github.io/alphabet/research/repair_as_fundamental.pdf)
+
+[Semantic Stability as a Repair Equilibrium](https://standardgalactic.github.io/alphabet/research/semantic_stability.pdf)
+
+[Language as Constraint Field](https://standardgalactic.github.io/alphabet/research/language_as_constraint_field.pdf)
+
+[The Historical Screenplay as Spherepop Program](https://standardgalactic.github.io/alphabet/research/screenplay_as_program.pdf)
+
+[The Xylomorphic Premise](https://standardgalactic.github.io/antivenom/futurology/xylomorphic-premise.pdf)
+
+* [Notes](https://standardgalactic.github.io/antivenom/futurology/Xylomorphic_Infrastructure.pdf)
+
 # Alignment Research
+
+[The Paradox of Precaution](https://standardgalactic.github.io/kitbash/paradox-of-precaution.pdf)
 
 [Broken Tools for a Breaking World](https://standardgalactic.github.io/antivenom/framework/fragility-metacrisis.pdf)
 
@@ -354,6 +467,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Mechanistic Frameworks
 
+[From Synchrony to Structure](https://standardgalactic.github.io/playfloor/epistemology/from_synchrony_to_structure.pdf)
+
 [How to Build a Neocortex](https://standardgalactic.github.io/workspace/biology/how_to_build_a_neocortex.pdf)
 
 * [Constraint Geometry](https://standardgalactic.github.io/workspace/biology/Constraint_Geometry-notes.pdf) — *Notes*
@@ -487,7 +602,12 @@ Geodesics of Attention
 
 [Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
 
+<!--
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
+-->
+[Abstraction as Reduction](https://standardgalactic.github.io/computation/abstraction/Abstraction_as_Reduction.pdf)
+
+* [Graphic Novel](https://standardgalactic.github.io/computation/abstraction/abstraction-comic.pdf)
 
 * [Abstraction is Just Energy Minimization](https://standardgalactic.github.io/alphabet/processing/) — *START HERE*
 
@@ -771,6 +891,8 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 [Flower Wars](https://standardgalactic.github.io/alphabet/Flower%20Wars.pdf) – *Screenplay*
 
+* [Graphic Novel](https://standardgalactic.github.io/alphabet/flower-wars-comic.pdf)
+
 * [Compendium](https://standardgalactic.github.io/alphabet/Flower%20Wars%20-%20Compendium.pdf)
 
 * [Bounded Violence](https://standardgalactic.github.io/alphabet/Flower%20Wars%20-%20Bounded%20Violence.pdf)
@@ -829,11 +951,11 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/science/)
 
-<!--
 [From Preservation to Reachability](https://standardgalactic.github.io/animal-social/reachability.pdf)
 
 * [Your Mind as a Dynamic Landscape](https://standardgalactic.github.io/animal-social/?track=4) — *Audio Overview*
 
+<!--
 [De Architectvra Intellectvs Vniversalis Artificialis](https://standardgalactic.github.io/alphabet/de-architectura.pdf)
 
 [Consciousness Transfer and the Impossibility of Uploading](https://standardgalactic.github.io/mind-uploading/mind-uploading.pdf) – *Essay*
@@ -915,7 +1037,16 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 * [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/) — *Audio Overview*
 
+<!--
 [Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
+-->
+[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/computing/magnetic-fluidic-computing.pdf)
+
+* [Notes](https://standardgalactic.github.io/library/computing/Magnetic_Fluidic_Computing.pdf)
+
+* [Graphic Novel](https://standardgalactic.github.io/library/computing/magnetic-comic.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/library/computing/)
 
 **Geometric Bayesianism with Sparse Heuristics**
 
