@@ -85,6 +85,50 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Frozen Processes](https://standardgalactic.github.io/playfloor/reachability/frozen_processes.pdf)
+
+A process-primary framework arguing that many things we treat as fundamental entities are actually stable residues of trajectories moving through spaces of possibility. The central question is shifted from "What exists?" to "What remains reachable, and under what conditions?"
+
+* [Topographies of Possibility](https://standardgalactic.github.io/playfloor/reachability/Topographies_of_Possibility.pdf)
+
+* [Notes](https://standardgalactic.github.io/playfloor/reachability/Frozen_Processes-notes.pdf)
+
+[Belief Geometry and Reachability](https://standardgalactic.github.io/playfloor/reachability/belief_geometry.pdf)
+
+A synthesis of computational mechanics, predictive inference, and reachability theory, arguing that belief states are coordinates on a manifold of accessible futures and that reasoning is best understood as navigation through that geometry.
+
+* [The Reachability Manifold](https://standardgalactic.github.io/playfloor/reachability/The_Reachability_Manifold.pdf)
+
+* [The Secret Lives of Nouns](https://standardgalactic.github.io/playfloor/reachability/reachability-comic.pdf) — *Graphic Novel*
+
+[Audio Overviews](https://standardgalactic.github.io/playfloor/reachability/)
+
+[Constraint, Reachability, and Relaxation](https://standardgalactic.github.io/calculus/baseline/constraint_reachability_relaxation.pdf)
+
+* [Admissibility as a Unifying Concept](https://standardgalactic.github.io/calculus/baseline/admissibility-essay.pdf)
+
+* [Universal Admisibility Geometry](https://standardgalactic.github.io/calculus/baseline/Universal_Admissibility_Geometry.pdf)
+
+* [Graphic Novel](https://standardgalactic.github.io/calculus/baseline/admissibility-comic.pdf)
+
+[Flow Computing](https://standardgalactic.github.io/calculus/baseline/computing_as_flow.pdf)
+
+* [Computing as Flow](https://standardgalactic.github.io/calculus/baseline/Computing_as_Flow-notes.pdf)
+
+[Civilization’s Undo Stack](https://standardgalactic.github.io/calculus/baseline/markov_boundaries.pdf)
+
+[Preference Fields on Semantic Manifolds](https://standardgalactic.github.io/calculus/baseline/preference_fields.pdf)
+
+* [Geometric Preference Fields](https://standardgalactic.github.io/calculus/baseline/Geometric_Preference_Fields.pdf)
+
+* [The Geometry of Preference](https://standardgalactic.github.io/calculus/baseline/geometry-of-preference-comic.pdf) — *Graphic Novel*
+
+[Persistent Anomalies](https://standardgalactic.github.io/calculus/baseline/persistent_anomalies.pdf)
+
+* [The Geometry of Ontology Revision](https://standardgalactic.github.io/calculus/baseline/Persistent_Anomalies-notes.pdf)
+
+[Possibility Space](https://standardgalactic.github.io/calculus/baseline/) — *Audio Overviews*
+
 [When Systems Change Their Minds](https://standardgalactic.github.io/computation/abstraction/distributed-agency.pdf)
 <!--
 [The Flyxion Dependency Atlas](https://standardgalactic.github.io/computation/abstraction/flyxion_atlas.pdf)
@@ -250,6 +294,52 @@ Taken together, these projects treat the user's actions as part of the algorithm
 [The Xylomorphic Premise](https://standardgalactic.github.io/antivenom/futurology/xylomorphic-premise.pdf)
 
 * [Notes](https://standardgalactic.github.io/antivenom/futurology/Xylomorphic_Infrastructure.pdf)
+
+# The Admissibility Program
+
+[Flyxion Project Map](https://standardgalactic.github.io/playfloor/coordinates/flyxion_project_map-core.pdf)
+
+[Admissibility All the Way Down](https://standardgalactic.github.io/playfloor/coordinates/functional_programming_admissibility.pdf)
+
+* [Notes](https://standardgalactic.github.io/playfloor/coordinates/The_Admissibility_Program.pdf)
+
+* [Core Notes](https://standardgalactic.github.io/playfloor/coordinates/The_Admissibility_Program%20-%20core.pdf)
+
+[Separation of Measure](https://standardgalactic.github.io/playfloor/coordinates/separation-of-measure.pdf)
+
+* [Infinite Kernel Separation](https://standardgalactic.github.io/playfloor/coordinates/Infinite_Kernel_Separation.pdf)
+
+[Waves of Collapse](https://standardgalactic.github.io/playfloor/coordinates/waves-of-collapse.pdf)
+
+* [Notes](https://standardgalactic.github.io/playfloor/coordinates/Waves_of_Collapse.pdf)
+
+[Audio Overviews](https://standardgalactic.github.io/playfloor/coordinates/)
+
+# Distinguishability Geometry
+
+[Activation Manifolds as Admissibility Fields](https://standardgalactic.github.io/playfloor/working/admissibility_fields.pdf)
+
+* [The Topography of Possiblity](https://standardgalactic.github.io/playfloor/working/The_Topography_of_Possibility.pdf)
+
+* [The Cloak](https://standardgalactic.github.io/playfloor/working/the-cloak.pdf) — *Graphic Novel*
+
+* [The Geometry of Escape](https://standardgalactic.github.io/playfloor/working/The_Geometry_of_Escape.pdf) — *Notes*
+
+[Beyond Prediction](https://standardgalactic.github.io/playfloor/working/beyond_prediction.pdf)
+
+* [The Geometry of Reachability](https://standardgalactic.github.io/playfloor/working/The_Geometry_of_Reachability.pdf)
+
+[Programs as Histories](https://standardgalactic.github.io/playfloor/working/programs-as-histories.pdf)
+
+* [The Spherepop Inversion](https://standardgalactic.github.io/playfloor/working/The_Spherepop_Inversion.pdf)
+
+[Distinguishability Geometry](https://standardgalactic.github.io/playfloor/working/distinguishability_geometry.pdf)
+
+* [Notes](https://standardgalactic.github.io/playfloor/working/The_Geometry_of_Distinguishability.pdf)
+
+[Distinction Before Objects](https://standardgalactic.github.io/playfloor/working/distinction_before_objects.pdf)
+
+[Audio Overviews](https://standardgalactic.github.io/playfloor/working/)
 
 # Alignment Research
 
@@ -549,13 +639,13 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Text as Substrate](https://standardgalactic.github.io/library/Text%20as%20Substrate.pdf) 
 
+<!--
 [Energy as Contradiction](https://standardgalactic.github.io/library/energy_as_contradiction.pdf) — *Incomplete*
 
 [Geometry from Entropy Flow](https://standardgalactic.github.io/calculus/rsvp_v4.pdf)
 
 [Trajectories All the Way Down](https://standardgalactic.github.io/library/trajectories.pdf)
 
-<!--
 Geodesics of Attention
 
 * [Standard Galactic](https://standardgalactic.github.io/alphabet/geodesics_of_attention_v3_sga.pdf)
@@ -588,6 +678,8 @@ Geodesics of Attention
 [Irreversibility as Architecture](https://standardgalactic.github.io/research-projects/Irreversibility%20as%20Architecture.pdf)
 
 [Noun-Free Cognition](https://standardgalactic.github.io/research-projects/Noun-Free%20Cognition.pdf)
+
+An exploration of difficulty, abstraction, and intelligence that treats cognition as the continual renegotiation of what remains unresolved, arguing that difficulty is not an intrinsic property of tasks but a relation between agents, tools, prompts, and environments.
 
 <!--
 [Local Tractability and Global Dysfunction](https://standardgalactic.github.io/research-projects/Local%20Tractability%20and%20Global%20Dysfunction.pdf)
