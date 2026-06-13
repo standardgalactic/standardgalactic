@@ -85,6 +85,20 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Reality Is What Can Be Reached](https://standardgalactic.github.io/research-projects/philosophy/reality_reachability.pdf)
+
+* [The Reachability Ontology](https://standardgalactic.github.io/research-projects/philosophy/The_Reachability_Ontology.pdf)
+
+[Astrophysics After the Uniform Object](https://standardgalactic.github.io/research-projects/philosophy/astrophysics_after_uniform_object.pdf)
+
+* [Beyond the Uniform Object](https://standardgalactic.github.io/research-projects/philosophy/Beyond_the_Uniform_Object.pdf)
+
+[Reconstruction and Distinction](https://standardgalactic.github.io/research-projects/philosophy/reconstruction_and_distinction.pdf)
+
+* [The Reconstruction Imperative](https://standardgalactic.github.io/research-projects/philosophy/The_Reconstruction_Imperative-notes.pdf)
+
+[Latent Structure](https://standardgalactic.github.io/research-projects/philosophy) — *Audio Visualizers*
+
 [Frozen Processes](https://standardgalactic.github.io/playfloor/reachability/frozen_processes.pdf)
 
 A process-primary framework arguing that many things we treat as fundamental entities are actually stable residues of trajectories moving through spaces of possibility. The central question is shifted from "What exists?" to "What remains reachable, and under what conditions?"
@@ -314,6 +328,22 @@ A synthesis of computational mechanics, predictive inference, and reachability t
 * [Notes](https://standardgalactic.github.io/playfloor/coordinates/Waves_of_Collapse.pdf)
 
 [Audio Overviews](https://standardgalactic.github.io/playfloor/coordinates/)
+
+[The Eight-Letter Keyboard](https://standardgalactic.github.io/research-projects/admissibility-lab/eight_letter_keyboard.pdf)
+
+* [The Eight-Letter Motor Phonology](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Eight_Letter_Motor_Phonology.pdf)
+
+[Motor Phonology and Symbolic Reachability](https://standardgalactic.github.io/research-projects/admissibility-lab/motor_phonology.pdf)
+
+* [The Motor Manifold](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Motor_Manifold.pdf)
+
+* [The Reconstruction Imperative](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Reconstruction_Imperative-extended.pdf)
+
+[Continuations Before Objects](https://standardgalactic.github.io/research-projects/admissibility-lab/continuations_before_objects.pdf)
+
+* [Reachability Geometry](https://standardgalactic.github.io/research-projects/admissibility-lab/Reachability_Geometry.pdf)
+
+[Audio Overviews](https://standardgalactic.github.io/research-projects/admissibility-lab/)
 
 # Distinguishability Geometry
 
