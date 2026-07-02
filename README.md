@@ -85,6 +85,16 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Hierarchical Continuation](https://standardgalactic.github.io/robotics/hierarchical_continuation.pdf) — *New*
+
+[The Continuation Geometry of Circuits](https://standardgalactic.github.io/robotics/continuation_geometry_of_circuits.pdf) — *New*
+
+[Audio Overviews](https://standardgalactic.github.io/robotics/) — *New*
+
+[The Geometry of Correction](https://standardgalactic.github.io/antivenom/resources/geometry_of_correction.pdf)
+
+[Plenumhub and Polyxan](https://standardgalactic.github.io/antivenom/resources/plenumhub-polyxan.pdf)
+
 [Collected Works](https://standardgalactic.github.io/alphabet/roadmap/collected-works.pdf) — *Research Program*
 
 [Procedural Generation of Attention](https://standardgalactic.github.io/alphabet/roadmap/procedural-attention.pdf)
@@ -477,11 +487,11 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 
 * [The Geometry of Reachability](https://standardgalactic.github.io/playfloor/working/The_Geometry_of_Reachability.pdf)
 -->
-[Beyond Parentheses](https://standardgalactic.github.io/spherepop/textbook/beyond-parentheses.pdf) — *New*
+[Beyond Parentheses](https://standardgalactic.github.io/spherepop/textbook/beyond-parentheses.pdf) — *Introduction to Spherepop*
 
-[A Historical Foundation for Dependent Type Theory](https://standardgalactic.github.io/spherepop/textbook/dependent-type-theory.pdf) — *New*
+[A Historical Foundation for Dependent Type Theory](https://standardgalactic.github.io/spherepop/textbook/dependent-type-theory.pdf)
 
-[Types as Refusal Structures](https://standardgalactic.github.io/spherepop/textbook/refusal-structures.pdf) — *New*
+[Types as Refusal Structures](https://standardgalactic.github.io/spherepop/textbook/refusal-structures.pdf)
 
 [Programs as Histories](https://standardgalactic.github.io/playfloor/working/programs-as-histories.pdf)
 
@@ -717,6 +727,24 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 * [Why AI Text Feels Deceptively Profound](https://standardgalactic.github.io/alphabet/epistemology/) — *Audio Overview*
 -->
 # Mechanistic Frameworks
+
+[Against the Kitchen Sink](https://standardgalactic.github.io/computation/against_the_kitchen_sink.pdf)
+
+[Collapse Retention](https://standardgalactic.github.io/computation/collapse_retention.pdf)
+
+[Selective Retention and the Geometry of Continuation](https://standardgalactic.github.io/computation/continuation_geometry.pdf)
+
+
+[Correspondents and Residents](https://standardgalactic.github.io/computation/correspondents_and_residents.pdf) — *Incomplete*
+
+
+[Histories Become Operators](https://standardgalactic.github.io/computation/histories-become-operators.pdf)
+
+
+[Diagnostic Coordinates](https://standardgalactic.github.io/computation/diagnostic-coordinates.pdf)
+
+[Continuation Geometry](https://standardgalactic.github.io/computation/continuation_geometry_monograph.pdf)
+
 
 [Constraint, Projection, and Reachability](https://standardgalactic.github.io/cpr-textbook/cpr-textbook.pdf)
 
@@ -1033,6 +1061,22 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 </div>
 
 # Structural Inversion
+
+[Procedural Ontology](https://standardgalactic.github.io/alphabet/example/procedural-ontology.pdf)
+
+[Recursive Continuation](https://standardgalactic.github.io/alphabet/example/recursive-continuation.pdf)
+
+[The Threshold of Deferral](https://standardgalactic.github.io/alphabet/example/threshold-of-deferral.pdf)
+
+[History Before Function](https://standardgalactic.github.io/alphabet/example/history-before-function.pdf)
+
+[The Compression of Expertise](https://standardgalactic.github.io/alphabet/example/compression-of-expertise.pdf)
+
+[Against Eventless Ontology](https://standardgalactic.github.io/alphabet/example/against-eventless-ontology.pdf)
+
+[The Geometry of Boredom](https://standardgalactic.github.io/alphabet/example/geometry-of-boredom.pdf)
+
+[The Ecology of Constraints](https://standardgalactic.github.io/alphabet/example/ecology-of-constraints.pdf)
 <!--
 [Bayesian Photonics](https://standardgalactic.github.io/research-projects/photonics/bayesian-photonics.pdf)
 
@@ -1347,6 +1391,8 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 ## **Impossible Physics**
 
+[Radiative Switch Computation](https://github.com/standardgalactic/computation/blob/main/radiative-switch/README.md)
+
 [Flash Reluctance Engine](https://standardgalactic.github.io/research-projects/paper/flash_reluctance_engine.pdf)
 
 * [Simulator](https://standardgalactic.github.io/research-projects/paper/flash_reluctance_simulator.html)
@@ -1359,7 +1405,7 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 <!--
 [Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
--->
+
 [Magnetic Fluidic Computing](https://standardgalactic.github.io/library/computing/magnetic-fluidic-computing.pdf)
 
 * [Notes](https://standardgalactic.github.io/library/computing/Magnetic_Fluidic_Computing.pdf)
@@ -1367,7 +1413,7 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 * [Graphic Novel](https://standardgalactic.github.io/library/computing/magnetic-comic.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/library/computing/)
-
+-->
 **Geometric Bayesianism with Sparse Heuristics**
 
 In biological systems, sparsity emerges as a natural consequence of physiological pressures, including energetic constraints, signal noise, and chemical gradients, obviating the need for explicit computational penalties to enforce minimal network complexity.
