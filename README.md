@@ -85,11 +85,59 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
-[Hierarchical Continuation](https://standardgalactic.github.io/robotics/hierarchical_continuation.pdf) — *New*
+[Restorability Boundaries](https://standardgalactic.github.io/calculus/experiments/restorability-boundaries.pdf)
 
-[The Continuation Geometry of Circuits](https://standardgalactic.github.io/robotics/continuation_geometry_of_circuits.pdf) — *New*
+[Trigonometry and Transformation](https://standardgalactic.github.io/calculus/experiments/trigonometry-and-transformation.pdf)
 
-[Audio Overviews](https://standardgalactic.github.io/robotics/) — *New*
+[Orthodromic Infrastructure](https://standardgalactic.github.io/calculus/experiments/orthodromic-infrastructure.pdf)
+
+Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
+
+* [Prediction Before Interpretation](https://standardgalactic.github.io/calculus/experiments/prediction-before-interpretation.pdf)
+
+* [Empirical Paper](https://standardgalactic.github.io/calculus/experiments/empirical-paper.pdf)
+
+[Repair, Not Reconstruction](https://standardgalactic.github.io/calculus/processing/repair-not-reconstruction.pdf)
+
+[Restoration Before Explanation](https://standardgalactic.github.io/calculus/processing/restoration-before-explanation.pdf)
+
+[Boundaries Are Computational Objects](https://standardgalactic.github.io/calculus/processing/boundaries-computational-objects.pdf)
+
+[The Compression Fallacy](https://standardgalactic.github.io/calculus/processing/compression-fallacy.pdf)
+
+[The Economics of Irreversibility](https://standardgalactic.github.io/calculus/processing/economics-of-irreversibility.pdf)
+
+[Admissibility Certificates](https://standardgalactic.github.io/calculus/processing/admissibility-certificates.pdf)
+
+[Parenthetical Asides](https://standardgalactic.github.io/calculus/processing/parenthetical-asides.pdf)
+
+[From Wave Dynamics to Continuation Dynamics](https://standardgalactic.github.io/research-projects/history/wave_to_continuation_dynamics.pdf)
+
+* [Retro Comic Infographic Summary](https://standardgalactic.github.io/research-projects/history/continuation-dynamics-comic.pdf)
+
+[What Survives Reconstruction](https://standardgalactic.github.io/alphabet/pipeline/what-survives-reconstruction.pdf)
+
+[Pipeline Specification](https://standardgalactic.github.io/alphabet/pipeline/pipeline_specification.pdf)
+
+[Retention Before Retrieval](https://standardgalactic.github.io/alphabet/pipeline/retention_before_retrieval.pdf)
+
+[Merger Coordinate Legibility](https://standardgalactic.github.io/alphabet/pipeline/merger_coordinate_legibility.pdf)
+
+[Continuation Operators](https://standardgalactic.github.io/alphabet/pipeline/continuation_operators.pdf)
+
+[History-Preserving and History-Erasing Operators](https://standardgalactic.github.io/alphabet/pipeline/history_preserving_erasing.pdf)
+
+[Publication as Projection](https://standardgalactic.github.io/alphabet/pipeline/publication_as_projection.pdf)
+
+[Terminal and Traversal Dependent Texts](https://standardgalactic.github.io/research-projects/history/terminal-and-traversal.pdf)
+
+[Repair Categories](https://standardgalactic.github.io/research-projects/history/repair-categories.pdf)
+
+[Hierarchical Continuation](https://standardgalactic.github.io/robotics/hierarchical_continuation.pdf)
+
+[The Continuation Geometry of Circuits](https://standardgalactic.github.io/robotics/continuation_geometry_of_circuits.pdf)
+
+[Audio Overviews](https://standardgalactic.github.io/robotics/)
 
 [The Geometry of Correction](https://standardgalactic.github.io/antivenom/resources/geometry_of_correction.pdf)
 
@@ -126,9 +174,7 @@ Taken together, these projects treat the user's actions as part of the algorithm
 * [The Admissibility Manifold](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/The_Admissibility_Manifold-notes.pdf) — *Notes*
 -->
 
-[The Autonomy of Refusal](https://standardgalactic.github.io/research-projects/textbook/autonomy-of-refusal.pdf)
-
-* [The Geometry of Exclusion](https://standardgalactic.github.io/research-projects/textbook/The_Geometry_of_Exclusion.pdf)
+[The Autonomy of Refusal](https://standardgalactic.github.io/research-projects/textbook/autonomy-of-refusal.pdf) — *New Revision*
 
 [Audio Overviews](https://standardgalactic.github.io/research-projects/textbook/)
 
@@ -205,9 +251,8 @@ A synthesis of computational mechanics, predictive inference, and reachability t
 -->
 * [Graphic Novel](https://standardgalactic.github.io/calculus/baseline/admissibility-comic.pdf)
 
-[Flow Computing](https://standardgalactic.github.io/calculus/baseline/computing_as_flow.pdf)
+[Computing as Flow](https://standardgalactic.github.io/calculus/baseline/computing_as_flow.pdf) — *New Revision*
 
-* [Computing as Flow](https://standardgalactic.github.io/calculus/baseline/Computing_as_Flow-notes.pdf)
 <!--j
 [Civilization’s Undo Stack](https://standardgalactic.github.io/calculus/baseline/markov_boundaries.pdf)
 
@@ -641,7 +686,7 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 
 [The Assumption of Surplus](https://standardgalactic.github.io/antivenom/The%20Assumption%20of%20Surplus.pdf)
 -->
-[Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game.pdf)
+[Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game%20-%20v2.pdf)
 
 [Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
 
@@ -727,6 +772,14 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 * [Why AI Text Feels Deceptively Profound](https://standardgalactic.github.io/alphabet/epistemology/) — *Audio Overview*
 -->
 # Mechanistic Frameworks
+
+[Haplopraxis — Design Notes](https://standardgalactic.github.io/haplopraxis/haplopraxis-design-document.pdf)
+
+[Universal Resource and Fabrication Network](https://standardgalactic.github.io/haplopraxis/urfn-ccfa-constitutional-spec.pdf)
+
+[Developmental Opacity](https://standardgalactic.github.io/haplopraxis/developmental-opacity.pdf)
+
+[Operator Ecology](https://standardgalactic.github.io/kitbash/workspace/operator-ecology.pdf)
 
 [Against the Kitchen Sink](https://standardgalactic.github.io/computation/against_the_kitchen_sink.pdf)
 
@@ -1178,6 +1231,12 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 # Just for Fun
 
+[Consistency Constraints and the Geometry of Learned Representations](https://standardgalactic.github.io/alphabet/soup/consistency-constraints.pdf)
+
+[Contradiction and Continuation](https://standardgalactic.github.io/alphabet/soup/contradiction-and-continuation.pdf)
+
+[Nothing Original Need Survive](https://standardgalactic.github.io/alphabet/soup/nothing-original.pdf)
+
 [The Geometry of Control](https://standardgalactic.github.io/kitbash/paperbot/geometry-of-control.pdf)
 
 * [Graphic Novel](https://standardgalactic.github.io/kitbash/paperbot/geometry-of-control-comic.pdf)
@@ -1304,10 +1363,6 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 </div>
 
 ## Psychonomics
-
-[Cursive Handwriting](https://standardgalactic.github.io/kitbash/cursive-notes.pdf) — *Large File - 41 Mb*
-
-[Infodump Notes](https://standardgalactic.github.io/kitbash/infodump-notes.pdf) — *Large File - 74 Mb*
 
 [Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) 
 
