@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Letter Invaders</title>
+    <link rel="stylesheet" href="letter-invaders.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hud">
+        <h1>LETTER INVADERS</h1>
+        <div class="stats">
+          <span>Score: <strong id="score">0</strong></span>
+          <span>Lives: <strong id="lives">5</strong></span>
+          <span>Wave: <strong id="wave">1</strong></span>
+          <span>Accuracy: <strong id="accuracy">100%</strong></span>
+        </div>
+      </header>
+
+      <section id="arena" aria-label="Typing arena"></section>
+
+      <footer class="status">
+        <p id="prompt">Type the falling letters. Enter starts a new game.</p>
+      </footer>
+    </main>
+
+    <script src="letter-invaders.js"></script>
+  </body>
+</html>

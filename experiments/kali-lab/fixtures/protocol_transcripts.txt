@@ -1,0 +1,4 @@
+# synthetic localhost transcript
+CLIENT_HELLO
+KEY_SHARE
+VERIFY_OK
