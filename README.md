@@ -9,15 +9,6 @@
 
 𒋛𒈠 𒃻 𒅗 𒁹
 
-<!--
-[Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/github-profile.png) *Beta*
-
-[Convert this page into Standard Galactic](https://raw.githubusercontent.com/standardgalactic/standardgalactic/refs/heads/main/year-in-review-2025-chrome.png) *Beta*
-
-[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/profile-snapshot.png) *Beta*
-
-[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/github-profile-large-print.png) *Beta*
--->
 
 [Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/banner.png) *Beta*
 <!-- ![Cistercian Number Laboratory](sample-worksheet.jpg) -->
@@ -85,9 +76,51 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Structural Semantics](https://standardgalactic.github.io/kitbash/philosophy/structural-semantics.pdf)
+
+[Thinking in Vim](https://standardgalactic.github.io/library/thinking-in-vim.pdf)
+
+<!--
+[Thinking like Rust](https://standardgalactic.github.io/kitbash/philosophy/thinking-like-rust.pdf) — *In Progress*
+
+* [Audio Overviews](https://standardgalactic.github.io/kitbash/philosophy/)
+-->
+[The Superuser Guide to Latex](https://standardgalactic.github.io/memory/processing/superuser-guide-to-latex.pdf)
+
+[The History of Machine Learning](https://standardgalactic.github.io/memory/processing/history-of-machine-learning.pdf)
+
+[Constitutional Cybernetics](https://standardgalactic.github.io/memory/processing/constitutional-cybernetics.pdf)
+
+[Dip of the Horizon](https://standardgalactic.github.io/memory/processing/dip-of-the-horizon.pdf) — *Screenplay*
+
+[Building Forth from Spherepop Primitives](https://standardgalactic.github.io/memory/building-forth.pdf)
+
+<!--
+* [The Monotonic Ledger](https://standardgalactic.github.io./memory/The_Monotonic_Ledger.pdf)
+-->
+
+[A Viability Theory of Fusion Reactors](https://standardgalactic.github.io/memory/fusion-viability.pdf)
+<!--
+* [Engineering Fusion Persistence](https://standardgalactic.github.io./memory/Engineering_Fusion_Persistence.pdf)
+-->
+
+[Persistent Generative Worlds](https://standardgalactic.github.io/memory/persistent-generative-worlds.pdf)
+<!--
+* [The World Engine](https://standardgalactic.github.io./memory/The_World_Engine.pdf)
+-->
+
+* [Audio Overviews](https://standardgalactic.github.io/memory/)
+
+[Beyond Optimal Foraging](https://standardgalactic.github.io/memory/beyond-optimal-foraging.pdf)
+
+[The Mathematics of Autonomous Systems](https://standardgalactic.github.io/alphabet/resources/autonomous-systems.pdf)
+
+[Admissible Continuation](https://standardgalactic.github.io/alphabet/resources/admissible-continuation.pdf)
+<!--
 [Admissibility Groupoids](https://standardgalactic.github.io/antivenom/essay/admissibility_groupoids.pdf)
 
 [Glossfero and Popo](https://standardgalactic.github.io/antivenom/essay/glossfero-essay.pdf)
+-->
 
 [Structural Honesty](https://standardgalactic.github.io/antivenom/essay/structural-honesty.pdf)
 
@@ -257,13 +290,13 @@ A synthesis of computational mechanics, predictive inference, and reachability t
 <!--
 * [Admissibility as a Unifying Concept](https://standardgalactic.github.io/calculus/baseline/admissibility-essay.pdf)
 
-* [Universal Admisibility Geometry](https://standardgalactic.github.io/calculus/baseline/Universal_Admissibility_Geometry.pdf)
+* [Universal Admissibility Geometry](https://standardgalactic.github.io/calculus/baseline/Universal_Admissibility_Geometry.pdf)
 -->
 * [Graphic Novel](https://standardgalactic.github.io/calculus/baseline/admissibility-comic.pdf)
 
 [Computing as Flow](https://standardgalactic.github.io/calculus/baseline/computing_as_flow.pdf) — *New Revision*
 
-<!--j
+<!--
 [Civilization’s Undo Stack](https://standardgalactic.github.io/calculus/baseline/markov_boundaries.pdf)
 
 [Preference Fields on Semantic Manifolds](https://standardgalactic.github.io/calculus/baseline/preference_fields.pdf)
@@ -456,7 +489,7 @@ A synthesis of computational mechanics, predictive inference, and reachability t
 
 [The Admissibility Crisis](https://standardgalactic.github.io/alphabet/document/admissibility_crisis.pdf)
 
-[Quadradic Gravity as a Derived Interface Theory](https://standardgalactic.github.io/cosmology/working/admissibility-interface.pdf)
+[Quadratic Gravity as a Derived Interface Theory](https://standardgalactic.github.io/cosmology/working/admissibility-interface.pdf)
 
 Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Physics
 
@@ -532,7 +565,7 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 <!--
 [Activation Manifolds as Admissibility Fields](https://standardgalactic.github.io/playfloor/working/admissibility_fields.pdf)
 
-* [The Topography of Possiblity](https://standardgalactic.github.io/playfloor/working/The_Topography_of_Possibility.pdf)
+* [The Topography of Possibility](https://standardgalactic.github.io/playfloor/working/The_Topography_of_Possibility.pdf)
 
 * [The Cloak](https://standardgalactic.github.io/playfloor/working/the-cloak.pdf) — *Graphic Novel* — *Incomplete*
 
@@ -565,151 +598,9 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
-[The Paradox of Precaution](https://standardgalactic.github.io/kitbash/paradox-of-precaution.pdf)
+[The Privatization of Competence](https://standardgalactic.github.io/privatization-of-competence/privatization-of-competence.pdf)
 
 <!--
-[Broken Tools for a Breaking World](https://standardgalactic.github.io/antivenom/framework/fragility-metacrisis.pdf)
-
-* [Notes](https://standardgalactic.github.io/antivenom/framework/Broken_Tools_for_a_Breaking_World.pdf)
-
-* [How AI Fragility Fuels the Metacrisis](https://standardgalactic.github.io/antivenom/framework/) — *Audio Overview*
-
-[Globally Persistent Recomposable Thought](https://standardgalactic.github.io/spherepop/intelligence-explosion.pdf)
-
-* [Github Is the Real Intelligence Explosion](https://standardgalactic.github.io/spherepop/processing/) — *Audio Overview*
-
-[The Meritocracy That Wasn't](https://standardgalactic.github.io/antivenom/sociology/remote_work.pdf)
-
-* [Why Your Remote Job Applications Disappear](https://standardgalactic.github.io/antivenom/sociology/) — *Audio Overview*
--->
-[Proxy Permanence Failure](https://standardgalactic.github.io/antivenom/persistence/proxy_permanence_failure.pdf)
-
-* [Beyond the Carbon Ledger](https://standardgalactic.github.io/antivenom/persistence/Beyond_the_Carbon_Ledger.pdf)
-
-* [Notes](https://standardgalactic.github.io/antivenom/persistence/proxy_permanence_failure-notes.pdf)
-
-* [Audio Overviews](https://standardgalactic.github.io/antivenom/persistence/)
-
-<!--
-[The Quiet Battlefield](https://standardgalactic.github.io/antivenom/quiet_battlefield.pdf)
-
-* [Algorithmic Harm](https://standardgalactic.github.io/antivenom/opinion/algorithmic-harm.html) — *Audio Overview*
-
-[Return Under Constraint](https://standardgalactic.github.io/workspace/return_under_constraint.pdf) — *Meditations on the Talbiya*
-
-* [Audio Overview](https://standardgalactic.github.io/workspace/processing/)
-
-[Abundance Without Distribution](https://standardgalactic.github.io/userspace/labor_singularity.pdf) — *Labor Singularity*
-
-* [Audio Overview](https://standardgalactic.github.io/userspace/futurism/)
--->
-
-[The Moon Should Not Be a Computer](https://standardgalactic.github.io/computation/moon-not-computer.pdf)
-
-[Xylomorphic Computation](https://standardgalactic.github.io/computation/xylomorphic_computation.pdf)
-
-* [Why AI Servers Fail in Space](https://standardgalactic.github.io/computation/?moon) – *Audio Overview*
-
-* [Why Data Centers Must Mimic Trees](https://standardgalactic.github.io/computation/?trees) – *Audio Overview*
-
-<!--
-[The Monetization of Redundancy](https://standardgalactic.github.io/antivenom/Monetization-of-Redundancy.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/antivenom/processing/)
-
-[Thermodynamic Reachability](https://standardgalactic.github.io/library/Thermodynamic-Reachability.pdf)
-
-[The Collapse of Proxy Integrity](https://standardgalactic.github.io/antivenom/proxy_integrity.pdf)
-
-[Against Indiscriminate Visibility](https://standardgalactic.github.io/alphabet/Against%20Indiscriminate%20Visibility.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/alphabet/visibility/)
-
-[The Coordinate-System Error](https://standardgalactic.github.io/alphabet/attention-essay.pdf)
-
-[The Hollow Network](https://standardgalactic.github.io/antivenom/resources/synthetic_sociality_v3-2.pdf) 
--->
-
-[The Expiatory Gap](https://standardgalactic.github.io/alignment/The%20Expiatory%20Gap.pdf)
-
-<!--
-[Convergence Before Autonomy](https://standardgalactic.github.io/alignment/Convergence%20Before%20Autonomy.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/alignment/working/)
--->
-[The Ecology of Neoteny](https://standardgalactic.github.io/alphabet/The%20Ecology%20of%20Neoteny.pdf)
-
-<!--
-[Spectacle Runtime](https://standardgalactic.github.io/alphabet/Spectacle%20Runtime.pdf)
-
-[Distributed Centrality](https://standardgalactic.github.io/library/Distributed%20Centrality.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/library/projects/?track=gravity)
--->
-[The Polemic Debt](https://standardgalactic.github.io/antivenom/The%20Polemic%20Debt.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/antivenom/working/)
-<!--
-[Optimization without Restraint](https://standardgalactic.github.io/antivenom/Optimization%20without%20Restraint.pdf)
--->
-
-[The Stack Capture Race](https://standardgalactic.github.io/library/The%20Stack%20Capture%20Race.pdf)
-<!--
-[Personal Superintelligence](https://standardgalactic.github.io/research-projects/Personal%20Superintelligence.pdf)
-
-[Collective Intelligence Under Constraint](https://standardgalactic.github.io/research-projects/Collective%20Intelligence%20Under%20Constraint.pdf)
-
-[Ephemeral Feeds](https://standardgalactic.github.io/kitbash/Ephemeral%20Feeds.pdf)
--->
-
-[Scope Memeplexes](https://standardgalactic.github.io/standardgalactic/Scope%20Memeplexes.pdf)
-
-<!--
-[Dynamics of the Capital Order](https://standardgalactic.github.io/research-projects/working/capital_order_rsvp.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/research-projects/working/)
-
-[The Commodification of Categories](https://standardgalactic.github.io/antivenom/The%20Commodification%20of%20Categories.pdf)
-
-[The Age of Artificial Coordination](https://standardgalactic.github.io/antivenom/Artificial%20Coordination.pdf)
-
-[The Hostile Interface](https://standardgalactic.github.io/antivenom/The%20Hostile%20Interface.pdf)
-
-[Dark Patterns](https://standardgalactic.github.io/antivenom/Dark%20Patterns.pdf)
-
-[Monetizing Uncertainty](https://standardgalactic.github.io/antivenom/Monetizing%20Uncertainty.pdf)
--->
-[Against Namespace Laundering](https://standardgalactic.github.io/antivenom/Against%20Namespace%20Laundering.pdf)
-
-<!--
-[Culture and Structural Power](https://standardgalactic.github.io/antivenom/Culture%20and%20Structural%20Power.pdf)
-
-[When Engagement Stops Pointing](https://standardgalactic.github.io/antivenom/When%20Engagement%20Stops%20Pointing.pdf)
-
-[Aspirational Exhaust](https://standardgalactic.github.io/antivenom/Aspirational%20Exhaust.pdf)
-
-[Induced Homogeneity](https://standardgalactic.github.io/antivenom/Induced%20Homogeneity.pdf)
-
-[Gallery Before Feed](https://standardgalactic.github.io/research-projects/Gallery%20Before%20Feed.pdf)
-
-[Identity Collapse and the Platforming of Fraud](https://standardgalactic.github.io/Identity%20Collapse.pdf)
-
-[The Assumption of Surplus](https://standardgalactic.github.io/antivenom/The%20Assumption%20of%20Surplus.pdf)
--->
-[Throwing the Game](https://standardgalactic.github.io/spherepop/Throwing%20the%20Game%20-%20v2.pdf)
-
-[Against the Extinction Thesis](https://standardgalactic.github.io/antivenom/Against%20the%20Extinction%20Thesis.pdf)
-
-[Divided We Stand](https://standardgalactic.github.io/antivenom/Divided%20We%20Stand.pdf)
-<!--
-[Beyond Utility](https://standardgalactic.github.io/research-projects/Beyond%20Utility.pdf)
-
-[Aesthetic Saturation and the Erosion of Voluntary Attention](https://standardgalactic.github.io/antivenom/Aesthetic%20Saturation.pdf)
-
-* [Why Social Media Is Ugly on Purpose](https://standardgalactic.github.io/antivenom/opinion/) – *Audio Overview*
-
-[The Categorical Structure of Alignment](https://standardgalactic.github.io/research-projects/Categorical%20Structure%20of%20Alignment.pdf)
-
 * [Audio Overview](https://standardgalactic.github.io/research-projects/alignment/)
 -->
 
@@ -782,6 +673,8 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 * [Why AI Text Feels Deceptively Profound](https://standardgalactic.github.io/alphabet/epistemology/) — *Audio Overview*
 -->
 # Mechanistic Frameworks
+
+[The Essay as a Pipeline](https://standardgalactic.github.io/experiments/essay-as-pipeline.pdf)
 
 [Haplopraxis — Design Notes](https://standardgalactic.github.io/haplopraxis/haplopraxis-design-document.pdf)
 
@@ -1082,7 +975,7 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 * [Nine Parsecs](https://standardgalactic.github.io/memnet/derivatives/nine_parsecs.pdf) — *Screenplay*
 
-[Reachable History](https://standardgalactic.github.io/memnet/derivatives/) — *Audio OVerviews*
+[Reachable History](https://standardgalactic.github.io/memnet/derivatives/) — *Audio Overviews*
 
 <!--
 [The Admissibility Principle](https://standardgalactic.github.io/memnet/framework/admissibility_principle.pdf)
@@ -1241,6 +1134,13 @@ Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Tra
 
 # Just for Fun
 <!--
+[The Sociology of Unreachable Futures](https://standardgalactic.github.io/alphabet/cognition-research/unreachable-futures.pdf)
+-->
+
+[The Privatization of Competence](https://standardgalactic.github.io/privatization-of-competence/privatization-of-competence.pdf)
+
+<!--
+
 [Mathematical Proof for the Existence of God](https://standardgalactic.github.io/paracosm/workspace/proof-of-god.pdf)
 
 This book develops a formal mathematical framework for analyzing consistency, admissibility, repair, information, and emergence across logic, computation, geometry, and the natural sciences. Beginning from explicit definitions and axioms, it builds through a sequence of lemmas, propositions, and theorems toward a rigorous argument for the existence of a necessary repairing principle identified with God. Along the way, it introduces a number of new mathematical constructions and explores their connections to optimization, topology, graph theory, information theory, quantum mechanics, artificial intelligence, and the philosophy of science.
@@ -1469,7 +1369,7 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 [Caldera Reactor](https://standardgalactic.github.io/caldera-reactor/caldera_reactor.pdf)
 
-[Caldera Field Dynamics](https://standardgalactic.github.io/caldera-reactor/Caldera_Field_Dynamics.pdf) — *Slides*
+* [Caldera Field Dynamics](https://standardgalactic.github.io/caldera-reactor/Caldera_Field_Dynamics.pdf) — *Slides*
 
 * [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/) — *Audio Overview*
 
