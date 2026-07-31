@@ -1,0 +1,93 @@
+.
+├── README.md
+├── brick-toss
+│   ├── README.md
+│   ├── brick-toss.css
+│   ├── brick-toss.js
+│   └── index.html
+├── dos-ops-simulator
+│   ├── README.md
+│   ├── dos-ops-simulator.css
+│   ├── dos-ops-simulator.js
+│   └── index.html
+├── file-list.txt
+├── kali-lab
+│   ├── LAB_NOTES.md
+│   ├── README.md
+│   ├── THREAT_MODEL.md
+│   ├── docs
+│   │   └── STEGO_GUIDE.md
+│   ├── fixtures
+│   │   ├── captures
+│   │   │   ├── README.md
+│   │   │   ├── anomalous-mix.pcapng
+│   │   │   ├── imports
+│   │   │   │   └── README.md
+│   │   │   ├── mixed-legit-unusual.pcap
+│   │   │   └── normal-mix.pcap
+│   │   ├── challenge_vectors.json
+│   │   ├── corrupted_envelopes.json
+│   │   ├── malformed_keys.json
+│   │   └── protocol_transcripts.txt
+│   ├── kali_lab
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── capture_analysis.cpython-312.pyc
+│   │   │   ├── capture_ingest.cpython-312.pyc
+│   │   │   ├── capture_models.cpython-312.pyc
+│   │   │   ├── capture_normalize.cpython-312.pyc
+│   │   │   ├── cli.cpython-312.pyc
+│   │   │   ├── crypto_toys.cpython-312.pyc
+│   │   │   ├── flow_reconstruct.cpython-312.pyc
+│   │   │   ├── forensic_lab.cpython-312.pyc
+│   │   │   ├── protocol_lab.cpython-312.pyc
+│   │   │   ├── puzzle_states.cpython-312.pyc
+│   │   │   ├── session_fabric.cpython-312.pyc
+│   │   │   ├── stego_kit.cpython-312.pyc
+│   │   │   └── transport_adapters.cpython-312.pyc
+│   │   ├── capture_analysis.py
+│   │   ├── capture_ingest.py
+│   │   ├── capture_models.py
+│   │   ├── capture_normalize.py
+│   │   ├── cli.py
+│   │   ├── crypto_toys.py
+│   │   ├── flow_reconstruct.py
+│   │   ├── forensic_lab.py
+│   │   ├── protocol_lab.py
+│   │   ├── puzzle_states.py
+│   │   ├── session_fabric.py
+│   │   ├── stego_kit.py
+│   │   └── transport_adapters.py
+│   ├── requirements.txt
+│   └── tests
+│       ├── test_capture_analysis.py
+│       ├── test_capture_ingest.py
+│       ├── test_crypto_toys.py
+│       ├── test_local_network_boundaries.py
+│       ├── test_protocol_lab.py
+│       ├── test_puzzle_states.py
+│       ├── test_session_fabric.py
+│       └── test_stego_kit.py
+├── letter-invaders
+│   ├── README.md
+│   ├── index.html
+│   ├── letter-invaders.css
+│   └── letter-invaders.js
+├── python
+│   ├── README.md
+│   ├── experiment.py
+│   └── requirements.txt
+├── rust
+│   ├── Cargo.lock
+│   ├── Cargo.toml
+│   ├── README.md
+│   └── src
+│       └── main.rs
+└── terminal-simulator
+    ├── README.md
+    ├── index.html
+    ├── terminal-simulator.css
+    └── terminal-simulator.js
+
+16 directories, 75 files

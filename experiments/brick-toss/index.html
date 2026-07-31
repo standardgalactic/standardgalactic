@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brick Toss</title>
+  <link rel="stylesheet" href="brick-toss.css" />
+</head>
+<body>
+  <main class="screen">
+    <header class="title">
+      <h1>B R I C K&nbsp;&nbsp;T O S S</h1>
+    </header>
+
+    <section class="layout">
+      <canvas id="game" width="900" height="620" aria-label="Brick Toss chamber"></canvas>
+
+      <aside class="hud">
+        <div class="hud-row"><span>SCORE</span><strong id="score">0000000</strong></div>
+        <div class="hud-row"><span>LEVEL</span><strong id="level">01</strong></div>
+        <div class="hud-row"><span>FLOORS</span><strong id="floors">00</strong></div>
+
+        <h2>NEXT BRICK</h2>
+        <canvas id="next" width="180" height="180" aria-label="Next brick preview"></canvas>
+
+        <div class="legend">
+          <p>MOVE &nbsp; ARROWS</p>
+          <p>ROTATE &nbsp; Q W E</p>
+          <p>DROP &nbsp; ↓</p>
+          <p>TOSS &nbsp; SPACE</p>
+          <p>PAUSE &nbsp; P</p>
+          <p>RESTART &nbsp; R</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <p id="status">Align a hovering brick, then toss it.</p>
+    </footer>
+  </main>
+
+  <script src="brick-toss.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hollywood Terminal Simulator</title>
+    <link rel="stylesheet" href="terminal-simulator.css" />
+  </head>
+  <body>
+    <main class="terminal-shell">
+      <header class="terminal-header">
+        <h1>HOLLYWOOD TERMINAL SIMULATOR</h1>
+        <div class="status-lights" aria-hidden="true">
+          <span class="dot red"></span>
+          <span class="dot amber"></span>
+          <span class="dot green"></span>
+        </div>
+      </header>
+
+      <section id="terminal" class="terminal" aria-live="polite"></section>
+
+      <form id="command-form" class="command-row" autocomplete="off">
+        <label for="command-input">operator@hacking-tools:~$</label>
+        <input id="command-input" name="command" type="text" spellcheck="false" />
+      </form>
+    </main>
+
+    <script src="terminal-simulator.js"></script>
+  </body>
+</html>
