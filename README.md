@@ -78,6 +78,37 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Distinction Holonomy](https://standardgalactic.github.io/research-projects/unsorted/distinction-holonomy.pdf)
+
+<!--
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Distinction_Holonomy.pdf)
+-->
+[The Epistemology of Repair](https://standardgalactic.github.io/research-projects/unsorted/epistemology-of-repair.pdf)
+
+<!--
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Epistemic_Repair.pdf)
+-->
+[Sparse Recursion for Holographic Steganography](https://standardgalactic.github.io/research-projects/unsorted/sparse-recursive-holographic-steganography.pdf)
+
+<!--
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Sparse_Recursion_Is_All_You_Need.pdf)
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Sparse_Recursive_Holographic_Steganography.pdf)
+-->
+[Borrowed Intuition](https://standardgalactic.github.io/laboratory/borrowed-intuition.pdf)
+
+<!--
+* [Presentation](https://standardgalactic.github.io/laboratory/Borrowed_Intuition.pdf)
+-->
+[Address Before Operator](https://standardgalactic.github.io/laboratory/address-before-operator.pdf)
+
+<!--
+* [Visual Presentation](https://standardgalactic.github.io/laboratory/Interaction_Residue.pdf)
+-->
+[Deployment-Native Ternary Learning](https://standardgalactic.github.io/laboratory/deployment_native_ternary_learning.pdf)
+
+<!--
+* [Visual Architecture](https://standardgalactic.github.io/laboratory/Verifiable_ML_Deployment_Architecture.pdf)
+-->
 [Hall of Monitors](https://standardgalactic.github.io/cliodynamics/hall-of-monitors.pdf)
 
 [Repair Preserve Difference](https://github.com/standardgalactic/repair-preserves-difference) — *Project*
