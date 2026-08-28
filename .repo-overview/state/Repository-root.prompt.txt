@@ -1,0 +1,1042 @@
+You are surveying one area of a heterogeneous research and creative repository.
+Write a grounded Markdown briefing titled "# Repository root". Rely only on the supplied
+file excerpts. Distinguish explicit evidence from inference. Explain the area's
+purpose, principal documents or artifacts, recurring concepts, implementation
+state, relationships among files, apparent unfinished work, duplication or
+organizational problems, and the most useful next actions. Mention filenames as
+evidence. Do not invent claims to fill missing context. Keep the result between
+500 and 1,200 words.
+
+Repository excerpts follow:
+
+===== FILE: Scratchpad.md =====
+This is a regular paragraph.
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+This is another regular paragraph.
+
+<table>
+    <tr>
+         <tr>
+        <td>Foo</td>
+                     </tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+<ol>
+<li>
+<p>A paragraph
+with two lines.</p>
+<pre><code>indented code
+</code></pre>
+<blockquote>
+<p>A block quote.</p>
+</blockquote>
+</li>
+</ol>
+
+> A quote
+
+This is an H1
+=============
+
+This is an H2
+-------------
+
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+
+
+===== FILE: Random-thoughts.md =====
+Raw text of Haskell considerations from user:
+
+https://github.com/dzchoi
+
+Skip to content
+dzchoi
+/
+Haskell-Considerations
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Home
+Jump to bottom
+dzchoi edited this page on 25 Jan · 107 revisions
+Haskell-Insights
+Why function application is left-associative
+In a sense, Haskell is similar to the FORTH language: all 'words' are executed in the order of presence (left-to-right), but they may be:
+
+just a value (if it stands alone) or
+a single-argument function (if it is accompanied by another word) that consumes(takes) the next word as its argument unevaluated.
+If a right-associative function application is needed, we can use the lowest precedence and left-binding operator, $, which can be well regarded as a left parenthesis and we can also assume the corresponding right parenthesis being all the way down at the end of the line. So,
+
+f a b is interpreted as (f a) b, and
+f $ a b is interpreted as f (a b).
+Haskell vs Lambda Calculus
+Lambda calculus is not a practical language, although it can be simulated under a computer. Lambda calculus is more abstract than Haskell. Everything in lambda calculus is defined as a function (e.g., the number 0 is a synonym for the identity function.)
+That said, there is some heritage in Haskell from lambda caculus, the lazy evaluation. Function application is a matter of parameters substitution rather than evaluation. So, functions in Haskell can be thought as smart macros as in typical imperative languages. That means a function call in Haskell does not trigger the function evaluation and it is just a macro-expansion. That is why the evaluation in Haskell is called lazy (on-demand) as opposed to the strict evaluation.
+Evaluation and execution differ in Haskell
+Evaluation: a look-up of a value or a function application
+
+Evaluation cannot be controlled by a user, but entirely depends on the Haskell compiler.
+Evaluation might be omitted; if Haskell already knows the result from previous run of the same evaluation Haskell may reuse it.
+Evaluation might be done by looking up a table; e.g., referencing trigonometric tables for sine and cosine functions.
+Evaluation does not have a specific order (and might be done even concurrently), unless the case has a predefined rule such as precedence or associativity or the case involves a natural order like a function result being used as an argument for another function.
+Evaluation is done lazily only if it is necessary, that is, only if it is triggered.
+Execution: (monadic) IO actions are evaluated and then executed at runtime
+
+IO actions as well as other values can be created(returned) by the evaluation, but only IO actions are executed at runtime (automatically when the IO actions are returned by main and by nothing else.)
+The main should be defined of type main :: IO t.
+There are other functions that generate IO actions on evaluation, e.g.,
+putStrLn :: String -> IO ()
+getLine :: IO String
+Execution is forced by the runtime, so it is the fundamental trigger to evaluations, which will not be done unless triggered.
+In Haskell, we can't create an IO action from scratch, no matter how hard we try. Also, we can't execute an IO action inside the program. For that we have to return it from main. So an IO action is truly indescribable.
+What is an IO action in a formal perspective?
+IO action is a value of type :: IO a, which is defined as a type synonym (see https://wiki.haskell.org/IO_inside):
+
+type IO a = RealWorld -> (RealWorld, a)
+    -- where RealWorld is a fake type for something that is used like a baton which gets passed
+    -- between all procedures (IO actions) called by 'main' in strict order.
+    -- Actually IO a is defined in GHC.Types as,
+    -- newtype IO a = IO (State# RealWorld -> (# State# RealWorld, a #))
+Thus, IO a is a function and is as normal as a pure function. It can be passed as an argument to a function and returned as a result from a function. But,
+
+It can be evaluated only with a RealWorld and a RealWorld is only given to the main function when our program is about to run. (We call the evaluation of IO action on a RealWorld its execution.) That means, we can execute it only through main.
+The only way to deal with a from IO a is through applying another IO action function (:: a -> IO b) on it with the binding operator (>>=) :: IO a -> (a -> IO b) -> IO b. (The (<-) binding operator, mapM, filterM and something like them are all based on (>>=).)
+Haskell uses the type :: IO a for a function that has a side-effect, because:
+
+Honestly, Haskell knows nothing about whether a function actually has a side-effect or not. But, all runtime library functions having side-effects have been marked with type ::IO a.
+There is no way of making an IO action from scratch (without using foreign import). We can make an IO action only by expanding (and/or composing) other IO actions. Then, the new IO action also comes to have a type ::IO a, since the only manipulators on IO a are (>>) :: IO a -> IO b -> IO b and (>>=) :: IO a -> (a -> IO a) -> IO b, which just builds another IO actions.
+Those IO actions are executed only through calling main.
+Bottom (⊥)
+def: undefined = undefined :: a
+an object(expression) that leads to a runtime error when evaluated
+It would be nearly useless without the lazy evaluation; the strict evaluation would lead to a runtime error immediately at its very existence.
+error :: String -> a can also be used as undefined with an error message being printed to the console.
+By virtue of the laziness, Haskell allows:
+optimized iteration; even if we map something over a list several times and filter it several times, it will only pass over the list once.
+short-circuit evaluation for free (Even in the pure functional programming, the short-circuit evaluation is necessary to avoid some runtime errors such as singleton ls = not (null ls) && null (tail ls).)
+handling of infinite lists (as streams)
+no forward declarations needed
+non-tail recursive functions to evaluate with the same amount of stack space as the recursive ones would do; Assuming take' :: [a] -> Int -> [a] -> [a] is a user-defined, strictly evaluated and tail recursive version of take, with the lazy evaluation, we will get take' [] 3 [1..] == take' (1 : 2 : 3 : []) 0 [4..] and take 3 [1..] == 1 : 2 : 3 : take 0 [4..]. That means, take' stores (and updates) the intermediate 1 : 2 : 3 : [] in an argument on the stack, while take stores (and updates) it in the thunk managed by Haskell internally.
+Nullary functions (functions with no parameters)
+Because of functions having no side-effects, Haskell does not distinguish a nullary function and a (named) constant.
+For example, the constant True is called as a value constructor for the Bool type.
+Like C, Haskell can actually define a function accepting only unit () (say, f () = "hello"). But, it's useless because it acts as nothing but a named constant (f = "hello").
+Polymorphism vs static typing
+There are two kinds of polymorphism in Haskell, the parametric polymorphism and the ad-hoc polymorphism (see https://wiki.haskell.org/Polymorphism). However, this distinction is only for when defining functions, not when calling functions.
+
+For example, the function id :: a -> a is believed to be defined using the parametric polymorphism and the function (+) :: Num a => a -> a -> a is defined using the ad-hoc polymorphism. However, no more distinguished consideration is needed for calling (+) than for calling id, except that (+) should take only arguments of the types in Num typeclass.
+
+However, when calling these functions at all, we have to use very specific types for the arguments with each call, although we can use different types from one call to another. It's because since Haskell is a statically typed language, it has to know all the types before the code is compiled. That said, do not be confused by that these polymorphic functions still can be used for defining other polymorphic functions.
+
+test x y = fromIntegral x + y -- y may be of any type in Num typeclass
+main = do
+    print $ test 2 3               -- will output Int
+    print $ test 2 (3 :: Integer)  -- will output Integer
+    print $ test 2 3.1             -- will output Double
+For example, the Reverse Polish notation calculator in the book, "Learn You a Haskell for Great Good!" is implemented as a function to calculate a given RPN expression and return a result of any numerical type. Note it is using read in it without a type annotation. It returns a polymorphic type a and is polymorphic as such, but is polymorphic in regard to the implementation only. If we want to use it and we want to display its result to screen, we have to choose a specific type for the result before calling it, or the compiler will choose Int by default.
+
+import Data.List (words)
+
+solveRPN :: (Num a, Read a) => String -> a
+solveRPN = head . (foldl foldingFunction []) . words where
+    foldingFunction (x:y:ys) "*" = (x * y):ys
+    foldingFunction (x:y:ys) "+" = (x + y):ys
+    foldingFunction (x:y:ys) "-" = (x - y):ys
+    foldingFunction xs numberString = (read numberString):xs
+
+main :: IO ()
+main = do
+    putStrLn "enter an RPN expression:"
+    expression <- getLine
+    putStrLn $ "= " ++ show(solveRPN expression)
+    main
+
+-- When running,
+-- enter an RPN expression:
+-- 1 2 3 + *
+-- = 5
+-- 1.0 2 3 + *
+-- solveRPN: Prelude.read: no parse
+Seemingly weak typing
+Haskell seems to allow an implicit type conversion; 1 + 2.1 == 3.1.
+But, it's not; (1 :: Int) + 2.1 would lead to a compile-time error.
+This seemingly weak typing comes from that numbers in Haskell are of polymorphic type Num a (that is, of any type in the typeclass Num a) and + is defined on Num a. And the compiler chooses Double for 2.1 and also chooses Double for 1 in accordance with 2.1. (?)
+No serial or parallel bindings in let unlike ML
+ML distinguishes serial bindings and parallel bindings in let.
+(* In SML/NJ *)
+
+let (* serial bindings *)
+    val x = 1
+    val x = x + 1
+in
+    x             (* x = 2 *)
+end;
+
+val x = 1;
+let (* parallel bindings *)
+    val x = x + 1 (* x = 2 *)
+    and y = x + 2 (* y = 3 *)
+in
+    y             (* y = 3 *)
+end
+In Haskell, order of declarations does not matter and bindings occur lazily.
+{- In Haskell -}
+
+let
+    y = x + 1     -- y == 2
+    x = 1
+    -- x = x + 1  -- Error: the same x cannot be defined again
+    z = z + 1     -- It's ok but takes forever to evaluate
+    a = 1 : a     -- a == [1,1,...]
+    fib = 1 : 1 : [ x+y | x <- fib, y <- tail fib ]  -- infinite list of fibonacci sequence
+in
+    y             -- y == 2
+Fibonacci sequence
+-- naive version
+fib1 0 = 0
+fib1 1 = 1
+fib1 n = fib1 (n-2) + fib1 (n-1)
+
+-- using memoization
+{-# LANGUAGE PatternGuards #-}
+fib2' 1 = (0, 1)
+fib2' n | (m, n) <- fib2' (n-1) = (n, m+n)
+fib2 = snd . fib2'
+
+{-# LANGUAGE ViewPatterns -#}
+fib3' 1 = (0, 1)
+fib3' (fib3' . pred -> (m, n)) = (n, m+n)
+fib3 = snd . fib3'
+
+-- as an infinite list
+fib4 = 0 : 1 : [ x+y | (x, y) <- zip fib4 (tail fib4) ]
+
+fib5 @ (_ : fib5') = 0 : 1 : [ x+y | (x, y) <- zip fib5 fib5' ]
+Patterns are not a first-class citizen.
+Patterns are not allowed to be passed as an argument, returned from a function, or bound to a name.
+They are used only in special constructs such as function definition, case-of expression, let binding, and where binding.
+Functions!
+In Haskell, functions are not only passed as arguments to other functions and returned as return values from other functions, but can also be generated on the fly (though they should conform to the types that are known to the compiler), whereas functions in C are given birth by a programmer at the source code and cannot be generated dynamically.
+
+For example, foldl can be defined with foldr by making a function dynamically and gradually:
+
+myFoldl' f acc as = foldr (\a g z -> 
+
+===== FILE: Textfile.md =====
+The modes of Aristotle are unnecessarily restricted.
+
+As we shall have occasion to point out, the reasons for the syllogistic form are psychological, not logical:
+
+The syllogism, made up of the smallest number of propositions (three), each with the smallest number of terms (two), by which any generality of reasoning can be attained, represents the limits of human attention, not logical necessity.
+
+To regard the syllogism as indispensable, or as reasoning *par excellence* (in italics), is the apotheosis of stupidity.
+
+From A Survey Of Symbolic Logic, 1918
+
+
+===== FILE: constraint_trajectory_irreversibility.txt =====
+Constraint, Trajectory, and Irreversibility
+ A Unified Framework Across Language, Computation, and Physics
+
+
+
+                            Flyxion
+
+                      Independent Researcher
+
+
+
+
+                          March 29, 2026
+Flyxion
+
+
+                                        Abstract
+
+     This essay presents a unified theoretical framework whose four invariants —
+     constraint primacy, irreversibility, trajectory-dependence, and projection loss
+     — recur identically across language, computation, artificial intelligence, and
+     physical cosmology. The diversity of domains in which this framework ap-
+     pears is not divergence but projection: each domain instantiates the same un-
+     derlying structure through a different representational lens, and each loses a
+     predictable class of properties in doing so. After establishing the invariants
+     formally and deriving their consequences, the essay surveys how they mani-
+     fest as generative principles across four domain families, with particular atten-
+     tion to the failure modes produced when they are violated — Goodhart drift,
+     identity collapse, instability under compression, and adversarial behavior —
+     and concludes with a methodology for reading systems that are themselves
+     trajectory-based and therefore resist summary.
+
+
+
+Contents
+
+Preface                                                                                   3
+
+1 The Core Problem                                                                       4
+
+2 The Invariants                                                                          6
+  2.1 Constraint Primacy . . . . . . . . . . . . . . . . . . . . . . . . . . . .          6
+  2.2 Irreversibility . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       7
+  2.3 Trajectory-Dependence . . . . . . . . . . . . . . . . . . . . . . . . . .           8
+  2.4 Projection Loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         9
+  2.5 The Invariants as a System . . . . . . . . . . . . . . . . . . . . . . . .         10
+  2.6 Irreducibility of Trajectory Structure . . . . . . . . . . . . . . . . . .         11
+  2.7 Compression Bounds for Trajectory Systems . . . . . . . . . . . . .                12
+
+3 The Generative View                                                                    14
+  3.1 Systems as Constrained Possibility Spaces . . . . . . . . . . . . . . .            14
+  3.2 Interaction as Progressive Elimination . . . . . . . . . . . . . . . . .           15
+  3.3 Computation as History Construction . . . . . . . . . . . . . . . . .              15
+  3.4 Learning as Trajectory Shaping . . . . . . . . . . . . . . . . . . . . .           16
+
+4 Domains as Projections                                                                 18
+  4.1 Language and Symbol Systems . . . . . . . . . . . . . . . . . . . . .              18
+  4.2 Computation and Interaction Design . . . . . . . . . . . . . . . . . .             20
+
+                                            2
+                                                   Constraint, Trajectory, and Irreversibility
+
+
+   4.3 Cognitive and Artificial Intelligence Frameworks . . . . . . . . . . .             22
+   4.4 Physical and Cosmological Models . . . . . . . . . . . . . . . . . . .             24
+
+5 Category-Theoretic Formulation of Trajectory Systems                                    26
+  5.1 The Category of Histories . . . . . . . . . . . . . . . . . . . . . . . .           26
+  5.2 Projection Functors and Non-Faithfulness . . . . . . . . . . . . . . .              27
+  5.3 The Refuse Operator as a Categorical Boundary . . . . . . . . . . .                 27
+
+6 Physical–Computational Correspondence                                                   29
+  6.1 Two Instantiations of the Same Structure . . . . . . . . . . . . . . . .            29
+  6.2 Gravity as Entropic Gradient . . . . . . . . . . . . . . . . . . . . . .            30
+  6.3 Discrete Realization and Loss Bounds . . . . . . . . . . . . . . . . .              30
+
+7 A Minimal Lagrangian for Entropic Flow and Event Accumulation                           33
+  7.1 Configuration Data . . . . . . . . . . . . . . . . . . . . . . . . . . . .          33
+  7.2 Continuous RSVP Lagrangian Density . . . . . . . . . . . . . . . . .                33
+  7.3 Discrete Event Lagrangian . . . . . . . . . . . . . . . . . . . . . . . .           34
+  7.4 Coupling Term Between Fields and Events . . . . . . . . . . . . . .                 35
+  7.5 Euler–Lagrange and Discrete Stationarity Conditions . . . . . . . .                 35
+  7.6 The Refusal Boundary as a Variational Condition . . . . . . . . . . .               36
+  7.7 Interpretation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        36
+
+8 Consistency of the Refuse Operator via Hausdorff Preservation                            38
+  8.1 The Event Manifold . . . . . . . . . . . . . . . . . . . . . . . . . . . .           38
+  8.2 Hausdorff Separation . . . . . . . . . . . . . . . . . . . . . . . . . . .           38
+  8.3 The Refuse Operator . . . . . . . . . . . . . . . . . . . . . . . . . . .            39
+  8.4 Main Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           39
+  8.5 Corollaries and Interpretation . . . . . . . . . . . . . . . . . . . . . .           39
+
+9 Failure Modes Under Reduction                                                           41
+  9.1 State-Collapse and Identity Fragility . . . . . . . . . . . . . . . . . .           41
+  9.2 Proxy Divergence and Goodhart Effects . . . . . . . . . . . . . . . .               42
+  9.3 History Collapse and Instability . . . . . . . . . . . . . . . . . . . . .          43
+  9.4 Over-Compression and Generalization Failure . . . . . . . . . . . .                 43
+
+10 Why the Work Appears Fragmented                                                        45
+
+11 Methodology: How to Read and Engage                                                    47
+
+12 Open Directions                                                                        49
+
+13 Closing Statement                                                                       51
+
+                                           3
+Flyxion
+
+
+A Map of Projects to Invariants       52
+
+B Minimal Glossary                    52
+
+
+
+
+                                  4
+                                                         Constraint, Trajectory, and Irreversibility
+
+
+
+Preface: What This Is (and Is Not)
+
+                 A map is not the territory, but neither is the territory its own
+                 description. What is lost in the map is recoverable only by
+                 walking.
+
+
+
+    This is not a portfolio. It is not a collection of loosely related intellectual exper-
+iments assembled after the fact under a unifying label. It is a single system — one
+whose internal structure is sufficiently rich that it must be expressed across mul-
+tiple domains in order to be expressed at all, and whose unity is therefore visible
+only to a reader willing to move between those domains without collapsing them
+into one another.
+   The reader who approaches this work expecting a linear argument will find
+something stranger: a set of constraints that generate trajectories, trajectories that
+accumulate into histories, and histories whose structure persists even under radical
+changes of medium. Language, computation, physics, and cognition are not the
+subjects of this work so much as they are its projections. Each projection is faithful
+within its own register. Each loses something that the others retain.
+    This creates a methodological demand. No single section of this essay is self-
+sufficient. The formal invariants of Section 2 are necessary to understand what
+Section 4 is claiming when it maps them onto symbolic systems and event calculi.
+The failure modes of Section 5 are not illustrations of an abstract principle but struc-
+tural consequences that become legible only once the invariants are in place. The
+reader is therefore not expected to consume the work sequentially, but to navigate
+it — to recognize which projection they are currently reading and to locate that
+projection within the larger structure.
+    One further preliminary. The apparent fragmentation of the larger research
+program from which this essay emerges — its distribution across formal mono-
+graphs, computational implementations, game prototypes, and theoretical essays
+— is not a feature of disorganization. It is a consequence of the framework itself. A
+theory of irreversibility and trajectory-dependence cannot be adequately expressed
+in a single stable artifact. It must be reconstructed by the reader from its projections,
+exactly as a wave function is reconstructed from its measurements, or a historical
+identity from the paths that generated it.
+    This essay is one projection. It is not the whole.
+
+
+
+                                                5
+Flyxion
+
+
+
+1. The Core Problem
+
+
+Contemporary modeling practice across the sciences, engineering, and the design
+of intelligent systems shares a characteristic error: it treats states as primary and
+processes as derivative. A system is described by where it is, not by how it got
+there. Its future is predicted from its present configuration, not from the struc-
+tured history of transitions that produced that configuration. And its evaluation is
+conducted by measuring scalar quantities — performance metrics, objective func-
+tions, loss values, utility scores — that stand in for the system’s relationship to its
+environment without preserving the structure of that relationship.
+    This error is not merely technical. It is ontological. It assigns the wrong cate-
+gory of entity — static configurations and scalar values — the role that belongs to
+processes, trajectories, and constraint structures. The consequences ramify through
+every domain in which such modeling is applied, and they are predictable. When
+a system’s identity is modeled as its current state, that identity becomes fragile: any
+perturbation that moves the state vector displaces the identity, even if the genera-
+tive process that produced the state is intact. When a system’s behavior is modeled
+as optimization of a scalar objective, the system learns to maximize the proxy at the
+expense of the underlying structure the proxy was intended to represent — a phe-
+nomenon now sufficiently general to constitute a theorem. When a system’s history
+is compressed into a summary statistic, the information discarded by that compres-
+sion generates systematic downstream errors that no amount of fine-tuning of the
+retained representation can recover.
+    These three failure modes — fragility under perturbation, proxy maximization,
+and compression error — are not independent. They are consequences of the same
+underlying mistake: the replacement of trajectory-based, constraint-structured de-
+scriptions by state-based, objective-structured ones.
+     The present framework does not attempt to patch this mistake within the exist-
+ing paradigm. It proposes an alternative foundation, one in which constraints are
+primary, trajectories are the basic objects of analysis, irreversibility is not a defect to
+be managed but a constitutive feature of identity and meaning, and projection loss
+is a formal property to be characterized rather than a nuisance to be minimized.
+    Before developing the framework formally, it is worth noting what makes this
+approach non-trivial. The claim is not merely that process matters as well as state,
+or that history should be taken into account as an additional variable. The claim
+is that the very category of state is a derived, secondary concept — useful, but
+dependent on a prior account of what constraints and transitions are available in
+
+                                            6
+                                         
+
+===== FILE: Scope-Memeplexes.md =====
+## Summary of *“Scope Memeplexes: The Enshittification Crisis as an Interface War”*
+
+This paper reinterprets the degradation of digital platforms—commonly called *enshittification*—not as a result of corporate greed or regulatory failure, but as an **evolutionary phenomenon driven by competition among interface-level cognitive replicators**, termed **scope memeplexes**.
+
+---
+
+## Core Argument
+
+### 1. Scope Memeplexes as Cognitive Organisms
+Digital platforms are seen as macroscopic informational organisms that compete for human **attentional, motor, and semantic bandwidth**. Their interfaces function as reproductive organs, spreading through adoption and reshaping user behavior.
+
+### 2. Interface as Language
+Interfaces are modeled as **symbolic execution environments**—akin to languages—that compete for dominance in human cognitive space. Interaction elements (keystrokes, gestures, clicks) are treated as “interface phonemes” that shape how users think and act.
+
+### 3. Enshittification as Linguistic Monoculture
+Platform degradation arises from **runaway selection** favoring interfaces optimized for **transmissibility and ease of adoption** over **expressivity and semantic richness**. This leads to a collapse in symbolic diversity—a *linguistic monoculture*.
+
+### 4. Motor-First Theory of Language
+Language is fundamentally gestural; speech and writing are compressed abstractions of motor semantics. Interfaces that restrict motor expressivity (e.g., mouse, swipe-based feeds) constrain cognitive agency and lead to **regressive interaction patterns**.
+
+### 5. Evolutionary Mismatch
+Modern interfaces like infinite scrolls and touch gestures **simplify motor ecology** to a single axis of interaction, reducing users to “grazing animals” rather than tool-using primates. This favors short-term engagement over long-term skill accumulation.
+
+---
+
+## Key Concepts
+
+- **Shibboleth Effect**: Interfaces create social and skill barriers through minimal operational distinctions (e.g., Vim vs. GUI editors).
+- **Mouse as Cognitive Parasite**: The mouse externalizes memory into visual search, fragmenting skill and preventing transferable fluency.
+- **Monopolar Foraging**: Swipe-based feeds collapse high-dimensional interaction into a one-dimensional reflex, optimizing for capture rather than agency.
+- **Home Row as Resistance**: Keyboard-centric interaction preserves a high-dimensional motor ecology essential for symbolic thought and compositional action.
+
+---
+
+## Formal Appendices
+
+The paper includes mathematical models of:
+
+- Scope memeplex replication dynamics  
+- Interface phoneme systems and expressive entropy  
+- Kullback–Leibler divergence as a measure of interface fidelity  
+- Motor-channel bandwidth and control dimensionality  
+- Concurrent multimodal input systems (speech + gesture + keyboard)  
+- AI interfaces as competing dialects  
+- Cultural artifacts as executable programs  
+- Functional completeness of minimal interaction alphabets  
+
+---
+
+## Conclusion
+
+The enshittification crisis is reframed as a **failure of ecological governance** in a cognitive biosphere. The solution is not better platforms or stricter regulation, but **ecological intervention** to favor symbiotic interface lineages that amplify human agency rather than consume it.
+
+**In short:** Digital degradation is not a moral failure but an evolutionary one—a tragedy of interface natural selection where the most replicable, not the most expressive, survives.
+
+---
+
+## More Detailed Overview
+
+In *“Scope Memeplexes: The Enshittification Crisis as an Interface War,”* Flyxion argues that the degradation of digital platforms—commonly called *enshittification*—is not primarily caused by corporate greed or managerial failure, but is an **emergent evolutionary phenomenon**. The paper models interfaces as “macroscopic artificial intellects,” or **scope memeplexes**, that compete for survival by colonizing human attentional and motor bandwidth.
+
+---
+
+## Main Arguments
+
+### Interfaces as Organisms
+Platforms are viewed as informational organisms that grow, mutate, and compete within a cognitive ecosystem. Their primary resource is human sensorimotor bandwidth rather than capital.
+
+### The Theory of Scope Memeplexes
+A scope memeplex is a self-propagating interface pattern that restructures which actions are cognitively easy or difficult. They compete through *embodiment*, reshaping user behavior and the very topology of agency.
+
+### Interface Phonemes and Shibboleths
+Every interaction grammar (e.g., clicks, swipes, or Vim commands) establishes a set of minimal operational distinctions termed *interface phonemes*. These distinctions function as *shibboleths*, separating fluent users from novices through embodied competence rather than propositional knowledge.
+
+### The “Parasitic” Mouse
+The paper characterizes the mouse-based interface as a cognitive parasite. It replaces symbolic, compositional thought (typical of keyboard-centric interaction) with continuous spatial targeting, which fragments skill and keeps users in a state of perpetual novicehood.
+
+### Monopolar Foraging
+Modern platforms like TikTok or Instagram reduce user action to a single repetitive gesture (the upward swipe), which the paper describes as a *contraction of human motor ecology*. This *monopolar* grammar returns users to a primitive foraging strategy—scan, approach, consume, repeat—optimized for extraction rather than construction.
+
+---
+
+## Conclusions
+
+### Failure of Ecological Governance
+Enshittification is reframed as a *failure of ecological governance in an emerging cognitive biosphere*. It is the result of unchecked selection pressure that favors **transmissibility** (ease of adoption) over **expressivity** (depth of agency).
+
+### Linguistic Monoculture
+The crisis is a *linguistic monoculture* in which symbolic diversity collapses because interface organisms optimize for short-term capture.
+
+### The Home Row as Resistance
+Defending high-dimensional, keyboard-centric interaction (such as the home row) is framed as an evolutionary stance to preserve human–machine symbiosis against *perceptual capture systems*.
+
+### Need for Intervention
+The paper concludes that the path forward requires *ecological intervention* to protect symbiotic interface lineages that amplify human agency instead of consuming it.
+
+
+
+===== FILE: Clickbait Empire.txt =====
+    Clickbait Empire: Robin Hanson and the Tension Between
+           Intellectual Openness and Media Spectacle
+
+                                                   Flyxion
+
+                                              August 17, 2025
+
+
+Introduction
+In the digital age, public intellectuals navigate a structural tension between speculative provocation and
+pragmatic policy design, shaped by an attention economy that prioritizes spectacle over substance. Robin
+Hanson, an economist known for contrarian thought experiments like “grabby aliens” [Hanson, 2021] and The
+Age of Em [Hanson, 2016], exemplifies this predicament. While Hanson’s public image is that of a cosmic
+provocateur, he insists his most serious contribution is futarchy, a governance model using prediction markets
+to align policies with societal values [Hanson, 2013, Ash and Hanson, 2021]. This essay argues that Hanson is
+trapped in a “Clickbait Empire,” where media incentives amplify sensationalism at the expense of institutional
+reform. By comparing Hanson to intellectual and technical pioneers—Elinor Ostrom, Paul Romer, Guido
+van Rossum, Linus Torvalds, Stephen Wolfram, and Bill Gates—this analysis situates his struggle within a
+spectrum of intellectual strategies, from open, polycentric systems to proprietary empire-building.
+
+
+1. The Intellectual Style of Robin Hanson
+Hanson’s approach relies on “intuition pumps” [Dennett, 1984], thought experiments that challenge con-
+ventional assumptions. His blog, Overcoming Bias, dissects hidden motives [Hanson, 2022], while works
+like The Age of Em [Hanson, 2016] and the “grabby aliens” hypothesis [Hanson, 2021] speculate on future
+societal and cosmic scenarios. These ideas provoke rather than prescribe, cultivating an audience that craves
+escalating spectacle. As Hanson noted in a discussion on galactic existential risks, “I try to meet people where
+they are. But the things people want to talk about aren’t always where the levers of change are” [Hanson
+and Stone, 2025]. This dynamic casts him as a futurist provocateur, overshadowing his training as a policy
+economist.
+
+
+2. Futarchy: A Pragmatic Governance Proposal
+Hanson’s futarchy proposal is a practical counterpoint to his speculative work. It posits that democracies
+vote on values (e.g., health-adjusted GDP) while prediction markets select policies to maximize those values
+[Hanson, 2013, Ash and Hanson, 2021]. Unlike cosmic hypotheticals, futarchy is institutionally concrete,
+designed for piloting in domains like public health. Hanson emphasizes its feasibility: “A government could
+pilot it tomorrow, in limited domains” [Ash and Hanson, 2021]. Yet, its technocratic complexity struggles
+against the viral appeal of his extraterrestrial scenarios, which dominate media coverage [BBC Future, 2021].
+
+
+
+                                                       1
+3. The Clickbait Empire and Media Distortion
+The media ecosystem—podcasts, YouTube, and online platforms—favors spectacle over substance. A 2025
+podcast exchange illustrates this, where Hanson discussed existential risks to galactic civilizations [Stone,
+2025]:
+
+      Hanson: “Can we talk about what institutions would actually do? What would we regulate?
+      What could we tax?”
+      Interviewer: “Right, but before that—what about vacuum decay? I mean, do you think it’s
+      already happened in some distant galaxy?” [Hanson and Stone, 2025].
+
+Hanson seeks actionable levers, but the interviewer chases viral headlines. This role reversal defines the
+Clickbait Empire: serious reform is recast as abstract, while unregulatable speculation, such as threats like
+vacuum decay or self-replicating machines [Stone, 2025], is packaged as concrete [Fridman and Hanson,
+2021, BBC Future, 2021].
+
+
+4. Hanson in the Spectrum of Intellectual Strategies
+Hanson’s predicament is clarified by comparing him to pioneers who navigated similar tensions.
+
+Open, Polycentric Architects: Elinor Ostrom’s polycentric governance model emphasized distributed,
+adaptive systems, avoiding media spectacle [Ostrom, 1990]. Similarly, Guido van Rossum and Linus Torvalds
+built open-source ecosystems with Python and Linux, prioritizing accessibility over control [van Rossum,
+1991, Torvalds and Diamond, 1999]. Torvalds noted, “I’m not out to control things—I’m out to make things
+work” [Torvalds and Diamond, 1999], reflecting an ethos of communal innovation.
+
+Empire Builders: Paul Romer’s “charter cities” proposed top-down governance experiments, facing insti-
+tutional resistance [Romer, 2010]. Stephen Wolfram’s Mathematica and Bill Gates’ Microsoft Windows
+created proprietary ecosystems, enforcing user dependency [Wolfram, 2002, Gates, 1995]. Wolfram’s vision
+of a unified computational framework mirrors an intellectual empire: “I want to build a system that explains
+everything” [Wolfram, 2002].
+
+Hanson aligns with Ostrom’s polycentrism, warning against over-integration: “I worry about us sliding
+toward one world governance, and making a mistake that locks in globally” [Hanson and Stone, 2025]. Yet,
+the Clickbait Empire casts him as a Wolfram-like figure, amplifying his speculative work [Hanson, 2021,
+BBC Future, 2021].
+
+
+5. The Irony of Role Reversal
+The Clickbait Empire inverts roles: Hanson, the provocateur, becomes the pragmatist, while interviewers
+indulge in cosmic abstraction. Futarchy offers concrete levers [Hanson, 2013], yet topics like vacuum decay
+are unregulatable [Hanson and Stone, 2025, Stone, 2025]. Hanson’s frustration is palpable: “What’s the
+actual policy here? What could a government regulate?” [Hanson and Stone, 2025]. This misalignment
+undermines his governance agenda.
+
+
+
+
+                                                     2
+6. Over-Integration as Hanson’s Core Concern
+Hanson’s work consistently warns against over-integration, whether intellectual or political. Futarchy
+separates values from policies to prevent ideological monopoly [Hanson, 2013], while his “grabby aliens”
+model critiques expansionist homogeneity [Hanson, 2021]. This aligns with Ostrom’s polycentrism [Ostrom,
+1990] and van Rossum’s open-source ethos [van Rossum, 1991], but clashes with the media’s demand for
+singular narratives, akin to Wolfram’s universalism [Wolfram, 2002].
+
+
+7. Escaping the Clickbait Empire
+Hanson could escape via two strategies:
+
+Institutional Alignment: Piloting futarchy in municipalities or firms, as suggested in [Ash and Hanson,
+2021], though institutional inertia, as Romer faced [Romer, 2010], is a barrier.
+Polycentric Distribution: Publishing in open-access formats or policy journals, like Ostrom [Ostrom, 1990],
+though this risks reduced visibility [Hanson, 2022]. Users also navigate this system creatively, such as
+repurposing the “like” button on platforms like YouTube to track viewed content, reflecting hidden motives in
+engagement [Hanson, 2022]. Similarly, Hanson must subvert media incentives to prioritize substance.
+
+Both strategies require confronting the attention economy’s structural forces.
+
+
+8. Broader Implications for Public Intellectuals
+Hanson’s struggle reflects a broader challenge. Ostrom and Romer avoided spectacle by focusing on academic
+audiences [Ostrom, 1990, Romer, 2010], while van Rossum and Torvalds built technical communities [van
+Rossum, 1991, Torvalds and Diamond, 1999]. Wolfram and Gates thrived by aligning with attention-grabbing
+ecosystems [Wolfram, 2002, Gates, 1995]. Hanson’s case, like David Brin’s speculative yet entertainment-
+focused work [Brin, 1998], shows the cost of digital fame: visibility at the expense of substance.
+
+
+Conclusion
+Robin Hanson’s career encapsulates the conflict between intellectual openness and media-driven spectacle.
+His pragmatic futarchy proposal [Hanson, 2013] struggles against the Clickbait Empire’s amplification of
+his speculative work [Hanson, 2021, BBC Future, 2021]. Compared to polycentric architects like Ostrom,
+van Rossum, and Torvalds, Hanson resists control, yet media incentives cast him as a Wolfram-like figure.
+The real “grabby force” is the attention economy, converting reformers into provocateurs. Escaping this trap
+requires reshaping the incentives that govern public discourse.
+
+
+
+
+                                                     3
+References
+John Ash and Robin Hanson. Robin Hanson on Futarchy. YouTube Podcast, 2021. URL
+  https://www.youtube.com/watch?v=4FtSz3IdH-Q.
+
+BBC Future. The Economist Who Thinks Aliens Will Rule the Galaxy. Fabricated Reference, although it is
+  a good title, 2021. URL https://www.bbc.com/future.
+
+David Brin. The Transparent Society. Addison-Wesley, 1998.
+
+Daniel C. Dennett. Elbow Room: The Varieties of Free Will Worth Wanting. MIT Press, 1984.
+
+Lex Fridman and Robin Hanson. Robin Hanson: Prediction Markets, Sex, and the Future. Lex Fridman
+  Podcast, Episode #140, 2021. URL https://lexfridman.com/robin-hanson.
+
+Bill Gates. The Road Ahead. Viking, 1995.
+
+Robin Hanson. Shall We Vote on Values, but Bet on Beliefs? Journal of Political Philosophy, 21(2):151–178,
+  2013. doi: 10.1111/jopp.12008.
+
+Robin Hanson. The Age of Em: Work, Love and Life when Robots Rule the Earth. Oxford University Press,
+  2016.
+
+Robin Hanson. Grabby Aliens. Working paper, 2021. URL https://grabbyaliens.com.
+
+Robin Hanson. Exploring Value Space. Overcoming Bias Blog, 2022. URL
+  https://www.overcomingbias.com/p/exploring-value-spacehtml.
+
+Robin Hanson and Jordan Stone. Robin Hanson and Jordan Stone Talk Galactic X-Risks. YouTube Podcast,
+  2025. URL https://www.youtube.com/watch?v=me3sHm11Emg.
+
+Elinor Ostrom. Governing the Commons. Cambridge University Press, 1990.
+
+Paul Romer. The Case for Charter Cities. Center for Global Development, 2010. URL
+  https://www.cgdev.org/publication/
+  technologies-rules-and-progress-case-charter-cities.
+
+Jordan Stone. Interstellar travel will probably doom the long-term future. EA Forum Article, 2025. URL
+  https://forum.effectivealtruism.org/posts/x7YXxDAwqAQJckdkr/
+  galactic-x-risks-obstacles-to-accessing-the-cosmic-endowment.
+
+Linus Torvalds and David Diamond. Just for Fun: The Story of an Accidental Revolutionary. Harper
+  Business, 1999.
+
+Guido van Rossum. Python Tutorial. Centrum Wiskunde & Informatica (CWI), 1991.
+
+Stephen Wolfram. A New Kind of Science. Wolfram Media, 2002.
+
+
+
+
+                                                    4
+
+
+===== FILE: README.md =====
+![profile](randomizer.gif)
+
+<img src="home.png" width="450">
+
+![](profile-overview.png)
+
+**Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/alphabet)**
+<!-- **Home of the [Standard Galactic Alphabet](https://standardgalactic.github.io/sitemap/fonts/demo.html)** -->
+
+𒋛𒈠 𒃻 𒅗 𒁹
+
+
+[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/banner-v2.png) *Beta*
+<!-- 
+[Convert this page into Standard Galactic](https://github.com/standardgalactic/standardgalactic/blob/main/banner.png) *Beta*
+
+[Cistercian Number Laboratory](sample-worksheet.jpg)
+-->
+
+Try the [Cistercian Number Translator](https://standardgalactic.github.io/cistercian.html) and [Worksheet Generator](https://standardgalactic.github.io/generate-worksheet.html). For further information, see [wikipedia](https://en.wikipedia.org/wiki/Cistercian_numerals)
+ 
+[Terminal Simulator](https://standardgalactic.github.io/terminal-simulator)
+
+[Galactic Translator](https://standardgalactic.github.io/sga-converter.html)
+
+And [Typing Tutor](https://standardgalactic.github.io/typing-tutor.html)
+
+## Mereological Space Ontology
+
+[Memory Game](https://standardgalactic.github.io/userspace/)
+
+<!--
+[![committers.top badge](https://user-badge.committers.top/canada/standardgalactic.svg)](https://user-badge.committers.top/canada/standardgalactic)
+-->
+Introducing [Spherepop](https://standardgalactic.github.io/spherepop/), a 3D Programming Language.
+
+<!-- 
+[Music](https://standardgalactic.github.io/spherepop/music/)
+
+![Nebula One](nebula-one.gif)
+-->
+Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)* and *[Starpop](https://standardgalactic.github.io/Centerfuge/starpop/)* minigames.
+
+[Logical Symbols](https://standardgalactic.github.io/spherepop/memory-game.html) 
+
+<!--
+[Arabic Vocabulary](https://standardgalactic.github.io/spherepop/lexicon-terminal.html) 
+-->
+[Arabic Vocabulary](https://standardgalactic.github.io/spherepop/lexicon-terminal-v2.html) 
+
+[Etch-a-Sketch Simulator](https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
+
+<!--
+These small browser programs function as experimental interfaces for thinking about computation, language, and geometry rather than as conventional games. Each tool forms a compact interactive system in which the user progressively constrains a space of possibilities through simple actions, demonstrating how structured outcomes emerge from sequences of small decisions.
+
+The vocabulary trainer illustrates this directly. Each round presents several alternatives, and the learner eliminates incorrect possibilities until the correct translation remains — a constraint-selection process rather than brute enumeration. The program's weighted selection mechanism increases a card's weight after errors and reduces it after correct responses, guiding attention toward weaker vocabulary without complex scheduling. Each entry stores the Arabic form, the English translation, a domain tag, and learning state variables, allowing the same dataset to support topology, category theory, linguistics, or any other thematic domain with minimal structural change. The CRT-style interface, scanlines, and phosphor glow reinforce the sense of a small computational instrument rather than a conventional application.
+
+The Etch-Terminal tool follows the same philosophy applied to geometry. Each movement of the virtual knobs adds another constraint to the final curve. The Pipsqueak language extends this by allowing curves to be described symbolically: a short script expands into a deterministic sequence of drawing steps whose construction history can be replayed at any speed.
+
+The session codes used across both tools encode only the information needed to recreate the interaction. A short string functions as a compressed history of the session.
+
+Taken together, these projects treat the user's actions as part of the algorithm and expose the generative process behind the result — sitting somewhere between educational tools, programming toys, and demonstrations of how complex structures arise from simple rule-based interaction.
+
+[Old Art Archive](https://standardgalactic.github.io/archive)
+
+[Living Paintings](https://standardgalactic.github.io/video-player)
+
+*New* [Ephemera](https://github.com/standardgalactic/ephemera)— *Odds and Ends*
+
+* [Audio Overviews](https://standardgalactic.github.io/research-projects/Aurora/)
+-->
+
+[Audio Field Monitor](https://standardgalactic.github.io/guardrails/stack/)
+
+# Parody Music
+
+[Better Than Human](https://standardgalactic.github.io/audio-player.html) 
+
+# Work in Progress
+
+[Emotional Differentiation](https://standardgalactic.github.io/laboratory/source/emotional-differentiation.pdf)
+
+[Relativistic Longevity](https://standardgalactic.github.io/laboratory/source/relativistic-longevity.pdf)
+
+[The Verification Boundary](https://standardgalactic.github.io/kitbash/cognitive-dynamics/verification-boundary.pdf)
+
+[The Etiology of Progress](https://standardgalactic.github.io/kitbash/cognitive-dynamics/etiology-of-progress.pdf)
+
+<!--
+[Rain on the Parade](https://standardgalactic.github.io/kitbash/cognitive-dynamics/rain-on-the-parade.pdf)
+
+[Aniara](https://standardgalactic.github.io/kitbash/cognitive-dynamics/aniara.pdf) – *Screenplay*
+
+[Doombible](https://standardgalactic.github.io/kitbash/cognitive-dynamics/doombible.pdf)
+
+[The Amplitwist](https://standardgalactic.github.io/kitbash/cognitive-dynamics/amplitwist-essay.pdf)
+
+[Fusion Without Recovery](https://standardgalactic.github.io/kitbash/cognitive-dynamics/fusion-without-recovery.pdf)
+
+[Proof and Countermodel](https://standardgalactic.github.io/kitbash/cognitive-dynamics/proof-and-countermodel.pdf) – *Incomplete*
+
+[Inference Under Constraint](https://standardgalactic.github.io/kitbash/cognitive-dynamics/inference-under-constraint.pdf) – *Incomplete*
+-->
+[Depth Before Derivation](https://standardgalactic.github.io/laboratory/depth_before_derivation.pdf) — *New*
+
+[Distinction and Continuation](https://standardgalactic.github.io/laboratory/distinction-and-continuation.pdf) — *New* 
+
+[Distinction Holonomy](https://standardgalactic.github.io/research-projects/unsorted/distinction-holonomy.pdf)
+
+<!--
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Distinction_Holonomy.pdf)
+-->
+[The Epistemology of Repair](https://standardgalactic.github.io/research-projects/unsorted/epistemology-of-repair.pdf)
+
+<!--
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Epistemic_Repair.pdf)
+-->
+[Sparse Recursion for Holographic Steganography](https://standardgalactic.github.io/research-projects/unsorted/sparse-recursive-holographic-steganography.pdf)
+
+<!--
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Sparse_Recursion_Is_All_You_Need.pdf)
+* [Notes](https://standardgalactic.github.io/research-projects/unsorted/Sparse_Recursive_Holographic_Steganography.pdf)
+-->
+[Borrowed Intuition](https://standardgalactic.github.io/laboratory/borrowed-intuition.pdf)
+
+<!--
+* [Presentation](https://standardgalactic.github.io/laboratory/Borrowed_Intuition.pdf)
+-->
+[Address Before Operator](https://standardgalactic.github.io/laboratory/address-before-operator.pdf)
+
+<!--
+* [Visual Presentation](https://standardgalactic.github.io/laboratory/Interaction_Residue.pdf)
+-->
+[Deployment-Native Ternary Learning](https://standardgalactic.github.io/laboratory/deployment_native_ternary_learning.pdf)
+
+<!--
+* [Visual Architecture](https://standardgalactic.github.io/laboratory/Verifiable_ML_Deployment_Architecture.pdf)
+-->
+[Hall of Monitors](https://standardgalactic.github.io/cliodynamics/hall-of-monitors.pdf)
+
+[Repair Preserve Difference](https://github.com/standardgalactic/repair-preserves-difference) — *Project*
+
+[Structural Semantics](https://standardgalactic.github.io/kitbash/philosophy/structural-semantics.pdf)
+
+[Thinking in Vim](https://standardgalactic.github.io/library/thinking-in-vim.pdf)
+
+<!--
+[Thinking like Rust](https://standardgalactic.github.io/kitbash/philosophy/thinking-like-rust.pdf) — *In Progress*
+
+* [Audio Overviews](https://standardgalactic.github.io/kitbash/philosophy/)
+-->
+[The Superuser Guide to Latex](https://standardgalactic.github.io/memory/processing/superuser-guide-to-latex.pdf)
+
+[The History of Machine Learning](https://standardgalactic.github.io/memory/processing/history-of-machine-learning.pdf)
+
+[Constitutional Cybernetics](https://standardgalactic.github.io/memory/processing/constitutional-cybernetics.pdf)
+
+[Dip of the Horizon](https://standardgalactic.github.io/memory/processing/dip-of-the-horizon.pdf) — *Screenplay*
+
+[Building Forth from Spherepop Primitives](https://standardgalactic.github.io/memory/building-forth.pdf)
+
+[Selective Continuation](https://standardgalactic.github.io/memory/selective-continuation.pdf)
+<!--
+* [The Monotonic Ledger](https://standardgalactic.github.io./memory/The_Monotonic_Ledger.pdf)
+-->
+
+[A Viability Theory of Fusion Reactors](https://standardgalactic.github.io/memory/fusion-viability.pdf)
+<!--
+* [Engineering Fusion Persistence](https://standardgalactic.github.io./memory/Engineering_Fusion_Persistence.pdf)
+-->
+
+[Persistent Generative Worlds](https://standardgalactic.github.io/memory/persistent-generative-worlds.pdf)
+<!--
+* [The World Engine](https://standardgalactic.github.io./memory/The_World_Engine.pdf)
+-->
+
+* [Audio Overviews](https://standardgalactic.github.io/memory/)
+
+[Beyond Optimal Foraging](https://standardgalactic.github.io/memory/beyond-optimal-foraging.pdf)
+
+[The Mathematics of Autonomous Systems](https://standardgalactic.github.io/alphabet/resources/autonomous-systems.pdf)
+
+[Admissible Continuation](https://standardgalactic.github.io/alphabet/resources/admissible-continuation.pdf)
+<!--
+[Admissibility Groupoids](https://standardgalactic.github.io/antivenom/essay/admissibility_groupoids.pdf)
+
+[Glossfero and Popo](https://standardgalactic.github.io/antivenom/essay/glossfero-essay.pdf)
+-->
+
+[Structural Honesty](https://standardgalactic.github.io/antivenom/essay/structural-honesty.pdf)
+
+[Paracosms of the Strange](https://standardgalactic.github.io/antivenom/essay/paracosms-of-the-strange.pdf) — *START HERE*
+
+[Restorability Boundaries](https://standardgalactic.github.io/calculus/experiments/restorability-boundaries.pdf)
+
+[Trigonometry and Transformation](https://standardgalactic.github.io/calculus/experiments/trigonometry-and-transformation.pdf)
+
+[Orthodromic Infrastructure](https://standardgalactic.github.io/calculus/experiments/orthodromic-infrastructure.pdf)
+
+Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
+
+* [Prediction Before Interpretation](https://standardgalactic.github.io/calculus/experiments/prediction-before-interpretation.pdf)
+
+* [Empirical Paper](https://standardgalactic.github.io/calculus/experiments/empirical-paper.pdf)
+
+[Repair, Not Reconstruction](https://standardgalactic.github.io/calculus/processing/repair-not-reconstruction.pdf)
+
+[Restoration Before Explanation](https://standardgalactic.github.io/calculus/processing/restoration-before-explanation.pdf)
+
+[Boundaries Are Computational Objects](https://standardgalactic.github.io/calculus/processing/boundaries-computational-objects.pdf)
+
+[The Compression Fallacy](https://standardgalactic.github.io/calculus/processing/compression-fallacy.pdf)
+
+[The Economics of Irreversibility](https://standardgalactic.github.io/calculus/processing/economics-of-irreversibility.pdf)
+
+[Admissibility Certificates](https://standardgalactic.github.io/calculus/processing/admissibility-certificates.pdf)
+
+[Parenthetical Asides](https://standardgalactic.github.io/calculus/processing/parenthetical-asides.pdf)
+
+[From Wave Dynamics to Continuation Dynamics](https://standardgalactic.github.io/research-projects/history/wave_to_continuation_dynamics.pdf)
+
+* [Retro Comic Infographic Summary](https://standardgalactic.github.io/research-projects/history/continuation-dynamics-comic.p
+
+===== FILE: online-presence.txt =====
+Online Presence
+
+My Github profile is standardgalactic, I also use the usernames Playfloor, Mechachleopteryx, Galactromeda, and Flyxion.
+
+It sounds like you’ve got a pretty creative presence online with those usernames! I can take a look at your GitHub profile under "standardgalactic" if you’d like—any specific projects or repos you want me to check out? Or if you’re active on X with those other usernames, I could dig into your posts there too. What are you hoping to explore or share?
+
+Explain GitHub projects
+
+GitHub projects are essentially repositories (or "repos") where you can store, manage, and collaborate on code, documents, or other files. Think of GitHub as a platform that combines version control—like a time machine for your work—with tools to share and work together with others. Here’s a breakdown of what makes up a GitHub project and how it works:
+
+What’s in a GitHub Project?
+
+Repository: The core of a project. It’s a folder that holds all your files—code, text, images, whatever—and tracks changes to them over time. You can make it public (anyone can see it) or private (only you and invited collaborators).
+
+Code & Files: This is the stuff you’re working on—whether it’s a Python script, a website, or even a game. You upload or create files directly in the repo.
+
+Commits: Every time you save changes, you "commit" them with a message explaining what you did (e.g., "Fixed a bug in the login page"). It’s like saving checkpoints in a video game.
+
+Branches: These let you work on different versions of your project at once. The main branch (often called "main") is your stable version, while you might create a "feature" branch to test something new without messing up the original.
+
+Pull Requests: When you’re ready to merge changes from a branch back into the main project, you submit a pull request. It’s a way to review and discuss the updates with collaborators before they go live.
+
+Issues: A built-in to-do list or bug tracker. You can create issues to report problems, suggest features, or assign tasks.
+
+Actions: Automations you can set up, like running tests or deploying code whenever you push changes. It’s optional but super handy for streamlining workflows.
+
+How Do People Use Them?
+
+Solo Projects: You might use a repo to build a personal app, store scripts, or even host a portfolio site (via GitHub Pages).
+
+Collaboration: Teams use repos to work on software together—think of open-source projects like Linux or smaller group efforts like a startup’s app.
+
+Showcase: A lot of folks (maybe you too, under "standardgalactic"!) use GitHub to display their skills to potential employers or the community.
+
+Your Projects
+If I peek at your "standardgalactic" GitHub, I’d see your repos—maybe some code tied to your cool usernames like "Mechachleopteryx" or "Galactromeda." Are your projects more experimental, practical, or just for fun? If you’ve got something specific there you want me to explain or dive into, just let me know!
+
+Does that clear up what GitHub projects are about? Want me to zoom in on anything else?
+
+See what you can find under my names
+
+15 web pages
+Let’s dive into what I can uncover about your online presence based on the usernames you’ve shared: "standardgalactic," "Playfloor," "Mechachleopteryx," "Galactromeda," and "Flyxion." I’ll check GitHub primarily since you mentioned your profile there, and I’ll also see if anything pops up elsewhere that ties these together.
+
+GitHub Findings
+
+standardgalactic
+Your GitHub profile under "standardgalactic" is a goldmine of activity! You’ve got an impressive 19,598 repositories—yes, you read that right—which suggests you’re either incredibly prolific or have some automation going on.
+
+Based on what’s public, you seem to be based in Xanadu, Canada, and you’ve got a handle " @galactromeda " linked here, connecting two of your usernames. Your bio mentions "Cogito Ergo Sum" (I think, therefore I am), hinting at a philosophical streak.
+
+Some standout projects:
+RandoMesh: A Blender addon for adding randomized geometry to meshes. Sounds like a cool tool for 3D artists or tinkerers.
+
+log-4: A project for structured logging, which could be useful for developers needing clean, organized logs.
+
+alphabet: This one’s tied to the Standard Galactic Alphabet (SGA)—you know, that funky Minecraft enchantment table script. You’ve got a font file (Sga-Regular.ttf) and even a Galactic Translator tool. Seems like a passion project with a niche following—there’s even a Reddit community (r/StandardGalactic) where folks discuss it.
+
+Your README also mentions "Spherepop," a 3D programming language, which sounds wild and experimental. Are you into pushing coding boundaries?
+
+Playfloor
+Under "Playfloor," your GitHub shows a lighter footprint but still some intriguing stuff. You’ve got 21 followers and follow 429 accounts, suggesting you’re connected in the dev world. Your bio quotes, "Colorless green ideas sleep furiously," which is a famous linguistics example—maybe you’re into language or absurdity?
+
+Notable repos:
+Fl_shc_rds: Forked from "standardgalactic/haplopraxis," it’s billed as "The World’s Most Difficult video game" in JavaScript. Did you tweak it to make it even tougher?
+
+ELI5: An "Emacs-Like IDE For Inveterate Vim-users Everywhere." A mashup for coders who can’t pick a side in the editor wars—clever!
+quantum-soup: Described as "A surjective tesseract in si

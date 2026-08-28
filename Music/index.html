@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Difference That Remains</title>
+<style>
+:root{
+  --a:#e7ff34;
+  --c:#39f4d5;
+  --p:#ff2d86;
+  --w:#ebe8dc;
+}
+*{ box-sizing:border-box }
+body{
+  margin:0;
+  overflow:hidden;
+  background:#040507;
+  color:var(--w);
+  font-family:Arial,sans-serif;
+}
+.x{
+  height:100svh;
+  position:relative;
+  overflow:hidden;
+  background:radial-gradient(circle at 55% 45%,#17212a,#07090c 48%,#020304);
+}
+canvas,.noise{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+.noise{
+  inset:-100%;
+  opacity:.12;
+  pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:n .2s steps(2) infinite;
+}
+@keyframes n{ 50%{ transform:translate(7%,-5%) } }
+
+header{
+  position:absolute;
+  left:3vw; right:3vw; top:2.5vh;
+  border-top:1px solid #ffffff66;
+  padding-top:8px;
+  display:flex;
+  justify-content:space-between;
+  font:700 10px monospace;
+  letter-spacing:.16em;
+}
+header b{ color:var(--p) }
+
+.title{ position:absolute; left:3vw; top:11vh }
+.title small{ color:var(--c); font:700 9px monospace; letter-spacing:.18em }
+.title h1{ margin:15px 0; font:900 clamp(44px,8vw,116px)/.76 Arial; letter-spacing:-.085em }
+.title h1 i{ font-style:normal; color:transparent; -webkit-text-stroke:1px var(--w) }
+
+.axiom{
+  display:inline-block;
+  background:var(--a);
+  color:#050507;
+  padding:6px 10px;
+  transform:rotate(-1deg);
+  font:900 11px monospace;
+}
+
+.stage{ position:absolute; right:4vw; top:35vh; width:min(57vw,760px) }
+.tag{ color:var(--p); border-bottom:1px solid var(--p); padding-bottom:7px; font:900 11px monospace; letter-spacing:.16em }
+.tag span{ float:right; color:#ffffff77 }
+
+.lines p{
+  margin:.08em 0;
+  font:800 clamp(22px,3.4vw,52px)/.96 Arial;
+  letter-spacing:-.045em;
+  text-shadow:4px 4px #000;
+  animation:in .4s both;
+}
+.lines p:nth-child(2n){ color:var(--c); margin-left:-2vw }
+.lines p:nth-child(3n){ color:var(--a) }
+@keyframes in{ from{ opacity:0; transform:translateX(50px) skew(-10deg); filter:blur(7px) } }
+
+.deck{
+  position:absolute;
+  z-index:4;
+  left:3vw; right:3vw; bottom:5vh;
+  display:grid;
+  grid-template-columns:52px 1fr auto;
+  gap:14px;
+  align-items:center;
+  background:#07090de8;
+  border:1px solid #ffffff44;
+  padding:10px;
+  box-shadow:7px 7px #ff2d8633;
+}
+.deck button{ height:42px; border:0; background:var(--a); font-weight:900; cursor:pointer }
+.deck input[type=range]{ width:100%; accent-color:var(--p) }
+.times{ display:flex; justify-content:space-between; font:9px monospace; color:#ffffff99 }
+
+.pick{
+  border:1px solid var(--c);
+  color:var(--c);
+  padding:12px;
+  font:900 9px monospace;
+  letter-spacing:.12em;
+  cursor:pointer;
+  text-align:center;
+}
+.pick input{ display:none }
+
+footer{
+  position:absolute;
+  bottom:1.7vh; left:3vw; right:3vw;
+  display:flex;
+  justify-content:space-between;
+  font:8px monospace;
+  letter-spacing:.12em;
+  color:#ffffff70;
+}
+
+.playing .title,.playing .stage{ filter:drop-shadow(0 0 9px #ff2d8630) }
+
+@media(max-width:700px){
+  .title h1{ font-size:46px }
+  .stage{ left:5vw; right:5vw; top:36vh; width:auto }
+  .lines p{ font-size:25px }
+  .deck{ grid-template-columns:45px 1fr }
+  .pick{ grid-column:1/-1; text-align:center; padding:8px }
+}
+</style>
+</head>
+<body>
+<main class="x" id="x">
+  <audio id="audio" src="The%20Difference%20That%20Remains%20(Shoegaze%20Reprise).mp3" preload="metadata"></audio>
+  <canvas id="field"></canvas>
+  <div class="noise"></div>
+
+  <header>
+    <span>PSYCADEMIC FIELD NOTE <b>№ 438</b></span>
+    <span id="status">SOURCE UNRESOLVED</span>
+  </header>
+
+  <section class="title">
+    <small>A RECURSIVE AUDIOVISUAL MONOGRAPH</small>
+    <h1>THE DIFFERENCE<br><i>THAT REMAINS</i></h1>
+    <span class="axiom">Δ survives ⇄ identity persists</span>
+  </section>
+
+  <section class="stage">
+    <div class="tag"><b id="tag">VERSE I</b><span id="count">01/13</span></div>
+    <div class="lines" id="lines"></div>
+  </section>
+
+  <section class="deck">
+    <button id="play" aria-label="Play/pause">▶</button>
+    <div>
+      <input id="seek" type="range" min="0" max="438" step=".01" value="0">
+      <div class="times"><span id="now">0:00</span><span id="end">7:18</span></div>
+    </div>
+    <label class="pick">LOAD AUDIO<input id="file" type="file" accept="audio/*"></label>
+  </section>
+
+  <footer>
+    <span id="name">THE DIFFERENCE THAT REMAINS (SHOEGAZE REPRISE).MP3</span>
+    <span>FLYXION // CONTINUATION GEOMETRY</span>
+  </footer>
+</main>
+
+<script>
+// ---- Lyric / section data: [startTimeSeconds, sectionLabel, lines[]] ----
+const SECTIONS = [
+  [0,   'VERSE I', [
+    'Before the object had a name,',
+    'before the boundary learned its frame,',
+    'there was a difference in the field,',
+    'a little wound that would not yield.'
+  ]],
+  [40,  'PRE-CHORUS', [
+    'So draw the boundary, watch it bend.',
+    'Ask what survives and what can mend.',
+    "A thing is not the shape it wore;",
+    "it's what can change and still endure."
+  ]],
+  [58,  'CHORUS', [
+    'Distinction, information, entropy, repair,',
+    'admissibility tells us what can still be there.',
+    "Continuation carries what the moment can't contain;",
+    'repair preserves the difference—',
+    'and the difference that survives becomes a name.'
+  ]],
+  [92,  'VERSE II', [
+    'The scalar rises through the plenum,',
+    'the vector gives the current direction,',
+    'the entropy field remembers where',
+    'the unresolved distinctions tear.'
+  ]],
+  [135, 'CHORUS', [
+    'No perfect state, no final view,',
+    'only trajectories passing through.',
+    'When every representation breaks,',
+    'we learn the world by what remains.'
+  ]],
+  [166, 'VERSE III', [
+    'Pop the possibility into sight,',
+    'Refuse the branch that cannot satisfy,',
+    'Bind what must continue side by side,',
+    'Collapse when alternatives have died.'
+  ]],
+  [210, 'BRIDGE', [
+    'The body repairs.',
+    'The program repairs.',
+    'The institution repairs itself.',
+    'The self keeps drawing boundaries',
+    'and discovering they were never walls.'
+  ]],
+  [254, 'THE QUIET QUESTION', [
+    'What must remain different',
+    'for this thing to remain itself?'
+  ]],
+  [278, 'VERSE IV', [
+    'Fiscal reachability maps the room',
+    'between the present and the possible bloom.',
+    'Not wealth as numbers sitting still,',
+    'but maneuver space for collective will.'
+  ]],
+  [326, 'BREAKDOWN', [
+    'Objects become processes.',
+    'States become trajectories.',
+    'Representations become constraints.',
+    'Optimization becomes repair.',
+    'Information becomes admissibility.'
+  ]],
+  [363, 'FINAL CHORUS', [
+    'There is no view from nowhere,',
+    'no final language in the air,',
+    'no representation without cost,',
+    'no perfect map of what was lost.'
+  ]],
+  [402, 'OUTRO', [
+    'Not the object—the persistence.',
+    'Not the answer—the constraint.',
+    'Not perfection—repair.',
+    'Not permanence—continuation.',
+    'Whatever difference still returns',
+    "is what we meant when we gave it a name."
+  ]]
+];
+
+// Fallback for browsers without Array.prototype.findLastIndex (Safari < 15.4, older mobile browsers)
+function findLastIndexCompat(arr, predicate) {
+  if (typeof arr.findLastIndex === 'function') return arr.findLastIndex(predicate);
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (predicate(arr[i])) return i;
+  }
+  return -1;
+}
+
+const audio   = document.querySelector('#audio');
+const playBtn = document.querySelector('#play');
+const seek    = document.querySelector('#seek');
+const lines   = document.querySelector('#lines');
+const tag     = document.querySelector('#tag');
+const count   = document.querySelector('#count');
+const status_ = document.querySelector('#status');
+const root    = document.querySelector('#x');
+const nowEl   = document.querySelector('#now');
+const endEl   = document.querySelector('#end');
+const nameEl  = document.querySelector('#name');
+const fileInput = document.querySelector('#file');
+
+let audioCtx, analyser, sourceNode;
+let lastSectionIndex = -1;
+let loadedObjectUrl = null;
+
+const fmtTime = s => Math.floor(s / 60) + ':' + Math.floor(s % 60).toString().padStart(2, '0');
+
+function connectAudioGraph() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  analyser = audioCtx.createAnalyser();
+  analyser.fftSize = 2048;
+  analyser.smoothingTimeConstant = 0.64;
+  sourceNode = audioCtx.createMediaElementSource(audio);
+  sourceNode.connect(analyser);
+  analyser.connect(audioCtx.destination);
+}
+
+playBtn.onclick = async () => {
+  connectAudioGraph();
+  await audioCtx.resume();
+  if (audio.paused) {
+    audio.play().catch(err => {
+      status_.textContent = 'PLAYBACK FAILED — TAP LOAD AUDIO';
+      console.error('Audio playback failed:', err);
+    });
+  } else {
+    audio.pause();
+  }
+};
+
+audio.onplay = () => {
+  playBtn.textContent = 'Ⅱ';
+  root.classList.add('playing');
+  status_.textContent = 'DISTINCTION PROPAGATING';
+};
+
+audio.onpause = () => {
+  playBtn.textContent = '▶';
+  root.classList.remove('playing');
+  status_.textContent = 'FIELD ADMISSIBLE';
+};
+
+audio.onloadedmetadata = () => {
+  seek.max = audio.duration;
+  endEl.textContent = fmtTime(audio.duration);
+  status_.textContent = 'FIELD ADMISSIBLE';
+};
+
+audio.onerror = () => {
+  status_.textContent = 'SOURCE UNRESOLVED — LOAD AUDIO FILE';
+};
+
+audio.ontimeupdate = () => {
+  seek.value = audio.currentTime;
+  nowEl.textContent = fmtTime(audio.currentTime);
+
+  const i = findLastIndexCompat(SECTIONS, s => audio.currentTime >= s[0]);
+  if (i !== lastSectionIndex && i !== -1) {
+    lastSectionIndex = i;
+    tag.textContent = SECTIONS[i][1];
+    count.textContent = String(i + 1).padStart(2, '0') + '/' + SECTIONS.length;
+    lines.innerHTML = SECTIONS[i][2]
+      .map((line, j) => `<p style="animation-delay:${j * 65}ms">${line}</p>`)
+      .join('');
+  }
+};
+
+seek.oninput = () => { audio.currentTime = seek.value; };
+
+fileInput.onchange = e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  if (loadedObjectUrl) URL.revokeObjectURL(loadedObjectUrl); // avoid leaking previous blob URLs
+  loadedObjectUrl = URL.createObjectURL(f);
+  audio.src = loadedObjectUrl;
+  nameEl.textContent = f.name;
+  audio.load();
+  lastSectionIndex = -1;
+};
+
+// ---- Canvas visualizer ----
+const canvas = document.querySelector('#field');
+const ctx = canvas.getContext('2d');
+const waveData = new Uint8Array(1024);
+const freqData = new Uint8Array(1024);
+let phase = 0;
+
+function draw() {
+  const dpr = Math.min(devicePixelRatio, 2);
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  if (canvas.width !== w * dpr) {
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+  }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  if (analyser) {
+    analyser.getByteTimeDomainData(waveData);
+    analyser.getByteFrequencyData(freqData);
+  } else {
+    // idle animation before any audio graph exists
+    for (let i = 0; i < waveData.length; i++) {
+      waveData[i] = 128 + Math.sin(i * 0.04 + phase) * 5;
+    }
+    freqData.fill(0);
+  }
+
+  const bass = freqData.slice(1, 45).reduce((x, y) => x + y, 0) / (44 * 255);
+  const hi   = freqData.slice(120, 520).reduce((x, y) => x + y, 0) / (400 * 255);
+
+  ctx.fillStyle = `rgba(4,5,7,${audio.paused ? 0.2 : 0.1})`;
+  ctx.fillRect(0, 0, w, h);
+  ctx.globalCompositeOperation = 'lighter';
+
+  ['#39f4d5', '#ff2d86', '#e7ff34'].forEach((col, l) => {
+    ctx.beginPath();
+    ctx.strokeStyle = col;
+    ctx.lineWidth = 1 + bass * 8 + hi * 4;
+    ctx.globalAlpha = 0.45 + hi * 0.5;
+    for (let x = 0; x < w; x += 2) {
+      const i = Math.floor(x / w * 1023);
+      const y = h / 2
+        + (waveData[(i + l * 19) % 1024] - 128) / 128 * h * (0.2 + hi * 0.45)
+        + Math.sin(x * 0.009 + phase + l) * bass * 80;
+      x ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+    }
+    ctx.stroke();
+  });
+
+  if (hi > 0.18) {
+    ctx.strokeStyle = '#fff';
+    ctx.globalAlpha = Math.min(0.7, hi * 1.7);
+    const streaks = 8 + hi * 25;
+    for (let i = 0; i < streaks; i++) {
+      const x = Math.random() * w;
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x + (Math.random() - 0.5) * 180, h);
+      ctx.stroke();
+    }
+  }
+
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.globalAlpha = 1;
+  phase += audio.paused ? 0.006 : 0.03 + bass * 0.12;
+  requestAnimationFrame(draw);
+}
+
+audio.ontimeupdate();
+draw();
+</script>
+</body>
+</html>

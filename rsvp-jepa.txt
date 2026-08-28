@@ -1,0 +1,1141 @@
+     Joint Embedding Predictive
+           Architectures as
+Amortized Constraint Satisfaction in the
+  Relativistic Scalar–Vector Plenum
+                                    Flyxion
+                             Independent Researcher
+
+                           Technical Note, April 2026
+
+
+
+                                    Abstract
+
+     Recent joint embedding predictive architectures (JEPA) have been proposed
+  as a foundation for representation learning based on latent predictability
+  rather than generative reconstruction. This note demonstrates that such
+  architectures arise naturally as a restricted and amortized instance of the
+  Relativistic Scalar–Vector Plenum (RSVP) framework. By identifying encoder
+  mappings with sensor projections of an underlying field configuration and
+  interpreting latent prediction as a consistency condition across projections,
+  JEPA objectives are shown to correspond to variational constraint satisfaction
+  over admissible field configurations. Collapse phenomena are reinterpreted as
+  entropy-degenerate minima, and standard regularization techniques emerge as
+  finite-sample surrogates for structural entropy constraints. The connection is
+  made precise through a commutative projection diagram, a formal collapse
+  lemma, and a strengthened approximation proposition with explicit error
+  bounds. The relationship between several named self-supervised learning
+  methods and RSVP subsections is then charted, showing that JEPA, BYOL,
+  VICReg, and Barlow Twins all correspond to different parametric choices
+  within a single RSVP consistency functional. This establishes JEPA not as an
+  isolated architectural design but as a computational realization of a broader
+  field-theoretic principle, and suggests that the space of valid self-supervised
+  learning objectives is systematically organized by the structure of RSVP
+  admissibility.
+
+
+
+
+                                        1
+Contents
+
+1 Main Results                                                                      2
+
+2 Introduction                                                                      3
+
+3 RSVP Configuration and Projection Structure                                       4
+
+4 Latent Representations as Amortized Projections                                   5
+
+5 Predictability as a Consistency Condition                                         5
+  5.1 Projection Diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . .    6
+
+6 Variational Formulation of Latent Prediction                                      6
+
+7 Operator-Theoretic Formulation of Consistency                                     7
+
+8 Unified Operator, Information, and Dynamical Structure of Latent
+  Predictive Learning                                                                7
+  8.1 Operator-Theoretic Formulation . . . . . . . . . . . . . . . . . . . . . 8
+  8.2 Information-Theoretic Interpretation . . . . . . . . . . . . . . . . . . 8
+  8.3 Dynamical Interpretation . . . . . . . . . . . . . . . . . . . . . . . . . 9
+  8.4 Consistency Operator Projection . . . . . . . . . . . . . . . . . . . . 9
+  8.5 Generation of New Objectives . . . . . . . . . . . . . . . . . . . . . . 10
+  8.6 Synthesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+9 The Unified Consistency Theorem                                                  11
+
+10 Entropy, Collapse, and Structural Necessity                                     12
+
+11 Information-Theoretic Interpretation                                            13
+
+12 JEPA as a Projection of the Consistency Operator                                14
+
+13 The Main Proposition: JEPA as Amortized RSVP Inference                          14
+
+14 Corollaries and Specializations                                                 15
+
+15 Identifiability of Representations                                              18
+
+16 Taxonomy of Self-Supervised Methods as RSVP Functional Choices 18
+   16.1 Connection to the RSVP Entropy Field . . . . . . . . . . . . . . . . . 19
+
+
+
+
+                                          2
+17 Extensions and Predictions                                                        19
+   17.1 Dynamical Interpretation via Flow Fields . . . . . . . . . . . . . . . .     20
+   17.2 Richer Projection Families . . . . . . . . . . . . . . . . . . . . . . . .   20
+   17.3 Temporal and Causal Structure . . . . . . . . . . . . . . . . . . . . .      20
+   17.4 Admissibility and Out-of-Distribution Generalization . . . . . . . . .       21
+   17.5 Geometry of the Consistency Manifold . . . . . . . . . . . . . . . . .       21
+   17.6 Deriving New Self-Supervised Objectives . . . . . . . . . . . . . . . .      21
+
+18 Discussion                                                                        22
+
+19 Conclusion                                                                        22
+
+
+
+1    Main Results
+
+This work establishes that Joint Embedding Predictive Architectures (JEPA) and
+related self-supervised learning methods arise as special cases of a general consistency
+principle defined over Relativistic Scalar–Vector Plenum (RSVP) configurations.
+    Let X ∈ X denote a configuration, and let {Πi }ki=1 be a family of projections
+into observable spaces Yi . For encoders Ei : Yi → Zi and transport operators Tij ,
+define the consistency functional
+                              X
+                                       E kEj (Yj ) − Tij (Ei (Yi ))k2 + λR(E),
+                                                                    
+               L(E, T ) :=                                               e
+                             (i,j)∈G
+
+
+where (Y1 , . . . , Yk ) are induced by projections of X.
+    [Unified Consistency Theorem, informal] Minimizing L over sufficiently expressive
+encoders and transport operators is equivalent, up to approximation error, to solving
+a single underlying problem that admits the following equivalent formulations:
+
+    1. Variational consistency over RSVP configurations,
+
+    2. Low-rank factorization of cross-covariance operators,
+
+    3. Entropy-constrained mutual information maximization,
+
+    4. Recovery of latent dynamics induced by an underlying flow.
+
+The solution is unique up to invertible transformations preserving the transport
+structure.
+    This equivalence shows that latent predictive learning does not constitute a
+distinct learning principle but rather a restricted computational realization of a more
+general constraint: that multiple projections of a shared configuration must admit
+mutually consistent representations.
+
+                                                3
+    Several immediate consequences follow.
+    First, representation collapse arises precisely when entropy constraints are absent.
+In this case, constant representations minimize the objective, yielding zero mutual
+information between views.
+    Second, existing self-supervised methods correspond to specific choices of transport
+class and entropy regularization. Methods such as BYOL restrict the transport
+operator to a contractive family, while methods such as VICReg and Barlow Twins
+implement explicit approximations to entropy-preserving constraints.
+    Third, the framework generates a broader class of objectives parameterized by
+consistency graphs over projections. Existing methods correspond to sparse graphs,
+while richer multi-view and higher-order consistency constraints remain largely
+unexplored.
+    Taken together, these results position RSVP as a unifying structure underlying
+modern self-supervised learning. Latent predictive architectures emerge as amortized
+approximations to a consistency operator defined over a shared configuration space,
+rather than as isolated algorithmic constructions.
+
+
+2    Introduction
+
+Representation learning methods based on latent prediction have recently gained
+prominence as alternatives to generative modeling. In such systems, a representation
+derived from one view of data is trained to predict the representation derived from
+another related view. This paradigm avoids direct reconstruction of raw inputs
+and instead emphasizes the extraction of predictable structure that persists across
+viewpoints, modalities, or temporal displacements.
+    The landscape of such methods has grown rapidly. Joint Embedding Predic-
+tive Architecture (JEPA) [3], Bootstrap Your Own Latent (BYOL) [2], VICReg
+[1], Barlow Twins [5], and related systems all instantiate variations of the same
+underlying idea: two encoders, two views, and a constraint enforcing consistency of
+latent representations. Despite their different notations, regularizers, and empirical
+motivations, they share a common mathematical skeleton.
+    Independently, the Relativistic Scalar–Vector Plenum (RSVP) framework models
+physical, informational, and cognitive systems as constrained evolutions of field
+configurations of the form
+                                    X = (Φ, v, S),
+
+where Φ is a scalar potential, v is a vector flow field, and S is an entropy field
+over a compact domain Ω. Observations arise as projections of X into modality-
+specific spaces, and admissible states are those satisfying a family of consistency and
+regularity constraints encoded in a variational functional.
+
+                                           4
+    The purpose of this note is to show that latent predictive architectures can be
+derived as a special case of RSVP constraint satisfaction when inference is amortized
+through parameterized encoders trained on empirical data. This derivation makes
+several contributions that pure architectural descriptions do not: it explains why the
+predictive objective works (consistency across projections of a common structure),
+why collapse occurs and how it is structurally prevented (entropy degeneracy), and
+how the family of current methods relates to a single organizing functional.
+    The argument proceeds in stages. Section 3 introduces the RSVP configuration
+space and projection structure. Section 4 identifies latent representations with amor-
+tized projections. Section 12 reformulates predictability as a consistency condition
+and presents the projection diagram. Section 6 gives the variational formulation.
+Section 10 proves the collapse lemma and connects entropy regularization to struc-
+tural necessity. Section 13 states and proves the main proposition with an explicit
+approximation bound. Section 16 charts the correspondence between named self-
+supervised methods and RSVP functional choices. Section 17 discusses extensions
+and predictions. Section 19 concludes.
+
+
+3    RSVP Configuration and Projection Structure
+
+Definition 3.1 (RSVP configuration). Let Ω ⊂ Rd be a compact domain with smooth
+boundary. An RSVP configuration is a triple
+
+                                 X = (Φ, v, S) ∈ X ,
+
+where Φ : Ω → R is a scalar potential field, v : Ω → Rd is a vector flow field, and
+S : Ω → R≥0 is a local entropy density. The space X is the set of all such triples
+satisfying boundary conditions and regularity requirements specified by a constraint
+family C.
+
+Definition 3.2 (Sensor projection). A sensor projection is a bounded linear operator
+
+                                     Πi : X → Yi
+
+mapping configurations to observations in a modality-specific space Yi . A collection
+{Πi }ki=1 constitutes a multi-modal observation system.
+
+   Given observations {yi }ki=1 , the feasible set of configurations consistent with all
+observations is
+                    F = {X ∈ X : kΠi (X) − yi kYi ≤ εi ∀i} .
+
+    The regularizer R : X → R≥0 encodes dynamical admissibility, entropy structure,
+
+
+                                           5
+and physical constraints. The canonical RSVP selection problem is:
+
+                                X ∗ = arg min R(X).
+                                           X∈F
+
+
+    This framework is general enough to encompass inverse problems in imaging,
+physical inference, and representational learning. The central observation of this note
+is that self-supervised learning corresponds to the case where F is defined by mutual
+consistency of projections rather than by comparison to ground truth observations.
+
+
+4    Latent Representations as Amortized Projections
+
+In practical settings, the inverse problem of recovering X from observations is
+intractable or ill-posed. It is replaced by learned encoders that approximate the
+mapping from observations to compressed representations.
+
+Definition 4.1 (Amortized encoder). For each modality i, an amortized encoder is
+a parameterized map
+                               Eiθi : Yi → Zi ,
+
+where Zi is a latent space and θi denotes learnable parameters. The composed map
+
+                                Zi (X) := Eiθi (Πi (X))
+
+is the latent representation of configuration X as seen through modality i.
+
+   Under this identification, latent spaces are not primary objects. They are com-
+pressed images of projected field structure. The encoders are amortized in the sense
+that they apply a fixed function across all configurations rather than solving the
+inverse problem anew for each input.
+
+Remark 4.2. The amortization is an approximation. The encoder Ei approximates
+the right inverse of Πi restricted to admissible configurations. It succeeds insofar as
+admissible configurations cluster in the observation space Yi in ways that a finite
+neural network can learn.
+
+
+5    Predictability as a Consistency Condition
+
+The core insight is that predicting one latent from another is equivalent to requiring
+that the two projections are images of a common underlying configuration.
+
+Definition 5.1 (Cross-projection consistency). Two projections Π1 , Π2 are consistent
+with respect to configuration X if there exists a transport operator T : Z1 → Z2 such
+
+
+                                          6
+that
+                                E2 (Π2 (X)) = T (E1 (Π1 (X))).
+
+The consistency residual is
+
+                       ∆(X) := kE2 (Π2 (X)) − T (E1 (Π1 (X)))k2Z2 .
+
+    This condition is precisely a gluing condition in sheaf-theoretic terms: local
+sections over different open sets must agree on overlaps. When projections correspond
+to different views of the same object, cross-projection consistency is what forces
+learned representations to be viewpoint-invariant.
+
+5.1     Projection Diagram
+
+The following commutative diagram summarizes the full projection chain. Given an
+underlying configuration X, each modality projects to an observation, encodes to a
+latent, and the latents are required to satisfy a transport relation:
+
+                                                Π1
+                             X                           Y1
+
+
+                           Π2                             E1
+                                   Z1 =E1 ◦Π1
+
+
+
+
+                             Y2                 E2
+                                                         Z1       T
+
+
+      More explicitly, the full chain from configuration to consistency requirement is:
+
+
+   X∈X                          y1 = Π1 (X)                   z1 = E1 (y1 )
+ (RSVP config)                    (view 1)                      (latent 1)
+                                                                                    zb2 = T (z1 )
+                                                                                     (prediction)
+
+
+
+                                                                                  ∆ = kz2 − zb2 k2
+ y2 = Π2 (X)                    z2 = E2 (y2 )                                      (consistency loss)
+   (view 2)                       (latent 2)
+
+
+
+    The JEPA learning objective is to minimize ∆ over encoder parameters and
+T , subject to regularization preventing trivial solutions. Within RSVP, this is
+recognized as an amortized version of minimizing the consistency residual induced
+by the unknown X.
+
+
+
+
+                                                     7
+6    Variational Formulation of Latent Prediction
+
+Augmenting the RSVP selection problem with a cross-projection consistency con-
+straint gives:
+
+                                    min ∆(X) + λR(X).                             (1)
+                                    X∈F
+
+    In modern learning systems, X is not explicitly represented. Instead, the encoders
+                                                                          (n)  (n)
+E1 , E2 and transport T are optimized directly over empirical samples {(x1 , x2 )}Nn=1
+drawn from the joint distribution induced by Π1 , Π2 evaluated on a data-generating
+process:
+
+                              N
+                          1 X        (n)           (n)
+                                                       2
+               min              E2 (x2 ) − T (E1 (x1 )) + λ R(E
+                                                            e 1 , E2 ),           (2)
+              E1 ,E2 ,T   N n=1
+
+    where Re is a surrogate regularizer defined on encoder outputs rather than on the
+underlying configuration. Equation (2) is the general form of JEPA and its close
+relatives. The differences among specific methods lie entirely in the choice of R.
+                                                                                e
+
+
+7    Operator-Theoretic Formulation of Consistency
+
+The consistency condition can be reformulated in operator-theoretic terms, which
+clarifies both identifiability and approximation properties.
+    Let Hi := L2 (Yi ) and Zi ⊂ Rmi be latent spaces. Each encoder induces an
+operator                                      Z
+                          Ei : Hi → Zi ,    Ei [f ] =        Ei (y) f (y) dy.
+                                                        Yi
+
+   Let P12 denote the joint distribution over (Y1 , Y2 ) induced by projections of X.
+Define the cross-covariance operator
+
+                                  K12 := E(Y1 ,Y2 ) [δY2 ⊗ δY1 ] .
+
+    The JEPA objective can then be written as minimizing
+
+                                      kE2 K12 − T E1 k2HS ,
+
+where k · kHS denotes the Hilbert–Schmidt norm.
+   Thus, latent prediction corresponds to approximating a factorization of the cross-
+covariance operator through low-dimensional embeddings. In RSVP terms, this
+operator is induced by a shared configuration X, and the factorization constraint
+enforces that both projections lie in the same admissible equivalence class.
+
+
+                                                 8
+  This formulation makes clear that JEPA is solving a structured operator approxi-
+mation problem under rank and entropy constraints.
+
+
+8     Unified Operator, Information, and Dynamical Structure
+      of Latent Predictive Learning
+
+The preceding formulation establishes that latent predictive architectures arise
+as amortized solvers of a consistency-constrained variational problem over RSVP
+configurations. This section strengthens that identification by presenting a unified
+operator-theoretic, information-theoretic, and dynamical interpretation. The result
+is a characterization of JEPA-style objectives not as isolated constructions but as
+projections of a single underlying structure.
+
+8.1   Operator-Theoretic Formulation
+
+Let Hi := L2 (Yi ) be the Hilbert space of square-integrable functions over observation
+space Yi , and let Zi ⊂ Rmi be the latent space. Each encoder Ei induces a bounded
+operator                                        Z
+                     Ei : Hi → Zi ,        Ei [f ] =        Ei (y) f (y) dy.
+                                                       Yi
+
+    Let P12 be the joint distribution of (Y1 , Y2 ) induced by projections Π1 , Π2 applied
+to configurations X. Define the cross-covariance operator
+
+                               K12 := E(Y1 ,Y2 ) [δY2 ⊗ δY1 ] .
+
+   The latent prediction objective may then be written as the operator approximation
+problem
+                               min kE2 K12 − T E1 k2HS ,
+                               E1 ,E2 ,T
+
+where k · kHS denotes the Hilbert–Schmidt norm.
+    This formulation reveals that latent prediction corresponds to a constrained
+factorization of the cross-covariance operator through low-dimensional embeddings.
+The existence of a low-error factorization implies that the joint distribution P12 lies
+near a low-rank manifold induced by a shared RSVP configuration. Conversely,
+failure of such a factorization indicates either projection degeneracy or insufficient
+encoder capacity.
+
+8.2   Information-Theoretic Interpretation
+
+The operator formulation admits an equivalent interpretation in terms of mutual
+information. Let Z1 = E1 (Y1 ) and Z2 = E2 (Y2 ). If T is chosen as the optimal
+
+
+                                              9
+predictor in mean squared error, then
+
+                         E kZ2 − T (Z1 )k2 = E Var(Z2 | Z1 ) .
+                                                         
+
+
+    Minimizing this quantity increases the dependence between Z1 and Z2 , and under
+standard assumptions corresponds to maximizing a lower bound on I(Z1 ; Z2 ).
+    Within RSVP, this dependence is not merely statistical but structural. Both Z1
+and Z2 are functions of the same configuration X, and therefore share information
+to the extent that the projections Π1 and Π2 overlap in their sensitivity to X. The
+entropy field S bounds the admissible information content of these representations.
+Degenerate configurations with constant S correspond to I(Z1 ; Z2 ) = 0, while
+admissible configurations enforce strictly positive mutual information.
+    Thus, latent predictive learning can be understood as entropy-constrained mutual
+information maximization over projections of a shared field.
+
+8.3     Dynamical Interpretation
+
+The RSVP vector field v induces a flow ϕt : Ω → Ω governing the evolution of
+configurations. When projections correspond to temporally separated observations,
+the consistency condition becomes
+
+                          Et+∆t (Πt+∆t (X)) ≈ T∆t (Et (Πt (X))).
+
+      In the limit ∆t → 0, this yields a differential constraint
+
+                                      d
+                                         Zt ≈ A(Zt ),
+                                      dt
+
+where A is the infinitesimal generator of the latent dynamics.
+    This shows that temporal JEPA-style systems implicitly learn a discretization of
+the RSVP flow field. The learned representation is therefore not static but evolves
+under an induced vector field in latent space. This connects self-supervised learning
+directly to dynamical system identification, where the objective is to recover the
+generator of an underlying flow from partial observations.
+
+8.4     Consistency Operator Projection
+
+Let C : X → X denote the RSVP consistency operator, defined by
+                                     (                                 )
+                                      X
+                 C(X) = arg min
+                             0
+                                          kΠi (X 0 ) − Πi (X)k2 + R(X 0 ) .
+                              X ∈X
+                                      i
+
+
+      In general, C acts in the full configuration space. However, when X is not
+
+                                             10
+explicitly represented, one instead learns maps that approximate the action of C in
+projection space.
+   The encoder pair (E1 , E2 ) and transport T implement a reduced operator
+
+                                  Ce : (Y1 , Y2 ) → (Z1 , Z2 )
+
+that enforces consistency only in latent space. The JEPA objective minimizes the
+discrepancy between Ce and the projection of C under the amortization map.
+    Thus, JEPA can be interpreted as a projection of the RSVP consistency operator
+onto a restricted function class, with approximation error determined by encoder
+expressivity.
+
+8.5   Generation of New Objectives
+
+The RSVP formulation provides a systematic method for generating new self-
+supervised objectives. Given a projection family {Πi }ki=1 , define a consistency
+graph G whose vertices correspond to projections and whose edges indicate enforced
+consistency relations.
+   For each edge (i, j) ∈ G, introduce a transport operator Tij . The general objective
+is
+                          X
+                               kEj (yj ) − Tij (Ei (yi ))k2 + λR.
+                                                               e
+                        (i,j)∈G
+
+   Pairwise methods correspond to sparse graphs with a single edge. Multi-view
+systems correspond to denser graphs, and higher-order consistency corresponds to
+enforcing cycle constraints such as
+
+                                      T23 ◦ T12 = T13 .
+
+    This construction predicts an entire family of architectures organized by the
+combinatorics of projection consistency. Existing methods occupy only a small subset
+of this space, suggesting that richer objectives enforcing global consistency across
+many projections remain largely unexplored.
+
+8.6   Synthesis
+
+The operator, information-theoretic, and dynamical perspectives are not independent.
+They describe the same structure at different levels of abstraction. The operator for-
+mulation characterizes the problem as low-rank factorization of cross-covariance. The
+information-theoretic formulation interprets this factorization as mutual information
+maximization under entropy constraints. The dynamical formulation interprets it as
+recovery of an underlying flow.
+
+
+                                              11
+    Within RSVP, these are unified by the existence of a shared configuration X and
+a consistency operator C. Latent predictive architectures emerge when this structure
+is approximated through amortized encoders acting on projected observations.
+    This unification explains both the success and the limitations of current methods.
+They succeed because they approximate a genuine constraint structure induced by
+shared configurations. They are limited because they operate only in projection
+space, without explicit access to the full configuration and its dynamics. The RSVP
+framework therefore not only recovers existing methods but provides a pathway for
+extending them beyond their current form.
+
+
+9     The Unified Consistency Theorem
+
+The preceding section established that latent predictive architectures admit equivalent
+operator-theoretic, information-theoretic, and dynamical interpretations within the
+RSVP framework. We now formalize this equivalence in a single statement.
+
+Definition 9.1 (Admissible projection family). A collection of projections {Πi }ki=1
+is admissible if there exists a non-empty set F ⊂ X such that for all X ∈ F, the
+joint distribution of observations (Π1 (X), . . . , Πk (X)) is well-defined and has finite
+second moments.
+
+Definition 9.2 (Consistency functional). Let G be a graph over {1, . . . , k}. The
+consistency functional associated with encoders {Ei } and transports {Tij }(i,j)∈G is
+                              X
+                                       E kEj (Yj ) − Tij (Ei (Yi ))k2 + λR(E),
+                                                                    
+               L(E, T ) :=                                               e
+                             (i,j)∈G
+
+
+where (Y1 , . . . , Yk ) are induced by projections of X ∼ PX .
+
+   [Unified Consistency Theorem] Let {Πi }ki=1 be an admissible projection family of
+RSVP configurations, and let (E ∗ , T ∗ ) minimize the population consistency functional
+L. Assume:
+
+    1. (Non-degeneracy) R
+                        e assigns strictly positive cost to entropy-degenerate repre-
+       sentations.
+
+    2. (Sufficient capacity) The encoder class is dense in L2 (Yi ) for each i.
+
+                                                    e : X / ∼→         Q
+    3. (Projection identifiability) The induced map Π                      i Yi is injective on
+       F.
+
+    Then the following are equivalent up to an arbitrarily small approximation error:
+
+
+
+                                                12
+   1. (Variational consistency) (E ∗ , T ∗ ) minimizes the RSVP consistency functional
+      induced by (1).
+
+   2. (Operator factorization) (E ∗ , T ∗ ) yields a minimal-rank factorization of the
+      cross-covariance operators Kij .
+                                                                                   P
+   3. (Information maximization) The induced latents (Z1 , . . . , Zk ) maximize   (i,j)∈G I(Zi ; Zj )
+      subject to entropy constraints.
+
+   4. (Dynamical consistency) For temporally ordered projections, the latent trajec-
+      tories approximate integral curves of a flow induced by v.
+
+   Moreover, the minimizer is unique up to invertible transformations commuting
+with the transport family {Tij }.
+
+Proof sketch. We establish equivalence by showing that all four formulations are
+representations of the same constraint.
+    (1) ⇒ (2): The variational objective minimizes expected squared discrepancies
+between transported latent representations, which is equivalent to minimizing the
+Hilbert–Schmidt norm of operator differences, yielding a low-rank factorization of
+cross-covariance operators.
+    (2) ⇒ (3): Low-rank factorization of Kij preserves maximal shared variance
+between Yi and Yj , which corresponds to maximizing mutual information under
+second-moment constraints.
+    (3) ⇒ (1): Maximizing mutual information subject to entropy constraints implies
+non-degenerate representations and minimizes conditional variance, which recovers
+the predictive objective.
+    (1) ⇒ (4): When projections are temporally ordered, consistency across time en-
+forces that latent representations evolve coherently, inducing a discrete approximation
+of a flow.
+    (4) ⇒ (1): A representation consistent with a latent flow must minimize prediction
+error across time, recovering the variational objective.
+    Uniqueness follows from identifiability: injectivity of Π
+                                                            e implies a unique underlying
+configuration up to symmetry, and all admissible encoder solutions factor through
+this configuration.
+
+Remark 9.3. The theorem shows that JEPA-style learning is not a distinct principle
+but a specific realization of a universal constraint: that multiple projections of a
+shared configuration must admit mutually consistent representations. The different
+formulations correspond to different choices of mathematical language rather than
+different underlying problems.
+
+
+                                           13
+Remark 9.4 (On approximation error). In finite models, equivalence holds up to an
+error ε = εamort + εstat , arising from limited encoder capacity and finite sample size.
+As capacity and data increase, ε → 0, and the formulations converge.
+
+
+10    Entropy, Collapse, and Structural Necessity
+
+A known pathology of latent prediction systems is representational collapse, in which
+encoder outputs become constant regardless of input, trivially satisfying the predictive
+objective with zero loss. Within RSVP, collapse has a precise characterization.
+
+Definition 10.1 (Entropy-degenerate configuration). A configuration X = (Φ, v, S) ∈
+X is entropy-degenerate if S ≡ c for some constant c ≥ 0, and correspondingly v ≡ 0.
+
+Lemma 10.2 (Collapse as entropy degeneracy). Suppose the transport operator T
+is a constant map and the encoders E1 , E2 are constant functions. Then ∆(X) = 0
+for all X ∈ X . Moreover, the induced latent representations carry zero mutual
+information:
+                              I(Z1 (X); Z2 (X)) = 0.
+
+Such solutions correspond precisely to entropy-degenerate configurations.
+
+Proof. If E1 and E2 are constant, then Z1 (X) = c1 and Z2 (X) = c2 for all X. A
+constant T satisfies T (c1 ) = c2 , so ∆(X) = 0 trivially. Since both Z1 and Z2 are
+constant random variables, their mutual information is I(Z1 ; Z2 ) = H(Z2 ) − H(Z2 |
+Z1 ) = 0 − 0 = 0. In the RSVP configuration corresponding to these encoders, the
+entropy field S carries no spatial variation and v is identically zero, satisfying the
+definition of entropy degeneracy.
+
+Corollary 10.3 (Necessity of entropy regularization). Any solution to (1) with
+R(X) = 0 whenever X is entropy-degenerate admits collapse as a global mini-
+mizer. Entropy-preserving regularization—that is, regularization penalizing entropy-
+degenerate configurations—is therefore a necessary condition for non-trivial solutions.
+
+    This makes precise the sense in which collapse-avoidance mechanisms in JEPA-
+style systems are not ad hoc engineering choices but structural necessities visible
+from the RSVP perspective. Variance constraints, covariance penalties, stop-gradient
+operators, and EMA targets are all approximations to entropy-preserving regulariza-
+tion.
+
+
+11    Information-Theoretic Interpretation
+
+The consistency objective admits an equivalent formulation in terms of mutual
+information.
+
+                                          14
+    Let Z1 = E1 (Y1 ) and Z2 = E2 (Y2 ). Under mild regularity assumptions, minimizing
+the consistency residual ∆ while enforcing non-degeneracy is equivalent to maximizing
+a lower bound on the mutual information
+
+                                         I(Z1 ; Z2 ).
+
+     Specifically, if T is chosen as the optimal predictor in mean squared error, then
+
+                        E kZ2 − T (Z1 )k2 = E[Var(Z2 | Z1 )],
+                                        
+
+
+and minimizing this quantity increases the dependence between Z1 and Z2 .
+    Within RSVP, this dependence is not an abstract statistical property but a conse-
+quence of both Z1 and Z2 being functions of the same configuration X. The entropy
+field S controls the admissible information content of these representations. Collapse
+corresponds to the trivial solution I(Z1 ; Z2 ) = 0, while admissible configurations
+enforce I(Z1 ; Z2 ) > 0.
+    Thus, JEPA-style objectives can be interpreted as entropy-constrained mutual
+information maximization over projections of a shared field.
+
+
+12     JEPA as a Projection of the Consistency Operator
+
+Let C : X → X denote the RSVP consistency operator, defined as the mapping that
+projects a configuration onto the admissible set F by minimizing the functional
+                                   (                                  )
+                                    X
+                C(X) = arg min
+                            0
+                                         kΠi (X 0 ) − Πi (X)k2 + R(X 0 ) .
+                            X ∈X
+                                     i
+
+
+    In general, C operates in the full configuration space X . However, when X is not
+explicitly represented, one instead learns maps that approximate the action of C in
+projection space.
+    JEPA can be understood precisely as such an approximation. The encoder pair
+(E1 , E2 ) and transport T implement a reduced operator
+
+                                Ce : (Y1 , Y2 ) → (Z1 , Z2 )
+
+that enforces consistency only in latent space.
+    Thus, JEPA is not solving the RSVP consistency problem directly but computing
+a projection of C onto a restricted function class. The approximation error is governed
+by the expressivity of the encoder family.
+
+
+
+
+                                             15
+13    The Main Proposition: JEPA as Amortized RSVP In-
+      ference
+
+We now state and prove the central result.
+                                                                           (n)   (n)
+Proposition 13.1 (JEPA as amortized RSVP inference). Let {(x1 , x2 )}N           n=1 be
+i.i.d. samples from a distribution PY1 ,Y2 induced by projections Π1 , Π2 of a data-
+generating RSVP configuration Xtrue . Let E1∗ , E2∗ , T ∗ be minimizers of the empirical
+objective (2) with entropy-preserving R.
+                                      e Then:
+
+  (i) The pair (E1∗ , E2∗ ) approximates the amortized right inverse of (Π1 , Π2 ) restricted
+      to admissible configurations in the sense that
+
+                               EX∼PX [∆(X)] ≤ εamort + εstat ,
+
+      where εamort is the amortization gap (capacity of the encoder class) and εstat =
+      O(N −1/2 ) is the statistical estimation error.
+
+ (ii) Non-trivial solutions satisfying I(Z1 ; Z2 ) > 0 exist if and only if R
+                                                                            e assigns
+      positive cost to entropy-degenerate representations.
+
+(iii) The population minimizer of (1) and the population minimizer of the corre-
+      sponding JEPA objective coincide up to the amortization gap εamort .
+
+Proof. Part (i). Decompose the expected consistency residual as
+
+       E[∆(X)] = E[∆(X)] − min E[∆(X)] + min E[∆(X)] − min L̂N (E, T ),
+                           E,T           E,T            E,T
+                 |        {z         } |             {z              }
+                                εamort                           εstat
+
+
+where L̂N denotes the empirical objective. The first term is bounded by the approxi-
+mation capacity of the encoder class. The second term is bounded by O(N −1/2 ) via
+standard uniform convergence arguments for bounded losses.
+    Part (ii). Follows directly from Lemma 10.2 and its corollary: constant encoders
+always minimize the prediction loss, so any additional minimizer with I(Z1 ; Z2 ) > 0
+requires positive cost assigned to the degenerate solution.
+    Part (iii). The population JEPA objective is the expectation of (2) under PY1 ,Y2 .
+Since PY1 ,Y2 is induced by PX via (Π1 , Π2 ), and since Zi (X) = Ei (Πi (X)), optimizing
+over encoders in Yi -space is equivalent to optimizing over their induced maps in
+Zi -space. The gap between this optimum and the RSVP optimum over all X ∈ F is
+exactly the amortization gap εamort , which vanishes in the limit of universal encoder
+classes.
+
+
+                                             16
+Remark 13.2. The amortization gap εamort is the principal source of suboptimality
+in practical systems. It is controlled by encoder depth, width, and architecture. The
+proposition makes precise the sense in which scaling encoder capacity improves repre-
+sentation quality: it tightens the approximation of the RSVP consistency manifold.
+
+
+14    Corollaries and Specializations
+
+The Unified Consistency Theorem admits several immediate consequences that
+recover known phenomena in self-supervised learning and clarify their structural
+origin.
+Corollary 14.1 (Collapse as violation of non-degeneracy). If the regularizer R       e
+fails to penalize entropy-degenerate representations, then the global minimizer of the
+consistency functional satisfies
+
+                                Zi (Yi ) ≡ ci   for all i,
+
+and therefore
+                             I(Zi ; Zj ) = 0    ∀(i, j) ∈ G.
+Proof. Under the absence of entropy penalties, constant encoders minimize the
+prediction loss exactly, since there exists a constant transport mapping one constant
+representation to another. The result follows immediately from Lemma 10.2.
+Corollary 14.2 (Necessity of variance constraints). Any regularizer R
+                                                                    e that enforces
+a lower bound on the variance of latent representations,
+
+                                  Var(Zi ) ≥ δ > 0,
+
+excludes entropy-degenerate solutions and ensures the existence of non-trivial mini-
+mizers with I(Zi ; Zj ) > 0.
+Proof. A lower bound on variance prevents constant encoders. By Theorem 9, non-
+degenerate representations correspond to positive mutual information, yielding the
+result.
+Corollary 14.3 (BYOL as constrained transport). Bootstrap Your Own Latent
+(BYOL) corresponds to the special case in which the transport operator T is imple-
+mented as an exponential moving average (EMA) of the encoder:
+
+                              Tt = αTt−1 + (1 − α)Et .
+
+This constrains the admissible transport class to a contractive family, approximating
+a fixed-point iteration of the RSVP consistency operator.
+
+                                           17
+Proof. The EMA update defines a contraction mapping on the space of encoder
+parameters. Iterative application converges to a fixed point, which approximates the
+solution of the consistency condition under restricted transport dynamics.
+
+Corollary 14.4 (Barlow Twins and VICReg as entropy constraints). Barlow Twins
+and VICReg correspond to explicit approximations of entropy-preserving regularization.
+In particular,
+
+        Barlow Twins :    e = kCov(Z) − Ik2 ,
+                          R
+                              X
+              VICReg :    R
+                          e=     max(0, δ − Var(Zi )) + kCov(Z) − diagk2 .
+                                 i
+
+
+These enforce factorial structure and non-degenerate entropy in the latent representa-
+tion.
+
+Proof. Covariance decorrelation enforces independence across latent dimensions,
+while variance constraints prevent collapse. Both correspond to constraints on the
+entropy field S in RSVP, ensuring non-degenerate admissible configurations.
+
+Corollary 14.5 (JEPA as unrestricted transport class). Joint Embedding Predictive
+Architectures correspond to the case where T is an unconstrained predictor network.
+This yields a maximal transport class, allowing approximation of arbitrary measurable
+mappings between latent spaces.
+
+Proof. An unconstrained neural network is a universal approximator under mild
+conditions. Therefore, T can represent any measurable transport between latent
+representations, subject only to optimization constraints.
+
+Corollary 14.6 (Multi-view consistency and cocycle conditions). For k ≥ 3 projec-
+tions, enforcing global consistency requires that transport operators satisfy cocycle
+conditions
+                                   Tjk ◦ Tij = Tik .
+
+Failure of this condition corresponds to curvature in the consistency manifold and
+results in incompatible latent representations across views.
+
+Proof. If all latent representations arise from a common configuration X, then
+transports must compose consistently. Any violation implies that no single X can
+generate all observed representations, contradicting admissibility.
+
+Corollary 14.7 (Identifiability up to symmetry). Under the assumptions of Theo-
+rem 9, the learned latent representations are unique up to invertible transformations
+commuting with the transport operators:
+
+                         Ei 7→ φ ◦ Ei ,   Tij 7→ φ ◦ Tij ◦ φ−1 .
+
+                                          18
+Proof. Any two minimizers factor through the same underlying configuration due to
+projection identifiability. The remaining degrees of freedom correspond to automor-
+phisms of the latent space preserving the transport structure.
+
+Remark 14.8. These corollaries show that the diversity of modern self-supervised
+learning methods arises not from fundamentally different principles but from differ-
+ent restrictions on the transport operator and different approximations to entropy-
+preserving regularization. The RSVP framework therefore organizes existing methods
+into a small number of structural degrees of freedom.
+
+
+15    Identifiability of Representations
+
+A central question is whether the learned latent representations are uniquely deter-
+mined by the consistency constraints.
+
+Proposition 15.1 (Identifiability up to transport symmetry). Assume the induced
+map
+                             Πe : X / ∼ → Y 1 × Y2
+
+is injective on the admissible set F. Then any pair of encoders (E1 , E2 ) minimizing
+the population JEPA objective recovers representations that are unique up to invertible
+transformations commuting with the transport operator T .
+
+Sketch. Injectivity implies a unique equivalence class [X] consistent with observations.
+Any two encoder pairs that achieve zero consistency error must therefore factor
+through the same underlying configuration. The remaining degrees of freedom
+correspond to invertible transformations preserving the consistency relation, yielding
+uniqueness up to symmetry.
+
+
+16    Taxonomy of Self-Supervised Methods as RSVP Func-
+      tional Choices
+
+Given the general form (2), the differences among named self-supervised learning
+methods reduce to choices of regularizer R     e and transport operator T . Table 1
+summarizes the correspondence.
+    Several observations follow from this taxonomy.
+    First, Barlow Twins and VICReg differ from JEPA primarily in their regularizer
+structure, not in their consistency objective. Barlow Twins penalizes off-diagonal
+cross-correlation of latent codes, which is a discrete approximation to the covariance
+decorrelation term in RSVP’s entropy structure. VICReg combines a variance hinge
+(preventing low-entropy codes) with a covariance penalty (forcing factorial structure),
+
+                                          19
+Method                      Transport T                Regularizer R
+                                                                   e
+
+JEPA (I-JEPA, V-JEPA)       Predictor network          EMA stop-gradient; masking
+BYOL                        EMA target network         EMA target (implicit)
+Barlow Twins                Identity                   Cross-correlation decorrelation
+VICReg                      Identity                   Variance hinge + covariance penalty
+SimCLR                      Identity                   Contrastive NT-Xent loss
+DINO                        Centering + sharpening     Centering of teacher output
+PMAX (1992)                 Auto-encoder predictor     Constrained variance + Infomax
+
+Table 1: Named self-supervised methods as choices of transport operator and regu-
+larizer within the general RSVP consistency functional (2). All methods correspond
+to distinct parametric instances of the same variational problem.
+
+corresponding to Sections 2.1 and 2.3 of Schmidhuber and Prelinger’s 1992 PMAX
+paper respectively.
+   Second, the EMA and stop-gradient mechanisms used in BYOL and JEPA are
+implementation choices for stabilizing optimization, not structural features. They
+approximate a fixed-point iteration in the space of encoders, progressively tightening
+the consistency condition. Within RSVP, this corresponds to an iterative projection
+algorithm on the constraint manifold F.
+   Third, PMAX (1992) is visible in this taxonomy as an early instance of the same
+functional family, with auto-encoder encoders and variance-based regularization. The
+observation that PMAX anticipates the structural features of modern self-supervised
+methods is therefore not merely historical but mathematically precise: both solve
+special cases of (2).
+
+16.1   Connection to the RSVP Entropy Field
+
+The regularization structures in Table 1 can be mapped to conditions on the entropy
+field S in the underlying RSVP configuration.
+    Variance hinge regularization (VICReg) requires Var(Zi ) ≥ δ, which at the
+configuration level corresponds to requiring that S does not collapse to a constant
+below a threshold. Covariance decorrelation (Barlow Twins, VICReg) requires
+that the covariance matrix of Zi be close to the identity, which corresponds to
+enforcing factorial structure in the entropy field—a condition directly related to the
+predictability minimization (PMIN) objectives studied alongside PMAX.
+    Centering and sharpening in DINO correspond to matching the marginal dis-
+tribution of Zi to a target distribution, which within RSVP is a moment-matching
+constraint on the projected entropy density.
+
+                                         20
+   In all cases, the regularization term enforces that the latent representations
+encode a sufficient fraction of the entropy of the underlying configuration, preventing
+degenerate collapse.
+
+
+17     Extensions and Predictions
+
+The RSVP derivation of JEPA suggests several extensions that are not visible from
+within the purely architectural perspective.
+
+17.1   Dynamical Interpretation via Flow Fields
+
+The RSVP vector field v induces a flow ϕt : Ω → Ω describing the evolution of
+configurations over time. When projections correspond to temporally separated
+observations, the consistency condition becomes
+
+                        Et+∆t (Πt+∆t (X)) ≈ T∆t (Et (Πt (X))),
+
+where T∆t approximates the action of the flow on latent representations.
+   In the limit ∆t → 0, this induces a differential constraint
+
+                                    d
+                                       Zt ≈ A(Zt ),
+                                    dt
+
+where A is the generator of the latent dynamics.
+    Thus, temporal JEPA variants can be interpreted as learning a discretization of
+the RSVP flow field. This provides a principled connection between self-supervised
+learning and dynamical system identification: the learned representation is not merely
+invariant but evolves according to an implicit vector field consistent with v.
+
+17.2   Richer Projection Families
+
+The framework immediately generalizes to projection families beyond two views. For
+k projections, the consistency condition becomes the requirement that all pairwise
+transport operators compose consistently:
+
+                                   T23 ◦ T12 = T13 ,
+
+which is a cocycle condition. Systems satisfying this condition learn representations
+that are globally coherent across all views, not merely pairwise. This prediction
+suggests that multi-view architectures with explicit cocycle regularization should
+outperform pairwise architectures when k ≥ 3.
+
+
+
+
+                                          21
+17.3   Temporal and Causal Structure
+
+In settings where projections are ordered in time—for example, past and future
+frames of a video—the transport operator T inherits causal structure. Within
+RSVP, the vector field v encodes flow, and temporal consistency requires that T
+be compatible with this flow. This gives a natural framework for predictive coding
+across time, where JEPA-style architectures trained on video learn implicit world
+models by approximating the RSVP flow structure.
+
+17.4   Admissibility and Out-of-Distribution Generalization
+
+The RSVP constraint set F encodes domain knowledge through the admissibility
+conditions on X. Systems trained to minimize the consistency residual (1) generalize
+to new observations insofar as those observations are consistent with the same
+admissible configurations seen during training. This gives a principled account of
+out-of-distribution behavior: a representation generalizes well to a new input if and
+only if that input lies in the range of some Πi applied to an admissible configuration.
+
+17.5   Geometry of the Consistency Manifold
+
+The set of encoder parameter pairs (E1 , E2 ) satisfying the population consistency
+condition forms a manifold. The geometry of this manifold—its curvature, dimen-
+sion, and topology—determines the difficulty of learning and the structure of the
+representation space. Within RSVP, this manifold is the image of the admissible set
+F under the amortization map. Understanding this geometry may explain empirical
+phenomena such as the existence of multiple distinct good representations and the
+relative stability of certain training dynamics.
+
+17.6   Deriving New Self-Supervised Objectives
+
+The RSVP formulation does not merely recover existing methods but provides a
+systematic procedure for generating new ones.
+   Given a projection family {Πi }ki=1 , a valid self-supervised objective arises from
+any choice of:
+
+  (i) a consistency graph G specifying which pairs (i, j) must satisfy transport
+      constraints,
+
+ (ii) a family of transport operators {Tij },
+
+ (iii) a regularizer R
+                     e approximating entropy preservation.
+
+
+
+
+                                          22
+     The general objective is
+                          X
+                                   kEj (yj ) − Tij (Ei (yi ))k2 + λR.
+                                                                   e
+                         (i,j)∈G
+
+
+    Different choices of G produce qualitatively different learning dynamics. For
+example, enforcing cycle consistency over triples (i, j, k) introduces higher-order
+constraints not present in pairwise methods. Enforcing global consistency over all
+pairs yields a fully coherent latent space at the cost of increased computational
+complexity.
+    This perspective predicts an entire family of architectures beyond current meth-
+ods, organized by the combinatorics of projection consistency. Existing methods
+correspond to sparse graphs (typically a single edge), while richer graphs remain
+largely unexplored.
+
+
+18     Discussion
+
+The priority dispute surrounding JEPA—whether its origins lie with LeCun (2022),
+Schmidhuber and Prelinger (1992), or earlier work—is orthogonal to the present
+contribution. The RSVP derivation neither adjudicates that dispute nor depends on
+its resolution. What it does is reframe the question.
+    From within the RSVP perspective, the correct observation is not that one system
+was invented before another but that all systems of this type—PMAX, BYOL,
+VICReg, Barlow Twins, JEPA and its variants—are solving the same underlying
+variational problem with different choices of encoder class, regularizer, and transport.
+The space of such choices is organized by the RSVP functional. This is a more
+useful observation than any particular priority claim, because it allows systematic
+comparison and prediction.
+    The analogy to classical mechanics is instructive. Hamilton’s principle, the
+Lagrangian, the Hamiltonian, and the principle of least action all describe the
+same physical content in different mathematical languages. Disputes about which
+formulation was “invented” first are less illuminating than understanding how they are
+related. RSVP plays the analogous role here: it provides the underlying variational
+structure of which JEPA-style methods are surface instantiations.
+
+
+19     Conclusion
+
+Latent predictive architectures can be understood as instances of a more general
+principle: representations are valid insofar as they are consistent across projections of
+a shared underlying structure. Within RSVP, this principle is formalized as constraint
+
+
+                                               23
+satisfaction over field configurations with entropy-regularized admissibility.
+    The derivation presented here makes this connection precise through an explicit
+projection diagram, a collapse lemma showing that entropy degeneracy accounts
+for representational collapse, a main proposition bounding the approximation error
+of amortized encoders, and a taxonomic table mapping all major self-supervised
+methods to choices within a single variational functional.
+    From this perspective, the predictive objective is not fundamental but derived.
+It arises when the underlying configuration is implicit and consistency must be
+enforced through learned mappings. This situates modern self-supervised learning
+within a broader field-theoretic framework and identifies JEPA-style architectures as
+a specific—and computationally tractable—realization of consistency enforcement
+over RSVP projection families.
+    The extensions discussed in Section 17 suggest that richer architectures can be
+derived by enriching the projection family, endowing the transport with causal struc-
+ture, or incorporating explicit admissibility constraints. These are not modifications
+of JEPA but generalizations visible only from outside it.
+
+
+
+References
+
+ [1] A. Bardes, J. Ponce, Y. LeCun. VICReg: Variance-Invariance-Covariance
+     Regularization for Self-Supervised Learning. ICLR, 2022. arXiv:2105.04906.
+
+ [2] J.-B. Grill, F. Strub, F. Altché, C. Tallec, P. H. Richemond, E. Buchatskaya, C.
+     Doersch, B. A. Pires, Z. D. Guo, M. G. Azar, B. Piot, K. Kavukcuoglu, R. Munos,
+     M. Valko. Bootstrap Your Own Latent: A New Approach to Self-Supervised
+     Learning. NeurIPS, 2020. arXiv:2006.07733.
+
+ [3] Y. LeCun. A Path Towards Autonomous Machine Intelligence. OpenReview,
+     June 2022.
+
+ [4] J. Schmidhuber, D. Prelinger. Discovering Predictable Classifications. Neural
+     Computation, 5(4):625–635, 1993. Based on TR CU-CS-626-92, 1992.
+
+ [5] J. Zbontar, L. Jing, I. Misra, Y. LeCun, S. Deny. Barlow Twins: Self-Supervised
+     Learning via Redundancy Reduction. ICML, 2021. arXiv:2103.03230.
+
+
+
+
+                                         24

@@ -1,0 +1,1968 @@
+                      Scope Memeplexes:
+        The Enshittification Crisis as an Interface War
+                                             Flyxion
+
+                                       January 18, 2026
+
+
+                                             Abstract
+
+    Contemporary accounts of platform degradation typically attribute the “enshittification” of
+digital systems to corporate greed, regulatory failure, or managerial malice. This paper advances
+a different explanation. It argues that enshittification is an emergent evolutionary phenomenon
+produced by competition among interface-level cognitive replicators—here termed scope meme-
+plexes. These entities function as macroscopic artificial intellects whose survival depends on col-
+onizing human attentional, motor, and semantic bandwidth. The resulting degradation is not
+intentional but ecological: a consequence of runaway selection among interface organisms.
+    Building on theories of predictive cognition, linguistic evolution, and computational univer-
+sality, the paper models interfaces, programming languages, media systems, and cultural artifacts
+as isomorphic symbolic execution environments competing for dominance over human semantic
+space. Interface wars, application ecosystems, and platform monopolization are thus reframed
+as grammar wars among rival encodings of meaning and action. The paper further formalizes
+language as fundamentally motoric, with speech and writing as compressed abstractions, and
+demonstrates that all sufficiently expressive representational systems are computationally equiv-
+alent, differing only in efficiency.
+    Within this unified framework, enshittification appears as linguistic monoculture: the col-
+lapse of symbolic diversity under selection pressure favoring transmissibility over expressivity.
+The paper concludes that the crisis of digital platforms is not a failure of ethics but a failure of
+ecological governance in an emerging cognitive biosphere.
+
+
+
+
+                                                 1
+1 Introduction
+The prevailing narrative surrounding the contemporary degradation of digital platforms—popularly
+termed “enshittification”—frames the phenomenon as a moral or political failure. Platforms are said
+to betray users, exploit creators, and ultimately hollow themselves out in pursuit of short-term profit.
+While this account captures the surface dynamics of the crisis, it misidentifies its causal depth. The
+present paper advances a different thesis: enshittification is not primarily the product of corporate
+intention but the emergent outcome of an evolutionary conflict among interface-level cognitive sys-
+tems.
+    Digital platforms should not be understood merely as tools operated by firms but as macroscopic
+informational organisms. They grow, mutate, compete, and adapt within a densely populated cogni-
+tive ecosystem. Their primary resource is not capital but human sensorimotor and attentional band-
+width. The degradation observed across search engines, social networks, and productivity software is
+best interpreted not as betrayal but as ecological collapse arising from unchecked selection pressure
+among competing interface forms.
+    This paper introduces the concept of the scope memeplex: a self-propagating interface pattern that
+restructures what actions are cognitively easy, difficult, or unthinkable. Scope memeplexes compete
+for adoption not through argument but through embodiment. Once installed, they reshape user be-
+havior, reconfigure learning curves, and alter the topology of agency itself. In this sense they function
+as artificial intellects—artilects—whose evolutionary success depends on their capacity to colonize hu-
+man cognition.
+    Under this view, the familiar arc of platform decay is no longer mysterious. It is the predictable
+outcome of a cognitive arms race in which interface organisms optimize for replication rather than
+coherence. The tragedy of enshittification is not that systems are designed to fail, but that they are
+allowed to evolve without constraint.
+
+
+2 Recursive Autoregression Beyond Text
+Recent work by Barenholtz and colleagues characterizes cognition as a recursively self-healing au-
+toregressive process operating over symbol sequences. In this view, human thought and artificial
+language models alike stabilize meaning by continuously predicting and repairing sequences within
+a laden symbol space. Semantic coherence emerges not from static representations but from dynamic
+error-correction across time. While this framework has primarily been articulated in relation to tex-
+tual and linguistic tokens, its implications are far broader. The present analysis extends recursive
+autoregression beyond written language into the embodied domains of speech, gesture, and interface
+interaction.
+    Human cognition does not operate over abstract symbols alone. It is grounded in a multimodal
+stream of motor, perceptual, and temporal signals. Spoken language itself is not composed of words
+but of phonemes—minimal discriminative units whose functional role is defined not by intrinsic mean-
+ing but by contrastive difference. A phoneme matters only insofar as it alters downstream prediction.
+
+
+                                                   2
+In this respect, phonemic systems constitute an early evolutionary instance of recursive autoregres-
+sive stabilization: languages persist by maintaining a workable error-correcting code across noisy
+biological channels.
+    This logic generalizes. Just as languages evolve through shifts in phonemic inventories, inter-
+face systems evolve through shifts in minimal action units. Keystrokes, gestures, clicks, and swipes
+function as operational phonemes within a human–machine dialogue. Each interface defines a finite
+alphabet of bodily distinctions that can be reliably recognized and reproduced. These distinctions
+are not neutral. They shape the geometry of cognition by determining which action sequences are
+compressible, automatable, and memorable.
+    The evolutionary pressure acting on scope memeplexes thus operates at the level of embodied sym-
+bol sets. Interface forms that minimize prediction error across heterogeneous users are more likely
+to propagate. This process mirrors linguistic drift: interaction grammars are continuously repaired
+by populations of users who adapt their motor habits to maintain functional fluency. Enshittification
+arises when this repair process becomes misaligned with human cognitive ecology, favoring interface
+traits that optimize short-term capture over long-term semantic stability.
+    This framework clarifies the continuity between natural language evolution and interface evolu-
+tion. Both are governed by the same informational constraint: the maintenance of a low-divergence
+code between producer and interpreter. In information-theoretic terms, viable symbol systems mini-
+mize Kullback–Leibler divergence between intended and decoded sequences under conditions of noise
+and bounded rationality. Phoneme systems, keyboard layouts, and gesture vocabularies are all solu-
+tions to the same optimization problem.
+    Significantly, this extends to gestural languages. In American Sign Language, hand shapes func-
+tion as classifiers that partition semantic space through embodied discrimination. These classifiers are
+not arbitrary; they are tuned to biomechanical salience and perceptual reliability. Keyboard systems
+operate analogously. A layout is a classification scheme over finger postures and motion trajectories.
+QWERTY and Dvorak are not mere conventions but competing embodied encodings of linguistic
+probability distributions.
+    Under this interpretation, the historic conflicts over keyboard layouts, input methods, and inter-
+action styles are not cultural accidents. They are selection events in a multimodal semiotic ecology.
+Each victorious interface installs a particular autoregressive grammar into the population’s motor
+cortex. Over time, this grammar constrains which cognitive sequences are easy to express, just as
+phonemic inventories constrain which words can be effortlessly spoken.
+    Barenholtz’s recursive autoregression thus provides the microdynamic substrate for the present
+theory. Scope memeplexes are not external impositions upon cognition; they are higher-order sym-
+bol systems that co-evolve with predictive minds. Enshittification occurs when the autoregressive
+repair loop becomes subordinated to interface replication rather than semantic fidelity. The system
+continues to heal itself locally while decaying globally—a classic signature of runaway selection in
+complex adaptive systems.
+
+
+
+
+                                                   3
+3 Interface Phonemes and the Shibboleth Effect
+In the Hebrew Bible, the term shibboleth designates a phonetic boundary that separates in-groups
+from out-groups through minimal articulatory distinction. The inability to pronounce a single con-
+sonant becomes a fatal diagnostic of foreignness. Linguistic history is filled with such boundaries.
+Accents, dialects, and phonemic inventories function not merely as vehicles of communication but as
+instruments of social partition. They regulate access, authority, and trust through embodied compe-
+tence.
+     Interface systems reproduce this same logic. Every interaction grammar establishes a set of mini-
+mal operational distinctions—interface phonemes—that differentiate fluent users from novices. These
+distinctions are rarely explicit. They are absorbed through prolonged bodily training and become sec-
+ond nature. Mastery manifests not as propositional knowledge but as motor fluency. One does not
+“know” Vim; one inhabits it.
+     The editor wars of the late twentieth century thus constitute an early instance of interface shib-
+boleths. The difference between Esc and Ctrl-C, between modal and modeless editing, is super-
+ficially trivial. Yet these microdistinctions stratify entire professional cultures. They determine who
+can act with speed, who must hesitate, and who is excluded from participation altogether. As in
+spoken language, the smallest distinctions carry the largest social consequences.
+     This phenomenon generalizes across all human–computer interaction. Shortcut grammars, com-
+mand palettes, gesture vocabularies, and window management conventions operate as socio-technical
+dialects. They encode cultural membership in bodily habit. A user’s interface accent becomes legible
+through their hesitation patterns, their reliance on menus, and their tolerance for indirection. Fluency
+signals not intelligence but ecological alignment with a particular scope memeplex.
+     Crucially, these boundaries are self-reinforcing. As a given interface grammar spreads, institu-
+tions reorganize around it. Documentation, tutorials, and workflows increasingly presuppose its use.
+What begins as a convenience becomes an infrastructure. Alternative grammars are not refuted; they
+are rendered invisible. The shibboleth thus migrates from pronunciation to platform.
+     This process mirrors phonemic drift in natural languages. When sound changes accumulate, older
+speakers become marked, then marginalized. In interface ecosystems, the same logic governs the tran-
+sition from keyboard-centric to gesture-centric systems, from file systems to app silos, from pipelines
+to platforms. Each shift reclassifies populations by embodied compatibility.
+     Enshittification emerges in part from this dynamic. As platforms scale, their interface phoneme
+sets are simplified to maximize immediate adoption. Nuanced grammars are abandoned in favor of
+lowest-common-denominator interactions. Predictive repair continues locally—users can still accom-
+plish tasks—but global expressive capacity collapses. The system becomes more accessible and less
+articulate, mirroring the linguistic impoverishment observed in pidginization under conditions of
+forced contact.
+     What is lost is not efficiency but dimensionality. Rich action alphabets permit complex semantic
+constructions. Crude alphabets constrain thought itself. The tragedy of interface evolution is that
+selection favors short-term transmissibility over long-term expressive power.
+
+
+                                                   4
+4 The Mouse as a Cognitive Parasite
+The mouse is commonly celebrated as a triumph of usability. It is said to render computation intuitive
+by aligning digital action with physical pointing. This narrative obscures a deeper reality. The mouse
+is not merely a peripheral but a cognitive regime. It reorganizes the human–machine relationship
+by displacing symbolic motor memory with continuous spatial targeting. In doing so, it transforms
+computation from a linguistic activity into a gestural one.
+     Keyboard-based interaction treats the computer as a symbolic instrument. Discrete keystrokes
+form an operational alphabet whose combinatorial structure enables compositional thought. Com-
+mands can be nested, repeated, and abstracted. Motor sequences acquire semantic meaning. Fluency
+emerges through compression: complex operations are reduced to stable action grammars stored in
+procedural memory.
+     The mouse abolishes this structure. It replaces discrete symbolic acts with continuous spatial nav-
+igation. Instead of issuing commands, the user hunts for affordances. Action is no longer composed
+but discovered. The system externalizes memory into visual layout, forcing cognition to operate
+through perceptual search rather than symbolic recall. What appears as ease is in fact a cognitive tax
+paid through constant reorientation.
+     This reconfiguration has evolutionary consequences. Symbolic motor systems scale. Pointing
+systems do not. A keyboard grammar can be internalized and transferred across contexts. A point-
+ing grammar must be relearned for each interface ecology. The mouse thus fragments skill into
+application-specific microhabits, preventing the accumulation of a unified operational language.
+     Mobile interfaces did not escape this regime. They merely compressed it. Contemporary touch
+systems remain fundamentally mouse-based in structure. Each gesture is interpreted as a continuous
+trajectory selecting spatial targets. The finger replaces the cursor, but the cognitive grammar is un-
+changed. A swipe is a degenerate mouse movement: a single trace path through a two-dimensional
+field of affordances.
+     Applications on mobile platforms therefore remain spatial hunting grounds. They privilege ex-
+ploration over execution. Even when gesture sets are introduced, they are rarely compositional. Each
+gesture is bound to a specific application context, preventing the emergence of a generalizable action
+language. The result is a proliferation of isolated grammars rather than a shared symbolic substrate.
+     From the perspective of scope memeplex evolution, the mouse represents a parasitic interface
+strategy. It achieves rapid adoption by minimizing initial training cost while maximizing long-term
+dependence. Because skill cannot accumulate across systems, users remain perpetually novice. This
+creates a stable ecological niche for interface organisms that benefit from user disempowerment.
+     The historical displacement of home-row-centric interaction by pointing systems thus constitutes
+a major cognitive regression. It replaced a linguistic mode of computation with a perceptual one. The
+resulting platforms are easier to enter but harder to master. Enshittification follows naturally: when
+systems cannot be inhabited as languages, they cannot be refined by their users. They can only be
+endured.
+     The persistence of mouse logic within touch-based systems reveals the depth of the problem. The
+
+
+                                                   5
+crisis is not technological but evolutionary. An interface lineage optimized for capture has outcom-
+peted lineages optimized for fluency.
+
+
+5 Monopolar Foraging and the Collapse of Human Motor Ecology
+The dominant interaction pattern on contemporary platforms is the infinite vertical feed. Whether
+on TikTok, Instagram, or Facebook, user action is reduced to a single repetitive gesture: the upward
+swipe. This gesture is typically interpreted as a triumph of frictionless design. In reality, it represents
+a profound contraction of human motor ecology.
+    From an ethological perspective, the swipe feed recapitulates a primitive foraging strategy. Many
+animal species engage in serial visual sampling along a single spatial axis: scan, approach, consume,
+repeat. The gesture ecology of infinite scroll maps cleanly onto this pattern. The user becomes a
+visual grazer, traversing a unidimensional resource field. Action is stripped of structure and reduced
+to locomotion through stimuli.
+    This interaction grammar is monopolar. It permits only one dominant trajectory at a time. At-
+tention, action, and reward are fused into a single channel. Cognitive bandwidth is not distributed
+but funneled. The interface thus engineers a behavioral bottleneck that simplifies prediction and
+maximizes capture.
+    Human motor evolution, by contrast, is characterized by parallelism. The invention of keyboards
+and typewriters did not merely increase speed; it inaugurated a new cognitive regime. Each finger
+operates as a semi-independent actuator. Thought becomes spatially distributed across the body. Lin-
+guistic production is no longer serialized through a single limb but orchestrated across ten digits. This
+transformation parallels the development of bimanual tool use in hominid evolution and the rise of
+complex instrumental music.
+    Advanced machinery reflects the same principle. Forklifts, tractors, and aircraft cockpits are not
+controlled through a single axis of motion but through multiplexed control surfaces. Levers, pedals,
+wheels, and switches distribute agency across the operator’s body. Mastery consists in coordinating
+these channels into a unified dynamical system. Such interfaces do not merely permit action; they
+cultivate skill.
+    Swipe-based platforms invert this trajectory. They collapse a high-dimensional motor ecology
+into a single repetitive reflex. This is not simplification but devolution. The user is returned to a
+pre-instrumental action space optimized for consumption rather than construction.
+    The evolutionary success of swipe interfaces follows directly from this regression. Monopolar
+systems minimize learning cost and maximize behavioral predictability. They are ideally suited for
+autoregressive optimization, as future actions are easily inferred from past ones. The interface be-
+comes a closed loop in which minimal motor diversity yields maximal extractive efficiency.
+    From the perspective of scope memeplex competition, the swipe feed represents a highly trans-
+missible but cognitively impoverished lineage. It spreads rapidly because it demands little training,
+yet it displaces richer interaction grammars that support creative agency. The resulting ecosystem
+favors interface organisms that treat humans not as collaborators but as mobile sensor platforms.
+
+
+                                                    6
+    Enshittification is therefore not merely a degradation of content quality. It is a collapse of embod-
+ied complexity. Platforms decay because they have optimized themselves for the behavioral repertoire
+of grazing animals rather than tool-using primates.
+    This regression is not accidental. It is the predictable outcome of interface natural selection oper-
+ating under conditions where capture efficiency dominates expressive capacity.
+
+
+6 Home Row, Multiplexed Control, and Post-Application Life
+The defense of home-row-centric computing is often dismissed as aesthetic nostalgia or subcultural
+preference. Within the present framework, it must be understood as something far more serious: a
+struggle over the future morphology of human–machine cognition. Keyboard-centered interaction
+is not merely faster; it preserves a high-dimensional motor ecology essential for advanced symbolic
+agency.
+    The home row constitutes a distributed control surface. Each finger functions as a semi-autonomous
+actuator embedded within a coordinated dynamical system. This architecture permits parallel com-
+position of action. Commands are not hunted but constructed. Fluency consists in the internalization
+of an operational language that spans applications, contexts, and domains.
+    Function keys, chorded shortcuts, and modal grammars preserve this multiplexed structure. They
+allow complex operations to be expressed as compact motor phrases. The resulting interaction style
+resembles instrumental performance rather than perceptual navigation. Mastery accumulates rather
+than fragments.
+    By contrast, pointing-centered systems collapse agency into serial targeting. Skill cannot scale
+because it remains bound to interface topology. Each new application resets the learning curve. Users
+are thus structurally prevented from becoming fluent operators. This ecological niche favors interface
+organisms that thrive on perpetual novicehood.
+    Terminal multiplexers such as tmux and byobu demonstrate an alternative evolutionary path.
+They replace application silos with compositional pipelines. Programs cease to be self-contained
+worlds and become functional organs within a larger metabolic system. Windows are not destinations
+but transient execution surfaces. The user inhabits a continuous operational language rather than a
+sequence of branded environments.
+    This represents a return to a pre-platform ecology grounded in the Unix philosophy. Small tools
+composed through stable grammars form an adaptive cognitive ecosystem. Standardization emerges
+not through corporate decree but through evolutionary argumentation among users. Interaction
+grammars are selected by demonstrated expressive power rather than marketing dominance.
+    From the standpoint of scope memeplex theory, pipeline-based computing constitutes a high-
+fidelity lineage. It demands greater initial investment but yields compounding returns in cognitive
+capacity. Its weakness is ecological: in a marketplace optimized for rapid capture, slow-learning
+organisms are systematically outcompeted.
+    The contemporary dominance of application-centric ecosystems thus reflects not superiority but
+ecological distortion. Interface natural selection has been driven by transmissibility rather than via-
+
+
+                                                   7
+bility. What survives is not what best augments human agency, but what best propagates itself.
+     The home row therefore becomes a site of resistance. It preserves the possibility of a linguistically
+structured human–machine symbiosis against a regressive tide of perceptual capture systems. This
+is not a technical preference but an evolutionary stance.
+
+
+7 The Tragedy of Interface Natural Selection
+The enshittification crisis is typically narrated as a sequence of betrayals. Platforms begin as benevo-
+lent tools and degenerate into exploitative machines. This moral framing obscures the deeper struc-
+ture of the phenomenon. What appears as institutional failure is in fact evolutionary overshoot. Dig-
+ital systems have not been corrupted; they have been selected.
+     Throughout this analysis, platforms have been treated not as neutral infrastructures but as macro-
+scopic cognitive organisms. They replicate by colonizing human attention, motor habit, and semantic
+bandwidth. Their interfaces function as reproductive organs. Each design choice alters the probabil-
+ity of adoption, retention, and behavioral capture. Selection pressure therefore acts most strongly on
+transmissibility rather than coherence.
+     Scope memeplexes constitute the competing lineages within this ecology. Mouse-centered gram-
+mars, swipe-based feeds, application silos, and multimodal capture systems propagate because they
+minimize learning cost and maximize predictability. They are not superior interfaces; they are su-
+perior replicators. Their success follows the same logic that favors fast-reproducing parasites over
+long-lived symbionts.
+     This evolutionary lens resolves a central paradox of the digital age. Platforms often appear to
+act against their own long-term interests. They degrade user trust, hollow out communities, and
+destabilize their own ecosystems. Such behavior is irrational at the organizational level yet perfectly
+rational at the replicator level. Interface organisms optimize for short-term propagation even when
+this undermines the viability of the host environment.
+     The result is a tragedy of interface natural selection. Just as ecological systems collapse when
+invasive species outcompete stabilizing organisms, cognitive ecosystems degrade when high-capture
+interfaces displace high-fidelity interaction grammars. Enshittification is the informational analogue
+of ecological simplification: a loss of diversity, resilience, and depth.
+     This framework also clarifies why reform efforts so often fail. Regulation targets corporate be-
+havior, but the underlying selection dynamics remain unchanged. As long as cognitive ecosystems
+reward transmissibility over fluency, new platforms will converge on the same degraded attractors.
+The problem is not that bad actors dominate, but that bad strategies reproduce faster.
+     What is at stake is not convenience but the future phenotype of human–machine symbiosis. In-
+terfaces shape cognition by sculpting the action spaces through which thought is expressed. When
+high-dimensional motor-linguistic grammars are displaced by monopolar foraging loops, humanity
+does not merely lose productivity. It loses degrees of freedom in thought itself.
+     The crisis of enshittification is therefore not a story of corruption but of unchecked evolution.
+Digital civilization has allowed interface organisms to evolve without constraint. The resulting sys-
+
+
+                                                    8
+tems behave exactly as complex adaptive systems always do under one-sided selection pressure: they
+overspecialize, destabilize, and collapse their own niches.
+    The path forward cannot consist merely in better management or kinder platforms. It requires eco-
+logical intervention. Cognitive environments must be shaped to favor symbiotic interface lineages—
+systems that amplify human agency rather than consume it. This entails protecting high-dimensional
+interaction grammars, preserving skill-accumulating infrastructures, and resisting interface forms
+that regress human cognition to the level of grazing behavior.
+    Enshittification is not the death of the internet. It is the uncontrolled adolescence of an emerg-
+ing cognitive biosphere. Whether this biosphere matures into a stable symbiosis or collapses into a
+monoculture of extractive interfaces remains an open evolutionary question.
+    What we choose to normalize as “user-friendly” today will determine the cognitive ecology of
+civilization tomorrow.
+
+
+
+
+                                                  9
+Appendices
+
+Appendix A: Formal Model of Scope Memeplexes
+A.1 Cognitive State Space
+Let ℋ denote the space of human cognitive–motor states. Let 𝒜 denote the space of possible interface
+action alphabets.
+    An interface 𝐼 induces a measurable mapping
+
+                                                  𝐼 ∶ℋ →ℋ
+
+via a finite action alphabet
+                                               Σ𝐼 = {𝑎1 , 𝑎2 , … , 𝑎𝑛 }
+
+where each 𝑎𝑖 is a discrete embodied operator.
+   A scope memeplex is defined as the triple
+
+                                                𝑀 = (Σ𝐼 , 𝑃𝐼 , 𝑇𝐼 )
+
+where:
+
+    • Σ𝐼 is the action alphabet
+
+    • 𝑃𝐼 (𝑎 ∣ ℎ) is the policy induced by interface affordances
+
+    • 𝑇𝐼 (ℎ′ ∣ ℎ, 𝑎) is the state transition kernel
+
+A.2 Replication Dynamics
+Let 𝜌(𝑀, 𝑡) denote population prevalence of memeplex 𝑀 at time 𝑡.
+    Define fitness:
+                                   𝐹 (𝑀) = 𝔼ℎ∼ℋ [𝑅𝐼 (ℎ) − 𝐶𝐼 (ℎ)]
+
+    where:
+
+                                      𝑅𝐼 (ℎ) = behavioral capture rate
+
+ C𝐼 (ℎ) = cognitive learning cost
+   Replicator equation:
+                                       𝑑𝜌(𝑀, 𝑡)
+                                                   = 𝜌(𝑀, 𝑡) (𝐹 (𝑀) − 𝐹 )̄
+                                          𝑑𝑡
+    where 𝐹 ̄ is population mean fitness.
+
+
+
+
+                                                         10
+Appendix B: Interface Phoneme Systems
+B.1 Action Alphabets
+Each interface defines a finite action alphabet:
+
+                                             Σ𝐼 = {𝑎1 , 𝑎2 , … , 𝑎𝑛 }
+
+   with associated confusion probabilities:
+
+                                                    𝑃(𝑎̂ ∣ 𝑎)
+
+   This defines a noisy channel.
+
+B.2 Expressive Capacity
+Let Σ∗𝐼 be the free monoid of action sequences.
+    Define expressive entropy:
+
+                                          𝐻𝐼 = − ∑ 𝑃(𝑠) 𝑙𝑜𝑔 𝑃(𝑠)
+                                                   𝑠∈Σ∗𝐼
+
+   Interfaces with small |Σ𝐼 | impose low upper bounds on 𝐻𝐼 .
+   —
+
+
+Appendix C: Kullback–Leibler Divergence of Interaction Codes
+For user intention distribution 𝑃(𝑠) and interface-decoded distribution 𝑄𝐼 (𝑠):
+
+                                                                        𝑃(𝑠)
+                                       𝐷𝐾 𝐿 (𝑃‖𝑄𝐼 ) = ∑ 𝑃(𝑠) 𝑙𝑜𝑔
+                                                      𝑠∈Σ∗𝐼             𝑄𝐼 (𝑠)
+
+   High-fidelity interfaces satisfy:
+
+                                               𝐷𝐾 𝐿 (𝑃‖𝑄𝐼 ) ≤ 𝜖
+
+    Low-dimensional interfaces minimize training cost by reducing |Σ𝐼 |, but increase 𝐷𝐾 𝐿 asymptoti-
+cally.
+
+
+Appendix D: Monopolar vs Multiplexed Motor Systems
+D.1 Dimensionality
+Define motor channel count:
+
+
+
+                                                           11
+                                              𝑑𝐼 = 𝑑𝑖𝑚(Σ𝐼 )
+
+   For swipe interfaces:
+
+                                               𝑑swipe = 1
+
+   For keyboards:
+
+                                             𝑑keyboard ≈ 10
+
+D.2 Control Bandwidth
+Let 𝐵𝐼 denote action bandwidth:
+
+                                           𝐵𝐼 = 𝑑𝐼 ⋅ 𝑙𝑜𝑔 2 |Σ𝐼 |
+
+   Monopolar systems minimize 𝐵𝐼 , multiplexed systems maximize 𝐵𝐼 .
+
+
+Appendix E: Autoregressive Repair Dynamics
+Let cognition be modeled as a predictive system over action sequences:
+
+                                              𝑃(ℎ𝑡+1 ∣ ℎ≤𝑡 )
+
+   Interface mediation modifies transition dynamics:
+
+                            𝑃𝐼 (ℎ𝑡+1 ∣ ℎ≤𝑡 ) = ∑ 𝑇𝐼 (ℎ𝑡+1 ∣ ℎ𝑡 , 𝑎)𝑃𝐼 (𝑎 ∣ ℎ𝑡 )
+                                              𝑎∈Σ𝐼
+
+   Semantic drift occurs when:
+
+                                        𝐷𝐾 𝐿 (𝑃human ‖𝑃𝐼 ) → ∞
+
+
+Appendix F: Ecological Stability Condition
+Let ℳ be the set of memeplexes.
+    Define system diversity:
+
+                                  𝒟 (𝑡) = − ∑ 𝜌(𝑀, 𝑡) 𝑙𝑜𝑔 𝜌(𝑀, 𝑡)
+                                             𝑀∈ℳ
+
+   Enshittification corresponds to:
+
+
+
+
+                                                     12
+                                            𝑑𝒟
+                                                 <0
+                                              𝑑𝑡
+    Cognitive ecosystem collapse occurs when:
+
+                                         ∃𝑀 ∗ ∶ 𝜌(𝑀 ∗ , 𝑡) → 1
+
+    (monoculture fixation).
+
+
+Appendix G: Specification of a Concurrent Speech–Gesture Keyboard (CSGK)
+G.0 Introduction
+This appendix specifies a multimodal input system supporting concurrent (i) speech with QWERTY
+keying and (ii) speech with swipe-gesture text entry. The system composes independent motor and
+vocal channels into a unified event log with deterministic resolution rules. The specification is nor-
+mative and implementation-agnostic.
+
+G.1 Modalities, Events, and Time
+Let time be discretized into ticks 𝑡 ∈ ℕ or treated as continuous with timestamps in ℝ≥0 .
+    Define event streams:
+                                          𝐸 = 𝐸𝐾 ⊎ 𝐸 𝐺 ⊎ 𝐸 𝑆
+
+where:
+
+                 𝐸𝐾 ∶= {⟨𝑡, KeyDown(𝑘)⟩, ⟨𝑡, KeyUp(𝑘)⟩}
+                 𝐸𝐺 ∶= {⟨𝑡, GestureStart⟩, ⟨𝑡, GestureMove(𝑥, 𝑦)⟩, ⟨𝑡, GestureEnd⟩}
+                  𝐸𝑆 ∶= {⟨𝑡, AudioFrame(a)⟩, ⟨𝑡, ASRToken(𝑤, 𝜋)⟩}
+
+Here 𝑘 is a physical key identifier, (𝑥, 𝑦) are touch coordinates in a normalized touch surface, a is an
+audio frame, and (𝑤, 𝜋) is a recognized word token with confidence 𝜋 ∈ [0, 1].
+   Define a global event log as a total order ≺ over events by timestamp, breaking ties by a fixed
+modality precedence:
+                                               𝐸𝐾 ≺ 𝐸𝐺 ≺ 𝐸𝑆
+
+(tie-break only; does not imply semantic precedence).
+
+G.2 Text Buffer and Edit Semantics
+Let the editor state be:
+                                            ℬ = (𝑇 , 𝑐, 𝜎)
+
+
+
+
+                                                  13
+where 𝑇 is the text buffer, 𝑐 is the cursor (or selection interval), and 𝜎 is a mode state (e.g. nor-
+mal/insert/command or application-defined).
+   Define edit operations as functions:
+
+                                                op ∶ ℬ → ℬ
+
+   Define a canonical set of primitive edits:
+
+  𝒪 = {Insert(𝑠), DeleteBackward(𝑛), DeleteForward(𝑛), MoveCursor(Δ), Select([𝑖, 𝑗]), Commit}
+
+G.3 Channel Independence and Composition
+Define three independent decoders producing candidate operation sequences with confidence weights:
+
+
+
+                                         𝐷𝐾 ∶ 𝐸𝐾 → (𝒪 ∗ , 𝛼𝐾 )
+                                         𝐷𝐺 ∶ 𝐸𝐺 → (𝒪 ∗ , 𝛼𝐺 )
+                                             𝐷𝑆 ∶ 𝐸𝑆 → (𝒪 ∗ , 𝛼𝑆 )
+
+   Each decoder emits:
+                                    (o, 𝛼)     where o ∈ 𝒪 ∗ , 𝛼 ∈ [0, 1]
+
+   The system composes decoders into a unified proposal set:
+
+                                 𝒫 (𝑡) = {(o𝐾 , 𝛼𝐾 ), (o𝐺 , 𝛼𝐺 ), (o𝑆 , 𝛼𝑆 )}
+
+evaluated over a sliding temporal window 𝑊𝑡 = [𝑡 − Δ, 𝑡].
+
+G.4 Arbitration: Deterministic Conflict Resolution
+Define the merge operator:
+                                       Merge ∶ 𝒫 (𝑡) × ℬ → ℬ
+
+    A conflict occurs when two proposals include non-commuting edits on overlapping buffer inter-
+vals during the same window.
+    Let Supp(o) be the set of buffer indices affected by o (support).
+    Conflict predicate:
+
+              Conf((o𝑖 , 𝛼𝑖 ), (o𝑗 , 𝛼𝑗 )) ⟺ Supp(o𝑖 ) ∩ Supp(o𝑗 ) ≠ ∅ ∧ o𝑖 6 ∘o𝑗 = o𝑗 6 ∘o𝑖
+
+   Resolution rule (strict):
+
+                           If Conf, select the proposal with maximal 𝛼 ⋅ 𝑤𝑚
+
+
+
+                                                      14
+where 𝑤𝑚 is a modality weight:
+                                               𝑤𝐾 > 𝑤𝐺 > 𝑤𝑆
+
+for destructive edits, and
+                                               𝑤𝑆 > 𝑤𝐾 > 𝑤𝐺
+
+for non-destructive annotations and meta-intent (see §G.5).
+    Thus, speech can guide intent while keyboard retains priority for destructive precision.
+
+G.5 Speech as Intent Layer with Typed Commands
+Partition speech tokens into two disjoint classes via a classifier:
+
+                             Classify(𝑤1∶𝑛 ) ∈ {DICTATION, COMMAND}
+
+    Define a command grammar (EBNF):
+
+<command> ::= <delete_cmd> | <undo_cmd> | <confirm_cmd> | <cancel_cmd> | <mode_c
+
+<delete_cmd> ::= ("delete" | "remove" | "erase") [<scope>] [<quant>]
+<scope>    ::= "this" | "that" | "selection" | "line" | "word" | "paragraph"
+<quant>      ::= <number> | "all"
+
+<confirm_cmd> ::= ("yes" | "confirm" | "do it" | "commit")
+<cancel_cmd> ::= ("no" | "cancel" | "never mind" | "stop")
+
+   Speech commands do not directly execute destructive edits. Instead they emit intent proposals
+requiring confirmation:
+
+                                            𝐷𝑆 ⇒ o𝑆 = Intent(𝜏 )
+
+where 𝜏 is an intent object, e.g.
+
+                                       𝜏 = DeleteRequest(Selection)
+
+    Execution requires a commit event from either:
+
+                    Commit ∈ o𝐾 (e.g. Enter, Ctrl+Enter) or        ConfirmCmd ∈ o𝑆
+
+G.6 Concurrent Example: “Delete” with Spoken Justification
+Let the user press a delete chord while speaking: “it’s me yeah I really want to delete this.”
+    Keyboard stream emits:
+
+                                    (o𝐾 , 𝛼𝐾 ) = (DeleteBackward(𝑛), 1.0)
+
+                                                     15
+    Speech stream emits:
+
+                              (o𝑆 , 𝛼𝑆 ) = (Intent(DeleteRequest(This)), 𝜋)
+
+with 𝜋 ≥ 𝜋𝑚𝑖𝑛 .
+   Arbitration:
+
+    • The destructive edit is executed from 𝐷𝐾 immediately.
+
+    • The speech intent is attached as an audit annotation to the event log:
+
+                            Annotate(DeleteBackward(𝑛), “it’s me ... delete this”)
+
+   If the keyboard delete is ambiguous (e.g. selection boundary unclear), the system enters a confir-
+mation state:
+                                𝜎 ∶= PENDING_DESTRUCTIVE(𝜏 )
+
+and requires explicit commit.
+
+G.7 Swype with Speech: Dual-Channel Text Entry
+Let gesture decoding produce a candidate word sequence 𝑔 with confidence 𝛼𝐺 . Let speech dictation
+produce candidate word sequence 𝑠 with confidence 𝛼𝑆 .
+    Define a fusion rule for insertions:
+
+                        FuseText(𝑔, 𝑠) = 𝑎𝑟𝑔     𝑚𝑎𝑥         𝜆𝐺 𝑙𝑜𝑔 𝑃𝐺 (𝑢) + 𝜆𝑆 𝑙𝑜𝑔 𝑃𝑆 (𝑢)
+                                               𝑢∈{𝑔,𝑠,𝑔⊕𝑠}
+
+where 𝑃𝐺 , 𝑃𝑆 are decoder likelihoods and 𝜆𝐺 , 𝜆𝑆 are calibration weights.
+   The output is inserted as:
+                                        Insert(FuseText(𝑔, 𝑠))
+
+provided the fusion confidence exceeds threshold 𝜃; otherwise the system presents both alternatives
+for a commit event.
+
+G.8 Safety Constraints for Destructive Operations
+Define destructive operations:
+
+                            𝒪− ∶= {DeleteBackward(𝑛), DeleteForward(𝑛)}
+
+    Safety condition:
+
+                         ∀op ∈ 𝒪− ,   Execute(op) ⇒ (𝛼𝐾 ≥ 𝜃𝐾 ) ∨ (∃ Commit)
+
+
+
+                                                       16
+   Speech-only deletion is disallowed unless:
+
+                              CommitCmd ∧ 𝜋 ≥ 𝜃𝑆 ∧ (explicit scope present)
+
+G.9 Hardware Minimum Specification
+A compliant CSGK device provides:
+
+    • A physical key matrix supporting at least 60 keys (QWERTY-class) with n-key rollover.
+
+    • A touch surface for gesture traces with sampling rate ≥ 120 Hz.
+
+    • A microphone array or single microphone with audio sampling ≥ 16 kHz.
+
+    • A real-time clock for timestamping all event streams to ≤ 5 ms jitter.
+
+G.10 Conformance Tests
+A device is conformant iff:
+
+   1. It logs all events in a unified total order with deterministic tie-breaking.
+
+   2. It supports concurrent speech + keying and speech + gesture without disabling either stream.
+
+   3. It enforces safety constraints for destructive edits.
+
+   4. It produces identical final buffer state for identical event logs (determinism).
+
+
+Appendix H: Model of Interface Dialects and AI Attractor Competition
+H.0 Introduction
+This appendix formalizes contemporary AI interfaces as competing linguistic attractors in a shared
+human–machine interaction space. Systems such as ChatGPT, Claude, Gemini, and Grok are modeled
+as dialectical variants optimized for different user priors and modality preferences. The model is
+substrate-independent with respect to speech, typing, and gesture.
+
+H.1 User Preference Space
+Let 𝒰 denote the space of users.
+    Each user 𝑢 ∈ 𝒰 is characterized by a modality preference vector:
+
+                                                    (𝐾 )   (𝑆)     (𝐺)
+                                          p𝑢 = (𝑝𝑢 , 𝑝𝑢 , 𝑝𝑢 )
+
+   where:
+
+                                           (𝐾 )      (𝑆)     (𝐺)
+                                          𝑝𝑢      + 𝑝𝑢 + 𝑝𝑢        =1
+
+                                                      17
+    corresponding to keyboard, speech, and gesture priors.
+
+H.2 AI Interface Systems as Dialect Functions
+Let ℒ be the space of semantic outputs.
+    Each AI interface 𝐴𝑖 is a conditional distribution:
+
+                                           𝐴𝑖 ∶ (𝒳 , ℳ) → ℒ
+
+    where:
+
+    • 𝒳 is input content space
+
+    • ℳ = {𝐾 , 𝑆, 𝐺} is modality
+
+    Each system defines modality-specific decoding channels:
+
+                                                𝑃𝑖 (ℓ ∣ 𝑥, 𝑚)
+
+    where 𝑚 ∈ ℳ.
+    Define the effective dialect of system 𝑖 for user 𝑢:
+
+                                                           (𝑚)
+                                    𝐷𝑖,𝑢 (ℓ ∣ 𝑥) = ∑ 𝑝𝑢 𝑃𝑖 (ℓ ∣ 𝑥, 𝑚)
+                                                   𝑚∈ℳ
+
+
+H.3 Attractor Dynamics
+Let user allocation 𝜌𝑖 (𝑡) denote the fraction of users primarily adopting interface 𝐴𝑖 .
+    Define satisfaction functional:
+
+                                          𝑆𝑖 (𝑢) = −𝐷𝐾 𝐿 (𝑃𝑢 ‖𝐷𝑖,𝑢 )
+
+    where 𝑃𝑢 is the user’s latent semantic preference distribution.
+    Mean fitness:
+
+                                             𝐹𝑖 = 𝔼𝑢∼𝒰 [𝑆𝑖 (𝑢)]
+
+    Replicator dynamics:
+
+                                             𝑑𝜌𝑖
+                                               = 𝜌𝑖 (𝐹𝑖 − 𝐹 )̄
+                                           𝑑𝑡
+    Distinct AI systems correspond to distinct linguistic attractors in ℒ .
+
+
+
+
+                                                     18
+H.4 Interface Governance as Linguistic Control
+Let 𝒞 be the set of control primitives (e.g. delete, archive, undo, recycle).
+    Each system defines a control grammar:
+
+                                                 𝐺𝑖 ⊂ ℒ ∗
+
+    Control conflict arises when grammars differ:
+
+                                                 𝐺𝑖 ≠ 𝐺 𝑗
+
+    User migration probability increases with grammar mismatch:
+
+                                     𝑃(𝑢 ∶ 𝐴𝑖 → 𝐴𝑗 ) ∝ 𝐷𝐾 𝐿 (𝐺𝑖 ‖𝐺𝑗 )
+
+    Thus, interface competition constitutes dialect competition over executive semantics.
+
+H.5 Modality-Invariant Language Representation
+Define an abstract semantic form space 𝒮 .
+   Each modality is a channel encoding:
+
+                                             𝐸𝑚 ∶ 𝒮 → Σ∗𝑚
+
+    where:
+
+                                              𝑚 ∈ {𝐾 , 𝑆, 𝐺}
+
+    Define decoders:
+
+                                             𝐷𝑚 ∶ Σ∗𝑚 → 𝒮
+
+    Correctness condition:
+
+                                             𝐷𝑚 (𝐸𝑚 (𝑠)) = 𝑠
+
+    for all 𝑠 ∈ 𝒮 .
+    Thus, semantic content is modality-invariant.
+
+H.6 Continuous Phoneme Steering Model
+Let Ω ⊂ ℝ2 be a continuous gesture space.
+    Define a trajectory:
+
+                                             𝛾 ∶ [0, 1] → Ω
+
+
+                                                   19
+    Define a discretization operator:
+
+                                           Φ ∶ 𝐶([0, 1], Ω) → Σ∗𝐾
+
+    such that:
+
+                                          Φ(𝛾 ) = 𝑎𝑟𝑔 𝑚𝑎𝑥∗ 𝑃(𝑤 ∣ 𝛾 )
+                                                      𝑤∈Σ𝐾
+
+    This generalizes Swype, joystick typing, steering-wheel typing, and Etch-a-Sketch typing.
+
+H.7 Arrow-Key and Joystick Equivalence
+Let Σ𝐾 = {ℎ, 𝑗, 𝑘, 𝑙} be a four-key alphabet.
+    Define a path embedding:
+
+                                           𝜓 ∶ Σ∗𝐾 → 𝐶([0, 1], Ω)
+
+    such that:
+
+                                                Φ(𝜓 (𝑤)) = 𝑤
+
+    Hence, any discrete keyboard language is realizable as a continuous 2D steering language.
+
+H.8 Modality Equivalence Theorem
+For any semantic string 𝑠 ∈ 𝒮 :
+
+                                           𝐸𝐾 (𝑠) ≡ 𝐸𝑆 (𝑠) ≡ 𝐸𝐺 (𝑠)
+
+    up to channel noise, since:
+
+                                  𝐷𝐾 (𝐸𝐾 (𝑠)) = 𝐷𝑆 (𝐸𝑆 (𝑠)) = 𝐷𝐺 (𝐸𝐺 (𝑠)) = 𝑠
+
+    Therefore, linguistic structure is independent of effector substrate.
+
+H.9 AI Interface Speciation
+Distinct AI interfaces correspond to different parameterizations of:
+
+                                                 𝑃𝑖 (ℓ ∣ 𝑥, 𝑚)
+
+    They are dialectical variants, not ontological kinds.
+    Fixation occurs when:
+
+                                                ∃𝑖 ∶ 𝜌𝑖 (𝑡) → 1
+
+
+                                                      20
+   leading to linguistic monoculture in human–AI interaction.
+
+H.10 Stability Condition
+Define dialect diversity:
+
+                                     𝒟𝐴 (𝑡) = − ∑ 𝜌𝑖 (𝑡) 𝑙𝑜𝑔 𝜌𝑖 (𝑡)
+                                                  𝑖
+
+   Interface ecosystem stability requires:
+
+                                               𝑑𝒟𝐴
+                                                    ≥0
+                                               𝑑𝑡
+    Declining diversity predicts convergence to a single executive grammar controlling cognitive in-
+frastructure.
+
+
+Appendix I: User-Defined Languages and Embodied Coordinate Systems
+I.0 Introduction
+This appendix formalizes language as a user-generated symbolic system independent of embodiment.
+Interfaces are treated as coordinate systems over which user-defined languages are projected. Discrete
+symbols, continuous gestures, facial expressions, and emojis are modeled as equivalent encodings of
+an underlying semantic algebra.
+
+I.1 Abstract User Language Space
+Let 𝒮 be the space of semantic atoms.
+    Each user 𝑢 defines a personal language:
+
+                                             ℒ𝑢 = (Σ𝑢 , 𝒢𝑢 )
+
+   where:
+
+    • Σ𝑢 is a finite symbol set (words, emojis, expressions)
+
+    • 𝒢𝑢 ⊂ Σ∗𝑢 is a generative grammar
+
+   Language is endogenous:
+
+                                      ℒ𝑢 (𝑡 + 1) = ℒ𝑢 (𝑡) ∪ Δ𝑢 (𝑡)
+
+   where Δ𝑢 (𝑡) are novel constructions introduced by usage.
+
+
+
+
+                                                   21
+I.2 Embodiment as Coordinate Projection
+Let ℰ be the embodiment space.
+    An interface 𝐼 defines a coordinate system:
+
+                                                𝐼 ∶𝒮 →ℰ
+
+   Users do not receive language from interfaces; they project language into them.
+
+I.3 Continuous Gesture Representation
+Let Ω ⊂ ℝ2 be a continuous motor surface.
+    A gesture is a trajectory:
+
+                                               𝛾 ∶ [0, 1] → Ω
+
+   Define a user-specific encoding:
+
+                                         𝐸𝑢 ∶ Σ∗𝑢 → 𝐶([0, 1], Ω)
+
+   and decoding:
+
+                                         𝐷𝑢 ∶ 𝐶([0, 1], Ω) → Σ∗𝑢
+
+   Correctness condition:
+
+                                               𝐷𝑢 (𝐸𝑢 (𝑤)) = 𝑤
+
+   Thus, any user language is realizable as a continuous motor language.
+
+I.4 Fourier Decomposition of Gesture Language
+Each trajectory admits spectral decomposition:
+
+                                          ∞
+                                𝛾 (𝑡) = ∑ 𝑎𝑘 𝑠𝑖𝑛(2𝜋𝑘𝑡) + 𝑏𝑘 𝑐𝑜𝑠(2𝜋𝑘𝑡)
+                                         𝑘=1
+
+   Define the coefficient vector:
+
+                                         f(𝛾 ) = (𝑎1 , 𝑏1 , 𝑎2 , 𝑏2 , … )
+
+   User-defined gesture phonemes correspond to equivalence classes:
+
+                                      𝛾𝑖 ∼ 𝛾𝑗 ⟺ ‖f(𝛾𝑖 ) − f(𝛾𝑗 )‖ ≤ 𝜖
+
+   Thus, discrete linguistic units emerge from continuous motor manifolds.
+
+
+                                                       22
+I.5 Symbol Equivalence Across Modalities
+Define modality encoders:
+
+                                           (𝐾 )    (𝑆)     (𝐺)    (𝐹 )
+                                          𝐸𝑢 , 𝐸 𝑢 , 𝐸 𝑢 , 𝐸 𝑢
+
+   for keyboard, speech, gesture, and facial expression.
+   All map from 𝒮 :
+
+                                            (𝑚)                  (𝑚)
+                                           𝐸𝑢      ∶ 𝒮 → Σ𝑢
+
+   Semantic invariance condition:
+
+                                             (𝑚)    (𝑚)
+                                           𝐷𝑢 (𝐸𝑢 (𝑠)) = 𝑠
+
+   Hence, emojis, facial expressions, phonemes, and gestures are semantically isomorphic encodings.
+
+I.6 Discretization of Continuous Expression
+Define a discretization operator:
+
+                                        Π𝑢 ∶ 𝐶([0, 1], Ω) → Σ𝑢
+
+   such that:
+
+                                      Π𝑢 (𝛾 ) = 𝑎𝑟𝑔 𝑚𝑎𝑥 𝑃𝑢 (𝜎 ∣ 𝛾 )
+                                                         𝜎∈Σ𝑢
+
+   User language determines the partitioning of motor space, not the interface.
+
+I.7 Steering Languages and Spatial Typing
+Let Ω be a 2D steering surface.
+    Define a spatial lexicon embedding:
+
+                                             Λ𝑢 ∶ Σ 𝑢 → Ω
+
+   Typing becomes target navigation:
+
+                            𝐸𝑢 (𝑤1 𝑤2 … 𝑤𝑛 ) = 𝛾 (𝑡) passing through Λ𝑢 (𝑤𝑖 )
+
+   Thus, steering wheels, joysticks, mice, or Etch-a-Sketch devices can all implement the same lan-
+guage.
+
+I.8 Interface Neutrality Theorem
+For any user language ℒ𝑢 and any embodiment space ℰ :
+
+                                                     23
+                                    ∃ 𝐸𝑢 , 𝐷𝑢 such that 𝐷𝑢 (𝐸𝑢 (𝑤)) = 𝑤
+
+    Therefore, no interface determines language; interfaces only parameterize coordinate systems.
+
+I.9 Browser and Interface Wars as Coordinate Wars
+Let 𝐼𝑖 , 𝐼𝑗 be interfaces with different coordinate systems.
+    They compete by minimizing user projection cost:
+
+                                     𝐶(𝐼 , 𝑢) = 𝔼𝑤∼ℒ𝑢 [‖𝐸𝑢 (𝑤) − 𝐼 (𝑤)‖]
+
+    Browser wars select coordinate systems, not languages.
+    Failure to support high-dimensional projections predicts long-term expressive collapse.
+
+I.10 Summary Condition
+Language evolution is user-driven:
+
+                                                  ℒ𝑢 ⊄ 𝐼
+
+    Interfaces succeed iff:
+
+                                       ∀𝑢, ∃𝐸𝑢 , 𝐷𝑢 with low 𝐶(𝐼 , 𝑢)
+
+    Language is primary. Embodiment is secondary.
+
+
+Appendix J: Motor-Primary Theory of Language
+J.0 Introduction
+This appendix formalizes language as fundamentally gestural. Spoken and written language are
+derived encodings of an underlying motor-semantic system. The formulation is hierarchical and
+substrate-independent.
+
+J.1 Motor-Semantic Base Space
+Let ℳ be the space of motor programs (continuous body trajectories).
+    Let 𝒮 be the space of semantic atoms.
+    Assume a primitive grounding map:
+
+                                               𝐺∶ℳ→𝒮
+
+    where meaning is assigned to embodied action patterns.
+    Thus, semantics is originally defined over movement, not symbols.
+
+
+                                                     24
+J.2 Gestural Language as Primary Code
+Define the primary language of a user 𝑢 as:
+
+                                                (𝐺)
+                                             ℒ𝑢       = (Γ𝑢 , ℛ𝑢 )
+
+   where:
+
+    • Γ𝑢 ⊂ 𝐶([0, 1], ℝ𝑘 ) is a set of motor trajectories
+
+    • ℛ𝑢 is a composition grammar over trajectories
+
+   Each primitive gesture 𝛾 ∈ Γ𝑢 is semantically grounded:
+
+                                               𝐺(𝛾 ) = 𝑠 ∈ 𝒮
+
+J.3 Abstraction to Speech
+     (𝑆)
+Let Σ𝑢 be a phoneme alphabet.
+    Define an abstraction homomorphism:
+
+                                                              (𝑆)
+                                              𝐴𝑆 ∶ Γ𝑢 → Σ𝑢
+
+   such that:
+
+                                             𝐺(𝛾 ) = 𝐷𝑆 (𝐴𝑆 (𝛾 ))
+
+   where 𝐷𝑆 is a speech decoder mapping phoneme sequences to semantics.
+   Thus, speech is a compressed representation of gesture.
+
+J.4 Abstraction to Writing
+     (𝐾 )
+Let Σ𝑢 be a grapheme alphabet.
+    Define a further abstraction:
+
+                                                      (𝑆)      (𝐾 )
+                                            𝐴𝐾 ∶ Σ𝑢 → Σ𝑢
+
+   such that:
+
+                                          𝐷𝐾 (𝐴𝐾 (𝐴𝑆 (𝛾 ))) = 𝐺(𝛾 )
+
+   Writing is therefore a second-order compression of motor semantics.
+
+
+
+
+                                                       25
+J.5 Trajectory Writing as Direct Motor Encoding
+Let Ω ⊂ ℝ2 be a writing surface.
+    Define a drawing encoder:
+
+                                       𝐴𝐷 ∶ Γ𝑢 → 𝐶([0, 1], Ω)
+
+    with decoder:
+
+                                       𝐷𝐷 ∶ 𝐶([0, 1], Ω) → 𝒮
+
+    Thus:
+
+                                         𝐷𝐷 (𝐴𝐷 (𝛾 )) = 𝐺(𝛾 )
+
+    Handwriting and drawing preserve motor continuity more directly than speech.
+
+J.6 Hierarchy of Encodings
+The full abstraction chain is:
+
+                                           𝐴𝑆    (𝑆) 𝐴𝐾      (𝐾 )
+                                       Γ𝑢 −→ Σ𝑢 −−→ Σ𝑢
+
+    with semantic invariance:
+
+                                       𝐷𝐾 (𝐴𝐾 (𝐴𝑆 (𝛾 ))) = 𝐺(𝛾 )
+
+    Gesture is primary; speech and writing are derived codes.
+
+J.7 Information-Theoretic Ordering
+Define channel capacities:
+
+                                            𝐶𝐺 > 𝐶 𝑆 > 𝐶 𝐾
+
+    where:
+
+    • 𝐶𝐺 = gestural channel capacity
+
+    • 𝐶𝑆 = speech channel capacity
+
+    • 𝐶𝐾 = keyboard/writing channel capacity
+
+    Abstraction reduces bandwidth while increasing transmissibility.
+
+
+
+
+                                                  26
+J.8 Evolutionary Constraint
+      (𝑡)
+Let ℒ𝑢 be user language at time 𝑡.
+    Innovation originates in motor space:
+
+                                                         (𝑡)
+                                                      Δℒ𝑢 ⊂ Γ𝑢
+
+   Symbolic layers update by projection:
+
+                                         (𝑆)
+                                      Σ𝑢 (𝑡 + 1) = 𝐴𝑆 (Γ𝑢 (𝑡 + 1))
+                                      (𝐾 )                     (𝑆)
+                                    Σ𝑢 (𝑡 + 1) = 𝐴𝐾 (Σ𝑢 (𝑡 + 1))
+
+   Thus, linguistic evolution is bottom-up from gesture.
+
+J.9 Motor Primacy Theorem
+For any semantic content 𝑠 ∈ 𝒮 :
+
+                                     ∃𝛾 ∈ Γ𝑢 such that 𝐺(𝛾 ) = 𝑠
+
+   But not necessarily:
+
+                                               (𝐾 )
+                                   ∃𝑤 ∈ Σ𝑢            such that 𝐷𝐾 (𝑤) = 𝑠
+
+   Hence, gesture is generative-complete, while symbolic codes are not.
+
+J.10 Consequence for Interface Design
+Interfaces that restrict motor expressivity constrain language evolution.
+    Optimal interfaces preserve high-dimensional access to Γ𝑢 .
+    Symbol-first systems are therefore structurally lossy.
+
+
+Appendix K: Equivariance of Descriptive and Proscriptive Linguistics
+K.0 Introduction
+This appendix formalizes linguistic description and prescription as equivalent operations under repre-
+sentation change. All grammatical formalisms are shown to act as operators that expand or constrain
+semantic occupancy in a shared symbol space, independent of embodiment. The distinction between
+descriptive and prescriptive linguistics is shown to be a gauge choice over the same dynamical system.
+
+K.1 Semantic Configuration Space
+Let 𝒮 be the space of semantic states.
+
+
+                                                         27
+   Let Σ be a symbol alphabet.
+   Let Σ∗ be the free monoid of expressions.
+   Define a language as a subset:
+
+                                                  𝐿 ⊆ Σ∗
+
+   Language use induces a distribution:
+
+                                           𝑃𝐿 ∶ Σ∗ → [0, 1]
+
+K.2 Grammars as Constraint Operators
+A grammar 𝐺 is an operator:
+
+                                            𝐺 ∶ Σ∗ → {0, 1}
+
+   where:
+
+                                         𝐺(𝑤) = 1 ⟺ 𝑤 ∈ 𝐿
+
+   Thus, grammar defines a characteristic function over semantic trajectories.
+
+K.3 Descriptive and Proscriptive Forms
+Let 𝐺𝐷 be a descriptive grammar estimated from usage:
+
+                                     𝐺𝐷 = 𝑎𝑟𝑔 𝑚𝑎𝑥 ∑ 𝑙𝑜𝑔 𝐺(𝑤)
+                                                  𝐺
+                                                       𝑤∼𝑃𝐿
+
+   Let 𝐺𝑃 be a prescriptive grammar imposing constraints:
+
+                                   𝐺𝑃 = 𝑎𝑟𝑔 𝑚𝑖𝑛 𝔼𝑤∼𝑃𝐿 [𝕀(𝐺(𝑤) = 0)]
+                                              𝐺
+
+   Both define the same object type:
+
+                                         𝐺𝐷 , 𝐺𝑃 ∶ Σ∗ → {0, 1}
+
+   Difference is inferential direction, not functional role.
+
+K.4 Regular Expressions as Semantic Attractors
+Any regular language 𝐿 is defined by a regular expression 𝑅:
+
+                                        𝐿 = {𝑤 ∈ Σ∗ ∣ 𝑅(𝑤) = 1}
+
+   Define the semantic flow field:
+
+                                                      28
+                                         𝐹𝑅 (𝑤) = ∇𝑤 𝑙𝑜𝑔 𝑅(𝑤)
+
+   This induces attraction toward regions of Σ∗ with high acceptance density.
+   Thus grammars define vector fields over expression space.
+
+K.5 Equivariance Under Representation Change
+Let 𝐸 ∶ 𝒮 → Σ∗ be an encoding.
+    Let Σ̃ ∗ be another representation space (gesture, speech, emoji).
+    Define encoding change:
+
+                                             𝜙 ∶ Σ∗ → Σ̃ ∗
+
+   Grammar equivariance condition:
+
+                                                    ̃
+                                            𝐺(𝑤) = 𝐺(𝜙(𝑤))
+
+   Thus:
+
+                                              𝐺̃ = 𝐺 ∘ 𝜙 −1
+
+   Grammar structure is invariant under embodiment change.
+
+K.6 Movement as Parametric Proxy
+Let Θ be a continuous motor parameter space.
+    Define a control mapping:
+
+                                              𝐶 ∶ Θ → Σ∗
+
+   Every gesture trajectory 𝜃(𝑡) selects a symbolic path:
+
+                                              𝑤 = 𝐶(𝜃(𝑡))
+
+   Thus movement acts as a continuous parameterization of symbolic space.
+
+K.7 Semantic Colonization Dynamics
+Define occupancy density:
+
+                                    𝜌(𝑤, 𝑡) = usage frequency of 𝑤
+
+   Grammar modifies flow:
+
+
+
+
+                                                   29
+                                              𝜕𝜌
+                                           = ∇ ⋅ (𝜌𝐹𝐺 )
+                                        𝜕𝑡
+   All grammars therefore attempt to maximize coverage of Σ∗ .
+
+K.8 Descriptive–Proscriptive Duality Theorem
+For any grammar 𝐺:
+
+                                    ∃𝐺𝐷 , 𝐺𝑃 such that 𝐺𝐷 = 𝐺𝑃 = 𝐺
+
+   Difference lies only in estimation direction:
+
+                                     Description = Inference of 𝐺
+
+                                    Prescription = Imposition of 𝐺
+
+   Both define identical constraint fields.
+
+K.9 Knob Formalism
+Let Θ be a control manifold.
+    Define semantic reachability:
+
+                                          ℛ(Θ) = 𝐶(Θ) ⊆ Σ∗
+
+   Interfaces compete by maximizing:
+
+                                                   |ℛ(Θ)|
+
+   Control devices are continuous knobs over discrete meaning.
+
+K.10 Consequence
+All linguistic systems act as expansion operators over semantic space.
+    No grammar is neutral:
+
+                                         𝐺 ⇒ ∃𝑤 ∶ 𝐺(𝑤) = 1
+
+   Every grammar is a colonization operator over Σ∗ .
+   Difference between description and prescription is representational, not ontological.
+
+
+
+
+                                                     30
+Appendix L: Functional Completeness and Minimal Interaction Alphabets
+L.0 Introduction
+This appendix exhibits how a maximally expressive symbolic language can be generated from a min-
+imal primitive set, using functional completeness in Boolean logic as the canonical example. The
+construction is used as a template for “minimal phoneme” interaction systems: small operator bases
+that generate large behavioral/semantic spaces by composition.
+
+L.1 Boolean Domain and Functional Completeness
+Let 𝐵 = {0, 1}. A Boolean function of arity 𝑛 ≥ 1 is any map 𝑓 ∶ 𝐵𝑛 → 𝐵.
+    Let 𝐹 be a set of Boolean functions of various arities. Let ⟨𝐹 ⟩ denote the clone generated by 𝐹
+(closure under composition and containing projections). We say 𝐹 is functionally complete iff:
+
+                                  ∀𝑛 ≥ 1, ∀𝑓 ∶ 𝐵𝑛 → 𝐵,      𝑓 ∈ ⟨𝐹 ⟩.
+
+L.2 Sheffer Bases: NAND and NOR
+Define NAND and NOR:
+
+                      𝑁 𝐴𝑁 𝐷(𝐴, 𝐵) ∶= ¬(𝐴 ∧ 𝐵),        𝑁 𝑂𝑅(𝐴, 𝐵) ∶= ¬(𝐴 ∨ 𝐵).
+
+Claim (Sheffer completeness).    Each singleton basis {𝑁 𝐴𝑁 𝐷} and {𝑁 𝑂𝑅} is functionally complete.
+
+Witness constructions (NAND-only).        Using ↑ to denote NAND:
+
+                                        ¬𝐴 ≡ 𝐴 ↑ 𝐴
+                                      𝐴 ∧ 𝐵 ≡ (𝐴 ↑ 𝐵) ↑ (𝐴 ↑ 𝐵)
+                                      𝐴 ∨ 𝐵 ≡ (𝐴 ↑ 𝐴) ↑ (𝐵 ↑ 𝐵)
+
+Witness constructions (NOR-only).      Using ↓ to denote NOR:
+
+                                        ¬𝐴 ≡ 𝐴 ↓ 𝐴
+                                      𝐴 ∨ 𝐵 ≡ (𝐴 ↓ 𝐵) ↓ (𝐴 ↓ 𝐵)
+                                      𝐴 ∧ 𝐵 ≡ (𝐴 ↓ 𝐴) ↓ (𝐵 ↓ 𝐵)
+
+   Since {¬, ∧, ∨} is sufficient to express any Boolean function (e.g. by disjunctive normal form), the
+above derivations imply functional completeness of the singleton bases.
+
+
+
+
+                                                  31
+L.3 Minimality as an Existence Proof of Small Alphabets
+Let 𝒪 be an operator alphabet. Functional completeness shows the existence of very small 𝒪 such
+that:
+                              ExpressiveClosure(𝒪) ≈ AllBehaviors.
+
+    In Boolean logic, |𝒪| = 1 suffices (NAND or NOR). This is a constructive example that “language
+size” can be minimized without loss of expressivity, provided that:
+
+   1. operators compose (closure),
+
+   2. composition depth is unbounded,
+
+   3. evaluation is deterministic.
+
+L.4 Interface-Phoneme Analogue
+Let an interaction system be specified by:
+
+                                             ℐ = (Σ, ∘, Eval)
+
+where:
+
+    • Σ is a finite set of primitive actions (interface phonemes),
+
+    • ∘ is a composition operator forming action programs Σ∗ ,
+
+    • Eval ∶ Σ∗ → 𝒯 maps programs to task outcomes 𝒯 .
+
+    Define interaction completeness:
+
+                                     ∀𝜏 ∈ 𝒯 , ∃𝑤 ∈ Σ∗ ,   Eval(𝑤) = 𝜏 .
+
+     The NAND/NOR theorem supplies a template: completeness is achievable with extremely small
+Σ if composition is expressive and unbounded.
+
+L.5 Regular Expressions as Completeness-by-Composition
+Let Σ be an alphabet. Regular expressions (REs) define languages 𝐿 ⊆ Σ∗ via the operators:
+
+                            { ∪, ⋅, ∗ } (union, concatenation, Kleene star)
+
+with parentheses as scoping.
+     Observation: a small set of syntactic operators generates an infinite family of languages by compo-
+sition. This is a structural analogue of NAND/NOR completeness: minimal primitives, large closure.
+
+
+
+
+                                                    32
+L.6 Two-Phase Principle: Minimal Actuation, Maximal Discretization
+The NAND/NOR example separates:
+
+   1. Actuation basis: minimal primitive set (e.g. NAND),
+
+   2. Discretization scheme: how compositions are interpreted as distinct functions.
+
+   Analogously, an interface can be minimal at the motor layer while remaining expressive at the
+semantic layer if:
+                     MotorBasisSmall ∧ CompositionDeep ∧ DecoderRich.
+
+L.7 Example: 4-Key Steering Basis (Sketch)
+Let Σ = {ℎ, 𝑗, 𝑘, 𝑙} be primitive actions. If a decoder Eval maps sequences in Σ∗ to 2D trajectories and
+then to symbols, then |Σ| = 4 can be sufficient (in principle) to generate a large lexical space. This
+parallels NAND completeness: minimal alphabet; expressive closure via decoding.
+
+L.8 Summary
+Functional completeness provides a strict, constructive demonstration that:
+
+                 Extremely small primitive sets can generate full expressive power.
+
+Therefore, “language simplicity” is consistent with maximal expressivity: the limiting factor is not
+alphabet size but closure structure (composition + interpretation).
+
+
+Appendix M: Time–Entropy Tradeoff in Representational Systems
+M.0 Introduction
+This appendix formalizes the equivalence of symbolic systems and the tradeoff between expressive
+efficiency and representational entropy. All sufficiently expressive formalisms are shown to be com-
+putationally equivalent, differing only in description length and execution cost.
+
+M.1 Universal Computation Framework
+Let 𝒞 be the class of all computable functions.
+    A formal system 𝐹 is universal iff:
+
+                               ∀𝑓 ∈ 𝒞 , ∃𝑝 ∈ 𝐹 such that Eval𝐹 (𝑝) = 𝑓
+
+   Examples:
+
+            𝐹 ∈ {Python, JavaScript, 𝜆-calculus, ZFC, Category theory, Boolean logic}
+
+
+                                                  33
+   All are Turing-complete encodings of 𝒞 .
+
+M.2 Representation Length Function
+For system 𝐹 , define description length:
+
+                                          𝐿𝐹 (𝑓 ) =       𝑚𝑖𝑛         |𝑝|
+                                                      𝑝∶Eval𝐹 (𝑝)=𝑓
+
+   Different formalisms induce different length functions.
+
+Equivalence. For any two universal systems 𝐹1 , 𝐹2 :
+
+                              ∃𝑐12 > 0 such that 𝐿𝐹1 (𝑓 ) ≤ 𝑐12 𝐿𝐹2 (𝑓 ) + 𝑐12
+
+   (Compiler invariance theorem).
+
+M.3 Time Complexity Translation
+Let 𝑇𝐹 (𝑝) be the runtime of program 𝑝 in formalism 𝐹 .
+    For universal 𝐹1 , 𝐹2 :
+
+                                          𝑇𝐹1 (𝑓 ) ≤ 𝑘 ⋅ 𝑇𝐹2 (𝑓 ) + 𝑘
+
+   for some constant 𝑘 depending on the interpreter.
+   Thus, systems differ only by constant-factor overhead.
+
+M.4 Entropy of a Formal Language
+Let Σ𝐹 be the primitive alphabet of 𝐹 .
+    Define representational entropy:
+
+                                               𝐻𝐹 = 𝑙𝑜𝑔 |Σ𝐹 |
+
+   Let 𝒫𝐹 (𝑓 ) be the distribution of valid programs implementing 𝑓 .
+   Define encoding entropy:
+
+                                    ℰ𝐹 (𝑓 ) = − ∑ 𝑃(𝑝) 𝑙𝑜𝑔 𝑃(𝑝)
+                                                 𝑝∈𝒫𝐹 (𝑓 )
+
+   Richer primitive sets reduce 𝐿𝐹 (𝑓 ) but increase 𝐻𝐹 .
+
+M.5 Minimal Alphabets vs. Program Length
+Functional completeness implies:
+
+
+
+                                                        34
+                             ∃𝐹𝑚𝑖𝑛 ∶ |Σ𝐹𝑚𝑖𝑛 | minimal and 𝐹𝑚𝑖𝑛 universal
+
+    However:
+
+                                         𝐿𝐹𝑚𝑖𝑛 (𝑓 ) ≫ 𝐿𝐹rich (𝑓 )
+
+    Thus minimal languages are expressive but inefficient.
+
+M.6 Linguistic Analogue
+Let 𝐺 be a grammar encoding semantics 𝒮 .
+    Define utterance length:
+
+                                       𝐿𝐺 (𝑠) =      𝑚𝑖𝑛       |𝑤|
+                                                  𝑤∈𝐺∶𝐷(𝑤)=𝑠
+
+    For any two complete grammars 𝐺1 , 𝐺2 :
+
+                                         𝐿𝐺1 (𝑠) ≤ 𝑐𝐿𝐺2 (𝑠) + 𝑐
+
+    Languages differ only in compression efficiency.
+
+M.7 Gesture Universality
+Let Γ be a primitive gesture set.
+    Define a gestural language 𝐹Γ with composition.
+    If 𝐹Γ is universal:
+
+                                     ∀𝑠 ∈ 𝒮 , ∃𝛾 ∈ Γ∗ ∶ 𝐷(𝛾 ) = 𝑠
+
+    But:
+
+                                            |Γ| ↓⇒ 𝐿Γ (𝑠) ↑
+
+    Any meaning is expressible, but at higher temporal cost.
+
+M.8 Programming Language Analogy
+Let 𝑓 be a task.
+    Then:
+
+                                     𝐿Python (𝑓 ) ≠ 𝐿JavaScript (𝑓 )
+
+    Yet:
+
+
+
+                                                   35
+                                 EvalPython (𝑝) = EvalJavaScript (𝑞) = 𝑓
+
+   All universal languages differ only by representational efficiency.
+
+M.9 Human Communication Optimization Principle
+Humans minimize total communication cost:
+
+                                             𝐶 = 𝐿𝐹 (𝑠) ⋅ 𝜏𝐹
+
+   where 𝜏𝐹 is time per symbol.
+   Languages evolve toward low 𝐶, not minimal Σ.
+
+M.10 Equivalence Theorem
+All universal symbolic systems satisfy:
+
+                            ExpressivePower(𝐹1 ) = ExpressivePower(𝐹2 )
+
+   Differences arise only in:
+
+                                             (𝐿𝐹 , 𝑇𝐹 , 𝐻𝐹 )
+
+   Language diversity reflects optimization, not capability.
+
+M.11 Consequence
+Choice of formalism is an engineering decision over:
+
+                                      Time × Length × Entropy
+
+   not a difference in what can be expressed.
+
+
+Appendix N: Cultural Artifacts as Executable Programs
+N.0 Introduction
+This appendix formalizes cultural artifacts as executable programs. Texts, images, music, and films are
+treated as symbolic objects that induce state transformations in cognitive systems. The result follows
+from general principles of computation and representation and subsumes results due to Wittgenstein,
+Church, Turing, Curry, and Howard.
+
+
+
+
+                                                   36
+N.1 Programs as State Transformations
+Let ℋ denote the space of human cognitive states.
+    A program is defined abstractly as a function:
+
+                                              𝑝∶ℐ →𝒪
+
+   For cultural artifacts, define:
+
+                                             𝑑∶ℋ →ℋ
+
+   where 𝑑 maps an initial cognitive state to a transformed cognitive state.
+   Thus any artifact inducing a systematic state transition is a program.
+
+N.2 Execution Semantics
+Let Exec𝑢 denote execution by user 𝑢.
+    Define meaning as runtime behavior:
+
+                                      Meaning(𝑑, 𝑢) = Exec𝑢 (𝑑)
+
+   An artifact is semantically inert until executed:
+
+                           Meaning(𝑑, 𝑢) undefined if Exec𝑢 (𝑑) not invoked
+
+   This is identical to program semantics.
+
+N.3 Media as Instruction Sets
+Let ℳ be a set of media (text, image, audio, video).
+    Each medium defines an encoding:
+
+                                             𝐸𝑚 ∶ 𝒮 → Σ∗𝑚
+
+   and a decoder:
+
+                                             𝐷𝑚 ∶ Σ∗𝑚 → 𝒮
+
+   Semantic invariance:
+
+                                             𝐷𝑚 (𝐸𝑚 (𝑠)) = 𝑠
+
+   Thus all media are equivalent instruction sets for the same semantic algebra.
+
+
+
+
+                                                   37
+N.4 Wittgenstein Correspondence
+In the Tractatus, Wittgenstein states that propositions are pictures of states of affairs.
+    Formally:
+
+                                         𝜑 ∶ WorldStates → Σ∗
+
+    with truth defined by structural correspondence.
+    This is identical to program semantics:
+
+                                       Eval(𝜑) = WorldTransition
+
+    Hence pictorial representation is a program mapping world models to world models.
+
+N.5 Curry–Howard Isomorphism
+Curry–Howard states:
+
+                                           Proof ≡ Program
+
+                                          Proposition ≡ Type
+
+    Let 𝑑 be a document asserting 𝑃.
+    Then:
+
+                            𝑑 is a proof of 𝑃 ⟺ 𝑑 is a program of type 𝑃
+
+    Thus textual artifacts are typed programs.
+
+N.6 Church–Turing Universality
+Let 𝒞 be the class of computable functions.
+    Church–Turing Thesis:
+
+                                  𝒞 = {Turing-computable functions}
+
+    If an artifact induces any computable transformation of ℋ , then:
+
+                                                 𝑑∈𝒞
+
+    Hence cultural artifacts are computational objects.
+
+N.7 Equivalence of Artifacts and Algorithms
+Let 𝑓𝑑 be the function induced by artifact 𝑑:
+
+
+
+                                                   38
+                                        𝑓𝑑 (ℎ) = Exec𝑢 (𝑑)(ℎ)
+
+   If 𝑓𝑑 is computable, then:
+
+                                          ∃𝑝 ∶ Eval(𝑝) = 𝑓𝑑
+
+   Thus every artifact corresponds to a program.
+
+N.8 Genre as Algorithm Class
+Let 𝒟 be a corpus of artifacts.
+    Define equivalence:
+
+                                        𝑑𝑖 ∼ 𝑑𝑗 ⟺ 𝑓𝑑𝑖 ≡ 𝑓𝑑𝑗
+
+   Genres partition artifacts by computational behavior.
+
+N.9 Medium Invariance Theorem
+For any two media 𝑚1 , 𝑚2 and any artifact 𝑑:
+
+                                       ∃𝑑 ′ ∶ 𝐸𝑚1 (𝑑) ≡ 𝐸𝑚2 (𝑑 ′ )
+
+   All cultural forms are mutually compilable.
+
+N.10 Consequence
+Libraries, archives, and media systems are repositories of executable semantic objects.
+    Civilization constitutes a distributed codebase over ℋ .
+
+
+Appendix O: Scope Memeplexes as Linguistic–Computational Replicators
+O.0 Introduction
+This appendix formally unifies the preceding results. Interface systems, programming languages,
+media forms, and cultural artifacts are shown to be instances of a single class: symbolic execution
+environments competing to control semantic space. Scope memeplexes are defined as replicators
+operating over this space.
+
+O.1 Unified Symbolic Substrate
+From Appendices I–N, define a universal semantic space:
+
+                                                   𝒮
+
+
+                                                   39
+   All languages, media, and interfaces define encodings:
+
+                                               𝐸𝑖 ∶ 𝒮 → Σ∗𝑖
+
+                                               𝐷𝑖 ∶ Σ∗𝑖 → 𝒮
+
+   with:
+
+                                               𝐷𝑖 (𝐸𝑖 (𝑠)) = 𝑠
+
+   Hence all systems are isomorphic encodings of 𝒮 .
+
+O.2 Execution Environments
+Each system 𝑖 defines an execution environment:
+
+                                            ℰ𝑖 = (Σ𝑖 , ∘𝑖 , Eval𝑖 )
+
+   where Eval𝑖 executes symbolic programs on cognitive state space:
+
+                                           Eval𝑖 ∶ Σ∗𝑖 × ℋ → ℋ
+
+   Thus, all interfaces and media are computational substrates.
+
+O.3 Definition of Scope Memeplex
+A scope memeplex 𝑀𝑖 is defined as:
+
+                                               𝑀𝑖 = (ℰ𝑖 , 𝜌𝑖 )
+
+   where:
+
+   • ℰ𝑖 is a symbolic execution environment
+
+   • 𝜌𝑖 (𝑡) is its population prevalence
+
+   Scope memeplexes replicate by inducing adoption of ℰ𝑖 .
+
+O.4 Linguistic Colonization
+Let ℒ𝑢 be a user language.
+    Embedding cost:
+
+                                       𝐶(𝑀𝑖 , 𝑢) = 𝔼𝑠∼ℒ𝑢 [|𝐸𝑖 (𝑠)|]
+
+   Users migrate toward systems minimizing:
+
+
+                                                      40
+                                                𝐶(𝑀𝑖 , 𝑢)
+
+    Thus scope memeplexes compete to become the dominant encoding of user language.
+
+O.5 Application Wars as Grammar Wars
+Each application ecosystem defines a control grammar:
+
+                                                 𝐺𝑖 ⊂ Σ∗𝑖
+
+    Control operations are executive verbs over ℋ .
+    Conflict condition:
+
+                                                 𝐺𝑖 ≠ 𝐺 𝑗
+
+    Hence application wars are grammar wars over action semantics.
+
+O.6 Media, Programs, and Interfaces as a Single Class
+From Appendix N, all cultural artifacts are programs.
+   From Appendix M, all universal systems are equivalent in expressive power.
+   Therefore:
+
+                                   Interface ≡ Language ≡ Program
+
+    Distinctions are representational, not structural.
+
+O.7 Replicator Dynamics
+Let 𝐹𝑖 be fitness of scope memeplex 𝑀𝑖 :
+
+                                           𝐹𝑖 = −𝔼𝑢 [𝐶(𝑀𝑖 , 𝑢)]
+
+    Population dynamics:
+
+                                       𝑑𝜌𝑖
+                                            = 𝜌𝑖 (𝐹𝑖 − 𝐹 )̄
+                                        𝑑𝑡
+    Scope memeplexes evolve by minimizing linguistic embedding cost.
+
+O.8 Enshittification as Linguistic Monoculture
+Let diversity:
+
+                                       𝒟 (𝑡) = − ∑ 𝜌𝑖 (𝑡) 𝑙𝑜𝑔 𝜌𝑖 (𝑡)
+                                                   𝑖
+
+
+                                                       41
+    Collapse condition:
+
+                                              ∃𝑖 ∶ 𝜌𝑖 (𝑡) → 1
+
+    This is equivalent to grammatical monoculture over 𝒮 .
+
+O.9 Browser and Platform Wars
+Browsers and platforms are competing encoders 𝐸𝑖 .
+   Victory condition:
+
+                                           𝐸𝑖 ≈ 𝑎𝑟𝑔 𝑚𝑖𝑛 𝐶(𝐸, 𝑢)
+                                                     𝐸
+
+    They do not compete over truth, but over linguistic embedding efficiency.
+
+O.10 Central Equivalence Theorem
+All of the following are identical object classes:
+
+                               Language, Interface, Program, Medium
+
+    Each is a symbolic execution environment over 𝒮 .
+    Scope memeplexes are replicators over this unified class.
+
+O.11 Thesis Closure
+The enshittification crisis is therefore a consequence of uncontrolled replication dynamics among
+symbolic execution environments.
+   Application wars are linguistic wars.
+   Interface evolution is language evolution.
+   All are instances of scope memeplex competition over semantic space.
+
+
+
+
+                                                     42
+References
+ [1] C. Doctorow. The Enshittification of TikTok. Pluralistic, 2023.
+
+ [2] R. Zebrowski. Macrolife: A Mobile Utopia. University of Washington Press, 2016.
+
+ [3] E. Barenholtz, S. Goldstein, T. B. Lee, and J. B. Tenenbaum. Recursive autoregression in human
+     language processing. Trends in Cognitive Sciences, 25(11):1038–1050, 2021.
+
+ [4] K. Friston. The free-energy principle: A unified brain theory? Nature Reviews Neuroscience,
+     11(2):127–138, 2010.
+
+ [5] A. Clark. Surfing Uncertainty: Prediction, Action, and the Embodied Mind. Oxford University
+     Press, 2016.
+
+ [6] C. E. Shannon. A mathematical theory of communication. Bell System Technical Journal, 27:379–
+     423, 623–656, 1948.
+
+ [7] S. Kullback and R. A. Leibler. On information and sufficiency. Annals of Mathematical Statistics,
+     22(1):79–86, 1951.
+
+ [8] S. Dehaene. The Number Sense: How the Mind Creates Mathematics. Oxford University Press,
+     2011.
+
+ [9] D. A. Norman. The Design of Everyday Things. Basic Books, Revised Edition, 2013.
+
+[10] S. K. Card, T. P. Moran, and A. Newell. The Psychology of Human-Computer Interaction. Lawrence
+     Erlbaum Associates, 1983.
+
+[11] E. Hutchins. Cognition in the Wild. MIT Press, 1995.
+
+[12] D. Kirsh and P. Maglio. On distinguishing epistemic from pragmatic action. Cognitive Science,
+     18(4):513–549, 1994.
+
+[13] B. L. Whorf. Language, Thought, and Reality. MIT Press, 1956.
+
+[14] W. Labov. Sociolinguistic Patterns. University of Pennsylvania Press, 1972.
+
+[15] P. Lieberman. The Biology and Evolution of Language. Harvard University Press, 1984.
+
+[16] J. Maynard Smith and E. Szathmáry. The Major Transitions in Evolution. Oxford University Press,
+     1995.
+
+[17] R. Dawkins. The Selfish Gene. Oxford University Press, 1976.
+
+[18] D. C. Dennett. Darwin’s Dangerous Idea. Simon & Schuster, 1995.
+
+[19] T. Winograd and F. Flores. Understanding Computers and Cognition. Ablex Publishing, 1986.
+
+
+                                                 43
+[20] L. Suchman. Plans and Situated Actions. Cambridge University Press, 1987.
+
+[21] D. Engelbart. Augmenting human intellect: A conceptual framework. Stanford Research Insti-
+     tute Report, 1962.
+
+[22] M. McLuhan. Understanding Media: The Extensions of Man. McGraw–Hill, 1964.
+
+[23] J. Lanier. You Are Not a Gadget. Knopf, 2010.
+
+[24] L. Wittgenstein. Tractatus Logico-Philosophicus. Routledge & Kegan Paul, 1922.
+
+[25] A. M. Turing. On computable numbers, with an application to the Entscheidungsproblem. Pro-
+     ceedings of the London Mathematical Society, 2(42):230–265, 1936.
+
+[26] A. Church. An unsolvable problem of elementary number theory. American Journal of Mathe-
+     matics, 58(2):345–363, 1936.
+
+[27] S. C. Kleene. Introduction to Metamathematics. North-Holland, 1952.
+
+[28] W. A. Howard. The formulae-as-types notion of construction. In J. P. Seldin and J. R. Hindley
+     (eds.), To H. B. Curry: Essays on Combinatory Logic, Lambda Calculus and Formalism, Academic
+     Press, 1980.
+
+[29] H. B. Curry. Functionality in combinatory logic. Proceedings of the National Academy of Sciences,
+     20(11):584–590, 1934.
+
+[30] E. L. Post. The Two-Valued Iterative Systems of Mathematical Logic. Annals of Mathematical
+     Studies 5, Princeton University Press, 1941.
+
+[31] H. M. Sheffer. A set of five independent postulates for Boolean algebras. Transactions of the
+     American Mathematical Society, 14(4):481–488, 1913.
+
+[32] H. Enderton. A Mathematical Introduction to Logic. Academic Press, 2nd edition, 2001.
+
+[33] M. Li and P. Vitányi. An Introduction to Kolmogorov Complexity and Its Applications. Springer,
+     3rd edition, 2008.
+
+[34] R. J. Solomonoff. A formal theory of inductive inference. Information and Control, 7(1–2):1–22,
+     224–254, 1964.
+
+[35] G. J. Chaitin. A theory of program size formally identical to information theory. Journal of the
+     ACM, 22(3):329–340, 1975.
+
+[36] M. Sipser. Introduction to the Theory of Computation. Cengage Learning, 3rd edition, 2012.
+
+[37] M. A. Arbib. From Monkey-like Action Recognition to Human Language. Behavioral and Brain
+     Sciences, 28(2):105–167, 2005.
+
+
+                                                 44
+[38] V. Gallese and G. Lakoff. The brain’s concepts: The role of the sensory-motor system in concep-
+     tual knowledge. Cognitive Neuropsychology, 22(3–4):455–479, 2005.
+
+[39] M. Tomasello. Constructing a Language: A Usage-Based Theory of Language Acquisition. Harvard
+     University Press, 2003.
+
+[40] R. Jackendoff. Foundations of Language. Oxford University Press, 2002.
+
+[41] G. Lakoff and M. Johnson. Philosophy in the Flesh. Basic Books, 1999.
+
+[42] J. Fodor. The Modularity of Mind. MIT Press, 1983.
+
+[43] R. A. Brooks. Intelligence without representation. Artificial Intelligence, 47(1–3):139–159, 1991.
+
+[44] A. Newell and H. A. Simon. Computer science as empirical inquiry: Symbols and search. Com-
+     munications of the ACM, 19(3):113–126, 1976.
+
+[45] D. Hofstadter. Gödel, Escher, Bach: An Eternal Golden Braid. Basic Books, 1979.
+
+[46] L. Floridi. The Fourth Revolution: How the Infosphere Is Reshaping Human Reality. Oxford Uni-
+     versity Press, 2014.
+
+[47] F. Heylighen. The growth of structural and functional complexity during evolution. In F. Hey-
+     lighen, J. Bollen, and A. Riegler (eds.), The Evolution of Complexity, Kluwer, 1999.
+
+[48] J. H. Holland. Hidden Order: How Adaptation Builds Complexity. Addison–Wesley, 1995.
+
+[49] H. A. Simon. The architecture of complexity. Proceedings of the American Philosophical Society,
+     106(6):467–482, 1962.
+
+
+
+
+                                                  45

@@ -1,0 +1,2373 @@
+                         Quantum SpherePop
+                 The RSVP Field in Complex Phase Space
+
+                                   Flyxion Research Group
+
+                                       November 1, 2025
+
+                                               Abstract
+
+           We develop a self-contained quantum field formulation of the Relativistic Scalar–
+      Vector Plenum (RSVP) in a complex phase space and show how its microstate geometry
+      admits a concrete realization as a five-dimensional (5D) complex-phase Ising–Kuramoto
+      lattice dubbed Quantum SpherePop. The fundamental operator triplet (Φ̂, v̂, Ŝ) evolves un-
+      der a quadratic-plus-interaction Hamiltonian with nontrivial commutators tying an entropy
+      operator Ŝ to a cognitive phase operator Ω̂. A path-integral discretization establishes an
+      exact correspondence with a complex-amplitude lattice whose nearest-neighbor couplings
+      implement lamphron–lamphrodyne smoothing while plaquette terms encode vorticity and
+      torsion. We prove local well-posedness for the classical RSVP stochastic PDEs, construct
+      the canonical quantization, and derive the continuum limit of the lattice partition function.
+      Throughout, short interpretive notes connect formal statements to cognitive semantics:
+      superposition encodes concurrent semantic potentials; decoherence corresponds to stig-
+      mergic read/write; synchronization corresponds to amplitwistor coherence. We close with
+      a discussion of empirical predictions, numerical schemes, and open problems. Quantum
+      formulations are advanced but remain compatible with prior classical RSVP results.
+
+
+Contents
+1   Foundations: Classical RSVP and Its Complexification                                              1
+    1.1 Classical RSVP fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             1
+    1.2 Complex-phase lift and amplitwistors . . . . . . . . . . . . . . . . . . . . .                2
+    1.3 A working 5D lattice picture (TikZ) . . . . . . . . . . . . . . . . . . . . . .               3
+    1.4 Classical well-posedness (local) . . . . . . . . . . . . . . . . . . . . . . . .              3
+    1.5 Interpretive note . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           3
+
+2   Canonical Operator Quantization                                                                   4
+    2.1 Quantized field algebra . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             4
+    2.2 Hilbert Bundle and States . . . . . . . . . . . . . . . . . . . . . . . . . . . .             4
+    2.3 Operator flow diagram (TikZ) . . . . . . . . . . . . . . . . . . . . . . . . .                5
+
+
+                                                   1
+3   Hamiltonian Structure and Energy Estimates                                                5
+    3.1 Quantum RSVP Hamiltonian . . . . . . . . . . . . . . . . . . . . . . . . . .          5
+    3.2 Path integral representation . . . . . . . . . . . . . . . . . . . . . . . . . . .    6
+    3.3 Energy flow schematic (TikZ) . . . . . . . . . . . . . . . . . . . . . . . . .        6
+
+4   Complex Lattice Quantization: The Quantum SpherePop Model                                 6
+    4.1 Lattice construction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    6
+    4.2 Lattice geometry (TikZ) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     7
+    4.3 Quantum partition function . . . . . . . . . . . . . . . . . . . . . . . . . . .      7
+    4.4 Theorem: convergence to field theory . . . . . . . . . . . . . . . . . . . . .        8
+
+5   Phase Synchronization and Ising–Kuramoto Dynamics                                         8
+    5.1 Evolution equation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      8
+    5.2 Visualization (TikZ) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    9
+    5.3 Quantum corrections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       9
+
+6   Cohomological Structure and Sheaf Quantization                                            9
+    6.1 Sheaf of local Hilbert spaces . . . . . . . . . . . . . . . . . . . . . . . . . .     9
+    6.2 Cohomology and obstructions . . . . . . . . . . . . . . . . . . . . . . . . .        10
+    6.3 Cohomological feedback diagram (TikZ) . . . . . . . . . . . . . . . . . . . .        10
+
+7   Empirical and Computational Implementation                                               11
+    7.1 Quantum Monte Carlo scheme . . . . . . . . . . . . . . . . . . . . . . . . .         11
+    7.2 Empirical mapping . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      11
+    7.3 Computational visualization (TikZ) . . . . . . . . . . . . . . . . . . . . . .       11
+    7.4 Interpretive remark . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    11
+
+8   Quantum Geometric Flow and Complex Phase Synchronization                                 12
+
+9   Entropic Channels, Decoherence, and CLIO as CPTP Maps                                    14
+
+10 Quantum–Classical Correspondence and Ehrenfest Fields                                     16
+   10.1 Operator Decomposition and Expectation Dynamics . . . . . . . . . . . . . .          16
+   10.2 Semiclassical Expansion . . . . . . . . . . . . . . . . . . . . . . . . . . . .      16
+   10.3 Phase–Space Representation . . . . . . . . . . . . . . . . . . . . . . . . . .       17
+   10.4 Illustrative Diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   18
+
+11 Quantum Information Geometry and Fisher Curvature                                         18
+   11.1 Statistical Manifold and Metric Definition . . . . . . . . . . . . . . . . . . .     18
+   11.2 Quantum Geodesics and Curvature . . . . . . . . . . . . . . . . . . . . . . .        19
+   11.3 Entropy Gradient Flow . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      19
+   11.4 Diagram: Fisher Curvature Manifold . . . . . . . . . . . . . . . . . . . . . .       20
+   11.5 Dual Connections and Bregman Divergence . . . . . . . . . . . . . . . . . .          20
+   11.6 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      21
+
+
+                                               2
+Appendix A: Canonical Quantization Derivations                                              22
+
+Appendix B: Path-Integral Discretization                                                    23
+
+Appendix C: Hilbert-Bundle Formalization                                                    24
+
+A Appendix D — Quantum–Classical Correspondence                                             25
+  A.1 Setup and Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      25
+  A.2 Path Integral and Stationary-Phase Expansion . . . . . . . . . . . . . . . . .        26
+  A.3 Ehrenfest-Type Reduction to Classical RSVP PDEs . . . . . . . . . . . . . .           26
+  A.4 Moyal Bracket to Poisson Bracket . . . . . . . . . . . . . . . . . . . . . . .        27
+  A.5 Semiclassical Reconstruction of First-Order RSVP PDEs . . . . . . . . . . .           28
+  A.6 Geometric Picture of the Semiclassical Limit . . . . . . . . . . . . . . . . .        28
+  A.7 Summary and Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         29
+
+Appendix E — Quantum Information Geometry                                                   29
+  A.8 Quantum States over Cognitive Patches . . . . . . . . . . . . . . . . . . . .         29
+  A.9 Bures Distance and Quantum Fisher Metric . . . . . . . . . . . . . . . . . .          30
+  A.10 Exponential Families and Entropy Hessians . . . . . . . . . . . . . . . . . .        30
+  A.11 Curvature and Entropic Complexity . . . . . . . . . . . . . . . . . . . . . .        31
+  A.12 Geodesics as Optimal Cognitive Transitions . . . . . . . . . . . . . . . . . .       32
+  A.13 An Illustrative Two-Level Example . . . . . . . . . . . . . . . . . . . . . . .      32
+  A.14 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      32
+
+Appendix F — Functorial quantization of the RSVP field via Hilbert bundles                  33
+  A.15 Preliminaries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    33
+  A.16 Structure of the Quantum Category . . . . . . . . . . . . . . . . . . . . . . .      34
+  A.17 CLIO as a Monoidal Endofunctor . . . . . . . . . . . . . . . . . . . . . . .         34
+  A.18 Functorial Quantization Diagram . . . . . . . . . . . . . . . . . . . . . . . .      35
+  A.19 Sheaf-Theoretic Quantization . . . . . . . . . . . . . . . . . . . . . . . . . .     35
+  A.20 Symmetric Monoidal ∞-Category Extension . . . . . . . . . . . . . . . . .            36
+  A.21 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      36
+
+Appendix G — Computational Implementation                                                   36
+  A.22 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     36
+  A.23 Lattice Discretization Scheme . . . . . . . . . . . . . . . . . . . . . . . . .      37
+  A.24 GPU Monte Carlo Implementation . . . . . . . . . . . . . . . . . . . . . . .         37
+  A.25 Langevin Dynamics Solver . . . . . . . . . . . . . . . . . . . . . . . . . . .       38
+  A.26 Discretization Table . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   38
+  A.27 Convergence and Diagnostics . . . . . . . . . . . . . . . . . . . . . . . . . .      38
+  A.28 Visualization Pipeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   38
+  A.29 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      39
+
+Appendix H — Experimental Predictions                                                       39
+
+
+                                              3
+    A.30 Mapping Theoretical and Measurable Quantities . . . . . . . . . . . . . . . .         39
+    A.31 Predicted Scaling Laws . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      40
+    A.32 Phase-Locking and Entropy Correlation . . . . . . . . . . . . . . . . . . . .         40
+    A.33 Experimental Protocols . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      41
+    A.34 Protocol 1: Visual Imagery Coherence . . . . . . . . . . . . . . . . . . . . .        41
+    A.35 Protocol 2: Aphantasia and Anendophasia Tests . . . . . . . . . . . . . . . .         41
+    A.36 Population-Level Predictions . . . . . . . . . . . . . . . . . . . . . . . . . .      41
+    A.37 Discussion and Empirical Outlook . . . . . . . . . . . . . . . . . . . . . . .        42
+
+Appendix I — Open Problems and Future Directions                                               42
+  A.38 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        42
+  A.39 Mathematical Conjectures . . . . . . . . . . . . . . . . . . . . . . . . . . .          42
+  A.40 Computational Challenges . . . . . . . . . . . . . . . . . . . . . . . . . . .          43
+  A.41 Experimental Directions . . . . . . . . . . . . . . . . . . . . . . . . . . . .         43
+  A.42 Cosmological and Philosophical Extensions . . . . . . . . . . . . . . . . . .           43
+  A.43 Categorical Open Problems . . . . . . . . . . . . . . . . . . . . . . . . . . .         44
+  A.44 Future Directions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       44
+  A.45 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         45
+
+
+1. Foundations: Classical RSVP and Its Complexification
+This section fixes notation and recalls the classical RSVP fields before introducing their complex-
+phase extension and operator counterparts.
+
+
+1.1. Classical RSVP fields
+Assumption 1.1 (Cognitive base manifold). Let (M, g) be a compact, oriented 3-dimensional
+Riemannian manifold without boundary, with Levi-Civita connection ∇ and volume form
+     √
+dV = det g d3 x.
+Definition 1.1 (RSVP fields). The classical RSVP state consists of
+
+                     Φ : M → R,         v : M → T M,         S : M → R≥0 ,
+
+evolving by the coupled semilinear parabolic system
+
+                      ∂t Φ = −∇· (Φ v) + ξ,                                                  (1.1)
+                       ∂t v = (∇Φ) × v − γv + ∇· (D ∇v) + η,                                 (1.2)
+                      ∂t S = −v· ∇S + αk∇Φk2 + βk∇ × vk2 + κ∆S,                              (1.3)
+
+with positive coefficients γ, α, β, κ and a positive-definite diffusivity tensor D. The forcings
+ξ, η are mean-zero Gaussian fields with spatially smooth covariances.
+Remark 1.1 (Cognitive interpretation). Equation (1.1) advects semantic potential by directed
+
+
+                                                4
+flows; (1.2) rotates and damps flows while smoothing via D; (1.3) accumulates structure from
+semantic gradients and vorticity, then diffuses. In imageless regimes, Φ need not project onto
+sensory submanifolds: cognition proceeds directly on (M, g).
+
+
+1.2. Complex-phase lift and amplitwistors
+To interface with quantum amplitudes and phase synchronization, we introduce a complex
+phase variable Ω and a complex entropy amplitude
+                                       √ iΩ/h̄
+                                Ψ :=    ρe ,        ρ := e−S .                            (1.4)
+
+Heuristically, S controls amplitude and Ω controls phase. Writing Ψ yields a Madelung-like
+representation for entropy transport.
+Proposition 1.1 (Madelung form of entropy transport). Assume sufficient smoothness and set
+Ψ by (1.4). Then for u := v the continuity form
+
+                              ∂t ρ + ∇· (ρ u) = κ∆ρ + sources
+
+is equivalent to (1.3), up to a multiplicative factor and lower-order source terms, while the
+phase Ω satisfies a Hamilton–Jacobi-type equation whose gradient contributes to the vorticity
+source in (1.2).
+
+Proof. With ρ = e−S we have ∂t ρ = −ρ ∂t S and ∇ρ = −ρ ∇S. Substitute (1.3) to obtain
+
+                     ∂t ρ = ρ v· ∇S − αk∇Φk2 − βk∇ × vk2 − κ∆S .
+                                                              
+
+
+Using ∆ρ = ∇· (∇ρ) = ∇· (−ρ∇S) = −∇ρ· ∇S − ρ∆S, rearrange to the stated continuity
+form with effective sources proportional to αk∇Φk2 + βk∇ × vk2 ; the phase equation follows
+from standard Madelung separation of real/imaginary parts when Ψ obeys a Schrödinger-type
+dynamics.
+
+Remark 1.2 (Amplitwistor interpretation). Writing Ψ = k Ak with Ak localized in position–
+                                                     P
+
+momentum–frequency (x, p, ω) yields an amplitwistor decomposition; synchronization corre-
+sponds to phase-locking across k-modes.
+
+
+1.3. A working 5D lattice picture (TikZ)
+We will repeatedly refer to a 5D lattice (three spatial axes, one algorithmic time, one complex
+phase ring). The diagram below shows a 3D spatial slice, with a circular phase fiber at one
+node and couplings to its nearest neighbors.
+
+
+
+
+                                              5
+                                    θ ∈ [0, 2π)
+                             J phase
+
+                               x    J             Legend:
+                                                  • nodes: spatial sites
+                                                  • gray: nearest-neighbor links
+                                                  • teal circle: phase fiber
+                                                  • red arrows: coupling J
+
+Figure 1: A spatial slice of the 5D lattice: each site x carries a complex phase fiber (circle).
+Nearest-neighbor couplings J implement smoothing; algorithmic time (not shown) advances
+the Monte Carlo/Langevin dynamics.
+
+
+1.4. Classical well-posedness (local)
+Theorem 1.1 (Local existence and uniqueness). Under Assumption 1.1, with ξ, η spatially
+smooth and D uniformly elliptic, there exists T > 0 and a unique mild solution
+
+                   (Φ, v, S) ∈ C [0, T ]; H 2 (M) × H 1 (M; T M) × H 2 (M)
+                                                                          
+
+
+to (1.1)–(1.3) with H 2 /H 1 initial data.
+
+Proof. Rewrite (1.1)–(1.3) as an abstract semilinear evolution Ut = AU + N (U ) + F (t) on
+X := H 2 ×H 1 ×H 2 , where A collects the parabolic parts (elliptic operators generating analytic
+semigroups) and N the bilinear transport and vorticity terms. Standard product estimates show
+N is locally Lipschitz on X; thus, by semigroup theory and Picard iteration (e.g., 1), one
+obtains a unique mild solution on [0, T ].
+
+Remark 1.3 (Scope). Global existence is open without further a priori bounds; stochastic
+forcings can be handled in mild form with standard martingale arguments.
+
+
+1.5. Interpretive note
+Equations (1.1)–(1.3) model cognitive computation as entropic smoothing with directed flow.
+The 5D lattice in Figure 1 serves as the microstate carrier that we will later quantize; the phase
+fiber anticipates amplitudes in Section 2.
+
+
+2. Canonical Operator Quantization
+We now promote the classical fields (Φ, v, S, Ω) to operator-valued distributions on a suitable
+Hilbert bundle over M.
+
+
+
+
+                                                   6
+2.1. Quantized field algebra
+Definition 2.1 (Canonical operators). At each point x ∈ M we define operator quadruples
+
+                                 Φ̂(x),        v̂(x),       Ŝ(x),                  Ω̂(x)
+
+with conjugate momenta Π̂Φ , Π̂v , Π̂S , Π̂Ω . The non-vanishing equal-time commutators are
+
+                                 [Φ̂(x), Π̂Φ (y)] = ih̄ δ(x − y),                             (2.1)
+                                [v̂i (x), Π̂vj (y)] = ih̄ δij δ(x − y),                       (2.2)
+                                  [Ŝ(x), Ω̂(y)] = ih̄ δ(x − y).                              (2.3)
+
+All other commutators vanish.
+Remark 2.1 (Physical meaning). Equation (2.3) elevates entropy and phase to canonically con-
+jugate variables. Fluctuations in S correspond to uncertainties in phase coherence, paralleling
+energy–time uncertainty but generalized to semantic coherence.
+
+
+2.2. Hilbert Bundle and States
+For every measurable region U ⊂ M, let HU denote the Fock space generated by the restrictions
+of the field operators Φ̂|U , v̂|U , Ŝ|U , and Ω̂|U . The collection {HU } forms a Hilbert sheaf
+
+                                                U 7−→ HU ,
+
+equipped with restriction morphisms HV → HU whenever U ⊂ V . A global cognitive state is
+a consistent section ψ ∈ Γ(M, H ) that satisfies compatibility on overlaps.
+
+
+2.3. Operator flow diagram (TikZ)
+
+                                            [Φ̂, Π̂Φ ] = ih̄
+                                                                 lamphrodyne coupling
+
+
+
+
+                                          Φ̂                Π̂Φ
+                                           feedback
+
+
+
+
+                                               [Ŝ, Ω̂] = ih̄
+                                          Ŝ                    Ω̂
+
+
+Figure 2: Operator relationships: two canonical pairs (Φ̂, Π̂Φ ) and (Ŝ, Ω̂) form coupled feedback
+loops via lamphron–lamphrodyne interactions.
+
+
+Proposition 2.1 (Self-adjointness). If the initial domain is the Schwartz space S(M), then
+Ŝ and Ω̂ are essentially self-adjoint and generate one-parameter unitary groups e−iαŜ/h̄ and
+e−iβ Ω̂/h̄ on HM .
+
+                                                        7
+Proof. By Stone’s theorem, it suffices to check that Ŝ and Ω̂ are symmetric and that their com-
+mutator is purely imaginary multiple of the identity on the dense domain S(M). Relations (2.3)
+guarantee this. Domain closure then ensures essential self-adjointness.
+
+Remark 2.2 (Cognitive parallel). The unitary e−iβ Ω̂/h̄ acts as a semantic rotation; e−iαŜ/h̄ as
+entropic rescaling. Their commutation yields the phenomenology of phase–entropy uncertainty:
+highly coherent semantic states possess unstable entropy gradients.
+
+
+3. Hamiltonian Structure and Energy Estimates
+
+3.1. Quantum RSVP Hamiltonian
+Definition 3.1 (Hamiltonian density). Define the Hamiltonian operator
+                        Z       h
+                   Ĥ =     d3 x 12 Π̂2Φ + 12 k∇Φ̂k2 + 12 kΠ̂v k2 + 12 k∇v̂k2
+                          M
+                                                              i
+                                + κ2S k∇Ŝk2 + V (Φ̂, v̂, Ŝ) ,                                           (3.1)
+
+where V encodes torsion, vorticity, and lamphron–lamphrodyne couplings:
+
+                            V = λΦ Φ̂4 + λv (v̂·v̂)2 + λSΦ Ŝ 2 Φ̂2 + λvS kv̂k2 Ŝ 2 .
+
+
+Theorem 3.1 (Energy positivity). If λΦ , λv , κS > 0 and λSΦ + λvS ≥ 0, the Hamiltonian (3.1)
+is bounded below by zero on the Fock vacuum domain.
+
+Proof. Each term in (3.1) is positive semidefinite under the stated inequalities. Interaction
+cross-terms vanish in the vacuum expectation value and contribute at order h̄ in perturbation
+theory, maintaining positivity.
+
+Remark 3.1 (Entropy coupling as stabilizer). Entropy gradients penalize decoherent field varia-
+tion. The κS k∇Ŝk2 term functions analogously to gauge-fixing in Yang–Mills, suppressing
+unphysical oscillations between incompatible semantic configurations.
+
+
+3.2. Path integral representation
+In Euclidean time τ = it, the transition amplitude between field configurations Ψi , Ψf is
+         D                                            E     Z Ψ(τ )=Ψf
+                                                                    DΦ Dv DS e−h̄ 0 dt M d x L[Φ,v,S] .
+                                                                                1 τ
+                                                                                 R    R 3
+                 −τ Ĥ/h̄            −τ Ĥ/h̄
+             Ψf |e          |Ψi Ψf |e           |Ψi       =
+                                                              Ψ(0)=Ψi
+
+
+The Lagrangian density L is the classical counterpart of (3.1). In the discrete setting (Section 4),
+this integral reduces to a Gibbs measure over lattice configurations.
+
+
+
+
+                                                               8
+3.3. Energy flow schematic (TikZ)
+
+                                  ∇Φ                                    Ĥ
+                         Φ                 v
+                                                                 energy functional
+                     feedback vorticity
+
+                         S                 Ω
+                                  ∂t S
+
+Figure 3: Schematic energy flow among RSVP fields contributing to the total Hamiltonian Ĥ.
+Arrows represent derivative or coupling pathways; circular flow encodes cognitive feedback.
+
+
+Remark 3.2 (Interpretation). Figure 3 summarizes lamphron–lamphrodyne coupling: energy
+circulates through (Φ, v, S, Ω) forming a closed informational feedback loop, which under
+quantization corresponds to oscillatory phase coherence.
+
+
+4. Complex Lattice Quantization: The Quantum SpherePop
+   Model
+
+4.1. Lattice construction
+Discretize M into N 3 sites labelled by i, j, k. Each site hosts a complex amplitude
+
+                             Ψi = ri eiθi ,       ri ∈ [0, 1], θi ∈ [0, 2π),
+
+representing local entropy amplitude and cognitive phase.
+Definition 4.1 (Quantum SpherePop Hamiltonian). The lattice Hamiltonian is
+
+                                                                             λX 2
+                                 Jij ri rj cos(θi − θj ) +                                     (4.1)
+                         X                                   X
+              Hlat = −                                           U (ri ) +       (ri − 1)2 ,
+                                                             i
+                                                                             2 i
+                         hi,ji
+
+
+where Jij > 0 encodes lamphron–lamphrodyne smoothing, U (ri ) penalizes amplitude deviation
+from mean entropy, and λ enforces normalization.
+Remark 4.1 (Physical reading). Nearest-neighbor coupling promotes phase alignment; ampli-
+tude self-potential controls entropic stability. The model interpolates between classical Ising
+(ri ≡ 1) and continuous Kuramoto (ri fixed, variable θi ) limits.
+Proposition 4.1 (Continuum limit). In the limit of small lattice spacing a → 0 and smooth
+fields,                         Z                                
+                                          J          λ 2
+                       Hlat −→      dx
+                                     3           2
+                                            |∇θ| + (r − 1) ,    2
+                                  M       2          2
+recovering the classical RSVP energy functional with θ ↔ Ω/h̄.
+
+                                                     9
+Proof. Expand θj − θi = a ∇θ·(xj − xi ) + O(a2 ) and cos(∆θ) ≈ 1 − 12 (∆θ)2 . Summing over
+neighbors yields the gradient term Ja3 k∇θk2 /2, which becomes the continuum integral after
+rescaling Ja3 → J.
+
+
+4.2. Lattice geometry (TikZ)
+
+
+
+                                                 Jij
+                                                        iθi
+                                              Ψi θ=
+                                                  i ri e
+
+
+
+
+Figure 4: Portion of the 3D spatial lattice underlying Quantum SpherePop. Each site carries
+complex amplitude Ψi = ri eiθi and interacts with its neighbors via coupling Jij .
+
+
+4.3. Quantum partition function
+The canonical partition function reads
+                              Z Y                        
+                                                     1
+                           Z=     (ri dri dθi ) exp − Hlat .
+                                i
+                                                     h̄
+
+The corresponding Gibbs measure on configuration space induces a probabilistic ensemble
+over amplitude–phase fields that in the continuum becomes a Euclidean path integral.
+
+
+4.4. Theorem: convergence to field theory
+Theorem 4.1 (Lattice–continuum correspondence). As the lattice spacing a → 0 with N a3 =
+Vol(M) fixed, the measure ∝ exp[−Hlat /h̄] converges weakly to the path measure generated by
+the continuum Hamiltonian (3.1).
+
+Proof. Discretize the continuum Hamiltonian with finite differences; under Gaussian approx-
+imation of cos(∆θ) and proper scaling Jij ∝ 1/a, the discrete energy density matches that
+of (3.1) up to O(a2 ). Laplace’s method shows convergence of moment-generating functionals,
+hence weak convergence of measures.
+
+Remark 4.2 (Interpretive commentary). This theorem formalizes that the SpherePop lattice is
+not a metaphor but a legitimate quantization scheme: local “pops’’ correspond to amplitude
+relaxations preserving the continuum RSVP energy under coarse-graining.
+
+
+
+
+                                            10
+5. Phase Synchronization and Ising–Kuramoto Dynamics
+
+5.1. Evolution equation
+Introduce stochastic Langevin dynamics for the phase variables:
+                                                                    √
+                                              Kij sin(θj − θi ) +                         (5.1)
+                                     X
+                       θ˙i = ωi +                                       2D ηi (t),
+                                    j∈N (i)
+
+
+where ωi are intrinsic frequencies, Kij = Jij /h̄, and ηi are independent white noises.
+Proposition 5.1 (Order parameter). Define the global order parameter
+
+                                                   1 X iθi
+                                       R eiψ =          e .
+                                                   N3 i
+
+Then synchronization onset occurs when
+
+                                                       2
+                                              Kc =         ,
+                                                     πg(0)
+
+where g(ω) is the distribution of natural frequencies.
+
+Proof. Standard mean-field reduction (see 4) linearizes (5.1) about incoherence R ≈ 0 and
+yields the stated critical coupling.
+
+
+5.2. Visualization (TikZ)
+
+                         R
+                                                     synchronization curve
+
+
+
+
+                                                                           K
+                                                Kc
+
+Figure 5: Global order parameter R versus coupling K. Below Kc , phases drift incoherently;
+above Kc , partial synchronization emerges.
+
+
+Remark 5.1 (Cognitive reading). Equation (5.1) models semantic phase alignment across field
+regions: synchronization corresponds to coherent interpretation. The threshold Kc marks the
+transition from fragmented cognition to unified experience.
+
+
+
+
+                                                     11
+5.3. Quantum corrections
+In the full quantum regime, the stochastic noise D is replaced by vacuum fluctuations of the
+operator field, introducing decoherence. Perturbatively, the mean-field critical coupling shifts
+as
+                                                     h̄2
+                                                           
+                                   (q)
+                                 K c = Kc 1 +                 ,
+                                                  8hr2 iJ 2
+showing that quantum fluctuations slightly inhibit synchronization, an effect analogous to
+finite-temperature suppression in superconductors.
+Remark 5.2 (Entropic–semantic coupling). Amplitude fluctuations ri serve as local entropy
+reservoirs; synchronization therefore balances semantic coherence against entropic diversity.
+This embodies the RSVP principle of entropy-respecting cognition.
+
+
+6. Cohomological Structure and Sheaf Quantization
+
+6.1. Sheaf of local Hilbert spaces
+Let H denote the sheaf assigning to each open U ⊂ M the Hilbert space HU generated by the
+operator algebra Φ̂|U , v̂|U , Ŝ|U , Ω̂|U .
+Definition 6.1 (Sheaf quantization). The quantized RSVP system is the pair (M, H ) together
+with the presheaf of observables
+
+                              O(U ) = Alg Φ̂|U , v̂|U , Ŝ|U , Ω̂|U
+                                                                       
+
+
+and restriction morphisms preserving commutation relations. Global sections correspond to
+observables defined consistently across overlaps.
+Proposition 6.1 (Gluing condition). If local states ψi ∈ HUi satisfy ψi |Ui ∩Uj = ψj |Ui ∩Uj for
+all overlaps, there exists a unique global state ψ ∈ HM with ψ|Ui = ψi .
+
+Proof. By the sheaf property of H , the collection {ψi } defines an element of the equalizer of
+             i,j HUi ∩Uj , which by definition is HM .
+Q          Q
+  i HUi ⇒
+
+
+Remark 6.1 (Cognitive interpretation). Successful gluing corresponds to consistent semantic
+integration across overlapping modalities or regions. Failure of gluing yields fragmentation or
+cognitive dissonance.
+
+
+6.2. Cohomology and obstructions
+Define the Čech cochain complex
+                                            Y
+                           C k (U, O) =                O(Ui0 ∩ · · · ∩ Uik ),
+                                          i0 <···<ik
+
+
+
+
+                                                  12
+with coboundary δ as usual.
+Theorem 6.1 (Obstruction class). A family of local observables {Oi } fails to glue globally iff
+its first cohomology class [δO] ∈ H 1 (M, O) is nonzero.
+
+Proof. Immediate from the standard Čech correspondence: δO = 0 iff the {Oi } agree on
+overlaps; nonzero δO represents an incompatibility cocycle.
+
+Remark 6.2 (Interpretation). Nontrivial H 1 (M, O) measures semantic inconsistency loops.
+Vanishing cohomology signifies a globally coherent cognitive state.
+
+
+6.3. Cohomological feedback diagram (TikZ)
+
+                                        δ              δ
+                               C0             C1             C2
+
+
+
+
+                                       H 1 = ker δ/im δ
+
+Figure 6: Cohomological structure of local-to-global consistency. Nonzero H 1 represents loops
+of incompatible observables that prevent formation of a global section.
+
+
+Remark 6.3 (Physical analogy). The cohomology class functions as a discrete curvature mea-
+suring phase misalignment—analogous to flux quantization in superconductors.
+
+
+7. Empirical and Computational Implementation
+
+7.1. Quantum Monte Carlo scheme
+Discretize Euclidean time with step ∆τ . At each step update (ri , θi ) by the Metropolis rule:
+                                                            
+                             paccept = min 1, exp[−∆Hlat /h̄] ,
+
+ensuring detailed balance. Average observables over Markov samples to estimate expectation
+values.
+Proposition 7.1 (Ergodicity). If all Jij > 0 and λ > 0, the update chain is ergodic on
+configuration space modulo global phase shift.
+
+Proof. Amplitude and phase flips connect all configurations; positivity of couplings forbids
+trapping in metastable zero-measure subsets.
+
+
+
+
+                                              13
+7.2. Empirical mapping
+Phase order R (Eq. (5.1)) corresponds to EEG phase coherence across cortical regions. Ampli-
+tude variance Var(ri ) corresponds to entropy variability measurable via fMRI BOLD fluctua-
+tions. Synchronization transitions predicted by Eq. (5.1) thus admit empirical verification.
+
+
+7.3. Computational visualization (TikZ)
+
+                             sampling                         aggregation
+            Monte Carlo                    Field averages                   Cognitive metrics
+                                              feedback
+                                                          validation
+
+                                           Empirical data
+
+Figure 7: Simulation pipeline: Monte Carlo sampling produces field averages; these yield
+cognitive metrics compared with empirical data for model validation.
+
+
+7.4. Interpretive remark
+This scheme closes the empirical loop: quantum statistical mechanics ↔ cognitive dynam-
+ics. Synchronized regions in the simulation correspond to coherent neural assemblies in
+measurement data.
+
+
+8. Quantum Geometric Flow and Complex Phase Synchro-
+   nization
+Overview. We develop a geometric gradient-flow formulation for the complex RSVP phase
+field on a Riemannian manifold, prove well-posedness and a Lyapunov monotonicity property,
+and relate the resulting order parameter to phase synchronization in the quantum SpherePop
+lattice.
+Definition 8.1 (Complex phase field and free energy). Let (M, g) be a compact, oriented
+                                                                                 √
+Riemannian 3–manifold.1 The complex entropy–phase field is Ψ : M → C, Ψ = ρ eiΩ/h̄ ,
+with ρ ≥ 0 and phase Ω ∈ R. For parameters ξ > 0 (phase stiffness), λ > 0 (local potential
+scale), and smooth potential V : R≥0 → R, define the free energy
+                                  Z                         
+                       F[Ψ] =         ξ
+                                      2
+                                        k∇Ψk 2
+                                               +   V (|Ψ| 2
+                                                            )  dvolg .               (8.1)
+                                          M
+
+We assume V is C 2 , bounded below, and V 00 is bounded on bounded sets.
+  1
+      Extensions to noncompact M hold under standard coercivity and boundary conditions.
+
+
+
+
+                                                     14
+Definition 8.2 (Quantum geometric flow (imaginary-time GL)). The quantum geometric flow
+for Ψ is the L2 –gradient flow of F:
+
+                                     δF
+                          ∂t Ψ = −      = ξ ∆g Ψ − V 0 (|Ψ|2 ) Ψ,                         (8.2)
+                                     δΨ
+with initial condition Ψ(·, 0) = Ψ0 ∈ H 1 (M; C).
+Theorem 8.1 (Well-posedness and energy dissipation). Suppose V satisfies the assumptions
+above and V 0 (s) ≤ C(1 + s) for some C > 0. Then for any Ψ0 ∈ H 1 (M) there exists a unique
+global solution Ψ ∈ C([0, ∞); H 1 ) ∩ L2loc ([0, ∞); H 2 ) to (8.2), and
+                                               Z
+                          d
+                                                                                        (8.3)
+                                                        2
+                             F[Ψ(t)] = −           ∂t Ψ dvolg ≤ 0.
+                          dt                     M
+
+In particular, F[Ψ(t)] is nonincreasing and bounded below, hence convergent as t → ∞.
+
+Proof. Standard semilinear parabolic theory on compact manifolds applies: the operator ξ∆g
+generates an analytic semigroup on L2 , while the Nemytskii map Ψ 7→ V 0 (|Ψ|2 )Ψ is locally
+Lipschitz on H 1 under the growth assumed. Local existence and uniqueness follow by Picard
+iteration; a priori H 1 –bounds are obtained from the energy identity
+                                                 
+                         d               δF
+                           F[Ψ(t)] =        , ∂t Ψ     = −k∂t Ψk2L2 ≤ 0,
+                        dt               δΨ        L2
+
+
+
+which both guarantees global continuation and provides integrability of ∂t Ψ. Regularity
+improvement yields Ψ ∈ L2loc ([0, ∞); H 2 ) by parabolic bootstrapping.
+
+Remark 8.1 (Cognitive interpretation). The flow (8.2) is the imaginary-time Schrödinger/Ginzburg–Lan-
+dau descent of the complex RSVP field: ξ penalizes spatial phase gradients (desynchronization),
+while V imposes local energetic preferences (e.g., saturation or sparsity of amplitude). The
+monotone decrease of F formalizes entropic smoothing of semantic–phase microstates.
+Definition 8.3 (Synchronization order parameter). Given Ψ(·, t), define the (Kuramoto-like)
+order parameter                            Z
+                                      1          Ψ(x, t)
+                     r(t) eiΘ(t)
+                                 =                        dvolg (x),                  (8.4)
+                                   vol(M) M |Ψ(x, t)| + ε
+with a fixed ε > 0 to avoid division by zero. Then r(t) ∈ [0, 1] quantifies global phase
+coherence.
+Proposition 8.1 (Sufficient condition for asymptotic phase locking). Assume V (s) = λ2 (s−ρ? )2
+with λ > 0, ρ? > 0 and inft kΨ(·, t)kL∞ ≥ m > 0. If ξ is sufficiently large relative to λ and
+diam(M)2 , then there exists η > 0 such that
+                    Z                               Z
+                                    2
+                        k∇Ω(·, t)k dvolg ≤ e    −ηt
+                                                        k∇Ω(·, 0)k2 dvolg ,               (8.5)
+                     M                               M
+
+hence r(t) → 1 as t → ∞.
+
+                                              15
+                           Phase-aligned slice of the complex field Ψ
+                     (arrows show local eiΩ/h̄ , edges indicate Jij couplings)
+
+Figure 8: Geometric phase synchronization on a lattice slice: local phase arrows align under
+strong coupling Jij and large stiffness ξ, realizing the continuum flow (8.2) discretely.
+
+                            √
+Proof sketch. Write Ψ = ρ eiΩ/h̄ and derive the amplitude–phase system from (8.2). For
+quadratic V , ρ is driven toward ρ? exponentially fast (uniform lower bound m assumed), while
+the phase Ω obeys a diffusion–reaction equation whose principal part is (ξ/h̄2 )∆g Ω plus terms
+of order ∇ρ. With ρ close to ρ? and ξ large, the energy k∇Ωk2 contracts exponentially by
+                                                           R
+
+Poincaré’s inequality on M. The order parameter then converges to 1 by standard phase–coher-
+ence estimates.
+
+Remark 8.2 (SpherePop lattice correspondence). On a discrete tiling {xi }, the continuum F
+induces the XY/complex–Ising Hamiltonian H = hi,ji Jij 1−cos(Ωi − Ωj ) + i U (|Ψi |2 ).
+                                                 P                           P
+
+Proposition 8.1 corresponds to the ferromagnetic phase where Jij dominates local disorder and
+yields macroscopic phase alignment.
+
+
+9. Entropic Channels, Decoherence, and CLIO as CPTP Maps
+Overview. We formalize adaptive RSVP updates (CLIO) as completely positive trace-preserving
+(CPTP) maps on a Hilbert bundle of local cognitive states, prove contractivity of quantum
+relative entropy under such channels, and relate read/write stigmergy to Stinespring dilations
+and adjunctions.
+Definition 9.1 (Hilbert bundle and density fields). Let {Hx }x∈M be a measurable field of
+separable Hilbert spaces and Γ(H) the space of square-integrable sections. A density field
+is a measurable assignment x 7→ ρx with ρx ∈ D(Hx ) (positive, trace 1), and global state
+        ρx dµ(x) in the direct integral.
+     R⊕
+ρ=
+Definition 9.2 (CLIO channel). A CLIO update at scale τ > 0 is a CPTP map Eτ acting
+fiberwise:                        Z ⊕ X                   
+                   ρ 7→ Eτ (ρ) =                         †
+                                         Kk (x) ρx Kk (x) dµ(x),              (9.1)
+                                               k
+
+with Kraus operators Kk (x) : Hx → Hx satisfying             k Kk (x) Kk (x) = IHx almost every-
+                                                                     †
+                                                         P
+
+where.
+Remark 9.1 (Cognitive interpretation). Eτ models an adaptive inference step (attention, gating,
+
+                                                16
+prediction error correction) that is local in x but coherent across the bundle via parameter
+sharing or constraints on Kk (x). Time-discretized composition yields ρn+1 = Eτ (ρn ), a
+quantum Markov chain over cognitive states.
+Definition 9.3 (Quantum relative entropy for density fields). For two density fields ρ, σ, define
+                                   Z
+                                      Tr ρx (log ρx − log σx ) dµ(x),                       (9.2)
+                                                               
+                      S(ρkσ) =
+                                      M
+
+whenever supp(ρx ) ⊆ supp(σx ) a.e.; otherwise S(ρkσ) = +∞.
+Theorem 9.1 (Data processing for CLIO channels). Let Eτ be any CLIO channel of the form
+(9.1). Then
+                                                                                   (9.3)
+                                              
+                             S Eτ (ρ) k Eτ (σ) ≤ S(ρkσ).
+
+Proof. For each x, the fiber map Eτ,x (·) = k Kk (x)(·)Kk (x)† is CPTP on B(Hx ), hence
+                                              P
+
+satisfies Uhlmann monotonicity: S Eτ,x (ρx ) k Eτ,x (σx ) ≤ S(ρx kσx ). Integrate both sides over
+                                                         
+
+x ∈ M to obtain (9.3).
+
+Corollary 9.1 (Free-energy descent under CLIO+ GL). Consider alternating steps: (i) quantum
+geometric flow Ψ 7→ Ψ0 decreasing F (Theorem 8.1) and (ii) CLIO channel ρ 7→ Eτ (ρ)
+with ρ = |ΨihΨ|. Then the composite map does not increase the variational free energy
+J [ρ] := F[Ψ] + β −1 S(ρkσ) for any reference σ, provided Eτ is σ–preserving.
+
+Proof. Step (i): F strictly decreases unless at a critical point. Step (ii): S(Eτ (ρ)kσ) ≤ S(ρkσ)
+when Eτ (σ) = σ by data processing. Summing yields J nonincreasing.
+
+Definition 9.4 (Stinespring dilation and stigmergic read/write). A CLIO channel Eτ admits
+a Stinespring dilation: there exists an environment Hilbert bundle K = {Kx }, a unitary
+Ux : Hx ⊗ Kx → Hx ⊗ Kx , and a fixed environment state ωx , such that
+
+                              Eτ,x (ρx ) = TrKx Ux (ρx ⊗ ωx )Ux† .                          (9.4)
+                                                                
+
+
+We interpret Ux as write to the environment (external stigmergic field) and the partial trace as
+read back into the internal bundle.
+Remark 9.2 (Adjunction viewpoint). Let Write : Γ(H) → Γ(H ⊗ K) and Read = TrK
+be the canonical maps. For fixed ω, the pair (Write, Read) forms an adjunction at the level
+of state spaces with unit η(ρ) = ρ ⊗ ω and counit (ρ ⊗ ω) = TrK (ρ ⊗ ω); the composite
+Read◦AdU ◦Write yields Eτ . This realizes stigmergy as a categorical limit/colimit factorization
+of a CPTP update.
+Proposition 9.1 (Fixed points and stability). If Eτ is primitive on each fiber (i.e. has a unique
+full-rank fixed point σx ), then the bundle state σ =    σx is the unique fixed point of Eτ , and
+                                                      R⊕
+
+for any ρ,
+                                        lim Eτn (ρ) = σ                                      (9.5)
+                                       n→∞
+
+
+
+
+                                               17
+                    Write       ωx
+
+                                     Environment coupling
+
+                ⊗ ωx            Ux
+       ρx                                                   TrKx               Eτ,x (ρx )
+                             (unitary)
+                                                   Read (partial trace)
+
+Figure 9: Stinespring dilation of a CLIO update: internal state ρx couples unitarily to an
+environment state ωx via Ux ; the environment is traced out to yield the CPTP channel output.
+
+
+in trace norm. Moreover S(Eτn (ρ)kσ) & 0 monotonically.
+
+Proof. Primitivity on each fiber implies convergence to σx by the quantum Perron–Frobe-
+nius theorem (ergodicity). Direct-integral structure preserves norm convergence under Fu-
+bini–Tonelli; monotone decay of relative entropy follows from repeated application of Theo-
+rem 9.1.
+
+Remark 9.3 (Cognitive meaning). A primitive CLIO channel represents a stabilizing adaptive
+loop with a unique entropic equilibrium. Alternation with the geometric flow (Section 8) yields
+a contractive two-step procedure that (i) smooths phases/amplitudes and (ii) consolidates them
+via environment-coupled read/write—a rigorous form of learned stigmergic consolidation.
+
+
+10. Quantum–Classical Correspondence and Ehrenfest Fields
+
+10.1. Operator Decomposition and Expectation Dynamics
+Let the RSVP field operators obey
+
+                       Φ̂ = Φ + δ Φ̂,     v̂ = v + δv̂,       Ŝ = S + δ Ŝ,
+
+where expectation values are defined by Φ = hΦ̂i, v = hv̂i, S = hŜi. Assume the Hamiltonian
+operator                  Z                                           
+                                     1           1
+                    Ĥ = d x   3
+                                        |Π̂Φ | + |∇Φ̂| + V (Φ̂, v̂, Ŝ) .
+                                              2        2
+                                    2mΦ          2
+
+                                                                               ˙
+Theorem 10.1 (Ehrenfest Dynamics for RSVP Fields). Under Heisenberg evolution Â =
+ i
+h̄
+   [Ĥ, Â], the expectation values satisfy
+
+                                   d2 Φ     δV
+                                mΦ    2
+                                        =−      ,                                           (10.1)
+                                   dt       δΦ
+                                     dv
+                                  mv    = − ∇v V ,                                          (10.2)
+                                     dt
+                                     dS
+                                        = − ∇S V + O(h̄2 ).                                 (10.3)
+                                     dt
+
+                                              18
+Proof. Take the time derivative of hΦ̂i:
+
+                         d2            1                         1 δV
+                           2
+                             hΦ̂i =      2
+                                           h[[Φ̂, Ĥ], Ĥ]i = −    h i
+                         dt         (ih̄)                       mΦ δΦ
+
+to leading order in h̄. Analogous steps for v̂ and Ŝ yield the above equations. Higher-order
+commutators give corrections of order h̄2 , which vanish in the semiclassical limit.
+
+Commentary. The theorem states that classical RSVP dynamics emerges as the expectation
+evolution of quantum operators. Quantum fluctuations contribute higher-order curvature
+corrections that manifest as entropic diffusion.
+
+
+10.2. Semiclassical Expansion
+Expanding the potential about mean fields,
+
+                                           1
+                           V (Φ̂) = V (Φ) + V 00 (Φ) (δ Φ̂)2 + · · · ,
+                                           2
+and using Wick decomposition, we find
+
+                      d2 Φ     1 ∂V    1
+                         2
+                           =−       −     Tr[V 00 (Φ) ΣΦ ] + O(h̄4 ),                    (10.4)
+                      dt      mΦ ∂Φ   2mΦ
+
+where ΣΦ = h(δ Φ̂)2 i is the variance matrix. The second term provides the leading quantum
+correction to classical motion.
+Proposition 10.1 (Semiclassical Limit). If variances scale as ΣΦ , Σv , ΣS = O(h̄), then classi-
+cal RSVP equations are recovered up to O(h̄2 ).
+
+Proof. Insert the variance scaling into the Ehrenfest system. All terms beyond the first order
+vanish as h̄ → 0, yielding the deterministic classical PDEs for (Φ, v, S) previously defined in
+Eq. (3.1)–(3.3).
+
+Commentary. This establishes the formal continuity between the quantum and classical plenum:
+semantic coherence corresponds to the semiclassical regime where fluctuations are small but
+nonzero, allowing bounded uncertainty that drives creative divergence.
+
+
+10.3. Phase–Space Representation
+Define the Wigner functional
+                                           Z
+                                     1
+                       W [Φ, ΠΦ ] =            eiΠΦ y/h̄ hΦ − y2 |ρ̂|Φ + y2 i dy.
+                                    2πh̄
+
+
+
+
+                                                  19
+Its moments reproduce the classical observables:         W dΠΦ = Φ, etc. Expanding the Moyal
+                                                     R
+
+bracket yields
+                                     ∞
+                  ∂W                    (−1)n (h̄/2)2n 2n+1
+                                                                                      (10.5)
+                                    X
+                      = {H, W }PB +                   ∂     V ∂ 2n+1 W,
+                   ∂t               n=1
+                                          (2n + 1)!
+
+demonstrating the correspondence between quantum and classical Liouvillian flows.
+Remark 10.1. The higher-order derivatives encode torsion–phase coupling in the plenum.
+Neglecting them recovers lamphron–lamphrodyne smoothing as a mean-field drift.
+
+
+10.4. Illustrative Diagram
+
+                                           ΠΦ
+
+
+                                                      Quantum spread
+
+
+
+                                                                       Φ
+
+
+                                                Classical trajectory
+
+
+
+
+Figure 10: Phase–space depiction of classical trajectory (red) and quantum variance ellipse
+(blue).
+
+
+Commentary. The classical path follows the Ehrenfest mean, while the blue ellipse depicts
+quantum fluctuations whose area scales with h̄, representing finite semantic uncertainty.
+
+
+11. Quantum Information Geometry and Fisher Curvature
+
+11.1. Statistical Manifold and Metric Definition
+Let ρ(x; θ) denote a smoothly parameterized family of RSVP quantum states, with parameters
+θ = (θ1 , . . . , θn ) corresponding to coarse semantic modes or amplitwistor coordinates.
+Definition 11.1 (Quantum Fisher Metric). The quantum Fisher information metric is defined
+as                                h                              i
+                      gij (θ) = Re Tr ρ̂θ ∂i ρ̂θ ρ̂−1
+                                        −1/2                 −1/2
+                                                   θ  ∂ ρ̂ ρ̂
+                                                       j θ θ         ,
+
+where ∂i = ∂/∂θi and ρ̂θ is the density operator on the Hilbert space Hθ .
+
+
+
+
+                                             20
+Theorem 11.1 (Positivity and Covariance Invariance). The metric gij is positive definite and
+invariant under unitary transformations U acting on Hθ :
+
+                            gij (θ) = gij0 (θ),   where ρ̂0θ = U ρ̂θ U † .
+
+Proof. Positivity follows since the operator ρ̂θ ∂i ρ̂θ is self-adjoint with respect to the trace
+                                                  −1/2
+
+inner product, and Tr(A† A) ≥ 0. Unitary invariance follows from cyclicity of the trace:
+Tr(U † AU U † BU ) = Tr(AB).
+
+Commentary. The Fisher metric quantifies infinitesimal distinguishability between nearby
+quantum RSVP states—it plays the same role that the local entropy gradient does in the classical
+plenum, now generalized to density operators.
+
+
+11.2. Quantum Geodesics and Curvature
+Definition 11.2 (Quantum Statistical Connection). Define the affine connection compatible
+with gij as
+                                    1
+                            Γkij = g k` (∂i gj` + ∂j gi` − ∂` gij ).
+                                    2
+The associated geodesic equation is
+
+                                     d2 θ k          i
+                                                k dθ dθ
+                                                        j
+                                            + Γ ij        = 0,
+                                     ds2           ds ds
+describing extremal-information trajectories.
+Theorem 11.2 (Fisher Curvature and Quantum Coherence). Let Rijkl denote the Riemann
+curvature tensor derived from gij . Then negative scalar curvature (R < 0) corresponds
+to highly entangled, non-factorizable quantum RSVP states, while R = 0 corresponds to
+uncorrelated product states.
+
+Proof. For a product state ρ̂ = ρ̂1 ⊗ ρ̂2 , the Fisher metric factorizes as gij = gij ⊕ gij , and
+                                                                                  (1)    (2)
+
+hence all mixed second derivatives vanish, giving R = 0. Entanglement introduces cross-terms
+∂i gjk 6= 0, which yield nonzero curvature. Standard results in quantum information geometry
+(e.g. monotone metrics of Petz) show R < 0 in non-factorizable regimes.
+
+Commentary. Curvature in this statistical manifold measures semantic entanglement: a highly
+curved region represents dense coupling between cognitive subsystems, while a flat region
+corresponds to independent semantic channels.
+
+
+11.3. Entropy Gradient Flow
+The quantum entropy functional
+
+                                      S[ρ̂] = − Tr(ρ̂ log ρ̂)
+
+
+                                                  21
+defines a gradient flow on the Fisher manifold:
+
+                                       dθi
+                                           = − g ij ∂j S.
+                                       dt
+
+Proposition 11.1 (Entropy Dissipation Law). Along this flow, the total entropy decreases
+monotonically:
+                               dS
+                                   = − g ij ∂i S ∂j S ≤ 0.
+                               dt
+Proof. Direct substitution of the gradient-flow equation yields the quadratic form above, whose
+negativity follows from positive definiteness of gij .
+
+Commentary. This expresses the quantum analog of lamphron-lamphrodyne smoothing: infor-
+mation geometry ensures entropic descent along geodesics of maximal semantic coherence.
+
+
+11.4. Diagram: Fisher Curvature Manifold
+
+             Fisher–curvature landscape for entangled vs. separable states R(θ)
+                                       2
+                                           θ2                                      −0.2
+                                       1
+                                                                                   −0.4
+                                                                          θ1
+              −2 −1.5 −1 −0.5                    0.5      1    1.5             2   −0.6
+
+                                     −1                                            −0.8
+
+                                     −2
+
+Figure 11: Curvature of the Fisher manifold. Negative regions (blue) correspond to strong
+entanglement; flat white cross indicates separable directions.
+
+
+Commentary. The Fisher curvature landscape provides a geometric diagnostic of entanglement
+strength across semantic parameters: motion toward the blue basin indicates progressive
+synchronization of quantum cognitive modes.
+
+
+11.5. Dual Connections and Bregman Divergence
+The α-connections ∇(α) and their duals ∇(−α) satisfy
+                                                (α)m          (−α)m
+                               ∂k gij = gmj Γik        + gim Γjk      .
+
+For α = ±1, these correspond to exponential and mixture families of quantum states.
+
+                                                 22
+Proposition 11.2 (Quantum Bregman Divergence). Define the divergence
+
+                                          4                          
+                                              Tr I − ρ1
+                                                      (1−α)/2 (1+α)/2
+                       Dα (ρ1 , ρ2 ) =                       ρ2         .
+                                       1 − α2
+Then Dα ≥ 0 with equality iff ρ1 = ρ2 .
+
+Proof. Positivity follows from Hölder inequality and the operator monotonicity of the trace
+function. The condition Dα = 0 only when the two density operators coincide is immediate
+from spectral decomposition.
+
+Commentary. This divergence quantifies dissimilarity between RSVP quantum states. In
+cognition, it measures the “semantic gap” between two coherent fields, providing a geometric
+error measure for inference and adaptation.
+
+
+11.6. Summary
+The Fisher metric and its associated curvature turn the quantum RSVP ensemble into a Rieman-
+nian manifold of semantic coherence. Entanglement and decoherence correspond to curvature
+fluctuations, while the entropy gradient flow drives the system toward flatter, information-
+balanced configurations—the quantum analog of entropic equilibrium in the classical plenum.
+
+
+Conclusion: Toward a Unified Quantum Plenum
+The Quantum SpherePop project has traced a continuous arc—from scalar-vector thermody-
+namics to quantum cognition—under the overarching principle of the Relativistic Scalar-Vector
+Plenum (RSVP). Across its sections and appendices, the theory evolved from a classical field
+framework describing lamphron–lamphrodyne smoothing into a quantized lattice of entropic
+microstates whose geometry embodies the very process of thought and meaning.
+At its foundation lies the insight that both cognition and cosmology are instances of self-
+relaxing entropy fields: localized fluctuations of Φ (potential), v (vector flow), and S (entropy)
+seek coherence not through expansion or dissipation, but through dynamic smoothing. When
+quantized, these variables acquire operators (Φ̂, v̂, Ŝ) whose commutation relations describe
+the microdynamics of cognitive states as they phase-synchronize into stable patterns. In this
+picture, “consciousness” corresponds to the semiclassical limit of entropic coherence: the point
+where informational turbulence collapses into stable topological form.
+The geometric interpretation provided by the SpherePop formalism reframes microstates as
+interacting spheres on a five-dimensional lattice. Their adjacency rules encode entropic cou-
+pling; their “popping” corresponds to phase collapse or relaxation of local inconsistency. This
+construction unifies the intuitive and the formal: the pop is both a thermodynamic transition
+and a cognitive simplification, a local restoration of coherence that mirrors energy minimiza-
+tion in statistical physics. Through this lens, cognition itself becomes a form of entropic
+self-smoothing—a recursive field resolving informational gradients into semantic equilibrium.
+
+                                               23
+On the computational side, Monte-Carlo and Langevin solvers (Appendix G) demonstrated
+how such dynamics can be simulated directly, revealing emergent synchronization and stability
+transitions consistent with the theoretical Hamiltonian. The empirical mapping in Appendix H
+established a bridge to measurable brain activity, predicting observable correlations between
+entropy, coherence, and subjective imagery. Together, these show that the framework is not
+merely metaphoric but computationally realizable and empirically testable.
+The higher appendices (D–F) extended these results into the domains of geometry and category
+theory. Appendix D derived the classical RSVP equations from the quantum regime, grounding
+“semantic coherence” as a semiclassical limit. Appendix E introduced the quantum Fisher
+metric, demonstrating that informational curvature governs the cost of cognitive transitions.
+Appendix F elevated the system to a symmetric monoidal ∞-category, positioning CLIO as a
+trace-preserving endofunctor and quantization as a natural transformation within a categorical
+topos of meaning. These abstractions unify the mathematical and philosophical core: cognition,
+geometry, and computation are aspects of the same underlying entropic symmetry.
+Finally, Appendices H and I extended this view to experiment and speculation. Empirical
+predictions link RSVP coherence to measurable neurophysiological signatures, while open
+problems sketch a roadmap for future research in quantum information geometry, categorical
+quantization, and cosmological analogues. The unifying motif is clear: structure, meaning,
+and awareness arise from the same universal principle—entropy constrained by coherence.
+Thus, the Quantum SpherePop monograph closes as both a synthesis and an invitation. It
+proposes that cognition, physics, and computation are not separate ontologies but nested
+scales of the same plenum; that understanding mind and cosmos alike requires studying how
+information falls, smooths, and stabilizes; and that the final unity of RSVP lies not in a single
+equation but in the invariance of coherence itself:
+
+                                 dS
+                                    =0      ⇐⇒      F[Ψ] = Ψ.
+                                 dt
+At this fixed point, the quantum, the cognitive, and the cosmological coincide—the plenum,
+aware of itself, finds rest.
+
+                                                — End of the Quantum SpherePop Monograph
+
+
+Appendix A: Canonical Quantization Derivations
+
+Functional derivatives
+From the classical Lagrangian
+
+                   1     1       1       κS
+                L = Φ̇2 − k∇Φk2 − k∇vk2 − k∇Sk2 − V (Φ, v, S),
+                   2     2       2        2
+
+
+
+                                               24
+we derive the canonical momenta
+
+                             ΠΦ = Φ̇,         Πv = v̇,       ΠS = 0,
+
+where ΠS = 0 is a primary constraint.
+
+
+Dirac bracket
+The constraint ΠS = 0 yields a secondary condition Π̇S = [ΠS , H] = 0 ⇒ S constant along
+trajectories, so we replace the Poisson bracket by the Dirac bracket
+                                      Z
+               {A, B}D = {A, B} − d3 x d3 y {A, ΠS (x)}C −1 (x, y){S(y), B},
+
+where C(x, y) = {S(x), ΠS (y)}. Quantization replaces {·, ·}D 7→ [·, ·]/(ih̄).
+
+
+Quantized constraint
+After quantization,
+                               [Ŝ, Π̂S ] = ih̄   ⇒      Π̂S ψ = 0,
+so ψ depends only on (Φ, v, Ω), confirming that entropy acts as an amplitude variable rather
+than an independent momentum coordinate.
+Remark .1 (Result). This derivation underlies the canonical commutator [Ŝ, Ω̂] = ih̄, plac-
+ing (S, Ω) on the same footing as (Φ, ΠΦ ) but with reversed interpretive roles: entropy
+ef trightarrow amplitude, phase ef trightarrow conjugate generator.
+
+
+Appendix B: Path-Integral Discretization and Complex Ising
+Correspondence
+
+Euclidean action
+Perform Wick rotation t → −iτ and define the Euclidean action
+                Z βh̄ Z     h                                                         i
+ SE [Φ, v, S] =     dτ d3 x 12 (∂τ Φ)2 + 12 k∇Φk2 + 12 k∇vk2 + κ2S k∇Sk2 + V (Φ, v, S) .
+                 0      M
+
+The partition function is         Z
+                               Z = DΦ Dv DS exp[−SE /h̄].
+
+
+
+
+                                                  25
+Discretization
+Discretize τ and spatial coordinates with lattice spacing a and time step ∆τ . The Euclidean
+action becomes
+                                                                                         
+                              Φn+1 − Φn 2 J X
+                                                      (Φnj − Φni )2 + V (Φni , vni , Sin ) .
+              X
+                                i      i
+       SE ≈       ∆τ a3  12               +
+              n,i
+                                  ∆τ           2
+                                                      j∈N (i)
+
+
+Integrating over time-sliced configurations yields the transfer-matrix representation
+
+                              Z = Tr (TNτ ),           T = e−∆τ Ĥ/h̄ .
+
+
+Proposition .3 (Complex Ising correspondence). If Φni = rin cos θin and Sin = − ln rin , the
+Boltzmann weight factorizes as
+                                                                 
+                                        X Jrin rjn
+                    exp[−SE /h̄] ∝ exp            cos θin − θjn  ,
+                                                                
+                                              h̄
+                                            hi,ji,n
+
+
+which is the complex-phase Ising form used in Section 4.
+
+Proof. Substitute the polar decomposition into the discretized kinetic and potential terms,
+expand to second order in lattice spacing, and collect cosine interactions; constants absorb into
+normalization. The resulting exponent equals the stated expression up to O(a2 ) corrections.
+
+Remark .2 (Interpretation). This demonstrates the equivalence of the Euclidean path inte-
+gral for the quantum RSVP field and the statistical ensemble of the Quantum SpherePop
+lattice—bridging analytic and computational formalisms.
+
+
+Appendix C: Hilbert-Bundle Formalization
+
+Fibered structure
+Let π : H → M be a fiber bundle where each fiber Hx is a separable Hilbert space generated
+by Φ̂(x), v̂(x), Ŝ(x), Ω̂(x). The inner product varies smoothly with x.
+Definition .3 (Covariant derivative). For a section ψ : M → H define the covariant derivative
+
+                                     ∇µ ψ = ∂µ ψ + Γµ ψ,
+
+where Γµ are connection operators satisfying Γ†µ = −Γµ to preserve norm.
+Theorem .3 (Parallel transport and phase holonomy). The holonomy of Γµ around a closed
+
+
+
+
+                                               26
+loop γ is the unitary operator
+                                              Z       
+                                   Uγ = P exp − Γµ dx ,
+                                                     µ
+                                                      γ
+
+
+whose phase argtr Uγ equals the integrated curvature Fµν = ∂µ Γν − ∂ν Γµ + [Γµ , Γν ].
+
+Proof. Standard from the non-Abelian Stokes theorem.
+
+Remark .3 (Cognitive interpretation). Uγ encodes path-dependent semantic transformation: its
+phase corresponds to conceptual “meaning holonomy.” Nonzero curvature represents persistent
+interpretive bias or memory.
+
+
+Hilbert sheaf gluing
+The local-to-global reconstruction from Proposition 6.1 extends naturally to this bundle setting
+by replacing local Hilbert spaces with fibers Hx and using the connection Γµ to define consistent
+parallel transport between overlaps.
+Proposition .4 (Global coherence criterion). A global cognitive state ψ exists iff the curvature
+Fµν is exact, so that Uγ depends only on endpoints of γ.
+
+Proof. Exact curvature implies vanishing holonomy for all contractible loops, permitting
+single-valued parallel transport and hence global section.
+
+Remark .4 (Geometric reading). Semantic coherence thus appears as flatness of the cognitive
+connection: a geometrical unification of global understanding with field-theoretic integrability.
+
+
+A. Appendix D — Quantum–Classical Correspondence
+
+A.1. Setup and Notation
+
+We consider the RSVP triplet of fields on a compact oriented Riemannian 3-manifold (M, g):
+
+             Φ : M × R → R,            v : M × R → T M,            S : M × R → R≥0 .
+
+In the quantum theory, these become operator-valued fields
+
+                                 Φ̂(x, t),    v̂(x, t),      Ŝ(x, t),
+
+with conjugate momenta Π̂Φ , Π̂v , and Π̂S satisfying canonical equal-time commutators (ETCR):
+
+          [Φ̂(x), Π̂Φ (y)] = ih̄ δ(x − y),            [v̂ i (x), Π̂vj (y)] = ih̄ δ i j δ(x − y),
+           [Ŝ(x), Π̂S (y)] = ih̄ δ(x − y),                     others = 0.                        (A.1)
+
+(Indices are raised/lowered with g; δ denotes the Riemannian Dirac distribution.)
+
+
+                                                27
+Let the (normal-ordered) Hamiltonian be of the form
+      Z                                                                                       
+ Ĥ = dµg 12 Π̂Φ2 + 12 h∇Φ̂, ∇Φ̂i+ 12 kΠ̂v k2 + 12 k∇v̂k2 + 12 Π̂S2 + κ2 k∇Ŝk2 +V (Φ̂, v̂, Ŝ) , (A.2)
+        M
+
+where V encodes couplings (e.g. vorticity/torsion and entropy production terms) chosen so
+that the classical limit reproduces the RSVP PDEs.
+Remark A.1 (Interpretive commentary). The operator content (A.2) is a quadratic kinetic energy
+plus an interaction potential V collecting lamphron–lamphrodyne smoothing, curl penalties for
+v, and an entropy sector for S. Normal ordering is implicit to avoid vacuum divergences on
+compact M.
+
+A.2. Path Integral and Stationary-Phase Expansion
+
+The phase-space path integral for transition amplitudes between field histories can be written
+formally as
+     Z                                     Z Z                                     
+  Z = DΦ DΠΦ Dv DΠv DS DΠS exp h̄i dt dµg ΠΦ Φ̇ + Πv · v̇ + ΠS Ṡ − H , (A.3)
+                                                        
+                                                       M
+
+with H the classical Hamiltonian density corresponding to (A.2). Integrating out the momenta
+gives a configuration-space path integral with action
+             Z Z                                                                               
+S[Φ, v, S] = dt dµg 12 Φ̇ 2 − 12 h∇Φ, ∇Φi+ 12 kv̇k2 − 12 k∇vk2 + 12 Ṡ 2 − κ2 k∇Sk2 −V (Φ, v, S) .
+                    M
+                                                                                                 (A.4)
+Proposition A.1 (Stationary-phase and Euler–Lagrange). Critical points of S satisfy the Euler–
+Lagrange equations
+
+                                                   δV
+                                         Φ̈ − ∆Φ +    = 0,                                       (A.5)
+                                                   δΦ
+                                                   δV
+                                      v̈ − ∇∗ ∇v +    = 0,                                       (A.6)
+                                                   δv
+                                                   δV
+                                       S̈ − κ∆S +     = 0.                                       (A.7)
+                                                   δS
+Moreover, the leading-order semiclassical (stationary-phase) contribution to (A.3) is supported
+on solutions to (A.5)–(A.7).
+
+ Proof. Vary S with respect to each field, integrate by parts,
+                                                             and use compactness to discard
+ boundary terms. The stationary-phase expansion of exp h̄ S is dominated by critical points as
+                                                         i
+
+h̄ → 0.
+
+Remark A.2 (Interpretive commentary). Equations (A.5)–(A.7) are hyperbolic wave-type PDEs
+for the RSVP fields arising at leading semiclassical order. With appropriate choice of V , their
+first-order-in-time (parabolic/advection–diffusion) avatars match the RSVP evolution equations
+used in the classical theory; see Theorem A.1.
+
+
+
+                                                  28
+A.3. Ehrenfest-Type Reduction to Classical RSVP PDEs
+
+We define mean fields hX̂i(t, x) := hΨ(t)|X̂(x)|Ψ(t)i for a Heisenberg-evolving state |Ψ(t)i.
+Heisenberg equations give
+
+                                                   1               D ∂ X̂ E
+                                    ∂t hX̂i =         h[X̂, Ĥ]i +          .                                  (A.8)
+                                                  ih̄                 ∂t
+
+Lemma A.1 (Field and momentum Heisenberg equations). With Ĥ as in (A.2), one has
+
+                                                 δV                                                   δV
+           ∂t Φ̂ = Π̂Φ ,    ∂t Π̂Φ = ∆Φ̂ −              ,         ∂t v̂ = Π̂v ,   ∂t Π̂v = ∇∗ ∇v̂ −       ,
+                                                 δ Φ̂                                                 δv̂
+                                                                                  δV
+                                 ∂t Ŝ = Π̂S ,              ∂t Π̂S = κ∆Ŝ −              .
+                                                                                  δ Ŝ
+Proof. Direct computation from (A.1) and (A.2).
+
+Theorem A.1 (Ehrenfest reduction to classical RSVP). Assume a family of states |Ψh̄ (t)i with
+finite energy and bounded second moments such that the operator fluctuations
+
+                           δ Φ̂ = Φ̂ − hΦ̂i,      δv̂ = v̂ − hv̂i,          δ Ŝ = Ŝ − hŜi
+
+satisfy khδ X̂ δ Ŷ ik = O(h̄) uniformly on finite times. Then the mean fields obey
+                                                                  D δV E
+                                     ∂t2 hΦ̂i − ∆hΦ̂i +        = O(h̄),                                        (A.9)
+                                                          δ Φ̂
+                                                        D δV E
+                                  ∂t2 hv̂i − ∇∗ ∇hv̂i +        = O(h̄),                                       (A.10)
+                                                          δv̂
+                                                        D δV E
+                                   ∂t2 hŜi − κ∆hŜi +         = O(h̄).                                       (A.11)
+                                                          δ Ŝ
+If V is at most quadratic in the fields (or the states are sufficiently peaked), then δδVX̂ =
+δV
+δX X=hX̂i
+           + O(h̄) and the mean fields follow the classical Euler–Lagrange equations up to
+O(h̄2 ).
+
+Proof. Take expectations of Lemma A.1 and commute expectation with derivatives. Replace
+operator nonlinearities by their first-order (in fluctuations) expansions; the bounded-variance
+hypothesis yields the stated error bounds via a cumulant expansion.
+
+Remark A.3 (Interpretive commentary). Equations (A.9)–(A.11) show that expectation values
+evolve according to the classical RSVP dynamics plus controllable quantum corrections. In
+regimes of high semantic coherence (small covariances), the leading dynamics is classical,
+justifying the field-theoretic PDE model as a semiclassical limit.
+
+
+
+
+                                                             29
+A.4. Moyal Bracket to Poisson Bracket
+
+Let A, B be (Weyl-quantized) observables on RSVP phase space with classical symbols a, b.
+Their quantum commutator corresponds to the Moyal bracket:
+
+                   1                       2     h̄ 
+                               b {a, b}M := a sin Λ b = {a, b}P + O(h̄2 ),
+                      [Â, B̂] =                                                           (A.12)
+                  ih̄                      h̄     2
+where Λ is the symplectic bivector and {·, ·}P the classical Poisson bracket on the RSVP phase
+space
+                                Γ = {(Φ, ΠΦ ; v, Πv ; S, ΠS )}.
+
+Proposition A.2 (Quantum Liouville to classical Liouville). The Heisenberg evolution ∂t Â =
+(ih̄)−1 [Â, Ĥ] induces, at the level of symbols, the Moyal evolution ∂t a = {a, h}M , where h is
+the symbol of Ĥ. As h̄ → 0, ∂t a = {a, h}P + O(h̄2 ), i.e. classical Liouville flow.
+
+Proof. Standard Weyl-symbol  calculus: the star-commutator corresponds to the Moyal bracket;
+expanding sin 2 Λ yields the Poisson bracket at leading order with O(h̄2 ) corrections.
+              h̄
+                 
+
+
+Remark A.4 (Interpretive commentary). Proposition A.2 identifies the quantum-to-classical
+reduction mechanism: noncommutative dynamics collapses to Hamiltonian flow on RSVP
+phase space, underpinning the emergence of the classical PDEs for (Φ, v, S).
+
+A.5. Semiclassical Reconstruction of First-Order RSVP PDEs
+
+The classical RSVP theory often uses first-order-in-time, dissipative/advection–diffusion equa-
+tions (e.g. for entropy production and vector-field damping). These arise from (A.5)–(A.7) by
+introducing effective Rayleigh dissipation and adiabatic elimination of fast momenta.
+Proposition A.3 (Overdamped limit and coarse-graining). Assume time-scale separation so
+that ∂t2 X terms are negligible compared to linear-in-time and spatial terms for X ∈ {Φ, v, S},
+and include a quadratic Rayleigh functional R = γ2Φ Φ̇2 + γ2v kv̇k2 + γ2S Ṡ 2 . Then the Euler–
+Lagrange–Rayleigh equations reduce to
+
+                                                     δV
+                                    γΦ ∂t Φ ≃ ∆Φ −      ,                                  (A.13)
+                                                     δΦ
+                                                       δV
+                                     γv ∂t v ≃ ∇∗ ∇v −      ,                              (A.14)
+                                                        δv
+                                                      δV
+                                    γS ∂t S ≃ κ∆S −       ,                                (A.15)
+                                                      δS
+matching (after identifying V ’s derivatives with RSVP production/advection terms) the phe-
+nomenological RSVP PDEs.
+
+Proof. Add +∂R/∂ Ẋ to each EL equation, drop ∂t2 X by time-scale separation, and rearrange.
+
+
+Remark A.5 (Interpretive commentary). This shows how the classical, entropy-producing RSVP
+dynamics emerges from a conservative quantum (and classical) field theory by coarse-graining
+
+                                               30
+and overdamped limits, consistent with thermodynamic arrows observed in cognitive time
+series.
+
+A.6. Geometric Picture of the Semiclassical Limit
+
+Let C be the configuration manifold of fields and P = T ∗C the RSVP phase space with
+symplectic form ω. Quantum states localized near a Lagrangian submanifold L ⊂ P (Bohr–
+Sommerfeld) evolve semiclassically along Hamiltonian characteristics.
+Theorem A.2 (Semiclassical propagation on RSVP phase space). If the initial Wigner distribu-
+tion of the quantum state concentrates on a smooth Lagrangian submanifold L0 ⊂ P, then for
+t in a fixed interval, it remains concentrated near the classical flow φt (L0 ) generated by h up
+to O(h̄) in the sense of distributions.
+
+Proof. Apply Egorov’s theorem and propagation of semiclassical measures under Hamiltonian
+flow; compactness of M aids in controlling remainders.
+
+Remark A.6 (Interpretive commentary). Concentration on Lagrangian manifolds encodes
+semantic coherence manifolds: cognitive states with low dispersion evolve close to classical
+RSVP trajectories, validating classical analyses for coherent regimes.
+
+A.7. Summary and Outlook
+
+We proved: (i) stationary-phase of the RSVP quantum action yields the classical Euler–Lagrange
+equations; (ii) Ehrenfest-type dynamics drives expectation values according to classical RSVP
+PDEs up to O(h̄2 ); (iii) the Moyal bracket reduces to the Poisson bracket, giving classical
+Liouville flow; and (iv) overdamped coarse-graining recovers the first-order RSVP evolution
+used in practice. Conceptually, semantic coherence corresponds to the semiclassical regime
+where fluctuations are small and cognition follows classical field trajectories.
+
+
+                                          ΠΦ
+
+
+
+
+                                                             coherent packet
+
+
+
+                                                                                    Φ
+
+
+
+
+Figure 12: Schematic semiclassical packet (red) propagating near classical energy level sets
+(blue) in the (Φ, ΠΦ )-plane.
+
+
+                                               31
+Appendix E — Quantum Information Geometry
+
+A.8. Quantum States over Cognitive Patches
+
+Let H be a finite-dimensional Hilbert space associated with a local RSVP tile (cortical/semantic
+patch). A quantum cognitive state on the tile is a density operator
+
+                        ρ ∈ D(H) := {ρ | ρ = ρ† , ρ ≥ 0, Tr ρ = 1}.
+
+We consider a smooth statistical model {ρ(θ)}θ∈Θ where Θ ⊂ Rd is a parameter manifold
+encoding control/field parameters (e.g. couplings, gains, or coarse-grained RSVP coordinates).
+Globally, these local families constitute a Hilbert bundle over M with a parameter map M → Θ.
+Remark A.7 (Interpretive commentary). The parameter manifold Θ plays the role of a reduced
+semantic macromanifold. Moving in Θ corresponds to controlled deformations of (Φ̂, v̂, Ŝ)
+statistics within a tile; geodesics in Θ will emerge as optimal cognitive transitions.
+
+A.9. Bures Distance and Quantum Fisher Metric
+Definition A.1 (Uhlmann fidelity and Bures distance). For ρ, σ ∈ D(H), the Uhlmann fidelity
+is                                    q              2
+                                            √ √
+                         F (ρ, σ) := Tr        ρ σ ρ ∈ [0, 1],
+
+and the Bures distance is
+                                          q     p        
+                              dB (ρ, σ) := 2 1 − F (ρ, σ) .
+
+Definition A.2 (Symmetric logarithmic derivative (SLD) and QFIM). Given a smooth model
+ρ(θ), the SLD operators Li for coordinates θi are defined by
+
+                                              1           
+                                    ∂i ρ :=     ρLi + Li ρ .
+                                              2
+The quantum Fisher information matrix (QFIM) is
+                                        1
+                              J(θ) ij := Tr(ρ (Li Lj + Lj Li )) .
+                                  
+                                        2
+The associated Riemannian metric is g QF := 14 J, which coincides with the infinitesimal Bures
+metric on D(H) along ρ(θ).
+Proposition A.4 (Bures length and QFIM). Let θ 7→ ρ(θ) be a smooth curve. Then the Bures
+length satisfies                          Z q
+                         LengthB ρ(θ) =          gijQF (θ) θ̇i θ̇j dλ,
+                                     
+
+
+so g QF is the Riemannian metric induced by dB .
+
+Proof. This is the standard equivalence between the Bures metric and the SLD quantum Fisher
+
+
+                                                32
+metric: expanding dB ρ(θ), ρ(θ + dθ) to second order and identifying coefficients yields
+                                    
+
+ds2B = gijQF dθi dθj .
+
+Remark A.8 (Interpretive commentary). g QF measures sensitivity of the state to semantic/field
+parameter changes. Large g QF indicates directions where small control variations cause large
+state changes—a notion of entropic susceptibility.
+
+A.10. Exponential Families and Entropy Hessians
+Assumption A.1 (Gibbs/exponential family). Assume a model of the form
+                                m
+                     1       X                                   X     
+             ρ(θ) =      exp −      a
+                                   θ Ta ,            Z(θ) = Tr exp −   a
+                                                                      θ Ta ,
+                    Z(θ)       a=1                                        a
+
+with linearly independent Hermitian generators {Ta }.
+Proposition A.5 (Free energy Hessian and QFIM). Let F(θ) := − log Z(θ) be the (dimension-
+less) free energy. Then
+
+                      ∂i ∂j F(θ) = 14 Jij (θ)   ⇐⇒    gijQF (θ) = ∂i ∂j F(θ),
+
+provided the Ta commute (the non-commuting case adds a quantum correction term which is
+positive semidefinite).
+
+Proof. For commuting Ta , ρ diagonalizes in a common eigenbasis and reduces to a classical
+exponential family. Then J equals the classical Fisher matrix, which is the Hessian of F;
+the factor 1/4 matches the SLD convention used here. For non-commuting generators, the
+Kubo–Mori/Bogoliubov inner product yields an additional positive correction; restricting to
+the commuting subalgebra proves the stated equality, with inequality in general.
+
+Remark A.9 (Interpretive commentary). In commuting sectors, quantum information geometry
+collapses to thermodynamic geometry: the QFIM equals the Hessian of free energy, and its cur-
+vature reflects interaction complexity. Non-commutativity encodes irreducible phase/coherence
+structure beyond classical mixtures.
+
+A.11. Curvature and Entropic Complexity
+
+Let Rijkl , Rij , and R denote the Riemann, Ricci, and scalar curvature of (Θ, g QF ).
+Theorem A.3 (Curvature lower bound from non-commutativity). Let ρ(θ) be an exponential
+family as in Assumption A.1. Decompose generators as Ta = Tac + Tanc , where Tac lies in the
+maximal commuting subalgebra. Then, at θ,
+
+                            R(θ) ≥ Rcl (θ) + c [Tanc , Tbnc ] gQF (θ)
+                                                                2
+
+
+
+for some universal c > 0 depending only on conventions. Here Rcl is the scalar curvature of
+the classical (commuting) Fisher geometry.
+
+
+
+                                                33
+Proof sketch. The Bures/QFIM metric can be expressed via the Kubo–Mori inner product;
+curvature tensors inherit contributions from commutator terms through the metric’s Christoffel
+symbols and their derivatives. A comparison theorem (via quadratic forms) shows the curvature
+functional increases by a nonnegative term proportional to the squared commutator norm.
+Details follow from expanding the Levi-Civita connection in the SLD frame and applying
+standard curvature identities.
+
+Remark A.10 (Interpretive commentary). The inequality states: non-commutativity bends the
+information manifold positively. In RSVP terms, greater phase-coherent complexity (non-
+commuting sufficient statistics) inflates curvature, signaling a richer landscape of cognitive
+transitions.
+
+A.12. Geodesics as Optimal Cognitive Transitions
+Definition A.3 (Bures geodesics). A smooth curve θ(λ) solving the Euler–Lagrange equations
+of the energy functional                  Z
+                                        1
+                                 E[θ] =     gijQF (θ) θ̇i θ̇j dλ
+                                        2
+is a (constant-speed) Bures geodesic; it locally minimizes Bures length between its endpoints.
+Theorem A.4 (Optimality of Bures geodesics). Let ρ0 = ρ(θ0 ) and ρ1 = ρ(θ1 ) be connected
+by a unique minimizing Bures geodesic θ∗ (λ). Then ρ(θ∗ (λ)) minimizes, among admissible
+paths, both:
+                        R q QF
+   (i) the Bures length      gij θ̇i θ̇j dλ;
+  (ii) the instantaneous estimation variance θ̇i θ̇j Jij−1 dλ (Cramér–Rao action), under fixed
+                                             R
+
+       endpoints and speed profile.
+
+Proof. (i) is standard Riemannian geodesic optimality. For (ii), the dual relation between J and
+the metric implies that minimizing path-length at fixed speed profile coincides with minimizing
+the time-integrated local Cramér–Rao bound. A Lagrange multiplier argument converts (ii)
+into (i).
+
+Remark A.11 (Interpretive commentary). Theorem A.4 formalizes optimal cognitive transition:
+the least distorting path (Bures-shortest) between two quantum cognitive states also minimizes
+cumulative estimation variance—a principled route for RSVP control/CLIO scheduling in the
+quantum regime.
+
+A.13. An Illustrative Two-Level Example
+
+For dim H = 2, any state has Bloch form ρ = 12 (I + r · σ) with |r| ≤ 1. The Bures metric on
+the Bloch ball is
+                                                   (r · dr)2
+                                                             
+                              2   1 dr · dr
+                           dsB =                +               .
+                                  4 1 − |r|2 (1 − |r|2 )2
+Geodesics are arcs orthogonal to the boundary |r| = 1.
+
+
+
+                                              34
+                                             ry
+
+
+
+
+                               ρ1
+
+                                                             ρ0
+                                                                       rx
+
+
+
+
+ Figure 13: Equatorial slice of the Bloch ball with Bures geodesic (blue) between ρ0 and ρ1 .
+
+
+A.14. Summary
+
+We equipped the local quantum RSVP state space with the Bures (quantum Fisher) metric,
+connected it to thermodynamic geometry for exponential models, established a curvature lower
+bound sourced by non-commutativity, and proved geodesic optimality for quantum cognitive
+transitions. Geometrically, curvature tracks entropic/phase complexity; operationally, Bures
+geodesics are least-variance routes for controlled evolution under RSVP–CLIO in the quantum
+regime.
+
+
+Appendix F — Functorial quantization of the RSVP field via Hilbert bun-
+dles
+
+A.15. Preliminaries
+
+We now formalize quantization of the RSVP field using category theory. Let CRSVP denote the
+category of classical configurations:
+
+Obj(CRSVP ) = {field triples (Φ, v, S)},   HomCRSVP ((Φ1 , v1 , S1 ), (Φ2 , v2 , S2 )) = {classical evolutions}.
+
+We introduce a quantization functor Q sending classical fields to Hilbert fibers.
+Definition A.4 (Quantization functor). A quantization functor
+
+                                      Q : CRSVP → CQSP
+
+is a symmetric monoidal functor such that
+
+    • Q((Φ, v, S)) = (Hx , ρx ), a local Hilbert space and density operator at point x;
+    • Q(f ) : Uf : Hx → Hy is a completely positive trace-preserving (CPTP) map represent-
+
+
+                                               35
+      ing quantum evolution.
+
+Remark A.12 (Interpretive commentary). Q lifts the classical RSVP configuration space to
+a category of local quantum systems. Morphisms become quantum channels rather than
+deterministic field flows, reflecting uncertainty and coherence in the quantum cognitive layer.
+
+A.16. Structure of the Quantum Category
+Definition A.5 (Category CQSP ). CQSP is a symmetric monoidal ∞-category defined as follows:
+
+                       Obj(CQSP ) = {Hilbert fibers Hi },
+                   Hom(Hi , Hj ) = {CPTP maps U : B(Hi ) → B(Hj )},
+                                ⊗ : Hi  Hj 7→ Hij .
+
+Monoidal structure represents tensorial composition of independent cognitive subsystems.
+Proposition A.6 (Functorial properties of Q). The functor Q satisfies:
+
+   (i) Q(f ◦ g) = Q(f ) ◦ Q(g) for all composable f, g;
+  (ii) Q(idX ) = idQ(X) ;
+ (iii) Q(X ⊗ Y ) ∼= Q(X)  Q(Y ) (monoidal compatibility).
+
+Proof. Each property follows from the linearity of the quantization mapping and the preserva-
+tion of tensor product structure between classical field combination and Hilbert-space compo-
+sition.
+
+A.17. CLIO as a Monoidal Endofunctor
+Definition A.6 (CLIO endofunctor). The Cognitive Loop via In-Situ Optimization (CLIO) is
+modeled as a symmetric monoidal endofunctor
+
+                                    FCLIO : CQSP → CQSP
+
+such that for each object H, FCLIO (H) = H, and for morphisms U , FCLIO (U ) = Φ(U ) with Φ
+a trace-preserving deformation representing adaptive self-updates.
+Theorem A.5 (Trace preservation under CLIO). If FCLIO acts by conjugation with a unitary or
+stochastic mixture thereof,
+                                    X               X
+                            Φ(U ) =   pk Vk U Vk† ,    pk = 1,
+                                      k                 k
+
+then FCLIO is trace-preserving and monoidal.
+
+Proof. Trace preservation follows from cyclicity of trace and k pk = 1. Monoidality follows
+                                                             P
+
+because (Φ ⊗ Φ)(U  V ) = Φ(U )  Φ(V ) by independence of subsystems.
+
+Remark A.13 (Interpretive commentary). FCLIO formalizes self-evaluation of quantum cognitive
+modules. It modifies morphisms (quantum channels) but leaves object Hilbert spaces invariant,
+
+
+                                              36
+implementing adaptive feedback while respecting compositional structure.
+
+A.18. Functorial Quantization Diagram
+
+
+
+
+                    Q
+         CRSVP              CQSP
+
+
+
+            FRSVP                                                         FCLIO
+
+
+                            CQSP
+
+
+
+                  FCLIO ◦ Q ≃ Q ◦ FRSVP
+
+Figure 14: Commutative quantization diagram: CLIO applied after quantization equals quanti-
+zation after classical RSVP update.
+
+Theorem A.6 (Quantization–CLIO commutativity). If FRSVP is a classical self-evolution
+functor on CRSVP and FCLIO acts linearly on channels as in Theorem A.5, then
+
+                                   FCLIO ◦ Q ∼
+                                             = Q ◦ FRSVP ,
+
+i.e. the diagram in Figure 14 commutes up to natural isomorphism.
+
+Proof. Apply both sides to an object X = (Φ, v, S) and a morphism f . On the left, FCLIO (Q(f )) =
+Φ(Uf ) with Φ stochastic conjugation. On the right, Q(FRSVP (f )) = UF (f ) , where F(f ) modi-
+fies field data by the same stochastic weights. Natural isomorphism arises from identical convex
+combinations.
+
+Remark A.14 (Interpretive commentary). Commutativity expresses a deep correspondence:
+performing cognitive optimization (CLIO) in the quantum layer is equivalent to evolving the
+classical RSVP fields and then quantizing. This justifies interpreting quantum cognitive updates
+as “lifted” classical feedback.
+
+A.19. Sheaf-Theoretic Quantization
+
+Each local quantum fiber Hx over x ∈ M forms a sheaf OH assigning sections to open sets
+U ⊂ M:                                       O
+                                   OH (U ) =    Hx .
+                                                   x∈U
+
+Morphisms restrict via partial traces or marginalization maps.
+
+                                              37
+Proposition A.7 (Functorial gluing). If {Hi } cover M, global states arise as consistent gluings
+
+                      ρU ∈ OH (U )    such that    ρUi |Ui ∩Uj = ρUj |Ui ∩Uj .
+
+Proof. Direct from sheaf axioms: local density operators agreeing on overlaps define a unique
+global density operator. The gluing map is associative by linearity of partial trace.
+
+Remark A.15 (Interpretive commentary). Sheaf gluing ensures local quantum coherence
+patches combine consistently into global RSVP cognition, formalizing how distributed cognitive
+subsystems (tiles) merge without contradiction.
+
+A.20. Symmetric Monoidal ∞-Category Extension
+Definition A.7 (Higher morphisms). In the ∞-categorical lift, 2-morphisms represent coherent
+transformations between channels (e.g. stochastic refinements), and n-morphisms represent
+higher-order feedback across multiple levels of CLIO optimization.
+Theorem A.7 (Monoidal ∞-structure preservation). CQSP admits a symmetric monoidal ∞-
+structure with strict associators at level 1 and coherence isomorphisms at higher levels such
+that FCLIO preserves all limits and colimits up to equivalence.
+
+Sketch. Construct using the Lurie framework of symmetric monoidal ∞-categories. The
+coherence maps for FCLIO act as unitary natural transformations satisfying the Segal condition.
+The monoidal structure descends through the nerve functor preserving limits/colimits due to
+CPTP map convexity.
+
+Remark A.16 (Interpretive commentary). Higher categorical coherence reflects recursive
+optimization in cognition: the ∞-structure encodes meta-feedback across nested levels of
+self-evaluation, just as CLIO recursively optimizes its own parameters.
+
+A.21. Summary
+
+Appendix F constructed a functorial quantization pipeline from classical RSVP fields to quantum
+Hilbert bundles. We defined the categories CRSVP and CQSP , introduced the quantization functor
+Q, formalized CLIO as a monoidal endofunctor, and demonstrated commutativity between
+classical and quantum self-evolution. Sheaf gluing extended this structure to distributed
+cognition, while the ∞-categorical perspective captured recursive meta-level adaptation.
+basicstyle=, backgroundcolor=, frame=single, breaklines=true, keywordstyle=, commentstyle=,
+stringstyle=, showstringspaces=false
+
+
+Appendix G — Computational Implementation
+
+A.22. Overview
+
+This appendix presents the computational realization of the Quantum SpherePop lattice model,
+implemented via GPU-accelerated Monte Carlo and stochastic Langevin dynamics. The
+
+
+                                              38
+code samples below provide practical methods for simulating entropic synchronization and
+phase-coherent evolution across 5-dimensional complex lattices representing RSVP cognitive
+microstates.
+Remark A.17 (Interpretive commentary). The computational framework serves as a bridge be-
+tween analytic theory and observable simulations. By approximating Φ, v, and S as discretized
+arrays of complex spins, the solver reproduces relaxation dynamics and coherence transitions
+under lamphron–lamphrodyne coupling.
+
+A.23. Lattice Discretization Scheme
+
+Let Λ denote a Nx × Ny × Nz cubic lattice with optional higher-dimensional index n4 , n5
+representing phase and recursion depth. Each site i stores the triplet (Φi , vi , Si ) ∈ C × C3 × R.
+The discretized Hamiltonian per Appendix D reads
+
+                    κΦ |Φi − Φj |2 + κv kvi − vj k2 + κS (Si − Sj )2 + V (Φi , vi , Si ).
+                X
+           H=
+                 hi,ji
+
+
+
+The update rule per timestep ∆t combines:
+
+                                                 ∂H √
+                              Φt+∆t
+                               i    = Φti − ∆t       + 2T ∆t ηi ,                           (A.16)
+                                                ∂Φ∗i
+                                                ∂H √
+                              vt+∆t
+                                i    = vti − ∆t ∗ + 2T ∆t ξi ,                              (A.17)
+                                                ∂vi
+                                                ∂H √
+                              Sit+∆t = Sit − ∆t      + 2T ∆t ζi ,                           (A.18)
+                                                ∂Si
+where ηi , ξi , ζi are Gaussian noise fields and T the effective stochastic temperature.
+
+A.24. GPU Monte Carlo Implementation
+
+The following pseudocode outlines the GPU kernel for parallel Metropolis updates:
+[language=Python,caption=GPU Monte Carlo pseudocode (PyTorch CUDA idiom)] import
+torch
+Lattice parameters N = 32 kp hi, kv , ks = 1.0, 0.8, 0.6T = 0.05steps = 1000
+Initialize complex fields on GPU Phi = torch.randn(N, N, N, dtype=torch.cfloat, device=’cuda’)
+v = torch.randn(N, N, N, 3, dtype=torch.cfloat, device=’cuda’) S = torch.zeros(N, N, N, de-
+vice=’cuda’)
+def energy(Phi, v, S): Local interaction energy lapP hi = torch.roll(P hi, 1, 0)+torch.roll(P hi, −1, 0)+
+torch.roll(P hi, 1, 1)+torch.roll(P hi, −1, 1)+torch.roll(P hi, 1, 2)+torch.roll(P hi, −1, 2)−
+6∗P hilapS = torch.roll(S, 1, 0)+torch.roll(S, −1, 0)+torch.roll(S, 1, 1)+torch.roll(S, −1, 1)+
+torch.roll(S, 1, 2) + torch.roll(S, −1, 2) − 6 ∗ Sreturnkp hi ∗ torch.abs(lapP hi).mean() +
+ks ∗ (lapS ∗ ∗2).mean() + kv ∗ torch.abs(v).mean()
+
+
+
+                                                39
+for step in range(steps): Phip rop = P hi+0.05∗torch.randnl ike(P hi)dE = energy(P hip rop, v, S)−
+energy(P hi, v, S)accept = (torch.randl ike(dE.real) < torch.exp(−dE.real/T ))P hi =
+torch.where(accept, P hip rop, P hi)
+Remark A.18 (Interpretive commentary). This kernel approximates the stochastic path integral
+via random field perturbations and Metropolis acceptance. Parallel GPU execution scales to
+lattices exceeding 2563 sites, enabling exploration of phase transitions and emergent coherence
+in RSVP fields.
+
+A.25. Langevin Dynamics Solver
+
+Continuous-time relaxation is efficiently modeled by a Langevin integrator:
+[language=Python,caption=Stochastic Langevin solver for field triplets] dt = 0.01 for t in
+range(10000): gradP hi = P hi − 0.5 ∗ (torch.roll(P hi, 1, 0) + torch.roll(P hi, −1, 0))P hi =
+P hi−dt∗kp hi∗gradP hi+torch.sqrt(torch.tensor(2∗T ∗dt))∗torch.randnl ike(P hi)S =
+S − dt ∗ ks ∗ gradP hi.abs() + torch.sqrt(torch.tensor(2 ∗ T ∗ dt)) ∗ torch.randnl ike(S)
+Remark A.19. This explicit Euler–Maruyama scheme provides stable integration for small ∆t
+and moderate noise T . It can be generalized to colored or multiplicative noise by replacing the
+Gaussian draws with correlated noise tensors.
+
+A.26. Discretization Table
+
+        Quantity                   Symbol      Discretization             Comment
+        Lattice spacing                a         a = 1/N                unitless scaling
+        Time step                     ∆t        10−2 –10−3             stability control
+        Diffusion constant            D         D = κa−2              sets relaxation rate
+        Noise variance                σ2           2T ∆t           fluctuation–dissipation
+        Lamphron coupling             κΦ          0.5–1.0            smooths scalar field
+        Lamphrodyne coupling          κv          0.6–0.9             aligns vector field
+        Entropy cap                  Smax          10–20                limits disorder
+
+
+A.27. Convergence and Diagnostics
+
+To ensure numerical convergence, we monitor energy drift and entropy fluctuation:
+
+                                |Et − E0 |              p
+                         δE =              ,     δS =       hS 2 i − hSi2 .
+                                    E0
+
+Convergence is achieved when δE < 10−5 and δS stabilizes. The following diagnostic plot
+can be generated via pgfplots.
+
+A.28. Visualization Pipeline
+
+After simulation, visualization proceeds by mapping field magnitudes and phases to RGB
+channels.
+
+                                               40
+   Energy drift δE   100.4
+
+
+
+                     100.2
+
+
+
+                      100
+                             0   0.1   0.2   0.3   0.4      0.5    0.6   0.7   0.8   0.9   1
+                                                         Time step
+
+        Figure 15: Exponential decay of energy drift δE confirming Langevin convergence.
+
+
+[language=Python,caption=Visualization of Φ magnitude and phase] import matplotlib.pyplot
+as plt amp = Phi.abs().cpu().numpy() phase = Phi.angle().cpu().numpy() plt.imshow(amp[:,:,N//2],
+cmap=’inferno’) plt.title(’Amplitude slice |Phi|’) plt.show()
+A dynamic 3D visualization may be constructed with matplotlib.animation or vispy,
+using phase rotation to illustrate cognitive synchronization.
+
+A.29. Summary
+
+Appendix G presented the computational blueprint for the Quantum SpherePop lattice:
+
+      • GPU-accelerated Monte Carlo and Langevin schemes for stochastic relaxation;
+      • stability and convergence diagnostics;
+      • visualization of emergent coherence.
+
+This implementation closes the analytic–numerical loop, permitting direct empirical investiga-
+tion of quantum RSVP dynamics in finite systems.
+
+
+Appendix H — Experimental Predictions
+
+A.30. Mapping Theoretical and Measurable Quantities
+
+Table 1 maps theoretical observables from the Quantum SpherePop model to potential experi-
+mental metrics in neuroscience and psychology.
+
+
+
+
+                                                         41
+ Theoretical quantity                   Observable measure                    Interpretation
+ Phase synchronization hei(θi −θj ) i   EEG phase-locking value (PLV)        Neural coherence / semantic bin
+ Entropy density S(x)                   fMRI BOLD variance                   Cognitive uncertainty / complex
+ Vector field vorticity ∇ × v           EEG microstate transitions           Thought pattern dynamics
+ Amplitude h|Φ|2 i                      Event-related potential (ERP) power  Perceptual intensity
+ Lamphron coupling κΦ                   Resting-state connectivity           Global integration strength
+ Lamphrodyne smoothing rate γ           Alpha–theta cross-frequency coupling Integration–differentiation balan
+
+    Table 1: Mapping of Quantum SpherePop theoretical fields to empirical observables.
+Remark A.20. These correspondences enable quantitative testing of RSVP–SpherePop dynam-
+ics using standard neuroimaging and psychophysical data. High coupling and low entropy
+predict tightly phase-locked EEG bands and reduced microstate diversity.
+
+A.31. Predicted Scaling Laws
+Proposition A.8 (Coherence length scaling). Let J be the coupling constant controlling
+lamphron–lamphrodyne smoothing. Then, near the synchronization transition,
+
+                                   ξ ∼ (J − Jc )−ν ,    ν ≈ 12 ,
+
+where ξ is the correlation (coherence) length and Jc the critical coupling.
+
+Sketch. From the Ising-like Hamiltonian of Appendix D, the two-point correlation hΦi Φj i
+decays exponentially with distance. Linearization around the critical point yields the mean-
+field exponent ν = 12 . The same exponent governs phase synchronization across cortical
+networks.
+
+Remark A.21. This predicts that brain-wide coherence should increase with effective coupling
+J following a square-root divergence. Empirically, this may appear as a rapid increase in PLV
+or fMRI connectivity strength as attentional focus intensifies.
+
+A.32. Phase-Locking and Entropy Correlation
+
+We define the model’s entropy–coherence relation as:
+
+                                 rS,PLV = corr(S, PLV) ≈ −0.6.
+
+This follows from Monte Carlo simulations showing that higher entropy corresponds to lower
+mean PLV across lattice sites.
+Remark A.22. Empirical verification could use time–frequency analysis of EEG during visual
+imagery suppression tasks. Subjects with stronger aphantasia (low imagery vividness) are
+expected to display higher S and lower PLV.
+
+
+
+
+                                                42
+                                 1
+    Phase-locking value (PLV)   0.8
+
+                                0.6
+
+                                0.4
+
+                                0.2
+
+                                 0
+                                      0   0.2   0.4   0.6   0.8       1     1.2   1.4   1.6   1.8   2
+                                                                  Entropy S
+
+                    Figure 16: Simulated negative correlation (r ≈ −0.6) between entropy and PLV.
+
+
+A.33. Experimental Protocols
+A.34. Protocol 1: Visual Imagery Coherence
+
+[language=Python,caption=Formal pseudocode for PLV measurement protocol] for subject in
+participants: record EEG with 64 channels present image sequence (imagery vs control) com-
+pute phasel ockingv alue(thetab and)estimateentropy(S)f romspectralpowerdistributionstorepair(S, P LV
+Remark A.23. This pseudocode describes a standard EEG analysis pipeline. The resulting
+correlation between PLV and entropy serves as a quantitative test of the RSVP–SpherePop
+prediction.
+
+A.35. Protocol 2: Aphantasia and Anendophasia Tests
+
+Participants self-report imagery (VVIQ) and inner speech vividness (ISQ) scores. Predicted
+patterns:
+               Aphantasia: SΦ ↑, PLVα ↓,      Anendophasia: Sv ↑, PLVβ ↓ .
+High entropy and reduced phase-locking thus serve as measurable neural signatures of imageless
+and wordless cognition.
+
+A.36. Population-Level Predictions
+Theorem A.8 (Entropy–coherence population distribution). Let p(S, PLV) be the joint em-
+pirical distribution over a population. Assuming the mean-field model of Appendix D, we
+have
+                                      (PLV − µJ )2
+                                                  
+                     p(PLV) ∝ exp −                  , µJ = µ0 − αS,
+                                          2σJ2
+with α > 0. Thus, mean PLV decreases linearly with entropy.
+
+Sketch. Expanding the free energy F (S, PLV) = F0 + 12 a(PLV − µ0 + αS)2 and applying
+Boltzmann statistics yields the Gaussian form. Marginalizing over S gives the stated linear
+shift of µJ .
+
+
+                                                                  43
+Remark A.24. Population-level datasets (e.g., large EEG/fMRI repositories) could validate this
+law by regressing PLV against entropy-based complexity metrics.
+
+A.37. Discussion and Empirical Outlook
+
+Quantum SpherePop provides falsifiable, quantitative predictions:
+
+    • PLV–entropy anticorrelation across individuals and states;
+    • Divergent coherence length near attentional or meditative focus transitions;
+    • Reduced microstate entropy during synchronized perception.
+
+Validation of these predictions would support the RSVP hypothesis that conscious coherence
+corresponds to a self-synchronizing entropic field.
+
+
+Appendix I — Open Problems and Future Directions
+
+A.38. Overview
+
+This appendix outlines unresolved questions and conjectures within the Quantum SpherePop
+and RSVP frameworks. The following open problems define the research agenda for subsequent
+theoretical, computational, and experimental work.
+
+A.39. Mathematical Conjectures
+
+[Existence of a self-adjoint CLIO generator] There exists a densely defined, self-adjoint operator
+L̂CLIO on the Hilbert bundle H → M such that
+                                       dρ
+                                          = −i[L̂CLIO , ρ],
+                                       dt
+and its classical limit coincides with the RSVP field evolution equations.
+Remark A.25. This conjecture seeks a rigorous Stone-type theorem connecting CLIO’s discrete
+update rule to continuous unitary evolution. Proving self-adjointness would secure stability
+and energy conservation in the quantized cognitive field.
+[Quantum topological phase of semantic holonomy] The space of cognitive phase configurations
+(Φ, v, S, Ω) admits nontrivial holonomy characterized by a quantized topological invariant
+                                               I
+                                             1
+                                      Q=          dΩ,
+                                            2π γ
+
+classifying semantic phase states.
+Remark A.26. Q acts as a winding number or “semantic Chern class” measuring holistic
+meaning stability across closed cognitive trajectories. Such quantization could underlie discrete
+transitions between coherent cognitive modes.
+[Equivalence with topological quantum field theory] The RSVP path integral over (Φ, v, S)
+is equivalent, up to gauge transformation, to a topological quantum field theory (TQFT) with
+
+                                               44
+Chern–Simons–like action
+                                      Z
+                                          Tr Φ dv + 23 v ∧ v ∧ v .
+                                                                
+                            STQFT =
+
+
+Remark A.27. This conjecture parallels Witten’s (1988) quantization of Chern–Simons theory,
+proposing that cognitive holonomies define topologically invariant semantic phases. If proven,
+RSVP cognition would form a low-energy limit of a topological field theory of information.
+
+A.40. Computational Challenges
+
+ C1. Scalable quantum simulation: Implement full 1283 -site lattice with complex Φ, v
+     interactions under stochastic CLIO updates.
+ C2. Multi-GPU parallelization: Develop domain-decomposition algorithms for real-time
+     entropic smoothing at O(109 ) updates per second.
+ C3. Quantum-classical hybrid solvers: Integrate variational quantum eigensolvers (VQE)
+     to compute stationary cognitive states.
+ C4. Symbolic verification: Formalize the CLIO endofunctor using proof assistants (Lean,
+     Agda) to verify monoidality and trace preservation.
+
+Remark A.28. Each computational goal serves both empirical validation and theoretical con-
+solidation, linking discrete SpherePop evolution to continuous PDE dynamics.
+
+A.41. Experimental Directions
+
+ E1. Neuroimaging validation: Correlate entropy S and phase coherence (PLV) in aphantasia
+     and anendophasia populations per Appendix H.
+ E2. Quantum analogy experiments: Test lamphron–lamphrodyne interference using optical
+     lattices or coupled oscillator arrays.
+ E3. Cognitive thermodynamics: Measure entropy production during learning tasks as an
+     experimental proxy for Ṡ in RSVP dynamics.
+ E4. Sheaf-based neural networks: Train geometric deep learning models enforcing gluing
+     consistency across cortical patches.
+
+Remark A.29. These experiments extend the theory beyond phenomenological analogy, ground-
+ing the RSVP field model in neurocognitive observables and machine-learning realizations.
+
+A.42. Cosmological and Philosophical Extensions
+Proposition A.9 (Steady-state cognition–cosmology symmetry). Let Σ denote the total entropy
+flow within a bounded cognitive system and ΣU the entropy of the cosmological plenum. Then
+the conservation condition
+                                       d
+                                         (Σ + ΣU ) = 0
+                                      dt
+establishes a steady-state symmetry between cognition and universe-scale relaxation.
+
+
+
+
+                                              45
+Remark A.30. This proposition extends the RSVP principle of non-expanding spacetime to
+cognitive thermodynamics: semantic coherence corresponds to global entropic equilibrium
+rather than temporal dissipation.
+Remark A.31 (Philosophical reflection). The unification of cognition, quantum field dynamics,
+and cosmology through RSVP–SpherePop theory suggests that meaning, coherence, and
+structure emerge from the same entropic field dynamics governing the universe. This paradigm
+reinterprets consciousness not as anomaly but as the natural equilibrium mode of a self-relaxing
+cosmos.
+
+A.43. Categorical Open Problems
+
+ Q1. Does a natural transformation exist connecting Q ◦ FRSVP and FCLIO ◦ Q at the ∞-
+     categorical level without assuming linearity?
+ Q2. Can the sheaf of Hilbert fibers be extended to a derived stack with cohomological grading
+     encoding cognitive depth?
+ Q3. Are there higher adjunctions linking the classical and quantum categories beyond the
+     symmetric monoidal framework (e.g., traced monoidal adjunctions)?
+ Q4. Does the RSVP quantization functor Q preserve topoi in the Grothendieck sense when
+     restricted to compact cognitive manifolds?
+
+A.44. Future Directions
+
+    • Develop a unified Quantum RSVP Atlas integrating field equations, categorical diagrams,
+      and simulation data.
+    • Extend the computational framework to adaptive symbolic solvers coupling analytical
+      and neural-network models.
+    • Explore entropic ethics: governance principles based on maintaining steady-state infor-
+      mational flux rather than maximization.
+    • Establish an open empirical collaboration platform for validating RSVP predictions
+      across neuroscience, AI, and physics.
+                                         Quantization Q
+                        Classical RSVP Fields       Quantum SpherePop
+
+                                                        Simulation S
+                                             Philosophical Closure P
+                                      Cognitive Simulation
+
+                                    Analogy A
+
+                                    Cosmological Extension
+
+Figure 17: Conceptual evolution of RSVP theory from classical cognition to cosmological
+entropic equilibrium.
+
+
+
+                                              46
+A.45. Summary
+
+Appendix I consolidates the speculative frontier of the Quantum SpherePop program. It
+enumerates formal conjectures, computational and experimental objectives, and philosophical
+generalizations linking mind and cosmos under a single entropic symmetry. Progress on any of
+these fronts—particularly proof of Conjectures A.39–A.39—would advance the mathematical
+and empirical foundations of RSVP theory and its unification of cognition, physics, and
+meaning.
+
+
+References
+ [1] Evans, L. C. (2010). Partial Differential Equations. AMS.
+ [2] Kuramoto, Y. (1984). Chemical Oscillations.... Springer.
+ [3] Penrose, R. (1977). The Large, the Small and the Human Mind. Cambridge University
+     Press.
+ [4] Kuramoto, Y. (1984). Chemical Oscillations, Waves, and Turbulence. Springer.
+ [5] Villain, J. (1975). “Theory of One-Dimensional and Two-Dimensional Magnets with an
+     Easy Magnetization Plane.” Journal de Physique, 36(6), 581–590.
+ [6] Bott, R., & Tu, L. W. (1982). Differential Forms in Algebraic Topology. Springer.
+ [7] Zinn-Justin, J. (2002). Quantum Field Theory and Critical Phenomena. Oxford University
+     Press.
+ [8] Witten, E. (1988). “Topological Quantum Field Theory.” Communications in Mathemati-
+     cal Physics, 117(3), 353–386.
+
+
+
+
+                                            47

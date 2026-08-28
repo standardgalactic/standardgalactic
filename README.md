@@ -50,6 +50,7 @@ Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)
 
 [Etch-a-Sketch Simulator](https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
 
+[Psyonic Visualizer](https://github.com/standardgalactic/standardgalactic/tree/main/Music/) — *Project*
 <!--
 These small browser programs function as experimental interfaces for thinking about computation, language, and geometry rather than as conventional games. Each tool forms a compact interactive system in which the user progressively constrains a space of possibilities through simple actions, demonstrating how structured outcomes emerge from sequences of small decisions.
 
