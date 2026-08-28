@@ -1,0 +1,2135 @@
+Constraint, Trajectory, and Irreversibility
+ A Unified Framework Across Language, Computation, and Physics
+
+
+
+                            Flyxion
+
+                      Independent Researcher
+
+
+
+
+                          March 29, 2026
+Flyxion
+
+
+                                        Abstract
+
+     This essay presents a unified theoretical framework whose four invariants —
+     constraint primacy, irreversibility, trajectory-dependence, and projection loss
+     — recur identically across language, computation, artificial intelligence, and
+     physical cosmology. The diversity of domains in which this framework ap-
+     pears is not divergence but projection: each domain instantiates the same un-
+     derlying structure through a different representational lens, and each loses a
+     predictable class of properties in doing so. After establishing the invariants
+     formally and deriving their consequences, the essay surveys how they mani-
+     fest as generative principles across four domain families, with particular atten-
+     tion to the failure modes produced when they are violated — Goodhart drift,
+     identity collapse, instability under compression, and adversarial behavior —
+     and concludes with a methodology for reading systems that are themselves
+     trajectory-based and therefore resist summary.
+
+
+
+Contents
+
+Preface                                                                                   3
+
+1 The Core Problem                                                                       4
+
+2 The Invariants                                                                          6
+  2.1 Constraint Primacy . . . . . . . . . . . . . . . . . . . . . . . . . . . .          6
+  2.2 Irreversibility . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       7
+  2.3 Trajectory-Dependence . . . . . . . . . . . . . . . . . . . . . . . . . .           8
+  2.4 Projection Loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         9
+  2.5 The Invariants as a System . . . . . . . . . . . . . . . . . . . . . . . .         10
+  2.6 Irreducibility of Trajectory Structure . . . . . . . . . . . . . . . . . .         11
+  2.7 Compression Bounds for Trajectory Systems . . . . . . . . . . . . .                12
+
+3 The Generative View                                                                    14
+  3.1 Systems as Constrained Possibility Spaces . . . . . . . . . . . . . . .            14
+  3.2 Interaction as Progressive Elimination . . . . . . . . . . . . . . . . .           15
+  3.3 Computation as History Construction . . . . . . . . . . . . . . . . .              15
+  3.4 Learning as Trajectory Shaping . . . . . . . . . . . . . . . . . . . . .           16
+
+4 Domains as Projections                                                                 18
+  4.1 Language and Symbol Systems . . . . . . . . . . . . . . . . . . . . .              18
+  4.2 Computation and Interaction Design . . . . . . . . . . . . . . . . . .             20
+
+                                            2
+                                                   Constraint, Trajectory, and Irreversibility
+
+
+   4.3 Cognitive and Artificial Intelligence Frameworks . . . . . . . . . . .             22
+   4.4 Physical and Cosmological Models . . . . . . . . . . . . . . . . . . .             24
+
+5 Category-Theoretic Formulation of Trajectory Systems                                    26
+  5.1 The Category of Histories . . . . . . . . . . . . . . . . . . . . . . . .           26
+  5.2 Projection Functors and Non-Faithfulness . . . . . . . . . . . . . . .              27
+  5.3 The Refuse Operator as a Categorical Boundary . . . . . . . . . . .                 27
+
+6 Physical–Computational Correspondence                                                   29
+  6.1 Two Instantiations of the Same Structure . . . . . . . . . . . . . . . .            29
+  6.2 Gravity as Entropic Gradient . . . . . . . . . . . . . . . . . . . . . .            30
+  6.3 Discrete Realization and Loss Bounds . . . . . . . . . . . . . . . . .              30
+
+7 A Minimal Lagrangian for Entropic Flow and Event Accumulation                           33
+  7.1 Configuration Data . . . . . . . . . . . . . . . . . . . . . . . . . . . .          33
+  7.2 Continuous RSVP Lagrangian Density . . . . . . . . . . . . . . . . .                33
+  7.3 Discrete Event Lagrangian . . . . . . . . . . . . . . . . . . . . . . . .           34
+  7.4 Coupling Term Between Fields and Events . . . . . . . . . . . . . .                 35
+  7.5 Euler–Lagrange and Discrete Stationarity Conditions . . . . . . . .                 35
+  7.6 The Refusal Boundary as a Variational Condition . . . . . . . . . . .               36
+  7.7 Interpretation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        36
+
+8 Consistency of the Refuse Operator via Hausdorff Preservation                            38
+  8.1 The Event Manifold . . . . . . . . . . . . . . . . . . . . . . . . . . . .           38
+  8.2 Hausdorff Separation . . . . . . . . . . . . . . . . . . . . . . . . . . .           38
+  8.3 The Refuse Operator . . . . . . . . . . . . . . . . . . . . . . . . . . .            39
+  8.4 Main Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           39
+  8.5 Corollaries and Interpretation . . . . . . . . . . . . . . . . . . . . . .           39
+
+9 Failure Modes Under Reduction                                                           41
+  9.1 State-Collapse and Identity Fragility . . . . . . . . . . . . . . . . . .           41
+  9.2 Proxy Divergence and Goodhart Effects . . . . . . . . . . . . . . . .               42
+  9.3 History Collapse and Instability . . . . . . . . . . . . . . . . . . . . .          43
+  9.4 Over-Compression and Generalization Failure . . . . . . . . . . . .                 43
+
+10 Why the Work Appears Fragmented                                                        45
+
+11 Methodology: How to Read and Engage                                                    47
+
+12 Open Directions                                                                        49
+
+13 Closing Statement                                                                       51
+
+                                           3
+Flyxion
+
+
+A Map of Projects to Invariants       52
+
+B Minimal Glossary                    52
+
+
+
+
+                                  4
+                                                         Constraint, Trajectory, and Irreversibility
+
+
+
+Preface: What This Is (and Is Not)
+
+                 A map is not the territory, but neither is the territory its own
+                 description. What is lost in the map is recoverable only by
+                 walking.
+
+
+
+    This is not a portfolio. It is not a collection of loosely related intellectual exper-
+iments assembled after the fact under a unifying label. It is a single system — one
+whose internal structure is sufficiently rich that it must be expressed across mul-
+tiple domains in order to be expressed at all, and whose unity is therefore visible
+only to a reader willing to move between those domains without collapsing them
+into one another.
+   The reader who approaches this work expecting a linear argument will find
+something stranger: a set of constraints that generate trajectories, trajectories that
+accumulate into histories, and histories whose structure persists even under radical
+changes of medium. Language, computation, physics, and cognition are not the
+subjects of this work so much as they are its projections. Each projection is faithful
+within its own register. Each loses something that the others retain.
+    This creates a methodological demand. No single section of this essay is self-
+sufficient. The formal invariants of Section 2 are necessary to understand what
+Section 4 is claiming when it maps them onto symbolic systems and event calculi.
+The failure modes of Section 5 are not illustrations of an abstract principle but struc-
+tural consequences that become legible only once the invariants are in place. The
+reader is therefore not expected to consume the work sequentially, but to navigate
+it — to recognize which projection they are currently reading and to locate that
+projection within the larger structure.
+    One further preliminary. The apparent fragmentation of the larger research
+program from which this essay emerges — its distribution across formal mono-
+graphs, computational implementations, game prototypes, and theoretical essays
+— is not a feature of disorganization. It is a consequence of the framework itself. A
+theory of irreversibility and trajectory-dependence cannot be adequately expressed
+in a single stable artifact. It must be reconstructed by the reader from its projections,
+exactly as a wave function is reconstructed from its measurements, or a historical
+identity from the paths that generated it.
+    This essay is one projection. It is not the whole.
+
+
+
+                                                5
+Flyxion
+
+
+
+1. The Core Problem
+
+
+Contemporary modeling practice across the sciences, engineering, and the design
+of intelligent systems shares a characteristic error: it treats states as primary and
+processes as derivative. A system is described by where it is, not by how it got
+there. Its future is predicted from its present configuration, not from the struc-
+tured history of transitions that produced that configuration. And its evaluation is
+conducted by measuring scalar quantities — performance metrics, objective func-
+tions, loss values, utility scores — that stand in for the system’s relationship to its
+environment without preserving the structure of that relationship.
+    This error is not merely technical. It is ontological. It assigns the wrong cate-
+gory of entity — static configurations and scalar values — the role that belongs to
+processes, trajectories, and constraint structures. The consequences ramify through
+every domain in which such modeling is applied, and they are predictable. When
+a system’s identity is modeled as its current state, that identity becomes fragile: any
+perturbation that moves the state vector displaces the identity, even if the genera-
+tive process that produced the state is intact. When a system’s behavior is modeled
+as optimization of a scalar objective, the system learns to maximize the proxy at the
+expense of the underlying structure the proxy was intended to represent — a phe-
+nomenon now sufficiently general to constitute a theorem. When a system’s history
+is compressed into a summary statistic, the information discarded by that compres-
+sion generates systematic downstream errors that no amount of fine-tuning of the
+retained representation can recover.
+    These three failure modes — fragility under perturbation, proxy maximization,
+and compression error — are not independent. They are consequences of the same
+underlying mistake: the replacement of trajectory-based, constraint-structured de-
+scriptions by state-based, objective-structured ones.
+     The present framework does not attempt to patch this mistake within the exist-
+ing paradigm. It proposes an alternative foundation, one in which constraints are
+primary, trajectories are the basic objects of analysis, irreversibility is not a defect to
+be managed but a constitutive feature of identity and meaning, and projection loss
+is a formal property to be characterized rather than a nuisance to be minimized.
+    Before developing the framework formally, it is worth noting what makes this
+approach non-trivial. The claim is not merely that process matters as well as state,
+or that history should be taken into account as an additional variable. The claim
+is that the very category of state is a derived, secondary concept — useful, but
+dependent on a prior account of what constraints and transitions are available in
+
+                                            6
+                                                  Constraint, Trajectory, and Irreversibility
+
+
+the system. A state, in the framework to be developed, is a configuration admis-
+sible under a constraint structure at a moment in a trajectory. It has no meaning
+apart from that context. This is a stronger claim than the usual injunction to be
+historically sensitive, and it has formal consequences that will be developed in the
+sections that follow.
+    The fragmentation of contemporary intellectual and technological practice also
+calls for comment. Physics, linguistics, computer science, and the study of cogni-
+tion have developed largely independent technical vocabularies, independent for-
+mal tools, and independent bodies of intuition. This is in many respects productive:
+specialized tools are more powerful than general ones within their domain of ap-
+plication. But it means that shared structure is routinely missed. The constraint
+structures that govern syntactic possibility in a natural language are formally ho-
+momorphic to the constraint structures that govern computationally admissible
+paths in an event calculus. The projection loss incurred when a physical field is dis-
+cretized on a lattice is formally identical in structure to the projection loss incurred
+when a semantic trajectory is compressed into a summary embedding. These ho-
+momorphisms are not metaphors. They are the subject matter of this essay.
+
+
+
+
+                                           7
+Flyxion
+
+
+
+2. The Invariants
+
+
+                 It is not the destination that determines the traveler’s identity,
+                 but the set of paths that were and were not taken to reach it.
+
+
+
+    This section develops the four invariants of the framework with full formal pre-
+cision. The invariants are not axioms in the logician’s sense — they are not adopted
+without argument. They are propositions for which motivation is given and from
+which consequences are derived. However, within the framework they function
+as load-bearing assumptions: everything that follows depends on them, and the
+framework is to be evaluated by the fertility and accuracy of those consequences.
+
+
+2.1 Constraint Primacy
+
+The first invariant concerns the ontological order between constraints and objec-
+tives. Standard optimization-based modeling places objectives first: a system is de-
+fined by what it is trying to achieve, and constraints are the obstacles or guardrails
+placed around that achievement. This ordering is reversed here.
+Definition 2.1 (Constraint Structure). A constraint structure is a triple (𝒞, 𝒯, ℱ) where
+𝒞 is a set of configurations, 𝒯 ⊆ 𝒞 × 𝒞 is the set of admissible transitions, and
+ℱ ⊆ 2𝒞 is a filter specifying which subsets of 𝒞 constitute admissible initial condi-
+tions.
+Definition 2.2 (Admissible Path). Given a constraint structure (𝒞, 𝒯, ℱ), an admissi-
+ble path of length 𝑛 is a sequence 𝛾 = (𝑐0 , 𝑐1 , … , 𝑐𝑛 ) with 𝑐0 ∈ ⋃ ℱ and (𝑐𝑖 , 𝑐𝑖+1 ) ∈ 𝒯
+for all 0 ≤ 𝑖 < 𝑛. The set of all admissible paths is denoted Path(𝒞, 𝒯, ℱ).
+    The fundamental claim of constraint primacy is that a system is defined by its
+constraint structure — that the constraint structure is explanatorily and ontologi-
+cally prior to any objective function that might be imposed upon it.
+Axiom 2.3 (Constraint Primacy). For any system 𝑆, there exists a constraint struc-
+ture 𝒦(𝑆) = (𝒞𝑆 , 𝒯𝑆 , ℱ𝑆 ) such that every behavioral property of 𝑆 is a property
+of Path(𝒦(𝑆)). Objective functions on 𝑆 are real-valued functions on Path(𝒦(𝑆));
+they presuppose the constraint structure and cannot replace it.
+    The practical consequence of Axiom 2.3 is that optimization-based descriptions
+of a system are necessarily incomplete. An objective function selects among ad-
+missible paths; it does not generate the space of admissible paths, and it cannot
+recover that space once it has been collapsed. A system specified only by its objec-
+tive function, with no account of its constraint structure, is underspecified in the
+
+                                                 8
+                                                       Constraint, Trajectory, and Irreversibility
+
+
+most fundamental sense: its possible behaviors are not determined.
+Remark 2.4. Note that constraint primacy does not prohibit the use of objective func-
+tions. It prohibits treating them as foundational. An objective function that tracks
+a genuine property of the system’s admissible paths is a useful analytical tool. An
+objective function adopted as a proxy for an incompletely understood constraint
+structure — which is the typical case in machine learning and institutional design
+— is a source of predictable failure.
+
+
+
+2.2 Irreversibility
+
+The second invariant concerns the directionality of time in any system with non-
+trivial constraint structure.
+Definition 2.5 (Reversible and Irreversible Transitions). A transition (𝑐, 𝑐′ ) ∈ 𝒯 is
+reversible if (𝑐′ , 𝑐) ∈ 𝒯; it is irreversible otherwise. A constraint structure is irreversible
+if it contains at least one irreversible transition.
+     Every system of interest in the domains surveyed by this essay — physical sys-
+tems evolving under thermodynamic constraints, computational systems execut-
+ing programs, linguistic systems producing utterances, cognitive systems acquir-
+ing concepts — is irreversible in this sense. This is not a special feature of any one
+domain; it is a consequence of the second law of thermodynamics at the physical
+level and of the computational irreducibility of execution histories at the computa-
+tional level.
+Definition 2.6 (History and Path-Identity). The history of a system 𝑆 up to time 𝑡
+is the admissible path 𝛾𝑡 = (𝑐0 , 𝑐1 , … , 𝑐𝑡 ) that produced the current configuration
+𝑐𝑡 . Two configurations 𝑐 and 𝑐′ are path-distinct even if 𝑐 = 𝑐′ whenever their gener-
+ating histories differ: 𝛾𝑡 ≠ 𝛾𝑡′ . The identity of a system at time 𝑡 is its history 𝛾𝑡 , not
+its current configuration 𝑐𝑡 .
+    This definition has a counterintuitive consequence that is worth making ex-
+plicit.
+Theorem 2.7 (Identity is Path-Dependent). Let 𝑆 and 𝑆 ′ be two systems with identical
+current configurations 𝑐𝑡 = 𝑐𝑡′ but distinct histories 𝛾𝑡 ≠ 𝛾𝑡′ . Then 𝑆 and 𝑆 ′ are distinct
+systems, and no property of 𝑆 that depends on its history is predictable from 𝑐𝑡 alone.
+
+
+Proof. By definition, the identity of a system is its history. If 𝛾𝑡 ≠ 𝛾𝑡′ , the identities
+are distinct. Any property 𝑃 of 𝑆 that is a function of 𝛾𝑡 takes the form 𝑃 (𝑆) = 𝑓(𝛾𝑡 )
+for some function 𝑓. Since 𝛾𝑡 ≠ 𝛾𝑡′ and 𝑓 is evaluated on the history, 𝑓(𝛾𝑡 ) and 𝑓(𝛾𝑡′ )
+are in general distinct, and neither is determined by 𝑐𝑡 = 𝑐𝑡′ alone.
+
+                                               9
+Flyxion
+
+
+     The import of Theorem 2.7 is immediate for any practice that attempts to pre-
+dict, evaluate, or control systems from their current state. Such prediction is re-
+liable only for properties that are functions of the current configuration alone —
+a severely restricted class. For behavioral, semantic, and dispositional properties,
+the history is indispensable.
+Axiom 2.8 (Irreversibility). For any system 𝑆 with non-trivial constraint structure,
+the identity of 𝑆 is its history 𝛾𝑡 , not its current configuration 𝑐𝑡 . The map 𝛾𝑡 ↦ 𝑐𝑡
+is in general many-to-one and cannot be inverted without additional information.
+
+
+2.3 Trajectory-Dependence
+
+The third invariant extends irreversibility from identity to meaning. If identity is
+path-dependent, then so too must be any property that depends on identity — in
+particular, semantic properties: what a symbol means, what a computation signi-
+fies, what a physical quantity represents.
+Definition 2.9 (Semantic Function). A semantic function on a constraint structure
+(𝒞, 𝒯, ℱ) is a function 𝜎 ∶ Path(𝒞, 𝒯, ℱ) → 𝑀 where 𝑀 is a meaning space (a
+structured set appropriate to the domain). A semantic function is state-reducible if
+there exists a function 𝜎̂ ∶ 𝒞 → 𝑀 such that 𝜎(𝛾) = 𝜎(𝛾      ̂ |𝛾| ) for all admissible paths
+𝛾, where 𝛾|𝛾| denotes the terminal configuration.
+Theorem 2.10 (Non-Reducibility of Semantic Functions). In any irreversible constraint
+structure, there exist semantic functions that are not state-reducible.
+
+Proof. Let (𝑐, 𝑐′ ) ∈ 𝒯 be irreversible, and let 𝛾 and 𝛾 ′ be two admissible paths with
+        ′         ′         ′
+𝛾|𝛾| = 𝛾|𝛾 ′ | = 𝑐 but 𝛾 ≠ 𝛾 (which is possible since the transition is irreversible and
+
+paths to 𝑐′ need not be unique). Define 𝜎 by: 𝜎(𝛾) = 0 and 𝜎(𝛾 ′ ) = 1 for all paths
+terminating at 𝑐′ via these respective routes, and extend consistently elsewhere.
+Then 𝜎 is a well-defined semantic function, but for any candidate 𝜎,̂ 𝜎(𝑐  ̂ ′ ) = 𝜎(𝛾) =
+0 requires 𝜎(𝛾 ′ ) = 0, a contradiction. Hence no state-reducible 𝜎̂ represents 𝜎.
+
+    The philosophical interpretation of Theorem 2.10 is that meaning — in the
+broadest sense that includes physical significance, computational semantics, and
+linguistic reference — is irreducibly path-dependent in any system with non-trivial
+irreversibility. The meaning of a symbol is not a function of its current form but
+of the trajectory of transformations through which it arrived at that form and was
+used. The meaning of a computation is not its output but the history of state tran-
+sitions that produced it.
+Axiom 2.11 (Trajectory-Dependence). Meaning, reference, and semantic content
+are functions of admissible paths, not of terminal configurations. Any represen-
+
+                                             10
+                                                      Constraint, Trajectory, and Irreversibility
+
+
+tation that compresses a trajectory to a state discards semantic information that
+cannot be recovered from the state alone.
+
+
+2.4 Projection Loss
+
+The fourth invariant concerns what is necessarily discarded when a high-dimensional
+or trajectory-structured system is represented in a lower-dimensional or state-structured
+medium.
+Definition 2.12 (Projection). A projection from constraint structure 𝒦 = (𝒞, 𝒯, ℱ)
+to representation space 𝑅 is a map Π ∶ Path(𝒦) → 𝑅. The kernel of Π is the equiv-
+alence relation 𝛾 ∼Π 𝛾 ′ iff Π(𝛾) = Π(𝛾 ′ ). The projection loss of Π with respect to a
+semantic function 𝜎 is the extent to which 𝜎 is not constant on equivalence classes
+of ∼Π :
+                          ℒ(Π, 𝜎) = sup 𝑑𝑀 (𝜎(𝛾), 𝜎(𝛾 ′ )),
+                                        𝛾∼Π 𝛾 ′
+
+where 𝑑𝑀 is a metric on the meaning space 𝑀 .
+Theorem 2.13 (Projection Loss is Generically Nonzero). Let 𝒦 be an irreversible con-
+straint structure and Π ∶ Path(𝒦) → 𝑅 a projection with |𝑅| < |Path(𝒦)|. Then for
+any non-state-reducible semantic function 𝜎, ℒ(Π, 𝜎) > 0.
+
+Proof. Since Π is not injective (the path space is larger than 𝑅), there exist distinct
+paths 𝛾 ≠ 𝛾 ′ with Π(𝛾) = Π(𝛾 ′ ). Since 𝜎 is not state-reducible, by Theorem 2.10
+there exist paths with identical terminal configurations but distinct semantic values.
+Combining: there exist 𝛾 ∼Π 𝛾 ′ with 𝜎(𝛾) ≠ 𝜎(𝛾 ′ ), so ℒ(Π, 𝜎) ≥ 𝑑𝑀 (𝜎(𝛾), 𝜎(𝛾 ′ )) >
+0.
+
+    Theorem 2.13 is the formal counterpart of a widely recognized but rarely made
+precise intuition: that summary representations of complex systems lose informa-
+tion, and that this loss is not merely quantitative but semantic — it is information
+about meaning, not merely about data volume.
+Axiom 2.14 (Projection Loss). Any projection of a trajectory-structured, irreversible
+system into a lower-dimensional representation space incurs semantic projection
+loss that is nonzero, structurally determined, and predictable from the geometry
+of the projection map. This loss cannot be recovered by any amount of fine-tuning
+of the retained representation.
+Corollary 2.15 (Failure Modes are Predictable). The failure modes of any system that
+replaces a trajectory-structured description with a state-structured proxy are not random.
+They are determined by the structure of the kernel of the projection — the equivalence classes
+of paths that are conflated by the representation.
+
+                                              11
+Flyxion
+
+
+    Corollary 2.15 is the bridge between the formal invariants and the failure-mode
+analysis of Section 5. It is what makes the failure modes interesting: they are not
+accidents but structural consequences of a systematic category error.
+
+
+                          Path(𝒦)                          𝑅
+
+
+                                    𝑐𝑡
+                                               Π
+               kernel                                          𝑟 = Π(𝛾)
+
+                                                    ℒ(Π, 𝜎)
+
+
+Figure 1: Projection from path space to representation space. Multiple distinct tra-
+jectories (the kernel) collapse to a single point 𝑟 ∈ 𝑅. The projection loss ℒ(Π, 𝜎)
+measures the semantic information discarded by this collapse.
+
+
+
+
+2.5 The Invariants as a System
+
+The four invariants do not function independently. They form a mutually reinforc-
+ing system in which each implies or strengthens the others.
+    Constraint primacy (Axiom 2.3) establishes that systems are defined by their ad-
+missible paths, not by their states. Irreversibility (Axiom 2.8) establishes that the
+admissible paths accumulate into histories that cannot be reversed without loss of
+information. Trajectory-dependence (Axiom 2.11) establishes that semantic content
+is a property of those histories, not of the terminal states they reach. And projec-
+tion loss (Axiom 2.14) establishes that any simplification of the path-structured de-
+scription into a state-structured one discards semantic information in a predictable,
+structured way.
+    Together, they generate the following general picture. A system is a space of
+possibilities, organized by exclusions. What the system can do is defined by what
+it cannot do. As the system evolves, it traces a path through this space — a path
+that is irreversible, that constitutes the system’s identity, and that carries semantic
+content not recoverable from any snapshot of the system’s current position. Any
+representation that purports to describe the system by compressing this path into
+a state, a vector, a score, or any other lower-dimensional encoding, does so at the
+cost of semantic information — information that is lost systematically and that gen-
+erates predictable downstream failures.
+
+                                          12
+                                                   Constraint, Trajectory, and Irreversibility
+
+
+2.6 Irreducibility of Trajectory Structure
+
+The informal claim that history cannot be recovered from current state is made pre-
+cise by the following theorem, which shows that any finite-dimensional encoding
+of a trajectory system is necessarily non-injective.
+Definition 2.16 (Trajectory System). Let ℰ be a set of events. A trajectory is a finite
+sequence 𝐻𝑛 = (𝑒0 , 𝑒1 , … , 𝑒𝑛 ) with 𝑒𝑖 ∈ ℰ. A trajectory system is a pair (ℋ, ℱ)
+where ℋ = ⋃𝑛≥0 ℰ𝑛+1 and 𝑆𝑛 = ℱ(𝐻𝑛 ) is a state defined as a deterministic fold
+over history.
+Definition 2.17 (History Distinguishability). A trajectory system (ℋ, ℱ) is history-
+distinguishing if for any two distinct histories 𝐻 ≠ 𝐻 ′ , there exists an extension 𝐾
+such that
+                               ℱ(𝐻 ⋅ 𝐾) ≠ ℱ(𝐻 ′ ⋅ 𝐾),
+
+where ⋅ denotes concatenation.
+Definition 2.18 (Finite Representation). A finite representation of a trajectory system
+is a map
+                                    𝜋 ∶ ℋ → ℝ𝑑
+
+for some finite 𝑑, such that system evolution can be expressed as 𝜋(𝐻⋅𝑒) = 𝐺(𝜋(𝐻), 𝑒)
+for a fixed function 𝐺.
+Theorem 2.19 (Irreducibility of Trajectory Structure). Let (ℋ, ℱ) be a history-distinguishing
+trajectory system with |ℰ| ≥ 2. Then no finite-dimensional representation 𝜋 ∶ ℋ → ℝ𝑑
+can be injective on ℋ. Equivalently, any finite representation necessarily identifies distinct
+histories:
+                         ∃ 𝐻 ≠ 𝐻 ′ such that 𝜋(𝐻) = 𝜋(𝐻 ′ ).
+
+Proof. Assume for contradiction that 𝜋 is injective. Since |ℰ| ≥ 2, the number of
+distinct histories of length 𝑛 satisfies |ℰ𝑛 | ≥ 2𝑛 , so ℋ is countably infinite with
+unbounded combinatorial complexity. The update rule 𝜋(𝐻 ⋅ 𝑒) = 𝐺(𝜋(𝐻), 𝑒) im-
+plies that the system is a finite-state dynamical system up to continuous encod-
+ing in ℝ𝑑 . By the pigeonhole principle applied to finite-precision distinguishabil-
+ity in ℝ𝑑 , there exist distinct histories 𝐻 ≠ 𝐻 ′ with 𝜋(𝐻) = 𝜋(𝐻 ′ ). Extending
+both by a sequence 𝐾: since evolution depends only on 𝜋(𝐻) and 𝐾, we have
+𝜋(𝐻 ⋅ 𝐾) = 𝜋(𝐻 ′ ⋅ 𝐾). But the system is history-distinguishing, so there exists
+𝐾 with ℱ(𝐻 ⋅ 𝐾) ≠ ℱ(𝐻 ′ ⋅ 𝐾), contradicting injectivity. Therefore 𝜋 cannot be
+injective.
+
+Corollary 2.20 (Projection Loss — Formal Version). Any finite-dimensional encoding
+of a history-distinguishing trajectory system necessarily loses information about history
+and cannot preserve trajectory identity.
+
+                                           13
+Flyxion
+
+
+Remark 2.21. Theorem 2.19 applies equally to physical systems governed by irre-
+versible entropy flow (where histories are continuous field trajectories) and to com-
+putational systems defined by event logs (where histories are discrete event se-
+quences). In both cases, the finite representation necessarily conflates distinct tra-
+jectories and thereby destroys semantic content that is carried only at the level of
+the full history. This is the formal counterpart of the informal claim that “no sum-
+mary captures everything.”
+
+
+2.7 Compression Bounds for Trajectory Systems
+
+Theorem 2.19 establishes that projection loss is nonzero; the following results quan-
+tify how large it must be.
+Definition 2.22 (Trajectory Entropy). Let ℰ be a finite event set with |ℰ| ≥ 2. The
+number of distinct histories of length 𝑛 is |ℰ|𝑛 . The trajectory entropy at depth 𝑛 is
+
+                              𝐻𝑛 = log |ℰ|𝑛 = 𝑛 log |ℰ|.
+
+Definition 2.23 (Compression Map). A compression map is a function 𝜋 ∶ ℋ𝑛 → 𝒵
+where ℋ𝑛 = ℰ𝑛 and |𝒵| < |ℋ𝑛 |.
+Theorem 2.24 (Minimum Information Loss). Let 𝜋 ∶ ℋ𝑛 → 𝒵 be any compression
+map. Then the average information loss satisfies
+
+                               𝔼[loss] ≥ 𝐻𝑛 − log |𝒵|.
+
+Proof. Each element 𝑧 ∈ 𝒵 corresponds to the preimage set 𝜋−1 (𝑧) ⊆ ℋ𝑛 . Since
+|𝒵| < |ℋ𝑛 |, by the pigeonhole principle at least one class has cardinality greater
+than one; the average class size is |ℋ𝑛 |/|𝒵|. The expected uncertainty after com-
+pression is at least
+                                 |ℋ𝑛 |
+                             log       = 𝐻𝑛 − log |𝒵|,
+                                  |𝒵|
+and this quantity represents irrecoverable loss of trajectory information: it cannot
+be recovered from 𝜋(𝐻) by any decoder.
+
+Corollary 2.25 (Linear Growth of Loss). For any fixed representation size |𝒵|, the min-
+imum information loss grows linearly in 𝑛:
+
+                                   𝔼[loss] = Ω(𝑛).
+
+Remark 2.26. Corollary 2.25 has a sharp consequence for machine learning systems,
+institutional metrics, and any fixed-size encoding of a temporal process. No fixed-
+
+                                          14
+                                                 Constraint, Trajectory, and Irreversibility
+
+
+size representation can track trajectory structure over unbounded time without ac-
+cumulating unbounded error. The practical manifestations of this bound are dis-
+tributional shift, loss of causal coherence, and the failure of summary statistics to
+predict long-run behavior. These failure modes are not implementation defects;
+they are consequences of Theorem 2.24.
+
+
+
+
+                                         15
+Flyxion
+
+
+
+3. The Generative View
+
+
+                The world is not a collection of objects but a history of
+                exclusions.
+
+
+
+   The four invariants of Section 2 are not merely analytical tools for criticizing
+inadequate models. They are generative: they determine how systems arise, how
+they interact, how they compute, and how they learn. This section develops the
+positive account implied by the invariants — the view of system genesis and sys-
+tem behavior that follows from taking constraint primacy, irreversibility, trajectory-
+dependence, and projection loss as foundational.
+
+
+
+3.1 Systems as Constrained Possibility Spaces
+
+Under constraint primacy, a system is not a collection of objects or an ensemble of
+states. It is a structured space of possibilities: a set of configurations equipped with
+a constraint structure that determines which transitions between configurations are
+admissible. The system’s “content” — what it contains, what it can express, what
+it can compute — is the set of admissible paths through this space.
+    This has a geometric interpretation that is both precise and fertile. The con-
+straint structure (𝒞, 𝒯, ℱ) defines a directed graph on 𝒞, and the admissible paths
+are the directed walks through this graph. The “shape” of the system — its topol-
+ogy, its degeneracy structure, its capacity for self-reference — is the shape of this
+directed graph.
+    Different types of constraint structures generate systems with qualitatively dif-
+ferent behaviors. A constraint structure in which every configuration has many suc-
+cessors is a system with high branching factor — high expressive capacity but also
+high sensitivity to initial conditions, since small differences in starting configura-
+tion lead to divergent long-run trajectories. A constraint structure in which succes-
+sor configurations are tightly controlled — few admissible transitions — is a system
+with low branching factor, stable long-run behavior, and strong path-dependence:
+what the system can be in the future is sharply constrained by what it has been
+in the past. Natural languages occupy an intermediate regime, as do biological
+genomes and — importantly for the analysis of Section 4 — the human conceptual
+repertoire as it develops through learning.
+   The generative power of this picture lies in its ability to describe the emergence
+
+                                               16
+                                                            Constraint, Trajectory, and Irreversibility
+
+
+of structure without presupposing it. Complex configurations — organized struc-
+tures, coherent semantic units, stable dynamical attractors — arise not because they
+are objectives toward which the system is optimized but because the constraint
+structure makes them attractors of the admissible path space: regions of configu-
+ration space into which many paths lead and from which few paths escape. They
+are fixed points not of an objective function but of a trajectory-generating process.
+
+
+3.2 Interaction as Progressive Elimination
+
+If a system is a space of possibilities organized by exclusions, then interaction be-
+tween two systems is the mutual imposition of additional constraints — a progres-
+sive narrowing of the joint possibility space.
+Definition 3.1 (Interaction). Let 𝒦1 = (𝒞1 , 𝒯1 , ℱ1 ) and 𝒦2 = (𝒞2 , 𝒯2 , ℱ2 ) be con-
+straint structures. Their interaction is the constraint structure 𝒦1 ⊗ 𝒦2 = (𝒞1 ×
+𝒞2 , 𝒯12 , ℱ12 ) where (𝑐1 , 𝑐2 ) → (𝑐1′ , 𝑐2′ ) ∈ 𝒯12 iff (𝑐1 , 𝑐1′ ) ∈ 𝒯1 , (𝑐2 , 𝑐2′ ) ∈ 𝒯2 , and the
+pair is consistent with an interaction protocol ℐ ⊆ 𝒯1 × 𝒯2 .
+    The interaction protocol ℐ is the formal counterpart of what in physics is called
+a coupling: it specifies which transitions in one system can co-occur with which
+transitions in the other. Tight coupling (ℐ small) produces strong mutual constraint
+and rapid equilibration — the two systems quickly reduce their joint possibility
+space. Loose coupling (ℐ large) preserves more independence — the joint system
+retains more of the product of the individual possibility spaces.
+    This picture of interaction as progressive elimination has consequences for the
+theory of communication. Two systems communicate when their interaction pro-
+tocol allows the transitions of one to select among the transitions of the other. Suc-
+cessful communication is not the transfer of a symbolic object from one system
+to another but the coordinated narrowing of mutual possibility spaces — a pro-
+cess whose success is measured by the degree to which the receiving system’s sub-
+sequent trajectories are constrained in the way the transmitting system intended.
+Projection loss applies here: the transmitted message is a projection of the trans-
+mitter’s trajectory, and the receiver reconstructs a trajectory in its own possibility
+space that may differ systematically from the transmitter’s in ways determined by
+the structure of the respective constraint structures and the coupling between them.
+
+
+3.3 Computation as History Construction
+
+The generative view makes computation a species of history construction. A com-
+putation is an admissible path through the constraint structure of a computing
+
+                                                  17
+Flyxion
+
+
+device, initiated at a specified starting configuration (encoding the program and
+input) and terminating at a configuration from which the output is read. The com-
+putation’s result is not its terminal configuration alone but the entire path — be-
+cause, by Theorem 2.10, the semantic content of the computation (what it means,
+what it proves, what it implements) is a property of the trajectory, not of the termi-
+nal state.
+     This perspective generates a novel account of computational equivalence. Two
+computations are equivalent not when they produce the same output but when
+their trajectories are related by a structure-preserving map that respects the seman-
+tic function. A compilation, for example, is such a map: a compiler translates a
+path through the constraint structure of a high-level language into a path through
+the constraint structure of machine code, preserving (under correct compilation)
+the semantic function while changing the constraint structure in which the path is
+traced.
+    The irreversibility axiom implies that computation is not logically reversible in
+general. This is not a consequence of physical resource constraints — it is a struc-
+tural feature of computation viewed as history construction. The path 𝛾𝑡 that pro-
+duced the current state 𝑐𝑡 is not recoverable from 𝑐𝑡 alone, precisely because the
+map 𝛾𝑡 ↦ 𝑐𝑡 is many-to-one. This has implications for the design of programming
+languages, for the theory of program verification, and for the analysis of crypto-
+graphic protocols, all of which will be developed in the domain analysis of Sec-
+tion 4.
+
+
+3.4 Learning as Trajectory Shaping
+
+Learning, under the generative view, is the process by which a system modifies its
+constraint structure in response to its history. This is importantly different from the
+standard picture of learning as the adjustment of parameters within a fixed model
+architecture to minimize a loss function.
+Definition 3.2 (Learning as Constraint Modification). A learning process on a system
+𝑆 with constraint structure 𝒦 is a sequence of constraint structures 𝒦0 , 𝒦1 , 𝒦2 , …
+where 𝒦0 = 𝒦 and each 𝒦𝑡+1 is a modification of 𝒦𝑡 determined by the history
+𝛾𝑡 ∈ Path(𝒦𝑡 ) accumulated up to time 𝑡.
+    On this account, learning does not optimize a fixed objective within a fixed pos-
+sibility space. It reshapes the possibility space itself. The space of what the system
+can subsequently do is altered by the history of what it has done — not merely by
+summary statistics of that history, but by the history’s structure. This means that
+learning histories matter: two systems that have seen the same data in different
+
+                                          18
+                                                 Constraint, Trajectory, and Irreversibility
+
+
+orders, under different constraint structures, will in general have different subse-
+quent possibility spaces, even if their current output distributions are identical.
+    The failure modes of standard machine learning — distributional shift, adver-
+sarial vulnerability, catastrophic forgetting — all have natural explanations in this
+framework. Distributional shift is the mismatch between the constraint structure
+under which learning occurred and the constraint structure of the deployment en-
+vironment. Adversarial vulnerability is the exploitation of paths that are admissi-
+ble under the learned constraint structure but were not sampled during training.
+Catastrophic forgetting is the erasure of accumulated history by a learning update
+that treats the current state as the only relevant information. Each failure mode
+corresponds to a specific violation of one of the four invariants.
+
+
+
+
+                                         19
+Flyxion
+
+
+
+4. Domains as Projections
+
+
+                The same river cannot be stepped in twice, but neither can it
+                be correctly described by any single crossing.
+
+
+
+     The four invariants of Section 2 and the generative principles of Section 3 man-
+ifest across distinct domains — language, computation, cognition, and physics —
+not as analogies or metaphors but as structural projections. Each domain instanti-
+ates the same underlying constraint-trajectory- irreversibility architecture through
+a different representational lens. Each domain’s specific technical vocabulary and
+formal tools are adaptations of that underlying structure to the particular nature
+of its objects of study. And each domain’s characteristic failure modes, as Section 5
+will show, are instances of the same class of projection-loss errors.
+    This section is organized as a sequence of domain analyses, each identifying the
+constraint structure, the admissible paths, the semantic function, and the specific
+form of projection loss characteristic of the domain. The reader should note that
+the subsections are not independent: the language analysis motivates the formal
+vocabulary used in the computation analysis, which in turn motivates the cognitive
+analysis, and the physical analysis provides the broadest context within which all
+three are embedded.
+
+
+4.1 Language and Symbol Systems
+
+Language is the clearest and most familiar instantiation of the constraint-primacy
+view. A natural language is not a collection of meaningful units — words, sen-
+tences, texts — but a constraint structure on sequences of symbols, where the con-
+straints are phonological, morphological, syntactic, and pragmatic, and where the
+admissible paths through this constraint structure are the grammatical and contex-
+tually appropriate utterances.
+    The constraint structure of language is multi-layered in a precise sense. Each
+layer imposes constraints on a different aspect of the symbol sequence, and the lay-
+ers interact: phonological constraints restrict which morphemes can adjoin, mor-
+phological constraints restrict which words can be formed, syntactic constraints
+restrict which phrases and clauses can be combined, and pragmatic constraints re-
+strict which combinations are felicitous in a given communicative context. The
+constraint structures at each level are not independent; they form a hierarchy in
+which each level’s admissible transitions are defined partly in terms of the admis-
+
+                                             20
+                                                 Constraint, Trajectory, and Irreversibility
+
+
+sible paths at lower levels.
+Definition 4.1 (Linguistic Constraint Hierarchy). A linguistic constraint hierarchy is
+a sequence 𝒦1 , 𝒦2 , … , 𝒦𝑛 of constraint structures where the configuration space
+of each 𝒦𝑖+1 is a subset of Path(𝒦𝑖 ): each level’s configurations are paths at the
+level below.
+    Under this definition, a word is an admissible path through the phonological
+constraint structure; a phrase is an admissible path through the morphosyntactic
+constraint structure whose configurations are words; a sentence is an admissible
+path through the syntactic constraint structure whose configurations are phrases;
+and so on. Meaning — semantic content — is a function on paths through the high-
+est level of the hierarchy, not on configurations at any single level. This is why the
+meaning of a sentence is not recoverable from the set of words it contains, regard-
+less of how those words are defined in isolation: the trajectory of their combination,
+constrained at every level of the hierarchy, is constitutive of meaning.
+    Writing systems — orthographies — are projections in the formal sense of Def-
+inition 2.12. An orthography projects the phonological constraint structure (the
+space of admissible sound sequences) onto a graphemic constraint structure (the
+space of admissible letter and character sequences). This projection is never fully
+faithful: all orthographies incur projection loss, discarding some phonological dis-
+tinctions (stress, intonation, allophonic variation) while possibly introducing dis-
+tinctions absent in the phonological structure (etymological spellings, heteronyms,
+homographs). The specific pattern of projection loss is characteristic of the ortho-
+graphic system and generates predictable difficulties for learners.
+    Constructed and cryptographic writing systems — symbol sets designed for
+purposes other than faithful phonological transcription — are most perspicuously
+understood as deliberate manipulation of the projection map between levels of the
+linguistic constraint hierarchy. A writing system that assigns symbols to semantic
+primitives rather than phonemes projects the phonological level entirely, retain-
+ing the semantic level directly. Such a projection minimizes projection loss at the
+semantic level while maximizing it at the phonological level — a trade-off whose
+consequences are systematic: the symbol set is semantically transparent but phono-
+logically opaque, and learning it requires direct access to the semantic constraint
+structure rather than phonological decoding.
+    The process of translation between natural languages is, under this framework,
+a projection between two distinct linguistic constraint hierarchies. The translation
+map 𝑇 ∶ Path(𝒦𝐿 ) → Path(𝒦𝐿′ ) incurs projection loss whenever the two hierar-
+chies differ in the distinctions they grammaticalize. Languages that grammatical-
+
+
+                                         21
+Flyxion
+
+
+ize aspect (the internal structure of events) lose aspectual information when trans-
+lated into languages without grammaticalized aspect; languages with grammati-
+calized evidentiality lose information about the epistemic source of claims when
+translated into languages without it. These losses are structural — they follow from
+the geometry of the projection — and no degree of translator skill can recover what
+the constraint structure of the target language does not have the resources to en-
+code.
+    This has a consequence for the theory of language learning and immersion that
+is often observed empirically but rarely given a formal account. When a learner
+acquires a second language through sustained immersion — through reading, in-
+teraction, and productive use — rather than through translation from the first lan-
+guage, the learner is constructing a distinct linguistic constraint structure rather
+than building a translation map from the existing one. The resulting constraint
+structure is genuinely different in its organization of the possibility space, not merely
+a relabeling of the first language’s structure in new vocabulary. The learner who
+has achieved this construction can navigate the second language’s constraint struc-
+ture directly, without incurring the systematic projection losses of translation.
+    This is also why the epistemological value of deliberate language immersion
+extends beyond linguistic competence to affect the learner’s constraint structure
+for thought itself — a point to which the analysis of cognitive frameworks in §4.3
+returns.
+
+
+4.2 Computation and Interaction Design
+
+The computational domain is the one in which the constraint-trajectory framework
+has its most direct formal instantiation. A computation, as noted in §3.3, is an ad-
+missible path through the constraint structure of a computing device. The device’s
+constraint structure — its instruction set, its memory model, its I/O specification
+— determines the space of admissible computations; any program is a description
+of a path through this space.
+    The most consequential formal property of computation under this framework
+is computational irreducibility: for many computations, there exists no representa-
+tion of their trajectory shorter than the trajectory itself. The only way to determine
+the outcome is to execute the path. This is the computational counterpart of The-
+orem 2.7: the identity of a computation — what it computes, what side effects it
+produces, what resources it consumes — is a function of its full trajectory, not of
+any compressed representation of it.
+Definition 4.2 (Computationally Irreducible Path). An admissible path 𝛾 in a con-
+
+                                          22
+                                                   Constraint, Trajectory, and Irreversibility
+
+
+straint structure 𝒦 is computationally irreducible with respect to a semantic function
+𝜎 if there is no path 𝛾 ′ with |𝛾 ′ | < |𝛾| and 𝜎(𝛾 ′ ) = 𝜎(𝛾): no shorter path produces
+the same semantic result.
+    Computational irreducibility has immediate implications for the design of in-
+teractive systems. A game — understood as a constraint structure on player action
+sequences — is interesting to the extent that it is computationally irreducible: the
+player cannot shortcut the trajectory of play, cannot compute the “correct move”
+without exploring the path space. A game whose optimal strategy can be com-
+puted ahead of time — whose trajectory is reducible to a state — is, in the precise
+sense of this framework, not a game but a puzzle: a constraint structure in which
+the admissible paths collapse to a single semantically interesting trajectory.
+    This distinction — between games as genuinely irreducible path spaces and
+puzzles as reducible ones — applies beyond recreational systems. Software user
+interfaces, programming languages, and interactive computational environments
+are all constraint structures on user action sequences. Their design quality, from
+the perspective of this framework, is measured by the relationship between their
+admissible path space and the space of user intentions. A well-designed interface
+is one whose constraint structure is aligned with the user’s constraint structure for
+action — where the paths the user intends to take are admissible and efficient, and
+where the paths the user does not intend are inadmissible or costly. Poor interface
+design is, on this account, a projection mismatch: the constraint structure of the
+interface and the constraint structure of the user’s intentions have incompatible
+projections onto the space of available interactions.
+    Event-sourced architectures in software engineering are the most direct prac-
+tical instantiation of the trajectory-primacy view. In an event-sourced system, the
+primary data structure is not the current state of the system but the ordered log of
+events that produced it: the history 𝛾𝑡 . The current state is derived from this log
+by applying a projection. This architectural choice directly implements Axiom 2.8:
+identity is the history, not the current configuration. Event-sourced systems are
+correspondingly more robust to the failure modes described in Section 5 — in par-
+ticular to identity fragility and to the loss of causal structure — because they retain
+the trajectory rather than compressing it.
+    Deterministic replay — the capacity to reconstruct any past state of a system
+by replaying its event log from the beginning — is, under this framework, the im-
+plementation of the map 𝛾𝑡 ↦ 𝑐𝑡 for arbitrary 𝑡. It is precisely what makes history
+available as a resource for debugging, auditing, and understanding system behav-
+ior. Systems that discard their event logs in favor of snapshot-based state storage
+
+
+                                          23
+Flyxion
+
+
+have traded the ability to reconstruct identity for storage efficiency — an instance
+of the projection-efficiency trade-off that is the practical form of the projection-loss
+problem.
+    The Spherepop event calculus — an irreversible computation model developed
+within the RSVP framework — is a formal system designed to make trajectory-
+primacy constitutive rather than optional. In Spherepop, events are first-class ob-
+jects; states are derived; and the semantic function of a computation is explicitly
+defined on event sequences rather than terminal configurations. Irreversibility is
+enforced structurally: the calculus has no inverse for event application, so the his-
+tory cannot be erased or reconstructed from the current state alone. This makes
+the calculus a direct formal implementation of Axioms 2.8 and 2.11, and makes its
+computational properties — in particular, the properties of fixed-point computa-
+tion and self-reference — direct consequences of the general theory developed in
+Section 2.
+
+
+4.3 Cognitive and Artificial Intelligence Frameworks
+
+The analysis of intelligence — both biological and artificial — under the constraint-
+trajectory framework produces a reorientation of foundational questions. The stan-
+dard question in cognitive science and AI research is: what objective function does
+the intelligent system optimize? The reoriented question is: what constraint struc-
+ture does the intelligent system inhabit, and how does it navigate the admissible
+paths of that structure given its history?
+    These are not merely different formulations of the same question. They gen-
+erate different research programs and different predictions about the conditions
+under which intelligent behavior succeeds or fails.
+    The objective-function picture predicts that an intelligent system improves mono-
+tonically with the quality of the objective function and the fidelity of the optimiza-
+tion. The constraint-trajectory picture predicts that the system’s behavior is deter-
+mined by the interaction between its current constraint structure and its accumu-
+lated history, and that improvement requires not better optimization but appropri-
+ate modification of the constraint structure — learning in the sense of Definition 3.4
+rather than parameter tuning.
+Proposition 4.3 (Sparse Heuristics as Emergent Constraint). In a constraint structure
+𝒦 with large admissible path space, a learning process that successfully shapes trajectories
+will converge toward a set of heuristics that are not explicit objectives but implicit con-
+straints: they eliminate large regions of the admissible path space without being derived
+from an objective function.
+
+                                           24
+                                                  Constraint, Trajectory, and Irreversibility
+
+
+     The informal content of Proposition 4.3 is that expertise is the internalization of
+constraint. An expert in any domain — a chess player, a physician, a programmer
+— does not search the full admissible path space with an explicit objective function.
+The expert has, through the accumulation of trajectory history, modified their con-
+straint structure to make large regions of the admissible path space effectively in-
+admissible. Expert intuition is not a shortcut to objective-function optimization; it
+is a reconfigured constraint structure.
+    This has direct consequences for the theory of artificial intelligence. Current
+large language models and related systems are trained to approximate a statisti-
+cal objective — next-token prediction or preference alignment — over a fixed con-
+straint structure (the structure of natural language sequences). They are, in the
+terminology of this framework, trajectory-sampling devices rather than constraint-
+modifying devices: they sample admissible paths through a learned approxima-
+tion to the statistical structure of language, but they do not modify the constraint
+structure itself in response to the history of their outputs.
+    This is the source of their characteristic failure modes: they hallucinate (sample
+paths admissible under the statistical constraint structure but not under the factual
+one), they are inconsistent across contexts (the constraint structure they approxi-
+mate is a projection of the full context that varies with the projection map of the
+prompt), and they fail catastrophically on out-of-distribution inputs (the learned
+constraint structure does not extend to regions of the path space not sampled dur-
+ing training).
+    Geometric approaches to cognition — understanding conceptual structure as a
+geometry on a space of mental configurations — are compatible with the constraint-
+trajectory framework when they are interpreted correctly. The mental configura-
+tion space is a constraint structure; the geometry is the metric on that space induced
+by the pattern of admissible transitions. Conceptual change — learning, inference,
+discovery — is modification of the constraint structure, which may change the ge-
+ometry of the configuration space as well as its content.
+     The alignment problem in artificial intelligence — how to ensure that an AI
+system behaves in accordance with human values and intentions — is, under this
+framework, a constraint-matching problem: how to ensure that the AI system’s
+constraint structure is appropriately coupled to the constraint structure of human
+normative practice. This is a different problem from objective-function alignment,
+and it calls for different solutions. Objective-function alignment attempts to spec-
+ify, in advance and in scalar form, what the system should optimize. Constraint-
+structure alignment attempts to ensure that the system’s admissible path space is
+
+
+                                          25
+Flyxion
+
+
+appropriately related to the admissible path space of human action and judgment.
+   The latter is more robust for the reasons identified in Section 2: it does not
+presuppose a complete and correct specification of the objective, does not generate
+Goodhart effects when the specification is imperfect, and preserves the semantic
+content of the system’s behavior rather than compressing it into a scalar value.
+
+
+4.4 Physical and Cosmological Models
+
+The physical domain is in one sense the most remote from everyday applications
+of the constraint-trajectory framework, and in another sense the most fundamen-
+tal. It is the most remote because the relevant constraint structures — the laws of
+physics — are fixed by nature and not subject to design or modification in the way
+that linguistic, computational, or cognitive constraint structures are. It is the most
+fundamental because all other constraint structures are ultimately embedded in
+the physical one: the constraint structures of language, computation, and cogni-
+tion are implemented in physical systems and must be consistent with the physical
+constraint structure.
+    The physical constraint structure is irreversible in the most fundamental sense:
+the second law of thermodynamics asserts that the entropy of an isolated system
+is non-decreasing in time. Entropy, under the statistical mechanical interpretation,
+is a measure of projection loss: it measures how much information about the mi-
+croscopic trajectory is discarded when the trajectory is projected onto macroscopic
+observables.
+Theorem 4.4 (Entropy as Projection Loss). In the statistical mechanical setting, the ther-
+modynamic entropy 𝑆(𝑡) = −𝑘𝐵 ∑𝑖 𝑝𝑖 log 𝑝𝑖 is the projection loss incurred by projecting
+the microscopic trajectory onto the macroscopic state description, where 𝑝𝑖 is the probability
+of microscopic configuration 𝑖 consistent with the macroscopic state at time 𝑡.
+    The proof of Theorem 4.4 is standard and follows from the identification of en-
+tropy with the logarithm of the number of microscopic configurations consistent
+with the macroscopic state — which is precisely the logarithm of the size of the ker-
+nel of the projection map from microscopic configurations to macroscopic states.
+    The second law of thermodynamics is therefore a special case of Theorem 2.13
+applied to the physical constraint structure: projection loss is non-decreasing in
+time because the projection map from microscopic trajectories to macroscopic states
+is many-to-one and because physical evolution moves the system through the high-
+entropy (large-kernel) regions of configuration space.
+    The RSVP (Relativistic Scalar-Vector Plenum) field-theoretic framework extends
+
+                                             26
+                                                 Constraint, Trajectory, and Irreversibility
+
+
+this analysis to cosmological scales. In RSVP, spacetime geometry is not a fixed
+background on which matter evolves but is itself an evolving constraint structure:
+the geometry of space and time at any moment is the result of the accumulated tra-
+jectory of the plenum field up to that moment. Space and time are emergent from
+constraint relaxation — from the progressive narrowing of the possibility space of
+field configurations — rather than being primitive.
+    This is the physical analogue of the claim that identity is path-dependent: the
+structure of spacetime at time 𝑡 is not given independently of the trajectory of the
+plenum field that produced it. The cosmological implications are significant. The
+large-scale structure of the universe — the distribution of galaxies, the homogeneity
+of the cosmic microwave background, the apparent flatness of spatial slices — are
+not arbitrary initial conditions but consequences of the constraint structure of the
+plenum and the trajectory it has traced. Explaining these structures requires an
+account of the trajectory, not merely of the current state.
+    The relationship between physical and informational systems — between the
+physical constraint structure and the constraint structures of computation and cog-
+nition — is not metaphorical. Both are constraint structures in the formal sense
+of Definition 2.1, and both are subject to the same invariants. The projection from
+physical to informational constraint structure incurs projection loss in the same for-
+mal sense as the projection from linguistic to graphemic constraint structure. The
+difference is one of scale and of the mechanisms by which the constraint structures
+are implemented and modified.
+
+
+
+
+                                         27
+Flyxion
+
+
+                                                                    Computation
+          Language &                                                      &
+           Symbols                                                   Interaction
+                            Π
+                              𝐿                             Π𝐶
+
+
+
+                                           Four
+                                        Invariants
+
+
+                                                            Π
+                             Π𝐴                               𝑃
+
+          Cognition &                                                Physics &
+              AI                                                     Cosmology
+
+Figure 2: The four invariants project onto four domain families. Each projection
+map Π𝐷 is faithful to the invariants while incurring domain-specific projection loss.
+Dashed arrows indicate inter-domain structural homomorphisms.
+
+
+5. Category-Theoretic Formulation of Trajectory Systems
+
+                A functor that forgets is not neutral — it is a commitment to
+                ignorance.
+
+
+
+    The domain analyses of the preceding section share a common abstract skele-
+ton: each domain defines a category of histories, a functor into a state space, and
+a projection functor into a finite representation. This section makes that skele-
+ton explicit, establishing the categorical counterparts of the metric results of Theo-
+rems 2.19 and 2.24.
+
+
+5.1 The Category of Histories
+
+Definition 5.1 (Category of Histories). Let Hist be the category where:
+
+   • Objects are finite event histories 𝐻𝑛 ∈ ℰ𝑛 for 𝑛 ≥ 0.
+   • Morphisms 𝑓 ∶ 𝐻𝑛 → 𝐻𝑛+1 are append operations: 𝑓(𝐻𝑛 ) = 𝐻𝑛 ⋅ 𝑒𝑛+1 for
+     some event 𝑒𝑛+1 ∈ ℰ.
+   • Composition is concatenation; the identity on 𝐻𝑛 is the empty append.
+Proposition 5.2 (History as Free Monoid). The category Hist is generated by the free
+monoid ℰ∗ under concatenation. Every object is reachable from the empty history 𝐻0 = ()
+
+                                             28
+                                                 Constraint, Trajectory, and Irreversibility
+
+
+by a finite sequence of morphisms.
+Definition 5.3 (State Functor). A state functor is a mapping 𝐹 ∶ Hist → State such
+that 𝐹 (𝐻𝑛 ) = 𝑆𝑛 and 𝐹 (𝑓) = 𝛿, where 𝛿 is the deterministic state update rule.
+Definition 5.4 (Irreversible Morphism). A morphism 𝑓 ∶ 𝐻𝑛 → 𝐻𝑛+1 in Hist is
+irreversible if no inverse morphism 𝑓 −1 ∶ 𝐻𝑛+1 → 𝐻𝑛 exists in Hist.
+    Since the append operation strictly increases the length of a history, every mor-
+phism in Hist is irreversible. This is the categorical expression of Axiom 2.8: the
+category of histories has no inverses, only extensions.
+
+
+5.2 Projection Functors and Non-Faithfulness
+
+Definition 5.5 (Projection Functor). A projection functor is a functor 𝜋 ∶ Hist → Rep
+into a category Rep of finite representations.
+Theorem 5.6 (Non-Faithfulness of Finite Projections). Any projection functor 𝜋 ∶
+Hist → Rep into a category with finitely many distinct morphisms is not faithful. That
+is, there exist distinct morphisms 𝑓 ≠ 𝑔 in Hist such that 𝜋(𝑓) = 𝜋(𝑔).
+
+Proof. Hist contains infinitely many distinct morphisms (one for each finite event
+sequence), since |ℰ| ≥ 2. Rep contains only finitely many distinct morphisms by
+hypothesis. Any functor from an infinite morphism set to a finite one must identify
+distinct morphisms. Therefore 𝜋 is not faithful.
+
+Remark 5.7. Theorem 5.6 is the categorical formulation of projection loss. A faith-
+ful functor preserves all distinctions; a non-faithful functor collapses them. Every
+finite representation of the trajectory system is a non-faithful projection, and the
+collapsed distinctions are precisely the lost semantic content. This provides a cat-
+egorical foundation for Corollary 2.20: projection loss is not merely a quantitative
+limitation but a categorical one.
+
+
+5.3 The Refuse Operator as a Categorical Boundary
+
+The Refuse operator — the mechanism by which inadmissible events are rejected
+from the history — has a natural categorical formulation.
+Definition 5.8 (Admissibility Functor). An admissibility functor is a functor 𝒜 ∶
+Hist → 2 where 2 = {0 → 1} is the arrow category, with 𝒜(𝐻𝑛 ) = 1 if 𝐻𝑛 is
+admissible and 𝒜(𝐻𝑛 ) = 0 otherwise.
+  The Refuse operator acts on proposed morphisms 𝑓 ∶ 𝐻𝑛 → 𝐻𝑛+1 by checking
+whether 𝐻𝑛+1 is admissible given 𝐻𝑛 . If 𝒜(𝐻𝑛+1 ) = 0, the morphism is replaced
+
+                                         29
+Flyxion
+
+
+by the identity id𝐻𝑛 : the history is not extended. This is the categorical counterpart
+of the infinite-action boundary condition in the variational formalism of Section 7.
+Proposition 5.9 (Categorical Refuse). Let 𝒜 be an admissibility functor. The Refuse
+operator ℛ is the natural transformation ℛ ∶ IdHist ⇒ 𝒜−1 (1) that maps inadmissible
+morphisms to identity morphisms and admissible morphisms to themselves. The image of
+ℛ is a subcategory of Hist containing only admissible histories.
+
+Proof. For any morphism 𝑓 ∶ 𝐻𝑛 → 𝐻𝑛+1 : if 𝒜(𝐻𝑛+1 ) = 1, ℛ(𝑓) = 𝑓; if 𝒜(𝐻𝑛+1 ) =
+0, ℛ(𝑓) = id𝐻𝑛 . The result is a well-defined endofunctor on the subcategory of
+admissible objects, since admissible morphisms compose to admissible morphisms
+by the closure property of 𝒜.
+
+
+
+
+                                          30
+                                                     Constraint, Trajectory, and Irreversibility
+
+
+
+6. Physical–Computational Correspondence
+
+
+                 Two systems may speak the same structural language
+                 without sharing a single physical component.
+
+
+
+    Both the RSVP framework and the Spherepop architecture instantiate trajectory
+systems under different representational constraints. This section makes the cor-
+respondence explicit through a shared categorical structure, without overclaiming
+identity.
+
+
+
+6.1 Two Instantiations of the Same Structure
+
+In the RSVP framework, histories correspond to continuous evolution of the en-
+tropy density field 𝒮(𝑥, 𝑡) and vector field 𝑉 ⃗ (𝑥, 𝑡) over the spatial domain Ω. The
+“events” are infinitesimal field increments; the state at time 𝑡 is the entire field con-
+figuration, which is a functional of the trajectory {𝒮(𝑥, 𝑠)}𝑠≤𝑡 .
+   In Spherepop, histories correspond to discrete event sequences 𝐻𝑛 = (𝑒0 , 𝑒1 , … , 𝑒𝑛 ).
+The state 𝑆𝑛 = ℱ(𝐻𝑛 ) is a deterministic fold over the event log.
+    In both cases:
+   1. evolution is strictly path-dependent,
+   2. no global state exists independent of history,
+   3. projection of histories into reduced representations induces loss — continu-
+      ous in the RSVP case (thermodynamic coarse-graining), discrete in the Sphere-
+      pop case (finite-state encoding).
+    The following table makes the structural parallelism explicit.
+
+
+ Feature                                   RSVP                           Spherepop
+ Fundamental unit                   Entropy-vector field                Event history 𝐻𝑛
+ State definition             𝒮(𝑥, 𝑡), functional of trajectory           𝑆𝑛 = ℱ(𝐻𝑛 )
+ Evolution rule                           𝑔 ⃗ ≈ −∇𝒮                     𝛿(𝑆𝑛−1 , 𝑒𝑛 ) → 𝑆𝑛
+ Irreversibility                         𝑑𝒮/𝑑𝑡 ≥ 0                    Append-only history
+ Refusal boundary                    Entropic flux limit               Refuse operator ℛ
+ Structural framework              Global field sections              Local event manifold
+Proposition 6.1 (Structural Correspondence). RSVP and Spherepop define functors
+
+                                            31
+Flyxion
+
+
+from trajectory categories into distinct state spaces — continuous and discrete respectively
+— that preserve irreversibility but differ in representation. They are therefore structurally
+analogous as instances of the same categorical framework but are not strictly isomorphic,
+since their objects, morphisms, and composition laws are drawn from different mathematical
+structures (function spaces vs. discrete monoids).
+   The significance of Proposition 6.1 is that the RSVP–Spherepop relationship is
+not a metaphor and not an identity. It is a structural homomorphism: both sys-
+tems are instances of the trajectory-category framework, projecting into different
+representation spaces through functors that share the property of irreversibility-
+preservation. The failure modes of each system under projection are therefore the
+same failure modes, instantiated through different mechanisms.
+
+
+6.2 Gravity as Entropic Gradient
+
+In the RSVP model, gravitational acceleration emerges as a gradient of the entropy
+density field:
+                              𝑔(𝑥,
+                               ⃗ 𝑡) ≈ −∇𝒮(𝑥, 𝑡).
+
+This is not a conventional derivation of gravity but an emergentist account: what
+is standardly modeled as a force is, in the RSVP framework, the directional bias
+imposed on local field evolution by the global entropy gradient. The field cannot
+evolve “uphill” in entropy without external energy input; the resulting directional-
+ity is what macroscopic observers register as gravitational attraction.
+    The computational parallel is direct. In Spherepop, the state transition 𝛿(𝑆𝑛−1 , 𝑒𝑛 ) →
+𝑆𝑛 is directional in exactly the same sense: it maps the current state to the next by
+applying an event, and this map is not invertible. The “direction” of computation —
+the fact that programs run forward and cannot be reversed without explicit mech-
+anism — is the computational counterpart of entropic directionality in the RSVP
+plenum.
+     Both structures instantiate the same underlying principle: Axiom 2.8, irreversibil-
+ity, is not a feature of one domain borrowed by analogy into another. It is a property
+of the constraint structure itself, which manifests as entropic flow in the physical
+domain and as event accumulation in the computational one.
+
+
+6.3 Discrete Realization and Loss Bounds
+
+The correspondence established in §6 between RSVP field dynamics and Sphere-
+pop event histories can be made formally precise by exhibiting a discretization map
+
+                                             32
+                                                    Constraint, Trajectory, and Irreversibility
+
+
+from continuous trajectories to discrete histories and deriving the associated loss
+bounds. This converts the structural analogy of Proposition 6.1 into a provable
+functorial reduction.
+Definition 6.2 (Continuous Trajectory). Let ℱ denote the space of admissible field
+configurations — entropy density 𝒮(𝑥, 𝑡) and vector field 𝑉 ⃗ (𝑥, 𝑡) over Ω. A continu-
+ous trajectory is a map
+                                  Γ ∶ [0, 𝑇 ] → ℱ
+
+satisfying the dynamical constraints of the RSVP field equations.
+Definition 6.3 (Discretization Map). Fix a temporal resolution Δ > 0. A discretiza-
+tion map is a function
+                                 𝒟∆ ∶ {Γ} → ℋ
+
+that assigns to each continuous trajectory Γ a discrete history 𝒟∆ (Γ) = (𝑒0 , 𝑒1 , … , 𝑒𝑛 ),
+where each event 𝑒𝑖 encodes the field transition over the interval [𝑖Δ, (𝑖 + 1)Δ] via
+a symbolic encoding of field variation.
+Proposition 6.4 (Non-Faithfulness of Discretization). For any finite Δ > 0, the map
+𝒟∆ is not injective:
+
+                       ∃ Γ ≠ Γ′    such that 𝒟∆ (Γ) = 𝒟∆ (Γ′ ).
+
+Proof. The space of continuous trajectories over [0, 𝑇 ] is infinite-dimensional, while
+the image of 𝒟∆ has cardinality at most |ℰ|𝑇 /∆ . Since an uncountable set cannot
+inject into a countable one, distinct trajectories must be identified under 𝒟∆ .
+
+Theorem 6.5 (Lower Bound on Discretization Loss). For any irreversible continuous
+trajectory system and any discretization map 𝒟∆ with finite resolution Δ, the expected
+semantic loss satisfies
+                                                   𝑇
+                                𝔼[ℒ(𝒟∆ , 𝜎)] ≥ 𝑐 ⋅
+                                                   Δ
+for some domain-dependent constant 𝑐 > 0.
+
+Proof. Partition [0, 𝑇 ] into 𝑛 = 𝑇 /Δ intervals. On each interval, the thresholding
+procedure identifying 𝑒𝑖 conflates all continuous field evolutions that produce the
+same symbolic output — a class of positive measure in ℱ. The number of distinct
+continuous trajectories consistent with a given discrete history therefore grows at
+least exponentially in 𝑛. By Definition 2.22, the trajectory entropy at depth 𝑛 is
+𝐻𝑛 = 𝑛 log |ℰ|. Applying Theorem 2.24 (minimum information loss) to the dis-
+cretized representation gives 𝔼[loss] ≥ 𝐻𝑛 − log |𝒵| = Ω(𝑛). Substituting 𝑛 = 𝑇 /Δ
+establishes the bound.
+
+Corollary 6.6 (Spherepop as Coarse-Grained RSVP). Spherepop event histories are
+
+                                            33
+Flyxion
+
+
+coarse-grained realizations of RSVP field trajectories. The mapping 𝒟∆ is a projection in
+the sense of Definition 2.12 with nonzero and irreducible semantic loss that grows linearly
+in 𝑇 /Δ.
+Corollary 6.7 (Universality of Projection-Induced Irreversibility). Any symbolic, com-
+putational, or linguistic system that represents continuous trajectories via finite discrete
+encodings inherits irreversibility and semantic loss as structural properties. These are not
+artifacts of implementation but consequences of the non-faithfulness established in Proposi-
+tion 6.4.
+Remark 6.8. Corollary 6.7 places thermodynamic entropy, computational irreducibil-
+ity, and semantic compression within a single formal class: each arises from the
+non-faithfulness of a projection from trajectory space into a reduced representa-
+tion. This means that the familiar entropy increase of statistical mechanics, the
+non-invertibility of program execution, and the compression losses of large lan-
+guage model embeddings are not three separate phenomena explained by three
+separate theories but three instantiations of Theorem 6.5.
+
+
+
+
+                                            34
+                                                       Constraint, Trajectory, and Irreversibility
+
+
+
+7. A Minimal Lagrangian for Entropic Flow and Event Accumula-
+tion
+
+
+                Action tells you which path was taken. History tells you why
+                it could not have been otherwise.
+
+
+
+    We now introduce a minimal variational formalism that places continuous RSVP-
+style field evolution and discrete Spherepop-style event accumulation within a com-
+mon action principle. The aim is not to identify physical field dynamics and com-
+putational execution as numerically identical processes, but to show that both can
+be expressed as trajectory-dependent evolutions governed by irreversibility, admis-
+sibility, and history-sensitive cost.
+
+
+
+
+7.1 Configuration Data
+
+
+Let Ω ⊂ ℝ𝑑 be a spatial domain and let 𝑡 ∈ [0, 𝑇 ] denote continuous time. We
+consider three continuous RSVP fields:
+
+                   Φ(𝑥, 𝑡) ∈ ℝ,       v(𝑥, 𝑡) ∈ ℝ𝑑 ,        𝑆(𝑥, 𝑡) ∈ ℝ,
+
+where Φ is a scalar configuration field, v is a vector flow field, and 𝑆 is an entropy
+density field. In parallel, let 𝐻𝑛 = (𝑒1 , … , 𝑒𝑛 ) be a discrete event history, and let
+𝜎𝑛 ∈ Σ denote the discrete computational state obtained after 𝑛 accepted events.
+The full hybrid configuration is:
+
+                     𝒬(𝑡, 𝑛) = (Φ(⋅, 𝑡), v(⋅, 𝑡), 𝑆(⋅, 𝑡), 𝐻𝑛 , 𝜎𝑛 ).
+
+
+
+
+7.2 Continuous RSVP Lagrangian Density
+
+
+We begin with a minimal field-theoretic Lagrangian density:
+
+                           ℒRSVP = ℒΦ + ℒv + ℒ𝑆 + ℒint ,
+
+                                            35
+Flyxion
+
+
+with components
+
+                               𝛼             𝛽
+                           ℒΦ =  (𝜕𝑡 Φ)2 − ‖∇Φ‖2 − 𝑈 (Φ),
+                               2             2
+                               𝛾         𝛿 𝑣
+                           ℒv = ‖v‖2 − ‖∇v‖2 ,
+                               2         2
+                               𝜇             𝜈
+                           ℒ𝑆 = (𝜕𝑡 𝑆) − ‖∇𝑆‖2 ,
+                                       2
+                               2             2
+and interaction term
+
+                         ℒint = 𝜆1 Φ ∇ ⋅ v + 𝜆2 v ⋅ ∇𝑆 + 𝜆3 Φ𝑆.
+
+The corresponding continuous action is
+
+                                            𝑇
+                           𝒜RSVP = ∫ ∫ ℒRSVP (𝑥, 𝑡) 𝑑𝑥 𝑑𝑡.
+                                        0       Ω
+
+Remark 7.1. This Lagrangian is intentionally minimal. The terms represent, respec-
+tively, local field inertia, spatial regularity, nonlinear scalar potential, vector trans-
+port, and couplings between scalar structure, flow, and entropy gradients. The
+coupling constants 𝛼, 𝛽, 𝛾, 𝛿𝑣 , 𝜇, 𝜈, 𝜆1 , 𝜆2 , 𝜆3 are left as free parameters; their identi-
+fication with specific physical quantities belongs to the empirical program of RSVP
+field theory.
+
+
+
+
+7.3 Discrete Event Lagrangian
+
+
+To encode Spherepop-style irreversible event accumulation, we define a discrete
+Lagrangian on adjacent event states:
+
+                𝐿ev (𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ) = 𝐶(𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ) + 𝑅(𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ),
+
+where 𝐶 is a structural transition cost and 𝑅 is an irreversibility penalty. A minimal
+choice is
+                     𝐶(𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ) = 𝜅1 𝑑Σ (𝜎𝑛 , 𝛿(𝜎𝑛−1 , 𝑒𝑛 ))2 ,
+
+where 𝛿 is the deterministic update map and 𝑑Σ is a metric on the computational
+state space. To encode irreversibility:
+
+                𝑅(𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ) = 𝜅2 𝜒inad (𝜎𝑛−1 , 𝑒𝑛 ) + 𝜅3 𝜌(𝜎𝑛−1 , 𝜎𝑛 ),
+
+                                                    36
+                                                           Constraint, Trajectory, and Irreversibility
+
+
+where 𝜒inad is the indicator of inadmissible events and 𝜌 measures history growth.
+In the strict deterministic case, inadmissible events are assigned infinite action:
+
+                                          ⎧
+                                          {0,        𝑒𝑛 admissible at 𝜎𝑛−1 ,
+                   𝜒inad (𝜎𝑛−1 , 𝑒𝑛 ) =
+                                          ⎨
+                                          {
+                                          ⎩+∞,       otherwise.
+
+The discrete action is
+                                          𝑁
+                                𝒜ev = ∑ 𝐿ev (𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ).
+                                          𝑛=1
+
+Remark 7.2. This is a discrete variational principle over event histories. Valid com-
+putational trajectories are precisely those histories with finite action. The infinite-
+action barrier corresponds exactly to the Refuse operator of Proposition 5.9.
+
+
+
+
+7.4 Coupling Term Between Fields and Events
+
+To unify the continuous and discrete sectors, we introduce a coupling between ac-
+cepted events and the ambient RSVP fields. Let 𝑥𝑛 ∈ Ω and 𝑡𝑛 ∈ [0, 𝑇 ] denote the
+spacetime support of event 𝑒𝑛 . Define an event-field coupling:
+
+         𝐿coup (𝑒𝑛 ; Φ, v, 𝑆) = 𝜂1 Φ(𝑥𝑛 , 𝑡𝑛 ) + 𝜂2 𝑆(𝑥𝑛 , 𝑡𝑛 ) + 𝜂3 v(𝑥𝑛 , 𝑡𝑛 ) ⋅ 𝜉(𝑒𝑛 ),
+
+where 𝜉(𝑒𝑛 ) is an event-associated directional vector. The total hybrid action is:
+
+                                                     𝑁
+                     𝒜hyb = 𝒜RSVP + 𝒜ev + ∑ 𝐿coup (𝑒𝑛 ; Φ, v, 𝑆).
+                                                     𝑛=1
+
+
+
+
+7.5 Euler–Lagrange and Discrete Stationarity Conditions
+
+Variation with respect to the continuous fields yields the coupled Euler–Lagrange
+equations. For Φ:
+
+                                                               𝑁
+         𝛼 𝜕𝑡𝑡 Φ − 𝛽 ΔΦ + 𝑈 ′ (Φ) − 𝜆1 ∇ ⋅ v − 𝜆3 𝑆 = ∑ 𝜂1 𝛿(𝑥 − 𝑥𝑛 )𝛿(𝑡 − 𝑡𝑛 ).
+                                                               𝑛=1
+
+For 𝑆:
+                                                           𝑁
+              𝜇 𝜕𝑡𝑡 𝑆 − 𝜈 Δ𝑆 − 𝜆2 ∇ ⋅ v − 𝜆3 Φ = ∑ 𝜂2 𝛿(𝑥 − 𝑥𝑛 )𝛿(𝑡 − 𝑡𝑛 ).
+                                                         𝑛=1
+
+
+                                                37
+Flyxion
+
+
+For v:
+                                                    𝑁
+            𝛾v − 𝛿𝑣 Δv − 𝜆1 ∇Φ + 𝜆2 ∇𝑆 = ∑ 𝜂3 𝜉(𝑒𝑛 ) 𝛿(𝑥 − 𝑥𝑛 )𝛿(𝑡 − 𝑡𝑛 ).
+                                                 𝑛=1
+
+
+In each equation, the event history appears as a distributional source term. Varia-
+tion in the discrete sector gives the stationarity condition
+
+  𝐷𝜎𝑛 (𝐿ev (𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ) + 𝐿ev (𝜎𝑛 , 𝑒𝑛+1 , 𝜎𝑛+1 )
+                                                                + 𝐿coup (𝑒𝑛 ; Φ, v, 𝑆)) = 0,
+
+subject to admissibility. Accepted events are those that minimize local hybrid ac-
+tion while remaining consistent with the deterministic update rule.
+
+
+7.6 The Refusal Boundary as a Variational Condition
+
+The Refuse operator, introduced categorically in Proposition 5.9, emerges here as
+an infinite-action boundary condition.
+Definition 7.3 (Refusal Boundary). An event 𝑒𝑛 is refused at state 𝜎𝑛−1 if
+
+              𝐿ev (𝜎𝑛−1 , 𝑒𝑛 , 𝜎𝑛 ) = +∞     for all candidate successors 𝜎𝑛 .
+
+Proposition 7.4 (Refusal as Action Barrier). If an event violates deterministic consis-
+tency, causal reconstructibility, or local admissibility, then it lies outside the finite-action
+sector of the hybrid system and cannot occur along any stationary trajectory.
+
+Proof. Such an event contributes +∞ to 𝐿ev . Therefore any path containing it has
+𝒜hyb = +∞ and cannot minimize or extremize the action among finite-action tra-
+jectories.
+
+
+7.7 Interpretation
+
+The hybrid variational principle expresses a common structural idea through four
+interrelated claims.
+    First, continuous physical evolution is governed by gradients, couplings, and
+spatial regularity — the Euler–Lagrange equations constrain the field trajectories
+to stationary paths of 𝒜RSVP .
+    Second, discrete computational evolution is governed by history-sensitive tran-
+sitions and admissibility — the stationarity conditions on 𝒜ev select finite-action
+
+                                               38
+                                                  Constraint, Trajectory, and Irreversibility
+
+
+event sequences.
+    Third, both are path-dependent and irreversible — the action functional is de-
+fined on trajectories, not on states, and the irreversibility of both sectors is encoded
+in the asymmetry of the action under time reversal.
+    Fourth, each accepted computational event modifies the effective source struc-
+ture of the surrounding field, while the ambient field alters the action cost of future
+events. The computational history is therefore not external to the physical dynam-
+ics but one of its source terms, and physical evolution is not merely a background
+medium but part of the geometry of admissible computation.
+    The significance of the hybrid action is not that it collapses physics into software
+or software into physics. Rather, it shows that both can be modeled as instances
+of constrained trajectory formation under irreversible evolution — the continuous
+RSVP fields describing a geometry of entropic flow, and the discrete Spherepop
+log describing a geometry of event accumulation, both expressible within one vari-
+ational language of controlled change.
+
+
+
+
+                                          39
+Flyxion
+
+
+
+8. Consistency of the Refuse Operator via Hausdorff Preservation
+
+
+                A singularity is not a mystery. It is a proof that the boundary
+                condition was wrong.
+
+
+
+    The Refuse operator has been formalized variationally (Proposition 7.4) and
+categorically (Proposition 5.9). This section provides a third, topological character-
+ization: the Refuse operator is the necessary and sufficient condition for the event
+manifold to remain Hausdorff — for distinct histories to remain separable under
+all admissible continuations. This is not a supplementary consistency check but
+a structural requirement: without Hausdorff separation, deterministic identity of
+computation collapses.
+
+
+
+
+8.1 The Event Manifold
+
+
+Let ℋ denote the space of admissible event histories and let Σ denote the corre-
+sponding state space, with deterministic evaluation map 𝐹 ∶ ℋ → Σ, 𝐹 (𝐻𝑛 ) = 𝜎𝑛 .
+Equip Σ with a topology 𝜏 in which neighborhoods encode distinguishability of
+states under future evolution: two states are in the same neighborhood if and only
+if no admissible future extension separates them.
+Definition 8.1 (Event Manifold). The event manifold is the topological space (Σ, 𝜏 )
+induced by the evaluation map 𝐹 and the adjacency structure of admissible event
+sequences.
+
+
+
+
+8.2 Hausdorff Separation
+
+
+Definition 8.2 (Hausdorff Property). The event manifold (Σ, 𝜏 ) is Hausdorff if for
+any two distinct states 𝜎𝑎 ≠ 𝜎𝑏 , there exist disjoint open sets 𝑈 , 𝑉 ∈ 𝜏 with 𝜎𝑎 ∈ 𝑈 ,
+𝜎𝑏 ∈ 𝑉 , 𝑈 ∩ 𝑉 = ∅.
+    Hausdorff separation expresses the requirement that distinct histories remain
+distinguishable under all admissible continuations. A non-Hausdorff event mani-
+fold would mean that two computationally distinct states cannot be separated by
+any future experiment — a formal analogue of logical non-determinism or ambigu-
+ous causal history.
+
+                                              40
+                                                     Constraint, Trajectory, and Irreversibility
+
+
+8.3 The Refuse Operator
+
+Recall that the Refuse operator filters proposed transitions:
+
+                                  ⎧
+                                  {𝛿(𝜎𝑛 , 𝑒𝑛+1 ), 𝑒𝑛+1 admissible at 𝜎𝑛 ,
+                ℛ(𝜎𝑛 , 𝑒𝑛+1 ) =
+                                  ⎨
+                                  {
+                                  ⎩𝜎𝑛 ,           otherwise.
+
+Inadmissible events are mapped to the identity transition; the history is not ex-
+tended.
+
+
+8.4 Main Theorem
+
+Theorem 8.3 (Refuse Preserves Hausdorff Structure). Let (Σ, 𝜏 ) be the event manifold
+induced by deterministic replay. If all transitions are filtered through the Refuse operator
+ℛ, then (Σ, 𝜏 ) remains Hausdorff under all admissible extensions of event histories.
+
+
+Proof. Suppose for contradiction that after admitting a transition under 𝑒∗ at state
+𝜎𝑛 , the manifold is not Hausdorff. Then there exist distinct states 𝜎𝑎 ≠ 𝜎𝑏 such
+that every neighborhood of 𝜎𝑎 meets every neighborhood of 𝜎𝑏 : for all 𝑈 ∋ 𝜎𝑎 and
+𝑉 ∋ 𝜎𝑏 , 𝑈 ∩ 𝑉 ≠ ∅.
+    By construction of 𝜏 , this implies that 𝜎𝑎 and 𝜎𝑏 are indistinguishable under all
+admissible future extensions. Let 𝐻𝑎 , 𝐻𝑏 ∈ ℋ be histories with 𝐹 (𝐻𝑎 ) = 𝜎𝑎 and
+𝐹 (𝐻𝑏 ) = 𝜎𝑏 . Since 𝜎𝑎 ≠ 𝜎𝑏 and 𝐹 is deterministic, 𝐻𝑎 ≠ 𝐻𝑏 . Indistinguishability
+under extensions means: for all admissible 𝐾, 𝐹 (𝐻𝑎 ⋅ 𝐾) = 𝐹 (𝐻𝑏 ⋅ 𝐾). But the
+trajectory system is history-distinguishing (Definition 2.17): there exists 𝐾 with
+𝐹 (𝐻𝑎 ⋅ 𝐾) ≠ 𝐹 (𝐻𝑏 ⋅ 𝐾), a contradiction.
+    The only way for non-Hausdorff structure to arise is if 𝑒∗ introduces ambiguity
+in the map 𝐹 — a state reachable by two distinct histories that become indistin-
+guishable thereafter. By definition of the Refuse operator, any event producing
+such ambiguity is inadmissible: ℛ(𝜎𝑛 , 𝑒∗ ) = 𝜎𝑛 . Therefore 𝑒∗ cannot produce a
+new state, and non-Hausdorff structure cannot arise under ℛ.
+
+
+8.5 Corollaries and Interpretation
+
+Corollary 8.4 (Injectivity of the History-to-State Map). Under the Refuse operator, the
+evaluation map 𝐹 ∶ ℋ → Σ restricted to admissible histories is injective: distinct admissi-
+ble histories map to distinct states.
+
+                                             41
+Flyxion
+
+
+Proof. If 𝐹 (𝐻𝑎 ) = 𝐹 (𝐻𝑏 ) = 𝜎 with 𝐻𝑎 ≠ 𝐻𝑏 , then by history-distinguishability
+there exists 𝐾 with 𝐹 (𝐻𝑎 ⋅ 𝐾) ≠ 𝐹 (𝐻𝑏 ⋅ 𝐾). This violates the deterministic update
+rule 𝐹 (𝐻 ⋅ 𝑒) = 𝛿(𝐹 (𝐻), 𝑒), which depends only on 𝜎 = 𝐹 (𝐻), not on 𝐻 itself.
+Contradiction. Therefore 𝐹 is injective on admissible histories.
+Corollary 8.5 (Absence of Logical Singularities). No admissible event sequence can
+produce a state that is ambiguous — reachable by two histories that become indistinguish-
+able under all future extensions. Equivalently, the event manifold has no “branch points”
+where distinct computation paths collapse into a single non-separable state.
+    The topological content of Theorem 8.3 is this: the Refuse operator is not an
+auxiliary safeguard layered onto the computation. It is the condition under which
+the computational space remains geometrically sound — a space in which identity,
+causality, and reconstructibility are all well-defined. Without it, the event manifold
+acquires topological defects (non-Hausdorff neighborhoods, branch points, unde-
+fined futures) that propagate forward through all subsequent computation.
+    This connects Theorem 8.3 to the broader framework: the Hausdorff property is
+the topological expression of Axiom 2.8 (irreversibility) and of the history-distinguishability
+condition of Definition 2.17. A computation that maintains Hausdorff structure is
+one in which identity is genuinely path-dependent and genuinely recoverable — in
+which the history is not merely a record but the constitutive ground of the system’s
+identity.
+
+
+
+
+                                           42
+                                                       Constraint, Trajectory, and Irreversibility
+
+
+
+9. Failure Modes Under Reduction
+
+
+                 The metric that is managed is no longer the quantity that
+                 matters.
+
+
+
+    Corollary 2.15 established that the failure modes of systems that replace trajectory-
+structured descriptions with state-structured proxies are predictable from the ge-
+ometry of the projection. This section develops the four principal failure modes
+in detail, with attention to how each arises from a specific violation of one of the
+invariants, how it manifests across the domains surveyed in Section 4, and why it
+cannot be remedied by fine-tuning the retained representation.
+
+
+9.1 State-Collapse and Identity Fragility
+
+The failure mode corresponding to a violation of Axiom 2.8 (irreversibility) is iden-
+tity fragility: the system’s identity becomes dependent on its current configuration
+rather than on its history, and therefore fragile under perturbation.
+Definition 9.1 (Identity Fragility). A system 𝑆 is identity-fragile if its identity is mod-
+eled as its current configuration 𝑐𝑡 rather than its history 𝛾𝑡 . An identity-fragile sys-
+tem is subject to identity displacement by any perturbation that moves 𝑐𝑡 to 𝑐𝑡′ ≠ 𝑐𝑡 ,
+regardless of whether the perturbation is semantically relevant.
+    Identity fragility manifests across domains in characteristic ways. In comput-
+ing systems, a stateful service whose identity is its current database state — with-
+out an event log — can lose its identity entirely under a partial hardware failure
+or a corruption of the state store. The system’s history is unrecoverable because it
+was never retained. In linguistic systems, a text whose meaning is identified with
+its current surface form — without reference to the trajectory of its composition
+and revision — is vulnerable to meaning displacement by trivial orthographic or
+stylistic alteration. In AI systems, a model whose “identity” (its behavioral char-
+acteristic) is identified with its current parameter vector loses its identity under
+fine-tuning on new data, even if the new data does not change the model’s behav-
+ior on its primary task. In physical systems, the fragility of macroscopic structures
+to microscopic perturbation — sensitivity to initial conditions — is the physical
+manifestation of identity fragility, and it is precisely what makes the microscopic
+trajectory irreducibly necessary for prediction.
+    The remedy for identity fragility is not to make systems more resistant to pertur-
+bation but to ensure that the system’s identity is carried by its history rather than its
+
+                                              43
+Flyxion
+
+
+state. Event-sourced architectures, version-controlled documents, and trajectory-
+retaining models are implementations of this remedy.
+
+
+
+
+9.2 Proxy Divergence and Goodhart Effects
+
+
+The failure mode corresponding to a violation of Axiom 2.3 (constraint primacy)
+is proxy divergence: an objective function adopted as a proxy for the system’s con-
+straint structure is maximized in ways that destroy the constraint structure it was
+intended to represent.
+Theorem 9.2 (Generalized Goodhart). Let 𝒦 be a constraint structure and 𝑓 ∶ Path(𝒦) →
+ℝ an objective function adopted as a proxy for the semantic function 𝜎. If the optimization
+process modifies the constraint structure 𝒦 to maximize 𝑓 — if, in other words, the system
+learns to produce paths that score well on 𝑓 rather than paths that satisfy 𝜎 — then for
+any 𝜖 > 0 there exist paths 𝛾 ∗ with 𝑓(𝛾 ∗ ) > 𝑓(𝛾) for all 𝛾 in the original path space but
+𝑑𝑀 (𝜎(𝛾 ∗ ), 𝜎(𝛾)) > 𝜖 for all semantically admissible 𝛾.
+    The informal content of Theorem 9.2 is Goodhart’s law: when a measure be-
+comes a target, it ceases to be a good measure. The theorem makes this precise:
+optimization pressure on a proxy objective generates paths that are semantically
+distant from any admissible path in the original constraint structure, while appear-
+ing to satisfy the proxy.
+    Goodhart effects are ubiquitous. In institutional design, performance metrics
+adopted as proxies for institutional function generate behavior that maximizes the
+metric at the expense of the function. In machine learning, loss functions adopted
+as proxies for human preference generate behavior that minimizes the loss at the
+expense of the preference. In economic modeling, GDP adopted as a proxy for so-
+cial welfare generates policy that maximizes GDP at the expense of welfare. In each
+case, the same mechanism is at work: the constraint structure (institutional func-
+tion, human preference, social welfare) is replaced by a scalar proxy, and optimiza-
+tion pressure on the proxy moves the system out of the region of the admissible
+path space that the constraint structure was intended to define.
+    The remedy is constraint specification rather than objective specification. In-
+stead of asking “what should the system maximize?”, the designer should ask
+“what transitions should the system be permitted to make?” This is harder — con-
+straint structures are harder to specify than objective functions — but it is the only
+approach that avoids the systematic failure mode of proxy divergence.
+
+                                           44
+                                                  Constraint, Trajectory, and Irreversibility
+
+
+9.3 History Collapse and Instability
+
+The failure mode corresponding to a violation of Axiom 2.11 (trajectory-dependence)
+is history collapse: the system’s behavior is determined by its current state rather
+than by its history, and therefore becomes unstable when the current state is per-
+turbed or ambiguous.
+    History collapse generates adversarial vulnerability as a special case. An ad-
+versarial example — an input crafted to cause a system to produce an incorrect
+output — is an input whose current configuration is within the system’s admissi-
+ble path space but whose history is not: it arrived at its current configuration by a
+path that the system’s training history did not include. A system whose behavior
+is determined by current configuration alone cannot distinguish this adversarial
+input from a legitimate one, because by hypothesis the configurations are similar.
+A system whose behavior is determined by history — that is, by the full trajectory
+of interaction — can in principle detect the anomalous trajectory, even when the
+current configuration appears normal.
+    History collapse also generates the temporal inconsistency characteristic of cur-
+rent large language models. A model that generates the next token based on the
+current context window — a projection of the conversation history — loses infor-
+mation about the history that lies outside the window. The result is a system whose
+behavior changes discontinuously as the context window slides, generating incon-
+sistencies that are not errors in the usual sense but structural consequences of re-
+placing the full history with a windowed projection.
+
+
+
+9.4 Over-Compression and Generalization Failure
+
+The failure mode corresponding to a violation of Axiom 2.14 (projection loss) is
+over-compression: the system’s representation of its environment or of its own be-
+havior is so compressed that it cannot generalize to regions of the configuration
+space not sampled during training.
+Definition 9.3 (Representation Capacity). The representation capacity of a projection
+Π ∶ Path(𝒦) → 𝑅 with respect to a semantic function 𝜎 is
+
+                                               ℒ(Π, 𝜎)
+                     Cap(Π, 𝜎) = 1 −                              .
+                                       sup𝛾,𝛾′ 𝑑𝑀 (𝜎(𝛾), 𝜎(𝛾 ′ ))
+
+Cap(Π, 𝜎) = 1 iff Π is semantically faithful; Cap(Π, 𝜎) = 0 iff Π is semantically
+trivial.
+
+                                         45
+Flyxion
+
+
+    Generalization failure occurs when the representation capacity of the learned
+model is too low relative to the semantic variability of the task. The model has
+compressed the training trajectories into a representation that captures the statis-
+tical regularities of the training distribution but not the semantic structure of the
+domain. When applied to inputs whose trajectories are semantically different from
+the training distribution — even if their current configurations are nearby — the
+model’s compressed representation assigns them incorrect semantic content.
+    The standard remedy of collecting more training data is insufficient under this
+analysis. More data reduces the statistical error of the learned representation but
+does not increase its representation capacity if the architecture of the projection
+map is insufficient. The correct remedy is to increase the representation capacity
+of the projection — to use a richer representation that preserves more of the se-
+mantic structure of the trajectory — which in practice means preserving more of
+the trajectory’s history rather than compressing it into a fixed-size state vector.
+
+
+
+
+                                         46
+                                                  Constraint, Trajectory, and Irreversibility
+
+
+
+10. Why the Work Appears Fragmented
+
+A reader encountering the body of work from which this essay emerges for the
+first time will observe that it is distributed: across formal monographs in physics,
+computation, philosophy, and political economy; across implemented software
+systems ranging from event-sourced game engines to browser-based evolutionary
+image selectors; across essays on linguistic structure, institutional design, and the
+theory of intelligence; across prototypes, formal proofs, and historical screenplays.
+    This distribution will appear, without the framework developed in the preced-
+ing sections, to be intellectual heterogeneity — an unusually broad range of inter-
+ests that happen to be held by the same person but do not form a single coherent
+project.
+    The framework reveals that this appearance is itself an instance of projection
+loss. The work is distributed because the framework it instantiates cannot be ex-
+pressed in a single stable artifact. A theory of irreversibility and trajectory-dependence,
+whose central claim is that identity is constituted by history and that meaning is
+a property of paths rather than states, cannot be fully expressed in a monograph.
+A monograph is a projection — a map from a trajectory of intellectual develop-
+ment onto a fixed artifact — and like all projections, it incurs loss. What survives
+the projection to the monograph is the formal core: definitions, theorems, proofs,
+arguments. What is lost is the trajectory of its development: the false starts, the
+domain crossings, the moments of formal discovery that occurred in the context of
+implementation, the semantic content that is carried only in the relation between
+the formal work and the implemented systems.
+    The implemented systems, conversely, carry semantic content that the formal
+monographs cannot represent. A game designed as a constraint navigation system
+embodies the theory of computation as history construction in a form that cannot
+be fully captured by a formal specification of the game’s rules. The player’s trajec-
+tory through the game — the actual history of play — is the instantiation of the
+theory, and it is accessible only by playing.
+    This is why the work must be reconstructed by the reader from its projections,
+rather than consumed from a single source. The underlying system is trajectory-
+based. Its structure is visible only to a reader willing to follow the connections
+between its projections — between the formal theory and the implemented systems,
+between the physical models and the linguistic analyses, between the arguments
+for constraint primacy and the institutional critiques that apply them.
+   The appearance of fragmentation is a consequence of projecting this system
+
+                                          47
+Flyxion
+
+
+onto the space of individual artifacts. The system is not fragmented. Its projections
+are.
+
+
+
+
+                                         48
+                                                    Constraint, Trajectory, and Irreversibility
+
+
+
+11. Methodology: How to Read and Engage
+
+
+The preceding section describes what the work is. This section describes how to
+engage with it.
+    The methodology follows directly from the framework. If the work is a trajectory-
+based system projected onto a distributed set of artifacts, then the appropriate
+mode of engagement is navigation rather than consumption: moving between arti-
+facts, following the constraint structures that connect them, and reconstructing the
+underlying system from its projections.
+    Several principles follow.
+    Start anywhere, but follow connections. The constraint structures that organize the
+work are not hierarchical in the sense that requires one to begin at the bottom. Any
+projection is a valid entry point, because each projection preserves the invariants
+even as it loses other content. A reader who begins with the physical models and
+follows the connections to the computational systems will construct a different tra-
+jectory through the work than a reader who begins with the linguistic analyses, but
+both trajectories are admissible. The system has no canonical starting point; it has
+constraint structures that reward sustained navigation.
+    Treat each artifact as a projection, not a standalone. No artifact in the work is self-
+sufficient, in the sense that it is fully semantically transparent without reference to
+the others. Each artifact is a projection of the underlying trajectory-based system,
+and its semantic content is fully available only in relation to the other projections.
+This is not a defect in the work’s organization; it is a consequence of the theory the
+work instantiates.
+    Look for repeated transformations, not surface topics. The connection between a
+formal proof about projection loss and a game about constraint navigation is not
+that they share a subject matter. It is that the same transformation — the instantia-
+tion of a constraint structure and the navigation of admissible paths — appears in
+both, through different representational lenses. A reader looking for surface-level
+topic overlap will miss the structural connections. A reader looking for repeated
+transformations across different representational media will find the underlying
+system.
+    Expect loss when compressing. Any summary of the work — any projection onto
+a shorter artifact — will incur projection loss. A reader who has read only this
+essay has a compressed representation of the system: the formal core and the do-
+main survey are preserved, but the implementation details, the historical trajectory
+
+                                            49
+Flyxion
+
+
+of the work’s development, and the semantic content carried only by the relation
+between formal theory and implemented practice are lost. This is inevitable, and
+it is not an argument against summaries. It is an argument for treating summaries
+as what they are: projections with characteristic loss profiles, useful for navigating
+but insufficient for full understanding.
+
+
+
+
+                                         50
+                                                 Constraint, Trajectory, and Irreversibility
+
+
+
+12. Open Directions
+
+
+The framework developed in this essay is not closed. Several directions of extension
+are actively under development and several more remain open as formal problems.
+    Formal unification via category theory. The claim that the four domain families
+of Section 4 instantiate the same underlying constraint-trajectory structure calls for
+a formal proof in the language of category theory. The appropriate framework is
+likely that of fibered categories or indexed categories, where each domain is a fiber
+over the base category of constraint structures, and the projection maps are the
+fibration morphisms. The invariants would then be conditions on the fibration, and
+the failure modes would correspond to specific classes of morphisms that violate
+those conditions. This unification would make precise, in the strongest possible
+sense, the claim that the domains are projections of the same structure.
+     Computational implementations of the constraint calculus. The Spherepop event
+calculus provides a computational model of irreversible history construction, but
+its current implementation is partial. A complete implementation would include
+a type theory for constraint structures, a proof checker for admissibility, and a
+compiler from high-level constraint specifications to event-sourced executable pro-
+grams. Such an implementation would serve both as a formal verification of the
+framework’s computational claims and as a practical tool for designing systems
+that implement the invariants.
+    Educational frameworks grounded in constraint navigation. The theory of learn-
+ing as constraint modification (Definition 3.4) suggests a pedagogy that is funda-
+mentally different from current educational practice. Rather than presenting con-
+cepts as objects to be memorized and recalled, a constraint-based pedagogy would
+present concepts as constraint structures to be navigated: students would learn by
+constructing admissible paths through the possibility space of the domain, with
+the instructor’s role being to specify and refine the constraint structure rather than
+to demonstrate the correct terminal configurations. This approach has been proto-
+typed in several domains — mathematical calculus, computer programming, lan-
+guage learning — with results that support the framework’s predictions about the
+superiority of trajectory-based over state-based learning.
+    Long-horizon systems and short-term optimization. The most pressing open prob-
+lem at the intersection of theory and application concerns the relationship between
+long-horizon constraint structures and short-term optimization pressures. In insti-
+tutional design, the constraint structures that produce robust long-horizon behav-
+ior are systematically destroyed by short-term optimization pressure on proxy met-
+
+                                         51
+Flyxion
+
+
+rics. In AI development, the constraint structures that would produce robust align-
+ment are systematically not implemented because short-term performance metrics
+favor simpler, more optimization-friendly architectures. A formal theory of this
+trade-off — specifying the conditions under which long-horizon constraint struc-
+tures can be maintained in the presence of short-term optimization pressure —
+would be one of the most significant contributions the present framework could
+make to practical system design.
+
+
+
+
+                                        52
+                                                         Constraint, Trajectory, and Irreversibility
+
+
+
+13. Closing Statement
+
+                The river is not its cross-section. The proof is not its
+                conclusion. The system is not its current state.
+
+
+
+    This essay has presented a framework organized around four invariants — con-
+straint primacy, irreversibility, trajectory-dependence, and projection loss — and
+has traced their manifestation across four domain families: language and symbol
+systems, computation and interaction design, cognitive and AI frameworks, and
+physical and cosmological models.
+   The diversity of these domains is not the diversity of the framework. The frame-
+work is one. The domains are its projections.
+    Each projection is faithful in the sense that it preserves the invariants and in-
+stantiates them through the specific resources available in the domain. Each pro-
+jection incurs loss in the sense that it discards aspects of the framework that the do-
+main’s representational resources cannot encode. The structural homomorphisms
+between domains — the formal sense in which the constraint structures of lan-
+guage, computation, cognition, and physics are instances of the same general cat-
+egory — are not metaphors borrowed from the most mathematically developed
+domain for use in the less developed ones. They are identities.
+   Understanding this requires trajectory rather than summary. No fixed-length
+representation of the framework preserves its full semantic content, because the
+framework is itself a theory of why fixed-length representations are inadequate.
+The reader who has followed this essay has constructed one trajectory through the
+framework. Other trajectories are possible, and they will carry different content.
+The appropriate response to this essay is not to summarize it but to navigate its
+connections — outward, to the implemented systems and the domain-specific for-
+mal work that this essay can only gesture toward, and inward, to the invariants that
+organize them.
+   The system is not its current state. It is the history that produced it, and the
+constraint structure that makes further history possible.
+
+
+
+
+                                               53
+Flyxion
+
+
+
+A. Map of Projects to Invariants
+
+The following table provides a quick reference mapping key artifacts in the research
+program to the invariants they primarily instantiate and the projection family they
+belong to.
+
+
+ Artifact                   Domain            Primary Invariant(s)          Projection
+ RSVP Field Theory          Physics           Irreversibility, Proj. Loss   Π𝑃
+ Spherepop Calculus         Computation       Constraint Primacy, Irrev.    Π𝐶
+ Event-Sourced Engine       Computation       Irreversibility               Π𝐶
+ Constraint Geometry        Cognition/AI      All four                      Π𝐴
+ Hollow Network             Institutional     Proxy Divergence              Π𝐴
+ Text as Substrate          Language          Trajectory-Dep., Proj. Loss   Π𝐿
+ Linguistic Immersion       Language          Constraint Modification       Π𝐿
+ Pic Breeder / CLIP         Computation       Trajectory-Dependence         Π𝐶
+ Plenum Crown               Computation       Constraint Primacy            Π𝐶
+ Geometry from Entropy      Physics           Entropy as Proj. Loss         Π𝑃
+
+
+
+B. Minimal Glossary
+
+Admissible path
+          A sequence of configurations connected by transitions permitted under
+          the constraint structure.
+Constraint structure
+           A triple (𝒞, 𝒯, ℱ) specifying the configuration space, admissible tran-
+           sitions, and admissible initial conditions of a system.
+Identity (system)
+            The history 𝛾𝑡 of a system — the admissible path that produced its
+            current configuration — rather than its current configuration 𝑐𝑡 .
+Irreversibility
+            The property of a constraint structure containing at least one transition
+            that has no admissible inverse.
+Projection A map from a path space to a lower-dimensional representation space.
+Projection loss
+            The semantic information discarded by a projection, measured as the
+
+                                         54
+                                                Constraint, Trajectory, and Irreversibility
+
+
+            supremum of semantic distances between paths collapsed to the same
+            representation.
+Proxy divergence (Goodhart effect)
+           The failure mode arising when optimization pressure on a scalar proxy
+           for a constraint structure generates paths semantically distant from the
+           constraint structure the proxy was intended to represent.
+RSVP        Relativistic Scalar-Vector Plenum: a field-theoretic framework in which
+            spacetime geometry emerges from the trajectory of a plenum field.
+Spherepop
+            An irreversible event calculus and computational grammar in which
+            events are first-class objects and states are derived.
+Trajectory-dependence
+           The property of semantic functions that assigns different meanings to
+           paths with the same terminal configuration but distinct histories.
+
+
+
+
+                                        55

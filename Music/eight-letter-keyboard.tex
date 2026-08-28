@@ -1,0 +1,333 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{XCharter}
+\setsansfont{DejaVu Sans}
+
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.12}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,longtable}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\definecolor{ink}{HTML}{18202A}
+\definecolor{accent}{HTML}{315C55}
+\definecolor{muted}{HTML}{6B747C}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,citecolor=accent,pdftitle={The Eight-Letter Keyboard},pdfauthor={Flyxion}}
+\color{ink}
+\titleformat{\section}{\Large\sffamily\bfseries\color{accent}}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries}{\thesubsection}{0.65em}{}
+\titleformat{\subsubsection}{\normalsize\sffamily\bfseries}{\thesubsubsection}{0.6em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\sffamily The Eight-Letter Keyboard}
+\fancyhead[R]{\footnotesize\sffamily Flyxion}
+\fancyfoot[C]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlist{nosep,leftmargin=1.5em}
+\newcommand{\chan}{\mathcal{C}}
+\newcommand{\dirn}{\mathcal{D}}
+\newcommand{\surf}{\mathcal{S}}
+\newcommand{\dec}{\mathcal{R}}
+
+\title{\vspace{-1.5cm}\textsf{\bfseries The Eight-Letter Keyboard}\\[0.4em]
+\large Finger-Channel Invariance and the Motor Grammar of Text Entry}
+\author{Flyxion\\\small Independent Researcher}
+\date{August 28, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The conventional account of touch typing treats a keyboard as a field of individually memorized key locations. This essay proposes a different decomposition. Skilled QWERTY typing is organized first by eight primary finger channels, then by a small set of directional and lateral states within each channel. The resulting object is called the \emph{Eight-Letter Keyboard}: not because it can emit only eight characters, but because eight non-thumb fingers provide its primary addressing structure. Each ordinary finger owns an upper, home, and lower position; each index finger additionally forks inward to a second column; thumbs and modifiers form shared or peripheral channels. Two physical experiments expose this hidden organization. A drawn hand map removes the plastic grid and rewrites QWERTY as finger territories. A MIDI-controller variant maps the same territories to repeated pitch patterns in the two hands, making the motor skeleton musically transposable. Historical piano-key writing devices, including David Edward Hughes's printing telegraph and Giuseppe Ravizza's \emph{Cembalo scrivano}, show that musical and textual keyboards once occupied a shared design space. Modern swipe keyboards add a decisive comparison: a gesture need not identify a symbol by itself when a downstream decoder can repair an underdetermined trace using lexical and language priors. Text entry can therefore be analyzed by where it places disambiguation---in the gesture, in the surface, or in the decoder. The Eight-Letter Keyboard is presented not as a finished replacement for QWERTY, but as an instrument for studying which parts of typing competence survive changes of substrate.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction: the keyboard beneath the keyboard}
+
+A practiced typist does not ordinarily search a rectangular array for forty isolated symbols. The hands arrive with a division of labor already installed. The left little finger reaches for Q, A, and Z; the left ring finger for W, S, and X; the middle finger for E, D, and C. The index finger owns two columns rather than one. The right hand mirrors the arrangement imperfectly. The typist can often produce a word without being able to draw the keyboard accurately, and can sometimes identify a letter more readily by imagining the finger that types it than by recalling its printed location. What has been learned is not only a visual map. It is a motor grammar.
+
+The Eight-Letter Keyboard begins from a deliberately misleading name. It does not reduce English to eight letters. It treats the eight non-thumb fingers as the primary letters of an embodied alphabet: eight independently addressable channels, qualified by direction, lateral extension, and modifier state. ``Independently'' must remain a functional rather than anatomical term. Fingers are biomechanically coupled, the index fingers bifurcate across columns, and the thumbs and modifiers participate in composition. Nevertheless, eight primary channels provide a useful first decomposition of ordinary touch-typing behavior.
+
+Two artifacts motivate the analysis. The first is a hand-drawn remapping of QWERTY. Instead of drawing rectangular keys, it draws eight elongated finger territories. Letters are written inside the finger that conventionally owns them. Upper, home, and lower rows become upward, neutral, and downward states within a channel. The two index territories split near their lower ends to represent their extra columns. Number keys, function keys, spaces, modifiers, navigation keys, and punctuation occupy surrounding reach zones. The drawing does not invent a new arrangement so much as reveal an arrangement concealed by the standardized key grid.
+
+The second artifact is an 88-key MIDI controller labeled as a computer keyboard. In one experiment the entire PC keyboard is unfolded along the piano: letters, numbers, function keys, modifiers, and navigation controls become a long symbolic ribbon. In another, more compressed proposal, each hand plays a five-note pattern whose notes correspond to QWERTY columns. In C-sharp minor, for example, the left hand assigns C-sharp to Q/A/Z, D-sharp to W/S/X, E to E/D/C, F-sharp to R/F/V, and G-sharp to T/G/B. The right hand repeats a comparable pitch skeleton for Y/H/N through P/semicolon/slash. The choice of tonal center may change while finger ownership remains fixed.
+
+These artifacts support a narrow claim and invite a broader one. The narrow claim is that touch-typing competence can be factored into a stable assignment of symbols to finger channels plus a smaller set of within-channel distinctions. The broader claim is that an input system should be described not only by its visible keys but by the invariants it preserves across bodily and material transformations. Plastic keys, piano keys, touch surfaces, and continuous gestures can realize different surfaces over a related motor organization.
+
+This is a design essay, not a report of controlled human-subject experiments. It does not claim that the proposed MIDI mapping is faster than QWERTY, that eight channels are neurally elementary, or that expert typists all internalize an identical representation. It offers a formal description, a family of prototypes, and testable questions. Its purpose is to separate what a typist knows from the particular object on which that knowledge was acquired.
+
+\section{A divided historical lineage}
+
+\subsection{When a keyboard did not yet imply QWERTY}
+
+The word \emph{keyboard} now encourages retrospective inevitability. A computer keyboard appears to descend naturally from the office typewriter, and the typewriter appears to have discovered the obvious form of textual entry: one compact grid, one marked key per character. Yet the nineteenth-century design field was less settled. A key was a general mechanical proposition: a conveniently actuated lever capable of selecting a discrete event. Musical instruments had already refined the spacing, return, leverage, and skilled use of such levers. When inventors sought mechanisms for transmitting or printing symbols, the piano keyboard was not an eccentric metaphor. It was available engineering knowledge.
+
+David Edward Hughes's printing telegraph, developed in the 1850s, used a piano-like keyboard with fourteen white and fourteen black keys. A key press generated a pulse whose timing coordinated a rotating character mechanism at the receiving machine, printing the selected character on paper. The Science Museum Group notes both the keyboard's 14-plus-14 construction and the importance of rhythmic touch to skilled operation \cite{hughesmuseum}. Here a musical surface entered telecommunications without being required to produce music. Pitch relations were irrelevant; discrete selection, timing, and trained touch were not.
+
+Giuseppe Ravizza's \emph{Cembalo scrivano}, or ``writing harpsichord,'' explored a different path toward mechanical writing. The surviving museum object contains more than eight hundred handmade components and a keyboard of thirty-one rectangular ivory and mother-of-pearl keys arranged in two superposed lines, marked with letters and punctuation, including a spacing key \cite{ravizzamuseum}. Ravizza's name for the machine did not conceal its genealogy. Writing was being mechanized through the conceptual and physical vocabulary of a keyed musical instrument.
+
+These machines should not be collapsed into one lineage. Hughes addressed encoded transmission and synchronized printing; Ravizza addressed direct writing. Their mechanisms and operational demands differed. Their relevance lies in a shared design intuition: a musical keyboard could serve as a general-purpose symbolic selector. The boundary between playing and typing had not yet hardened into two mutually exclusive device categories.
+
+\subsection{Convergence and its consequences}
+
+The compact typewriter grid eventually won for reasons that include portability, manufacturability, desk use, visual labeling, and a close correspondence between character inventory and dedicated keys. The later computer keyboard inherited this surface and added function keys, modifiers, navigation clusters, and command combinations. Standardization accumulated around the grid. Training, office furniture, software conventions, and expectations of compatibility made the winning arrangement progressively more difficult to dislodge.
+
+This convergence produced genuine advantages. A compact grid keeps many symbols within a small reach envelope. It allows direct visual search by novices. It permits a character to be represented as an address that is largely independent of timing and pressure. It also supports combinations without requiring a continuous trajectory. The interface's apparent redundancy---many keys distributed across space---reduces the work required of a decoder.
+
+Something was also obscured. Once each symbol received a visible cap, the cap appeared to be the fundamental unit of competence. The body's division of labor became secondary, a matter of technique taught after the device had been defined. The Eight-Letter Keyboard reverses that priority. It asks what happens if the typist's learned motor allocation is treated as the stable object and the visible array as one realization of it.
+
+The historical devices therefore matter less as precedents that confer legitimacy than as evidence that the design space once admitted other factorizations. Hughes encoded characters partly through synchronized machine state. Ravizza elaborated a keyed writing mechanism using the form of an instrument. Modern gesture keyboards assign still more work to statistical decoding. At every stage, the apparent question ``which key means A?'' conceals a larger allocation problem: which distinctions are made by the body, which by the surface, which by the machine state, and which by inference after the signal has arrived?
+
+\section{QWERTY redescribed as eight primary channels}
+
+\subsection{From coordinates to ownership}
+
+Let the primary finger-channel set be
+\[
+\chan=\{L_5,L_4,L_3,L_2,R_2,R_3,R_4,R_5\},
+\]
+where the subscript indicates the conventional finger number from index ($2$) to little finger ($5$). Let the basic directional set be
+\[
+\dirn=\{u,h,d\},
+\]
+for upper, home, and lower. For the six non-index channels, a pair $(c,d)\in\chan\times\dirn$ identifies the familiar three-letter column. The index fingers require a lateral bit $\ell\in\{0,1\}$ because each owns an outer and inner column. A simplified letter mapping is shown in Table~\ref{tab:channels}.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Primary QWERTY finger channels and their directional states.}
+\label{tab:channels}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Channel & Finger & Outer column $(u,h,d)$ & Inner column $(u,h,d)$ & Primary digit \\
+\midrule
+$L_5$ & left little & Q, A, Z & -- & 1 \\
+$L_4$ & left ring & W, S, X & -- & 2 \\
+$L_3$ & left middle & E, D, C & -- & 3 \\
+$L_2$ & left index & R, F, V & T, G, B & 4 (plus 5) \\
+$R_2$ & right index & U, J, M & Y, H, N & 7 (plus 6) \\
+$R_3$ & right middle & I, K, comma & -- & 8 \\
+$R_4$ & right ring & O, L, period & -- & 9 \\
+$R_5$ & right little & P, semicolon, slash & -- & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The ordering of the two right-index columns can be stated from either the outside inward or from left to right; what matters is their shared ownership. The map is not perfectly symmetric. Punctuation, bracket keys, Backspace, Enter, and Shift expand the right little finger's territory. Tab, Caps Lock, Shift, and Control expand the left little finger's territory. Thumb use varies among typists and devices. The abstraction is therefore a skeleton, not a claim that all workload is balanced or all reaches are equivalent.
+
+The hand drawing compresses this structure into the heading
+\[
+\texttt{--- ! @ \# \$ \qquad \& * ( ) ---}.
+\]
+These eight shifted number symbols mark the digit positions uniquely assigned to the eight primary fingers. Percent and caret are absent because 5 and 6 are inward extensions assigned to the index fingers. The heading is consequently not a decorative sample of punctuation. It is a checksum for the architecture: eight primary channels, two index extensions, and unbounded peripheral space on either side.
+
+\subsection{The index fork and shared channels}
+
+Calling the device an eight-channel system risks erasing precisely the complication that makes it informative. Each index finger is not a single three-state selector. It is a branching selector. A fuller address for a character is
+\[
+a=(c,\ell,d,m),
+\]
+where $c$ is finger identity, $\ell$ is lateral branch where applicable, $d$ is directional state, and $m$ is modifier state. For non-index fingers, $\ell$ is null. Modifier state may include Shift, Control, Alt, platform keys, dead keys, or application-defined layers.
+
+The thumbs do not fit comfortably into the same schema. In ordinary touch typing they frequently share the Space function, although individuals develop a dominant thumb. On split keyboards they may own several layer or editing keys. They are better modeled as shared timing and mode channels than forced into a ten-finger letter map. Their position beneath the eight primary channels also makes them natural candidates for selecting a decoding layer in an experimental device.
+
+This gives the term ``eight-letter'' a precise but limited meaning. Eight channels provide the first address. They do not exhaust the code. A complete event can depend on finger, direction, lateral fork, modifier, timing, and context. The value of the decomposition lies in making these dependencies explicit rather than pretending that a printed keycap is an indivisible primitive.
+
+\subsection{Motor knowledge without a complete visual map}
+
+The model predicts characteristic dissociations. A typist may know that D belongs to the left middle finger without being able to state immediately that it lies below E. Errors may preserve finger identity while selecting the wrong directional state, or preserve direction while activating a neighboring finger. Conversely, a transposed or displaced surface may remain partly usable when it preserves finger assignments even though absolute positions change.
+
+These are empirical possibilities, not facts established by the prototypes. Testing them would require logging errors at the channel level. A conventional character confusion matrix should be supplemented with a decomposition of each substitution: same finger/wrong direction, adjacent finger/same direction, wrong index branch, modifier failure, or timing error. If the channel account is useful, these categories should explain transfer and error patterns better than Euclidean key distance alone.
+
+The model also clarifies why ``muscle memory'' is an insufficient phrase. Typing is not stored as a single rigid sequence of contractions. It is a conditional system capable of generating novel strings, responding to corrections, changing capitalization, and combining shortcuts. \emph{Motor grammar} names this structured generativity: a limited set of effectors and directional relations composes a much larger symbolic repertoire.
+
+\section{Two piano realizations}
+
+\subsection{The unfolded 88-key ribbon}
+
+The most literal MIDI prototype maps computer keys directly across an 88-key controller. Successive piano keys are labeled with modifiers, letters, punctuation, navigation functions, digits, and function keys. The computer keyboard is effectively cut into row segments, concatenated, and stretched into a one-dimensional ribbon. If those segments were cut from the piano and stacked, much of the familiar QWERTY arrangement could be recovered.
+
+This realization is topologically simple but physically extravagant. It preserves local symbol ordering while sacrificing compact reach. Its purpose is demonstrative: it shows that the ordinary keyboard can be unfolded without losing its relational structure. The raised black keys provide a second spatial stratum for function keys, shifted symbols, deletion commands, or other displaced controls. What is metaphorically an ``upper layer'' on a computer becomes literally elevated.
+
+The ribbon also makes distance visible. On a desktop keyboard, moving from Control to a letter is a small chord-like span. Across a piano, symbolic regions become registers. Enter, navigation, letters, and digits occupy perceptibly different territories. A command is performed with the travel and posture of an instrumental gesture. This may be inefficient for prose, but efficiency is not the only purpose of a prototype. Exaggeration can reveal structure.
+
+\subsection{The compressed scale-degree mapping}
+
+The second realization is more consequential. Instead of assigning one MIDI note to every computer key, it assigns pitch positions to QWERTY columns while preserving ordinary finger responsibility. One illustrative mapping in C-sharp minor is
+\begin{align*}
+L &: C\sharp\mapsto Q/A/Z,\quad D\sharp\mapsto W/S/X,\quad E\mapsto E/D/C,\\
+  &\qquad F\sharp\mapsto R/F/V,\quad G\sharp\mapsto T/G/B,\\[0.3em]
+R &: C\sharp\mapsto Y/H/N,\quad D\sharp\mapsto U/J/M,\quad E\mapsto I/K/{,},\\
+  &\qquad F\sharp\mapsto O/L/{.},\quad G\sharp\mapsto P/{;}/{/}.
+\end{align*}
+The exact register separates the hands. The repeated five-note pattern is not a complete musical scale but a motor allocation: three single-column fingers and one index finger that moves between two adjacent pitch positions.
+
+In this form, a practiced typist does not learn thirty unrelated pitch-to-letter associations. The typist brings a pre-existing answer to the question ``which finger owns this column?'' The MIDI device supplies a new surface on which that ownership is expressed. The proposal therefore transfers a constraint before it transfers symbols.
+
+\subsection{Transposition: symbolic and physical invariance}
+
+Let $P$ be a pitch-class space and let $T_k:P\to P$ transpose each pitch by $k$ semitones modulo the octave. If a mapping $M$ assigns pitch positions to channels, then
+\[
+M_k=T_k\circ M
+\]
+changes the tonal center while preserving channel adjacency and symbolic ownership. At this abstract level, the motor skeleton is invariant under the transposition action. A message can be rendered in different pitch centers without changing which finger channels produce its letters.
+
+The physical piano is not itself invariant under this action. Black and white keys alternate irregularly because the diatonic keyboard encodes pitch class geometrically. Transposing C-sharp--D-sharp--E--F-sharp--G-sharp changes the pattern of raised and lower key surfaces. Identical interval structure does not guarantee identical hand posture. This distinction is not a defect in the analysis; it identifies two different invariants. Symbolic transposition preserves interval and channel relations. Mechanical transposition may alter surface geometry and therefore effort.
+
+A rigorous evaluation should consequently compare at least three levels: abstract pitch interval, finger assignment, and physical key shape. A mapping may be invariant at the first two and variant at the third. Claims that the system works ``in any key'' should specify which of these senses is intended.
+
+\subsection{Recovering the directional parameter}
+
+A note-only column mapping does not by itself distinguish Q from A from Z. The original hand map contains a direct second parameter: upward, home, or downward motion within the same finger territory. A piano note assigned only to the column preserves finger ownership but collapses these three directional states. The MIDI realization must decide where to restore the missing distinction.
+
+Several families of realization are possible. Different registers could encode the three rows; a thumb-held layer could select upper, home, or lower; note velocity or aftertouch could be quantized; brief neighboring notes could act as row markers; timing could distinguish taps from held or repeated events; pedals could provide state. Each choice changes the motor and error model. Velocity is continuous but difficult to reproduce categorically. Pedals preserve the hands but occupy the feet. Register is explicit but increases travel. Thumb layers are compact but produce chorded dependencies. Timing preserves the note inventory but increases decoder latency and ambiguity.
+
+No option should be selected merely because MIDI exposes it. The design question is which parameter can be learned and recovered reliably while preserving the intended transfer from touch typing. This leads to a more general distinction: the row may be encoded in the gesture, or inferred after the gesture.
+
+\subsection{Harmonic extension and musical rendering}
+
+The compact mapping need not remain confined to adjacent notes or single-note events. Its finger pattern can be stretched across wider chord voicings while preserving the assignment of symbolic columns to fingers. The same left-to-right motor skeleton may be distributed across a triad, seventh chord, open voicing, or arpeggio; octave displacement changes the sounding interval without necessarily changing which finger channel owns which symbolic family. In this sense, a compact five-position mapping supplies a fingering template that can be expanded harmonically rather than merely transposed as a rigid pitch sequence.
+
+Position within a chord can also contribute soft evidence about directional state. A channel event heard as the lower, middle, or upper member of a local triadic figure may favor the lower, home, or upper QWERTY row without making that correspondence absolute. Likewise, the ordering of a note within an arpeggio, its direction of approach, or its metrical position can act as a probabilistic indicator. These features need not carry the entire code. They can narrow the decoder's candidate set while lexical context resolves the remainder. Harmonic position thereby becomes another possible location for disambiguation: more structured than unrestricted language-model repair, but less categorical than a dedicated row key.
+
+This separation permits a further musical transformation. The symbolic stream can determine finger channels and candidate characters while an independent rendering layer transposes notes, changes register, reharmonizes the sequence, or routes voices through different filters. A sentence could therefore be made to resemble the tonal center, contour, timbre, or accompaniment pattern of a chosen song without altering the sentence's underlying channel sequence. The decoder need not identify that song in order to recover the text; musical resemblance belongs to the rendering map, not to symbolic validity. Conversely, a song-derived harmonic frame can constrain the available voicings and thereby supply additional priors to the decoder. The same performance may thus be read in two directions: as text whose motor skeleton has been orchestrated, or as music carrying a recoverable symbolic trace.
+
+\subsection{Swipe typing and the location of disambiguation}
+
+Swipe keyboards demonstrate that a motor trace need not be self-interpreting. A finger may pass through or near Q, W, E, A, and S without marking exact boundaries between intended letters, incidental crossings, and curvature caused by hand motion. Many candidate words can resemble the same noisy path. Gesture-keyboard systems therefore combine a spatial model with lexical and language models; recent work continues to make this division explicit, including phrase-level gesture decoding and language-model-supported flexible typing \cite{xu2022,ma2025}.
+
+The comparison reframes the missing directional state. Suppose an Eight-Letter MIDI event identifies a column but does not specify upper, home, or lower. The decoder receives an equivalence class such as
+\[
+[L_4]=\{W,S,X\}
+\]
+rather than a character. A sequence of channel events generates a lattice of possible strings. Lexical, syntactic, and application context can rank paths through that lattice. The raw gesture underdetermines the symbol; decoding repairs the signal into one or more admissible readings.
+
+This is not automatically desirable. Offloading distinctions to a decoder can reduce motor demand, but it also makes rare names, code, passwords, invented words, multilingual text, and deliberate misspellings harder to enter. It may conceal uncertainty by silently replacing an unusual intended string with a common one. It can make correction costs dominate initial entry gains. A self-disambiguating gesture gives the user more work but the decoder less authority. A predictive decoder gives the user less work but assumes a stronger prior over what may be said.
+
+The design variable is therefore the \emph{location of disambiguation}. At one extreme, every symbol is physically explicit. At the other, the gesture identifies only a broad candidate set and the decoder supplies most of the differentiation. Between them lie hybrid systems that permit ambiguous rapid entry while offering an explicit mode for literal text.
+
+Because a character address factors into finger identity and directional state, the two coordinates need not be equally uncertain, and a realization can concentrate decoding effort where its observation model is weakest. In a sensor arrangement that distinguishes fingers directly, or in a MIDI mapping that assigns separate note positions to their columns, the channel coordinate $c$ may be recoverable with high confidence, not because finger identity is directly present in the signal, but because the mapping between observed note and channel is itself fixed and known, so recovering $c$ reduces to a lookup rather than an inference. Direction remains the harder coordinate whenever the surface does not encode it structurally, as Section 4.4 discussed. A decoder that treats $c$ as observed and repairs only $d$ receives a candidate set $\{u,h,d\}$ conditioned on a known channel, rather than an unconstrained character inventory. This is narrower than whole-word gesture decoding, although swipe systems also exploit locally reliable spatial evidence, such as endpoints and proximity to particular keys, rather than treating the entire trace as uniformly ambiguous. The relevant advantage is therefore not that the Eight-Letter signal contains certainty where the swipe trace contains none, but that its uncertainty can be explicitly factored by parameter, so that whatever confidence the observation model does have can be assigned to the coordinate it actually supports.
+
+\section{Motor grammar as the invariant}
+
+\subsection{A substrate-independent description}
+
+Let a text-entry system be represented as
+\[
+E=(B,S,G,R,C),
+\]
+where $B$ is a bodily channel system, $S$ a material surface, $G$ a gesture alphabet, $R$ a decoding relation, and $C$ a context model. Conventional descriptions emphasize $S$: key dimensions, arrangement, travel, and labels. The Eight-Letter proposal begins with $B$, the allocation of symbol families to fingers, and asks how much of it can remain invariant when $S$ changes.
+
+An emitted observation $o$ does not necessarily identify a unique symbol $x$. Decoding is a relation
+\[
+R(o,C)\subseteq X^*,
+\]
+possibly with a ranking or probability distribution over candidates. A direct keyboard attempts to make $R$ nearly singleton at each key event. A swipe keyboard lets a whole trajectory constrain a word. A channel-only piano mapping may initially return three candidates per event. The system is usable when the combined constraints reduce the candidate set quickly enough and when users can inspect or correct the result.
+
+This formulation allows two devices to differ radically in appearance while sharing a motor grammar. If there exists a transformation $\phi$ between their gesture alphabets that preserves channel ownership, directional distinctions, and meaningful simultaneity, then learned competence may transfer even when absolute coordinates do not. Transfer will not be perfect because force, travel, key shape, hand span, and feedback differ. The point is to identify what could transfer and measure what does.
+
+\subsection{Constraint before realization}
+
+The finger-channel map is best understood as a constraint skeleton. It specifies that Q/A/Z remain associated with one channel, W/S/X with another, and so on; that index fingers branch; that row selection supplies a directional parameter; and that modifiers compose with primary events. It does not dictate whether the surface is made of plastic switches, piano keys, capacitive strips, wearable sensors, or tracked motion.
+
+A realization is admissible relative to this skeleton when it preserves the distinctions required for intended use. If a surface collapses upper, home, and lower, it must repair that collapse elsewhere. If it removes dedicated modifier keys, it must introduce mode, chord, timing, or context. If it changes index-finger branching, it has changed the grammar rather than merely translating it.
+
+This constraint-first description avoids two symmetrical mistakes. The first is surface essentialism: assuming that QWERTY competence consists in memorizing the current grid. The second is motor romanticism: assuming that any device preserving finger labels will inherit skilled performance. Transfer depends on feedback, timing, ergonomics, decoder behavior, and correction. The invariant is a hypothesis to be tested, not a guarantee.
+
+\subsection{Record, recognize, admit, commit}
+
+Ambiguous text entry can be separated into four operations. The device \emph{records} an event: note onset, key pressure, trace point, pedal state, or release time. A parser \emph{recognizes} candidate gestures or channel transitions. A decoder \emph{admits} candidate symbols or strings under spatial, lexical, grammatical, and application constraints. The interface then \emph{commits} one result to the document.
+
+These operations should not be conflated. Recording a C-sharp note does not determine that Q was intended. Recognizing the left-little-finger channel does not choose among Q, A, and Z. Admitting ``cat'' as a likely word does not warrant committing it when the user may be entering ``czt'' as an identifier. A well-designed decoder preserves the boundary between candidate generation and irreversible insertion.
+
+Swipe keyboards often make this pipeline visible only when it fails. The trace disappears, the chosen word appears, and alternatives may be offered after commitment. An experimental Eight-Letter system should expose uncertainty more deliberately. Candidate strings could remain provisional until a delimiter, release pattern, Space event, or explicit confirmation. Literal mode should remain available. The decoder should be able to say, in effect, ``this trace supports several continuations'' rather than silently converting probability into fact.
+
+\section{Comparative position}
+
+\subsection{Alternative letter layouts}
+
+Dvorak, Colemak, and other alternative layouts generally retain the compact key grid while reallocating letters to improve selected measures such as finger travel, hand alternation, or continuity with QWERTY. Their optimization target is largely the assignment of symbols to positions and fingers. The Eight-Letter Keyboard begins one level above that contest. It asks how any layout can be factored into finger channels and within-channel states, and which parts of trained ownership survive a change of surface.
+
+This means the proposal is not intrinsically QWERTY-exclusive. A Dvorak-trained user would bring a different symbol partition to the same eight-channel abstraction. What is conserved is not the English frequency profile or a universal letter assignment, but the user's acquired channel grammar. QWERTY is used here because it is the competence embodied in the prototypes.
+
+\subsection{Chorded keyboards and stenotype}
+
+Chorded keyboards increase symbolic capacity by interpreting simultaneous combinations. Stenotype goes further by encoding phonetic or orthographic units through structured chords, often producing syllables, words, or phrases with the aid of translation dictionaries. These systems make simultaneity primary. The Eight-Letter model can support chords, but its initial purpose is different: to preserve the sequential motor ownership of touch typing while relocating it.
+
+The distinction matters for learning. A chorded system may promise high efficiency after acquiring a new combinatorial vocabulary. A finger-channel translation promises partial reuse of an existing vocabulary, potentially at the cost of retaining QWERTY's historical asymmetries. Neither objective dominates universally. One optimizes a new code; the other studies invariance under transformation.
+
+\subsection{Gesture keyboards}
+
+Gesture keyboards preserve the visible QWERTY surface while replacing discrete taps with continuous paths. The learned spatial layout remains a prior for movement, but the decoder operates over whole-word shapes. The Eight-Letter MIDI system performs an almost complementary transformation: it may preserve finger ownership while changing visible geometry and turning rows into latent alternatives.
+
+Together they show that text entry has at least three separable resources: spatial layout, motor-channel allocation, and linguistic prediction. A design can preserve two while relaxing the third. Conventional tapping preserves spatial layout and channel allocation while using relatively little prediction. Swiping preserves layout and uses prediction while relaxing discrete channel events. A compressed piano mapping preserves channel allocation and may use prediction while replacing layout.
+
+\section{Implications and open questions}
+
+\subsection{What a general channel theory must specify}
+
+A general theory of finger-channel devices would need more than a list of symbols. It should specify the channel inventory, channel coupling, within-channel states, lateral branches, simultaneity rules, timing windows, modifier topology, feedback, decoder priors, correction procedures, and commitment policy. It should also distinguish a novice's visual search from an expert's motor production. The same hardware may implement different effective grammars at different skill levels.
+
+The theory should represent costs at several scales. A key may be close in Euclidean distance but assigned to a weak or overloaded finger. A gesture may be easy to produce but hard to decode. A predictive system may be fast for ordinary prose but hostile to source code. A mode switch may reduce ambiguity while increasing state errors. No single words-per-minute measure captures these tradeoffs.
+
+\subsection{A minimal experimental program}
+
+The proposed devices suggest a sequence of modest experiments. First, collect baseline QWERTY typing and classify errors by finger channel, direction, and index branch. Second, compare an unfolded direct MIDI mapping with the compressed channel mapping, separating initial learnability from expert speed. Third, test several row encodings---register, thumb layer, pedal, velocity, and decoder inference---with the same phrases. Fourth, transpose the pitch mapping and distinguish symbolic transfer from the physical effects of black-key geometry. Fifth, include prose, names, code, and nonsense strings to measure how decoder priors redistribute error.
+
+Useful dependent variables include entry rate, uncorrected and corrected error, correction distance, decoder entropy, candidate rank, channel confusion, fatigue, and retention after a delay. Logging should preserve raw MIDI onset, release, velocity, pedal, and timing data so later decoders can be compared without recollecting every gesture.
+
+The central transfer hypothesis can be stated plainly: a mapping that preserves familiar finger-to-column ownership should be learned faster than an equally complex mapping that randomizes that ownership. A stronger hypothesis is that errors under the preserved mapping will disproportionately remain within channel. A transposition hypothesis predicts stable symbolic performance across tonal centers after controlling for physical key geometry. A decoder hypothesis predicts that language priors will improve prose entry more than literal or out-of-vocabulary entry, with a corresponding risk of confident substitution.
+
+\subsection{Authority, privacy, and decoder dependence}
+
+Once disambiguation is moved downstream, an input method becomes partly a language policy. A dictionary defines which strings are readily recoverable. A language model ranks expected continuations. Application context may bias technical terms, contacts, or commands. The decoder can reduce effort, but it can also normalize the user's output toward what its training distribution recognizes.
+
+This has practical and epistemic consequences. Local decoding may protect raw gesture data and custom vocabulary. Transparent candidate lattices may reveal uncertainty. User-controlled dictionaries may preserve names and invented terms. Literal modes may prevent unwanted repair. A system designed around ambiguity must treat the user's capacity to override the decoder as part of the input grammar, not as an afterthought.
+
+The issue is especially sharp for the Eight-Letter Keyboard because its compressed form can generate large candidate sets. Prediction should assist recovery without becoming an invisible author. The ability to infer a likely string does not establish that the string was intended. Commitment requires a policy, and that policy should remain inspectable and reversible.
+
+\subsection{Beyond keyboards}
+
+The channel abstraction can be transported beyond piano keys. Wearable sensors could recognize finger identity and directional motion. A tabletop could provide eight touch zones with radial states. A split device could give each finger a small rocker or pressure surface. A rehabilitation interface could preserve a user's symbolic channel map while changing the required range of motion. None of these is automatically superior to a keyboard. They are useful because they separate learned ownership from inherited hardware.
+
+The same abstraction may also illuminate repair. When injury, device failure, or environmental constraint removes one gesture, the system need not discard the entire layout. It can re-realize the affected channel through another surface or decoder while preserving as much of the motor grammar as possible. Adaptation becomes a constrained remapping problem: change the minimum number of relations necessary to restore usable continuation.
+
+\section{Conclusion}
+
+The Eight-Letter Keyboard is a redescription before it is a product. It takes the familiar QWERTY surface apart and finds eight primary finger channels, three directional states, two index forks, shared thumbs, peripheral modifiers, and contextual composition. The hand-drawn artifact makes this organization visible. The 88-key ribbon demonstrates that the grid can be unfolded. The compressed MIDI variant asks whether the motor allocation can survive a more radical transformation into pitch.
+
+Historical piano-key writing and telegraph machines show that text and musical keyboards were not always separate conceptual species. Hughes and Ravizza used keyed musical geometry for symbolic work because the keyboard was already a mature technology of trained discrete action. The modern typewriter grid later concealed this shared ancestry by becoming overwhelmingly successful.
+
+Swipe typing supplies the missing contemporary lesson. An input gesture need not be unambiguous at the point of production. A decoder can combine noisy motor evidence with lexical and linguistic constraints. But this convenience moves authority. It changes whether distinctions are made by the hand, the surface, or the inference system, and it changes how unusual intentions are treated.
+
+The enduring object is therefore neither the printed keycap nor the MIDI note. It is a structured relation among body, gesture, surface, decoder, and context. Finger-channel invariance names one candidate relation within that larger system. The prototypes make it tangible enough to test: transpose it, unfold it, compress it, decode it, and observe which learned distinctions remain. What survives those transformations is a better candidate for the motor grammar of typing than the keyboard's visible arrangement alone.
+
+\begin{thebibliography}{9}
+\bibitem{hughesmuseum}
+Science Museum Group. ``Hughes' Printing Telegraph, 1860.'' Collection object CO32952. \url{https://collection.sciencemuseumgroup.org.uk/objects/co32952/hughes-printing-telegraph-1860}.
+
+\bibitem{ravizzamuseum}
+Museo Nazionale Scienza e Tecnologia Leonardo da Vinci. ``Cembalo Scrivano.'' Collection object IT-MUST-NTR001-008501. \url{https://collezioni-online.museoscienza.org/detail/IT-MUST-NTR001-008501/cembalo-scrivano}.
+
+\bibitem{xu2022}
+Xu, Zheer, et al. ``Phrase-Gesture Typing on Smartphones.'' In \emph{Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology}, 2022. \url{https://doi.org/10.1145/3526113.3545683}.
+
+\bibitem{ma2025}
+Ma, Yuntao, et al. ``LLM Powered Text Entry Decoding and Flexible Typing on Smartphones.'' In \emph{Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems}, 2025. \url{https://doi.org/10.1145/3706598.3714314}.
+
+\bibitem{cui2019}
+Cui, Wenzhe, et al. ``HotStrokes: Word-Gesture Shortcuts on a Trackpad.'' In \emph{Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems}, 2019. \url{https://doi.org/10.1145/3290605.3300395}.
+
+\bibitem{bellona2017}
+Bellona, Jon. ``Physical Intentions: Exploring Michel Waisvisz's The Hands (Movement 1).'' \emph{Organised Sound} 22, no. 3 (2017). \url{https://doi.org/10.1017/S1355771817000288}.
+\end{thebibliography}
+
+\end{document}
+

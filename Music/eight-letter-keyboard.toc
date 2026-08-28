@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Introduction: the keyboard beneath the keyboard}{3}{section.1}%
+\contentsline {section}{\numberline {2}A divided historical lineage}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}When a keyboard did not yet imply QWERTY}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Convergence and its consequences}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}QWERTY redescribed as eight primary channels}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}From coordinates to ownership}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The index fork and shared channels}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Motor knowledge without a complete visual map}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Two piano realizations}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The unfolded 88-key ribbon}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}The compressed scale-degree mapping}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Transposition: symbolic and physical invariance}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Recovering the directional parameter}{8}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Harmonic extension and musical rendering}{9}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Swipe typing and the location of disambiguation}{9}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Motor grammar as the invariant}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}A substrate-independent description}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Constraint before realization}{11}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Record, recognize, admit, commit}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Comparative position}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Alternative letter layouts}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Chorded keyboards and stenotype}{12}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Gesture keyboards}{12}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Implications and open questions}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}What a general channel theory must specify}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}A minimal experimental program}{13}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Authority, privacy, and decoder dependence}{14}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Beyond keyboards}{14}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Conclusion}{14}{section.8}%
