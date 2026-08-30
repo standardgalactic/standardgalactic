@@ -48,7 +48,7 @@ Intelligence is the discovery of "admissible paths"—trajectories that allow a 
 
 ## Conclusion: The Future of Cross-Domain Thinking
 
-When we view ideas through this geometric lens, the silos of human knowledge begin to dissolve. Physics, cognition, and economics are not separate worlds; they are simply the same game of constraint satisfaction played at different Four Resolutions:
+When we view ideas through this geometric lens, the silos of human knowledge begin to dissolve. Physics, cognition, and economics are not separate worlds; they are simply the same game of constraint satisfaction played at four different resolutions:
 
 1. The Substrate (the physical world)
 2. The Projection (our mental models)
