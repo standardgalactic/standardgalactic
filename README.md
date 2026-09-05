@@ -77,13 +77,23 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
-# Recent Essays and Working Papers
+# Work in Progress
 
-[Safe Mode: Security Vocabulary and the Platforms That Execute Belief](https://standardgalactic.github.io/kitbash/cognitive-dynamics/safe-mode.pdf) — *New*
+[Continuation Fields](https://standardgalactic.github.io/laboratory/working/continuation-fields.pdf)
 
-[Binding Before Revision: Symbolic Structure and the Admissibility Boundary in Neural Representations](https://standardgalactic.github.io/kitbash/cognitive-dynamics/binding-before-revision.pdf) — *New*
+[Grounding Before Collapse](https://standardgalactic.github.io/laboratory/working/grounding-before-collapse.pdf)
 
-[Compression Without Verification: Self-Distillation and the Reshaping of Continuation Geometry](https://standardgalactic.github.io/laboratory/working/compression-without-verification.pdf) — *New*
+[Structure Through Change](https://standardgalactic.github.io/laboratory/working/structure-through-change.pdf)
+
+[Gravity as Entropic Descent](https://standardgalactic.github.io/library/astrophysics/gravity-as-entropic-descent.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/library/astrophysics/)
+
+[Safe Mode](https://standardgalactic.github.io/kitbash/cognitive-dynamics/safe-mode.pdf)
+
+[Binding Before Revision](https://standardgalactic.github.io/kitbash/cognitive-dynamics/binding-before-revision.pdf)
+
+[Compression Without Verification](https://standardgalactic.github.io/laboratory/working/compression-without-verification.pdf)
 
 [Emotional Differentiation](https://standardgalactic.github.io/laboratory/source/emotional-differentiation.pdf)
 
@@ -108,9 +118,9 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Inference Under Constraint](https://standardgalactic.github.io/kitbash/cognitive-dynamics/inference-under-constraint.pdf) – *Incomplete*
 -->
-[Depth Before Derivation](https://standardgalactic.github.io/laboratory/depth_before_derivation.pdf) — *New*
+[Depth Before Derivation](https://standardgalactic.github.io/laboratory/depth_before_derivation.pdf)
 
-[Distinction and Continuation](https://standardgalactic.github.io/laboratory/distinction-and-continuation.pdf) — *New* 
+[Distinction and Continuation](https://standardgalactic.github.io/laboratory/distinction-and-continuation.pdf) 
 
 [Distinction Holonomy](https://standardgalactic.github.io/research-projects/unsorted/distinction-holonomy.pdf)
 

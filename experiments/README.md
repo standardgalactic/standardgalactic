@@ -16,6 +16,12 @@ The projects in this directory are intentionally self-contained. Each experiment
 │   ├── dos-ops-simulator.css
 │   ├── dos-ops-simulator.js
 │   └── index.html
+├── continuation-field/
+│   └── index.html
+├── ising-synchronizer/
+│   └── index.html
+├── mandelbrot-life/
+│   └── index.html
 ├── kali-lab/
 │   ├── LAB_NOTES.md
 │   ├── README.md
@@ -46,6 +52,18 @@ The projects in this directory are intentionally self-contained. Each experiment
     ├── terminal-simulator.css
     └── terminal-simulator.js
 ```
+
+## Field Easter Eggs
+
+These three browser-native studies hide compact dynamical systems behind deliberately minimal interfaces.
+
+[Five-Dimensional Ising Synchronizer](https://standardgalactic.github.io/standardgalactic/experiments/ising-synchronizer/) projects five coupled spin lattices into a single colour field. Temperature and inter-layer coupling expose the transition from local disagreement to collective synchronization.
+
+[Mandelbrot / Life Boundary Study](https://standardgalactic.github.io/standardgalactic/experiments/mandelbrot-life/) overlays a temporal cellular automaton on a zoomable Mandelbrot parameter field. The juxtaposition emphasizes their shared use of iteration while preserving the distinction between spatial parameter boundaries and evolving local states.
+
+[Continuation Field](https://standardgalactic.github.io/standardgalactic/experiments/continuation-field/) turns Pop, Refuse, Bind, and Collapse into operations on persistent trajectories. Collapse removes the present particles while leaving their accumulated paths as a visible residue.
+
+All three are single-file experiments. Open the corresponding `index.html` directly, or use the hosted links above.
 
 ## Brick Toss
 
