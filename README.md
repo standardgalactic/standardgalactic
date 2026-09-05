@@ -77,7 +77,13 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
-# Work in Progress
+# Recent Essays and Working Papers
+
+[Safe Mode: Security Vocabulary and the Platforms That Execute Belief](https://standardgalactic.github.io/kitbash/cognitive-dynamics/safe-mode.pdf) — *New*
+
+[Binding Before Revision: Symbolic Structure and the Admissibility Boundary in Neural Representations](https://standardgalactic.github.io/kitbash/cognitive-dynamics/binding-before-revision.pdf) — *New*
+
+[Compression Without Verification: Self-Distillation and the Reshaping of Continuation Geometry](https://standardgalactic.github.io/laboratory/working/compression-without-verification.pdf) — *New*
 
 [Emotional Differentiation](https://standardgalactic.github.io/laboratory/source/emotional-differentiation.pdf)
 
@@ -335,15 +341,11 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [Frozen Processes](https://standardgalactic.github.io/playfloor/reachability/frozen_processes.pdf)
 
-A process-primary framework arguing that many things we treat as fundamental entities are actually stable residues of trajectories moving through spaces of possibility. The central question is shifted from "What exists?" to "What remains reachable, and under what conditions?"
-
 * [Topographies of Possibility](https://standardgalactic.github.io/playfloor/reachability/Topographies_of_Possibility.pdf)
 
 * [Notes](https://standardgalactic.github.io/playfloor/reachability/Frozen_Processes-notes.pdf)
 
 [Belief Geometry and Reachability](https://standardgalactic.github.io/playfloor/reachability/belief_geometry.pdf)
-
-A synthesis of computational mechanics, predictive inference, and reachability theory, arguing that belief states are coordinates on a manifold of accessible futures and that reasoning is best understood as navigation through that geometry.
 
 * [The Reachability Manifold](https://standardgalactic.github.io/playfloor/reachability/The_Reachability_Manifold.pdf)
 
@@ -1139,15 +1141,9 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [Vanity Publishing](https://standardgalactic.github.io/antivenom/boundaries/vanity_publishing.pdf)
 
-The Author as Customer: Vanity Publishing and the Structural Inversion of the Press argues that vanity publishing represents a fundamental economic inversion in which creators replace audiences as the primary customers, turning participation itself into the product while shifting risk away from institutions.
-
 [Synthetic Trajectories](https://standardgalactic.github.io/antivenom/boundaries/synthetic_trajectories.pdf)
 
-Synthetic Reification and Epistemic Constraint Deformation shows that any reconstructive cognitive system governed by coherence rather than provenance will inevitably absorb high-fidelity synthetic content as truth, deforming belief and identity through repeated admissible inputs.
-
 [Escape Velocity](https://standardgalactic.github.io/antivenom/boundaries/escape_velocity.pdf)
-
-Escape Velocity: Austerity, Field Dynamics, and the Endogenous Regulation of Transformation reframes austerity as a structural mechanism that raises the threshold required for systemic change by jointly constraining resources, fragmenting agency, and compressing the space of reachable alternatives.
 
 * [Audio Overviews](https://standardgalactic.github.io/antivenom/boundaries/)
 
@@ -1477,14 +1473,6 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 * [Audio Overview](https://standardgalactic.github.io/library/computing/)
 -->
-**Geometric Bayesianism with Sparse Heuristics**
-
-In biological systems, sparsity emerges as a natural consequence of physiological pressures, including energetic constraints, signal noise, and chemical gradients, obviating the need for explicit computational penalties to enforce minimal network complexity.
-
-Metabolic costs, such as ATP consumption in neural and cellular activity, favor sparse activation patterns, acting as an implicit prior for minimal energy configurations. Environmental noise and signal overlap amplify high-salience, sparsely distributed signals, while thermodynamic gradients drive systems toward low-entropy states.
-
-This Natural Sparsity Principle underpins the efficiency of biological cognition and informs computational models like Geometric Bayesianism with Sparse Heuristics (GBSH), suggesting that sparse proxy navigation can be an emergent property in biomimetic systems, enhancing their adaptability and resilience in noisy, resource-constrained environments.
-
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
 <!--
 [Ovo de Páscoa especial para grupos de estudo brasileiros](https://standardgalactic.github.io/animal-social/)
