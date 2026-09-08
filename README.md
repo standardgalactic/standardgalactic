@@ -77,13 +77,25 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
-# Work in Progress
+# Work in Pregress
 
-[Continuation Fields](https://standardgalactic.github.io/laboratory/working/continuation-fields.pdf)
+[Degeneracy Before Collapse](https://standardgalactic.github.io/laboratory/degeneracy-before-collapse.pdf)
+
+[The Stigmergic Berm](https://standardgalactic.github.io/userland/stigmergic-berm.pdf)
+
+[Signal Before System](https://standardgalactic.github.io/userland/signal-before-system.pdf)
+
+[Extraction Before Acceleration](https://standardgalactic.github.io/userland/extraction-before-acceleration.pdf)
 
 [Grounding Before Collapse](https://standardgalactic.github.io/laboratory/working/grounding-before-collapse.pdf)
 
 [Structure Through Change](https://standardgalactic.github.io/laboratory/working/structure-through-change.pdf)
+
+[Layering the World](https://standardgalactic.github.io/userland/layering-the-world.pdf)
+
+[Inscription Before Collusion](https://standardgalactic.github.io/userland/inscription-before-collusion.pdf)
+
+* [Userland](https://standardgalactic.github.io/userland) — *Interactive Fiction*
 
 [Gravity as Entropic Descent](https://standardgalactic.github.io/library/astrophysics/gravity-as-entropic-descent.pdf)
 
@@ -565,6 +577,12 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 * [Notes](https://standardgalactic.github.io/antivenom/futurology/Xylomorphic_Infrastructure.pdf)
 
+# Genealogical Philosophy
+
+[Form Befere Command](https://standardgalactic.github.io/userland/form-before-command.pdf)
+
+[Prejudice Before Agency](https://standardgalactic.github.io/userland/prejudice-before-agency.pdf)
+
 # The Admissibility Program
 
 [The Admissibility Crisis](https://standardgalactic.github.io/alphabet/document/admissibility_crisis.pdf)
@@ -677,6 +695,8 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [Audio Overviews](https://standardgalactic.github.io/playfloor/working/)
 -->
 # Alignment Research
+
+[Dangerous Sounding Speech](https://standardgalactic.github.io/laboratory/dangerous-sounding-speech.pdf)
 
 [Against the Extinction Thesis](https://standardgalactic.github.io/alignment/against-the-extinction-thesis.pdf)
 
@@ -1229,6 +1249,8 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 -->
 
 # Just for Fun
+
+[Chemical Identity Is Not Causation](https://standardgalactic.github.io/laboratory/chemical-identity-is-not-causation.pdf)
 
 [Git - Learn to Reason About History](https://standardgalactic.github.io/computation/version-control/git-series-plan.pdf) — *Forthcoming*
 
