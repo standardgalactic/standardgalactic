@@ -79,11 +79,21 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
-[Continuation Fields](https://standardgalactic.github.io/laboratory/working/continuation-fields.pdf)
+[The Stigmergic Berm](https://standardgalactic.github.io/userland/stigmergic-berm.pdf)
+
+[Signal Before System](https://standardgalactic.github.io/userland/signal-before-system.pdf)
+
+[Extraction Before Acceleration](https://standardgalactic.github.io/userland/extraction-before-acceleration.pdf)
 
 [Grounding Before Collapse](https://standardgalactic.github.io/laboratory/working/grounding-before-collapse.pdf)
 
 [Structure Through Change](https://standardgalactic.github.io/laboratory/working/structure-through-change.pdf)
+
+[Layering the World](https://standardgalactic.github.io/userland/layering-the-world.pdf)
+
+[Inscription Before Collusion](https://standardgalactic.github.io/userland/inscription-before-collusion.pdf)
+
+* [Userland](https://standardgalactic.github.io/userland) — *Interactive Fiction*
 
 [Gravity as Entropic Descent](https://standardgalactic.github.io/library/astrophysics/gravity-as-entropic-descent.pdf)
 
@@ -564,6 +574,12 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 [The Xylomorphic Premise](https://standardgalactic.github.io/antivenom/futurology/xylomorphic-premise.pdf)
 
 * [Notes](https://standardgalactic.github.io/antivenom/futurology/Xylomorphic_Infrastructure.pdf)
+
+# Genealogical Philosophy
+
+[Form Befere Command](https://standardgalactic.github.io/userland/form-before-command.pdf)
+
+[Prejudice Before Agency](https://standardgalactic.github.io/userland/prejudice-before-agency.pdf)
 
 # The Admissibility Program
 
