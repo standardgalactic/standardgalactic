@@ -270,9 +270,9 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [Parenthetical Asides](https://standardgalactic.github.io/calculus/processing/parenthetical-asides.pdf)
 
-[From Wave Dynamics to Continuation Dynamics](https://standardgalactic.github.io/research-projects/history/wave_to_continuation_dynamics.pdf)
+[From Wave Dynamics to Continuation Dynamics](https://standardgalactic.github.io/history/wave_to_continuation_dynamics.pdf)
 
-* [Retro Comic Infographic Summary](https://standardgalactic.github.io/research-projects/history/continuation-dynamics-comic.pdf)
+* [Retro Comic Infographic Summary](https://standardgalactic.github.io/history/continuation-dynamics-comic.pdf)
 
 [What Survives Reconstruction](https://standardgalactic.github.io/alphabet/pipeline/what-survives-reconstruction.pdf)
 
@@ -288,9 +288,9 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [Publication as Projection](https://standardgalactic.github.io/alphabet/pipeline/publication_as_projection.pdf)
 
-[Terminal and Traversal Dependent Texts](https://standardgalactic.github.io/research-projects/history/terminal-and-traversal.pdf)
+[Terminal and Traversal Dependent Texts](https://standardgalactic.github.io/history/terminal-and-traversal.pdf)
 
-[Repair Categories](https://standardgalactic.github.io/research-projects/history/repair-categories.pdf)
+[Repair Categories](https://standardgalactic.github.io/history/repair-categories.pdf)
 
 [Hierarchical Continuation](https://standardgalactic.github.io/robotics/hierarchical_continuation.pdf)
 
@@ -308,34 +308,34 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [States Without Histories](https://standardgalactic.github.io/alphabet/roadmap/states_without_histories.pdf)
 
-[Intelligence as Perspectival Convergence](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/intelligence-as-perspectival-convergence.pdf)
+[Intelligence as Perspectival Convergence](https://standardgalactic.github.io/admissibility-lab/processing/intelligence-as-perspectival-convergence.pdf)
 
 <!--
-* [Perspectival Convergence](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/Perspectival_Convergence.pdf)
+* [Perspectival Convergence](https://standardgalactic.github.io/admissibility-lab/processing/Perspectival_Convergence.pdf)
 
-* [Unbundling Intelligence](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/Unbundling_Intelligence.pdf)
+* [Unbundling Intelligence](https://standardgalactic.github.io/admissibility-lab/processing/Unbundling_Intelligence.pdf)
 
-* [Path Over State](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/Path_Over_State.pdf)
+* [Path Over State](https://standardgalactic.github.io/admissibility-lab/processing/Path_Over_State.pdf)
 -->
-[Containers Before Contents](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/containers-before-contents.pdf)
+[Containers Before Contents](https://standardgalactic.github.io/admissibility-lab/processing/containers-before-contents.pdf)
 
 <!-- 
-* [Kinetic Containment](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/Kinetic_Containment.pdf)
+* [Kinetic Containment](https://standardgalactic.github.io/admissibility-lab/processing/Kinetic_Containment.pdf)
 -->
-[Copies Before Originals](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/copies-before-originals.pdf)
+[Copies Before Originals](https://standardgalactic.github.io/admissibility-lab/processing/copies-before-originals.pdf)
 
 <!--
-* [The Geometry of Convergence](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/The_Geometry_of_Convergence.pdf)
+* [The Geometry of Convergence](https://standardgalactic.github.io/admissibility-lab/processing/The_Geometry_of_Convergence.pdf)
 -->
-[Autobiographical Erasure](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/autobiographical-erasure.pdf)
+[Autobiographical Erasure](https://standardgalactic.github.io/admissibility-lab/processing/autobiographical-erasure.pdf)
 
 <!--
-* [The Admissibility Manifold](https://standardgalactic.github.io/research-projects/admissibility-lab/processing/The_Admissibility_Manifold-notes.pdf) — *Notes*
+* [The Admissibility Manifold](https://standardgalactic.github.io/admissibility-lab/processing/The_Admissibility_Manifold-notes.pdf) — *Notes*
 -->
 
-[The Autonomy of Refusal](https://standardgalactic.github.io/research-projects/textbook/autonomy-of-refusal.pdf) — *New Revision*
+[The Autonomy of Refusal](https://standardgalactic.github.io/textbook/autonomy-of-refusal.pdf) — *New Revision*
 
-[Audio Overviews](https://standardgalactic.github.io/research-projects/textbook/)
+[Audio Overviews](https://standardgalactic.github.io/textbook/)
 
 <!--
 [Representation Without Faithfulness](https://standardgalactic.github.io/alphabet/roadmap/representation-without-faithfulness.pdf)
@@ -371,19 +371,19 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [Distinction Engine](https://standardgalactic.github.io/linguistics/) — *Audio Overviews*
 
-[Reality Is What Can Be Reached](https://standardgalactic.github.io/research-projects/philosophy/reality_reachability.pdf)
+[Reality Is What Can Be Reached](https://standardgalactic.github.io/philosophy/reality_reachability.pdf)
 
-* [The Reachability Ontology](https://standardgalactic.github.io/research-projects/philosophy/The_Reachability_Ontology.pdf)
+* [The Reachability Ontology](https://standardgalactic.github.io/philosophy/The_Reachability_Ontology.pdf)
 
-[Astrophysics After the Uniform Object](https://standardgalactic.github.io/research-projects/philosophy/astrophysics_after_uniform_object.pdf)
+[Astrophysics After the Uniform Object](https://standardgalactic.github.io/philosophy/astrophysics_after_uniform_object.pdf)
 <!--
-* [Beyond the Uniform Object](https://standardgalactic.github.io/research-projects/philosophy/Beyond_the_Uniform_Object.pdf)
-[Reconstruction and Distinction](https://standardgalactic.github.io/research-projects/philosophy/reconstruction_and_distinction.pdf)
+* [Beyond the Uniform Object](https://standardgalactic.github.io/philosophy/Beyond_the_Uniform_Object.pdf)
+[Reconstruction and Distinction](https://standardgalactic.github.io/philosophy/reconstruction_and_distinction.pdf)
 
-* [The Reconstruction Imperative](https://standardgalactic.github.io/research-projects/philosophy/The_Reconstruction_Imperative-notes.pdf)
+* [The Reconstruction Imperative](https://standardgalactic.github.io/philosophy/The_Reconstruction_Imperative-notes.pdf)
 -->
 
-[Latent Structure](https://standardgalactic.github.io/research-projects/philosophy) — *Audio Visualizers*
+[Latent Structure](https://standardgalactic.github.io/philosophy) — *Audio Visualizers*
 
 [Frozen Processes](https://standardgalactic.github.io/playfloor/reachability/frozen_processes.pdf)
 
@@ -533,9 +533,9 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 * [The Engine of Intelligence](https://standardgalactic.github.io/memnet/sparse-representations/) — *Audio Overview*
 
-[Morphology as Computation](https://standardgalactic.github.io/research-projects/epistemology/morphology-as-computation.pdf)
+[Morphology as Computation](https://standardgalactic.github.io/epistemology/morphology-as-computation.pdf)
 
-* [Why Physical Boundaries Define Intelligence](https://standardgalactic.github.io/research-projects/epistemology/) — *Audio Overview*
+* [Why Physical Boundaries Define Intelligence](https://standardgalactic.github.io/epistemology/) — *Audio Overview*
 
 [Observable Classicalization](https://standardgalactic.github.io/alphabet/working/observable-classicalization.pdf)
 -->
@@ -609,7 +609,7 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 # The Admissibility Program
 
-[Admssible Degradation](https://standardgalactic.github.io/research-projects/admissibility-lab/admissible-degradation.pdf)
+[Admssible Degradation](https://standardgalactic.github.io/admissibility-lab/admissible-degradation.pdf)
 
 [The Witness Plane](https://standardgalactic.github.io/alphabet/document/the-witness-plane.pdf)
 
@@ -640,11 +640,11 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [The Ecology of Distinctions](https://standardgalactic.github.io/spherepop/textbook/The_Ecology_of_Distinctions.pdf)
 
 <!--
-[The Ecology of Distinctions](https://standardgalactic.github.io/research-projects/textbook/The_Ecology_of_Distinctions.pdf)
+[The Ecology of Distinctions](https://standardgalactic.github.io/textbook/The_Ecology_of_Distinctions.pdf)
 
-* [Distinction Ecology](https://standardgalactic.github.io/research-projects/textbook/Distinction_Ecology.pdf)
+* [Distinction Ecology](https://standardgalactic.github.io/textbook/Distinction_Ecology.pdf)
 
-* [Notes](https://standardgalactic.github.io/research-projects/textbook/Distinction_Ecology-notes.pdf)
+* [Notes](https://standardgalactic.github.io/textbook/Distinction_Ecology-notes.pdf)
 
 [Flyxion Project Map](https://standardgalactic.github.io/playfloor/coordinates/flyxion_project_map-core.pdf)
 -->
@@ -666,21 +666,21 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 <!--
 [Audio Overviews](https://standardgalactic.github.io/playfloor/coordinates/)
 
-[The Eight-Letter Keyboard](https://standardgalactic.github.io/research-projects/admissibility-lab/eight_letter_keyboard.pdf)
+[The Eight-Letter Keyboard](https://standardgalactic.github.io/admissibility-lab/eight_letter_keyboard.pdf)
 
-* [The Eight-Letter Motor Phonology](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Eight_Letter_Motor_Phonology.pdf)
+* [The Eight-Letter Motor Phonology](https://standardgalactic.github.io/admissibility-lab/The_Eight_Letter_Motor_Phonology.pdf)
 
-[Motor Phonology and Symbolic Reachability](https://standardgalactic.github.io/research-projects/admissibility-lab/motor_phonology.pdf)
+[Motor Phonology and Symbolic Reachability](https://standardgalactic.github.io/admissibility-lab/motor_phonology.pdf)
 
-* [The Motor Manifold](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Motor_Manifold.pdf)
+* [The Motor Manifold](https://standardgalactic.github.io/admissibility-lab/The_Motor_Manifold.pdf)
 
-* [The Reconstruction Imperative](https://standardgalactic.github.io/research-projects/admissibility-lab/The_Reconstruction_Imperative-extended.pdf)
+* [The Reconstruction Imperative](https://standardgalactic.github.io/admissibility-lab/The_Reconstruction_Imperative-extended.pdf)
 
-[Continuations Before Objects](https://standardgalactic.github.io/research-projects/admissibility-lab/continuations_before_objects.pdf)
+[Continuations Before Objects](https://standardgalactic.github.io/admissibility-lab/continuations_before_objects.pdf)
 
-* [Reachability Geometry](https://standardgalactic.github.io/research-projects/admissibility-lab/Reachability_Geometry.pdf)
+* [Reachability Geometry](https://standardgalactic.github.io/admissibility-lab/Reachability_Geometry.pdf)
 
-[Audio Overviews](https://standardgalactic.github.io/research-projects/admissibility-lab/)
+[Audio Overviews](https://standardgalactic.github.io/admissibility-lab/)
 -->
 [Constraint, Continuity, and Cognitive Structure](https://standardgalactic.github.io/alphabet/document/autoregression.pdf)
 
@@ -927,9 +927,9 @@ A cosmology in which matter, galaxies, stars, life, and other complex structures
 
 [Mesoscale Matter as Constrained Field Dynamics](https://standardgalactic.github.io/calculus/mesoscale_matter.pdf)
 
-[Semantic Relaxation Networks](https://standardgalactic.github.io/research-projects/intelligence/semantic-relaxation-networks.pdf)
+[Semantic Relaxation Networks](https://standardgalactic.github.io/intelligence/semantic-relaxation-networks.pdf)
 
-* [Why Next Token Prediction Is Not Intelligence](https://standardgalactic.github.io/research-projects/intelligence/) — *Audio Overviews*
+* [Why Next Token Prediction Is Not Intelligence](https://standardgalactic.github.io/intelligence/) — *Audio Overviews*
 
 [Kernel Operators, Memory, and Field-Theoretic Dynamics](https://standardgalactic.github.io/calculus/kernel-memory.pdf)
 
@@ -1188,11 +1188,11 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [The Ecology of Constraints](https://standardgalactic.github.io/alphabet/example/ecology-of-constraints.pdf)
 <!--
-[Bayesian Photonics](https://standardgalactic.github.io/research-projects/photonics/bayesian-photonics.pdf)
+[Bayesian Photonics](https://standardgalactic.github.io/photonics/bayesian-photonics.pdf)
 
-* [Trajectory Space Physics](https://standardgalactic.github.io/research-projects/photonics/Trajectory_Space_Physics.pdf) — *Notes*
+* [Trajectory Space Physics](https://standardgalactic.github.io/photonics/Trajectory_Space_Physics.pdf) — *Notes*
 
-* [Geometric Defense Mechanisms](https://standardgalactic.github.io/research-projects/photonics/) — *Audio Overview*
+* [Geometric Defense Mechanisms](https://standardgalactic.github.io/photonics/) — *Audio Overview*
 -->
 
 [Constraint Geometry Across Scales](https://standardgalactic.github.io/alphabet/constraint-geometry/field-space.pdf)
@@ -1231,9 +1231,9 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 * [Physical Objects Are Mathematical Constraints](https://standardgalactic.github.io/research-projects/working/topology.html) — *Audio Overview*
 
-[Trajectory Inference](https://standardgalactic.github.io/research-projects/rsvp-lab/trajectory_inference.pdf)
+[Trajectory Inference](https://standardgalactic.github.io/rsvp-lab/trajectory_inference.pdf)
 
-* [Everything Is a Slow-Moving Verb](https://standardgalactic.github.io/research-projects/rsvp-lab/) — *Audio Overview*
+* [Everything Is a Slow-Moving Verb](https://standardgalactic.github.io/rsvp-lab/) — *Audio Overview*
 
 [Projection, Constraint, and Irreversibility](https://standardgalactic.github.io/guardrails/projection_constraint_irreversibility.pdf)
 
@@ -1417,7 +1417,7 @@ This book develops a formal mathematical framework for analyzing consistency, ad
   </a>
 </div>
 
-[Evolutionary Development](https://standardgalactic.github.io/research-projects/history/Evolutionary%20Development.pdf)
+[Evolutionary Development](https://standardgalactic.github.io/history/Evolutionary%20Development.pdf)
 
 ## Generative Art
 
