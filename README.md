@@ -79,6 +79,26 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Following the Evaluator](https://standardgalactic.github.io/history/following-the-evaluator.pdf)
+
+[Ablation Invariance](https://standardgalactic.github.io/history/ablation_invariance.pdf)
+
+[Architectures of Impunity](https://standardgalactic.github.io/hyperbionic-reading/Architectures_of_Impunity.pdf)
+
+[Allocation of Uncertainty](https://standardgalactic.github.io/hyperbionic-reading/allocation-of-uncertainty.pdf)
+
+[Evidentiary Decoupling](https://standardgalactic.github.io/hyperbionic-reading/evidentiary-decoupling.pdf)
+
+[The Forgotten Specification](https://standardgalactic.github.io/hyperbionic-reading/forgotten-specification.pdf)
+
+[Hyperbionic Reading](https://standardgalactic.github.io/hyperbionic-reading/hyperbionic_reading.pdf)
+
+[The Value of Floods](https://standardgalactic.github.io/hyperbionic-reading/value-of-floods.pdf)
+
+[Geometry of Cellular Possibility](https://standardgalactic.github.io/history/geometry-of-cellular-possibility.pdf)
+
+[Decadence as Transformation](https://standardgalactic.github.io/history/decadence-as-transformation.pdf)
+
 [Manufactured Necessity](https://standardgalactic.github.io/diatribe/manufactured-necessity.pdf)
 
 [Conditioned Emptiness](https://standardgalactic.github.io/diatribe/conditioned-emptiness.pdf)
@@ -729,6 +749,8 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [Dangerous Sounding Speech](https://standardgalactic.github.io/laboratory/dangerous-sounding-speech.pdf)
 
 [Arranged Conditions](https://standardgalactic.github.io/research-projects/unsorted/arranged-conditions.pdf)
+
+[P(doom)](https://standardgalactic.github.io/stylometrics/pdoom.pdf)
 
 [Against the Extinction Thesis](https://standardgalactic.github.io/alignment/against-the-extinction-thesis.pdf)
 
@@ -1431,9 +1453,9 @@ This book develops a formal mathematical framework for analyzing consistency, ad
 </div>
 
 ## Psychonomics
-
-[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) 
-
+<!--
+[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) — *Early Draft*
+-->
 [The Refractive Self](https://standardgalactic.github.io/alphabet/science/the_refractive_self.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/science/)
