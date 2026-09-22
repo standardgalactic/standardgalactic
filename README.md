@@ -79,6 +79,51 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 # Work in Progress
 
+[Steel Sky](https://standardgalactic.github.io/steel-sky/)
+
+[The Person Behind the Interface](https://standardgalactic.github.io/antivenom/mind/person-behind-the-interface.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/mind/)
+
+[Adversaria: A Public Claim Graph](https://github.com/standardgalactic/adversaria) 
+
+[Making Thought Visible](https://github.com/standardgalactic/drawing/blob/main/README.md)
+
+[Artificial Meat](https://github.com/standardgalactic/research-projects/blob/main/engineering/README.md)
+
+[Cutaway Reader](https://github.com/standardgalactic/cutaway-reader/blob/main/README.md)
+
+[Following the Evaluator](https://standardgalactic.github.io/history/following-the-evaluator.pdf)
+
+[The Calculus of Disposition](https://standardgalactic.github.io/portable-warrant/calculus-of-disposition.pdf)  — *Textbook*
+
+[The Uses of the Unfinished](https://standardgalactic.github.io/portable-warrant/unfinished.pdf)
+
+[The Portable Warrant](https://standardgalactic.github.io/portable-warrant/portable-warrant.pdf)
+
+[Open Threads Ledger](https://standardgalactic.github.io/laboratory/report/open-threads-ledger-full.pdf)
+<!--
+[Claim Audit Report](https://standardgalactic.github.io/laboratory/report/)
+-->
+
+[Ablation Invariance](https://standardgalactic.github.io/history/ablation_invariance.pdf)
+
+[Architectures of Impunity](https://standardgalactic.github.io/hyperbionic-reading/Architectures_of_Impunity.pdf)
+
+[Allocation of Uncertainty](https://standardgalactic.github.io/hyperbionic-reading/allocation-of-uncertainty.pdf)
+
+[Evidentiary Decoupling](https://standardgalactic.github.io/hyperbionic-reading/evidentiary-decoupling.pdf)
+
+[The Forgotten Specification](https://standardgalactic.github.io/hyperbionic-reading/forgotten-specification.pdf)
+
+[Hyperbionic Reading](https://standardgalactic.github.io/hyperbionic-reading/hyperbionic_reading.pdf)
+
+[The Value of Floods](https://standardgalactic.github.io/hyperbionic-reading/value-of-floods.pdf)
+
+[Geometry of Cellular Possibility](https://standardgalactic.github.io/history/geometry-of-cellular-possibility.pdf)
+
+[Decadence as Transformation](https://standardgalactic.github.io/history/decadence-as-transformation.pdf)
+
 [Manufactured Necessity](https://standardgalactic.github.io/diatribe/manufactured-necessity.pdf)
 
 [Conditioned Emptiness](https://standardgalactic.github.io/diatribe/conditioned-emptiness.pdf)
@@ -351,25 +396,6 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 * [Research Briefing](https://standardgalactic.github.io/alphabet/roadmap/Research_Briefing.pdf)
 
 [Audio Overviews](https://standardgalactic.github.io/alphabet/roadmap/)
-
-<!--
-[Why Distinctions Survive](https://standardgalactic.github.io/linguistics/why_distinctions_survive.pdf)
-
-* [The Geometry of Reasoning](https://standardgalactic.github.io/linguistics/The_Geometry_of_Reasoning.pdf)
--->
-
-[The Persistence Hierarchy](https://standardgalactic.github.io/linguistics/persistence_hierarchy.pdf)
-
-<!--
-* [The Hidden Architecture of Adjectives](https://standardgalactic.github.io/linguistics/Adjective_Architecture.pdf)
--->
-[Substance and Accident](https://standardgalactic.github.io/linguistics/substance_and_accident.pdf)
-
-* [Geometric Admissibility](https://standardgalactic.github.io/linguistics/Geometric_Admissibility.pdf)
-
-* [Reachability Theory](https://standardgalactic.github.io/linguistics/Reachability_Theory.pdf)
-
-[Distinction Engine](https://standardgalactic.github.io/linguistics/) — *Audio Overviews*
 
 [Reality Is What Can Be Reached](https://standardgalactic.github.io/philosophy/reality_reachability.pdf)
 
@@ -730,6 +756,8 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 
 [Arranged Conditions](https://standardgalactic.github.io/research-projects/unsorted/arranged-conditions.pdf)
 
+[P(doom)](https://standardgalactic.github.io/stylometrics/pdoom.pdf)
+
 [Against the Extinction Thesis](https://standardgalactic.github.io/alignment/against-the-extinction-thesis.pdf)
 
 [Exposure Before Evidence](https://standardgalactic.github.io/alignment/exposure-before-evidence.pdf)
@@ -1028,6 +1056,8 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
 -->
+[Histories That Rewrite Their Own Possibilities](https://standardgalactic.github.io/history/histories-rewrite-possibility.pdf)
+
 [From Minerals to Minds](https://standardgalactic.github.io/alphabet/From%20Minerals%20to%20Minds.pdf)
 
 [The Geometry of Rewiring](https://standardgalactic.github.io/alphabet/ecology/geometry_of_rewiring.pdf) — *Evolutionary Ecology*
@@ -1431,9 +1461,9 @@ This book develops a formal mathematical framework for analyzing consistency, ad
 </div>
 
 ## Psychonomics
-
-[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) 
-
+<!--
+[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) — *Early Draft*
+-->
 [The Refractive Self](https://standardgalactic.github.io/alphabet/science/the_refractive_self.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/science/)
