@@ -50,7 +50,8 @@ Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)
 
 [Etch-a-Sketch Simulator](https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
 
-[Psyonic Visualizer](https://github.com/standardgalactic/standardgalactic/tree/main/Music/) — *Project*
+[Psyonic Visualizer](https://standardgalactic.github.io/standardgalactic/Music/)
+
 <!--
 These small browser programs function as experimental interfaces for thinking about computation, language, and geometry rather than as conventional games. Each tool forms a compact interactive system in which the user progressively constrains a space of possibilities through simple actions, demonstrating how structured outcomes emerge from sequences of small decisions.
 
@@ -77,7 +78,76 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
+# Special Anouncement
+
+We are releasing 14,000 mathematical manuscripts and supporting proof artifacts on the cubic rhombus R_n(c), the parallelotope with Gram matrix (1−c)I + cJ, organized into 280 families and, by exact classification of their content, 14 distinct statements.
+
+As part of generator development, we evaluate on open research objects. After our existing evaluations saturated the parameter space of a single object, the cubic rhombus R_n(c), we expanded them to its full 967,680-point space. This release contains 14,000 manuscripts in 280 families, each carrying a proved proposition about det G_n(c) = (1−c)^{n−1}(1+(n−1)c) and verified exactly in SymPy for n = 2 through 8. Some results could have issues. Human review: not really. Lean formalization: not attempted (yet).
+
+[Cubic Rhombus Research Initiative](https://github.com/flyxion/math)
+ 
 # Work in Progress
+
+[The Residue of Proof](https://standardgalactic.github.io/memnet/residue-of-proof.pdf)
+
+[Memnet Flashcards](https://standardgalactic.github.io./memnet/) — *Advanced English, Vim, Python*
+
+[Rebuilding the Foundations of Logic](https://standardgalactic.github.io/crooked-platonism/essay/rebuilding-foundations.pdf)
+
+[English in Arabic Script](https://standardgalactic.github.io/linguistics/english-in-arabic-script.pdf)
+
+* [Cheatsheet](https://standardgalactic.github.io/linguistics/arabglish-cheatsheet.pdf)
+
+[Steel Sky](https://standardgalactic.github.io/steel-sky/)
+
+[Generative Film](https://standardgalactic.github.io/kitbash/generative-film/generative-film.pdf)
+
+[The Supplied Purpose](https://standardgalactic.github.io/userland/supplied-purpose.pdf)
+
+[Epistemic Immutability](https://standardgalactic.github.io/userland/epistemic-immutability.pdf)
+
+[The Person Behind the Interface](https://standardgalactic.github.io/antivenom/mind/person-behind-the-interface.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/antivenom/mind/)
+
+[Adversaria: A Public Claim Graph](https://github.com/standardgalactic/adversaria) 
+
+[Making Thought Visible](https://github.com/standardgalactic/drawing/blob/main/README.md)
+
+[Artificial Meat](https://github.com/standardgalactic/research-projects/blob/main/engineering/README.md)
+
+[Cutaway Reader](https://github.com/standardgalactic/cutaway-reader/blob/main/README.md)
+
+[Following the Evaluator](https://standardgalactic.github.io/history/following-the-evaluator.pdf)
+
+[The Calculus of Disposition](https://standardgalactic.github.io/portable-warrant/calculus-of-disposition.pdf)  — *Textbook*
+
+[The Uses of the Unfinished](https://standardgalactic.github.io/portable-warrant/unfinished.pdf)
+
+[The Portable Warrant](https://standardgalactic.github.io/portable-warrant/portable-warrant.pdf)
+
+[Open Threads Ledger](https://standardgalactic.github.io/laboratory/report/open-threads-ledger-full.pdf)
+<!--
+[Claim Audit Report](https://standardgalactic.github.io/laboratory/report/)
+-->
+
+[Ablation Invariance](https://standardgalactic.github.io/history/ablation_invariance.pdf)
+
+[Architectures of Impunity](https://standardgalactic.github.io/hyperbionic-reading/Architectures_of_Impunity.pdf)
+
+[Allocation of Uncertainty](https://standardgalactic.github.io/hyperbionic-reading/allocation-of-uncertainty.pdf)
+
+[Evidentiary Decoupling](https://standardgalactic.github.io/hyperbionic-reading/evidentiary-decoupling.pdf)
+
+[The Forgotten Specification](https://standardgalactic.github.io/hyperbionic-reading/forgotten-specification.pdf)
+
+[Hyperbionic Reading](https://standardgalactic.github.io/hyperbionic-reading/hyperbionic_reading.pdf)
+
+[The Value of Floods](https://standardgalactic.github.io/hyperbionic-reading/value-of-floods.pdf)
+
+[Geometry of Cellular Possibility](https://standardgalactic.github.io/history/geometry-of-cellular-possibility.pdf)
+
+[Decadence as Transformation](https://standardgalactic.github.io/history/decadence-as-transformation.pdf)
 
 [Manufactured Necessity](https://standardgalactic.github.io/diatribe/manufactured-necessity.pdf)
 
@@ -351,25 +421,6 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 * [Research Briefing](https://standardgalactic.github.io/alphabet/roadmap/Research_Briefing.pdf)
 
 [Audio Overviews](https://standardgalactic.github.io/alphabet/roadmap/)
-
-<!--
-[Why Distinctions Survive](https://standardgalactic.github.io/linguistics/why_distinctions_survive.pdf)
-
-* [The Geometry of Reasoning](https://standardgalactic.github.io/linguistics/The_Geometry_of_Reasoning.pdf)
--->
-
-[The Persistence Hierarchy](https://standardgalactic.github.io/linguistics/persistence_hierarchy.pdf)
-
-<!--
-* [The Hidden Architecture of Adjectives](https://standardgalactic.github.io/linguistics/Adjective_Architecture.pdf)
--->
-[Substance and Accident](https://standardgalactic.github.io/linguistics/substance_and_accident.pdf)
-
-* [Geometric Admissibility](https://standardgalactic.github.io/linguistics/Geometric_Admissibility.pdf)
-
-* [Reachability Theory](https://standardgalactic.github.io/linguistics/Reachability_Theory.pdf)
-
-[Distinction Engine](https://standardgalactic.github.io/linguistics/) — *Audio Overviews*
 
 [Reality Is What Can Be Reached](https://standardgalactic.github.io/philosophy/reality_reachability.pdf)
 
@@ -730,6 +781,8 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 
 [Arranged Conditions](https://standardgalactic.github.io/research-projects/unsorted/arranged-conditions.pdf)
 
+[P(doom)](https://standardgalactic.github.io/stylometrics/pdoom.pdf)
+
 [Against the Extinction Thesis](https://standardgalactic.github.io/alignment/against-the-extinction-thesis.pdf)
 
 [Exposure Before Evidence](https://standardgalactic.github.io/alignment/exposure-before-evidence.pdf)
@@ -1004,7 +1057,7 @@ Geodesics of Attention
 [Distributed Minds and Generative Substrates](https://standardgalactic.github.io/research-projects/working/distributed_cognition.pdf)
 -->
 
-[Hallucination is Normal](https://standardgalactic.github.io/library/Hallucination%20is%20Normal.pdf)
+[Hallucination is Normal](https://standardgalactic.github.io/library/hallucination-is-normal.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/library/projects/?track=hallucination)
 
@@ -1028,6 +1081,8 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
 -->
+[Histories That Rewrite Their Own Possibilities](https://standardgalactic.github.io/history/histories-rewrite-possibility.pdf)
+
 [From Minerals to Minds](https://standardgalactic.github.io/alphabet/From%20Minerals%20to%20Minds.pdf)
 
 [The Geometry of Rewiring](https://standardgalactic.github.io/alphabet/ecology/geometry_of_rewiring.pdf) — *Evolutionary Ecology*
@@ -1431,9 +1486,9 @@ This book develops a formal mathematical framework for analyzing consistency, ad
 </div>
 
 ## Psychonomics
-
-[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) 
-
+<!--
+[Hyperbionic Reading](https://standardgalactic.github.io/guardrails/memory/hyperbionic_reading.pdf) — *Early Draft*
+-->
 [The Refractive Self](https://standardgalactic.github.io/alphabet/science/the_refractive_self.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/alphabet/science/)
