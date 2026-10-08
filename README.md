@@ -78,15 +78,33 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 [Better Than Human](https://standardgalactic.github.io/audio-player.html) 
 
-# Special Anouncement
+# Special Announcement
 
-We are releasing 14,000 mathematical manuscripts and supporting proof artifacts on the cubic rhombus R_n(c), the parallelotope with Gram matrix (1−c)I + cJ, organized into 280 families and, by exact classification of their content, 14 distinct statements.
+We are releasing 14,000 mathematical manuscripts and supporting proof artifacts on the cubic rhombus Rₙ(c), the parallelotope with Gram matrix (1 − c)I + cJ, organized into 280 families and, by exact classification of their content, 14 distinct statements.
 
-As part of generator development, we evaluate on open research objects. After our existing evaluations saturated the parameter space of a single object, the cubic rhombus R_n(c), we expanded them to its full 967,680-point space. This release contains 14,000 manuscripts in 280 families, each carrying a proved proposition about det G_n(c) = (1−c)^{n−1}(1+(n−1)c) and verified exactly in SymPy for n = 2 through 8. Some results could have issues. Human review: not really. Lean formalization: not attempted (yet).
+As part of generator development, we evaluate on open research objects. After our existing evaluations saturated the parameter space of a single object, the cubic rhombus Rₙ(c), we expanded them to its full 967,680-point space.
+
+This release contains 14,000 manuscripts in 280 families, each carrying a proved proposition about
+
+det Gₙ(c) = (1 − c)⁽ⁿ⁻¹⁾(1 + (n − 1)c)
+
+and verified exactly in SymPy for n = 2 through 8.
+
+Some results could have issues.
+
+𝗛𝘂𝗺𝗮𝗻 𝗿𝗲𝘃𝗶𝗲𝘄: not really.
+
+𝗟𝗲𝗮𝗻 𝗳𝗼𝗿𝗺𝗮𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻: nearly complete.
 
 [Cubic Rhombus Research Initiative](https://github.com/flyxion/math)
  
 # Work in Progress
+
+[Neither Persons nor Patients](https://standardgalactic.github.io/alignment/neither_persons_nor_patients.pdf)
+
+* [Why Your Chatbot Isn't Conscious](https://standardgalactic.github.io/alignment/audio-visualizer.html) — *Audio Overview*
+
+[The Geometry of Scope](https://standardgalactic.github.io/computation/geometry-of-scope.pdf)
 
 [The Residue of Proof](https://standardgalactic.github.io/memnet/residue-of-proof.pdf)
 
@@ -774,6 +792,10 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [Audio Overviews](https://standardgalactic.github.io/playfloor/working/)
 -->
 # Alignment Research
+
+[Corrigible Civilizations](https://standardgalactic.github.io/alignment/resources/corrigible-civilizations.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/alignment/resources/) — *English and Spanish*
 
 [Unchosen Adjacency](https://standardgalactic.github.io/research-projects/unsorted/unchosen-adjacency.pdf)
 
