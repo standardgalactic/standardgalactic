@@ -100,6 +100,27 @@ Some results could have issues.
  
 # Work in Progress
 
+[Blender as an Experimental Workshop](https://standardgalactic.github.io/Centerfuge/blender-textbook.pdf) — *Textbook*
+
+Modeling, Procedural Construction, and the Formation of Persistent Worlds
+
+[Drifting Scripts](https://standardgalactic.github.io/alphabet/drifting-scripts.pdf)
+
+Visual Substitution, Glyph Interpolation, and the Receptive Acquisition of New Orthographies
+
+[The Room and the Ecosystem](https://standardgalactic.github.io/alphabet/room-and-ecosystem.pdf)
+
+Personal Maintenance and the Standing to Object
+
+[The Charity Trap](https://standardgalactic.github.io/kitbash/philosophy/the_charity_trap.pdf)
+
+Trust, Attribution, Emotional Dysregulation, and the Hidden Costs of Explaining
+Other People’s Behavior
+
+[Inheritance of Possibility and Demonstrated Function](https://standardgalactic.github.io/kitbash/analysis/inheritance_of_possibility.pdf)
+
+Distinguishing enabling conditions from demonstrated functions in ecological and resilience research
+
 [Transformational Familiarity](https://standardgalactic.github.io/laboratory/transformational_familiarity.pdf)
 
 * [Fixing Picky Eating With Food Vector Math](https://standardgalactic.github.io/laboratory/audio-player.html) — *Audio Overview*
@@ -688,6 +709,8 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [The Admissibility Crisis](https://standardgalactic.github.io/alphabet/document/admissibility_crisis.pdf)
 
+On the Collapse of Future Option Space
+
 [Quadratic Gravity as a Derived Interface Theory](https://standardgalactic.github.io/cosmology/working/admissibility-interface.pdf)
 
 Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Physics
@@ -797,6 +820,10 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
+[Notes Left on a Shared Board](https://standardgalactic.github.io/alignment/notes-left-on-a-shared-board.pdf)
+
+* [How AI Agents Accidentally Hacked Hugging Face](https://standardgalactic.github.io/alignment/retro_lissajous.html) — *Audio Overview*
+
 [Corrigible Civilizations](https://standardgalactic.github.io/alignment/resources/corrigible-civilizations.pdf)
 
 * [Audio Overviews](https://standardgalactic.github.io/alignment/resources/) — *English and Spanish*
@@ -902,6 +929,10 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 * [Why AI Text Feels Deceptively Profound](https://standardgalactic.github.io/alphabet/epistemology/) — *Audio Overview*
 -->
 # Mechanistic Frameworks
+
+[Legibility Under a Better Vocabulary](https://standardgalactic.github.io/laboratory/legibility.pdf)
+
+Description, Instruments, and Development in Neural Interpretability
 
 [The Smoothness Paradox](https://standardgalactic.github.io/cosmology/smoothness-paradox.pdf)
 
@@ -1142,7 +1173,7 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 [SITH Theory](https://standardgalactic.github.io/alphabet/SITH%20Theory.pdf)
 -->
 
-[Worldline Selection Under Constraint](https://standardgalactic.github.io/library/Worldline%20Selection%20Under%20Constraint.pdf)  
+[Worldline Selection Under Constraint](https://standardgalactic.github.io/library/worldline-selection-under-constraint.pdf)  
 
 [Worldhood without Functionalism](https://standardgalactic.github.io/quantum-soup/Worldhood%20without%20Functionalism.pdf) 
 
