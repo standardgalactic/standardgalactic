@@ -102,6 +102,16 @@ Some results could have issues.
 
 # Work in Progress
 
+[The Cost of Future Admissibility](https://standardgalactic.github.io/admissibility-lab/cost_of_future_admissibility.pdf)
+
+* [How Memory Compression Breaks AI Safety Rules](https://standardgalactic.github.io/admissibility-lab/memory-compression-visualizer.html) — *Audio Overview*
+
+[Amortized Deliberation](https://standardgalactic.github.io/active-inference/amortized-deliberation.pdf)
+
+[Closure Under Projection](https://standardgalactic.github.io/active-inference/closure-under-projection.pdf)
+
+[Interpretation and Its Overcoming](https://standardgalactic.github.io/active-inference/interpretation-and-its-overcoming.pdf)
+
 [Entropy's Edge Specification](https://standardgalactic.github.io/paracosm/entropys-edge-specification.pdf)
 
 [Specimens for a Procedural Typography](https://standardgalactic.github.io/fonts/specimens.pdf)
@@ -1142,7 +1152,7 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [Local Tractability and Global Dysfunction](https://standardgalactic.github.io/research-projects/Local%20Tractability%20and%20Global%20Dysfunction.pdf)
 -->
-[Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
+[Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/simulation-as-civic-infrastructure.pdf)
 
 <!-- [Histories That Rewrite Their Own Possibilities](https://standardgalactic.github.io/history/histories-rewrite-possibility.pdf) -->
 
