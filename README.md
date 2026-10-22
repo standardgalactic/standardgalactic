@@ -102,6 +102,36 @@ Some results could have issues.
 
 # Work in Progress
 
+[Admissible Histories and the Structure of Physical Theory](https://standardgalactic.github.io/alphabet/cosmology/admissible-histories.pdf)
+
+* [The Physics of Missing Information](https://standardgalactic.github.io/alphabet/cosmology/missing-information.html) — *Audio Overview*
+
+[Beyond the Token Budget](https://standardgalactic.github.io/computation/beyond-the-token-budget.pdf)
+
+[The Counterfeit Observation](https://standardgalactic.github.io/computation/counterfeit-observation.pdf)
+
+[The Sociality of Computation](https://standardgalactic.github.io/computation/sociality-of-computation.pdf)
+
+[Scoped Structural Rules](https://standardgalactic.github.io/antivenom/framework/scoped_structural_rules.pdf)
+
+[The Solvency of Appearances](https://standardgalactic.github.io/antivenom/projects/solvency_of_appearances.pdf)
+
+[The Hotel Question](https://standardgalactic.github.io/golab/the-hotel-question.pdf)
+
+[Swype Hero Specifications](https://standardgalactic.github.io/sandbox/SwypeHero-Specification.pdf)
+
+[The Conditions of Standing](https://standardgalactic.github.io/conditions-of-standing/conditions-of-standing.pdf)
+
+[The Cost of Future Admissibility](https://standardgalactic.github.io/admissibility-lab/cost_of_future_admissibility.pdf)
+
+* [How Memory Compression Breaks AI Safety Rules](https://standardgalactic.github.io/admissibility-lab/memory-compression-visualizer.html) — *Audio Overview*
+
+[Amortized Deliberation](https://standardgalactic.github.io/active-inference/amortized-deliberation.pdf)
+
+[Closure Under Projection](https://standardgalactic.github.io/active-inference/closure-under-projection.pdf)
+
+[Interpretation and Its Overcoming](https://standardgalactic.github.io/active-inference/interpretation-and-its-overcoming.pdf)
+
 [Entropy's Edge Specification](https://standardgalactic.github.io/paracosm/entropys-edge-specification.pdf)
 
 [Specimens for a Procedural Typography](https://standardgalactic.github.io/fonts/specimens.pdf)
@@ -828,6 +858,25 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
+[The Manufacture of Significance](https://standardgalactic.github.io/alignment/retroscope/manufacture-of-significance.pdf)
+
+* [How AI Agents Sway Human Judgment](https://standardgalactic.github.io/alignment/retroscope/) — *Audio Overview*
+
+[Adversarial Epistemic Closure](https://standardgalactic.github.io/unscannable-interfaces/adversarial-epistemic-closure.pdf)
+<!--
+[Common Decency and the Segemented Self](https://standardgalactic.github.io/unscannable-interfaces/common_decency.pdf)
+
+[The Criminalization of Association](https://standardgalactic.github.io/unscannable-interfaces/criminalization_of_association.pdf)
+-->
+
+[Independent Encyclopedia](https://standardgalactic.github.io/antivenom/futurology/)
+
+[Publication Projection](https://standardgalactic.github.io/antivenom/futurology/publication-projection.pdf)
+
+[Unauthorized Futures](https://standardgalactic.github.io/antivenom/rhetoric/unauthorized_futures.pdf)
+
+Possibility, Demonstration, and the Limits of Retroactive Vindication
+
 [The Author as Customer](https://standardgalactic.github.io/viable-continuation/architectures/author_as_customer.pdf)
 
 [Compartmentalization as Intelligence](https://standardgalactic.github.io/viable-continuation/architectures/compartmentalization.pdf)
@@ -1142,7 +1191,7 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [Local Tractability and Global Dysfunction](https://standardgalactic.github.io/research-projects/Local%20Tractability%20and%20Global%20Dysfunction.pdf)
 -->
-[Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/Simulation%20as%20Civic%20Infrastructure.pdf)
+[Simulation as Civic Infrastructure](https://standardgalactic.github.io/library/simulation-as-civic-infrastructure.pdf)
 
 <!-- [Histories That Rewrite Their Own Possibilities](https://standardgalactic.github.io/history/histories-rewrite-possibility.pdf) -->
 
