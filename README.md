@@ -102,15 +102,21 @@ Some results could have issues.
 
 # Work in Progress
 
-[Proof Terms and Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/proof_terms_and_perpetual_motion.pdf)
-
 [Admissible Histories and the Structure of Physical Theory](https://standardgalactic.github.io/alphabet/cosmology/admissible-histories.pdf)
 
 * [The Physics of Missing Information](https://standardgalactic.github.io/alphabet/cosmology/missing-information.html) — *Audio Overview*
 
+[Proof Terms and Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/proof_terms_and_perpetual_motion.pdf)
+
+* [The Mathematical Proof Against Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/player.html?track=2) — *Audio Overview*
+
 [Revenue Without Returns](https://standardgalactic.github.io/antivenom/economics/revenue_without_returns.pdf)
 
+* [How Platforms Profit From Your Failure](https://standardgalactic.github.io/antivenom/economics/player.html?track=1) — *Audio Overview*
+
 [Sufficient Projections](https://standardgalactic.github.io/antivenom/economics/sufficient_projections.pdf)
+
+* [Why Today's Summaries Fail Tomorrow](https://standardgalactic.github.io/antivenom/economics/player.html?track=3) — *Audio Overview*
 
 [Beyond the Token Budget](https://standardgalactic.github.io/computation/beyond-the-token-budget.pdf)
 
@@ -119,8 +125,9 @@ Some results could have issues.
 [The Sociality of Computation](https://standardgalactic.github.io/computation/sociality-of-computation.pdf)
 
 [Scoped Structural Rules](https://standardgalactic.github.io/antivenom/framework/scoped_structural_rules.pdf)
-
+<!--
 [The Solvency of Appearances](https://standardgalactic.github.io/antivenom/projects/solvency_of_appearances.pdf)
+-->
 
 [The Hotel Question](https://standardgalactic.github.io/golab/the-hotel-question.pdf)
 
@@ -863,6 +870,10 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [Audio Overviews](https://standardgalactic.github.io/playfloor/working/)
 -->
 # Alignment Research
+
+[When Correction Becomes Reproduction](https://standardgalactic.github.io/alignment/research/correction-reproduction.pdf)
+
+* [Why the Cure Makes Problems Permanent](https://standardgalactic.github.io/alignment/research/) — *Audio Overview*
 
 [The Manufacture of Significance](https://standardgalactic.github.io/alignment/retroscope/manufacture-of-significance.pdf)
 
