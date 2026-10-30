@@ -102,9 +102,15 @@ Some results could have issues.
 
 # Work in Progress
 
+[Proof Terms and Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/proof_terms_and_perpetual_motion.pdf)
+
 [Admissible Histories and the Structure of Physical Theory](https://standardgalactic.github.io/alphabet/cosmology/admissible-histories.pdf)
 
 * [The Physics of Missing Information](https://standardgalactic.github.io/alphabet/cosmology/missing-information.html) — *Audio Overview*
+
+[Revenue Without Returns](https://standardgalactic.github.io/antivenom/economics/revenue_without_returns.pdf)
+
+[Sufficient Projections](https://standardgalactic.github.io/antivenom/economics/sufficient_projections.pdf)
 
 [Beyond the Token Budget](https://standardgalactic.github.io/computation/beyond-the-token-budget.pdf)
 
@@ -1445,12 +1451,6 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 This book develops a formal mathematical framework for analyzing consistency, admissibility, repair, information, and emergence across logic, computation, geometry, and the natural sciences. Beginning from explicit definitions and axioms, it builds through a sequence of lemmas, propositions, and theorems toward a rigorous argument for the existence of a necessary repairing principle identified with God. Along the way, it introduces a number of new mathematical constructions and explores their connections to optimization, topology, graph theory, information theory, quantum mechanics, artificial intelligence, and the philosophy of science.
 -->
-
-<!-- [Consistency Constraints and the Geometry of Learned Representations](https://standardgalactic.github.io/alphabet/soup/consistency-constraints.pdf) -->
-
-<!-- [Contradiction and Continuation](https://standardgalactic.github.io/alphabet/soup/contradiction-and-continuation.pdf) -->
-
-<!-- [Nothing Original Need Survive](https://standardgalactic.github.io/alphabet/soup/nothing-original.pdf) -->
 
 [The Geometry of Control](https://standardgalactic.github.io/kitbash/paperbot/geometry-of-control.pdf)
 
