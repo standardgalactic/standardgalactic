@@ -1,0 +1,57 @@
+\chapter{Residual Digital Computation}
+\label{ch:residual}
+
+The first form of distributed calculation uses existing computers as computational resources. Instead of specialized hardware or substantial dedicated installations, the network identifies the RAM, storage, processing capacity, and bandwidth that already exist on machines serving other purposes. Each participant sets a bounded contribution policy, for example five or ten percent of spare resources. The economic analysis of Chapter~\ref{ch:sunk} needs an operationally precise account of what such a network can in fact contribute, and this chapter supplies it. The account is deliberately sober. Several of the things that spare capacity is imagined to be good for turn out to be beyond it.
+
+\section{Resource Descriptors}
+
+A node $i$ advertises its state at time $t$ as a descriptor
+\[
+r_i(t)=\bigl(c_i(t),\,m_i(t),\,s_i(t),\,b_i(t),\,h_i(t),\,q_i(t)\bigr),
+\]
+whose entries are the available compute, memory, storage, network capacity, useful thermal capacity, and reliability or availability characteristics. Tasks are assigned according to these capabilities, and nodes are not assumed to be interchangeable.
+
+A local policy determines which of these resources the device may contribute. An owner might permit at most ten percent of spare computational capacity, five percent of available storage, and limited bandwidth. The percentages apply to the resources actually available after local requirements have been met, and not to nominal hardware capacity, which is never assumed to be disposable. An older machine with four gigabytes of memory might contribute a few hundred megabytes. Another might offer only spare storage, and a third a graphics processor for a few evenings a week. A fourth might have almost nothing to spare but a reliable network connection, which suits it to the coordination role described in Chapter~\ref{ch:router}.
+
+Measuring what is spare is itself a design problem. Operating-system counters report processor utilization and free memory, but memory that is nominally free may be serving as a cache that keeps the owner's applications responsive, and borrowing it can degrade the owner's experience in ways the counters do not show. The contribution policy should therefore be defined against an interference criterion, such as a bound on the increase in the owner's response latency, and the network's work must yield immediately when that bound is approached, in line with the priority rule of Chapter~\ref{ch:idle}.
+
+\section{Precedents}
+
+The chapter compares the architecture with volunteer computing, including SETI@home~\cite{anderson2002} and the BOINC platform~\cite{anderson2004}, with peer-to-peer systems, with edge computing, and with opportunistic scheduling. These systems establish that large heterogeneous populations of volunteer machines can complete useful work. They also establish the characteristic failure modes: unreliable nodes, falsified results, and participation that tracks credit rather than purpose, which is the subject of Chapter~\ref{ch:norewards}. The original contribution here lies in treating limited participation and hardware heterogeneity as foundational design requirements and not as temporary deficiencies. A scheduler that assumes a large and growing pool of identical contributors will be disappointed by a population in which each contributor spares a small fraction of a modest machine. A scheduler designed from the outset for small, uneven, revocable contributions has a different structure: short tasks, verifiable results, tolerance of departure, and no dependence on any single node.
+
+\section{Availability and Task Granularity}
+
+Spare capacity is intermittent, and the length of a task must be matched to the length of the intervals in which a node is available. Model the durations of a node's availability sessions as independent and exponentially distributed with rate $\lambda$, so that the mean session is $1/\lambda$. Suppose a task needs an uninterrupted period $d$ and cannot be resumed.
+
+\begin{proposition}
+\label{prop:attempts}
+Under these assumptions each attempt succeeds with probability $e^{-\lambda d}$, and the expected number of attempts needed to complete the task is $e^{\lambda d}$.
+\end{proposition}
+
+\begin{proof}
+An attempt succeeds exactly when the session lasts at least $d$, which has probability $\Pr[S\ge d]=e^{-\lambda d}$ for a session length $S$ with rate $\lambda$. Attempts use independent sessions, so the number of attempts is geometric with success probability $e^{-\lambda d}$, whose mean is $e^{\lambda d}$.
+\end{proof}
+
+The expected cost grows exponentially in the ratio of task length to mean session length, so a task that is twice as long as the mean session needs on average more than seven attempts. Tasks that cannot be checkpointed should therefore be kept short relative to $1/\lambda$, for example with $d\le(\ln 2)/\lambda$ so that the expected number of attempts is at most two, and longer tasks need to checkpoint and resume, which adds overhead and requires storage. The exponential model is a simplification, since real availability is shaped by daily and weekly routines, and the descriptor's reliability entry $q_i$ is meant to carry an empirical estimate in its place.
+
+\section{Matching Tasks to Nodes}
+
+Given tasks with requirements $(c_j,m_j,s_j,b_j,d_j)$ and nodes with descriptors, a task can be assigned to a node only if the node's current resources meet the requirements and its expected availability covers $d_j$. This defines a compatibility graph between tasks and nodes. If each node runs at most one task at a time and each task is assigned at most once, the best assignment is a maximum-weight matching in a bipartite graph, which can be found in polynomial time~\cite{kuhn1955}. Real scheduling is harder, because nodes can host several tasks with different resource demands, which is a vector packing problem that is computationally intractable in general, and in practice the network will rely on heuristics and on the history of Chapter~\ref{ch:horizon} to improve them. The matching formulation is useful as a reference point: it identifies the best the scheduler could do with perfect information, against which its performance can be measured.
+
+\section{What Spare Memory Is and Is Not Good For}
+
+The argument that motivated Chapter~\ref{ch:misallocation} concerned memory, and the question of what a network of spare memory can do deserves a direct answer. The answer is less than the aggregate capacity suggests. The memory of a single machine is accessed at bandwidths of tens of gigabytes per second, whereas a household network connection delivers on the order of ten megabytes per second, a ratio of roughly three orders of magnitude. A model whose parameters are spread across many machines connected by such links would spend nearly all its time waiting for data. Residual memory scattered across a wide-area network is therefore not a substitute for the high-bandwidth memory of a dedicated accelerator, and it cannot be used to serve large models in interactive settings.
+
+What residual memory and storage can do is hold content that is read rarely or in large sequential pieces: replicas of data sets, cached results, shards of archives, and the records of the history of Chapter~\ref{ch:horizon}, addressed by content as described in Chapter~\ref{ch:router}. The network is a good place to keep data that must persist and be available somewhere, and a poor place to keep data that must be reached quickly and often.
+
+\section{Which Workloads Fit}
+
+The deciding quantity for a wide-area task is the ratio of computation to communication. If a task needs $D$ bytes moved over a link of bandwidth $B$ and requires compute time $T_c$, then with no overlap of transfer and computation the fraction of time spent usefully is
+\[
+\eta_d=\frac{T_c}{T_c+D/B}.
+\]
+A task with ten megabytes of input over a link carrying ten megabytes per second spends one second moving data, so it needs at least about ten seconds of computation to keep the overhead near ten percent. The workloads that fit are those with large computation per byte and little coupling between tasks: Monte Carlo simulation, parameter sweeps, search over large spaces, rendering in independent tiles, and batch analysis of independent records. Workloads that exchange data continuously between tasks, or that need results within milliseconds, do not fit, and the network should not be offered for them.
+
+\section{Conditions Under Which the Proposal Fails}
+
+The proposal fails when the work that fits the network's constraints is not valuable enough to cover its coordination and replication costs, when measured interference with the owners exceeds the bound they have set, when availability is too short or too erratic for tasks of useful length, or when the share of spare resources that owners are willing to commit is too small for the network to reach a useful scale. Experiment A in Appendix~B is designed to measure these quantities on a heterogeneous population before any claim is made about larger deployments.

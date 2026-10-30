@@ -1,0 +1,100 @@
+\chapter[An Ecology of Admissible Contributions]{Computation as an Ecology of Admissible Contributions}
+\label{ch:ecology}
+
+The concluding chapter is a critical synthesis and not a triumphant summary. The monograph began as a proposal. In the course of examining it, the preceding chapters have accumulated mathematical and economic constraints, and its conclusion should be more discriminating than the proposal from which it started. The chapter organizes what has been argued into three epistemic categories: results that hold within the models developed, propositions that are conditional on quantities that must be measured, and conjectures that remain open. It declines to promote any member of the third category into a conclusion.
+
+\section{The Three Forms and the Unit of Participation}
+
+The chapter first recalls what has been synthesized. Digital residual computation exploits spare computational capacity. Thermally integrated computation performs digital work while satisfying heating demand. Physical analog computation uses controlled material processes to produce measurements, evaluations, or computational transformations. These activities are coordinated through a heterogeneous network whose structure develops over time.
+
+The fundamental unit of participation is not a processor, a watt, or a completed task, but an admissible contribution.
+
+\begin{definition}[Admissible contribution]
+\label{def:admissible}
+An \emph{admissible contribution} is a verified activity that produces value without violating the independent purposes and constraints of the participating system.
+\end{definition}
+
+One model of technological development seeks to concentrate resources, maximize measurable utilization, and continuously expand dedicated infrastructure. Another seeks to discover useful relationships among existing resources, preserve local authority, and accumulate improvements through long-term experimentation. The second is not guaranteed to outperform the first. Its value must be established through measurement and not asserted as a philosophical preference.
+
+\section{Results Established Within the Models}
+
+The word established is used in a limited sense. The results in Table~\ref{tab:established} are mathematical or physical statements about the models developed in the preceding chapters. They are not guarantees about the proposed architecture, since each rests on stated assumptions that real systems may violate.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.55in}>{\raggedright\arraybackslash}p{0.9in}>{\raggedright\arraybackslash}p{1.85in}}
+\toprule
+Result & Where & Depends on \\
+\midrule
+Electricity consumed by a computing heater appears as heat in the enclosure, equal to resistance heating for the same input & Chapter~\ref{ch:thermal} & Delivered fraction near one; no energy is created \\
+Under the admissibility rule, household electricity use equals that of a resistance heater whatever the workload & Prop.~\ref{prop:pureaddition} & Resistance baseline; fallback element supplies the remainder \\
+A proxy reward can fail completely at its optimum, and a reward proportional to expenditure dissipates nearly all its value in competition & Props.~\ref{prop:goodhart}, \ref{prop:escalation} & The stated effort and contest models; many identical participants \\
+Correlated node capacities leave a floor on the relative fluctuation of total capacity & Prop.~\ref{prop:diversification} & Equal variance; common nonnegative correlation \\
+Signal delay over distance bounds latency from below & Chapter~\ref{ch:geography} & Propagation speed in fiber \\
+Exclusive-or combination of independent biased bits shrinks the bias multiplicatively, and one adaptive contributor defeats it & Props.~\ref{prop:piling}, \ref{prop:adaptive} & Independence; what the contributor observes and controls \\
+Without a common reference configuration, configuration and site effects cannot be separated, and cross-site comparison has a variance floor & Props.~\ref{prop:identifiability}, \ref{prop:sitevariance} & Additive site-effect model \\
+Replication, spot-checking, and capped rewards have stated guarantees, and gating removes prohibited actions from the rewarded set without ensuring compliance & Props.~\ref{prop:replication}, \ref{prop:spotcheck}, \ref{prop:cap} & Random assignment and single identities; stated payoffs; detection and enforcement \\
+\bottomrule
+\end{tabular}
+\caption{Results established within the models of the monograph.}
+\label{tab:established}
+\end{table}
+
+Two of these deserve emphasis because they are counterexamples to the most tempting form of the argument. The first is the contrast between resistance heating and heat pumps. A computing heater adds no load when it displaces resistance heating, and when it displaces a heat pump it draws as much as the coefficient of performance times the electricity for the same heat, with the greatest effect at the peak of grid demand. Useful heat recovery therefore cannot automatically be counted as an energy saving, and the relevant baseline is what the household would otherwise have used. The second is the correlation floor, which shows that adding participants does not by itself smooth the network's capacity.
+
+\section{Conditional Propositions}
+
+The remaining claims of the monograph are conditional, and each names the quantities on which it depends. Residual computation can outperform dedicated infrastructure when avoided capital expenditure and useful secondary outputs exceed the costs of coordination, energy, maintenance, and reliability, and Proposition~\ref{prop:crossover} shows that, with the cost structures typical of a data center, the network is cheaper only below a crossover volume. Thermally integrated computation is justified only if the value of the computation covers the additional electricity relative to the baseline appliance together with the added capital, as stated in Proposition~\ref{prop:heatpump}. Physical analog computation is valuable when controlled experiments yield results that are accurate and informative enough to beat simulation or laboratory testing at the same reliability, which depends on discriminability, site variance, and the question being asked, as developed in Chapters~\ref{ch:analog} and~\ref{ch:furnaces}. Long-term learning can improve the network's economics, but only when the learning exponent, the cost floor, the discount rate, and the accumulated organizational costs allow cumulative break-even within a horizon of interest, as in Proposition~\ref{prop:breakeven}. The right to remain idle holds in practice only if the safety envelope and revocation are enforced independently of the network, as specified in Proposition~\ref{prop:revocation}.
+
+Each of these statements can be turned into a measurement. Experiments A through E in Appendix~B are designed to supply the quantities, and until they have done so the statements remain conditional in the strict sense that their antecedents are unknown.
+
+\section{Open Conjectures}
+
+Three conjectures are more ambitious, and they are empirical questions that the monograph does not answer. The first is that a heterogeneous network of reused resources becomes economically competitive over decades. It requires a learning exponent and a cost floor that no pilot has yet measured, and it competes against centralized operators that learn faster in calendar time. The second is that geographically dispersed thermal systems provide scientifically valuable experimental capacity. The staged test of Chapter~\ref{ch:furnaces} is the means of settling it, and its outcome could be that the network is a heating system with sensors attached. The third is that decentralized governance can resist incentive corruption of the Goodhart kind. The mechanisms of Chapter~\ref{ch:norewards} reduce specific attacks and do not remove the underlying pressure, and only adversarial experience will show whether the residual is tolerable. Two further questions are narrower: whether there is enough demand for diverse-provenance randomness to sustain a physical entropy service, and whether fleet-level diagnosis of cooling equipment is worth the cost of the instrumentation. A philosophical question stands beside these. It is whether an engineered alternative to centralized infrastructure escapes the assumptions of technological civilization or reproduces them in another organizational form, as the objection of Chapter~\ref{ch:ellul} presses. The dissolution condition of Definition~\ref{def:dissolution} makes one part of that question testable, namely whether participants could leave without loss of function, uncompensated cost, or surviving obligation. It does not answer the rest, and the monograph leaves the rest open.
+
+The monograph refuses to promote these possibilities into conclusions. A result on any of them would have to come from the experiments of the appendix and from field pilots, and the failure conditions stated at the end of each chapter are the observations that would count against the hypothesis.
+
+\section{Status of the Opening Promises}
+
+The Preface and the first chapter make several promises. Table~\ref{tab:promises} classifies each as established within the models, conditionally supported, experimentally testable, or unresolved, so that the conclusion can be checked against the introduction.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.3in}>{\raggedright\arraybackslash}p{1.9in}>{\raggedright\arraybackslash}p{1.1in}}
+\toprule
+Promise & Status & Where \\
+\midrule
+Maximizing utilization is not the same as maximizing social value & Established as a conceptual point; the comparison of arrangements is conditional & Chapters~\ref{ch:misallocation}, \ref{ch:sunk} \\
+Idle capacity can have value of its own & Conditional on measurements of interference and availability & Chapters~\ref{ch:misallocation}, \ref{ch:residual} \\
+Residual capabilities can be organized into a useful network & Conditional; testable by Experiment A & Chapters~\ref{ch:residual}, \ref{ch:router}, \ref{ch:sunk} \\
+Computation can ride on heating demand without added electricity & Established against a resistance baseline; conditional against a heat pump & Chapters~\ref{ch:thermal}, \ref{ch:geography} \\
+Physical processes can supply valuable measurements & Conditional; testable by Experiment C and a staged field test & Chapters~\ref{ch:analog} to \ref{ch:entropy} \\
+Metric-driven escalation can be bounded & Model results established; resistance in practice unresolved & Chapters~\ref{ch:goodhart}, \ref{ch:norewards} \\
+Efficiency can accrue over decades & Conditional; testable by Experiment D and field pilots & Chapter~\ref{ch:horizon} \\
+Local authority and the right to remain idle can be preserved & Specification established; enforcement conditional & Chapter~\ref{ch:idle} \\
+The alternative escapes the assumptions of technique & Unresolved; reversibility partly testable & Chapters~\ref{ch:ellul}, \ref{ch:ecology} \\
+\bottomrule
+\end{tabular}
+\caption{Status of the promises made in the Preface and the first chapter.}
+\label{tab:promises}
+\end{table}
+
+\section{Order of Operations}
+
+The difference between this architecture and the optimization philosophy of Chapter~\ref{ch:ellul} comes down to an ordering. The conditions of participation are established first, by owners and by the purposes their systems already serve, and optimization happens afterward and within them. Efficiency is not permitted to determine the conditions under which participation occurs. The network optimizes within a distributed set of permissions, and does not treat every available resource as something to be exploited to the maximum.
+
+The most valuable computational infrastructure may not be the one that performs the greatest quantity of computation, but the one that discovers the greatest quantity of independently useful computation within resources already committed to other legitimate purposes. This changes the question infrastructure is designed to answer. In place of asking how the utilization of computational resources can be maximized, it asks what computations existing physical and technological systems can perform without compromising the reasons those systems exist. That proposition is a hypothesis about what is worth asking, and the chapters above have tested it against its strongest counterexamples without removing them.
+
+\section{Closing Statement}
+
+The argument of this treatise has not been that distributed computation is inherently superior to centralized computation, that unused hardware is free, or that thermodynamic activity becomes computation merely by being observed. Each of these propositions fails under identifiable conditions. The narrower claim is that existing physical and technological systems may possess capabilities that can be recruited for independently valuable work without displacing their primary functions. Whether such recruitment is worthwhile depends on the costs of coordination, verification, energy, maintenance, and the preservation of local authority.
+
+The central problem is therefore not how to extract the greatest possible quantity of computation from the world's existing infrastructure. It is how to discover which contributions remain admissible when the purposes of that infrastructure are treated as constraints and not as obstacles. A household does not exist to cool a processor. A heating system does not exist to perform an experiment. A personal computer does not become a public resource because its owner leaves it idle.
+
+Nor does a distributed network become beneficial merely because it distributes activity. Correlated demand, geographical concentration, unequal bargaining power, and reward manipulation can reproduce the disadvantages of centralized systems in less visible forms. The relevant measure of success is not the number of participating devices, the quantity of computation performed, or the volume of information collected. It is the independently verified value produced after accounting for the burdens imposed on participants and the alternatives displaced.
+
+The remaining hypothesis is consequently both more modest and more demanding than the one with which the investigation began. An infrastructure composed of bounded, reversible contributions may discover productive arrangements that dedicated infrastructure overlooks. Its development may require decades, and it may fail. Its principal advantage is not immunity to failure, but the possibility of learning from failure without requiring every experiment to become a permanent institution.
+
+Computation need not always begin with the construction of a computer. It may begin with the recognition that an existing system, already performing a legitimate function, can perform another without surrendering the first.

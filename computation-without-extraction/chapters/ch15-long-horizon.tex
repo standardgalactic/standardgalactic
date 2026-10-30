@@ -1,0 +1,92 @@
+\chapter{The Long Horizon of Efficiency}
+\label{ch:horizon}
+
+This chapter develops the idea that the network may require decades to realize its advantages. Early operation may involve substantial discovery costs, coordination failures, unreliable hardware, and inefficient task placement. The claim is easy to make and hard to test, because a sufficiently long horizon can excuse any early failure. The task of the chapter is therefore to say precisely what would have to be true for a slow start to be worth it, to separate the several senses in which a project can be said to break even, to show how sensitive the conclusion is to the assumptions, and to identify the measurements that could refute it.
+
+\section{Instantaneous and Lifetime Efficiency}
+
+Ordinary efficiency evaluates a system at a moment, through a ratio such as
+\[
+\eta(t)=\frac{\text{useful output at }t}{\text{resources consumed at }t}.
+\]
+That ratio does not capture the value of an architecture that becomes more capable as it learns about its own participants. A discounted lifetime assessment can be written
+\[
+V_T=\sum_{t=0}^{T}\frac{B_t-C_t}{(1+r)^t},
+\]
+where $B_t$ represents verified benefits, $C_t$ represents all attributable costs, and $r$ is the discount rate. Two architectures are compared by the difference in their values $V_T$, not by their efficiencies at any single date. A centralized system typically has a high $\eta(0)$ and improves slowly. A network of reused resources may have a low $\eta(0)$ and a higher asymptote, and the question is whether the difference in asymptotes pays for the difference at the start.
+
+\section{History as a Productive Resource}
+
+As operating history accumulates, the system can learn which resources are available, which combinations work, and which experiments are worth repeating. Formally the network accumulates a history
+\[
+H_t=\{e_1,e_2,\dots,e_t\},
+\]
+in which each event records something learned, such as a successful allocation, a failed experiment, a hardware limitation, or a newly discovered capability. The allocation policy is revised from that record,
+\[
+\pi_{t+1}=\operatorname{Update}(\pi_t,H_t),
+\]
+so that the accumulated history is itself a productive resource. A device that joins, fails, moves, or returns does not force the system to rediscover everything. What is learned includes the availability pattern of each node by hour and season, its reliability, the tasks it handles well, and the experiments already tried. History also has costs. It must be stored and protected, it can become stale as hardware and households change, and it can be privacy-sensitive, so the policy that uses it must include a way of forgetting, such as weighting recent events more heavily than old ones.
+
+Learning which of many unreliable nodes to use is a problem with a known structure. Assigning work to nodes whose reliability is unknown and must be discovered by use resembles the multi-armed bandit problem, and for stationary reward distributions there are algorithms whose cumulative regret, the shortfall relative to always choosing the best node, grows only logarithmically with the number of rounds~\cite{auer2002}. The cost of learning then grows slowly while the benefit of having learned accrues in proportion to the volume of work, which is the formal basis of the intuition that early inefficiency can be repaid. The guarantee requires stationarity, however. Nodes arrive and depart, seasons change, and hardware ages, and under such drift the regret can grow linearly unless the policy keeps exploring at a rate matched to the rate of change. The logarithmic result is a best case and the actual cost of learning in a drifting network has to be measured.
+
+\section{A Learning-Curve Model}
+
+Empirical studies of manufacturing and operations have often found that the cost of a unit falls as a power of cumulative output, a regularity known as Wright's law~\cite{wright1936}. Take it as a model of accumulated operational knowledge. Let the cost per task after $x$ cumulative tasks be
+\[
+c(x)=c_0\,(x_0+x)^{-\alpha},
+\]
+with exponent $\alpha>0$ and an initial experience stock $x_0\ge0$ that represents knowledge carried over from related systems, so that the cost is finite at the start. Let each completed task have verified value $v$, and let $k$ tasks be completed per period. Approximating the cost of every task in period $t$ by that of the unit at cumulative volume $kt$, the net benefit of period $t$ is
+\[
+n_t=k\bigl(v-c_0(x_0+kt)^{-\alpha}\bigr),\qquad t\ge1.
+\]
+Write $X^{*}=(c_0/v)^{1/\alpha}$ for the cumulative experience at which a single task first costs no more than its value.
+
+The phrase break-even covers three distinct events, and the chapter's conclusions depend on keeping them apart. Marginal break-even is the point at which an individual task becomes profitable. Cumulative break-even is the point at which the project has recovered all the losses it ran up before that. Discounted break-even is the point at which the value, weighted by the discount rate, becomes positive. They occur in that order and can be separated by long intervals.
+
+\begin{proposition}
+\label{prop:breakeven}
+\emph{(a) Marginal.} The net benefit $n_t$ is negative before and nonnegative after $t_m=(X^{*}-x_0)/k$, so individual tasks become profitable at cumulative volume $X^{*}$.
+
+\emph{(b) Cumulative.} In the continuous approximation with $x_0=0$ and $\alpha<1$, the cumulative net benefit $N(T)=\int_0^{T}n(t)\,dt$ is nonnegative exactly when
+\[
+kT\ \ge\ X^{*}\,(1-\alpha)^{-1/\alpha}.
+\]
+
+\emph{(c) Discounted.} Fix a finite horizon $T$ and suppose $t_m>1$, so that $n_1<0$, and that $N_T=\sum_{t=1}^{T}n_t>0$. Then there is a unique discount rate $r^{*}>0$ such that $V_T(r)=\sum_{t=1}^{T}n_t(1+r)^{-t}$ is positive if and only if $r<r^{*}$.
+\end{proposition}
+
+\begin{proof}
+(a) The inequality $n_t\ge0$ is equivalent to $(x_0+kt)^{\alpha}\ge c_0/v$, which gives $t\ge t_m$.
+
+(b) With $x_0=0$, $N(T)=kvT-c_0\int_0^{T}k\,(kt)^{-\alpha}\,dt=kvT-c_0\,(kT)^{1-\alpha}/(1-\alpha)$. The condition $N(T)\ge0$ is equivalent to $(kT)^{\alpha}\ge c_0/\bigl((1-\alpha)v\bigr)$, which rearranges to the stated bound.
+
+(c) Let $z=1/(1+r)\in(0,1)$ and $P(z)=\sum_{t=1}^{T}n_tz^{t-1}$, so that $V_T=zP(z)$. Since $n_t$ is increasing in $t$ and $n_1<0<N_T$, the coefficient sequence has exactly one sign change. By Descartes' rule of signs, $P$ has exactly one positive root. Because $P(0)=n_1<0$ and $P(1)=N_T>0$, that root $z^{*}$ lies in $(0,1)$, and $P(z)>0$ exactly for $z>z^{*}$. Setting $r^{*}=1/z^{*}-1$ gives the claim.
+\end{proof}
+
+Part (b) shows that cumulative break-even requires more volume than marginal break-even by the factor $(1-\alpha)^{-1/\alpha}$. This factor is about three for an exponent of one sixth and about 3.3 for the exponent of $0.32$ that corresponds to a twenty percent cost reduction per doubling of volume. A discrete calculation agrees with the continuous approximation closely, for example locating the cumulative break-even within a tenth of a percent for $\alpha=0.2$ and $c_0/v=10$. Part (c) replaces what would otherwise be an unsupported claim that every learning-based project has a critical discount rate. The rate exists and is unique under stated conditions, and it can fail to exist, for instance when the cumulative sum over the horizon is never positive.
+
+The thresholds for the learning exponent follow. For marginal break-even by the horizon, the last task, at cumulative volume $x_0+kT$, must cost no more than its value, which requires
+\[
+\alpha\ \ge\ \frac{\ln(c_0/v)}{\ln(x_0+kT)}.
+\]
+This is the threshold for the final task and not for the project. For cumulative break-even with $x_0=0$ the requirement from part (b) is
+\[
+\alpha\ln(kT)+\ln(1-\alpha)\ \ge\ \ln(c_0/v),
+\]
+which is implicit in $\alpha$ and has to be solved numerically. If the initial cost is ten times the value of a task and the network expects to complete $10^{6}$ tasks over its planning horizon, the exponent must be at least one sixth for the last task to pay for itself, and about $0.18$ for the project to have recovered its losses. These are numbers a pilot can estimate, and a measured exponent below the second refutes the hypothesis for that horizon.
+
+Two qualifications follow, and both cut against the hypothesis. First, the pure power law has no floor, whereas real costs approach a limit. If the cost has the form $c(x)=c_\infty+(c_0-c_\infty)(x_0+x)^{-\alpha}$, the network can succeed only if $v>c_\infty$, so learning cannot rescue an architecture whose long-run cost exceeds the value of its output. Second, the break-even time falls as the volume $k$ rises. A large centralized operator completes more tasks per period and therefore moves down its learning curve faster in calendar time than a distributed network of modest contributions. The advantage of the network cannot be speed of learning. It has to be a lower asymptotic cost or a lower cost of capital, which is the argument of Chapter~\ref{ch:sunk}, and the model should be applied to both architectures and not only to the one under study.
+
+\section{Irreversibility and the Option to Stop}
+
+One genuine asymmetry favors the network under uncertainty, though it is easy to overstate. A data center commits large sums to assets that cannot be recovered if the venture fails, whereas the network grows by small voluntary steps using hardware that already exists and is mostly valuable for other purposes. When the future is uncertain, the ability to stop cheaply has value, a point made in the theory of investment under uncertainty~\cite{dixit1994}. A project whose downside is bounded by small losses can be continued until its prospects are clear, and a project whose losses are sunk cannot.
+
+The advantage depends on reversibility being real, and the cost of participating must be distinguished from the cost of organizing participation. The network may require very little hardware commitment while accumulating substantial institutional commitment: software development, coordination protocols, security infrastructure, verification, recruitment of participants, and contractual and regulatory obligations. These costs are largely sunk and do not shrink when a single household withdraws. The accurate statement is therefore narrower than that the network is reversible. Its hardware commitment is low and its organizational commitment may be high, and the option value is the value of being able to stop before the organizational investment has grown too large. A research program can exploit this by proceeding in small informative steps, each of which buys information about viability at a cost that can be written off.
+
+The same horizon carries risks that no model of the network's own learning captures. Hardware improves, so the comparison baseline moves. Institutions change and the demand for the network's products may disappear. A twenty or thirty year assessment is a scenario analysis and not a forecast, and it should be reported as a range across plausible discount rates and learning exponents, with each of the three break-even times shown for every combination, and not as a single figure.
+
+\section{Falsifiability and Experiment D}
+
+The hypothesis is not that evolutionary infrastructure inevitably becomes efficient. It is that accumulated operational knowledge can create advantages invisible to short-term utilization metrics, and it is falsifiable by the measures introduced above. It fails if the estimated learning exponent falls below the cumulative threshold for the planning horizon, if the asymptotic cost exceeds the value of the output, if no critical discount rate exists or it lies below any rate that is reasonable to apply, or if a centralized baseline, subject to the same model with its own faster learning, dominates at every date of interest. A more modest and defensible statement of the proposition is that a distributed computational ecology may be worth investigating even when its expected operating advantage is uncertain, because it can purchase information about its own viability through small and reversible commitments.
+
+Experiment D in Appendix~B is the means of testing it. It simulates years of heterogeneous node arrivals, departures, failures, and seasonal demand, applies history-aware scheduling alongside centralized and naive distributed baselines, and reports the lifetime value $V_T$, the cumulative regret of the scheduler, the estimated learning exponent, and the three break-even times, each across a grid of discount rates. The simulation can show whether the mechanism works in principle. Only a field pilot can supply the empirical exponent that decides whether it works in practice.

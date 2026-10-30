@@ -1,0 +1,72 @@
+\chapter[Not Rewarding Raw Computation]{Why the Network Must Not Reward Raw Computation}
+\label{ch:norewards}
+
+This chapter returns to Goodhart's Law and turns the diagnosis of Chapter~\ref{ch:goodhart} into design rules. If participants are rewarded simply for the amount of compute they contribute, the network reproduces the competitive escalation described in Chapter~\ref{ch:bitcoin}. Proposition~\ref{prop:escalation} showed that in a contest among many identical participants, where a fixed reward is divided in proportion to expenditure, nearly the whole value of the reward is dissipated in spending that adds nothing to the stock of useful results. In the notation of Proposition~\ref{prop:goodhart}, a reward on raw compute makes the proxy the cheapest route to income for every participant who can buy hardware, and the network would then cease to be an architecture for productive reuse and become another mechanism for extracting computational expenditure.
+
+\section{A Taxonomy of Gaming}
+
+It helps to list the ways a participant can raise rewards without raising value, since each calls for a different defense. A participant can purchase hardware beyond what its host needs, or run existing machines continuously, which raises measured contribution at the cost of the host's purpose. A participant can manufacture artificial workloads that are cheap to produce and meaningless to complete. A participant can misrepresent its availability or capabilities in the resource descriptor of Chapter~\ref{ch:residual}. A participant can fabricate results without performing the work, multiply trivial tasks, or post tasks to itself and collect the reward for solving them. A participant who reports energy savings can manipulate the baseline against which savings are measured. Finally, a participant can collude with a verifier, which defeats the check that was meant to catch all of the above. Rewards tied to verified outcomes close the first two openings and leave the rest, and the remaining sections address them in turn.
+
+\section{Verification}
+
+The standard defense against fabricated results is redundant execution. The BOINC platform~\cite{anderson2004} issues each work unit to more than one volunteer and accepts a result only when independent copies agree. The method works because a result produced by honest computation is reproducible, and fabricated results are unlikely to agree unless the fabricators coordinate.
+
+\begin{proposition}
+\label{prop:replication}
+Assume that each task is assigned to $r$ replicas chosen independently and uniformly at random from a fixed population, that a fraction $q$ of the nodes collude, that each node holds a single identity, and that the colluders can neither observe nor influence the assignment. The probability that every replica of a given task falls on a colluding node, so that a fabricated result can be agreed upon without detection, is then $q^{r}$.
+\end{proposition}
+
+\begin{proof}
+Each replica is colluding with probability $q$, and the assignments are independent, so all $r$ are colluding with probability $q^{r}$. If at least one replica is honest, a fabricated result from the colluders disagrees with the honest one and is detected.
+\end{proof}
+
+The four assumptions carry the result, and each can fail. If a participant can hold many identities, $q$ is no longer a fixed fraction of the population and can be raised by registering more nodes, so replication must be paired with a cost of identity such as the tying of each node to a physical host. If assignment is correlated, for example because nearby nodes tend to receive the same tasks, the replicas are not independent. If colluders can predict or steer the assignment, the bound $q^{r}$ does not apply at all. The proposition is a statement about a protocol whose sampling is genuinely random and whose identities are scarce, and it should be read as the specification of those requirements and not as a guarantee that holds in their absence.
+
+The cost of this protection is a factor of $r$ in computation, which the network must set against the value of the work. Where the honest result is expensive to produce and cheap to check, spot-checking is a more economical complement. A fraction of tasks are seeded with problems whose answers are known to the verifier in advance, so that a participant cannot tell which results will be inspected.
+
+\begin{proposition}
+\label{prop:spotcheck}
+Assume that honest work costs a participant $c$ per task and is always accepted, earning reward $G$. Assume that a fabricated result avoids the cost $c$, is inspected with probability $s$ independently of the participant's behavior, is detected with certainty when inspected, and that detection forfeits both the reward and a stake $F$ that would otherwise be returned. Then fabrication is unprofitable if and only if
+\[
+s\;\ge\;\frac{c}{G+F}.
+\]
+\end{proposition}
+
+\begin{proof}
+Honest work yields $G-c$. Fabrication yields $(1-s)G-sF$. Fabrication does not pay exactly when $(1-s)G-sF\le G-c$, that is, when $c\le s(G+F)$.
+\end{proof}
+
+The threshold is specific to this payoff model. If detection forfeits the reward but the stake is merely returned, so that $F=0$, the condition becomes $s\ge c/G$. If detection forfeits only the stake and leaves the reward in place, fabrication yields $G-sF$ and the condition becomes $s\ge c/F$. If inspection is imperfect, the effective $s$ is the product of the inspection probability and the probability that an inspected fabrication is recognized. The proposition shows that the inspection rate needed for deterrence falls as the penalty grows, which suggests large stakes. The stake carries its own problem, though. A required deposit favors participants who have capital, and it reintroduces the advantage of wealth that the network was designed to avoid. The choice between a high inspection rate and a high stake is a choice about who is excluded, and it should be made with that in mind. Physical experiments add further tools, namely replication at independent sites, calibration against reference standards, and blind samples whose properties the verifier knows, as described in Chapter~\ref{ch:analog}.
+
+\section{Bounding Participation}
+
+Verification addresses fabrication and leaves the arms race itself, which is addressed by bounding what can be rewarded.
+
+\begin{proposition}
+\label{prop:cap}
+Suppose the rewarded quantity of participant $i$ is $\min\{x_i,\bar x_i\}$, where $x_i$ is the quantity it produces at a positive marginal cost and $\bar x_i$ is a cap fixed by its host system, and the reward pool is divided in proportion to the rewarded quantities. Then producing more than $\bar x_i$ is strictly dominated, so no participant gains from raising the rewarded quantity above its cap, and the total rewarded quantity is at most $\sum_i\bar x_i$.
+\end{proposition}
+
+\begin{proof}
+Spending above $\bar x_i$ does not change the rewarded quantity $\min\{x_i,\bar x_i\}$, and therefore does not change the share received, while it raises cost. Any strategy with $x_i>\bar x_i$ is dominated by the same strategy with $x_i=\bar x_i$.
+\end{proof}
+
+The cap is the mechanism by which the purpose of the host system limits the contest. In a thermal installation, for instance, the cap on rewarded power is the heating demand $D_i(t)$ of Chapter~\ref{ch:thermal}, so that additional hardware earns no additional reward for raising the reported quantity. The result is narrow. It removes the marginal reward for additional reported quantity and does not remove every incentive for capital expenditure. A participant may still buy more efficient hardware to lower the cost of reaching the cap, or more reliable hardware to reach it more consistently, and those investments are not harmful in themselves. The result also depends on the cap being fixed by the host and verifiable by others, which a participant who can misreport the host's demand could attack. It is a design choice that Bitcoin-style rewards lack, because there the only limit on expenditure is the value of the reward itself. A cap also reflects the larger principle that capacity should be tied to the primary function of the participating system and not to the participant's ability to pay.
+
+\section{Gates and Fines}
+
+The rule that the network must never reward participants for defeating the constraints that justified their participation needs a particular form. A fine for violating a constraint can be priced in. If violating gives a participant a gain $g$ and a fine $\varphi$ is imposed with probability $s$, the participant violates whenever $g>s\varphi$, and with a low detection probability or a high gain the violation pays. A gate does not have this weakness. Under a gate the reward is
+\[
+R_i=G\cdot\mathbf 1[\text{all constraints satisfied}]\cdot V_i,
+\]
+with $V_i$ the verified outcome, so a detected violation sets the reward to zero however large the gain from violating inside the reward mechanism. A gate limits what is rewarded and does not by itself guarantee compliant behavior. Its effect depends on detection and enforcement, and on whether violation earns the participant benefits outside the reward mechanism. A participant who can conceal a breach, or who profits from it elsewhere, is unaffected by the gate. What the gate achieves is to keep the prohibited action out of the set of rewarded outcomes, so that the constraint is not offered to the participant as an item on a price list. Constraints that protect the host, such as safety limits, thermal envelopes, and privacy boundaries, should be implemented as gates and not as fines.
+
+\section{Provenance, Independence, and Review}
+
+Provenance records, in the append-only form of Chapter~\ref{ch:router}, make results traceable to the configuration, inputs, hardware, and participant that produced them, so that later audits can reconstruct how a reward was earned. Verification must be independent of the beneficiaries. A verifier who depends on the network for income, or who is selected by the parties being verified, is subject to the same pressure that shapes what an investigator notices, discussed in Chapter~\ref{ch:ellul}. Verifiers should therefore be drawn at random, rotated, and paid in ways that do not depend on the results they approve.
+
+Metrics also decay. Campbell's principle~\cite{campbell1979} predicts that any indicator used to allocate rewards will be corrupted, so the performance criteria must be reassessed on a schedule and replaced when they have been gamed. Test tasks and inspection rates should be changed unpredictably, and each criterion should carry a stated expiry, after which it is retired unless a review renews it. The network should expect to rewrite its own measures regularly and should not treat any as permanent.
+
+\section{The Governing Rule and Its Limits}
+
+The most important institutional rule is that the network must never reward participants for defeating the constraints that justified their participation. The mechanisms of this chapter, verification, caps, gates, independence, and review, are ways of implementing it. None of them removes the underlying pressure. Even verified-output metrics can be gamed. Scientific results can be fabricated, trivial tasks can be multiplied, and reported energy savings can depend on manipulated baselines. The aim is therefore not a reward scheme that is immune to gaming but one in which the cost of gaming is high, the benefit bounded, and the discovery of gaming expected, so that the network corrects itself after each failure.

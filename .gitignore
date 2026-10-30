@@ -3,7 +3,6 @@ art/ci_env
 
 *.tsv
 *.srt
-*.vtt
 *.json
 
 websites.jsonl

@@ -1,0 +1,67 @@
+\chapter{Physical Analog Computation}
+\label{ch:analog}
+
+The third form uses actual physical processes to perform calculations or experimental evaluations. Instead of digitally approximating every stage of fluid evolution, a controlled physical apparatus evolves under the relevant physical laws and produces measurable outputs. The proposal is the least conventional of the three forms and the easiest to misdescribe, since nearly any physical process can be called a computation if the criterion is loose enough. This chapter therefore concentrates on the criterion: what has to be specified before a physical process counts as computing, how its usefulness is measured, and when it is cheaper than the digital alternative.
+
+\section{Precedents}
+
+Analog computation has a long record. Bush's differential analyzer solved ordinary differential equations mechanically in the early 1930s~\cite{bush1931}, and for decades analog machines were the practical means of simulating systems whose digital treatment was too slow. Physical reservoir computing is a modern descendant. It uses the transient dynamics of a fixed physical system as a high-dimensional nonlinear transformation of its input, and it trains only a simple readout from measured states~\cite{maass2002,tanaka2019}. A well-known demonstration used the surface of a bucket of water as the reservoir for a pattern recognition task~\cite{fernando2003}. Experimental system identification, the estimation of a system's behavior from measured inputs and outputs, supplies the complementary tradition~\cite{ljung1999}. What these have in common is that the physical dynamics do work that a digital machine would otherwise do, and that a measurement stage converts the result into symbols.
+
+\section{A Formal Description}
+
+A physical process can be represented as
+\[
+y(t)=\Fphys_{\theta}[u(t)],
+\]
+where $u(t)$ represents controlled inputs, $\theta$ represents the apparatus configuration, and $y(t)$ represents measurable outputs. Real apparatus is also subject to variation that is not controlled, which is included by writing
+\[
+Y=\Fphys(\theta,u,\xi),
+\]
+where $\xi$ stands for ambient temperature, supply fluctuations, sensor noise, and every other uncontrolled factor. In a reservoir arrangement the measured state vector $x(t)$ is read out through a trained linear map, $\hat y(t)=W_{\mathrm{out}}\,x(t)$, and only $W_{\mathrm{out}}$ is learned. The reservoir is useful when its dynamics are nonlinear enough to separate inputs that must be told apart, and when its memory of past inputs fades quickly enough that the response is reproducible.
+
+The crucial question is whether the physical evolution can be configured to answer a specified computational or scientific question. That requires a definition of what answering means.
+
+\section{Computation, Experiment, and Noise}
+
+\begin{definition}[Experimental computation]
+\label{def:expcomp}
+An \emph{experimental computation} consists of a physical protocol, specified by a configuration $\theta$ and controlled inputs $u$, together with a measurement map and a decision rule, and a question posed in advance with a set of candidate answers, such that the measured outputs discriminate among those answers with a stated reliability across the uncontrolled variation $\xi$.
+\end{definition}
+
+The definition separates three cases that are easily confused. A genuine analog computation has all the elements above: the apparatus is configured, inputs are controlled, and the output answers a question that was posed before the run. A scale-model channel built to determine how pressure loss varies with the geometry of a passage is a computation in this sense. An experiment that merely produces data lacks the question, or acquires it only after the fact, so that the observations are available to be interpreted but were not designed to discriminate among answers. An uncontrolled process whose complexity is mistaken for useful information lacks everything. A turbulent plume observed without a hypothesis is not computing anything, however intricate it looks, and neither is a refrigeration loop that merely runs. The mistake to avoid is treating complexity as if it were computation.
+
+Discrimination can be made quantitative in two ways. For two candidate answers whose predicted outputs differ by $\Delta\mu$, with noise of standard deviation $\sigma$ across $\xi$, the discriminability is
+\[
+d'=\frac{\Delta\mu}{\sigma},
+\]
+and a protocol is useful for that question only if $d'$ is large enough for the required reliability. More generally, if $H$ ranges over the hypotheses under test, the information the protocol is expected to supply about $H$ is the mutual information
+\[
+I(\theta)=I(H;Y\mid\theta,u),
+\]
+which is the quantity maximized over admissible configurations in Chapter~\ref{ch:evolutionary}. Repeating a run $n$ times reduces the noise in the average roughly as $\sigma/\sqrt{n}$ if the repetitions are independent, so information per run saturates while cost grows linearly, and the protocol has a natural stopping point.
+
+\section{Similarity and Scaling}
+
+An apparatus answers a question about another system only if the two are physically similar in the relevant respects. Dimensional analysis~\cite{buckingham1914} expresses this through dimensionless groups. For fluid flow the Reynolds number
+\[
+\mathrm{Re}=\frac{\rho\,U\,L}{\mu},
+\]
+with density $\rho$, characteristic speed $U$, length $L$, and dynamic viscosity $\mu$, governs the balance of inertial and viscous effects, and the Mach number $U/c$, with $c$ the speed of sound, governs compressibility. A small apparatus cannot in general match every group of the full-scale system at once. Reducing $L$ lowers $\mathrm{Re}$ unless $U$ rises or the fluid changes, and raising $U$ to compensate changes the Mach number. A module is therefore valid for a particular question only when the groups that matter for that question are matched, and the module's documentation must say which they are. This is the distinction between physical similarity and superficial resemblance, and Chapter~\ref{ch:furnaces} applies it to the specific case of heating equipment.
+
+\section{When Physical Computation Is Cheaper}
+
+The case for a physical computer is strongest where digital simulation is most expensive. The cost of resolving all the scales of a turbulent flow numerically grows roughly as the cube of the Reynolds number~\cite{pope2000}, so that high-Reynolds-number flows quickly become prohibitive. A physical apparatus resolves every scale as a matter of course, since the fluid carries out the evolution whatever the observer can see. Its limitation lies elsewhere, in what can be read out. The bandwidth of the computation is set by the sensors, which sample a few channels of a field that the physics evolves in full. A physical computer is therefore fast in the evolution and narrow in the readout, and the questions it answers well are those whose answers can be expressed through the channels that are measured.
+
+Cost comparison needs a single measure. The thermodynamic computational yield
+\[
+\eta_X=\frac{\text{validated information gained}}{\text{net additional energy consumed}}
+\]
+expresses the information a protocol delivers per unit of energy that it would not otherwise have used. It is not a conventional dimensionless efficiency. It requires a carefully specified measure of information gain, for which $I(\theta)$ above is a candidate, and a consistent boundary for energy accounting. If an experiment yields useful information while supplying heat that would otherwise have required equivalent electrical energy, its incremental energy cost may be small, though not necessarily zero, since pumps, sensors, pressure losses, and changes in heating efficiency still count. A physical protocol beats a numerical one for a given question when its yield exceeds the yield of the simulation, $\eta_X>\eta_{\mathrm{num}}$, with each measured at the same accounting boundary and the same required reliability.
+
+\section{Calibration, Validation, and Reproducibility}
+
+A physical result carries no authority unless it can be reproduced and checked. Sensors drift and apparatus ages, and ambient conditions vary between sites, so each module needs calibration against reference standards, uncertainty estimates attached to every measurement, and periodic validation against a known case. A result accepted into the network's record should state the configuration $\theta$, the controlled inputs $u$, the measured outputs, the estimated uncertainty, and the calibration state of the sensors, so that an independent party can judge whether the discriminability claimed was achieved. This is the experimental counterpart of the separation between recording and validating introduced in Chapter~\ref{ch:router}.
+
+\section{Conditions Under Which the Proposal Fails}
+
+Physical analog computation fails when the question cannot be expressed in the channels that can be measured, when the similarity conditions needed to transfer the result to the system of interest cannot be met in a small, safe apparatus, when the noise across sites overwhelms the effect under study so that $d'$ stays small, or when the yield falls below that of simulation at the same reliability. Experiment C in Appendix~B is intended to test the last two on a laboratory apparatus before any claim is made about distributed installations.

@@ -1,0 +1,301 @@
+\documentclass[11pt,openany]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+
+\setstretch{1.1}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\Fphys}{\mathcal{F}}
+\newcommand{\Aset}{\mathcal{A}}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{example}[proposition]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+
+\title{Computation Without Extraction\\[0.6em]
+\large A Treatise on Distributed Intelligence, Thermodynamic Work,\\
+and the Long-Term Economics of Existing Infrastructure}
+\author{Flyxion\\Independent Researcher}
+\date{November 2026}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+This monograph proposes an organizing principle for computational infrastructure. Instead of asking how the utilization of dedicated computing assets can be maximized, it asks what computations existing physical and technological systems can perform without compromising the reasons those systems exist. A computer, a furnace, an air conditioner, and a communications link each serve an independent purpose. Each also possesses residual capabilities that conventional accounting treats as idle or wasted. The hypothesis examined here is that those residual capabilities can be organized into a useful computational network under conditions the monograph tries to state, and that the obstacle which most distinguishes the proposal is institutional and not only technical: the tendency of performance metrics to become targets that distort the purposes they were introduced to measure.
+
+Three forms of distributed calculation are distinguished throughout: conventional digital computation using existing hardware, thermally integrated digital computation, and physical analog computation using actual thermodynamic processes. Much of the individual machinery is established. Volunteer computing, computational space heating, physical reservoir computing, and waste heat reuse each have a literature of their own. The contribution attempted here is their integration under a common theory of bounded participation, long-horizon adaptation, and resistance to metric-driven resource escalation, together with an explicit empirical program by which the integration can fail. The proposal is treated throughout as a conditional research hypothesis and not as a demonstrated solution. The final chapter sorts the monograph's claims into those established within its models, those conditional on quantities still to be measured, and those that remain open.
+
+Symbols are defined where they are introduced and are local to the chapter in which they appear. The letters $r$, $s$, $q$, $\rho$, and $\epsilon$ are each used for different quantities in different chapters, in every case with the meaning stated at the point of use.
+
+\tableofcontents
+
+\mainmatter
+
+\part{The Efficiency Trap}
+\input{chapters/ch01-misallocation-of-intelligence}
+\input{chapters/ch02-ellul-and-technique}
+\input{chapters/ch03-goodhart}
+\input{chapters/ch04-bitcoin}
+
+\part{Three Forms of Distributed Calculation}
+\input{chapters/ch05-residual-digital}
+\input{chapters/ch06-idea-router}
+\input{chapters/ch07-thermal-digital}
+\input{chapters/ch08-physical-analog}
+
+\part{Thermodynamic Infrastructure as an Experimental Platform}
+\input{chapters/ch09-furnaces}
+\input{chapters/ch10-evolutionary-flow}
+\input{chapters/ch11-refrigeration}
+\input{chapters/ch12-entropy}
+
+\part{The Economics of Existing Things}
+\input{chapters/ch13-sunk-infrastructure}
+\input{chapters/ch14-geography}
+\input{chapters/ch15-long-horizon}
+
+\part{Governance, Goodhart, and Selective Continuation}
+\input{chapters/ch16-not-rewarding-computation}
+\input{chapters/ch17-right-to-remain-idle}
+\input{chapters/ch18-admissible-contributions}
+
+\appendix
+\chapter{Mathematical Foundations}
+\input{chapters/appendix-foundations}
+
+\chapter{Empirical Program}
+\input{chapters/appendix-empirical}
+
+\backmatter
+
+\begin{thebibliography}{99}
+
+\bibitem{anderson2002}
+D.~P. Anderson, J.~Cobb, E.~Korpela, M.~Lebofsky, and D.~Werthimer,
+``SETI@home: An Experiment in Public-Resource Computing,''
+\emph{Communications of the ACM} 45(11), 56--61, 2002.
+
+\bibitem{anderson2004}
+D.~P. Anderson,
+``BOINC: A System for Public-Resource Computing and Storage,''
+in \emph{Proceedings of the Fifth IEEE/ACM International Workshop on Grid Computing}, 4--10, 2004.
+
+\bibitem{auer2002}
+P.~Auer, N.~Cesa-Bianchi, and P.~Fischer,
+``Finite-Time Analysis of the Multiarmed Bandit Problem,''
+\emph{Machine Learning} 47(2--3), 235--256, 2002.
+
+\bibitem{barker2015}
+E.~Barker and J.~Kelsey,
+``Recommendation for Random Number Generation Using Deterministic Random Bit Generators,''
+NIST Special Publication 800-90A, Revision~1, 2015.
+
+\bibitem{barroso2007}
+L.~A. Barroso and U.~H\"olzle,
+``The Case for Energy-Proportional Computing,''
+\emph{IEEE Computer} 40(12), 33--37, 2007.
+
+\bibitem{bell2014}
+I.~H. Bell, J.~Wronski, S.~Quoilin, and V.~Lemort,
+``Pure and Pseudo-Pure Fluid Thermophysical Property Evaluation and the Open-Source Thermophysical Property Library CoolProp,''
+\emph{Industrial \& Engineering Chemistry Research} 53(6), 2498--2508, 2014.
+
+\bibitem{benet2014}
+J.~Benet,
+``IPFS: Content Addressed, Versioned, P2P File System,''
+arXiv:1407.3561, 2014.
+
+\bibitem{bonifield2026}
+S.~Bonifield,
+``Sam Altman Says It's Better for RAM to Be in a Data Center Than on Your Desk,''
+\emph{The Verge}, October 30, 2026.
+
+\bibitem{buckingham1914}
+E.~Buckingham,
+``On Physically Similar Systems: Illustrations of the Use of Dimensional Equations,''
+\emph{Physical Review} 4(4), 345--376, 1914.
+
+\bibitem{bush1931}
+V.~Bush,
+``The Differential Analyzer: A New Machine for Solving Differential Equations,''
+\emph{Journal of the Franklin Institute} 212(4), 447--488, 1931.
+
+\bibitem{caffier2026}
+J.~Caffier,
+``What Nathan Fielder's `You Can See Everything' Taught Me About Tech Journalism,''
+\emph{Gizmodo}, October 31, 2026.
+
+\bibitem{campbell1979}
+D.~T. Campbell,
+``Assessing the Impact of Planned Social Change,''
+\emph{Evaluation and Program Planning} 2(1), 67--90, 1979.
+
+\bibitem{dixit1994}
+A.~K. Dixit and R.~S. Pindyck,
+\emph{Investment under Uncertainty},
+Princeton University Press, Princeton, 1994.
+
+\bibitem{douceur2002}
+J.~R. Douceur,
+``The Sybil Attack,''
+in \emph{Peer-to-Peer Systems}, Lecture Notes in Computer Science 2429, 251--260, Springer, 2002.
+
+\bibitem{ellul1964}
+J.~Ellul,
+\emph{The Technological Society},
+translated by J.~Wilkinson, Alfred A.\ Knopf, New York, 1964.
+Originally published as \emph{La Technique ou l'enjeu du si\`ecle}, Armand Colin, Paris, 1954.
+
+\bibitem{fernando2003}
+C.~Fernando and S.~Sojakka,
+``Pattern Recognition in a Bucket,''
+in \emph{Advances in Artificial Life}, Lecture Notes in Computer Science 2801, 588--597, Springer, 2003.
+
+\bibitem{gomezdavila1977}
+N.~G\'omez D\'avila,
+\emph{Escolios a un texto impl\'icito},
+two volumes, Instituto Colombiano de Cultura, Bogot\'a, 1977.
+A bilingual selected edition is available as \emph{Scholia to an Implicit Text}, translated by R.~Pinz\'on, Villegas Editores, Bogot\'a, 2013.
+
+\bibitem{goodhart1975}
+C.~A.~E. Goodhart,
+``Problems of Monetary Management: The U.K.\ Experience,''
+in \emph{Papers in Monetary Economics}, Volume~I, Reserve Bank of Australia, Sydney, 1975.
+
+\bibitem{hansen2001}
+N.~Hansen and A.~Ostermeier,
+``Completely Derandomized Self-Adaptation in Evolution Strategies,''
+\emph{Evolutionary Computation} 9(2), 159--195, 2001.
+
+\bibitem{hill1999}
+J.~H\aa stad, R.~Impagliazzo, L.~A. Levin, and M.~Luby,
+``A Pseudorandom Generator from Any One-Way Function,''
+\emph{SIAM Journal on Computing} 28(4), 1364--1396, 1999.
+
+\bibitem{jameson1988}
+A.~Jameson,
+``Aerodynamic Design via Control Theory,''
+\emph{Journal of Scientific Computing} 3(3), 233--260, 1988.
+
+\bibitem{jevons1865}
+W.~S. Jevons,
+\emph{The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of Our Coal-Mines},
+Macmillan, London, 1865.
+
+\bibitem{jcgm2008}
+Joint Committee for Guides in Metrology,
+``Evaluation of Measurement Data: Guide to the Expression of Uncertainty in Measurement,''
+JCGM 100:2008, 2008.
+
+\bibitem{katipamula2005}
+S.~Katipamula and M.~R. Brambley,
+``Methods for Fault Detection, Diagnostics, and Prognostics for Building Systems: A Review, Part~I,''
+\emph{HVAC\&R Research} 11(1), 3--25, 2005.
+
+\bibitem{kuhn1955}
+H.~W. Kuhn,
+``The Hungarian Method for the Assignment Problem,''
+\emph{Naval Research Logistics Quarterly} 2(1--2), 83--97, 1955.
+
+\bibitem{landauer1961}
+R.~Landauer,
+``Irreversibility and Heat Generation in the Computing Process,''
+\emph{IBM Journal of Research and Development} 5(3), 183--191, 1961.
+
+\bibitem{ljung1999}
+L.~Ljung,
+\emph{System Identification: Theory for the User},
+second edition, Prentice Hall, Upper Saddle River, 1999.
+
+\bibitem{maass2002}
+W.~Maass, T.~Natschl\"ager, and H.~Markram,
+``Real-Time Computing Without Stable States: A New Framework for Neural Computation Based on Perturbations,''
+\emph{Neural Computation} 14(11), 2531--2560, 2002.
+
+\bibitem{manheim2018}
+D.~Manheim and S.~Garrabrant,
+``Categorizing Variants of Goodhart's Law,''
+arXiv:1803.04585, 2018.
+
+\bibitem{maymounkov2002}
+P.~Maymounkov and D.~Mazi\`eres,
+``Kademlia: A Peer-to-Peer Information System Based on the XOR Metric,''
+in \emph{Peer-to-Peer Systems}, Lecture Notes in Computer Science 2429, 53--65, Springer, 2002.
+
+\bibitem{nakamoto2008}
+S.~Nakamoto,
+``Bitcoin: A Peer-to-Peer Electronic Cash System,''
+2008.
+
+\bibitem{pope2000}
+S.~B. Pope,
+\emph{Turbulent Flows},
+Cambridge University Press, Cambridge, 2000.
+
+\bibitem{rasmussen2006}
+C.~E. Rasmussen and C.~K.~I. Williams,
+\emph{Gaussian Processes for Machine Learning},
+MIT Press, Cambridge, 2006.
+
+\bibitem{santha1986}
+M.~Santha and U.~V. Vazirani,
+``Generating Quasi-Random Sequences from Semi-Random Sources,''
+\emph{Journal of Computer and System Sciences} 33(1), 75--87, 1986.
+
+\bibitem{skalse2022}
+J.~Skalse, N.~Howe, D.~Krasheninnikov, and D.~Krueger,
+``Defining and Characterizing Reward Hacking,''
+in \emph{Advances in Neural Information Processing Systems} 35, 2022.
+
+\bibitem{sorrell2009}
+S.~Sorrell, J.~Dimitropoulos, and M.~Sommerville,
+``Empirical Estimates of the Direct Rebound Effect: A Review,''
+\emph{Energy Policy} 37(4), 1356--1371, 2009.
+
+\bibitem{strathern1997}
+M.~Strathern,
+``Improving Ratings: Audit in the British University System,''
+\emph{European Review} 5(3), 305--321, 1997.
+
+\bibitem{sui2015}
+Y.~Sui, A.~Gotovos, J.~Burdick, and A.~Krause,
+``Safe Exploration for Optimization with Gaussian Processes,''
+in \emph{Proceedings of the 32nd International Conference on Machine Learning}, PMLR 37, 997--1005, 2015.
+
+\bibitem{tanaka2019}
+G.~Tanaka, T.~Yamane, J.~B. H\'eroux, R.~Nakane, N.~Kanazawa, S.~Takeda, H.~Numata, D.~Nakano, and A.~Hirose,
+``Recent Advances in Physical Reservoir Computing: A Review,''
+\emph{Neural Networks} 115, 100--123, 2019.
+
+\bibitem{turan2018}
+M.~S. Turan, E.~Barker, J.~Kelsey, K.~A. McKay, M.~L. Baish, and M.~Boyle,
+``Recommendation for the Entropy Sources Used for Random Bit Generation,''
+NIST Special Publication 800-90B, 2018.
+
+\bibitem{wright1936}
+T.~P. Wright,
+``Factors Affecting the Cost of Airplanes,''
+\emph{Journal of the Aeronautical Sciences} 3(4), 122--128, 1936.
+
+\end{thebibliography}
+
+\end{document}

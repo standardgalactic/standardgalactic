@@ -1,0 +1,31 @@
+\chapter[Bitcoin and Competitive Escalation]{Bitcoin and the Competitive Escalation of Computation}
+\label{ch:bitcoin}
+
+Proof-of-work mining supplies the monograph's principal counterexample, a system in which a reward structure converts computational expenditure into a goal in its own right. It is a fair choice because the system is not frivolous. It was designed to solve a real problem, and any argument about its costs has to begin by acknowledging what the expenditure buys.
+
+\section{What the Expenditure Buys}
+
+In the design described by Nakamoto~\cite{nakamoto2008}, participants compete to find a value whose hash satisfies a difficulty condition, and the winner of each round is entitled to append a block of transactions to a shared ledger and collect a reward. Because finding such a value requires repeated trial, a participant who wishes to rewrite the ledger's history would have to redo the work from the point of the alteration forward, and would have to do it faster than the honest participants combined. The expenditure is therefore not computationally meaningless. It makes reorganization of the ledger costly, and that cost is the system's security function.
+
+\section{Why More Computation Does Not Mean More Service}
+
+The network adjusts its difficulty parameter at fixed intervals, at roughly every two thousand blocks, so that blocks continue to arrive at a target average rate. The consequence is that an increase in aggregate computational effort does not produce a proportional increase in the rate of confirmed blocks, or in the transactional capacity that users receive. The additional effort raises the difficulty. What it raises in return is the cost an attacker would face, together with the cost every participant bears to remain competitive.
+
+The chapter must therefore keep two claims separate. The first is that proof-of-work provides security by making ledger reorganization costly, which is true by design. The second is that every additional unit of computation creates additional social value, which does not follow from the first. Whether a given level of expenditure is the right price for a given level of security is a question about marginal benefit, and the reward structure does not ask it. The reward structure pays for being first, not for being useful.
+
+\section{Competitive and Productive Computation}
+
+The general distinction drawn from this case is between two kinds of computational activity.
+
+\begin{definition}[Competitive and productive computation]
+\label{def:competitive}
+Computation is \emph{competitive} when participants expend resources to improve their position relative to other participants, so that the benefit of additional expenditure to one participant is partly a loss to others. Computation is \emph{productive} when additional resources produce results that have independent value whether or not other participants also compute.
+\end{definition}
+
+A hash race is competitive in this sense. The benefit to a miner of doubling hardware is largely a reduction in everyone else's share. A protein-folding simulation is productive, since a second simulation of a different protein is valuable regardless of whether anyone else has run the first. Competitive computation exhibits escalation: when a reward is divisible among participants in proportion to expenditure, each has an incentive to spend more, and the equilibrium level of expenditure tends toward the value of the reward. The expenditure that results is a transfer to the suppliers of hardware and electricity, and not an addition to the stock of useful results.
+
+\section{Heat Recovery and the Retrospective Justification}
+
+Some mining operations reuse the heat their machines produce, for greenhouses, buildings, or industrial drying. The chapter distinguishes two situations that look alike from outside. In genuine thermal substitution, the heat displaces fuel or electricity that would otherwise have been consumed for heating, so the computation rides on an energy demand that already existed. In retrospective justification, an operation is built for the sake of its computational reward, and heat recovery is added afterward to defend the electricity consumption it created. The first reduces net demand relative to the alternative. The second increases net demand and recovers part of it.
+
+The test that separates the two cases is a counterfactual one: would the heat have been needed, and the energy bought, without the computation? Only the first case passes. This test returns in Chapter~\ref{ch:thermal} as the governing rule of thermally integrated computation, in which the heating requirement of a building sets the permissible computation, not the reverse.

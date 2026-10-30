@@ -1,0 +1,77 @@
+\chapter{Sunk Infrastructure and Marginal Computation}
+\label{ch:sunk}
+
+This chapter develops the economic case for using already manufactured hardware, and it is the foundation on which the long-horizon argument of Chapter~\ref{ch:horizon} rests. A newly constructed data center and a network of existing household computers have fundamentally different capital-cost structures. The relevant comparison is not simply computational throughput per watt, but the total additional resources required to provide equivalent services. The chapter's first obligation is to avoid a common error: existing hardware is not free hardware. Its manufacturing expenditure may already have occurred, but operating an old computer still consumes electricity, causes wear, occupies space, creates administrative obligations, and may accelerate its replacement.
+
+\section{Three Kinds of Cost}
+
+Any comparison has to say whose costs it counts. Private financial costs are the prices paid and received by the parties, and they depend on tariffs, subsidies, and the compensation offered to owners. Social resource costs are the energy, materials, and labor consumed regardless of who pays. Environmental costs are the emissions and other burdens, including those embodied in manufacture. The three need not agree. A project can be privately profitable while raising total energy consumption, because the energy is cheap or the burden falls on others, and it can be environmentally advantageous while failing to compensate its participants adequately. This chapter states its conditions for each kind of cost separately and does not treat one as a proxy for the others.
+
+\section{The Comparison Condition}
+
+The central proposition is conditional. Let $W$ denote a verified workload, $T$ a horizon, and suppose both arrangements deliver $W$ over $T$ with equivalent reliability, security, and service requirements. Reuse is preferable when
+\[
+C_{\mathrm{reuse}}(W,T)<C_{\mathrm{dedicated}}(W,T).
+\]
+The equivalence requirement is substantial. Existing machines are unreliable and intermittent, so delivering one verified unit of work requires performing more than one unit of raw work. With the replication of Chapter~\ref{ch:norewards} and the availability of each node taken into account, let $\rho\ge1$ be the ratio of raw work performed to verified work delivered. The cost of reuse then decomposes as
+\[
+C_{\mathrm{reuse}}=C_{\mathrm{org}}+C_{\mathrm{coord}}+C_{\mathrm{energy}}+C_{\mathrm{wear}}+C_{\mathrm{maint}}+C_{\mathrm{repl}}+C_{\mathrm{comp}},
+\]
+covering organization, coordination, incremental energy, wear, maintenance, accelerated replacement, and compensation to the owners. The cost of the dedicated alternative is
+\[
+C_{\mathrm{dedicated}}=C_{\mathrm{manufacture}}+C_{\mathrm{deploy}}+C_{\mathrm{operation}}+C_{\mathrm{retire}},
+\]
+with the operating term including the overhead of cooling and power delivery. The embodied cost of the existing machine is sunk with respect to a new participation decision, and a full environmental assessment still accounts for hardware lifetime, replacement effects, and disposal.
+
+\section{Operating Energy and the Strongest Counterexample}
+
+The most difficult counterexample is a modern data center that delivers so much more computation per joule that it outperforms the distributed network even after manufacturing is counted. The comparison for operating energy can be written out. Let $\mathrm{PUE}\ge1$ be the power usage effectiveness of the dedicated facility and $e_{\mathrm{new}}$ the electricity per unit of computation on its hardware. For an existing machine that is already switched on, only the energy above its idle draw is attributable to the added work,
+\[
+e^{\mathrm{marg}}_{\mathrm{old}}=\frac{P^{\mathrm{busy}}_{\mathrm{old}}-P^{\mathrm{idle}}_{\mathrm{old}}}{\theta_{\mathrm{old}}},
+\]
+where $\theta_{\mathrm{old}}$ is its throughput. This matters because computing hardware is rarely energy-proportional, and idle draw is a substantial fraction of peak~\cite{barroso2007}. The reuse option has an operating-energy advantage only if
+\[
+\rho\,e^{\mathrm{marg}}_{\mathrm{old}}<\mathrm{PUE}\cdot e_{\mathrm{new}}.
+\]
+The inequality shows how much the case depends on the replication factor and on the age of the hardware. A factor $\rho$ of two doubles the old machine's energy per verified unit, and an efficient facility has a $\mathrm{PUE}$ near one, so the old hardware must have a marginal energy per unit that is below half that of new hardware. An older processor that is several times less efficient fails the test on operating energy alone, and many do. The honest conclusion is that reuse of general-purpose old hardware rarely wins on operating energy against a modern facility.
+
+Embodied costs enter the balance on both sides. Let $E^{\mathrm{emb}}_{\mathrm{new}}$ be the emissions embodied in the new hardware and $W^{\mathrm{life}}_{\mathrm{new}}$ the verified work it delivers over its life. For the old machine, participation is charged only the fraction $\delta$ by which it shortens the machine's remaining life, applied to the embodied emissions $E^{\mathrm{emb}}_{\mathrm{old}}$ of the machine and spread over the work $W^{\mathrm{life}}_{\mathrm{old}}$ delivered in that life. Reuse is environmentally advantageous per unit of verified work when
+\[
+\rho\,\kappa\,e^{\mathrm{marg}}_{\mathrm{old}}+\frac{\delta\,E^{\mathrm{emb}}_{\mathrm{old}}}{W^{\mathrm{life}}_{\mathrm{old}}}
+\;<\;
+\kappa\,\mathrm{PUE}\,e_{\mathrm{new}}+\frac{E^{\mathrm{emb}}_{\mathrm{new}}}{W^{\mathrm{life}}_{\mathrm{new}}},
+\]
+where $\kappa$ is the carbon intensity of electricity. The embodied term favors reuse, since the existing machine's manufacture is already paid for, and the operating term usually opposes it. A network of general-purpose old computers wins this comparison only where embodied emissions dominate, which is more likely when the grid is clean and less likely when it is not.
+
+Several factors can tip the balance toward reuse, and each should be argued separately and measured. When the electricity would have been consumed for heating regardless, as in Chapter~\ref{ch:thermal}, the attributable energy falls sharply and in the resistance-heater case vanishes. When the work is naturally local, or requires low latency or data that should not leave the premises, transmission to a facility has costs that the comparison above omits. And when the value of autonomy, privacy, or resilience is counted, which Chapter~\ref{ch:misallocation} argued is not captured by utilization, the preference for local resources has a basis that the cost ledger does not show. Some of these are not priced, and the chapter does not pretend that they are.
+
+\section{Cost of Participation and Cost of Organizing Participation}
+
+The comparison above concerns the marginal cost of using a machine. The network also bears a cost of organizing participation that does not fall when a single household withdraws, including software, protocols, security, verification, and support. Model the cost structures as linear in volume, with reuse costing $F+fW$ and the dedicated alternative costing $K+gW$, where $F$ and $K$ are fixed costs and $f$ and $g$ are costs per unit of verified work.
+
+\begin{proposition}
+\label{prop:crossover}
+If $f\ne g$ the two cost curves cross exactly once, at the volume
+\[
+W^{\circ}=\frac{K-F}{f-g}.
+\]
+When $f>g$ and $K>F$, reuse is cheaper below $W^{\circ}$ and the dedicated alternative is cheaper above it. When $f<g$ and $F>K$, the dedicated alternative is cheaper below $W^{\circ}$ and reuse is cheaper above it.
+\end{proposition}
+
+\begin{proof}
+Reuse is cheaper exactly when $F+fW<K+gW$, which is equivalent to $(f-g)W<K-F$. If $f>g$ this reads $W<(K-F)/(f-g)$, and if $f<g$ it reads $W>(K-F)/(f-g)=(F-K)/(g-f)$. The remaining case is that the right-hand side is nonpositive, in which case the inequality holds for no positive volume when $f>g$ and for every positive volume when $f<g$.
+\end{proof}
+
+The proposition clarifies the realistic case. If the dedicated facility has high fixed costs and low unit costs, as is typical of data centers ($K$ large, $g$ small), and the network has low fixed costs but higher unit costs because of replication and old hardware ($f>g$), then the network is cheaper at small scale and loses at large scale. That is a precise sense in which the network is a small-scale, low-commitment solution, and it is consistent with the real-options argument of Chapter~\ref{ch:horizon}. The network is not expected to displace dedicated infrastructure at large volumes. Whether $f$ can be made smaller than $g$, so that the network wins above a threshold volume, is an empirical question that Experiment A is designed to inform.
+
+\section{Rebound and Demand}
+
+The comparison above holds the workload fixed, and in practice it is not. Cheaper computation is demanded in greater quantity, and the rebound literature~\cite{sorrell2009} documents cases in which efficiency gains were partly or wholly absorbed by increased use. The classical statement is Jevons's observation about coal~\cite{jevons1865}. If reuse lowers the marginal price of computation, the workload $W$ can rise, and total energy and total emissions can rise with it even if each unit is cheaper. An assessment of environmental benefit must therefore be made at the level of total consumption, with an estimate of the demand response, and not only per unit of work.
+
+\section{When Reuse Is Counterproductive}
+
+There are circumstances in which lower-performance existing hardware is preferable to new hardware, and circumstances in which it is not. A decade-old processor that performs a given calculation at a tenth of the energy efficiency of current hardware can emit more over a given horizon, through the electricity it consumes, than the manufacture of its replacement would have emitted, and the balance depends on the horizon and on the carbon intensity of the grid. The reasonable policy is to admit hardware into the network on measured marginal energy per unit of work and to exclude machines that fail a stated threshold, and not to treat all existing hardware as a resource. Experiment A in Appendix~B supplies the measurements on which that threshold would be set.
+
+\section{Conditions Under Which the Economic Case Fails}
+
+The case fails when the replication factor and the age of the hardware make the operating energy per verified unit exceed that of an efficient facility by more than the embodied savings can offset, when the grid is carbon-intensive enough that operating emissions dominate, when the network's organizing costs are large relative to the volume of work it handles, or when the demand response is large enough that total consumption rises. It also fails when the compensation required to secure participation exceeds the value of the work. In each case the architecture may still be justified on grounds that the cost ledger does not capture, such as autonomy, but those grounds must then be argued as such and not presented as economic efficiency.

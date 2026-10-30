@@ -1,0 +1,85 @@
+\chapter{Evolutionary Flow Geometry}
+\label{ch:evolutionary}
+
+This chapter develops the proposal for individually configured release boards. Each participating experimental module possesses a parameterized geometry $\theta$. The network observes how different configurations influence flow, mixing, pressure losses, and heat transfer, and it uses what it learns to choose the configurations to test next. The chapter treats the search as an experimental design problem under three constraints that dominate it: each evaluation is a slow physical event, each is noisy and site dependent, and every configuration tested must be safe. Within those constraints it asks when physical evolutionary search is the right instrument and when conventional numerical optimization is better.
+
+\section{Geometry and the Admissible Set}
+
+A module's configuration is a vector $\theta=(a_1,\dots,a_n)$ describing features such as passage geometry, vane angles and spacing, surface structures, and flow restrictions, with each parameter bounded. The set of configurations the network may test is
+\[
+\Aset=\{\theta:\ g_j(\theta)\le0,\ j=1,\dots,J\},
+\]
+where the constraints $g_j$ express limits on pressure drop, temperature, and mechanical integrity. The set $\Aset$ is fixed by certification and by the manufacturer's limits and not by the optimizer, as in the safety envelope of Chapter~\ref{ch:idle}. Each configuration is a physical object that must be fabricated and installed, so exploration has a cost per configuration that numerical search does not. This favors a library of pre-fabricated, interchangeable inserts over per-experiment fabrication, and it makes the number of distinct configurations a scarce resource that the design should spend deliberately.
+
+\section{Surrogates and the Information Objective}
+
+A surrogate model predicts the outcome of untested configurations from the record of tested ones, and an evolutionary search proposes configurations for subsequent testing. A Gaussian process is a natural surrogate here~\cite{rasmussen2006}, since it supplies not only a prediction but also a predictive variance $s^{2}(\theta)$ at each untested point. For a single measurement $y=f(\theta)+\varepsilon$ with Gaussian noise of variance $\sigma^{2}$, the information that the measurement supplies about $f(\theta)$ is
+\[
+I(f(\theta);y)=\tfrac12\ln\!\Bigl(1+\frac{s^{2}(\theta)}{\sigma^{2}}\Bigr),
+\]
+measured in nats. The expression shows how the objective of Chapter~\ref{ch:analog} behaves. Information is largest where the surrogate is most uncertain and where the measurement is least noisy, and it falls to zero where the surrogate is already certain. The optimization objective must be explicitly constrained:
+\[
+\max_{\theta\in\Aset} I(\theta),
+\]
+where $I(\theta)$ represents expected scientific information gain and $\Aset$ is the independently established set of safe, permitted configurations. The system does not optimize pressure, turbulence, or temperature without bounds, and an objective that mixes information gain with a performance target must state the exchange rate between them explicitly, since the two pull in different directions: information gain favors uncertain regions, and performance favors regions already known to be good.
+
+Population-based methods such as evolution strategies with covariance adaptation~\cite{hansen2001} are the usual tool for proposing candidates when the objective is irregular, and they need many evaluations. The surrogate reduces the number of physical evaluations by screening candidates before any is built. The point of the combination is to spend scarce physical tests where they are most informative.
+
+\section{The Evaluation Budget}
+
+Each physical evaluation requires the flow and temperature to settle and then to be measured, which takes minutes to hours. If a module completes one evaluation every $\tau$ hours and $N$ modules operate in parallel for $T$ hours, the network performs about $NT/\tau$ evaluations, less the fraction spent on reference runs. For $\tau=2$ hours and a thousand modules this is on the order of ten thousand evaluations per day. That is a respectable number for a physical experiment and a small one by the standards of numerical search, where a single workstation can evaluate far more candidate designs in a day if a trusted simulation exists. The network's value cannot lie in the volume of evaluations. It lies in the fact that each evaluation is a measurement of the real system.
+
+\section{Selection Under Noise}
+
+Because outcomes are noisy, a selection step that compares two configurations can choose the wrong one. Suppose two configurations differ in true mean outcome by $\Delta>0$, each is measured $m$ times with independent noise of standard deviation $\sigma$, and the one with the larger sample mean is selected.
+
+\begin{proposition}
+\label{prop:selection}
+The probability that the truly better configuration is selected is
+\[
+\Phi\!\left(\frac{\Delta\sqrt{m}}{\sigma\sqrt{2}}\right),
+\]
+where $\Phi$ is the standard normal distribution function. Selection is correct with probability at least $1-\delta$ when
+\[
+m\ \ge\ \frac{2\,z_{\delta}^{2}\,\sigma^{2}}{\Delta^{2}},\qquad z_\delta=\Phi^{-1}(1-\delta).
+\]
+\end{proposition}
+
+\begin{proof}
+The difference of the two sample means is normally distributed with mean $\Delta$ and variance $2\sigma^{2}/m$. The better configuration is selected when this difference is positive, which has probability $\Phi\bigl(\Delta/(\sigma\sqrt{2/m})\bigr)$. Setting this at least $1-\delta$ gives $\Delta\sqrt{m}/(\sigma\sqrt2)\ge z_\delta$, which rearranges to the stated bound.
+\end{proof}
+
+The bound shows that distinguishing small improvements is expensive: halving $\Delta$ quadruples the number of replications needed. Evolutionary search that ignores the noise will drift on spurious differences, so the search must either replicate or accept a stated rate of selection error.
+
+The proposition assumes that both configurations were measured under the same conditions, which in a distributed network they are not. If they are measured at different sites, the site effect enters.
+
+\begin{proposition}
+\label{prop:sitevariance}
+Using the model of Chapter~\ref{ch:furnaces}, let each configuration be measured $m$ times at its own site, with site effects of variance $\sigma_b^{2}$ and measurement noise of variance $\sigma^{2}$. The difference between the two sample means then has variance $2\sigma_b^{2}+2\sigma^{2}/m$. If instead both configurations are measured at the same site, in alternation so that the site effect is common, the variance of the difference is $2\sigma^{2}/m$.
+\end{proposition}
+
+\begin{proof}
+A sample mean at one site has variance $\sigma_b^{2}+\sigma^{2}/m$, and two sites are independent, so the variances add. At a single site the common term $b_i$ cancels in the difference, leaving the noise terms of the two means.
+\end{proof}
+
+The comparison across sites has a floor of $2\sigma_b^{2}$ that no number of replications removes. When the site variance is large relative to the effects of interest, replication does not help and the design must change, either by comparing configurations within a site by alternation, or by running the reference configuration at every site as established in Chapter~\ref{ch:furnaces}. The alternating design assumes that conditions drift slowly relative to the alternation, which has to be checked.
+
+\section{Safe Exploration}
+
+The constraints in $\Aset$ are not always known for a new configuration before it is tested. The pressure drop of an untried geometry, for instance, can only be estimated. Exploration must therefore proceed from a certified starting configuration and expand cautiously. A method with a known structure is to treat the constraint values as unknown functions modeled by the surrogate and to test only configurations whose predicted constraint value, plus a multiple of its predictive standard deviation, lies within the limit~\cite{sui2015}. The set of configurations deemed safe grows as data accumulates. The guarantee holds only if the model's assumptions are correct, and a model that is wrong about the constraint can recommend an unsafe test. For that reason the independent safety controller of the appliance remains the last line of defense, and no exploration rule is permitted to override it.
+
+\section{Comparison with Numerical Optimization}
+
+The chapter compares evolutionary physical experimentation with conventional numerical optimization, computational fluid dynamics, and automated laboratory systems, with attention to cost per informative experiment and to the fidelity of the physical module relative to the target system. The strongest competitor is gradient-based design with adjoint methods, whose cost of computing the gradient of an objective is nearly independent of the number of design parameters~\cite{jameson1988}. Where a trustworthy simulation of the target exists, adjoint optimization of a high-dimensional shape is very hard to beat. Physical evolutionary search has the advantage in the cases where the simulation is the weak link: complicated surfaces and turbulence for which models are unreliable, effects of installation and aging that simulations omit, and objectives that depend on how real systems behave over seasons. In those cases the physical measurement supplies what the model cannot.
+
+\section{A Distributed Dataset}
+
+Each participating module reports a configuration $\theta_i$, together with controlled operating conditions $u_i$ and a measured outcome $Y_i=\Fphys(\theta_i,u_i,\xi_i)$. Across $N$ modules the network accumulates
+\[
+\mathcal D=\{(\theta_i,u_i,Y_i)\}_{i=1}^{N},
+\]
+which a central or federated learning system can use to train surrogate models, detect unexpected behavior, and select subsequent experiments. The advantage is not that physical experiments are faster than numerical simulation. It is that they observe actual physical processes, including effects that numerical models approximate poorly, which makes the network most useful for model validation, system identification, and experimental optimization. The obstacle is standardization. Household heating systems differ enormously and their environments are hard to control, so a scientifically useful network needs calibration, uncertainty estimates, reproducibility procedures, carefully controlled experimental modules, and the connected design that Proposition~\ref{prop:identifiability} shows to be necessary.
+
+\section{Conditions Under Which the Proposal Fails}
+
+Evolutionary physical search fails when the number of configurations that can be fabricated and tested is too small to explore a useful region, when the noise and site effects are too large for selection to be reliable at affordable replication, when safe exploration cannot be assured without the surrogate being right, or when a trustworthy simulation exists that makes physical testing unnecessary. In any of these cases the network is better used for validation of designs found by other means than for discovery.

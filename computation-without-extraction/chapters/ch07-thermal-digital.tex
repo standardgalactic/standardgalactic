@@ -1,0 +1,86 @@
+\chapter{Thermally Integrated Digital Computation}
+\label{ch:thermal}
+
+The second form places conventional computing hardware within purpose-built heating systems. A GPU or other processor performs useful digital calculations while its electrical consumption contributes heat to the building. The idea is simple to state and easy to overstate, so this chapter is largely an exercise in accounting: what the arrangement saves, what it does not, and under what conditions it earns its place.
+
+\section{Thermodynamic Accounting}
+
+Electricity consumed by computing hardware leaves it as heat. A negligible fraction leaves as signal energy carried by network links, and the mechanical work of fans ends as heat in the airstream. For a module integrated into a heating system, the heat delivered to the conditioned space is therefore approximately the electrical input,
+\[
+Q_{\mathrm{heat}}=f\,E_{\mathrm{electric}}\approx E_{\mathrm{electric}},
+\]
+where $f$ is the fraction of the dissipated energy that actually reaches the space to be heated, close to one for a properly integrated module and much lower for hardware that happens to sit in an unconditioned basement. The computing system does not create energy. Landauer's analysis of the heat cost of irreversible computation~\cite{landauer1961} sets a floor far below anything practical hardware approaches, so for engineering purposes essentially all consumed electricity appears as heat.
+
+The consequence is that a computing heater and a resistance heater of the same rated power deliver the same heat from the same electricity, and the computing heater also produces calculations. This is not free energy and not a violation of any thermodynamic bound. It is the observation that the electricity was going to be dissipated as heat in any case, and that it can pass through a useful computation on the way.
+
+\section{The Heat-Pump Comparison}
+
+The arrangement must be distinguished from the heat pump, which moves heat from a cold reservoir to a warm one and so can deliver several units of heat per unit of electricity. Let $\gamma\ge 1$ denote the coefficient of performance of the baseline heating appliance, defined as the heat delivered divided by the electricity consumed, with $\gamma=1$ for resistance heating. Let $p$ be the price of electricity per kilowatt-hour, let $v$ be the value of the computation produced per kilowatt-hour consumed by the computing heater, and let $k$ be the additional non-energy cost per kilowatt-hour of heat delivered, covering annualized capital, maintenance, networking, and hardware wear.
+
+\begin{proposition}
+\label{prop:heatpump}
+Assume $f=1$. Relative to a baseline heating appliance of coefficient of performance $\gamma$ delivering the same heat, a computing heater is economically justified only if
+\[
+v\;\ge\;p\Bigl(1-\frac{1}{\gamma}\Bigr)+k .
+\]
+For a resistance baseline ($\gamma=1$) the condition reduces to $v\ge k$.
+\end{proposition}
+
+\begin{proof}
+To deliver one kilowatt-hour of heat the baseline consumes $1/\gamma$ kilowatt-hours of electricity and the computing heater consumes one. The extra electricity costs $p(1-1/\gamma)$, to which the additional cost $k$ is added. The computing heater produces value $v$ per kilowatt-hour consumed, which is value $v$ per kilowatt-hour of heat delivered. The arrangement pays only if that value covers the extra cost.
+\end{proof}
+
+The proposition shows why the comparison depends so strongly on the baseline. Against resistance heating the computation need only cover its own extra costs. Against a heat pump with a coefficient of performance near three, the computing heater uses roughly three times the electricity for the same heat, and the computation must be valuable enough to pay for the difference. The coefficient of performance of an air-source heat pump also falls as outdoor temperature drops, which narrows the gap in the coldest hours, but that dependence has to be measured on the equipment in question and not assumed from nameplate figures.
+
+\section{An Admissibility Condition}
+
+Let $D_i(t)$ denote the heating demand of household $i$, expressed as the electrical power that direct resistance heating would need to meet it. Let $P_{\max}$ be the maximum power draw of the computing hardware, and let $A_i(t)\in\{0,1\}$ indicate whether the queue holds useful, interruptible work at time $t$. The computing power is
+\[
+P_i(t)=A_i(t)\,\min\{P_{\max},\,D_i(t)\},
+\]
+so that $0\le P_i(t)\le D_i(t)$ always holds, and a conventional resistance element supplies the remainder,
+\[
+P^{r}_i(t)=D_i(t)-P_i(t).
+\]
+The network seeks to maximize $\int C_i(t)\,dt$, with $C_i(t)$ the useful throughput, subject to the household's thermal requirements, hardware constraints, and the availability of legitimate work.
+
+\begin{proposition}
+\label{prop:pureaddition}
+Under this rule the household's electricity consumption at every instant equals $D_i(t)$, the consumption of a resistance heater meeting the same demand, regardless of how much work the queue contains. Computation is a pure addition to the heating service, and the occupant's thermal requirement is met whenever the appliance can deliver $D_i(t)$.
+\end{proposition}
+
+\begin{proof}
+Total electrical power is $P_i(t)+P^{r}_i(t)=D_i(t)$ by construction. Heat delivered equals electricity consumed under the accounting above, so the demand is met at each instant at which the combined appliance can supply it.
+\end{proof}
+
+The proposition is the formal content of the governing principle that the building's heating requirement determines the permissible computation, and not the reverse. It also disposes of the objection that the hardware would be run to produce heat nobody needs. Under the rule it cannot be, because the power it draws is capped by demand and the remainder is supplied by the cheaper element. Expressed through the counterfactual test of Chapter~\ref{ch:bitcoin}, every kilowatt-hour consumed would have been consumed anyway.
+
+\section{Storage and Timing}
+
+Thermal storage, in the form of a hot-water tank or a thermal mass, decouples the time at which heat is produced from the time at which it is needed, and it allows computation to run when work is plentiful or electricity is cheap. It also threatens the principle, because stored heat that is never used is a pure waste. The rule that preserves the principle is that computation may run ahead of demand only into storage that the household will draw on within a bounded horizon. Heat must never be discarded in order to keep the hardware busy, and a forecast of demand, not the availability of work, sets the limit.
+
+Interruption has a cost of its own. A workload that is stopped when the thermostat is satisfied must be able to checkpoint cheaply and resume elsewhere, which restricts the work to tasks that are divisible, restartable, and tolerant of delay. The suitable workloads are batch inference, scientific simulation, and rendering. Latency-sensitive services and long jobs that cannot be checkpointed are poorly suited to a duty cycle dictated by a thermostat.
+
+\section{Attributable Electricity per Unit of Computation}
+
+The comparison with a data center can now be made at the level of attributable electricity. Let $e$ denote the electricity consumed by the processing hardware per unit of computation. A data center spends $e\cdot\mathrm{PUE}$ per unit, where the power usage effectiveness is the ratio of total facility energy to the energy delivered to the computing equipment, and is at least one. A computing heater, in hours when demand covers the hardware's draw, spends an attributable amount
+\[
+e\Bigl(1-\frac{1}{\gamma}\Bigr)
+\]
+per unit, since the fraction $1/\gamma$ of that electricity would have been consumed for heating regardless. With a resistance baseline the attributable electricity is zero, and with a heat pump it is a fraction of $e$. The expression holds only in hours when demand covers the hardware's draw. In other hours the hardware cannot run without wasting heat, which is why the admissibility condition above bounds it.
+
+This advantage in operating energy has to be set against a disadvantage in embodied cost. The utilization of the hardware over its life is limited by the heating season and by the duty cycle the thermostat allows. The embodied energy and cost of manufacture are then spread over fewer computations than in a data center that runs its processors close to continuously. The same quantity that makes the arrangement attractive on operating energy makes it unattractive on embodied energy, and a fair assessment of the two requires both, a point taken up with the full accounting of Chapter~\ref{ch:sunk}.
+
+\section{Hardware Lifetime and Modularity}
+
+A furnace or a heating module is designed to last decades, and computing hardware becomes obsolete in a few years. A design that binds the two together will either retire a working heater along with each processor generation or leave the household with obsolete processors in a functioning appliance. The more sensible arrangement separates them: a durable heating body with a standard mounting and a replaceable computing cartridge, so that the heater persists while its computing hardware is exchanged on its own schedule. The residual value of retired cartridges then becomes a question for the reuse economics of Part~IV.
+
+\section{Safety, Authority, and Deployment}
+
+The processors would have to be integrated into a certified heating appliance with proper electrical protection, airflow, temperature limits, and independent thermal shutdowns that the computational scheduler cannot override. Substituting processors for the burner of an existing gas or oil furnace would be neither safe nor practical. An engineered electric duct-heating module or a hydronic heat exchanger is the more plausible starting point. The two present different problems. An air-cooled duct module is simple but couples chip temperature to the airstream, whereas a liquid-cooled hydronic module can deliver heat to a radiant system or storage tank at temperatures that must be reconciled with the temperatures at which processors run reliably, a question to be measured and not assumed.
+
+The occupant retains authority over the thermostat, over participation, over privacy, and over the hardware, in line with Chapter~\ref{ch:idle}. The network's workloads run in isolation from the household's own network, and no calculation, however valuable, may command more heat than the occupant requests.
+
+\section{Conditions Under Which the Proposal Fails}
+
+The chapter closes by stating where the argument would not hold, since a proposal that cannot fail has not been stated. It fails when the coefficient of performance of the baseline is high enough that Proposition~\ref{prop:heatpump} cannot be satisfied at realistic values of $v$ and $k$. It fails when heating seasons are too short, or the duty cycle too low, for embodied costs to be recovered. It fails when the value of the work that can be interrupted and resumed is too small to cover coordination and networking. And it fails when the useful work cannot be verified independently of those who profit from it, which brings the argument back to the governance problem of Part~V. Experiment B in Appendix~B is designed to measure the first three of these on real hardware over a heating season.

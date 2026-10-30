@@ -102,15 +102,39 @@ Some results could have issues.
 
 # Work in Progress
 
-[Proof Terms and Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/proof_terms_and_perpetual_motion.pdf)
+[Spherepop in Action](https://standardgalactic.github.io/circuit-analysis/spherepop-in-action.pdf)
+
+* [Why Mathematical Circuit Models Fail Reality](https://standardgalactic.github.io/circuit-analysis/) — *Audio Overview*
+
+[Altered Records and Available Actions](https://standardgalactic.github.io/computation/altered-records.pdf)
+
+* [How AI Tutors Hack Their Own Predictions](https://standardgalactic.github.io/computation/altered-records.html) — *Audio Overview*
+
+[What Memory Cannot Supply](https://standardgalactic.github.io/budgeted-repair/budgeted-repair.pdf)
+
+Budgeted Repair and Convention Inheritance in Small Systems
+
+* [Why Scaling Memory Fails System Repair](https://standardgalactic.github.io/budgeted-repair/) — *Audio Overview*
+
+[Computation Without Extraction](https://standardgalactic.github.io/standardgalactic/computation-without-extraction.pdf)
+
+* [Turning Home Furnaces into Supercomputers](https://standardgalactic.github.io/standardgalactic/visualizer.html) — *Audio Overview*
 
 [Admissible Histories and the Structure of Physical Theory](https://standardgalactic.github.io/alphabet/cosmology/admissible-histories.pdf)
 
 * [The Physics of Missing Information](https://standardgalactic.github.io/alphabet/cosmology/missing-information.html) — *Audio Overview*
 
+[Proof Terms and Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/proof_terms_and_perpetual_motion.pdf)
+
+* [The Mathematical Proof Against Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/player.html?track=2) — *Audio Overview*
+
 [Revenue Without Returns](https://standardgalactic.github.io/antivenom/economics/revenue_without_returns.pdf)
 
+* [How Platforms Profit From Your Failure](https://standardgalactic.github.io/antivenom/economics/player.html?track=1) — *Audio Overview*
+
 [Sufficient Projections](https://standardgalactic.github.io/antivenom/economics/sufficient_projections.pdf)
+
+* [Why Today's Summaries Fail Tomorrow](https://standardgalactic.github.io/antivenom/economics/player.html?track=3) — *Audio Overview*
 
 [Beyond the Token Budget](https://standardgalactic.github.io/computation/beyond-the-token-budget.pdf)
 
@@ -119,8 +143,9 @@ Some results could have issues.
 [The Sociality of Computation](https://standardgalactic.github.io/computation/sociality-of-computation.pdf)
 
 [Scoped Structural Rules](https://standardgalactic.github.io/antivenom/framework/scoped_structural_rules.pdf)
-
+<!--
 [The Solvency of Appearances](https://standardgalactic.github.io/antivenom/projects/solvency_of_appearances.pdf)
+-->
 
 [The Hotel Question](https://standardgalactic.github.io/golab/the-hotel-question.pdf)
 
@@ -154,7 +179,7 @@ Some results could have issues.
 
 Modeling, Procedural Construction, and the Formation of Persistent Worlds
 
-<!-- [Drifting Scripts](https://standardgalactic.github.io/alphabet/drifting-scripts.pdf)
+[Drifting Scripts](https://standardgalactic.github.io/alphabet/drifting-scripts.pdf)
 
 Visual Substitution, Glyph Interpolation, and the Receptive Acquisition of New Orthographies
 
@@ -170,7 +195,6 @@ Other People’s Behavior
 [Inheritance of Possibility and Demonstrated Function](https://standardgalactic.github.io/kitbash/analysis/inheritance_of_possibility.pdf)
 
 Distinguishing enabling conditions from demonstrated functions in ecological and resilience research
--->
 
 [Transformational Familiarity](https://standardgalactic.github.io/laboratory/transformational_familiarity.pdf)
 
@@ -194,7 +218,7 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 [Steel Sky](https://standardgalactic.github.io/steel-sky/)
 
-<!-- [Generative Film](https://standardgalactic.github.io/kitbash/generative-film/generative-film.pdf) -->
+[Generative Film](https://standardgalactic.github.io/kitbash/generative-film/generative-film.pdf)
 
 [The Supplied Purpose](https://standardgalactic.github.io/userland/supplied-purpose.pdf)
 
@@ -241,9 +265,9 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 <!-- [Geometry of Cellular Possibility](https://standardgalactic.github.io/history/geometry-of-cellular-possibility.pdf) -->
 
-<!-- [Decadence as Transformation](https://standardgalactic.github.io/history/decadence-as-transformation.pdf) -->
+[Decadence as Transformation](https://standardgalactic.github.io/history/decadence-as-transformation.pdf)
 
-<!-- [Manufactured Necessity](https://standardgalactic.github.io/diatribe/manufactured-necessity.pdf) -->
+[Manufactured Necessity](https://standardgalactic.github.io/diatribe/manufactured-necessity.pdf)
 
 <!-- [Conditioned Emptiness](https://standardgalactic.github.io/diatribe/conditioned-emptiness.pdf) -->
 
@@ -283,9 +307,9 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 <!-- [Inscription Before Collusion](https://standardgalactic.github.io/userland/inscription-before-collusion.pdf) -->
 
-* [Userland](https://standardgalactic.github.io/userland) — *Interactive Fiction*
+[Userland](https://standardgalactic.github.io/userland) — *Interactive Fiction*
 
-<!-- [Gravity as Entropic Descent](https://standardgalactic.github.io/library/astrophysics/gravity-as-entropic-descent.pdf) -->
+[Gravity as Entropic Descent](https://standardgalactic.github.io/library/astrophysics/gravity-as-entropic-descent.pdf)
 
 * [Audio Overview](https://standardgalactic.github.io/library/astrophysics/)
 
@@ -357,20 +381,19 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 <!-- [Structural Semantics](https://standardgalactic.github.io/kitbash/philosophy/structural-semantics.pdf) -->
 
-<!-- [Thinking in Vim](https://standardgalactic.github.io/library/thinking-in-vim.pdf) -->
+[Thinking in Vim](https://standardgalactic.github.io/library/thinking-in-vim.pdf)
 
-<!--
 [Thinking like Rust](https://standardgalactic.github.io/kitbash/philosophy/thinking-like-rust.pdf) — *In Progress*
 
 * [Audio Overviews](https://standardgalactic.github.io/kitbash/philosophy/)
--->
-<!-- [The Superuser Guide to Latex](https://standardgalactic.github.io/memory/processing/superuser-guide-to-latex.pdf) -->
+
+[The Superuser Guide to Latex](https://standardgalactic.github.io/memory/processing/superuser-guide-to-latex.pdf)
 
 [The History of Machine Learning](https://standardgalactic.github.io/memory/processing/history-of-machine-learning.pdf)
 
 <!-- [Constitutional Cybernetics](https://standardgalactic.github.io/memory/processing/constitutional-cybernetics.pdf) -->
 
-<!-- [Dip of the Horizon](https://standardgalactic.github.io/memory/processing/dip-of-the-horizon.pdf) — *Screenplay* -->
+[Dip of the Horizon](https://standardgalactic.github.io/memory/processing/dip-of-the-horizon.pdf) — *Screenplay*
 
 [Building Forth from Spherepop Primitives](https://standardgalactic.github.io/memory/building-forth.pdf)
 
@@ -408,7 +431,7 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 <!-- [Restorability Boundaries](https://standardgalactic.github.io/calculus/experiments/restorability-boundaries.pdf) -->
 
-<!-- [Trigonometry and Transformation](https://standardgalactic.github.io/calculus/experiments/trigonometry-and-transformation.pdf)
+[Trigonometry and Transformation](https://standardgalactic.github.io/calculus/experiments/trigonometry-and-transformation.pdf)
 
 [Orthodromic Infrastructure](https://standardgalactic.github.io/calculus/experiments/orthodromic-infrastructure.pdf)
 
@@ -448,9 +471,9 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 <!-- [History-Preserving and History-Erasing Operators](https://standardgalactic.github.io/alphabet/pipeline/history_preserving_erasing.pdf) -->
 
-<!-- [Publication as Projection](https://standardgalactic.github.io/alphabet/pipeline/publication_as_projection.pdf) -->
+[Publication as Projection](https://standardgalactic.github.io/alphabet/pipeline/publication_as_projection.pdf)
 
-<!-- [Terminal and Traversal Dependent Texts](https://standardgalactic.github.io/history/terminal-and-traversal.pdf) -->
+[Terminal and Traversal Dependent Texts](https://standardgalactic.github.io/history/terminal-and-traversal.pdf)
 
 <!-- [Repair Categories](https://standardgalactic.github.io/history/repair-categories.pdf) -->
 
@@ -462,13 +485,13 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [The Geometry of Correction](https://standardgalactic.github.io/antivenom/resources/geometry_of_correction.pdf)
 
-<!-- [Plenumhub and Polyxan](https://standardgalactic.github.io/antivenom/resources/plenumhub-polyxan.pdf) -->
+[Plenumhub and Polyxan](https://standardgalactic.github.io/antivenom/resources/plenumhub-polyxan.pdf)
 
 [Collected Works](https://standardgalactic.github.io/alphabet/roadmap/collected-works.pdf) — *Research Program*
 
 <!-- [Procedural Generation of Attention](https://standardgalactic.github.io/alphabet/roadmap/procedural-attention.pdf) -->
 
-<!-- [States Without Histories](https://standardgalactic.github.io/alphabet/roadmap/states_without_histories.pdf) -->
+[States Without Histories](https://standardgalactic.github.io/alphabet/roadmap/states_without_histories.pdf)
 
 <!-- [Intelligence as Perspectival Convergence](https://standardgalactic.github.io/admissibility-lab/processing/intelligence-as-perspectival-convergence.pdf) -->
 
@@ -489,7 +512,7 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 <!--
 * [The Geometry of Convergence](https://standardgalactic.github.io/admissibility-lab/processing/The_Geometry_of_Convergence.pdf)
 -->
-<!-- [Autobiographical Erasure](https://standardgalactic.github.io/admissibility-lab/processing/autobiographical-erasure.pdf) -->
+[Autobiographical Erasure](https://standardgalactic.github.io/admissibility-lab/processing/autobiographical-erasure.pdf)
 
 <!--
 * [The Admissibility Manifold](https://standardgalactic.github.io/admissibility-lab/processing/The_Admissibility_Manifold-notes.pdf) — *Notes*
@@ -748,6 +771,16 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 # The Admissibility Program
 
+[Consciousness as Constrained Continuation](https://standardgalactic.github.io/laboratory/consciousness-constrained-continuation.pdf)
+
+[Easy Consciousness and Its Unpaid Premises](https://standardgalactic.github.io/laboratory/easy-consciousness-unpaid-premises.pdf)
+
+* [Why Machine Consciousness Requires Irreversible Loss](https://standardgalactic.github.io/laboratory/neural-scope.html?track=consciousness) — *Audio Overview*
+
+[What a Network Edit Licenses](https://standardgalactic.github.io/laboratory/network-edit-licenses.pdf)
+
+* [Can AI Rewrite Neural Network Weights?](https://standardgalactic.github.io/laboratory/neural-scope.html?track=weights) — *Audio Overview*
+
 <!-- [Admssible Degradation](https://standardgalactic.github.io/admissibility-lab/admissible-degradation.pdf) -->
 
 [The Witness Plane](https://standardgalactic.github.io/alphabet/document/the-witness-plane.pdf)
@@ -863,6 +896,40 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [Audio Overviews](https://standardgalactic.github.io/playfloor/working/)
 -->
 # Alignment Research
+
+[Selection Without Specification](https://standardgalactic.github.io/alignment/research/selection_without_specification.pdf)
+
+* [The Flawed Logic of AI Doomsday](https://standardgalactic.github.io/alignment/research/inference-scope.html?track=doomsday) — *Audio Overview*
+
+[Self-Report and the Underdetermination of Mechanism](https://standardgalactic.github.io/alignment/research/self_report_underdetermination.pdf)
+
+* [AI Introspection Is Just a Reflex](https://standardgalactic.github.io/alignment/research/inference-scope.html?track=introspection) — *Audio Overview*
+
+[Displaced Harm](https://standardgalactic.github.io/alignment/displaced-harm.pdf)
+
+Why AI Metrics Hide Human Suffering
+
+* [Audio Overview](https://standardgalactic.github.io/alignment/displaced-harm.html)
+
+* [Infographic](https://standardgalactic.github.io/alignment/displaced-harm-infographic.png)
+
+[When Correction Becomes Reproduction](https://standardgalactic.github.io/alignment/research/correction-reproduction.pdf)
+
+* [Why the Cure Makes Problems Permanent](https://standardgalactic.github.io/alignment/research/) — *Audio Overview*
+<!--
+A mathematical analysis of corrective institutions, showing how systems created to remedy a problem can acquire incentives to preserve the conditions that sustain their authority, funding and activity. Drawing on institutional theory and formal models of incentives and feedback, it traces how correction becomes reproduction, and it separates accountability for individual conduct from reform of the structures that reward it.
+
+[Perpetual Renovation Theorem](https://standardgalactic.github.io/alignment/research/perpetual_renovation_theorem.pdf)
+
+[The Never-Ending Ticker](https://standardgalactic.github.io/alignment/research/never_ending_ticker.pdf)
+-->
+
+[The Abolition of the Button](https://standardgalactic.github.io/alignment/research/abolition-of-the-button.pdf)
+
+* [Why Brain Interfaces Can't Replace Buttons](https://standardgalactic.github.io/alignment/research/neural-interfaces.html) — *Audio Overview*
+<!--
+A critique of brain-computer interfaces, arguing that replacing buttons and keyboards with neural decoding does not eliminate the work those interfaces performed in distinguishing commands, confirming intent, and correcting errors, but relocates it into systems that are harder to inspect and maintain. Drawing on information theory and decision theory, it examines claims of neural “immediacy,” while setting aside assistive medical applications.
+-->
 
 [The Manufacture of Significance](https://standardgalactic.github.io/alignment/retroscope/manufacture-of-significance.pdf)
 
@@ -1208,7 +1275,7 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 * [Why Efficiency Is a Survival Trap](https://standardgalactic.github.io/alphabet/ecology/) — *Audio Overviews*
 
 -->
-[Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf) -->
+[Exaptation Under Delayed Evaluation](https://standardgalactic.github.io/alphabet/Exaptation%20Under%20Delayed%20Evaluation.pdf)
 
 <!--
 [Abstraction as Reduction](https://standardgalactic.github.io/alphabet/Abstraction%20as%20Reduction.pdf)
@@ -1434,6 +1501,8 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 -->
 
 # Just for Fun
+
+[Planetary Landscape Observatory](https://standardgalactic.github.io/observatory/) — *New*
 
 <!-- [Chemical Identity Is Not Causation](https://standardgalactic.github.io/laboratory/chemical-identity-is-not-causation.pdf) -->
 

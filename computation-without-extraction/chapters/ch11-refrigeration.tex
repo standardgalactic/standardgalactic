@@ -1,0 +1,55 @@
+\chapter[Refrigeration as Physical Computers]{Air Conditioners and Refrigeration as Physical Computers}
+\label{ch:refrigeration}
+
+Cooling systems provide a complementary application. An air conditioner is a heat-transfer machine that moves thermal energy between reservoirs. Its refrigerant cycle involves compression, expansion, phase transitions, pressure differences, and heat exchange. These processes could, in principle, support certain forms of physical measurement, system identification, or analog computation. This chapter asks which of those descriptions survives scrutiny. The conclusion is that the loop is a poor analog computer and a good source of information about itself, and that the proposal is better described as instrumenting air conditioners than as converting them into calculators.
+
+\section{The Cycle as a Physical System}
+
+A vapor-compression cooling system moves heat from a cold space to a warm one by compressing a refrigerant, rejecting heat in a condenser, expanding the refrigerant through a throttling device, and absorbing heat in an evaporator. Its coefficient of performance for cooling, the heat removed divided by the work supplied to the compressor, is bounded by the Carnot value,
+\[
+\mathrm{COP}\ \le\ \frac{T_c}{T_h-T_c},
+\]
+with the evaporator and condenser temperatures $T_c$ and $T_h$ expressed in kelvin. For reservoirs at $280\,\mathrm{K}$ and $310\,\mathrm{K}$ the bound is about $9.3$, and real units operate well below it. The cycle has measurable state: suction and discharge pressures, evaporator and condenser temperatures, the degrees of superheat and subcooling, compressor power, and airflow. These signals are produced during ordinary operation and constitute the output $Y$ in the notation of Chapter~\ref{ch:analog}, with the thermostat's demand and the ambient conditions as controlled and uncontrolled inputs.
+
+\section{What Question Can the Loop Answer}
+
+The chapter distinguishes exploiting the physical evolution of a refrigeration system from merely attaching a GPU to an air conditioner. An air conditioner cannot be assumed to provide useful analog computation simply because it contains complex thermodynamics. The experiment must define inputs, measurable outputs, reproducibility conditions, and an independently meaningful inference task, in the sense of Definition~\ref{def:expcomp}. Three kinds of task can be considered.
+
+The first is inference about the unit itself. Signals from the loop can be used to estimate whether the refrigerant charge is correct, whether the heat exchangers are fouled, and whether the compressor has degraded. This is fault detection and diagnosis, a well-developed field for building systems~\cite{katipamula2005}. It is not analog computation of an external problem. It is inference from measurement, and its value is that it answers a question that owners and operators actually have.
+
+The second is measurement of something external. A secondary circuit thermally coupled to the loop could be used as a calorimeter, for example to characterize the heat capacity or conductivity of a fluid or material placed in it. The loop supplies a controlled thermal environment and the measurement is of the sample.
+
+The third is analog computation proper, in which the loop's dynamics transform a time-varying input into an output that a readout can use. Here the loop is poor. A reservoir with a dominant time constant $\tau_s$ responds to input variations only up to a bandwidth of about $1/(2\pi\tau_s)$. For a thermal time constant of five minutes, this is roughly $5\times10^{-4}$ hertz, so the loop can distinguish about one independent input value every ten to twenty minutes. That is a throughput of under a hundred values per day, many orders of magnitude below any digital machine, and no argument about energy cost can make up for it. The loop is of interest for what it measures and not for how fast it computes.
+
+\section{Fault Detection Across a Fleet}
+
+The distinctive contribution of a network is the ability to compare units. Let $\mathrm{COP}_i$ be the measured performance of unit $i$ and let $\widehat{\mathrm{COP}}_i$ be the performance predicted for it from the ambient temperature, load, and the fleet's accumulated data. The residual
+\[
+r_i=\mathrm{COP}_i-\widehat{\mathrm{COP}}_i
+\]
+is standardized by the spread $\sigma_r$ of residuals across comparable units, and unit $i$ is flagged when $|r_i|/\sigma_r>z$. If residuals are approximately normal, the expected number of false flags among $N$ healthy units in one assessment is
+\[
+N\cdot2\bigl(1-\Phi(z)\bigr),
+\]
+which for $z=3$ is about $0.0027N$. A fleet of ten thousand units would produce about twenty-seven false flags per assessment, so the threshold, the frequency of assessment, and the cost of a false alarm have to be set together. The comparison across units has an advantage over a single unit's history: a unit that has always performed poorly shows no deterioration but stands out against its peers.
+
+\section{Non-Invasive Instrumentation}
+
+The loop contains refrigerant under pressure, and regulations govern who may open it and how. Any experimental module must preserve cooling performance, refrigerant containment, electrical safety, and the manufacturer's operating limits. The practical approach is to instrument the outside of the circuit and not the inside. Clamp-on temperature sensors on the refrigerant lines, a current transducer on the compressor supply, and air-side temperature and flow measurements require no access to the refrigerant. Pressure can be inferred from the temperature of the two-phase regions, where the refrigerant is at its saturation temperature, using property data for the refrigerant in use~\cite{bell2014}. The inference carries its own uncertainty, which has to be propagated as in Chapter~\ref{ch:furnaces}, and it is valid only where the fluid is in fact a two-phase mixture. A secondary circuit coupled through an external heat exchanger leaves the refrigerant circuit untouched and keeps the experiment on the owner's side of the safety boundary.
+
+\section{Admissibility and the Thermostat}
+
+The principle that governs heating applies equally to cooling. A cooling system operates when the thermostat demands cooling, and the experiment may select among settings the manufacturer permits, such as airflow within its rated range, but it may not command operation that the occupant's comfort does not require. Extra start and stop cycles are a particular hazard, since short cycling shortens the life of compressors, so the experiment must respect the manufacturer's minimum on and off times. In the notation of Chapter~\ref{ch:thermal}, the cooling demand plays the role of $D_i(t)$, and the experiment is a pure addition to the cooling service only if it never causes the unit to run when it would otherwise be off.
+
+\section{Seasonal Complementarity}
+
+The chapter introduces a geographically distributed seasonal architecture. Heating-related computational opportunities may increase during cold periods, while cooling-related experimental opportunities may increase during warm periods. Heating and cooling demand are commonly measured by degree days, with
+\[
+\mathrm{HDD}=\sum_{d}\max(0,\,T_{\mathrm{base}}-T_d),\qquad
+\mathrm{CDD}=\sum_{d}\max(0,\,T_d-T_{\mathrm{base}}),
+\]
+summed over days with mean temperature $T_d$ relative to a base temperature. A network that spans climates, or both hemispheres, has opportunities available through more of the year than one confined to a single region, because the seasons of the two hemispheres are opposed. The complementarity is limited by where people live, since much of the world's population and equipment is in the northern hemisphere, so the gain in smoothing the annual cycle should be estimated from the actual distribution of participants and not assumed. Reversible heat pumps, which both heat and cool, bring both opportunities into a single appliance.
+
+\section{Conditions Under Which the Proposal Fails}
+
+The cooling proposal fails if the questions the loop can answer, principally the condition of the unit, are not worth the cost of the instrumentation, if the inferences from non-invasive measurements are too uncertain to separate faulty units from healthy ones, if false alarms overwhelm genuine findings, or if the experiment cannot be carried out without altering the duty cycle or the safety of the equipment. It is also a failure of the original ambition if the loop's slow dynamics are the only basis on which it was proposed as a computer. In that case the remaining result is real but modest: a fleet of air conditioners that report on their own condition.

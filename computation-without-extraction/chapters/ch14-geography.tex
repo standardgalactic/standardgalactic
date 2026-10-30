@@ -1,0 +1,66 @@
+\chapter{The Geography of Computational Demand}
+\label{ch:geography}
+
+Conventional cloud computing concentrates hardware in locations selected for electricity, networking, taxation, cooling, and institutional convenience. The proposed architecture allows some computational activity to follow geographically distributed needs. Heating demand, cooling demand, available household hardware, communications infrastructure, and experimental opportunities vary by location and season. This chapter asks what that variation implies for where work can be placed, and it finds that the geography both helps and constrains the proposal in ways that are easy to miss.
+
+\section{Which Work Can Move}
+
+Geographical scheduling cannot assume that all computational tasks tolerate relocation. Two physical facts bound what can be moved. The first is delay. Signals in optical fiber travel at roughly two thirds of the speed of light, which is about five microseconds per kilometer, so a one-way trip of ten thousand kilometers takes at least fifty milliseconds and a round trip at least one hundred, before any routing or queuing. Work that needs interactive response from a distant site cannot get it, and no change in architecture removes the limit.
+
+The second is the cost of moving data. Let a task need $C$ units of computation and $D$ bytes of data. Let $e_A$ and $e_B$ be the attributable energy per unit of computation at two sites in the sense of Chapter~\ref{ch:thermal}, and let $\epsilon$ be the energy needed to transport a byte over the path between them, an empirical quantity that varies widely and has to be measured. Moving the task from $A$ to $B$ saves energy only if
+\[
+(e_A-e_B)\,C\ >\ \epsilon\,D,
+\qquad\text{that is,}\qquad
+\frac{C}{D}\ >\ \frac{\epsilon}{e_A-e_B}.
+\]
+The ratio of computation to data decides the matter, in the same way as the efficiency criterion of Chapter~\ref{ch:residual}. Tasks that are small in data and large in computation move easily, and tasks that are large in data and small in computation do not. A calculation that must read a large archive is better run near the archive.
+
+\section{Where the Heat Is Needed}
+
+The architecture ties computation in heating appliances to heating demand, so the geography of the network is the geography of heating. Demand is concentrated in cold and populated regions, and it varies by season and by hour. Heating degree days, defined in Chapter~\ref{ch:refrigeration}, measure the accumulated demand, and a map of them identifies where thermally integrated computation has the most hours to work with. The consequence is that the network's capacity is concentrated in particular climates, and that the capacity of any one region is not constant but seasonal.
+
+A consequence that is easy to overlook is that capacity is correlated across space. Weather systems cover large areas, and a cold spell raises heating demand over a whole region at once, so the capacity of the network's nodes in that region rises and falls together. Correlation limits how much geographic aggregation can smooth the capacity.
+
+\begin{proposition}
+\label{prop:diversification}
+Let $n$ nodes have capacities $X_1,\dots,X_n$ with common mean $\mu$, common variance $\sigma^{2}$, and common pairwise correlation $\rho\in[0,1]$, and let $S=\sum_iX_i$. Then
+\[
+\operatorname{Var}(S)=n\sigma^{2}\bigl(1+(n-1)\rho\bigr),
+\]
+and the coefficient of variation of the total is
+\[
+\frac{\sqrt{\operatorname{Var}(S)}}{\mathbb E[S]}=\frac{\sigma}{\mu}\sqrt{\frac{1+(n-1)\rho}{n}}\ \longrightarrow\ \frac{\sigma}{\mu}\sqrt{\rho}\quad(n\to\infty).
+\]
+\end{proposition}
+
+\begin{proof}
+The variance of a sum is the sum of the variances plus the sum of all covariances. There are $n$ variances equal to $\sigma^{2}$ and $n(n-1)$ ordered pairs with covariance $\rho\sigma^{2}$, so $\operatorname{Var}(S)=n\sigma^{2}+n(n-1)\rho\sigma^{2}$. Dividing the square root by $\mathbb E[S]=n\mu$ gives the coefficient of variation, and $(1+(n-1)\rho)/n\to\rho$ as $n\to\infty$.
+\end{proof}
+
+The coefficient of variation can equivalently be written as $(\sigma/\mu)\sqrt{\rho+(1-\rho)/n}$. The result says that adding more nodes in the same climate stops reducing the relative fluctuation of total capacity once the number of nodes is large, and leaves a floor of $\sqrt\rho$ times the fluctuation of a single node. With a correlation of one half, five nodes already give about $0.77$ of the single-node relative fluctuation, ten thousand nodes give about $0.71$, and the limit is about $0.71$, so growing from five nodes to ten thousand improves the measure by only about nine percent. The result holds for nodes of equal variance and a common nonnegative correlation, and real capacities will depart from both assumptions. Only capacity that is weakly or negatively correlated smooths the total, which means nodes in different climates, in opposite hemispheres whose seasons are out of phase, or in different time zones whose daily demand peaks occur at different hours. Nodes in many time zones can offset the daily cycle, though seasons stay aligned within a hemisphere, and the distribution of people and equipment is strongly weighted to the north. The smoothing available from geography should therefore be estimated from actual correlations and not taken from the number of participants.
+
+\section{The Grid Behind the Heater}
+
+The network's demand for electricity is also geographic, and it has a consequence for the electrical system that is not captured by the energy accounting. Proposition~\ref{prop:pureaddition} shows that a computing heater consumes the same electricity as a resistance heater meeting the same demand, so replacing resistance heating adds no load. Replacing a heat pump is different. A heat pump with coefficient of performance $\gamma$ draws $1/\gamma$ units of electricity per unit of heat, so a computing heater replacing it draws $\gamma$ times as much. During a cold spell, when the grid is under the most strain, a large population of computing heaters displacing heat pumps would raise peak electrical demand by that factor. The peak, which sets the capacity that must be built, and not the annual energy, is the relevant external cost, and an assessment of the network must include it. The admissibility rule of Chapter~\ref{ch:thermal} also prevents the network from chasing cheap electricity at times when the household does not need heat, so the flexibility it offers the grid is limited to the timing allowed by thermal storage.
+
+\section{Jurisdiction and Connectivity}
+
+Data and computation are subject to the laws of the places in which they occur. Tasks that involve personal data, or data whose storage or processing is restricted to particular jurisdictions, can be assigned only to nodes in the permitted places. Writing $J_j$ for the set of jurisdictions permitted for task $j$, the nodes eligible for it are those located in $J_j$, and the network's effective capacity for that class of task is the capacity within the permitted set, which can be much smaller than its total. The network must carry jurisdiction constraints in its task descriptions of Chapter~\ref{ch:router} and treat them as hard restrictions on matching, not as preferences.
+
+Connectivity varies in ways that matter. Household connections are often asymmetric, with much less capacity for upload than for download, and results must be returned over the slower direction. For most of the tasks that suit the network, outputs are small relative to inputs, so the constraint is mild, but for tasks with large outputs it can decide whether a node is usable at all. Rural regions with the greatest heating demand can have the weakest links.
+
+\section{Placement as an Optimization}
+
+Taken together, the placement of divisible work is a transportation problem. Let $x_{ij}\ge0$ be the amount of task $j$ placed at node $i$, let $d_{ij}$ be a measure of the distance between node $i$ and the data of task $j$, and let $K_i$ be the capacity of node $i$. The scheduler minimizes total attributable energy plus transport,
+\[
+\min_{x}\ \sum_{i,j}x_{ij}\bigl(e_iC_j+\epsilon D_jd_{ij}\bigr)
+\]
+subject to each task being fully placed, node capacities, and the feasibility restrictions on latency and jurisdiction, which delete the variables $x_{ij}$ that violate them. This is a minimum-cost flow problem and can be solved efficiently when work is divisible. It gives a reference value against which a practical heuristic can be judged, in the same way as the matching formulation of Chapter~\ref{ch:residual}, and the cost coefficients $e_i$ and $\epsilon$ are the quantities that Experiments A and B must supply.
+
+\section{Who Bears the Placement}
+
+Where computation goes is also a question of who bears its burdens and who receives its benefits. Computational capacity located in cold regions, in the homes whose occupants need heat, places wear and risk in those homes, and a network that compensates them poorly turns the geography of heating demand into a geography of extraction. The households whose heat is already electric, which are least able to switch fuels, are the easiest to enlist and may also be among the least able to refuse, which raises the concern about conditionality discussed in Chapter~\ref{ch:idle}. The proposition that computational geography need not be determined exclusively by the requirements of dedicated facilities has a counterpart. It need not be determined by the economic weakness of the participants either, and the compensation and consent rules of the earlier chapters apply to the choice of where to build the network as well as to how it operates.
+
+\section{Conditions Under Which the Proposal Fails}
+
+The geographic argument fails when the work that is valuable to the network is too tied to data or too sensitive to delay to be moved, when the correlation of capacity across nodes is high enough that no practical aggregation smooths it, when the added peak load on the grid outweighs the energy savings, when jurisdictional restrictions fragment the network into pieces too small to be useful, or when the compensation needed to enlist participants in the places where heat is needed exceeds the value of the work. In any of these cases the placement problem has no profitable solution, and the architecture would be confined to local uses.

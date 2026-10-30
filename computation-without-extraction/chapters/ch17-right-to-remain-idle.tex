@@ -1,0 +1,71 @@
+\chapter{Local Authority and the Right to Remain Idle}
+\label{ch:idle}
+
+This chapter addresses ownership, autonomy, and refusal, and it supplies the definition of permission on which the earlier chapters depend. Chapters~\ref{ch:thermal}, \ref{ch:evolutionary}, \ref{ch:entropy}, and \ref{ch:norewards} each assume that some set of actions is permitted and that rewards operate inside it. Unless that set is defined independently of the network, the reward mechanisms become the very authority they were meant to constrain. A participating computer remains the property and instrument of its owner. A furnace remains a heating appliance. An air conditioner remains a cooling appliance. The computational network receives limited permission to use residual capabilities, and it does not acquire authority over the primary function of the device.
+
+\section{A Hierarchy of Authority}
+
+Permission is built in two layers whose sources differ. The first is the safety envelope $\mathcal S_i(t)$ of device $i$, the set of actions compatible with its certified operating limits, enforced by independent controllers. It is fixed by certification and by the manufacturer's limits, and no party in the network can enlarge it, the owner included, so far as the network's interface is concerned. The second is the owner policy $\mathcal O_i(t)$, the set of actions the owner currently allows. It changes only by the owner's own act and is revocable at any time. The permitted set is their intersection,
+\[
+\Aset_i(t)=\mathcal O_i(t)\cap\mathcal S_i(t).
+\]
+Let $\mathcal R_i(t)$ denote the actions the network would like to perform. The executable set must satisfy
+\[
+\mathcal E_i(t)\subseteq\Aset_i(t)\cap\mathcal R_i(t).
+\]
+The inclusion has a direction that matters. The network's preferences select within the permitted region and never determine it.
+
+The relation to rewards is then stated exactly. A reward schedule offered by the network is an input to the owner's decision about $\mathcal O_i$, since an owner may choose to enlarge the policy in return for payment, and it is never an input to $\mathcal S_i$ or a means of bypassing $\mathcal O_i$. The network cannot enlarge $\Aset_i$ by offering more, because there is no channel through which an offer acts on the set other than the owner's own decision, and the safety envelope cannot be bought by anyone. The optimization problem of Chapter~\ref{ch:norewards} is therefore posed on $\Aset_i(t)\cap\mathcal R_i(t)$. Rewards are defined for actions inside the region, and actions outside it carry no reward at all.
+
+\section{Revocation}
+
+The right to refuse would be empty if it could be overridden by commitments already entered into. It is therefore specified as a protocol with four requirements. The executable set is recomputed continuously from the current $\mathcal O_i$. Obligations to the network are conditional on $\mathcal O_i$ and carry no liability to the owner beyond the loss of future rewards and of eligibility for work that depends on the withdrawn capacity. Wind-down actions, collected in a pre-certified set $\mathcal W_i\subseteq\mathcal S_i$ that includes checkpointing, controlled cooling, and shutdown, can be carried out by the local controller without the network's cooperation. And each of those actions completes within a certified latency $\tau_i$.
+
+\begin{proposition}
+\label{prop:revocation}
+Under these four requirements, if the owner withdraws permission at time $t_0$, then during $[t_0,t_0+\tau_i]$ the only actions executed are those in $\mathcal W_i$, and after $t_0+\tau_i$ no action is executed at the network's request, whatever obligations remain outstanding.
+\end{proposition}
+
+\begin{proof}
+After $t_0$ the owner policy $\mathcal O_i$ contains no action requested by the network, so by the first requirement the executable set contains none. Operations already in progress are brought to rest by the wind-down actions, which by the third requirement run locally and by the fourth complete within $\tau_i$. By the second requirement, outstanding obligations create no claim on the device that execution could satisfy.
+\end{proof}
+
+The proposition is a specification of a protocol and not a law of nature, and it should be read that way. The proof shows that the four requirements together are consistent and sufficient. It does not show that any real system meets them. What makes the property true in practice is enforcement in the local controller, which must not depend on a network that has an interest in continuing the computation.
+
+The latency $\tau_i$ marks the difference between immediate revocation of future work and the physical impossibility of stopping every operation instantly. A heating module cannot cool at once, and a liquid-cooled loop may need to circulate for a time to remove residual heat safely. Those steps belong to the safety envelope and not to the network's claim on the device. The loss from interrupted work falls on the network and not on the owner. Interrupted tasks must be checkpointable, as required in Chapter~\ref{ch:thermal}, and results lost in a revocation are a risk the network bears for having relied on voluntary capacity.
+
+\section{Local Priority}
+
+The same ordering governs the use of resources at every moment. The primary function and safety of the device come first, the owner's own use second, and the network's work third. Let $c_i(t)$ be the total capacity of the device, $c^{\mathrm{primary}}_i(t)$ the capacity required by the primary function, and $c^{\mathrm{owner}}_i(t)$ that required by the owner's own use. The capacity available to the network is
+\[
+c^{\mathrm{net}}_i(t)\le c_i(t)-c^{\mathrm{primary}}_i(t)-c^{\mathrm{owner}}_i(t),
+\]
+evaluated at the time of use, not at the time a contract was made. This is the form taken by the rule of Chapter~\ref{ch:residual} that contribution percentages apply to what remains after local requirements are met, and it is preemptive. When local demand rises, the network's allocation falls in the same instant.
+
+\section{Privacy and Isolation}
+
+The network should learn only what it needs in order to assign work. The resource descriptor $r_i(t)$ and the results of tasks are the declared observables, and everything else about the device and its household is outside the network's view. Workloads run in isolation from the owner's own data and network.
+
+Thermal scheduling raises a problem that is easy to overlook. The heating demand $D_i(t)$ of Chapter~\ref{ch:thermal} is a record of when a building is occupied, when it is vacant, and how it is used, and it is personal data. A scheduler that receives raw demand profiles can infer household routines. The design should therefore transmit coarse availability windows, aggregated or perturbed, and keep the fine-grained demand local, where the admissibility condition is enforced by the device's own controller without reporting its inputs.
+
+\section{Availability Is Not Authorization}
+
+A device may have unused capacity without that capacity being available to the network, and the point deserves stating plainly. Physical availability describes what the hardware can do. Legitimate authorization describes what its owner has agreed to. The first never implies the second. Idle resources are not unclaimed resources. The network does not own the idle capacity it discovers, and discovery confers no title to what was found.
+
+This returns to the distinction of Chapter~\ref{ch:misallocation} between productive and wasteful idleness. A machine kept idle may be serving its owner's option to act at once, or the owner's preference for privacy and control. The owner is not required to show that the idleness is productive, and refusal needs no justification. The right to remain idle is therefore not a technical defect to be engineered away but a governance principle. It answers the efficiency doctrine examined in Chapter~\ref{ch:ellul} directly: the existence of an optimizable resource does not establish an obligation to optimize it.
+
+\section{How the Right Erodes}
+
+A right that holds in the protocol can be lost in the setting around it. Default settings that enroll households unless they opt out turn consent into inertia. Bundling participation with an essential service makes refusal costly. Subsidies that are available only to participants convert an offer into a pressure. Social and reputational expectations can do the same. Each of these leaves the formal permission intact while making its exercise hollow.
+
+Three rules guard against it. Participation must be opt-in, and the primary service of the host, whether heat, cooling, or ordinary computing, must not be conditioned on participation. Revocation must carry no penalty beyond the loss of future rewards. And permission must expire unless renewed, so that consent given once is not treated as consent in perpetuity. The first of these may be called the no-conditionality rule, and it is what distinguishes a network that accepts what owners freely offer from one that extracts what its economics make hard to withhold. A fourth test is the dissolution condition of Definition~\ref{def:dissolution}: whether the network could be dissolved without loss of any participant's primary function, without uncompensated participation costs, and without surviving obligations. A network that fails it has acquired a hold on its participants regardless of what its protocol says about consent.
+
+\section{Dependence and Reliance}
+
+A principle that forbids capture has to say what it forbids, because the network cannot both guarantee that nobody becomes dependent on it and grow into infrastructure worth having. The line is drawn at the host's primary function. Dependence is prohibited when the function for which the device exists, such as keeping a building warm, keeping food cold, or serving its owner's own computing, would be impaired by disconnecting the network. A household that loses its heat when the network goes away is dependent in the prohibited sense. Reliance is permitted when a participant values a service that exists only because the network does, such as access to results, a share of the network's revenue, or diagnostic reports on its equipment, and could do without it at no cost to the function of the device. Voluntary reliance of this kind is the ordinary consequence of providing something useful.
+
+The distinction does not make the underlying tension disappear. The more useful the network's services become, the more reasonably participants rely on them and the stronger the case for preserving the network for their sake, which is a source of institutional momentum. The rules of this chapter, opt-in participation, penalty-free revocation, expiring consent, the no-conditionality rule, and the dissolution reserve of Chapter~\ref{ch:ellul}, are meant to keep that momentum from turning into captivity. They cannot prevent the momentum, and a network that succeeds will have it.
+
+\section{Conditions Under Which the Principle Fails}
+
+The principle fails if the safety envelope cannot be enforced independently of the network, if revocation cannot be made effective within a certified latency, if the information the network receives allows inference of private activity, or if the surrounding economics make nonparticipation prohibitively expensive. In each case the formal structure may remain in place while the right it was meant to protect is gone, and the chapter's rules are therefore best read as conditions to be audited and not as properties assured by design.

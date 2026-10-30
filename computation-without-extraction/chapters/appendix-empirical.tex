@@ -1,0 +1,165 @@
+The monograph is accompanied by a concrete experimental agenda so that its claims can fail. Five experiments are specified. Each is written as a protocol: the question and hypotheses, the design and population, the measurements, the analysis and the decision rules, the threats to validity and safety, and the observations that would count against the hypothesis. The protocols name the quantities that the preceding chapters left as unknowns, and they commit in advance to what each result will mean. The numbers that appear in them are planning figures chosen to show how a calculation would be done, and they are not predictions of what the experiments will find.
+
+\section{Principles Common to the Experiments}
+
+Every experiment is pre-registered before data collection, with its hypotheses, primary measures, analysis, and decision rules fixed in writing and dated. Null and negative results are reported with the same prominence as positive ones. Energy and cost are measured within a stated accounting boundary, and the same boundary is applied to the baseline against which the network is compared, since the conclusions of Chapters~\ref{ch:thermal} and~\ref{ch:sunk} depend on the choice of baseline. Uncertainties are propagated by the method of Chapter~\ref{ch:furnaces}, and every reported quantity carries its combined uncertainty. Wherever experiments run in several sites, a common reference configuration is run at every site, because Proposition~\ref{prop:identifiability} shows that without one the effect of the site cannot be separated from the effect of the treatment.
+
+Experiments that involve people or their property observe the rules of Chapter~\ref{ch:idle} during the experiment itself. Participation is opt-in and revocable without penalty, the owner's priority is preemptive, consent expires and must be renewed, and the primary function of every device is protected by its independent safety controller. Data and analysis code are released openly with the report, so that the results can be checked and the experiments repeated by others.
+
+\section{Experiment A: Residual Computing}
+
+\subsection*{Question and Hypotheses}
+
+Experiment A asks what a heterogeneous population of ordinary computers can contribute without harming its owners, and at what cost. It informs the descriptors and scheduling of Chapter~\ref{ch:residual}, the routing role of Chapter~\ref{ch:router}, and the comparison condition of Chapter~\ref{ch:sunk}. There are three hypotheses. First, that contribution of five to ten percent of spare capacity can be made without exceeding a stated interference bound on the owner's experience. Second, that the marginal energy per verified unit of work on admitted machines satisfies the operating-energy condition $\rho\,e^{\mathrm{marg}}_{\mathrm{old}}<\mathrm{PUE}\cdot e_{\mathrm{new}}$ for some usable subset of machines, with the replication factor $\rho$ taken from the experiment itself. Third, that coordination costs have the linear structure $F+fW$ assumed in Proposition~\ref{prop:crossover}.
+
+\subsection*{Design and Population}
+
+The population is a set of volunteer machines, at least one hundred, recruited to span hardware age, operating system, memory size, and pattern of use. The design is a within-machine crossover. Each machine passes through a baseline period with the network disabled, followed by treatment periods in randomized order with contribution caps of zero, five, and ten percent, separated by washout intervals so that carry-over effects can be assessed. Three workload classes are used: compute-heavy tasks of the Monte Carlo type, storage replicas, and routing-only participation. Results are verified by replication with $r=2$ and by seeded spot checks as in Chapter~\ref{ch:norewards}, and the realized ratio of raw to verified work is recorded as $\rho$. A modern server runs the same workloads as a comparator.
+
+\subsection*{Measurements}
+
+Interference is measured by a standardized interactive probe that times a fixed small task on each machine, with the median and ninety-fifth percentile compared against that machine's own baseline. Power is measured at the wall with plug-in meters in the idle state with the network disabled and in the busy state under load, giving $e^{\mathrm{marg}}_{\mathrm{old}}=(P^{\mathrm{busy}}-P^{\mathrm{idle}})/\theta$ for the measured throughput $\theta$. The comparator's energy $e_{\mathrm{new}}$ is measured at the server, and since the facility overhead cannot be measured on a test server, the power usage effectiveness is varied across a stated range as a sensitivity analysis. Availability sessions are logged, so that the exponential assumption behind Proposition~\ref{prop:attempts} can be tested against alternatives. The data per task and the compute time are logged to compute the efficiency of Chapter~\ref{ch:residual}. Messages, bandwidth, and operator time are logged to estimate the fixed and per-unit coordination costs. The hit rate of the failure registry described in Chapter~\ref{ch:router} is recorded.
+
+\subsection*{Analysis and Decision Rules}
+
+The primary analysis is a mixed-effects model with a random effect for each machine. For the interference hypothesis the planning calculation for a paired comparison uses
+\[
+n=\frac{(z_{1-\alpha/2}+z_{1-\beta})^{2}\,\sigma_d^{2}}{\delta^{2}},
+\]
+where $\delta$ is the interference that would be judged unacceptable and $\sigma_d$ is the standard deviation of the within-machine difference. For a two-sided level of $0.05$ and power of $0.8$ the leading constant is about $7.8$, so if $\sigma_d$ is twice $\delta$ the experiment needs about thirty-two machines per comparison, and more when the analysis is stratified or an equivalence margin is used. The admission rule that the experiment is meant to produce is a threshold on $e^{\mathrm{marg}}_{\mathrm{old}}$, with machines above it excluded, and the threshold is set from the measured relationship between machine age and marginal energy. The coordination model is judged by comparing the fitted linear cost against a quadratic alternative.
+
+\subsection*{Threats to Validity and Safety}
+
+Volunteers are not a representative sample, and the interference probe may miss effects that the owners would notice. Power meters have their own error and are included in the uncertainty budget. Machines are never run beyond the contribution cap or against the owner's priority, and a machine that exceeds the interference bound is withdrawn automatically.
+
+\subsection*{What Would Count Against the Hypotheses}
+
+The first hypothesis fails if the interference bound is exceeded for a substantial share of machines at the five percent cap. The second fails if no usable subset of machines meets the operating-energy condition at any plausible power usage effectiveness. The third fails if coordination cost grows faster than linearly in the volume of work. Any of these outcomes limits the network to settings where the unmeasured values of autonomy and local control justify it.
+
+\section{Experiment B: Computational Heating}
+
+\subsection*{Question and Hypotheses}
+
+Experiment B asks whether processors integrated into heating appliances deliver heat equivalent to resistance heating while producing verified computation, and under what conditions the arrangement pays. It tests the accounting of Chapter~\ref{ch:thermal} and the peak-load concern of Chapter~\ref{ch:geography}. The hypotheses are that the delivered fraction $f$ is close to one, that under the admissibility rule household electricity use equals that of a resistance heater (Proposition~\ref{prop:pureaddition}), that hardware degradation under the heating duty cycle is acceptable, and that the economic condition of Proposition~\ref{prop:heatpump} is met for some baseline.
+
+\subsection*{Design and Population}
+
+The experiment has two stages. The first is a laboratory stage in an instrumented chamber, with the computing heater, a resistance heater, and where available a heat pump, each run against a controlled thermal load. The second is a field stage in a small number of homes, each fitted with a computing heater module and a resistance fallback element, in which the heating modes alternate over the heating season. Weather is taken into account through heating degree days. A control group of the same processors runs at steady load on a bench, to separate the wear caused by the heating duty cycle from the wear caused by operation as such.
+
+\subsection*{Measurements}
+
+In the laboratory the delivered heat is measured by calorimetry on the air stream, $Q=\dot m\,c_p\,\Delta T$, and compared with the electrical input to give $f$, with an uncertainty budget by the method of Chapter~\ref{ch:furnaces}. In the field the quantities recorded are electricity use in fifteen-minute intervals, the power drawn by the computing hardware $P_i(t)$ and the demand $D_i(t)$ it is capped by, indoor temperature as a measure of comfort, verified tasks completed, and the fraction of heating hours in which the work queue was nonempty, which is the availability of Chapter~\ref{ch:thermal}. Hardware wear is tracked through the number of thermal cycles, fan hours, error counts, and failures. Where a home has a heat pump, its seasonal coefficient of performance $\gamma$ is measured, since Proposition~\ref{prop:heatpump} depends on it. Coincident peak demand is recorded on the coldest days.
+
+\subsection*{Analysis and Decision Rules}
+
+Weather-normalized electricity use is modeled for each mode as a linear function of heating degree days with a random effect for each home. The pure-addition claim is tested as equivalence of the slopes for the computing heater and the resistance heater within a stated margin, since the claim is that the two are the same and failing to find a difference is not evidence of equivalence. The admissibility rule is checked on the logged data, and any interval with $P_i(t)>D_i(t)$ counts as a violation. The value of the computation $v$ is estimated from verified tasks per kilowatt-hour and the value assigned to a task, and the inequality of Proposition~\ref{prop:heatpump} is evaluated with the measured $p$, $\gamma$, and $k$, together with its uncertainty. The peak-load effect is reported as the ratio of coincident peak demand in computing-heater homes to the baseline mode.
+
+\subsection*{Threats to Validity and Safety}
+
+Homes differ in insulation, occupancy, and thermostat behavior, and alternation over time is confounded with weather, which the degree-day model corrects only in part. The number of homes will be small. All hardware is certified, has independent thermal cutoffs that the scheduler cannot override, and is installed by qualified personnel. The experiment stops in a home at any sign of comfort loss.
+
+\subsection*{What Would Count Against the Hypotheses}
+
+The first fails if $f$ is materially below one in practice. The second fails if the slopes differ by more than the equivalence margin. The third fails if the failure rate under the heating duty cycle is substantially higher than at steady load. The fourth fails if the inequality of Proposition~\ref{prop:heatpump} cannot be met at realistic values of $v$ and $k$ against the baselines households actually use, in which case the arrangement would be limited to homes with resistance heating. A materially higher coincident peak against heat-pump baselines counts as an external cost that the economic assessment must include.
+
+\section{Experiment C: Physical Analog Calculation}
+
+\subsection*{Question and Hypotheses}
+
+Experiment C asks whether a controlled physical apparatus can answer a defined question with enough accuracy and at low enough cost to compete with numerical methods, and how much site-to-site variation the method can tolerate. It tests the framework of Chapter~\ref{ch:analog} and the design principles of Chapters~\ref{ch:furnaces} and~\ref{ch:evolutionary}. The hypotheses are that the discriminability $d'$ is large enough for a stated reliability on a benchmark question, that the observed rate of correct selection agrees with Proposition~\ref{prop:selection}, that the thermodynamic computational yield $\eta_X$ exceeds the yield $\eta_{\mathrm{num}}$ of a simulation answering the same question at the same reliability, and that the method tolerates a measurable amount of site variance.
+
+\subsection*{Design and Population}
+
+A laboratory flow loop is built with configurable passage geometry, calibrated sensors, and a safe working fluid, operated well within the pressure and temperature limits of residential equipment. A benchmark question is fixed and registered in advance, for instance which of two geometries gives the lower pressure drop at a given flow rate, with candidate answers and a decision rule specified beforehand. The true answer is established independently in a reference measurement of much higher accuracy. A library of fabricated inserts supplies a range of configurations, and a common reference configuration is run in every session. The scale of the apparatus and its operating point are chosen to match the Reynolds number of the target equipment as discussed in Chapter~\ref{ch:furnaces}, and the report states which similarity groups are matched. To emulate the variation between homes, controlled disturbances are applied in separate sessions, such as offsets in inlet temperature, added leakage, and changes in filter loading, with magnitudes chosen from field data on residential systems.
+
+\subsection*{Measurements}
+
+The measured quantities are differential pressure, temperature, and flow rate, with the combined uncertainty of each derived quantity. Repeated runs give the within-session noise $\sigma$, and the disturbance sessions give the apparent site variance $\sigma_b^{2}$. Energy is measured for the apparatus as a whole, including fans, sensors, and data acquisition, and for the numerical comparator, whose wall-power energy is measured over the time it takes to reach the same reliability on the same question.
+
+\subsection*{Analysis and Decision Rules}
+
+The discriminability $d'=\Delta\mu/\sigma$ is computed for each pair of configurations. The number of replications needed for a target reliability is planned from Proposition~\ref{prop:selection}: for a reliability of ninety-five percent, $z_\delta\approx1.645$, and if the true difference is half the noise, $\Delta/\sigma=0.5$, the planning formula requires $m\ge 2z_\delta^{2}\sigma^{2}/\Delta^{2}\approx22$ replications. The predicted and observed rates of correct selection are compared across many pairs. The effect of site variance is examined through Proposition~\ref{prop:sitevariance}, by comparing cross-session and within-session comparisons and by locating the level of disturbance at which the observed reliability falls below the target. The yields $\eta_X$ and $\eta_{\mathrm{num}}$ are compared with their uncertainties at a common accounting boundary and a common reliability.
+
+\subsection*{Threats to Validity and Safety}
+
+A benchmark that is easy for simulation will understate the case for the apparatus, and one that suits the apparatus will overstate it, so the benchmark is chosen and registered before either is run. Laboratory conditions are more favorable than a home, which is why the disturbance sessions are included. The apparatus operates within rated limits throughout.
+
+\subsection*{What Would Count Against the Hypotheses}
+
+The first two hypotheses fail if $d'$ is too small for the target reliability at an affordable number of replications, or if the observed selection rate departs from the prediction in a way that indicates unmodeled error. The third fails if $\eta_X\le\eta_{\mathrm{num}}$. The fourth fails if the tolerable site variance is smaller than the variance found in the field, in which case the method is suited to validation in controlled settings and not to distributed discovery.
+
+\section{Experiment D: Long-Horizon Evolutionary Scheduling}
+
+\subsection*{Question and Hypotheses}
+
+Experiment D asks whether history-aware scheduling can make a heterogeneous network more economical over a long horizon than naive distributed scheduling and than a centralized alternative, under what parameter values, and with what sensitivity to the discount rate. It tests the claims of Chapter~\ref{ch:horizon}. Its hypotheses are that a history-aware scheduler accumulates less regret than a naive one in a drifting network, that the learning exponent emerging from the simulated operation meets the requirement for cumulative break-even within the planning horizon, and that the lifetime value of the network exceeds that of a centralized baseline which learns on its own curve.
+
+\subsection*{Design}
+
+The experiment is a simulation of many years of operation. Nodes arrive, depart, and fail according to stated processes, and their availability follows daily and seasonal patterns with correlated regional outages as in Chapter~\ref{ch:geography}. Workloads vary over time. Three schedulers are compared: a centralized scheduler operating a dedicated facility with its own cost structure and learning curve, a naive distributed scheduler that assigns work without using history, and a history-aware scheduler of the bandit type with forgetting, as discussed in Chapter~\ref{ch:horizon}. The simulator's parameters are taken from the measurements of Experiments A and B where they exist and are otherwise varied over stated ranges, and nothing is tuned to produce a favorable result.
+
+\subsection*{Measurements}
+
+The outputs are the cumulative regret of each scheduler, the net benefit series $n_t$ for each architecture, the lifetime value $V_T$ across a grid of discount rates, the three break-even times of Proposition~\ref{prop:breakeven}, and the critical discount rate when it exists. The learning exponent is estimated from the simulated cost series by regression of log cost on log cumulative volume, and compared with the exponent assumed in the simulator's own learning mechanisms, so that learning that emerges from the dynamics can be distinguished from learning that was imposed.
+
+\subsection*{Analysis and Decision Rules}
+
+Uncertain parameters are sampled over their ranges, for example by a Latin hypercube design, and results are reported as distributions across the sample and not as point estimates. Each configuration is run with many random seeds, and confidence intervals are reported for every output. The pre-registered decision rules state the fraction of parameter draws in which the history-aware scheduler must beat the naive one by a stated margin in $V_T$, and the fraction in which the network must beat the centralized baseline, for the hypothesis to be counted as supported. The simulator is validated by predicting held-out data from Experiment A before it is used for forecasting.
+
+\subsection*{Threats to Validity}
+
+A simulation can show that a mechanism works in principle and cannot establish that the real network behaves as simulated. In particular, the learning exponent is an empirical property of a real system, and a simulated exponent reflects the mechanisms that were built into the simulator. The result is therefore a statement about conditions under which the mechanism would pay, to be confirmed or refuted by a field pilot.
+
+\subsection*{What Would Count Against the Hypotheses}
+
+The first hypothesis fails if the history-aware scheduler does not beat the naive one under drift. The second fails if the emergent exponent falls below the requirement of Chapter~\ref{ch:horizon}. The third fails if the centralized baseline dominates over the plausible range of parameters, which would indicate that the network's value, if any, lies in reasons other than economy.
+
+\section{Experiment E: Goodhart Stress Testing}
+
+\subsection*{Question and Hypotheses}
+
+Experiment E asks which reward rules resist manipulation by participants who seek the reward and not the purpose, and how large the residual vulnerability is. It tests Chapter~\ref{ch:goodhart} and the mechanisms of Chapter~\ref{ch:norewards}. The hypotheses are that rewards for raw compute induce hardware purchases and artificial workloads as Proposition~\ref{prop:escalation} predicts, that rewards for verified results shift manipulation to fabrication and duplication, that replication, spot-checking, capped rewards, and gating reduce the profit from manipulation to the levels the propositions of Chapter~\ref{ch:norewards} predict under their assumptions, and that a residual vulnerability remains whose size can be measured.
+
+\subsection*{Design}
+
+The experiment compares several reward schemes in a simulated market and then in a controlled game with human participants. The schemes are rewards for raw compute, rewards for verified results, rewards for reported energy savings, and combinations of these, each with and without the protections of Chapter~\ref{ch:norewards}. The protections are varied one at a time and together: replication with different replica counts $r$, spot-checking at different inspection rates $s$, stakes of different sizes $F$, caps on the rewarded quantity, and gates on constraint violations. Participants include honest agents, and adversaries with different capabilities: some that can buy hardware, some that can generate artificial workloads, some that misreport availability or baselines, some that fabricate results, some that collude or hold many identities, and some that learn and adapt their strategy to the rules. A red team of human participants plays against the rules with small stakes, in a game conducted under consent and with no real harm to anyone.
+
+\subsection*{Measurements}
+
+The principal measures are the capital that adversaries spend on hardware, the fraction of rewarded work that is artificial, the verified value delivered per unit of reward paid, the false acceptance rate of fabricated results, the profit of adversaries relative to honest participants, and the welfare of the honest participants. The inspection rate at which fabrication ceases to pay is measured directly and compared with the threshold of Proposition~\ref{prop:spotcheck}. The probability of undetected fabrication is compared with the value predicted by Proposition~\ref{prop:replication} as the share of colluding and multiple-identity participants is raised, to find the point at which its independence assumptions fail. The rate at which adversaries find new exploits after the rules change is recorded, to evaluate the policy of rotating criteria.
+
+\subsection*{Analysis and Decision Rules}
+
+Each scheme is evaluated by the verified value it produces per unit of reward and by the profit of the best-performing adversary strategy found. Adaptive adversaries are given a fixed budget of search, and the profit they reach is reported as a lower bound on what a determined adversary could achieve. The decision rules fix the verified value per reward and the adversary profit that a scheme must meet to be counted as resistant, and the scheme with the best result under the strongest adversary is preferred, not the one with the best average result.
+
+\subsection*{Threats to Validity}
+
+Simulated adversaries are limited by the imagination of their designers, and human red teams play with small stakes, so both understate the ingenuity of motivated attackers in a real market. The experiment can show that particular attacks succeed. It cannot show that no attack will succeed.
+
+\subsection*{What Would Count Against the Hypotheses}
+
+The third hypothesis fails if adversary profit under the protected schemes exceeds the stated threshold, or if the observed deterrence threshold departs materially from the theoretical one. A finding that adaptive adversaries find profitable strategies against every scheme would show that decentralized governance cannot, by these mechanisms, resist Goodhart-style corruption, and that conjecture of Chapter~\ref{ch:ecology} would be answered in the negative.
+
+\section{Summary of the Program}
+
+Table~\ref{tab:program} collects the experiments, the chapters they bear on, the quantities they supply, and the decisions they inform.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.9in}>{\raggedright\arraybackslash}p{1.0in}>{\raggedright\arraybackslash}p{1.9in}>{\raggedright\arraybackslash}p{1.5in}}
+\toprule
+Experiment & Chapters & Quantities supplied & Decision informed \\
+\midrule
+A: Residual computing & \ref{ch:residual}, \ref{ch:router}, \ref{ch:sunk} & Interference bound, marginal energy, replication factor, availability model, coordination cost & Which machines to admit; whether reuse beats dedicated infrastructure \\
+B: Computational heating & \ref{ch:thermal}, \ref{ch:geography} & Delivered fraction, equivalence of slopes, wear, value per kilowatt-hour, peak load & Whether and where computing heaters pay \\
+C: Physical analog calculation & \ref{ch:analog}, \ref{ch:furnaces}, \ref{ch:evolutionary} & Discriminability, selection reliability, yield, tolerable site variance & Whether physical modules can compete with simulation \\
+D: Long-horizon scheduling & \ref{ch:horizon}, \ref{ch:geography} & Regret, learning exponent, break-even times, critical discount rate & Whether the long-horizon hypothesis is worth a field pilot \\
+E: Goodhart stress testing & \ref{ch:goodhart}, \ref{ch:norewards} & Adversary profit, deterrence thresholds, residual vulnerability & Which reward rules to adopt, and whether governance can hold \\
+\bottomrule
+\end{tabular}
+\caption{The experimental program and its connections to the argument.}
+\label{tab:program}
+\end{table}
+
+The experiments are ordered by dependence. Experiments A and B supply the measurements that Experiment D needs for calibration, and Experiment C supplies the accuracy that the field test of Chapter~\ref{ch:furnaces} presupposes. Experiment E can proceed at any time and should precede any deployment that pays participants. A result that refutes one of the hypotheses is a result of the program and not a failure of it.

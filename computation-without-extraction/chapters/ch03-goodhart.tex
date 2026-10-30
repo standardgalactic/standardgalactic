@@ -1,0 +1,57 @@
+\chapter{Goodhart's Law and the Collapse of the Objective}
+\label{ch:goodhart}
+
+This chapter is the theoretical bottleneck of the monograph. Every later claim about reward mechanisms, verification, and long-horizon accounting depends on a precise account of how a measure comes apart from the purpose it measures.
+
+\section{Origins and Variants}
+
+The law that bears Goodhart's name originates in a 1975 discussion of British monetary policy~\cite{goodhart1975}, where the observation was that a statistical regularity tends to collapse once pressure is placed upon it for control purposes. It has since been compressed into the slogan that a measure ceases to be a good measure when it becomes a target, a phrasing usually traced to Marilyn Strathern's discussion of audit in British universities~\cite{strathern1997}. The compression is convenient and slightly misleading, because it merges several distinct claims.
+
+Donald Campbell stated a closely related principle for social indicators~\cite{campbell1979}: the more a quantitative indicator is used for social decision making, the more subject it becomes to corruption pressures and the more apt it is to distort the processes it is intended to monitor. Campbell's formulation locates the failure in the behavior of people under evaluation. Goodhart's original formulation locates it in the breakdown of a statistical relationship. Later work in machine learning, under the names reward hacking and specification gaming~\cite{skalse2022}, locates it in the gap between a specified reward and the intended behavior. Manheim and Garrabrant~\cite{manheim2018} separate four mechanisms by which the divergence can arise: regressional, extremal, causal, and adversarial. The distinction matters because the remedies differ. Regressional divergence is addressed by better estimation, and adversarial divergence only by changing the incentives of the parties who benefit from the gap.
+
+\section{A Formal Statement}
+
+Let $W(x)$ denote the intended social objective as a function of an action or configuration $x$, and let $M(x)$ denote the measurable proxy that an institution actually optimizes. The proxy is introduced because $W$ is not directly observable or is too costly to measure. The difficulty arises when
+\[
+\argmax_x M(x) \neq \argmax_x W(x).
+\]
+Computational throughput, utilization, benchmark performance, transactions processed, and revenue generated are all candidate proxies in the settings considered here. Once an institution optimizes such a measure, it can produce impressive numerical results without achieving the purposes that the measure was meant to represent.
+
+A minimal model shows how optimization pressure alone can produce the divergence. Suppose a participant holds a budget $B>0$ and divides it between productive effort $p\ge 0$ and gaming effort $g\ge 0$, so that $p+g=B$. Productive effort contributes to both the proxy and the objective. Gaming effort contributes to the proxy at rate $a>0$ and detracts from the objective at rate $b\ge 0$ through the resources it diverts.
+\[
+M(p,g)=p+a\,g,\qquad W(p,g)=p-b\,g.
+\]
+
+\begin{proposition}
+\label{prop:goodhart}
+If $a>1$, the participant who maximizes $M$ sets $g=B$ and obtains $W=-bB\le 0$, whereas the allocation that maximizes $W$ sets $g=0$ and obtains $W=B>0$. If $a\le 1$, the maximizer of $M$ also sets $g=0$ and the proxy is faithful at its optimum.
+\end{proposition}
+
+\begin{proof}
+Substituting $p=B-g$ gives $M=B+(a-1)g$ and $W=B-(1+b)g$ on $0\le g\le B$. The function $W$ is strictly decreasing in $g$ for every $b\ge 0$, so its unique maximizer is $g=0$ with value $B$. The function $M$ is strictly increasing in $g$ when $a>1$, so its maximizer is $g=B$, where $W=B-(1+b)B=-bB$. When $a\le 1$, $M$ is nonincreasing in $g$ and $g=0$ is a maximizer.
+\end{proof}
+
+The model is deliberately crude and is offered as an illustration of a mechanism, not as a description of any particular system. It makes one point that the later chapters rely on: the proxy can be perfectly well behaved over the range of ordinary behavior and still fail at its optimum, because the optimum is exactly where the cheapest way of raising the proxy is exploited. The threshold $a>1$ says that the proxy fails as soon as gaming is more rewarded than production, and it fails completely and not gradually.
+
+\section{Reward Design and the Bitcoin Case}
+
+The model of the preceding section concerns an individual who splits a fixed budget. Reward design raises a second question, which is what a reward proportional to measured activity does to the total expenditure of a population. Consider $N\ge 2$ identical participants who each choose a hardware expenditure $x_i\ge 0$ at unit cost, and suppose a reward pool of value $R$ is divided in proportion to expenditure, so that participant $i$ receives $R\,x_i/\sum_j x_j$. This is the structure of a hash race, and of any scheme that pays for raw compute contributed.
+
+\begin{proposition}
+\label{prop:escalation}
+In the symmetric equilibrium of this contest each participant spends $x^{*}=R(N-1)/N^{2}$, so that total expenditure is $R(N-1)/N$, which approaches $R$ as $N$ grows, and each participant's net payoff is $R/N^{2}$.
+\end{proposition}
+
+\begin{proof}
+Participant $i$ maximizes $\pi_i=R\,x_i/(x_i+X_{-i})-x_i$, where $X_{-i}=\sum_{j\ne i}x_j$. The first-order condition is $R\,X_{-i}/(x_i+X_{-i})^{2}=1$. At a symmetric point $x_i=x$ and $X_{-i}=(N-1)x$, which gives $R(N-1)x/(Nx)^{2}=1$ and hence $x=R(N-1)/N^{2}$. Total expenditure is $Nx=R(N-1)/N$, and the net payoff is $R/N-x=R/N^{2}$.
+\end{proof}
+
+The result is a standard one in the theory of contests, and its relevance here is what it implies about a computation reward. When participants are many and alike, nearly the whole value of the reward is dissipated in expenditure, and the expenditure is a transfer to suppliers of hardware and electricity that adds nothing to the stock of independently useful results. Doubling the number of participants does not enlarge the reward and only raises the competitive spending that the reward induces. This is the formal counterpart of the escalation described in Chapter~\ref{ch:bitcoin}, and it explains why a network that pays by quantity of compute inherits the same behavior regardless of the worthiness of the tasks. In the notation of Proposition~\ref{prop:goodhart}, the proxy is expenditure, the objective is useful output, and the reward makes expenditure the cheapest route to income.
+
+The remedy that Chapter~\ref{ch:norewards} develops is to attach reward to verified outcomes and not to activity. That shifts the contest without ending it. Once results are what is paid for, the cheapest way to raise income becomes fabrication, duplication of trivial tasks, or manipulation of the baseline against which savings are measured, and the validation procedure becomes the new object of gaming. No reward rule removes the pressure. What can be done is to bound participation, so that the maximum useful expenditure of a participant is limited by the purpose of the host system, and to verify results independently of those who profit from them.
+
+\section{An Institutional Consequence}
+
+The thesis of this chapter is that Goodhart-type failure is not merely an occasional accident of optimization. It tends to recur when a measurable proxy is allowed to acquire authority over the underlying purpose, and three features make the recurrence likely, though not inevitable. First, the objective $W$ is almost always harder to observe than the proxy $M$, which is why the proxy was adopted. Second, the party whose behavior is measured typically has better information about how to move $M$ than the party that designed it. Third, rewards attached to $M$ create a standing incentive to find the cheapest means of increasing it.
+
+Taken together, these features suggest that a stable institution should not rely on the goodwill of participants to keep $M$ and $W$ aligned. Alignment must be maintained structurally, by constraining which actions are admissible regardless of their effect on $M$. This is the move taken in Part~V: the network may not reward a participant for defeating the constraints that justified the participant's inclusion, and the verification of results is separated from the measurement of activity.

@@ -1,0 +1,568 @@
+you know if you stand in your living room um like in the middle of the night it's usually
+completely still right you've got the lights off maybe there's just the faint i don't know that
+low hum of your refrigerator cycling on in the kitchen yeah exactly or like the slow pulsing
+ember light on your laptop charging on the desk and normally you look at that scene and you feel
+this this deep sense of peace things are resting the day is over it's a very um it's a very human
+way to look at our environment right yeah the machinery is asleep it's recovering just like
+we are i mean we constantly project our own biological need for rest onto our tools we really
+do it's comforting but uh if you take a certain kind of network engineer or like a centralized
+cloud manager and you put them in that exact same quiet living room they don't see peace at all no
+they look at that sleeping laptop they listen to that humming fridge and they see stranded assets
+they see a literal crime against efficiency oh completely from a purely industrial perspective
+it is the absolute literal definition of wasted capacity right because every silent processor is
+a missed opportunity every appliance that is just doing its one primary job um without maximizing its
+computational potential is essentially leaving money and progress really on the table and that tension
+that exact tension between the piece of an idle machine and the relentless almost obsessive drive
+to put every microchip on earth to work that is exactly where we are going today i'm very excited for
+this one welcome to the deep dive our mission today is to radically rethink how we build the future
+of computing and we are doing this by exploring a really fascinating deeply mathematical and honestly
+quite philosophical monograph yeah it came out in november 2026 all right november 2026
+it's by an independent researcher named fly chi and it's titled computation without extraction it is
+just a phenomenal piece of work it really is it because it challenges the very foundation of how we
+measure technological progress i mean it essentially takes a sledgehammer to the default assumptions of
+silicon valley it totally does because instead of asking how to maximize the utilization of dedicated
+centralized data centers which is what everyone is doing right what amazon google microsoft basically
+everyone else is doing this paper asks a totally different question it asks um what computations can
+our existing physical systems things like your basement furnace your air conditioner your 10 year old
+personal computer what can they perform without compromising their primary purpose and the key
+phrase to hold on to their right at the start is without compromising yeah we are talking about hunting for
+residual capabilities we aren't talking about turning your toaster into a supercomputer at the expense of
+your toast no burnt toast just to run ai exactly the toast still comes first so we all have idle
+hardware sitting around but is idle really the same thing as wasted that is the central mystery we are going
+to unpack today we'll look at why metrics like efficiency can actually end up destroying the very goals they
+were meant to measure oh that's a big one it's massive we'll explore how your home heater could
+theoretically run complex physics simulations just by blowing hot air which still blows my mind same
+and we will get into why true technological freedom actually requires having the fundamental right to
+remain completely offline i really think for anyone listening this is going to fundamentally change how
+you look at the mundane appliances in your home like you will never look at a thermostat the same way
+again i certainly don't anymore so before we can even conceptualize building a new wild internet out of
+furnaces and refrigerators we really have to understand the philosophical flaw in how we
+currently treat computing resources right we need to define the problem yeah and to ground this let's
+look at a quote from october 2026 from open ai's sam altman oh this quote is perfect for this it is
+he was on a show and they were discussing the massive global shortage of dram you know memory chips which
+are obviously critical for ai and his argument in that interview makes perfect logical sense
+if you live entirely on a spreadsheet right he argued that from a global resource allocation
+perspective it is a terrible tragedy that everyday people hold shares of the world's highly limited
+memory supply sequestered inside personal computers because inside a personal laptop that memory is only being
+utilized maybe five percent of the time exactly he's basically saying look at all this incredibly
+expensive highly engineered sand that took billions of dollars to fabricate and it is just sitting on a
+mahogany desk doing absolutely nothing 95 of the day while we have a global compute shortage and so his
+proposed solution naturally is maximum cloud utilization lock it all into the cloud right the mindset is why put
+memory in individual laptops at all we should put all that memory in a centralized data center where
+it can be time shared and run it near 100 utilization continuously which again sounds incredibly rational
+if you believe that a scarce resource is only honored if it is being pushed to its absolute limit 24 7
+right but okay wait let's unpack this for a second because on the surface he's totally right
+if i have a half empty suitcase when i'm traveling why not fill it if i have unused space i'm being
+wasteful isn't efficiency just inherently good i mean it is the obvious conclusion and it's how we are
+all taught to think about systems but the monograph just tears this apart by breaking down what the word
+efficiency actually masks yeah because we throw that word around as if it's a single objective
+mathematical truth but Flyxion points out there are actually six hidden totally distinct quantities
+tangled up in our vocabulary whenever we say efficiency six of them six and they are often
+completely at war with each other we really need to go through these because reading this part of the
+paper completely shifted my perspective on tech okay let's start with the one everyone knows which
+is instantaneous utilization right that's exactly what alton was talking about what fraction of this
+chip's capacity is engaged at this exact millisecond the spreadsheet metric right but then consider the
+second one lifetime utilization a personal machine might sit idle most of the day but over a 10-year
+lifespan just sitting on your desk it might do a massive amount of cumulative work without ever
+needing replacement right compared to a server in a data center that runs at 100 for three years and
+then gets literally ripped out and shredded because it's obsolete exactly so the data center wins
+instantaneous but your laptop might win lifetime makes sense then you have the third metric which is
+economic efficiency this just compares the financial value of the outputs to the costs of the inputs
+but that relies entirely on market prices which are subjective subjective and completely made up by
+humans and institutions right like if the market decides generating ai cat pictures is worth a
+billion dollars then a data center making cat pictures is technically economically efficient even if
+it's burning a forest's worth of coal to do it you've hit on the exact mechanism of the fourth one there
+which is energy efficiency ah this is usually defined as useful computational output divided by energy
+consumed during operation but notice what that completely ignores the manufacturing part yes it
+completely ignores the embodied energy it took to mine the metals fabricate the silicon and ship the
+hardware around the globe in the first place so it's a very narrow view of energy very narrow so we have
+instantaneous lifetime economic and energy what are the last two because these are the ones that really
+feel like they get swept under the rug by big tech the fifth is resilience this is a system's ability to
+keep working when things go catastrophically wrong okay and here's the secret about resilience it always
+always requires holding some capacity in reserve you can't be resilient if you're maxed out exactly
+you cannot be resilient if you are running at 100 and finally the sixth is computational autonomy
+that is your ability as an individual or a community to run calculations and access information without
+relying on a third party corporation to grant you permission so when a tech ceo gets on a stage and
+says we need our infrastructure to be more efficient they are almost exclusively talking about number one
+instantaneous utilization yes and here is the core unavoidable trade-off that the paper highlights
+you cannot maximize all six of these quantities at the same time it's impossible it mathematically and
+physically cannot be done if you tune a system for maximum instantaneous utilization you inevitably
+destroy resilience and autonomy you eliminate the reserves you eliminate the slack in the system
+it's kind of like it's like filling every single silent moment in a conversation with talking oh
+interesting like if you maximize the audio output if we just talk over each other constantly and ever
+pause you lose the ability to listen you lose the emotional resonance of the pause sometimes the
+empty space is the whole point of the interaction that is a really beautiful analogy the empty space actually
+serves a function and the monograph introduces this crucial distinction between productive idleness and
+wasteful idleness right because we are conditioned by capitalism really to think all idleness is waste
+but think about a fire engine sitting in a firehouse or a spare tire in the trunk of your car sure they
+are idle for 99.9 of their existence do we look at a quiet firehouse and call it a failure of resource allocation of
+course not i mean if my spare tire is being used 100 of the time i am having a phenomenally terrible year
+right its idleness is its exact value it provides availability it provides insurance against disaster
+a computer that is doing nothing for 20 hours a day might be providing immense value to its owner
+simply by being ready to act the moment they sit down yeah you just open the lid and it is instantly
+yours without needing to authenticate with a cloud server without waiting in a queue without even needing a
+broadband connection exactly but a utilization metric just registers that beautiful readiness
+as a flat line near zero it just calls it waste and this brings us to i think the philosophical heavy
+hitter of the paper Flyxion brings in jacques alul and his 1954 book the technological society yes
+it's an old book but it perfectly explains how this obsession with utilization takes over our brains
+alul is essential here he coined the concept of the supremacy of technique now when he says technique
+he doesn't just mean machines or code right he means the absolute rational pursuit of the most efficient
+means in every single field of human activity and the argument alul makes which Flyxion builds on to
+devastating effect is that once measurable efficiency becomes the supreme criterion for a society
+all other competing human values like privacy local control resilience peace they get subordinated
+automatically and without any debate without ever being explicitly debated because you can't put a
+neat little number on autonomy as easily as you can put a dashboard metric on utilization yes and to
+take that a step further the metrics make the decisions for us if a centralized cloud is 10 cheaper and
+10 faster on paper it wins the boardroom argument every time nobody has to hold a democratic vote to
+surrender their local computing independence the technically superior choice just justifies itself
+through the numbers and over time the burden of proof shifts oh i see what you mean you end up having to
+justify why you want to keep your own hardware exactly you get looked at like a crazy luddite for wanting
+a local hard drive and you're being judged against a standard of corporate efficiency that you never actually
+agreed to apply to apply to your personal life in the first place it's subtle but the infrastructure
+itself changes our values without us even noticing and to illustrate how this invisible coercion works
+the paper uses a really brilliant non-technical example it's an essay by a writer named kaffir from 2026
+about tech journalism and corporate hospitality this part was fascinating because it's about how you can bribe
+someone without ever offering them a bribe yeah kaffir wrote about how public relations teams for major
+tech companies they don't usually hand journalists bags of cash right that's clumsy and illegal very
+illegal they just manage their environment instead they manage their access they fly them out put them in
+five-star hotels give them tightly curated awe-inspiring tours of the server farms of the fabrication plants
+right and the journalist goes back to their desk and can honestly say hey i wasn't bribed no promises
+were made i have total editorial independence i can write whatever i want but the access has completely
+changed the journalist's worldview yeah it changes what questions seem natural to ask the pr team creates
+an environment of such overwhelming scale and competence that certain critical questions just fade away
+you stop asking should this exist and you start asking how fast will it go wow and Flyxion argues that
+an optimized centralized computational infrastructure does the exact same thing to human society it
+acquires total authority simply through the conditions it creates we forget that we could organize
+intelligence differently because the centralized model is the only one that seems natural it becomes the air we
+breathe but wait i have to push back a little here just playing devil's advocate for the cloud
+engineers for a second sure let's go back to sam altman's point about physical resources
+centralization does save raw materials right you think so like if everyone shares one giant data center for
+their ai and storage we don't have to build three billion separate laptops with an extra 32 gigs of ram
+that rarely gets used doesn't that save mountains of silicon doesn't that save rare earth metals
+it seems like it would and that is the siren song of centralization but if we connect this to the
+bigger picture the macro level reality is often the exact opposite really yeah first you have to add in
+the immense physical overhead of the cloud that you don't see on your desk you need massive industrial
+cooling systems hundreds of miles of redundant fiber optic networking administrative security servers
+backup diesel generators oh true and more importantly you run straight into the jevons paradox oh i love
+the jevons paradox yeah it explains so much about modern life remind us how that works again so william
+stanley jevons was an economist in the 19th century he was looking at coal consumption okay and he observed
+that as steam engines became vastly more efficient at using coal total coal consumption didn't go down
+it exploded because cheaper energy meant people found far more uses for it exactly you didn't just
+use it to pump water out of mines anymore you built trains and factories and exactly the same principle
+applies to computing when you centralize compute and make it marginally cheaper and easier to access
+via an api total demand skyrockets exponentially right the material savings from higher hardware utilization
+are instantly swallowed whole by the fact that people are suddenly generating infinite ai video clips on
+their phones or corporations are running massive unnecessary surveillance algorithms on every frame of
+security footage total resource consumption goes up not down so we chase this isolated metric of
+utilization and we end up consuming way more power building massive data centers that strain the power
+grid and losing our independence in the process which brings us perfectly to the next major pillar of the
+monograph which is what exactly happens when a system blindly chases a proxy metric right because if we agree
+that maximizing a single metric like utilization is dangerous we have to look at the mathematical
+reality of human behavior when people try to gain the system right and this leads us to good heart's law
+and what Flyxion holds up as the ultimate cautionary tale for network design which is bitcoin good heart's law is
+famously summarized as when a measure becomes a target it ceases to be a good measure it's so true it was
+originally an observation about british monetary policy in the 1970s but it is a universal law of complex
+systems yeah like if you judge schools by standardized test scores schools stop educating and start
+exclusively teaching to the test exactly and the paper dives deep into the mathematical proof of why this
+happens when you incentivize a proxy metric okay let's explore the math here because it's not just
+a psychological quirk right it's a rational economic outcome correct let's assume you are a participant
+in a network and you have a budget of time and money okay you can spend it on productive effort which
+actually achieve the real messy goal of the network or you can spend it on gaming effort which just
+artificially inflates the proxy metric that you are being judged and paid on like cramming for a test
+by memorizing the answers instead of actually learning the underlying math precisely the mathematical
+modeling in the paper proves that if the payoff rate for gaming the metric is strictly greater than one
+meaning it's even slightly cheaper or easier to inflate the score than to do the genuine work yeah
+then the optimal rational strategy is to dedicate all your budget to gaming not some of it all of it
+because why would you ever do the hard slow work if faking it pays a higher dividend exactly you end up
+producing zero actual social value but the metric dashboard looks fantastic yes and the terrifying thing
+is the proxy metric can look perfectly healthy under normal low stakes conditions but the moment you
+attach a major financial reward to it and put extreme optimization pressure on it it fails completely the
+correlation just breaks it collapses inflection argues the absolute best case study for this dynamic
+the thing we must avoid at all costs is proof of work cryptocurrency mining specifically bitcoin
+let's talk about bitcoin because the author doesn't just you know dismiss it offhand he uses it as the
+prime architectural example of what not to do when building a distributed decentralized network to be
+intellectually fair Flyxion acknowledges that bitcoin's proof of work actually does solve a real computer
+science problem okay the massive expenditure of energy buys security by forcing miners to burn electricity to
+solve math puzzles it makes it incredibly costly for an attacker to rewrite the ledger's history right to fake
+a transaction an attacker would have to out compute the entire honest network correct so the compute isn't
+literally doing nothing it's acting as a giant energy intensive security wall okay but but here is the critical systemic flaw
+it is what the paper categorizes as competitive computation the network pays a financial reward for raw computational expenditure
+and because of how the difficulty adjustment algorithm is coded if a million new miners join the network tomorrow and
+double the global compute power the network does not process double the transactions does it no right it
+doesn't get faster right the code just looks at the network and says oh you have more power cool i'm
+going to make the math puzzle twice as hard to maintain the same block time you've got it the service level
+provided to the end user remains absolutely identical the only thing that doubles is the global energy waste
+and the massive expenditure on silicon wow the miners are locked in an inescapable arms race if you
+double your hardware you are just shrinking everyone else's slice of the pie which forces them to double
+theirs just to stay in place it's the red queen effect from alice in wonderland you have to run as fast as
+you can just to stay in the same place it is a pure transfer of wealth to hardware manufacturers and local
+power companies yielding zero additional social value but wait what about the defense you hear from
+the big industrial crypto miners oh here we go the ones who say hey we're putting our server farms in
+incredibly cold places like iceland or northern canada and we are capturing the exhaust heat and using it to
+warm up local greenhouses or warehouses we're recovering the heat so the whole process is ecologically efficient
+yeah Flyxion calls this out specifically and gives it a name he calls it the heat recovery fallacy
+oh okay and it is vital to understand the difference between genuine thermal substitution
+and retrospective justification okay break that down for me what's the difference because to a layman
+using the heat seems like a total win-win think about the order of operations genuine thermal substitution
+is when you take a building say a family home that already needed a 1500 watt heater to survive the winter
+right the demand is already there exactly the energy demand existed first you take out the dumb
+electric heater and you replace it with a computer that draws 1500 watts you haven't added a single
+watt of new energy demand to the power grid you just swap the device generating the heat right
+retrospective justification is entirely different that is when a massive corporation builds a 50 megawatt
+crypto mine solely to chase the computational reward right they create a massive new energy demand
+on the grid that literally did not exist yesterday and then feeling the public relations pressure they
+pipe a tiny fraction of the exhaust heat into a tomato greenhouse next door to justify their carbon
+footprint in a press release wow so they didn't solve a pre-existing heating problem they created a
+massive new energy crisis and then slapped a tiny agricultural band-aid on it to look green the counterfactual
+test is the only one that matters here would that heat have been needed and would that massive amount
+of grid energy have been purchased if the computer network didn't exist and if the answer is no if the
+answer is no it's not substitution it's extraction that is a devastating critique it really is so what
+does this all mean for Flyxion's alternative network if this researcher wants to build a new decentralized
+computing grid out of our home appliances how do we avoid accidentally building another bitcoin how do
+we stop people from just buying up millions of cheap laptops throwing them in a warehouse and gaming the
+reward system well what's fascinating here is that the entire second half of the monograph
+is specifically designed as an intricate physical defense mechanism against this exact competitive
+escalation okay Flyxion proposes three distinct forms of computation but the genius is that they are
+strictly bound by the physical real world constraints of the host system you literally cannot game them
+by throwing more hardware at the problem because the physical world won't let you okay i am fully hooked
+let's get into the actual technical proposals of how we build this let's do it the paper lays out
+form one which it calls residual digital computation this is the idea of using the spare capacity of
+everyday mundane devices like the laptop i have sitting on my kitchen counter right now yes but as we just
+established with our discussion of autonomy earlier we can't just unleash a cloud algorithm to blindly
+harvest every spare cycle of your kitchen laptop because that ruins your user experience oh yeah if it makes my
+cursor lag while i'm trying to work i'm uninstalling it immediately exactly so how do we safely use spare
+ram or cpu the network relies on what's called a resource descriptor vector a vector like a
+multi-dimensional list of traits i'm basically picturing a dating profile for my hardware actually
+that's a great way to visualize it every device dynamically advertises its exact real-time state to
+the network okay this profile includes available compute cores memory storage space network bandwidth
+thermal headroom and crucially reliability okay and this entire profile is capped by an owner defined
+policy you the human might say the network can use five percent of my spare cpu but only when i haven't
+touched the trackpad for 10 minutes and only if the fan doesn't need to spin up right but here is the
+massive logistical problem with that that i'm seeing what's up my laptop isn't a server rack in
+a secure climate controlled building it's chaotic i close the lid when i go to make coffee i take it to
+a cafe and lose wi-fi i turn it off at night how on earth can a distributed network rely on a machine
+that randomly disappears without warning this is where we hit the hard math of interruption which Flyxion
+details beautifully and it is brutal i can imagine let's assume the duration a node is available
+follows a standard exponential distribution so your laptop's mean available time is exactly one hour
+before you typically close the lid okay an average session is one hour if the network assigns your
+laptop a computational task that requires two hours of uninterrupted work what are the odds it actually
+finishes probably pretty low yeah because it's an exponential curve you don't just fail once the math
+dictates that a two-hour task on a one-hour machine will require on average over seven distinct
+attempts to finish without being interrupted seven attempts yes because every time i close the lid at
+the 45 minute mark it wipes the progress and has to start over from scratch when i open it again yes
+the wasted effort grows exponentially if the task length exceeds the mean session length oh wow it's like
+it's like trying to bake a massive intricate two-hour wedding cake in an oven that randomly turns itself
+off every 30 minutes exactly you are never going to get a cake you are just going to ruin batch after
+batch of batter that is exactly it nice the interruption curve destroys long tasks so what is the solution
+you better bake cupcakes instead cupcakes right tiny bite-sized tasks right the tasks assigned to form one
+devices must be incredibly short or they must be perfectly checkpointable meaning they can save their
+exact mathematical state to a hard drive instantly and resume on another machine later without losing
+progress okay if a task can't be sliced into cupcakes it simply does not belong on this layer of the network
+but the paper goes even further than that doesn't it it says some machines in our homes are so old
+and so weak they shouldn't even try to bake cupcakes yes they have a completely different purpose the author
+calls them idea routers this is one of my absolute favorite architectural roles in the whole paper
+it's the concept of computation without execution think of an old desktop pc gathering dust in a closet
+it has barely any processing power left compared to modern standards but it has a massive old hard
+drive and a stable internet connection right it shouldn't crunch numbers instead it holds metadata it acts
+as the matchmaking infrastructure for the rest of the network it connects the devices with the
+tasks yes but how does it organize that without a central server because normally if i want to find a file
+or a task on the web i go to a central index like google or aws right a central index is like having one
+giant master phone book in the middle of town yeah it's incredibly fast to look up a name the coordination
+cost is a constant but it has two massive fatal flaws for a decentralized network one it's a single
+point of failure if the central phone book burns down or the server crashes nobody can talk to anyone
+total blackout and two whoever owns that central phone book has absolute authority over discovery
+they can censor entries they can hide tasks they don't like which perfectly violates that whole
+computational autonomy principle we talked about at the beginning precisely so an idea router doesn't
+use a central index it uses a distributed hash table or dht and it uses content addressed references
+okay we need to demystify that jargon what is a content addressed reference and how does a dht actually
+work in plain english sure normally on the web you look for data by its location a url you are asking
+what is it this specific address on this specific server right like www.whatever.com exactly content
+addressing flips that completely you run the actual data of the file through a cryptographic algorithm
+which spits out a unique string of letters and numbers called a hash okay that hash is like a
+digital fingerprint for the file you don't ask the network where is this file you ask who has the
+file that matches this exact fingerprint ah so even if the file moves or it's copied a hundred times
+the fingerprint is always the same yes and the dht is how you find it in a dht that giant master phone
+book is chopped up into millions of tiny pieces and distributed among all these dusty old pcs these idea
+routers okay if your laptop wants to find a task it asks its nearest idea router neighbor that router looks
+at the fingerprint and says i don't have it but numerically i know the router who handles the a
+section of the alphabet oh i see so it passes the request along homing in on the data it's basically
+a game of hot and cold across the network exactly the coordination cost is logarithmic it takes a little
+more overhead maybe six or seven hops across the network to find what you need instead of one
+one but there is no central authority right if a hundred idea routers go offline suddenly the
+network just routes around them it is incredibly resilient and Flyxion doesn't just theorize this
+as a thought experiment there is a whole empirical appendix at the end of the paper testing this right
+yes experiment a it's a proposed real world field test the goal is to see if a massive
+heterogeneous population of actual household devices laptops smart tvs tablets can reliably contribute
+five to ten percent of their spare capacity without violating what the author calls an interference bound
+which is basically the annoyance threshold of the human owner right if the network causes your mouse
+to stutter while you're playing a game or makes your netflix stream drop a frame the experiment fails
+the entire premise hinges on the capacity being truly residual and completely unnoticeable to the user
+which makes perfect sense for a laptop baking cupcakes but as we established what if the task
+is simply too big right what if we need to bake a massive multi-tiered wedding cake you can't run a deep
+climate simulation or train a large language model on five minutes of spare laptop ram we need serious
+sustained power we do and sustained power generates heat which brings us to the second form of
+calculation thermally integrated computation this is the most practical and probably the most profoundly
+counterintuitive proposal in the entire monograph we are talking about the computing furnace i love this
+concept we really need to talk about the physics of a computer chip because i think people forget that
+computers are basically just really really expensive space heaters with screens attached it is a
+fundamental law of physics it goes back to landauer's principle and the practical inefficiencies of
+modern circuitry almost exactly 100 of the electricity consumed by a cpu turns directly into heat wait 100
+close enough to 100 that the difference doesn't matter the processor is just doing a tiny fleeting bit
+of math before it turns the electrical current into thermal energy so let me get this straight if i have
+a standard 1500 watt electric space heater from the hardware store and a 1500 watt high-end server rack
+processing data they produce the exact same amount of thermal energy watt for watt joule for joule no way
+yes a processor acting as a heater delivers the exact same thermal output to your living room
+as a dumb electric resistance baseboard heater the heat isn't a byproduct thermodynamically it is the
+primary product that is wild to think about it feels like a glitch in the matrix so Flyxion takes this
+physical reality and proposes a radical architectural shift okay take the massive heat generating processors
+out of the centralized data centers where we spend billions of dollars on air conditioning just to
+throw that heat outside into the atmosphere right and put those processors inside residential heating
+appliances you get the heat you needed to survive the winter anyway and the computation is essentially
+a free byproduct but and this is a massive but there is a golden rule here to prevent the exact good
+hearts law escalation we saw with bitcoin Flyxion calls it the admissibility condition yes this is the fail
+safe it dictates that the building's physical heating requirement dictates the compute never the
+reverse never the reverse never if your living room thermostat says the house is warm enough and reaches 72
+degrees the computer inside the furnace must instantly shut off period okay so you cannot just open all your
+windows in the middle of january to cool the house down just to keep the gpu running so you can earn more
+network tokens exactly you've hit on the exact mechanism of the rule the power draw of the
+hardware is capped strictly physically by the thermal demand of the household that's smart this guarantees
+that every single kilowatt hour consumed by this network would have been consumed anyway just to keep
+the humans warm it achieves true thermal substitution but wait let me push back on the economics of this
+please do because i'm thinking about modern homes not everyone uses those old school electric
+resistance baseboard heaters anymore a lot of people especially those trying to be green have
+upgraded to heat pumps yes they have are you saying i should rip out my hyper efficient heat pump to
+install a massive graphics card in my basement and this is where Flyxion is intellectually incredibly honest
+the paper addresses this directly the comparison between a compute heater and a heat pump is highly
+nuanced and the math is unforgiving okay while the computing heater is perfectly matched one to one
+with an old electric resistance heater it loses badly to an air source heat pump why is that i thought
+a watt was a watt it is but a heat pump doesn't create heat through resistance it moves heat from the outside
+air into your house using refrigerants oh right because it's just moving heat rather than creating it
+a modern heat pump has a coefficient of performance or cop of around three meaning meaning for every
+one watt of electricity you put into the heat pump it moves three watts of heat into your house oh oh wow
+so if i replace my heat pump with a computer furnace which only has a cop of one i am suddenly using
+three times as much electricity from the grid to keep my house at the same temperature exactly a computing
+heater consumes three times the electricity to deliver the same thermal comfort as a heat pump that's
+a huge step backwards it is therefore the physical rule states that the computation performed by the
+furnace must produce enough financial or social value to pay for that massive efficiency gap right
+the compute has to be so valuable that it covers the cost of tripling your electric bill if the network
+pays you less than the cost of that extra electricity the whole model falls apart instantly here's the
+other logistical nightmare though let's say the math does work out the ai tasks pay well it covers the
+electric bill how do you actually physically build this what do you mean well a home furnace is heavy
+industrial equipment it lasts for 20 maybe 30 years but a high-end gpu is obsolete in three years i am not
+going to hire an hvac technician to tear out my home's duct work every time nvidia releases a new chip
+no that would be absurd the engineering solution has to be strict modularity okay you build a highly
+durable traditional heating chassis the heavy fans the sheet metal ducts the safety switches and you
+design it to last decades right but the heating element itself is designed to accept hot swappable
+compute cartridges the homeowner can just slide out a dusty three-year-old cartridge and slide in a new one
+just like changing an air filter the infrastructure persists but the digital brain evolves that's
+brilliant that makes it actually feasible but there is a massive macro level warning in the paper
+regarding the electrical grade isn't there even with modularity what happens when this scales up yes
+if this idea actually takes off and millions of homes across a region replace their highly efficient heat
+pumps with one-to-one compute heaters think about what happens during a severe winter storm a polar
+vortex drops the temperature to zero every single person's heat kicks on at the exact same time
+right and because they are using compute heaters drawing three times the power of the heat pumps they
+replaced the winter peak demand on the local electrical grid would triple overnight oh my god you could
+cause catastrophic cascading blackouts the grid operators have sized the neighborhood transformers
+based on the assumption of heat pumps so the network's deployment cannot be blind it must be
+deeply integrated with local grid capacity it's an incredible idea but the physical constraints of
+reality are very real very real which actually is a perfect transition to the third form of computation
+in the paper yes we've talked about spare laptops we've talked about replacing the heating coil with a
+digital chip but what if we replace the digital chip with the physical world itself now we are entering
+the realm of physical analog computation and this is arguably the most radical proposition in the entire
+monograph this part honestly melted my brain a little bit it sounds like literal science fiction
+walk me through it let's think about digital fluid dynamic simulations if an aerospace company wants to
+simulate how air flows through a complex jet turbine or an hvac company wants to see how heat mixes in a
+chamber right using a digital supercomputer to simulate that is incredibly expensive and slow
+because calculating turbulence is notoriously difficult right it's chaotic it is mathematically
+punishing the cost of resolving all the tiny swirling scales of a turbulent flow scales as the cube of
+the reynolds number the reynolds number yeah the reynolds number is basically a measure of how chaotic and
+turbulent a fluid is as the flow gets faster and more complex the digital math required to track every
+little eddy and vortex becomes prohibitive very quickly supercomputers just choke on it okay but a
+physical fluid a physical fluid evolves itself for free it just obeys the laws of physics instantaneously
+in real time so Flyxion is saying instead of using a supercomputer to build a digital model of a
+furnace to see how air flows just use the actual physical furnace as the computer precisely a home
+hvac system operates at a high reynolds number meaning the air inside the ducts is highly turbulent
+but a very low mach number usually around 0.15 meaning the air isn't compressing like it does its
+supersonic speeds okay now you cannot use your basement furnace to simulate the supersonic airflow over
+fighter jet wing the physics don't scale the compressibility is completely wrong right that makes sense
+but you can use your furnace to run physical optimization experiments on heat exchanger geometries
+or duct mixing or fan blade efficiency okay so practically speaking the network sends a
+mechanical configuration down to my furnace yes some motorized veins inside the ducts shift around to a
+new angle the fan turns on and the furnace tests how efficient the new airflow is in physical reality
+rather than in a simulation and then it just sends the sensor data back exactly okay it's using the
+physical world to calculate a physical problem the fluid is the processor that is so cool it is but it
+encounters a massive statistical hurdle which the paper calls the geography problem what's the
+geography problem think about it every house is uniquely flawed oh yeah if my furnace gets a highly
+efficient airflow result with a new vein configuration and your furnace gets a terrible inefficient result with
+that exact same configuration the network doesn't automatically know why ah is my mathematical
+configuration actually better or do you just have a massive leaky hole in the ductwork in your attic
+that is ruining the airflow ah you can't separate the site effect of my specific crappy house from the
+configuration effect of the experiment right the mathematical proof shows that a physical analog network
+fails entirely it just gathers total garbage data unless every single node periodically runs a baseline
+reference configuration to calibrate itself that makes perfect sense only by comparing everything to
+a known local baseline can the network isolate the true value of the experimental geometry across millions
+of different uniquely flawed homes you have to subtract the noise of the real world exactly but then the
+paper takes this analog idea to an even wilder place entropy as a service harvesting randomness yes true
+unpredictable cryptographic randomness is actually highly valuable in computer science it's the foundation
+of all encryption right and Flyxion asks a wild question can we harvest that randomness from the chaotic
+turbulent flow of a household air conditioner loop okay let's unpack this carefully because if i look at a
+turbulent fluid like boiling water or a chaotic ac refrigerant line it looks completely random to me it looks
+random to the human eye yes but the paper draws a strict critical line between shannon entropy and min entropy
+what's the difference shannon entropy just measures the average uncertainty or chaos of a system a chaotic air
+conditioner has high shannon entropy but min entropy which is what cryptographers actually care about for security
+measures how difficult it is for an adversary to guess the specific outcome given everything they can
+observe about the environment so if i'm a hacker and i put a temperature sensor on the outside of your ac unit
+and i know what the weather is outside can i predict the random numbers your fluid is generating exactly if
+the adversary can observe the ambient temperature and listen to the compressor speed the min entropy might be
+incredibly low even if the fluid itself is chaotic they might be able to guess the next number oh wow
+but the bigger danger is how you combine this randomness across the network this is the xor vulnerability
+explain this to me like m5 because mixing a bunch of random numbers sounds more secure not less okay let's
+use a simple analogy imagine a room with a thousand people the network wants a perfectly random coin flip
+heads or tails okay so it asks all 1 000 people to flip a coin and they are going to combine the results
+using an xor function in simple terms if there is an even number of heads the final result is tails if there
+is an odd number of heads the final result is heads sounds incredibly secure yeah a thousand independent
+variables mixed together no one person controls it here is the flaw the paper proves mathematically that
+if just one person in that room of a thousand is malicious and they simply wait to see the submissions of
+the other 999 people before revealing their own coin they hold the steering wheel wait really they can
+perfectly rig the final output to be whatever they want one node out of a thousand can hijack the whole thing
+yes because if the total of the 999 people is an even number and the malicious actor wants the final answer
+to be odd they just submit a heads oh my god they just solve for the missing variable to force the final output to
+their desired state so harvesting and mixing untrusted physical randomness from ac units across the country
+is highly dangerous unless you use strict commit and reveal cryptographic protocols where everyone has
+to submit a locked box with their answer before anyone is allowed to open them exactly that is fascinating
+but wait i have to stop and ask a broader structural question here is this entire analog section just a semantic
+trick how so are we just calling any physical process a computer to sound cool and visionary
+like if my fridge breaks down because the compressor fails is it calculating its own failure are we just
+stretching definitions to the breaking point it's a very fair critique and it's honestly the first place
+my mind went to but fly on and addresses it head-on to prevent it from becoming you know woo-woo sci-fi okay
+for a physical process to count as an experimental computation it cannot just be a machine running
+its normal cycle a specific theoretical question must be posed in advance there must be controlled
+inputs and there must be calibrated readout sensors specifically designed to discriminate among candidate
+answers so intent matters if you don't have a hypothesis before the machine turns on it's not a
+computation it's just a broken fridge yes the system has to be instrumented to test a specific variable
+without that rigor the definition of computing just dissolves into meaningless physics okay i appreciate
+the rigor there it keeps it grounded but that demand for rigor brings us to the harshest reality check in
+the whole document yeah economics geography and the long horizon even if the thermodynamics work even if the
+analog math is sound does the money make sense let's talk about the cold hard economics of using so-called
+free stuff because as the paper painstakingly points out old hardware is not free the cost of free
+is actually quite high right walk me through the marginal energy equation why isn't it perfectly green
+to just use my old laptop forever we have to look at energy proportionality older pcs draw a massive
+percentage of their peak power just sitting there doing absolutely nothing their baseline overhead is
+terrible okay an old processor might use 50 watts doing zero math and 60 watts running at maximum
+capacity so it's incredibly wasteful at idle exactly now compare that to a modern hyperscale centralized
+data center a modern data center might have a power usage effectiveness a pue of 1.1 it is hyper efficient
+at converting grid power into actual computation with very little wasted on cooling or idle overhead
+right Flyxion runs the numbers and admits a painful truth operating a 10 year old laptop for distributed
+compute might literally generate more carbon emissions than building a brand new server from scratch in a green
+data center that is a tough pill to swallow so recycling old tech can actually be worse for the environment
+than building new tech in terms of ongoing operating energy yes you have to weigh the sunk embodied
+carbon of the old machine against the massive operating efficiency of the new machine and usually the new
+machine wins over a multi-year time frame ouch okay well what about the geography of the network if we
+are tying computation to heating demand with the furnace computers does that save the model it actually creates a
+massive geographic correlation problem think about it the network's computational capacity is now
+physically tied to where it's cold so the northern hemisphere in january has massive compute capacity
+and in july it has nothing right but it's worse than just seasons heating demand is acutely weather dependent
+you would intuitively think that adding 10 000 furnace nodes across a region would smooth out your network
+capacity right law of large numbers yeah that's what i'd assume but the math proves
+that adding nodes in the same region does not smooth the curve why because weather isn't
+random independent events weather is a massive coordinated system a blizzard hits the entire
+midwest at once oh i see so if a cold front moves across chicago suddenly 10 000 furnace computers all turn
+on at the exact same hour flooding the network with a massive spike in compute capacity yes and then
+tomorrow when the sun comes out and it warms up they all vanish simultaneously exactly the variance does
+not approach zero as the network grows it approaches the baseline correlation of the underlying weather
+system geography is a hard physical constraint not a magic wand that smooths out supply so if the
+centralized cloud is so much faster so much more energy efficient and doesn't disappear when the weather
+gets warm why bother with this why spend 20 years trying to build a distributed network of clunky weather
+dependent furnaces consider the flip side of centralization it comes down to learning curves
+and what economists call option value option value the paper looks at wright's law which shows how
+manufacturing costs reliably fall as cumulative production increases and it breaks the timeline of this
+network down into three distinct breakeven phases okay walk me through the phases of
+surviving this first is marginal breakeven the point in the future where one single computational task
+finally becomes profitable to run on a home furnace rather than a cloud server okay second is cumulative breakeven
+the point years later where the network has finally recovered all the historical financial losses from its early
+highly inefficient days right third is discandler breakeven which factors in the time value of money
+meaning could society have just put that investment capital in the stock market instead
+so Flyxion is admitting that on day one this distributed network will be wildly inefficient compared
+to amazon web services it will hemorrhage money absolutely but here is the saving grace option
+value think about a tech giant building a massive centralized ai data center they are committing a
+billion dollars in sunk capital to build that warehouse and fill it with servers right if the ai
+boom busts or if the technology shifts they are financially ruined they own a billion dollar empty
+warehouse in the desert it's a massive inflexible bet but the distributed network utilizes sunk
+hardware that people already own for other reasons you already own the furnace yeah the network is built
+incrementally cartridge by cartridge this gives society the option to stop if the decentralized
+experiment fails after a year the financial ruin is practically zero people just go back to
+using their heaters as normal heaters that's a great point the flexibility to reverse course without destroying
+capital is an incredibly valuable economic trait that traditional utilization metrics completely ignore
+that makes a ton of sense the cost of failure is distributed and incredibly low that brings us to
+the final most crucial hurdle governance because all of this beautiful thermodynamic theory all this
+economic option value it all collapses instantly if bad actors exploit the system how does a decentralized
+network actually enforce these physical limits without a central police force beating goodhart's law requires
+structurally separating the financial reward from the raw compute we talked about this with bitcoin you
+cannot pay people just for running their processors or they will run them into the ground you have to
+introduce the cap rule the cap rule how does that work the cap rule mathematically hard codes that you only get
+rewarded up to the actual legitimate thermal demand of your house okay if your thermostat says the room
+mathematically requires a thousand watts of heat to maintain temperature you can earn network rewards for
+exactly one thousand watts of compute so if i try to gain the system by buying a massive liquid cooled crypto
+mining gpu rig that pulls three thousand watts and i stuff it in my closet you get zero extra money for those
+extra two thousand watts the network aggressively caps your reward at your legitimate thermal demand
+buying a bigger gpu gets you absolutely nothing if your house is already warm it completely destroys
+the economic incentive to overbuild hardware but what if someone is clever what if a hacker writes a
+script to spoof the thermostat software faking the thermal demand so the network thinks the house is
+constantly freezing how do you punish them do you find them their tokens the paper makes a brilliant
+point about human nature here fines do not work they don't if the profit of gaming the system is
+greater than the fine multiplied by the probability of getting caught rational actors will just treat
+the fine as a cost of doing business like chemical corporations paying epa pollution fines every year
+because it's literally cheaper than fixing the factory filters exactly it just becomes an operating
+expense so the network cannot use fines it must use gates what's a gate a gate is binary if you
+violate a physical safety limit or if the network detects you faking your thermal demand your reward
+multiplier instantly becomes absolute zero oh wow you aren't fined you are gated out of the reward
+structure entirely the prohibited action simply ceases to be an item on the price list you can burn all the
+electricity you want but the network will completely ignore you you play by the physical rules or you
+are a ghost to the network i love that which leads into the most human element of this whole paper the
+governance hierarchy the right to remain idle this is the governance structure that prevents the network
+from turning into a dystopian parasite that takes over your home there are three strict levels of
+authority okay let's establish the hierarchy what is the foundational level level one level one is the safety
+envelope this is fixed by the laws of physics the thermal limits of the materials and the manufacturer
+of the appliance it is the hard limit of what the machine can do without catching fire it cannot be
+overridden by anyone ever okay so my homeowner desires have to sit underneath that i can tell my furnace to
+compute but i can't tell it to melt itself which makes level two the human owner yes level two is the owner
+policy this is set by you the human living in the house paying the mortgage right you decide if you
+want to participate exactly when you participate and what your privacy and comfort bounds are you are
+the sovereign of the hardware in level three level three is the network request the global computing
+network is at the very bottom of the food chain it is a beggar the network never dictates the safety
+envelope and it never overrides the human owner it's like having a guest room in your house just because
+the bed is empty doesn't mean a massive hotel corporation has the right to suddenly rent it out
+to a stranger without asking exactly you own the empty space you have the fundamental right to let it
+remain idle availability does not equal authorization that is the core ethos of the entire movement
+and Flyxion codifies this with a final ultimate litmus test for any distributed technology it's called
+the dissolution condition the reactionary test right this is how we know if a technology
+is a tool or a trap right it asks one brutally simple question if the global computational
+network goes bankrupt loses all its funding and dissolves tomorrow morning
+does the human participants still have a working heater and a working computer if the answer is yes
+then the network is legitimate it was a symbiotic layer built on top of robust independent tools
+but if the network dissolves and the user freezes to death in their own home because their furnace relied on
+a central cloud server to function then the system has trapped them it has created an illegitimate
+dependency true technological progress shouldn't hold your basic survival hostage to a corporate api
+what a profound place to land okay let's wrap up this journey we started with sam altman looking
+at a sleeping laptop and seeing a tragedy of unused memory pushing for everything to be sucked into the
+centralized cloud we walked through the hidden dimensions of the efficiency trap how goodhart's law ruins
+proxy metrics when money gets involved and the math of why competitive proof-of-work mining just escalates
+energy waste without providing more value we looked up the sheer thermodynamic genius and the real
+unforgiving physical limitations of turning furnaces into computing heaters and using ac units as physical analog fluid computers
+and we waded through the deep economics of sunk hardware geographic polarization and why having the
+decentralized option to fail cheaply is a superpower ultimately we learned that efficiency should never
+override the primary purpose of our tools or our fundamental right to control them i think that's the biggest
+takeaway so to you listening right now i want you to look around your room look at your laptop your
+air conditioner your smart thermostat think about the hidden dormant capabilities quietly resting in
+your own home yeah and ask yourself whether you are okay with centralizing all of the world's intelligence
+and a few massive glowing warehouses in the desert instead of weaving it safely symbiotically into the
+fabric of the things we already own it's a choice about what kind of infrastructure we want to live inside it
+it really is and i want to leave you with one final slightly provocative thought to mull over
+we spent this whole deep dive talking about machines we did we talked about how an hvac system could
+secretly be a latent computational network solving complex fluid dynamics just by blowing hot air but
+what if we expand that definition what about biological infrastructure oh that's a massive leap where are you going with this
+think about the immense interconnected microbial networks in our soil or the mycelial root systems of old
+growth forests trading nutrients carbon and chemical signals across miles of earth to optimize the forest's
+survival wow are they performing thermodynamic analog computations right beneath our feet balancing
+resource allocation on a massive scale just waiting for us to figure out how to pose the right questions
+if a basement furnace can compute why not a forest something to think about until next time

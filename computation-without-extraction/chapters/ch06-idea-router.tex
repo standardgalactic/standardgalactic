@@ -1,0 +1,71 @@
+\chapter{The Idea Router and Computation Without Execution}
+\label{ch:router}
+
+Not every participating computer needs to perform intensive calculations. Some machines may contribute by routing tasks, indexing capabilities, maintaining provenance records, forwarding experimental observations, or connecting computational problems with suitable resources. An old computer with minimal storage and processing power can still perform useful coordination. This chapter makes the role precise, shows what it costs, and sets out the limits of what a router can legitimately claim to do.
+
+\section{Calculating and Enabling}
+
+The chapter develops the distinction between calculating an answer and enabling a calculation to occur elsewhere. A router does not execute the task. It holds a description of the task, a pointer to where the inputs can be found, and enough metadata to match the task to a capable node. The term \emph{idea router} names this architectural role and carries no claim that messages possess autonomous intelligence. The router matches, forwards, and records. It does not understand, and its usefulness does not depend on any pretense that it does.
+
+\section{Descriptions, References, and Discovery}
+
+A task description must be small enough to move cheaply and specific enough to be matched. Content-addressed references identify data by a cryptographic hash of its contents~\cite{benet2014}, so that anyone who obtains the data can verify that it is the data referred to, and identical data is recognized as identical wherever it is stored. Discovery of which nodes hold a given piece of data or offer a given capability can be organized as a distributed hash table, in which a lookup takes a number of messages that grows only logarithmically with the number of nodes~\cite{maymounkov2002}.
+
+The cost of coordination deserves attention because it is the quantity most often neglected. Coordination consumes resources, and a network whose coordination cost grows faster than the work it coordinates has defeated its own purpose. Let $n$ be the number of nodes and suppose total work grows in proportion to $n$. Table~\ref{tab:coordination} compares three ways of organizing discovery, with the overhead of coordination measured per unit of work.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Organization & State per node & Lookup messages & Overhead per unit \\
+\midrule
+Full mesh & $\Theta(n)$ & $O(1)$ & $\Theta(n)$ \\
+Distributed hash table & $\Theta(\log n)$ & $\Theta(\log n)$ & $\Theta(\log n)$ \\
+Central index & $O(1)$ at nodes & $O(1)$ & $O(1)$ \\
+\bottomrule
+\end{tabular}
+\caption{Asymptotic coordination cost of three organizations of discovery.}
+\label{tab:coordination}
+\end{table}
+
+The full mesh fails by the criterion above, since each node must track every other, so that total state grows as $n^{2}$. The central index has the lowest overhead and the most serious defect, namely that it concentrates authority over discovery in one place, which conflicts with the local authority of Chapter~\ref{ch:idle} and creates a single point of failure and control. The distributed hash table accepts a logarithmic growth in overhead to avoid both defects, and it is the reference design. The asymptotics hide constants and the behavior of real, churning populations, so the conclusion is a design preference and not a measured result.
+
+\section{Routing Reliability}
+
+Routers are themselves intermittent, and a message may traverse several of them. If a path has $h$ hops and each hop delivers with probability $p$, independently, the path delivers with probability $p^{h}$, which falls quickly as $h$ grows. Redundant paths restore reliability.
+
+\begin{proposition}
+\label{prop:routes}
+Suppose a message is sent along $k$ link-disjoint paths, each of $h$ hops, with each hop delivering independently with probability $p$. The probability that at least one copy arrives is
+\[
+1-\bigl(1-p^{h}\bigr)^{k}.
+\]
+\end{proposition}
+
+\begin{proof}
+A single path delivers with probability $p^{h}$, since all $h$ hops must succeed. The $k$ paths are disjoint and therefore independent, so all fail with probability $(1-p^{h})^{k}$, and at least one succeeds with the complementary probability.
+\end{proof}
+
+With $p=0.95$ and $h=6$ a single path delivers with probability about $0.74$, whereas three disjoint paths deliver with probability about $0.98$. The cost is a threefold multiplication of traffic, which belongs in the overhead accounting of the preceding section. The independence assumption is the weak point. Paths that share infrastructure, a common network provider, or a common power outage fail together, and then the formula overstates the benefit of redundancy.
+
+\section{Matching and Its Limits}
+
+A router may propose that two nodes, or two results, be connected: a task with a node able to run it, an anomalous measurement with a node that specializes in detecting anomalies, or a failed experiment with a later attempt at the same problem. The matching criteria must be explicit. When they are declared tags, signatures of data types, or numerical thresholds, the router's proposals can be audited. When they rely on learned similarity measures, the router will produce connections that look plausible and have no validated basis, and a network that acts on such connections without validation fills its record with spurious links. The rule is that a proposed connection is a hypothesis. Any value it is credited with must come from a validation procedure carried out by parties other than the router, as in the separation of recording and validating described below.
+
+\section{Preserving Negative Results}
+
+The chapter also considers how a routing network could preserve unsuccessful experiments and prevent repeated rediscovery of known failures. A record of what has been tried and failed is a reusable product of computation, and it is one that a metric based on completed results alone would discard. Content addressing makes the record cheap to use. If the description of a task is hashed, a node that is about to start the task can look up whether the same task has already been attempted and what happened. If a fraction $h$ of newly submitted tasks have already been attempted and the stored outcome can be trusted, the network avoids the cost of $h$ of its work, at the price of storing the records and of verifying them. The benefit depends on the hit rate, and it is largest in the settings where the space of experiments is large and attempts are expensive, which is where physical experiments of Part~III fall.
+
+\section{Recording and Authority}
+
+A routing node can contribute without computing, and an example shows how. Suppose a thermal experiment in one household produces an anomalous pressure measurement. A low-powered machine elsewhere receives only a compact metadata record describing the observation and forwards it to a node that specializes in statistical anomaly detection, which may then request further measurements. The intermediary performs almost no numerical work yet organizes the investigation.
+
+The design therefore keeps append-only records of observations, task assignments, failures, and successful continuations, and it separates two acts that are easily confused: recording an observation and holding the authority to accept it as a validated result. The distinction matters most in a heterogeneous network in which many nodes are unreliable, intermittent, or potentially compromised. A node may be trusted to preserve and transmit a record without being trusted to certify what the record shows, and the validation procedure of Chapter~\ref{ch:norewards} stands apart from the routing layer for that reason.
+
+\section{Identity and Attack}
+
+Routing in an open network is exposed to attacks that exploit the cheapness of identities. In a peer-to-peer system without a trusted authority to certify identities, a single party can present many identities and so control a large share of the routing structure~\cite{douceur2002}. An attacker who controls the routers around a victim can isolate it from the rest of the network or filter what it sees. The remedy anticipated in Chapter~\ref{ch:norewards}, tying each node to a physical host, raises the cost of identities without eliminating the problem, since hosts can be acquired. The routing layer should be designed on the assumption that some fraction of its nodes are hostile, with redundant paths, verification of content by hash, and no reliance on any single router for correctness.
+
+\section{Conditions Under Which the Proposal Fails}
+
+The routing role fails to justify itself if coordination overhead grows faster than the work coordinated, if redundant paths are not independent enough to deliver the reliability they are paid for, if the matching proposals cannot be validated at acceptable cost, or if the routing layer cannot be made robust against a plausible fraction of hostile nodes. The role is also unnecessary if tasks are so few and so large that discovery is not a bottleneck. Its value lies in settings of many small tasks and many small nodes, which is the setting that Chapter~\ref{ch:residual} describes.

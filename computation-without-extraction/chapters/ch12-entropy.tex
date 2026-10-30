@@ -1,0 +1,62 @@
+\chapter{Entropy as a Service}
+\label{ch:entropy}
+
+The chapter explores the possibility of using physical fluctuations and thermal processes as sources of randomness. Randomness is the one product of the network that does not require a question to be posed in advance, which makes it attractive as a by-product of processes that are already running. It is also the product about which careless claims are easiest to make, because a signal can look random without being unpredictable to anyone who matters. The chapter develops what has to be established before a physical process may be offered as a source, what a distributed service of such sources can and cannot guarantee, and whether the service is worth providing at all.
+
+\section{Four Notions of Entropy}
+
+Thermodynamic entropy, $S=k_B\ln\Omega$, counts the physical microstates compatible with a macroscopic description. Shannon entropy, $H(X)=-\sum_x p(x)\log p(x)$, measures the average uncertainty of a distribution. Min-entropy, $H_\infty(X)=-\log\max_x p(x)$, measures the difficulty of guessing the most likely outcome. Cryptographic unpredictability concerns the probability that an adversary with specified knowledge and capabilities guesses a value, which is governed by the conditional min-entropy $H_\infty(X\mid E)$ given the adversary's view $E$. The quantities are ordered, $H_\infty(X)\le H(X)\le\log|\mathrm{supp}(X)|$, and the gaps can be large. A source that emits one value with probability one half and a million others with equal small probability has high Shannon entropy and a min-entropy of a single bit. A hot, turbulent process may possess enormous thermodynamic entropy and still deliver samples that an observer with a sensor in the same room can largely predict. Only the last notion bears on security.
+
+\section{Characterizing a Physical Source}
+
+A raw measurement from a physical process is generally biased and correlated, and its distribution is not known in advance. Thermal noise in a resistor, shot noise, and timing jitter in oscillators are the traditional sources, and turbulent flow adds a chaotic process in which tiny perturbations are amplified, so that the outcome of a given run is in principle highly sensitive to microscopic conditions. Sensitivity to initial conditions is not unpredictability to an adversary, however, who may observe much of the macroscopic state. A source model must therefore state what is assumed, namely which variables are controlled, which are public, and which are private, and then estimate a lower bound on the min-entropy per sample conditional on what the adversary can observe.
+
+Practical procedure is standardized. The NIST recommendation on entropy sources~\cite{turan2018} specifies how to estimate min-entropy from samples, how to condition the raw output, and which health tests to run continuously. These include a repetition count test, which detects a source stuck at one value, and an adaptive proportion test, which detects a collapse in the frequency of a value. A source that fails a test must stop contributing until it is reassessed. Estimators bound the entropy from below on the data they see and cannot certify behavior under conditions they have not seen, so the estimate must be conservative and must be repeated when conditions change.
+
+\section{Extraction and Its Limits}
+
+Raw samples with min-entropy rate $h$ per sample are converted into nearly uniform bits by an extractor. The central result is the leftover hash lemma~\cite{hill1999}: if a source has min-entropy at least $k$ bits and a hash function is drawn from a two-universal family, the hash output of $m$ bits is within statistical distance
+\[
+\varepsilon\le\tfrac12\sqrt{2^{\,m-k}}
+\]
+of uniform, in the sense that the pair consisting of the hash function and its output is within that distance of the same hash function paired with a uniform string. The entropy bound $k$ must hold conditional on everything the adversary observes, since the guarantee is lost if the adversary knows a function of the source. The practical content is a budget. One may extract at most $m=k-2\log(1/2\varepsilon)$ bits of nearly uniform output, so the output length is the entropy collected minus a safety margin, and a service that emits more bits than it has collected is manufacturing apparent randomness. The seed that selects the hash function may be public, but it must be independent of the source.
+
+There is also an impossibility that explains why combining sources is not trivial. No deterministic function of a single weak source of the semi-random kind extracts even one nearly unbiased bit for every such source~\cite{santha1986}. Extraction from one source therefore needs a seed, and without a seed it needs several sources that are independent of one another. The assumption of independence is the weakest point of any scheme that pools physical measurements, because sources that share an environment are not independent.
+
+\section{Combining Many Untrusted Sources}
+
+The tempting design is to combine many contributions and to trust the result because no single contributor is trusted. Two propositions show what this does and does not buy.
+
+\begin{proposition}
+\label{prop:piling}
+Let $X_1,\dots,X_n$ be independent bits with $\Pr[X_i=1]=\tfrac12+\epsilon_i$. Then the exclusive-or $Z=X_1\oplus\cdots\oplus X_n$ satisfies $\bigl|\Pr[Z=1]-\tfrac12\bigr|=2^{\,n-1}\prod_{i=1}^{n}|\epsilon_i|$.
+\end{proposition}
+
+\begin{proof}
+For a single bit, $\mathbb E[(-1)^{X_i}]=\Pr[X_i=0]-\Pr[X_i=1]=-2\epsilon_i$. By independence, $\mathbb E[(-1)^{Z}]=\prod_i(-2\epsilon_i)$. Since $\mathbb E[(-1)^Z]=-2\bigl(\Pr[Z=1]-\tfrac12\bigr)$, the magnitude of the bias of $Z$ is $\tfrac12\cdot2^{n}\prod_i|\epsilon_i|=2^{n-1}\prod_i|\epsilon_i|$.
+\end{proof}
+
+The proposition says that independent, individually weak sources become strong rapidly when combined, since each added source multiplies the bias by a factor below one. Its hypothesis, independence, is the whole of the argument, and there are two ways it fails.
+
+\begin{proposition}
+\label{prop:adaptive}
+Suppose a single contributor observes the bits of all other contributors before submitting its own, and that its own bit is not constrained by any physical source model. Then it can force the exclusive-or $Z$ to any value it likes.
+\end{proposition}
+
+\begin{proof}
+Let $S$ be the exclusive-or of the other contributions and let $z$ be the desired output. The contributor submits $S\oplus z$, so that $Z=S\oplus(S\oplus z)=z$.
+\end{proof}
+
+The two assumptions about what the contributor observes and controls are essential. If the contributor sees nothing before committing, or if its output is the reading of a physical source that it cannot choose, the argument does not apply, and the combination retains the entropy of the other contributions. A weaker adversary who sees only some of the contributions can still bias the result, at a cost that depends on how much it sees. One adaptive or compromised participant therefore defeats the combination entirely, no matter how many honest participants there are. A commit-and-reveal protocol removes the ability to choose a value after seeing the others, since each contribution is committed in advance, but it does not remove the ability to abstain, because a final participant who dislikes the outcome can decline to reveal and so bias it. The second failure is correlation, which includes the case of a source that is unpredictable in isolation but predictable when conditioned on information held by another contributor, such as a shared environmental signal. If all the sources are driven by a common influence, such as the same ambient temperature cycle or the same mains frequency, their outputs are not independent, and in the extreme case of identical copies the combination is no better than one source. A service of this kind needs independence tests among contributors, and the independence it can certify is only as good as those tests.
+
+\section{Is the Service Worth Providing}
+
+It must be asked whether entropy is scarce enough to justify a distributed physical service. For most uses it is not. Operating systems collect randomness from many sources, and current processors provide hardware random number instructions, so the supply of bits is rarely the constraint. The constraint is trust: whether a particular source was honestly built, whether it has been backdoored, whether its output can be audited. A distributed service has a case where independence of manufacture and public auditability are themselves the product, as in public randomness used for lotteries, audits, and protocols that require a value no single party controls. For private cryptographic keys, a local source plus a well-vetted generator, such as the deterministic generators of NIST's companion recommendation~\cite{barker2015}, serves better than a global network, since sending raw physical samples across a network exposes them. The economic case therefore rests on diversity of provenance more than on volume, and it should be argued in those terms.
+
+\section{An Admissible Entropy Contribution}
+
+The chapter's rule can be stated as a definition parallel to the one in Chapter~\ref{ch:ecology}. A contribution is admissible when it comes with a documented source model, a conservative lower bound on min-entropy per sample conditional on the adversary's stated view, passing continuous health tests, a commitment made before the reveal, and a declaration of the environmental influences it shares with other contributors. The service outputs bits in number no greater than the aggregate entropy estimated by that bound, less the margin required by the extraction lemma. Rejecting the assumption that combining many untrusted signals automatically produces trustworthy entropy is not an argument against the service. It is a specification of what the service must check.
+
+\section{Conditions Under Which the Proposal Fails}
+
+The proposal fails if the sources cannot be shown to be unpredictable to an adversary who observes the appliance and its surroundings, if the contributors cannot be shown to be independent, if protocols cannot prevent adaptive or withholding behavior at acceptable cost, or if the demand for diverse-provenance randomness is too small to cover the cost of calibration and testing. The broader question remains whether physical processes already occurring for other reasons can provide valuable stochastic measurements at low incremental cost, and the answer depends on these checks and not on how random the process appears.

@@ -1,0 +1,1706 @@
+WEBVTT
+
+00:00.000 --> 00:06.000
+you know if you stand in your living room um like in the middle of the night it's usually
+
+00:06.000 --> 00:12.920
+completely still right you've got the lights off maybe there's just the faint i don't know that
+
+00:12.920 --> 00:20.620
+low hum of your refrigerator cycling on in the kitchen yeah exactly or like the slow pulsing
+
+00:20.620 --> 00:26.640
+ember light on your laptop charging on the desk and normally you look at that scene and you feel
+
+00:26.640 --> 00:35.480
+this this deep sense of peace things are resting the day is over it's a very um it's a very human
+
+00:35.480 --> 00:42.880
+way to look at our environment right yeah the machinery is asleep it's recovering just like
+
+00:42.880 --> 00:48.820
+we are i mean we constantly project our own biological need for rest onto our tools we really
+
+00:48.820 --> 00:58.080
+do it's comforting but uh if you take a certain kind of network engineer or like a centralized
+
+00:58.080 --> 01:05.680
+cloud manager and you put them in that exact same quiet living room they don't see peace at all no
+
+01:05.680 --> 01:11.380
+they look at that sleeping laptop they listen to that humming fridge and they see stranded assets
+
+01:11.380 --> 01:18.840
+they see a literal crime against efficiency oh completely from a purely industrial perspective
+
+01:18.840 --> 01:25.480
+it is the absolute literal definition of wasted capacity right because every silent processor is
+
+01:25.480 --> 01:32.400
+a missed opportunity every appliance that is just doing its one primary job um without maximizing its
+
+01:32.400 --> 01:39.260
+computational potential is essentially leaving money and progress really on the table and that tension
+
+01:39.260 --> 01:45.620
+that exact tension between the piece of an idle machine and the relentless almost obsessive drive
+
+01:45.620 --> 01:51.600
+to put every microchip on earth to work that is exactly where we are going today i'm very excited for
+
+01:51.600 --> 01:56.380
+this one welcome to the deep dive our mission today is to radically rethink how we build the future
+
+01:56.380 --> 02:02.920
+of computing and we are doing this by exploring a really fascinating deeply mathematical and honestly
+
+02:02.920 --> 02:09.200
+quite philosophical monograph yeah it came out in november 2026 all right november 2026
+
+02:09.200 --> 02:15.020
+it's by an independent researcher named fly chi and it's titled computation without extraction it is
+
+02:15.020 --> 02:19.780
+just a phenomenal piece of work it really is it because it challenges the very foundation of how we
+
+02:19.780 --> 02:24.900
+measure technological progress i mean it essentially takes a sledgehammer to the default assumptions of
+
+02:24.900 --> 02:31.100
+silicon valley it totally does because instead of asking how to maximize the utilization of dedicated
+
+02:31.100 --> 02:36.460
+centralized data centers which is what everyone is doing right what amazon google microsoft basically
+
+02:36.460 --> 02:43.160
+everyone else is doing this paper asks a totally different question it asks um what computations can
+
+02:43.160 --> 02:49.520
+our existing physical systems things like your basement furnace your air conditioner your 10 year old
+
+02:49.520 --> 02:55.720
+personal computer what can they perform without compromising their primary purpose and the key
+
+02:55.720 --> 03:01.120
+phrase to hold on to their right at the start is without compromising yeah we are talking about hunting for
+
+03:01.120 --> 03:06.240
+residual capabilities we aren't talking about turning your toaster into a supercomputer at the expense of
+
+03:06.240 --> 03:13.520
+your toast no burnt toast just to run ai exactly the toast still comes first so we all have idle
+
+03:13.520 --> 03:19.240
+hardware sitting around but is idle really the same thing as wasted that is the central mystery we are going
+
+03:19.240 --> 03:24.780
+to unpack today we'll look at why metrics like efficiency can actually end up destroying the very goals they
+
+03:24.780 --> 03:29.560
+were meant to measure oh that's a big one it's massive we'll explore how your home heater could
+
+03:29.560 --> 03:35.160
+theoretically run complex physics simulations just by blowing hot air which still blows my mind same
+
+03:35.160 --> 03:40.560
+and we will get into why true technological freedom actually requires having the fundamental right to
+
+03:40.560 --> 03:47.040
+remain completely offline i really think for anyone listening this is going to fundamentally change how
+
+03:47.040 --> 03:52.280
+you look at the mundane appliances in your home like you will never look at a thermostat the same way
+
+03:52.280 --> 03:58.680
+again i certainly don't anymore so before we can even conceptualize building a new wild internet out of
+
+03:58.680 --> 04:03.800
+furnaces and refrigerators we really have to understand the philosophical flaw in how we
+
+04:03.800 --> 04:09.840
+currently treat computing resources right we need to define the problem yeah and to ground this let's
+
+04:09.840 --> 04:17.920
+look at a quote from october 2026 from open ai's sam altman oh this quote is perfect for this it is
+
+04:17.920 --> 04:23.960
+he was on a show and they were discussing the massive global shortage of dram you know memory chips which
+
+04:23.960 --> 04:29.820
+are obviously critical for ai and his argument in that interview makes perfect logical sense
+
+04:29.820 --> 04:35.480
+if you live entirely on a spreadsheet right he argued that from a global resource allocation
+
+04:35.480 --> 04:41.180
+perspective it is a terrible tragedy that everyday people hold shares of the world's highly limited
+
+04:41.180 --> 04:47.960
+memory supply sequestered inside personal computers because inside a personal laptop that memory is only being
+
+04:47.960 --> 04:53.420
+utilized maybe five percent of the time exactly he's basically saying look at all this incredibly
+
+04:53.420 --> 04:59.320
+expensive highly engineered sand that took billions of dollars to fabricate and it is just sitting on a
+
+04:59.320 --> 05:06.320
+mahogany desk doing absolutely nothing 95 of the day while we have a global compute shortage and so his
+
+05:06.320 --> 05:13.080
+proposed solution naturally is maximum cloud utilization lock it all into the cloud right the mindset is why put
+
+05:13.080 --> 05:18.160
+memory in individual laptops at all we should put all that memory in a centralized data center where
+
+05:18.160 --> 05:25.400
+it can be time shared and run it near 100 utilization continuously which again sounds incredibly rational
+
+05:25.400 --> 05:32.580
+if you believe that a scarce resource is only honored if it is being pushed to its absolute limit 24 7
+
+05:32.580 --> 05:36.220
+right but okay wait let's unpack this for a second because on the surface he's totally right
+
+05:36.220 --> 05:42.200
+if i have a half empty suitcase when i'm traveling why not fill it if i have unused space i'm being
+
+05:42.200 --> 05:48.520
+wasteful isn't efficiency just inherently good i mean it is the obvious conclusion and it's how we are
+
+05:48.520 --> 05:54.080
+all taught to think about systems but the monograph just tears this apart by breaking down what the word
+
+05:54.080 --> 05:59.560
+efficiency actually masks yeah because we throw that word around as if it's a single objective
+
+05:59.560 --> 06:06.560
+mathematical truth but Flyxion points out there are actually six hidden totally distinct quantities
+
+06:06.560 --> 06:11.660
+tangled up in our vocabulary whenever we say efficiency six of them six and they are often
+
+06:11.660 --> 06:16.060
+completely at war with each other we really need to go through these because reading this part of the
+
+06:16.060 --> 06:22.060
+paper completely shifted my perspective on tech okay let's start with the one everyone knows which
+
+06:22.060 --> 06:27.100
+is instantaneous utilization right that's exactly what alton was talking about what fraction of this
+
+06:27.100 --> 06:33.340
+chip's capacity is engaged at this exact millisecond the spreadsheet metric right but then consider the
+
+06:33.340 --> 06:39.820
+second one lifetime utilization a personal machine might sit idle most of the day but over a 10-year
+
+06:39.820 --> 06:44.700
+lifespan just sitting on your desk it might do a massive amount of cumulative work without ever
+
+06:44.700 --> 06:50.460
+needing replacement right compared to a server in a data center that runs at 100 for three years and
+
+06:50.460 --> 06:55.580
+then gets literally ripped out and shredded because it's obsolete exactly so the data center wins
+
+06:55.580 --> 07:01.340
+instantaneous but your laptop might win lifetime makes sense then you have the third metric which is
+
+07:01.340 --> 07:07.260
+economic efficiency this just compares the financial value of the outputs to the costs of the inputs
+
+07:07.260 --> 07:13.260
+but that relies entirely on market prices which are subjective subjective and completely made up by
+
+07:13.260 --> 07:19.260
+humans and institutions right like if the market decides generating ai cat pictures is worth a
+
+07:19.260 --> 07:25.180
+billion dollars then a data center making cat pictures is technically economically efficient even if
+
+07:25.180 --> 07:30.460
+it's burning a forest's worth of coal to do it you've hit on the exact mechanism of the fourth one there
+
+07:30.460 --> 07:36.620
+which is energy efficiency ah this is usually defined as useful computational output divided by energy
+
+07:36.620 --> 07:41.980
+consumed during operation but notice what that completely ignores the manufacturing part yes it
+
+07:41.980 --> 07:47.260
+completely ignores the embodied energy it took to mine the metals fabricate the silicon and ship the
+
+07:47.260 --> 07:52.620
+hardware around the globe in the first place so it's a very narrow view of energy very narrow so we have
+
+07:52.620 --> 07:59.660
+instantaneous lifetime economic and energy what are the last two because these are the ones that really
+
+07:59.660 --> 08:05.980
+feel like they get swept under the rug by big tech the fifth is resilience this is a system's ability to
+
+08:05.980 --> 08:12.620
+keep working when things go catastrophically wrong okay and here's the secret about resilience it always
+
+08:12.620 --> 08:19.180
+always requires holding some capacity in reserve you can't be resilient if you're maxed out exactly
+
+08:19.180 --> 08:26.540
+you cannot be resilient if you are running at 100 and finally the sixth is computational autonomy
+
+08:26.540 --> 08:32.060
+that is your ability as an individual or a community to run calculations and access information without
+
+08:32.060 --> 08:37.820
+relying on a third party corporation to grant you permission so when a tech ceo gets on a stage and
+
+08:37.820 --> 08:43.900
+says we need our infrastructure to be more efficient they are almost exclusively talking about number one
+
+08:43.900 --> 08:50.220
+instantaneous utilization yes and here is the core unavoidable trade-off that the paper highlights
+
+08:50.220 --> 08:56.940
+you cannot maximize all six of these quantities at the same time it's impossible it mathematically and
+
+08:56.940 --> 09:03.580
+physically cannot be done if you tune a system for maximum instantaneous utilization you inevitably
+
+09:03.580 --> 09:08.620
+destroy resilience and autonomy you eliminate the reserves you eliminate the slack in the system
+
+09:08.620 --> 09:13.820
+it's kind of like it's like filling every single silent moment in a conversation with talking oh
+
+09:13.820 --> 09:18.700
+interesting like if you maximize the audio output if we just talk over each other constantly and ever
+
+09:18.700 --> 09:25.820
+pause you lose the ability to listen you lose the emotional resonance of the pause sometimes the
+
+09:25.820 --> 09:31.580
+empty space is the whole point of the interaction that is a really beautiful analogy the empty space actually
+
+09:31.580 --> 09:38.460
+serves a function and the monograph introduces this crucial distinction between productive idleness and
+
+09:38.460 --> 09:45.020
+wasteful idleness right because we are conditioned by capitalism really to think all idleness is waste
+
+09:45.740 --> 09:52.620
+but think about a fire engine sitting in a firehouse or a spare tire in the trunk of your car sure they
+
+09:52.620 --> 10:00.300
+are idle for 99.9 of their existence do we look at a quiet firehouse and call it a failure of resource allocation of
+
+10:00.300 --> 10:06.140
+course not i mean if my spare tire is being used 100 of the time i am having a phenomenally terrible year
+
+10:06.140 --> 10:14.940
+right its idleness is its exact value it provides availability it provides insurance against disaster
+
+10:15.580 --> 10:21.180
+a computer that is doing nothing for 20 hours a day might be providing immense value to its owner
+
+10:21.180 --> 10:26.940
+simply by being ready to act the moment they sit down yeah you just open the lid and it is instantly
+
+10:26.940 --> 10:31.980
+yours without needing to authenticate with a cloud server without waiting in a queue without even needing a
+
+10:31.980 --> 10:38.300
+broadband connection exactly but a utilization metric just registers that beautiful readiness
+
+10:38.300 --> 10:44.140
+as a flat line near zero it just calls it waste and this brings us to i think the philosophical heavy
+
+10:44.140 --> 10:50.620
+hitter of the paper Flyxion brings in jacques alul and his 1954 book the technological society yes
+
+10:50.620 --> 10:55.660
+it's an old book but it perfectly explains how this obsession with utilization takes over our brains
+
+10:55.660 --> 11:03.340
+alul is essential here he coined the concept of the supremacy of technique now when he says technique
+
+11:03.340 --> 11:09.740
+he doesn't just mean machines or code right he means the absolute rational pursuit of the most efficient
+
+11:09.740 --> 11:16.540
+means in every single field of human activity and the argument alul makes which Flyxion builds on to
+
+11:16.540 --> 11:22.540
+devastating effect is that once measurable efficiency becomes the supreme criterion for a society
+
+11:22.540 --> 11:29.420
+all other competing human values like privacy local control resilience peace they get subordinated
+
+11:29.420 --> 11:35.420
+automatically and without any debate without ever being explicitly debated because you can't put a
+
+11:35.420 --> 11:40.940
+neat little number on autonomy as easily as you can put a dashboard metric on utilization yes and to
+
+11:40.940 --> 11:47.100
+take that a step further the metrics make the decisions for us if a centralized cloud is 10 cheaper and
+
+11:47.100 --> 11:54.060
+10 faster on paper it wins the boardroom argument every time nobody has to hold a democratic vote to
+
+11:54.060 --> 11:59.660
+surrender their local computing independence the technically superior choice just justifies itself
+
+11:59.660 --> 12:05.500
+through the numbers and over time the burden of proof shifts oh i see what you mean you end up having to
+
+12:05.500 --> 12:10.460
+justify why you want to keep your own hardware exactly you get looked at like a crazy luddite for wanting
+
+12:10.460 --> 12:15.180
+a local hard drive and you're being judged against a standard of corporate efficiency that you never actually
+
+12:15.180 --> 12:19.820
+agreed to apply to apply to your personal life in the first place it's subtle but the infrastructure
+
+12:19.820 --> 12:27.020
+itself changes our values without us even noticing and to illustrate how this invisible coercion works
+
+12:27.020 --> 12:34.380
+the paper uses a really brilliant non-technical example it's an essay by a writer named kaffir from 2026
+
+12:34.380 --> 12:41.020
+about tech journalism and corporate hospitality this part was fascinating because it's about how you can bribe
+
+12:41.020 --> 12:46.540
+someone without ever offering them a bribe yeah kaffir wrote about how public relations teams for major
+
+12:46.540 --> 12:52.940
+tech companies they don't usually hand journalists bags of cash right that's clumsy and illegal very
+
+12:52.940 --> 12:59.260
+illegal they just manage their environment instead they manage their access they fly them out put them in
+
+12:59.260 --> 13:06.220
+five-star hotels give them tightly curated awe-inspiring tours of the server farms of the fabrication plants
+
+13:06.220 --> 13:12.220
+right and the journalist goes back to their desk and can honestly say hey i wasn't bribed no promises
+
+13:12.220 --> 13:18.140
+were made i have total editorial independence i can write whatever i want but the access has completely
+
+13:18.140 --> 13:24.860
+changed the journalist's worldview yeah it changes what questions seem natural to ask the pr team creates
+
+13:24.860 --> 13:31.500
+an environment of such overwhelming scale and competence that certain critical questions just fade away
+
+13:31.500 --> 13:40.380
+you stop asking should this exist and you start asking how fast will it go wow and Flyxion argues that
+
+13:40.380 --> 13:46.540
+an optimized centralized computational infrastructure does the exact same thing to human society it
+
+13:46.540 --> 13:51.980
+acquires total authority simply through the conditions it creates we forget that we could organize
+
+13:51.980 --> 13:58.060
+intelligence differently because the centralized model is the only one that seems natural it becomes the air we
+
+13:58.060 --> 14:02.060
+breathe but wait i have to push back a little here just playing devil's advocate for the cloud
+
+14:02.060 --> 14:06.700
+engineers for a second sure let's go back to sam altman's point about physical resources
+
+14:06.700 --> 14:13.740
+centralization does save raw materials right you think so like if everyone shares one giant data center for
+
+14:13.740 --> 14:20.460
+their ai and storage we don't have to build three billion separate laptops with an extra 32 gigs of ram
+
+14:20.460 --> 14:26.460
+that rarely gets used doesn't that save mountains of silicon doesn't that save rare earth metals
+
+14:26.460 --> 14:32.140
+it seems like it would and that is the siren song of centralization but if we connect this to the
+
+14:32.140 --> 14:38.940
+bigger picture the macro level reality is often the exact opposite really yeah first you have to add in
+
+14:38.940 --> 14:44.700
+the immense physical overhead of the cloud that you don't see on your desk you need massive industrial
+
+14:44.700 --> 14:50.780
+cooling systems hundreds of miles of redundant fiber optic networking administrative security servers
+
+14:50.780 --> 14:57.340
+backup diesel generators oh true and more importantly you run straight into the jevons paradox oh i love
+
+14:57.340 --> 15:03.740
+the jevons paradox yeah it explains so much about modern life remind us how that works again so william
+
+15:03.740 --> 15:10.220
+stanley jevons was an economist in the 19th century he was looking at coal consumption okay and he observed
+
+15:10.220 --> 15:16.380
+that as steam engines became vastly more efficient at using coal total coal consumption didn't go down
+
+15:16.380 --> 15:22.540
+it exploded because cheaper energy meant people found far more uses for it exactly you didn't just
+
+15:22.540 --> 15:27.340
+use it to pump water out of mines anymore you built trains and factories and exactly the same principle
+
+15:27.340 --> 15:33.100
+applies to computing when you centralize compute and make it marginally cheaper and easier to access
+
+15:33.100 --> 15:40.380
+via an api total demand skyrockets exponentially right the material savings from higher hardware utilization
+
+15:40.380 --> 15:46.140
+are instantly swallowed whole by the fact that people are suddenly generating infinite ai video clips on
+
+15:46.140 --> 15:52.140
+their phones or corporations are running massive unnecessary surveillance algorithms on every frame of
+
+15:52.140 --> 15:58.460
+security footage total resource consumption goes up not down so we chase this isolated metric of
+
+15:58.460 --> 16:04.300
+utilization and we end up consuming way more power building massive data centers that strain the power
+
+16:04.300 --> 16:10.220
+grid and losing our independence in the process which brings us perfectly to the next major pillar of the
+
+16:10.220 --> 16:17.740
+monograph which is what exactly happens when a system blindly chases a proxy metric right because if we agree
+
+16:17.740 --> 16:22.700
+that maximizing a single metric like utilization is dangerous we have to look at the mathematical
+
+16:22.700 --> 16:28.300
+reality of human behavior when people try to gain the system right and this leads us to good heart's law
+
+16:28.300 --> 16:36.140
+and what Flyxion holds up as the ultimate cautionary tale for network design which is bitcoin good heart's law is
+
+16:36.140 --> 16:44.860
+famously summarized as when a measure becomes a target it ceases to be a good measure it's so true it was
+
+16:44.860 --> 16:51.420
+originally an observation about british monetary policy in the 1970s but it is a universal law of complex
+
+16:51.420 --> 16:57.980
+systems yeah like if you judge schools by standardized test scores schools stop educating and start
+
+16:58.780 --> 17:04.940
+exclusively teaching to the test exactly and the paper dives deep into the mathematical proof of why this
+
+17:04.940 --> 17:11.900
+happens when you incentivize a proxy metric okay let's explore the math here because it's not just
+
+17:11.900 --> 17:20.460
+a psychological quirk right it's a rational economic outcome correct let's assume you are a participant
+
+17:20.460 --> 17:26.620
+in a network and you have a budget of time and money okay you can spend it on productive effort which
+
+17:26.620 --> 17:32.700
+actually achieve the real messy goal of the network or you can spend it on gaming effort which just
+
+17:32.700 --> 17:38.380
+artificially inflates the proxy metric that you are being judged and paid on like cramming for a test
+
+17:38.380 --> 17:43.580
+by memorizing the answers instead of actually learning the underlying math precisely the mathematical
+
+17:43.580 --> 17:49.020
+modeling in the paper proves that if the payoff rate for gaming the metric is strictly greater than one
+
+17:49.020 --> 17:54.140
+meaning it's even slightly cheaper or easier to inflate the score than to do the genuine work yeah
+
+17:54.700 --> 18:00.780
+then the optimal rational strategy is to dedicate all your budget to gaming not some of it all of it
+
+18:00.780 --> 18:06.220
+because why would you ever do the hard slow work if faking it pays a higher dividend exactly you end up
+
+18:06.220 --> 18:12.780
+producing zero actual social value but the metric dashboard looks fantastic yes and the terrifying thing
+
+18:12.780 --> 18:18.620
+is the proxy metric can look perfectly healthy under normal low stakes conditions but the moment you
+
+18:18.620 --> 18:25.260
+attach a major financial reward to it and put extreme optimization pressure on it it fails completely the
+
+18:25.260 --> 18:31.100
+correlation just breaks it collapses inflection argues the absolute best case study for this dynamic
+
+18:31.100 --> 18:38.220
+the thing we must avoid at all costs is proof of work cryptocurrency mining specifically bitcoin
+
+18:39.260 --> 18:44.860
+let's talk about bitcoin because the author doesn't just you know dismiss it offhand he uses it as the
+
+18:44.860 --> 18:50.940
+prime architectural example of what not to do when building a distributed decentralized network to be
+
+18:50.940 --> 18:56.700
+intellectually fair Flyxion acknowledges that bitcoin's proof of work actually does solve a real computer
+
+18:56.700 --> 19:04.220
+science problem okay the massive expenditure of energy buys security by forcing miners to burn electricity to
+
+19:04.220 --> 19:11.180
+solve math puzzles it makes it incredibly costly for an attacker to rewrite the ledger's history right to fake
+
+19:11.180 --> 19:18.220
+a transaction an attacker would have to out compute the entire honest network correct so the compute isn't
+
+19:18.220 --> 19:27.900
+literally doing nothing it's acting as a giant energy intensive security wall okay but but here is the critical systemic flaw
+
+19:29.180 --> 19:38.140
+it is what the paper categorizes as competitive computation the network pays a financial reward for raw computational expenditure
+
+19:38.780 --> 19:45.500
+and because of how the difficulty adjustment algorithm is coded if a million new miners join the network tomorrow and
+
+19:45.500 --> 19:51.980
+double the global compute power the network does not process double the transactions does it no right it
+
+19:51.980 --> 19:56.620
+doesn't get faster right the code just looks at the network and says oh you have more power cool i'm
+
+19:56.620 --> 20:02.620
+going to make the math puzzle twice as hard to maintain the same block time you've got it the service level
+
+20:02.620 --> 20:08.780
+provided to the end user remains absolutely identical the only thing that doubles is the global energy waste
+
+20:08.780 --> 20:16.060
+and the massive expenditure on silicon wow the miners are locked in an inescapable arms race if you
+
+20:16.060 --> 20:21.500
+double your hardware you are just shrinking everyone else's slice of the pie which forces them to double
+
+20:21.500 --> 20:27.900
+theirs just to stay in place it's the red queen effect from alice in wonderland you have to run as fast as
+
+20:27.900 --> 20:34.060
+you can just to stay in the same place it is a pure transfer of wealth to hardware manufacturers and local
+
+20:34.060 --> 20:39.340
+power companies yielding zero additional social value but wait what about the defense you hear from
+
+20:39.340 --> 20:45.420
+the big industrial crypto miners oh here we go the ones who say hey we're putting our server farms in
+
+20:45.420 --> 20:51.180
+incredibly cold places like iceland or northern canada and we are capturing the exhaust heat and using it to
+
+20:51.180 --> 20:57.420
+warm up local greenhouses or warehouses we're recovering the heat so the whole process is ecologically efficient
+
+20:57.420 --> 21:03.980
+yeah Flyxion calls this out specifically and gives it a name he calls it the heat recovery fallacy
+
+21:03.980 --> 21:09.340
+oh okay and it is vital to understand the difference between genuine thermal substitution
+
+21:09.340 --> 21:15.020
+and retrospective justification okay break that down for me what's the difference because to a layman
+
+21:15.020 --> 21:21.340
+using the heat seems like a total win-win think about the order of operations genuine thermal substitution
+
+21:21.340 --> 21:27.100
+is when you take a building say a family home that already needed a 1500 watt heater to survive the winter
+
+21:27.100 --> 21:32.380
+right the demand is already there exactly the energy demand existed first you take out the dumb
+
+21:32.380 --> 21:38.300
+electric heater and you replace it with a computer that draws 1500 watts you haven't added a single
+
+21:38.300 --> 21:43.340
+watt of new energy demand to the power grid you just swap the device generating the heat right
+
+21:43.340 --> 21:49.740
+retrospective justification is entirely different that is when a massive corporation builds a 50 megawatt
+
+21:49.740 --> 21:55.580
+crypto mine solely to chase the computational reward right they create a massive new energy demand
+
+21:55.580 --> 22:01.580
+on the grid that literally did not exist yesterday and then feeling the public relations pressure they
+
+22:01.580 --> 22:07.020
+pipe a tiny fraction of the exhaust heat into a tomato greenhouse next door to justify their carbon
+
+22:07.020 --> 22:13.020
+footprint in a press release wow so they didn't solve a pre-existing heating problem they created a
+
+22:13.020 --> 22:19.820
+massive new energy crisis and then slapped a tiny agricultural band-aid on it to look green the counterfactual
+
+22:19.820 --> 22:25.740
+test is the only one that matters here would that heat have been needed and would that massive amount
+
+22:25.740 --> 22:31.900
+of grid energy have been purchased if the computer network didn't exist and if the answer is no if the
+
+22:31.900 --> 22:39.340
+answer is no it's not substitution it's extraction that is a devastating critique it really is so what
+
+22:39.340 --> 22:45.580
+does this all mean for Flyxion's alternative network if this researcher wants to build a new decentralized
+
+22:45.580 --> 22:51.980
+computing grid out of our home appliances how do we avoid accidentally building another bitcoin how do
+
+22:51.980 --> 22:57.260
+we stop people from just buying up millions of cheap laptops throwing them in a warehouse and gaming the
+
+22:57.260 --> 23:02.380
+reward system well what's fascinating here is that the entire second half of the monograph
+
+23:02.380 --> 23:08.700
+is specifically designed as an intricate physical defense mechanism against this exact competitive
+
+23:08.700 --> 23:15.740
+escalation okay Flyxion proposes three distinct forms of computation but the genius is that they are
+
+23:15.740 --> 23:22.940
+strictly bound by the physical real world constraints of the host system you literally cannot game them
+
+23:22.940 --> 23:29.420
+by throwing more hardware at the problem because the physical world won't let you okay i am fully hooked
+
+23:30.140 --> 23:35.900
+let's get into the actual technical proposals of how we build this let's do it the paper lays out
+
+23:35.900 --> 23:43.260
+form one which it calls residual digital computation this is the idea of using the spare capacity of
+
+23:43.260 --> 23:50.060
+everyday mundane devices like the laptop i have sitting on my kitchen counter right now yes but as we just
+
+23:50.060 --> 23:55.900
+established with our discussion of autonomy earlier we can't just unleash a cloud algorithm to blindly
+
+23:55.900 --> 24:02.700
+harvest every spare cycle of your kitchen laptop because that ruins your user experience oh yeah if it makes my
+
+24:02.700 --> 24:09.020
+cursor lag while i'm trying to work i'm uninstalling it immediately exactly so how do we safely use spare
+
+24:09.020 --> 24:15.980
+ram or cpu the network relies on what's called a resource descriptor vector a vector like a
+
+24:15.980 --> 24:21.420
+multi-dimensional list of traits i'm basically picturing a dating profile for my hardware actually
+
+24:21.420 --> 24:27.580
+that's a great way to visualize it every device dynamically advertises its exact real-time state to
+
+24:27.580 --> 24:33.900
+the network okay this profile includes available compute cores memory storage space network bandwidth
+
+24:33.900 --> 24:41.020
+thermal headroom and crucially reliability okay and this entire profile is capped by an owner defined
+
+24:41.020 --> 24:47.980
+policy you the human might say the network can use five percent of my spare cpu but only when i haven't
+
+24:47.980 --> 24:53.500
+touched the trackpad for 10 minutes and only if the fan doesn't need to spin up right but here is the
+
+24:53.500 --> 24:58.380
+massive logistical problem with that that i'm seeing what's up my laptop isn't a server rack in
+
+24:58.380 --> 25:03.500
+a secure climate controlled building it's chaotic i close the lid when i go to make coffee i take it to
+
+25:03.500 --> 25:10.060
+a cafe and lose wi-fi i turn it off at night how on earth can a distributed network rely on a machine
+
+25:10.060 --> 25:16.620
+that randomly disappears without warning this is where we hit the hard math of interruption which Flyxion
+
+25:16.620 --> 25:22.700
+details beautifully and it is brutal i can imagine let's assume the duration a node is available
+
+25:22.700 --> 25:29.020
+follows a standard exponential distribution so your laptop's mean available time is exactly one hour
+
+25:29.020 --> 25:34.060
+before you typically close the lid okay an average session is one hour if the network assigns your
+
+25:34.060 --> 25:39.980
+laptop a computational task that requires two hours of uninterrupted work what are the odds it actually
+
+25:39.980 --> 25:46.540
+finishes probably pretty low yeah because it's an exponential curve you don't just fail once the math
+
+25:46.540 --> 25:52.380
+dictates that a two-hour task on a one-hour machine will require on average over seven distinct
+
+25:52.380 --> 25:57.900
+attempts to finish without being interrupted seven attempts yes because every time i close the lid at
+
+25:57.900 --> 26:03.740
+the 45 minute mark it wipes the progress and has to start over from scratch when i open it again yes
+
+26:03.740 --> 26:09.740
+the wasted effort grows exponentially if the task length exceeds the mean session length oh wow it's like
+
+26:09.740 --> 26:15.900
+it's like trying to bake a massive intricate two-hour wedding cake in an oven that randomly turns itself
+
+26:15.900 --> 26:20.780
+off every 30 minutes exactly you are never going to get a cake you are just going to ruin batch after
+
+26:20.780 --> 26:27.340
+batch of batter that is exactly it nice the interruption curve destroys long tasks so what is the solution
+
+26:27.900 --> 26:34.060
+you better bake cupcakes instead cupcakes right tiny bite-sized tasks right the tasks assigned to form one
+
+26:34.060 --> 26:39.820
+devices must be incredibly short or they must be perfectly checkpointable meaning they can save their
+
+26:39.820 --> 26:44.860
+exact mathematical state to a hard drive instantly and resume on another machine later without losing
+
+26:44.860 --> 26:51.340
+progress okay if a task can't be sliced into cupcakes it simply does not belong on this layer of the network
+
+26:51.900 --> 26:57.100
+but the paper goes even further than that doesn't it it says some machines in our homes are so old
+
+26:57.100 --> 27:02.700
+and so weak they shouldn't even try to bake cupcakes yes they have a completely different purpose the author
+
+27:02.700 --> 27:08.620
+calls them idea routers this is one of my absolute favorite architectural roles in the whole paper
+
+27:09.580 --> 27:17.020
+it's the concept of computation without execution think of an old desktop pc gathering dust in a closet
+
+27:17.020 --> 27:22.940
+it has barely any processing power left compared to modern standards but it has a massive old hard
+
+27:22.940 --> 27:30.700
+drive and a stable internet connection right it shouldn't crunch numbers instead it holds metadata it acts
+
+27:30.700 --> 27:35.660
+as the matchmaking infrastructure for the rest of the network it connects the devices with the
+
+27:35.660 --> 27:42.780
+tasks yes but how does it organize that without a central server because normally if i want to find a file
+
+27:42.780 --> 27:49.740
+or a task on the web i go to a central index like google or aws right a central index is like having one
+
+27:49.740 --> 27:56.380
+giant master phone book in the middle of town yeah it's incredibly fast to look up a name the coordination
+
+27:56.380 --> 28:04.860
+cost is a constant but it has two massive fatal flaws for a decentralized network one it's a single
+
+28:04.860 --> 28:10.300
+point of failure if the central phone book burns down or the server crashes nobody can talk to anyone
+
+28:10.300 --> 28:16.860
+total blackout and two whoever owns that central phone book has absolute authority over discovery
+
+28:16.860 --> 28:22.540
+they can censor entries they can hide tasks they don't like which perfectly violates that whole
+
+28:22.540 --> 28:28.060
+computational autonomy principle we talked about at the beginning precisely so an idea router doesn't
+
+28:28.060 --> 28:36.300
+use a central index it uses a distributed hash table or dht and it uses content addressed references
+
+28:36.300 --> 28:43.100
+okay we need to demystify that jargon what is a content addressed reference and how does a dht actually
+
+28:43.100 --> 28:50.940
+work in plain english sure normally on the web you look for data by its location a url you are asking
+
+28:50.940 --> 28:58.780
+what is it this specific address on this specific server right like www.whatever.com exactly content
+
+28:58.780 --> 29:05.260
+addressing flips that completely you run the actual data of the file through a cryptographic algorithm
+
+29:05.260 --> 29:10.860
+which spits out a unique string of letters and numbers called a hash okay that hash is like a
+
+29:10.860 --> 29:17.020
+digital fingerprint for the file you don't ask the network where is this file you ask who has the
+
+29:17.020 --> 29:23.500
+file that matches this exact fingerprint ah so even if the file moves or it's copied a hundred times
+
+29:23.500 --> 29:31.900
+the fingerprint is always the same yes and the dht is how you find it in a dht that giant master phone
+
+29:31.900 --> 29:37.900
+book is chopped up into millions of tiny pieces and distributed among all these dusty old pcs these idea
+
+29:37.900 --> 29:45.020
+routers okay if your laptop wants to find a task it asks its nearest idea router neighbor that router looks
+
+29:45.020 --> 29:50.140
+at the fingerprint and says i don't have it but numerically i know the router who handles the a
+
+29:50.140 --> 29:56.540
+section of the alphabet oh i see so it passes the request along homing in on the data it's basically
+
+29:56.540 --> 30:02.780
+a game of hot and cold across the network exactly the coordination cost is logarithmic it takes a little
+
+30:02.780 --> 30:07.740
+more overhead maybe six or seven hops across the network to find what you need instead of one
+
+30:07.740 --> 30:13.820
+one but there is no central authority right if a hundred idea routers go offline suddenly the
+
+30:13.820 --> 30:20.060
+network just routes around them it is incredibly resilient and Flyxion doesn't just theorize this
+
+30:20.060 --> 30:25.500
+as a thought experiment there is a whole empirical appendix at the end of the paper testing this right
+
+30:25.500 --> 30:31.340
+yes experiment a it's a proposed real world field test the goal is to see if a massive
+
+30:31.340 --> 30:40.060
+heterogeneous population of actual household devices laptops smart tvs tablets can reliably contribute
+
+30:40.060 --> 30:46.460
+five to ten percent of their spare capacity without violating what the author calls an interference bound
+
+30:46.460 --> 30:52.140
+which is basically the annoyance threshold of the human owner right if the network causes your mouse
+
+30:52.140 --> 30:58.220
+to stutter while you're playing a game or makes your netflix stream drop a frame the experiment fails
+
+30:58.220 --> 31:05.020
+the entire premise hinges on the capacity being truly residual and completely unnoticeable to the user
+
+31:05.020 --> 31:11.580
+which makes perfect sense for a laptop baking cupcakes but as we established what if the task
+
+31:11.580 --> 31:17.820
+is simply too big right what if we need to bake a massive multi-tiered wedding cake you can't run a deep
+
+31:17.820 --> 31:24.940
+climate simulation or train a large language model on five minutes of spare laptop ram we need serious
+
+31:24.940 --> 31:31.100
+sustained power we do and sustained power generates heat which brings us to the second form of
+
+31:31.100 --> 31:37.980
+calculation thermally integrated computation this is the most practical and probably the most profoundly
+
+31:37.980 --> 31:45.340
+counterintuitive proposal in the entire monograph we are talking about the computing furnace i love this
+
+31:45.340 --> 31:50.540
+concept we really need to talk about the physics of a computer chip because i think people forget that
+
+31:50.540 --> 31:57.100
+computers are basically just really really expensive space heaters with screens attached it is a
+
+31:57.100 --> 32:02.300
+fundamental law of physics it goes back to landauer's principle and the practical inefficiencies of
+
+32:02.300 --> 32:10.460
+modern circuitry almost exactly 100 of the electricity consumed by a cpu turns directly into heat wait 100
+
+32:11.420 --> 32:17.020
+close enough to 100 that the difference doesn't matter the processor is just doing a tiny fleeting bit
+
+32:17.020 --> 32:22.380
+of math before it turns the electrical current into thermal energy so let me get this straight if i have
+
+32:22.380 --> 32:29.660
+a standard 1500 watt electric space heater from the hardware store and a 1500 watt high-end server rack
+
+32:29.660 --> 32:37.180
+processing data they produce the exact same amount of thermal energy watt for watt joule for joule no way
+
+32:37.180 --> 32:42.380
+yes a processor acting as a heater delivers the exact same thermal output to your living room
+
+32:42.380 --> 32:49.340
+as a dumb electric resistance baseboard heater the heat isn't a byproduct thermodynamically it is the
+
+32:49.340 --> 32:56.780
+primary product that is wild to think about it feels like a glitch in the matrix so Flyxion takes this
+
+32:56.780 --> 33:04.220
+physical reality and proposes a radical architectural shift okay take the massive heat generating processors
+
+33:04.220 --> 33:09.180
+out of the centralized data centers where we spend billions of dollars on air conditioning just to
+
+33:09.180 --> 33:15.020
+throw that heat outside into the atmosphere right and put those processors inside residential heating
+
+33:15.020 --> 33:20.940
+appliances you get the heat you needed to survive the winter anyway and the computation is essentially
+
+33:20.940 --> 33:29.420
+a free byproduct but and this is a massive but there is a golden rule here to prevent the exact good
+
+33:29.420 --> 33:35.820
+hearts law escalation we saw with bitcoin Flyxion calls it the admissibility condition yes this is the fail
+
+33:35.820 --> 33:41.980
+safe it dictates that the building's physical heating requirement dictates the compute never the
+
+33:41.980 --> 33:47.980
+reverse never the reverse never if your living room thermostat says the house is warm enough and reaches 72
+
+33:47.980 --> 33:55.900
+degrees the computer inside the furnace must instantly shut off period okay so you cannot just open all your
+
+33:55.900 --> 34:01.260
+windows in the middle of january to cool the house down just to keep the gpu running so you can earn more
+
+34:01.260 --> 34:06.620
+network tokens exactly you've hit on the exact mechanism of the rule the power draw of the
+
+34:06.620 --> 34:13.260
+hardware is capped strictly physically by the thermal demand of the household that's smart this guarantees
+
+34:13.260 --> 34:18.940
+that every single kilowatt hour consumed by this network would have been consumed anyway just to keep
+
+34:18.940 --> 34:25.500
+the humans warm it achieves true thermal substitution but wait let me push back on the economics of this
+
+34:25.500 --> 34:30.940
+please do because i'm thinking about modern homes not everyone uses those old school electric
+
+34:30.940 --> 34:36.140
+resistance baseboard heaters anymore a lot of people especially those trying to be green have
+
+34:36.140 --> 34:41.420
+upgraded to heat pumps yes they have are you saying i should rip out my hyper efficient heat pump to
+
+34:41.420 --> 34:48.140
+install a massive graphics card in my basement and this is where Flyxion is intellectually incredibly honest
+
+34:48.140 --> 34:53.740
+the paper addresses this directly the comparison between a compute heater and a heat pump is highly
+
+34:53.740 --> 35:00.540
+nuanced and the math is unforgiving okay while the computing heater is perfectly matched one to one
+
+35:00.540 --> 35:06.140
+with an old electric resistance heater it loses badly to an air source heat pump why is that i thought
+
+35:06.140 --> 35:12.380
+a watt was a watt it is but a heat pump doesn't create heat through resistance it moves heat from the outside
+
+35:12.380 --> 35:19.420
+air into your house using refrigerants oh right because it's just moving heat rather than creating it
+
+35:19.420 --> 35:26.540
+a modern heat pump has a coefficient of performance or cop of around three meaning meaning for every
+
+35:26.540 --> 35:34.060
+one watt of electricity you put into the heat pump it moves three watts of heat into your house oh oh wow
+
+35:34.060 --> 35:40.060
+so if i replace my heat pump with a computer furnace which only has a cop of one i am suddenly using
+
+35:40.060 --> 35:45.340
+three times as much electricity from the grid to keep my house at the same temperature exactly a computing
+
+35:45.340 --> 35:51.900
+heater consumes three times the electricity to deliver the same thermal comfort as a heat pump that's
+
+35:51.900 --> 35:57.820
+a huge step backwards it is therefore the physical rule states that the computation performed by the
+
+35:57.820 --> 36:04.300
+furnace must produce enough financial or social value to pay for that massive efficiency gap right
+
+36:05.100 --> 36:12.540
+the compute has to be so valuable that it covers the cost of tripling your electric bill if the network
+
+36:12.540 --> 36:18.540
+pays you less than the cost of that extra electricity the whole model falls apart instantly here's the
+
+36:18.540 --> 36:24.380
+other logistical nightmare though let's say the math does work out the ai tasks pay well it covers the
+
+36:24.380 --> 36:31.740
+electric bill how do you actually physically build this what do you mean well a home furnace is heavy
+
+36:31.740 --> 36:40.060
+industrial equipment it lasts for 20 maybe 30 years but a high-end gpu is obsolete in three years i am not
+
+36:40.060 --> 36:45.500
+going to hire an hvac technician to tear out my home's duct work every time nvidia releases a new chip
+
+36:45.500 --> 36:52.140
+no that would be absurd the engineering solution has to be strict modularity okay you build a highly
+
+36:52.140 --> 36:58.300
+durable traditional heating chassis the heavy fans the sheet metal ducts the safety switches and you
+
+36:58.300 --> 37:03.820
+design it to last decades right but the heating element itself is designed to accept hot swappable
+
+37:03.820 --> 37:09.500
+compute cartridges the homeowner can just slide out a dusty three-year-old cartridge and slide in a new one
+
+37:09.500 --> 37:15.180
+just like changing an air filter the infrastructure persists but the digital brain evolves that's
+
+37:15.180 --> 37:20.460
+brilliant that makes it actually feasible but there is a massive macro level warning in the paper
+
+37:20.460 --> 37:26.300
+regarding the electrical grade isn't there even with modularity what happens when this scales up yes
+
+37:27.020 --> 37:32.380
+if this idea actually takes off and millions of homes across a region replace their highly efficient heat
+
+37:32.380 --> 37:38.940
+pumps with one-to-one compute heaters think about what happens during a severe winter storm a polar
+
+37:38.940 --> 37:44.220
+vortex drops the temperature to zero every single person's heat kicks on at the exact same time
+
+37:44.220 --> 37:49.500
+right and because they are using compute heaters drawing three times the power of the heat pumps they
+
+37:49.500 --> 37:56.380
+replaced the winter peak demand on the local electrical grid would triple overnight oh my god you could
+
+37:56.380 --> 38:02.220
+cause catastrophic cascading blackouts the grid operators have sized the neighborhood transformers
+
+38:02.220 --> 38:07.660
+based on the assumption of heat pumps so the network's deployment cannot be blind it must be
+
+38:07.660 --> 38:12.940
+deeply integrated with local grid capacity it's an incredible idea but the physical constraints of
+
+38:12.940 --> 38:19.340
+reality are very real very real which actually is a perfect transition to the third form of computation
+
+38:19.340 --> 38:24.940
+in the paper yes we've talked about spare laptops we've talked about replacing the heating coil with a
+
+38:24.940 --> 38:31.100
+digital chip but what if we replace the digital chip with the physical world itself now we are entering
+
+38:31.100 --> 38:37.020
+the realm of physical analog computation and this is arguably the most radical proposition in the entire
+
+38:37.020 --> 38:43.580
+monograph this part honestly melted my brain a little bit it sounds like literal science fiction
+
+38:43.580 --> 38:49.980
+walk me through it let's think about digital fluid dynamic simulations if an aerospace company wants to
+
+38:49.980 --> 38:56.220
+simulate how air flows through a complex jet turbine or an hvac company wants to see how heat mixes in a
+
+38:56.220 --> 39:01.340
+chamber right using a digital supercomputer to simulate that is incredibly expensive and slow
+
+39:01.980 --> 39:07.660
+because calculating turbulence is notoriously difficult right it's chaotic it is mathematically
+
+39:07.660 --> 39:14.220
+punishing the cost of resolving all the tiny swirling scales of a turbulent flow scales as the cube of
+
+39:14.220 --> 39:20.060
+the reynolds number the reynolds number yeah the reynolds number is basically a measure of how chaotic and
+
+39:20.060 --> 39:26.060
+turbulent a fluid is as the flow gets faster and more complex the digital math required to track every
+
+39:26.060 --> 39:32.300
+little eddy and vortex becomes prohibitive very quickly supercomputers just choke on it okay but a
+
+39:32.300 --> 39:39.740
+physical fluid a physical fluid evolves itself for free it just obeys the laws of physics instantaneously
+
+39:39.740 --> 39:46.060
+in real time so Flyxion is saying instead of using a supercomputer to build a digital model of a
+
+39:46.060 --> 39:52.460
+furnace to see how air flows just use the actual physical furnace as the computer precisely a home
+
+39:52.460 --> 39:58.220
+hvac system operates at a high reynolds number meaning the air inside the ducts is highly turbulent
+
+39:58.220 --> 40:04.220
+but a very low mach number usually around 0.15 meaning the air isn't compressing like it does its
+
+40:04.220 --> 40:11.340
+supersonic speeds okay now you cannot use your basement furnace to simulate the supersonic airflow over
+
+40:11.340 --> 40:15.820
+fighter jet wing the physics don't scale the compressibility is completely wrong right that makes sense
+
+40:16.460 --> 40:22.940
+but you can use your furnace to run physical optimization experiments on heat exchanger geometries
+
+40:22.940 --> 40:28.620
+or duct mixing or fan blade efficiency okay so practically speaking the network sends a
+
+40:28.620 --> 40:34.380
+mechanical configuration down to my furnace yes some motorized veins inside the ducts shift around to a
+
+40:34.380 --> 40:40.380
+new angle the fan turns on and the furnace tests how efficient the new airflow is in physical reality
+
+40:40.380 --> 40:45.420
+rather than in a simulation and then it just sends the sensor data back exactly okay it's using the
+
+40:45.420 --> 40:53.500
+physical world to calculate a physical problem the fluid is the processor that is so cool it is but it
+
+40:53.500 --> 40:58.140
+encounters a massive statistical hurdle which the paper calls the geography problem what's the
+
+40:58.140 --> 41:03.740
+geography problem think about it every house is uniquely flawed oh yeah if my furnace gets a highly
+
+41:03.740 --> 41:09.020
+efficient airflow result with a new vein configuration and your furnace gets a terrible inefficient result with
+
+41:09.020 --> 41:15.500
+that exact same configuration the network doesn't automatically know why ah is my mathematical
+
+41:15.500 --> 41:20.940
+configuration actually better or do you just have a massive leaky hole in the ductwork in your attic
+
+41:20.940 --> 41:28.460
+that is ruining the airflow ah you can't separate the site effect of my specific crappy house from the
+
+41:28.460 --> 41:34.940
+configuration effect of the experiment right the mathematical proof shows that a physical analog network
+
+41:34.940 --> 41:41.660
+fails entirely it just gathers total garbage data unless every single node periodically runs a baseline
+
+41:41.660 --> 41:47.340
+reference configuration to calibrate itself that makes perfect sense only by comparing everything to
+
+41:47.340 --> 41:55.100
+a known local baseline can the network isolate the true value of the experimental geometry across millions
+
+41:55.100 --> 42:01.500
+of different uniquely flawed homes you have to subtract the noise of the real world exactly but then the
+
+42:01.500 --> 42:11.260
+paper takes this analog idea to an even wilder place entropy as a service harvesting randomness yes true
+
+42:11.260 --> 42:16.940
+unpredictable cryptographic randomness is actually highly valuable in computer science it's the foundation
+
+42:16.940 --> 42:23.820
+of all encryption right and Flyxion asks a wild question can we harvest that randomness from the chaotic
+
+42:23.820 --> 42:31.020
+turbulent flow of a household air conditioner loop okay let's unpack this carefully because if i look at a
+
+42:31.020 --> 42:37.500
+turbulent fluid like boiling water or a chaotic ac refrigerant line it looks completely random to me it looks
+
+42:37.500 --> 42:45.340
+random to the human eye yes but the paper draws a strict critical line between shannon entropy and min entropy
+
+42:45.340 --> 42:52.380
+what's the difference shannon entropy just measures the average uncertainty or chaos of a system a chaotic air
+
+42:52.380 --> 43:00.380
+conditioner has high shannon entropy but min entropy which is what cryptographers actually care about for security
+
+43:00.380 --> 43:06.860
+measures how difficult it is for an adversary to guess the specific outcome given everything they can
+
+43:06.860 --> 43:12.940
+observe about the environment so if i'm a hacker and i put a temperature sensor on the outside of your ac unit
+
+43:13.500 --> 43:21.900
+and i know what the weather is outside can i predict the random numbers your fluid is generating exactly if
+
+43:21.900 --> 43:27.980
+the adversary can observe the ambient temperature and listen to the compressor speed the min entropy might be
+
+43:27.980 --> 43:34.540
+incredibly low even if the fluid itself is chaotic they might be able to guess the next number oh wow
+
+43:35.100 --> 43:41.180
+but the bigger danger is how you combine this randomness across the network this is the xor vulnerability
+
+43:41.980 --> 43:48.380
+explain this to me like m5 because mixing a bunch of random numbers sounds more secure not less okay let's
+
+43:48.380 --> 43:56.460
+use a simple analogy imagine a room with a thousand people the network wants a perfectly random coin flip
+
+43:56.460 --> 44:03.100
+heads or tails okay so it asks all 1 000 people to flip a coin and they are going to combine the results
+
+44:03.100 --> 44:10.540
+using an xor function in simple terms if there is an even number of heads the final result is tails if there
+
+44:10.540 --> 44:17.820
+is an odd number of heads the final result is heads sounds incredibly secure yeah a thousand independent
+
+44:17.820 --> 44:25.580
+variables mixed together no one person controls it here is the flaw the paper proves mathematically that
+
+44:25.580 --> 44:31.660
+if just one person in that room of a thousand is malicious and they simply wait to see the submissions of
+
+44:31.660 --> 44:38.780
+the other 999 people before revealing their own coin they hold the steering wheel wait really they can
+
+44:38.780 --> 44:45.100
+perfectly rig the final output to be whatever they want one node out of a thousand can hijack the whole thing
+
+44:45.100 --> 44:51.740
+yes because if the total of the 999 people is an even number and the malicious actor wants the final answer
+
+44:51.740 --> 44:58.300
+to be odd they just submit a heads oh my god they just solve for the missing variable to force the final output to
+
+44:58.300 --> 45:04.780
+their desired state so harvesting and mixing untrusted physical randomness from ac units across the country
+
+45:04.780 --> 45:11.820
+is highly dangerous unless you use strict commit and reveal cryptographic protocols where everyone has
+
+45:11.820 --> 45:18.700
+to submit a locked box with their answer before anyone is allowed to open them exactly that is fascinating
+
+45:18.700 --> 45:26.780
+but wait i have to stop and ask a broader structural question here is this entire analog section just a semantic
+
+45:26.780 --> 45:34.300
+trick how so are we just calling any physical process a computer to sound cool and visionary
+
+45:34.300 --> 45:40.140
+like if my fridge breaks down because the compressor fails is it calculating its own failure are we just
+
+45:40.140 --> 45:45.020
+stretching definitions to the breaking point it's a very fair critique and it's honestly the first place
+
+45:45.020 --> 45:52.380
+my mind went to but fly on and addresses it head-on to prevent it from becoming you know woo-woo sci-fi okay
+
+45:52.380 --> 45:57.980
+for a physical process to count as an experimental computation it cannot just be a machine running
+
+45:57.980 --> 46:04.060
+its normal cycle a specific theoretical question must be posed in advance there must be controlled
+
+46:04.060 --> 46:10.220
+inputs and there must be calibrated readout sensors specifically designed to discriminate among candidate
+
+46:10.220 --> 46:15.740
+answers so intent matters if you don't have a hypothesis before the machine turns on it's not a
+
+46:15.740 --> 46:22.780
+computation it's just a broken fridge yes the system has to be instrumented to test a specific variable
+
+46:22.780 --> 46:28.780
+without that rigor the definition of computing just dissolves into meaningless physics okay i appreciate
+
+46:28.780 --> 46:34.700
+the rigor there it keeps it grounded but that demand for rigor brings us to the harshest reality check in
+
+46:34.700 --> 46:42.620
+the whole document yeah economics geography and the long horizon even if the thermodynamics work even if the
+
+46:42.620 --> 46:49.100
+analog math is sound does the money make sense let's talk about the cold hard economics of using so-called
+
+46:49.100 --> 46:56.780
+free stuff because as the paper painstakingly points out old hardware is not free the cost of free
+
+46:56.780 --> 47:03.100
+is actually quite high right walk me through the marginal energy equation why isn't it perfectly green
+
+47:03.100 --> 47:09.420
+to just use my old laptop forever we have to look at energy proportionality older pcs draw a massive
+
+47:09.420 --> 47:15.500
+percentage of their peak power just sitting there doing absolutely nothing their baseline overhead is
+
+47:15.500 --> 47:22.860
+terrible okay an old processor might use 50 watts doing zero math and 60 watts running at maximum
+
+47:22.860 --> 47:29.580
+capacity so it's incredibly wasteful at idle exactly now compare that to a modern hyperscale centralized
+
+47:29.580 --> 47:37.180
+data center a modern data center might have a power usage effectiveness a pue of 1.1 it is hyper efficient
+
+47:37.180 --> 47:43.260
+at converting grid power into actual computation with very little wasted on cooling or idle overhead
+
+47:43.260 --> 47:49.740
+right Flyxion runs the numbers and admits a painful truth operating a 10 year old laptop for distributed
+
+47:49.740 --> 47:55.580
+compute might literally generate more carbon emissions than building a brand new server from scratch in a green
+
+47:55.580 --> 48:02.140
+data center that is a tough pill to swallow so recycling old tech can actually be worse for the environment
+
+48:02.140 --> 48:08.300
+than building new tech in terms of ongoing operating energy yes you have to weigh the sunk embodied
+
+48:08.300 --> 48:13.500
+carbon of the old machine against the massive operating efficiency of the new machine and usually the new
+
+48:13.500 --> 48:19.900
+machine wins over a multi-year time frame ouch okay well what about the geography of the network if we
+
+48:19.900 --> 48:27.420
+are tying computation to heating demand with the furnace computers does that save the model it actually creates a
+
+48:27.420 --> 48:33.580
+massive geographic correlation problem think about it the network's computational capacity is now
+
+48:33.580 --> 48:40.380
+physically tied to where it's cold so the northern hemisphere in january has massive compute capacity
+
+48:40.380 --> 48:47.820
+and in july it has nothing right but it's worse than just seasons heating demand is acutely weather dependent
+
+48:47.820 --> 48:52.940
+you would intuitively think that adding 10 000 furnace nodes across a region would smooth out your network
+
+48:52.940 --> 48:57.260
+capacity right law of large numbers yeah that's what i'd assume but the math proves
+
+48:57.260 --> 49:02.380
+that adding nodes in the same region does not smooth the curve why because weather isn't
+
+49:02.380 --> 49:08.300
+random independent events weather is a massive coordinated system a blizzard hits the entire
+
+49:08.300 --> 49:16.380
+midwest at once oh i see so if a cold front moves across chicago suddenly 10 000 furnace computers all turn
+
+49:16.380 --> 49:23.020
+on at the exact same hour flooding the network with a massive spike in compute capacity yes and then
+
+49:23.020 --> 49:29.820
+tomorrow when the sun comes out and it warms up they all vanish simultaneously exactly the variance does
+
+49:29.820 --> 49:35.020
+not approach zero as the network grows it approaches the baseline correlation of the underlying weather
+
+49:35.020 --> 49:42.140
+system geography is a hard physical constraint not a magic wand that smooths out supply so if the
+
+49:42.140 --> 49:46.940
+centralized cloud is so much faster so much more energy efficient and doesn't disappear when the weather
+
+49:46.940 --> 49:52.700
+gets warm why bother with this why spend 20 years trying to build a distributed network of clunky weather
+
+49:52.700 --> 49:59.100
+dependent furnaces consider the flip side of centralization it comes down to learning curves
+
+49:59.100 --> 50:04.620
+and what economists call option value option value the paper looks at wright's law which shows how
+
+50:04.620 --> 50:10.700
+manufacturing costs reliably fall as cumulative production increases and it breaks the timeline of this
+
+50:10.700 --> 50:16.140
+network down into three distinct breakeven phases okay walk me through the phases of
+
+50:17.100 --> 50:24.300
+surviving this first is marginal breakeven the point in the future where one single computational task
+
+50:24.300 --> 50:32.700
+finally becomes profitable to run on a home furnace rather than a cloud server okay second is cumulative breakeven
+
+50:33.260 --> 50:39.180
+the point years later where the network has finally recovered all the historical financial losses from its early
+
+50:39.180 --> 50:46.700
+highly inefficient days right third is discandler breakeven which factors in the time value of money
+
+50:47.340 --> 50:51.980
+meaning could society have just put that investment capital in the stock market instead
+
+50:52.620 --> 50:58.460
+so Flyxion is admitting that on day one this distributed network will be wildly inefficient compared
+
+50:58.460 --> 51:05.660
+to amazon web services it will hemorrhage money absolutely but here is the saving grace option
+
+51:05.660 --> 51:11.340
+value think about a tech giant building a massive centralized ai data center they are committing a
+
+51:11.340 --> 51:17.180
+billion dollars in sunk capital to build that warehouse and fill it with servers right if the ai
+
+51:17.180 --> 51:22.940
+boom busts or if the technology shifts they are financially ruined they own a billion dollar empty
+
+51:22.940 --> 51:29.980
+warehouse in the desert it's a massive inflexible bet but the distributed network utilizes sunk
+
+51:29.980 --> 51:35.820
+hardware that people already own for other reasons you already own the furnace yeah the network is built
+
+51:35.820 --> 51:42.860
+incrementally cartridge by cartridge this gives society the option to stop if the decentralized
+
+51:42.860 --> 51:48.060
+experiment fails after a year the financial ruin is practically zero people just go back to
+
+51:48.060 --> 51:54.300
+using their heaters as normal heaters that's a great point the flexibility to reverse course without destroying
+
+51:54.300 --> 52:00.460
+capital is an incredibly valuable economic trait that traditional utilization metrics completely ignore
+
+52:01.020 --> 52:06.380
+that makes a ton of sense the cost of failure is distributed and incredibly low that brings us to
+
+52:06.380 --> 52:13.580
+the final most crucial hurdle governance because all of this beautiful thermodynamic theory all this
+
+52:13.580 --> 52:20.220
+economic option value it all collapses instantly if bad actors exploit the system how does a decentralized
+
+52:20.220 --> 52:26.860
+network actually enforce these physical limits without a central police force beating goodhart's law requires
+
+52:26.860 --> 52:33.900
+structurally separating the financial reward from the raw compute we talked about this with bitcoin you
+
+52:33.900 --> 52:39.180
+cannot pay people just for running their processors or they will run them into the ground you have to
+
+52:39.180 --> 52:47.500
+introduce the cap rule the cap rule how does that work the cap rule mathematically hard codes that you only get
+
+52:47.500 --> 52:53.500
+rewarded up to the actual legitimate thermal demand of your house okay if your thermostat says the room
+
+52:53.500 --> 52:59.260
+mathematically requires a thousand watts of heat to maintain temperature you can earn network rewards for
+
+52:59.260 --> 53:06.300
+exactly one thousand watts of compute so if i try to gain the system by buying a massive liquid cooled crypto
+
+53:06.300 --> 53:12.220
+mining gpu rig that pulls three thousand watts and i stuff it in my closet you get zero extra money for those
+
+53:12.220 --> 53:17.980
+extra two thousand watts the network aggressively caps your reward at your legitimate thermal demand
+
+53:18.700 --> 53:25.820
+buying a bigger gpu gets you absolutely nothing if your house is already warm it completely destroys
+
+53:25.820 --> 53:31.660
+the economic incentive to overbuild hardware but what if someone is clever what if a hacker writes a
+
+53:31.660 --> 53:36.540
+script to spoof the thermostat software faking the thermal demand so the network thinks the house is
+
+53:36.540 --> 53:43.100
+constantly freezing how do you punish them do you find them their tokens the paper makes a brilliant
+
+53:43.100 --> 53:50.060
+point about human nature here fines do not work they don't if the profit of gaming the system is
+
+53:50.060 --> 53:55.980
+greater than the fine multiplied by the probability of getting caught rational actors will just treat
+
+53:55.980 --> 54:00.860
+the fine as a cost of doing business like chemical corporations paying epa pollution fines every year
+
+54:00.860 --> 54:06.220
+because it's literally cheaper than fixing the factory filters exactly it just becomes an operating
+
+54:06.220 --> 54:15.260
+expense so the network cannot use fines it must use gates what's a gate a gate is binary if you
+
+54:15.260 --> 54:21.420
+violate a physical safety limit or if the network detects you faking your thermal demand your reward
+
+54:21.420 --> 54:28.460
+multiplier instantly becomes absolute zero oh wow you aren't fined you are gated out of the reward
+
+54:28.460 --> 54:35.660
+structure entirely the prohibited action simply ceases to be an item on the price list you can burn all the
+
+54:35.660 --> 54:41.580
+electricity you want but the network will completely ignore you you play by the physical rules or you
+
+54:41.580 --> 54:47.020
+are a ghost to the network i love that which leads into the most human element of this whole paper the
+
+54:47.020 --> 54:52.700
+governance hierarchy the right to remain idle this is the governance structure that prevents the network
+
+54:52.700 --> 54:57.660
+from turning into a dystopian parasite that takes over your home there are three strict levels of
+
+54:57.660 --> 55:03.500
+authority okay let's establish the hierarchy what is the foundational level level one level one is the safety
+
+55:03.500 --> 55:09.260
+envelope this is fixed by the laws of physics the thermal limits of the materials and the manufacturer
+
+55:09.260 --> 55:14.460
+of the appliance it is the hard limit of what the machine can do without catching fire it cannot be
+
+55:14.460 --> 55:20.780
+overridden by anyone ever okay so my homeowner desires have to sit underneath that i can tell my furnace to
+
+55:20.780 --> 55:27.500
+compute but i can't tell it to melt itself which makes level two the human owner yes level two is the owner
+
+55:27.500 --> 55:32.860
+policy this is set by you the human living in the house paying the mortgage right you decide if you
+
+55:32.860 --> 55:38.700
+want to participate exactly when you participate and what your privacy and comfort bounds are you are
+
+55:38.700 --> 55:44.300
+the sovereign of the hardware in level three level three is the network request the global computing
+
+55:44.300 --> 55:50.140
+network is at the very bottom of the food chain it is a beggar the network never dictates the safety
+
+55:50.140 --> 55:54.940
+envelope and it never overrides the human owner it's like having a guest room in your house just because
+
+55:54.940 --> 55:59.340
+the bed is empty doesn't mean a massive hotel corporation has the right to suddenly rent it out
+
+55:59.340 --> 56:05.260
+to a stranger without asking exactly you own the empty space you have the fundamental right to let it
+
+56:05.260 --> 56:12.380
+remain idle availability does not equal authorization that is the core ethos of the entire movement
+
+56:13.260 --> 56:18.940
+and Flyxion codifies this with a final ultimate litmus test for any distributed technology it's called
+
+56:18.940 --> 56:23.980
+the dissolution condition the reactionary test right this is how we know if a technology
+
+56:23.980 --> 56:29.580
+is a tool or a trap right it asks one brutally simple question if the global computational
+
+56:29.580 --> 56:33.820
+network goes bankrupt loses all its funding and dissolves tomorrow morning
+
+56:35.180 --> 56:40.300
+does the human participants still have a working heater and a working computer if the answer is yes
+
+56:40.940 --> 56:47.100
+then the network is legitimate it was a symbiotic layer built on top of robust independent tools
+
+56:47.100 --> 56:52.380
+but if the network dissolves and the user freezes to death in their own home because their furnace relied on
+
+56:52.380 --> 56:57.660
+a central cloud server to function then the system has trapped them it has created an illegitimate
+
+56:57.660 --> 57:05.180
+dependency true technological progress shouldn't hold your basic survival hostage to a corporate api
+
+57:05.820 --> 57:11.420
+what a profound place to land okay let's wrap up this journey we started with sam altman looking
+
+57:11.420 --> 57:16.860
+at a sleeping laptop and seeing a tragedy of unused memory pushing for everything to be sucked into the
+
+57:16.860 --> 57:22.780
+centralized cloud we walked through the hidden dimensions of the efficiency trap how goodhart's law ruins
+
+57:22.780 --> 57:29.420
+proxy metrics when money gets involved and the math of why competitive proof-of-work mining just escalates
+
+57:29.420 --> 57:36.380
+energy waste without providing more value we looked up the sheer thermodynamic genius and the real
+
+57:36.380 --> 57:44.380
+unforgiving physical limitations of turning furnaces into computing heaters and using ac units as physical analog fluid computers
+
+57:44.380 --> 57:52.540
+and we waded through the deep economics of sunk hardware geographic polarization and why having the
+
+57:52.540 --> 57:58.940
+decentralized option to fail cheaply is a superpower ultimately we learned that efficiency should never
+
+57:58.940 --> 58:04.940
+override the primary purpose of our tools or our fundamental right to control them i think that's the biggest
+
+58:04.940 --> 58:12.540
+takeaway so to you listening right now i want you to look around your room look at your laptop your
+
+58:12.540 --> 58:18.780
+air conditioner your smart thermostat think about the hidden dormant capabilities quietly resting in
+
+58:18.780 --> 58:24.860
+your own home yeah and ask yourself whether you are okay with centralizing all of the world's intelligence
+
+58:24.860 --> 58:31.820
+and a few massive glowing warehouses in the desert instead of weaving it safely symbiotically into the
+
+58:31.820 --> 58:37.020
+fabric of the things we already own it's a choice about what kind of infrastructure we want to live inside it
+
+58:37.020 --> 58:41.740
+it really is and i want to leave you with one final slightly provocative thought to mull over
+
+58:42.300 --> 58:47.340
+we spent this whole deep dive talking about machines we did we talked about how an hvac system could
+
+58:47.340 --> 58:53.980
+secretly be a latent computational network solving complex fluid dynamics just by blowing hot air but
+
+58:53.980 --> 59:01.500
+what if we expand that definition what about biological infrastructure oh that's a massive leap where are you going with this
+
+59:01.500 --> 59:08.140
+think about the immense interconnected microbial networks in our soil or the mycelial root systems of old
+
+59:08.140 --> 59:14.380
+growth forests trading nutrients carbon and chemical signals across miles of earth to optimize the forest's
+
+59:14.380 --> 59:21.100
+survival wow are they performing thermodynamic analog computations right beneath our feet balancing
+
+59:21.100 --> 59:26.460
+resource allocation on a massive scale just waiting for us to figure out how to pose the right questions
+
+59:26.460 --> 59:44.060
+if a basement furnace can compute why not a forest something to think about until next time
+

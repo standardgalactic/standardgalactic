@@ -1,0 +1,65 @@
+\chapter{Furnaces as Distributed Experimental Instruments}
+\label{ch:furnaces}
+
+This chapter develops the proposal to use heating systems as experimental platforms, and it serves as the physical test of the monograph's central claim. The architecture of the preceding chapters is worth building only if it produces information that is genuinely valuable and cannot be had more cheaply elsewhere, and not merely by describing ordinary thermodynamic activity as computation. The motivating examples are turbulence, pressure dispersion, mixing, thermal gradients, and flow behavior relevant to engineering. The chapter argues that the proposal is sound in a narrower form than its first statement suggested, and that the narrower form has a clearer target.
+
+\section{What a Residential System Can Test}
+
+The proposal is not to reproduce a complete jet engine inside a residential furnace, and the physics shows why the limits are tighter than that. Flows inside a jet engine involve transonic and supersonic speeds, high pressures and temperatures, and combustion. A residential forced-air system moves air at a few meters per second through ducts of a few tenths of a meter in diameter, at temperatures a little above room temperature. For a duct of hydraulic diameter $0.3\,\mathrm{m}$ carrying air at $5\,\mathrm{m/s}$, with kinematic viscosity near $1.5\times10^{-5}\,\mathrm{m^2/s}$, the Reynolds number is of order $10^{5}$, so the flow is fully turbulent, while the Mach number is about $0.015$, so compressibility is negligible. The regime is incompressible, turbulent, internal flow.
+
+That regime is not trivial. It is the regime of heat exchangers, ducts, diffusers, mixing sections, and ventilation, and the phenomena that matter there, including pressure loss in passages, turbulent mixing, boundary-layer behavior, heat transfer enhancement by surface structures, and the dispersion of a warm plume, are largely independent of Mach number. A residential module can therefore address questions about components of that kind. It cannot address questions that depend on compressibility, combustion chemistry, or extreme temperature, and those remain in specialized facilities, in line with the safety envelope described below.
+
+The honest target of the proposal is accordingly not a stand-in for a jet engine but the heating and ventilation equipment itself, studied in place. A furnace network that measures furnaces, ducts, and heat exchangers under real operating conditions is measuring the target system, and not a scaled model of some other one.
+
+\section{Similarity and Scaling}
+
+The chapter examines Reynolds similarity, dimensional analysis~\cite{buckingham1914}, boundary conditions, scaling limitations, and uncertainty quantification. For forced convection of a fluid with constant properties through geometrically similar passages, dimensional analysis reduces the dependence of the Nusselt number to two groups,
+\[
+\mathrm{Nu}=\frac{hL}{k}=\phi(\mathrm{Re},\mathrm{Pr}),\qquad \mathrm{Pr}=\frac{\nu}{\alpha_{\mathrm{th}}},
+\]
+where $h$ is the heat transfer coefficient, $k$ the thermal conductivity, $\nu$ the kinematic viscosity, and $\alpha_{\mathrm{th}}$ the thermal diffusivity. When the module and the target both use air at similar temperatures, $\mathrm{Pr}$ is matched automatically and only the Reynolds number remains to be matched. Buoyancy adds a further group, the Richardson number $\mathrm{Ri}=g\beta\Delta T\,L/U^{2}$, which compares buoyant to inertial forces and can matter at the low speeds and modest temperature differences of residential ducts.
+
+Matching $\mathrm{Re}$ at a reduced scale $s=L_{\mathrm{model}}/L_{\mathrm{full}}$ with the same fluid requires $U_{\mathrm{model}}=U_{\mathrm{full}}/s$. The Mach number then rises by a factor $1/s$. If the full-scale Mach number is $0.015$ and compressibility effects are treated as negligible below about $0.3$, scale reductions of order twenty are possible before the incompressible approximation fails, though the fan power needed rises steeply with the speed. The accounting shows that Reynolds matching is feasible for modest scale factors within the low-Mach regime and becomes impossible when the target involves high Mach numbers, where the two groups cannot both be matched in a small apparatus. The distinction between physical similarity and superficial resemblance is central. A module is valid for a question only when the groups that govern that question are matched, and the claim of similarity must be argued, not assumed.
+
+\section{Measurement and Uncertainty}
+
+A measurement is useful only with a stated uncertainty. The standard procedure~\cite{jcgm2008} combines the uncertainties of the inputs to a derived quantity $f(x_1,\dots,x_n)$ by the law of propagation,
+\[
+u_c^{2}(f)=\sum_{i=1}^{n}\Bigl(\frac{\partial f}{\partial x_i}\Bigr)^{2}u^{2}(x_i),
+\]
+for uncorrelated inputs, with correlation terms added otherwise. A module reports temperature, differential pressure, and flow rate with calibrated sensors, and every derived quantity, such as a loss coefficient or a heat transfer coefficient, carries the combined uncertainty. Household conditions add uncontrolled variation $\xi$ in the notation of Chapter~\ref{ch:analog}: duct leakage, filter loading, building infiltration, and ambient temperature all change from site to site. These are not measurement errors in the usual sense. They are differences in the system being measured, and they must be estimated and not ignored.
+
+\section{Site Effects and Identifiability}
+
+The distributed design has a statistical weakness that must be dealt with in the design of the network. Suppose the outcome at site $i$ under configuration $\theta_j$ is modeled as
+\[
+Y_{ij}=\mu(\theta_j)+b_i+\varepsilon_{ij},
+\]
+where $\mu(\theta_j)$ is the effect of the configuration, $b_i$ is a site effect with variance $\sigma_b^{2}$, and $\varepsilon_{ij}$ is measurement noise with variance $\sigma_\varepsilon^{2}$. The evolutionary search of Chapter~\ref{ch:evolutionary} assigns a different configuration to each module, and that choice has a consequence.
+
+\begin{proposition}
+\label{prop:identifiability}
+If each configuration is tested at exactly one site and no common reference configuration is run, the configuration effects $\mu(\theta_j)$ and the site effects $b_i$ are not separately identifiable.
+\end{proposition}
+
+\begin{proof}
+With one configuration per site, the observation at site $i$ depends only on the sum $\mu(\theta_{j(i)})+b_i$, however many repeated runs are made. Replacing $\mu(\theta_{j(i)})$ by $\mu(\theta_{j(i)})+\delta_i$ and $b_i$ by $b_i-\delta_i$ for arbitrary $\delta_i$ leaves every observation distribution unchanged, so the parameters cannot be recovered separately.
+\end{proof}
+
+The remedy is to connect the design. If every module periodically runs a common reference configuration $\theta_{\mathrm{ref}}$, the site effect is estimated from the reference runs and subtracted from the others. It is also enough for configurations to be shared across sites in a pattern that links them into a connected graph, so that differences between sites can be inferred through the shared configurations. With reference runs the variance of the estimated effect of a configuration is reduced to the noise of the run plus the uncertainty in the site correction, whereas without them the effect of the site simply adds to the error of the comparison. The cost is that a fraction of each module's time is spent on the reference configuration, which lowers the rate of exploration and has to be counted as part of the price of the information.
+
+\section{When the Network Beats the Laboratory}
+
+The comparison that decides the question is cost per validated measurement against a purpose-built laboratory rig. The network has real advantages. It runs many configurations in parallel, it samples genuine field conditions, it produces long time series across seasons, and the heat it generates is useful to the household and not wasted. It has equally real disadvantages: the conditions are less controlled, sensors are cheaper and less accurate, the safety envelope limits the range of experiments, and communication adds overhead. In the notation of Chapter~\ref{ch:analog}, the network wins where its yield $\eta_X$ exceeds that of the laboratory for a question that can be answered at its accuracy.
+
+The class of questions in which the network is strongest is field validation: whether a heat exchanger or duct design performs as predicted in actual buildings, and how real installations differ from the idealized conditions of the test rig. These questions have the target system as the subject, so site variation is signal and not only noise, and no laboratory can substitute for installed equipment. The questions in which the network is weakest are those that need tight control of boundary conditions or extreme operating points.
+
+\section{Safety and Certification}
+
+A residential system operates within its ordinary certified thermal and pressure envelope. Extreme-temperature or high-pressure experiments remain confined to specialized facilities. Even passive modules have effects that must be assessed. A set of vanes or surface structures in an air passage raises the pressure drop, which can reduce airflow through the heat exchanger and interfere with the appliance's temperature limits and safety switches. A module must therefore keep the static pressure and the temperatures within the manufacturer's rated limits, with margin, and must not provide any access to the combustion side of a fuel-fired appliance. Sensor ports must not create leaks. Modifying a certified appliance can also void its listing, so the module is best installed as a certified accessory or fitted during manufacture. The scheduler cannot override the appliance's safety controller, as stated in Chapter~\ref{ch:idle}.
+
+\section{A Staged Test and Its Failure Conditions}
+
+The physical test of the architecture proceeds in stages, with pre-registered hypotheses and a commitment to report null results. A laboratory thermal-flow apparatus comes first, corresponding to Experiment C. A small number of certified modules in homes follows, each running the reference configuration, to estimate the site variance $\sigma_b^{2}$ directly. Scaling comes only if that estimate is small enough relative to the configuration effects that matter.
+
+The proposal fails if the site variance dwarfs the effects of configuration, so that the discriminability of Chapter~\ref{ch:analog} stays low. It fails if the module changes the behavior of the appliance it is installed in, or if the questions the network can answer at its accuracy are not ones that anyone needs answered. It fails, finally, if the yield of the network falls below that of simple laboratory testing, in which case what remains is a heating system with sensors attached, which is a modest result and an honest one.
