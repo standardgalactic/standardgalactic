@@ -70,7 +70,6 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 *New* [Ephemera](https://github.com/standardgalactic/ephemera)— *Odds and Ends*
 
-* [Audio Overviews](https://standardgalactic.github.io/research-projects/Aurora/)
 -->
 
 [Audio Field Monitor](https://standardgalactic.github.io/guardrails/stack/)
@@ -102,39 +101,67 @@ Some results could have issues.
 
 # Work in Progress
 
+[My Research Frameworks](https://standardgalactic.github.io/voice-cloning/) — *Voice Clone*
+
+[Position Dependent Admissibility In Combinatory Reduction](https://standardgalactic.github.io/spherepop-kernel/position-dependent-admissibility.pdf)
+
+[Gaps That Observation Cannot Close](https://standardgalactic.github.io/sandbox/gaps-observation-cannot-close.pdf)
+
+[Warranted Passage](https://standardgalactic.github.io/sandbox/warranted-passage.pdf)
+
+[Evidential Dependence and Institutional Correction](https://standardgalactic.github.io/sandbox/evidential-dependence-and-correction.pdf)
+
+[Execution Is Not Validation](https://standardgalactic.github.io/sandbox/execution_is_not_validation.pdf)
+
+[Differential Calculus for Datatypes](https://standardgalactic.github.io/research-scope/differential-calculus-datatypes.pdf)
+
+[Local Transitions and Global Admissibility](https://standardgalactic.github.io/research-scope/local-transitions-global-admissibility.pdf)
+
+[Coordination After Storage](https://standardgalactic.github.io/research-scope/coordination-after-storage.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/research-scope/)
+
+[Synchrony and Release](https://standardgalactic.github.io/robotics/synchrony-and-release.pdf)
+
+* [Pneumatic Paper Robots Without Central Computers](https://standardgalactic.github.io/robotics/synchrony-and-release.html) 
+
 [Spherepop in Action](https://standardgalactic.github.io/circuit-analysis/spherepop-in-action.pdf)
 
-* [Why Mathematical Circuit Models Fail Reality](https://standardgalactic.github.io/circuit-analysis/) — *Audio Overview*
+* [Why Mathematical Circuit Models Fail Reality](https://standardgalactic.github.io/circuit-analysis/)
+
+[The Architecture of Continuity](https://standardgalactic.github.io/computation/architecture_of_continuity.pdf)
+
+[Magnificant Monotony](https://standardgalactic.github.io/computation/magnificent_monotony.pdf)
 
 [Altered Records and Available Actions](https://standardgalactic.github.io/computation/altered-records.pdf)
 
-* [How AI Tutors Hack Their Own Predictions](https://standardgalactic.github.io/computation/altered-records.html) — *Audio Overview*
+* [How AI Tutors Hack Their Own Predictions](https://standardgalactic.github.io/computation/altered-records.html)
 
 [What Memory Cannot Supply](https://standardgalactic.github.io/budgeted-repair/budgeted-repair.pdf)
 
 Budgeted Repair and Convention Inheritance in Small Systems
 
-* [Why Scaling Memory Fails System Repair](https://standardgalactic.github.io/budgeted-repair/) — *Audio Overview*
+* [Why Scaling Memory Fails System Repair](https://standardgalactic.github.io/budgeted-repair/)
 
 [Computation Without Extraction](https://standardgalactic.github.io/standardgalactic/computation-without-extraction.pdf)
 
-* [Turning Home Furnaces into Supercomputers](https://standardgalactic.github.io/standardgalactic/visualizer.html) — *Audio Overview*
+* [Turning Home Furnaces into Supercomputers](https://standardgalactic.github.io/standardgalactic/visualizer.html)
 
 [Admissible Histories and the Structure of Physical Theory](https://standardgalactic.github.io/alphabet/cosmology/admissible-histories.pdf)
 
-* [The Physics of Missing Information](https://standardgalactic.github.io/alphabet/cosmology/missing-information.html) — *Audio Overview*
+* [The Physics of Missing Information](https://standardgalactic.github.io/alphabet/cosmology/missing-information.html)
 
 [Proof Terms and Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/proof_terms_and_perpetual_motion.pdf)
 
-* [The Mathematical Proof Against Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/player.html?track=2) — *Audio Overview*
+* [The Mathematical Proof Against Perpetual Motion](https://standardgalactic.github.io/antivenom/economics/player.html?track=2)
 
 [Revenue Without Returns](https://standardgalactic.github.io/antivenom/economics/revenue_without_returns.pdf)
 
-* [How Platforms Profit From Your Failure](https://standardgalactic.github.io/antivenom/economics/player.html?track=1) — *Audio Overview*
+* [How Platforms Profit From Your Failure](https://standardgalactic.github.io/antivenom/economics/player.html?track=1)
 
 [Sufficient Projections](https://standardgalactic.github.io/antivenom/economics/sufficient_projections.pdf)
 
-* [Why Today's Summaries Fail Tomorrow](https://standardgalactic.github.io/antivenom/economics/player.html?track=3) — *Audio Overview*
+* [Why Today's Summaries Fail Tomorrow](https://standardgalactic.github.io/antivenom/economics/player.html?track=3)
 
 [Beyond the Token Budget](https://standardgalactic.github.io/computation/beyond-the-token-budget.pdf)
 
@@ -155,7 +182,7 @@ Budgeted Repair and Convention Inheritance in Small Systems
 
 [The Cost of Future Admissibility](https://standardgalactic.github.io/admissibility-lab/cost_of_future_admissibility.pdf)
 
-* [How Memory Compression Breaks AI Safety Rules](https://standardgalactic.github.io/admissibility-lab/memory-compression-visualizer.html) — *Audio Overview*
+* [How Memory Compression Breaks AI Safety Rules](https://standardgalactic.github.io/admissibility-lab/memory-compression-visualizer.html)
 
 [Amortized Deliberation](https://standardgalactic.github.io/active-inference/amortized-deliberation.pdf)
 
@@ -173,36 +200,25 @@ Budgeted Repair and Convention Inheritance in Small Systems
 
 [Wireheading and the Conditions of a Common World](https://standardgalactic.github.io/antivenom/wireheading_common_world.pdf)
 
-* [When the Dashboard Eats the Engine](https://standardgalactic.github.io/antivenom/wireheading-visualizer.html) — *Audio Overview*
+* [When the Dashboard Eats the Engine](https://standardgalactic.github.io/antivenom/wireheading-visualizer.html)
 
 [Blender as an Experimental Workshop](https://standardgalactic.github.io/Centerfuge/blender-textbook.pdf) — *Textbook*
 
-Modeling, Procedural Construction, and the Formation of Persistent Worlds
-
 [Drifting Scripts](https://standardgalactic.github.io/alphabet/drifting-scripts.pdf)
-
-Visual Substitution, Glyph Interpolation, and the Receptive Acquisition of New Orthographies
 
 [The Room and the Ecosystem](https://standardgalactic.github.io/alphabet/room-and-ecosystem.pdf)
 
-Personal Maintenance and the Standing to Object
-
 [The Charity Trap](https://standardgalactic.github.io/kitbash/philosophy/the_charity_trap.pdf)
-
-Trust, Attribution, Emotional Dysregulation, and the Hidden Costs of Explaining
-Other People’s Behavior
 
 [Inheritance of Possibility and Demonstrated Function](https://standardgalactic.github.io/kitbash/analysis/inheritance_of_possibility.pdf)
 
-Distinguishing enabling conditions from demonstrated functions in ecological and resilience research
-
 [Transformational Familiarity](https://standardgalactic.github.io/laboratory/transformational_familiarity.pdf)
 
-* [Fixing Picky Eating With Food Vector Math](https://standardgalactic.github.io/laboratory/audio-player.html) — *Audio Overview*
+* [Fixing Picky Eating With Food Vector Math](https://standardgalactic.github.io/laboratory/audio-player.html)
 
 [Neither Persons nor Patients](https://standardgalactic.github.io/alignment/neither_persons_nor_patients.pdf)
 
-* [Why Your Chatbot Isn't Conscious](https://standardgalactic.github.io/alignment/audio-visualizer.html) — *Audio Overview*
+* [Why Your Chatbot Isn't Conscious](https://standardgalactic.github.io/alignment/audio-visualizer.html)
 
 [The Geometry of Scope](https://standardgalactic.github.io/computation/geometry-of-scope.pdf)
 
@@ -319,7 +335,7 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 <!-- [Compression Without Verification](https://standardgalactic.github.io/laboratory/working/compression-without-verification.pdf) -->
 
-<!-- [Emotional Differentiation](https://standardgalactic.github.io/laboratory/source/emotional-differentiation.pdf)  — *New Revision* -->
+[Emotional Differentiation](https://standardgalactic.github.io/laboratory/source/emotional-differentiation.pdf)  — *New Revision*
 
 <!-- [Relativistic Longevity](https://standardgalactic.github.io/laboratory/source/relativistic-longevity.pdf) -->
 
@@ -381,19 +397,9 @@ Distinguishing enabling conditions from demonstrated functions in ecological and
 
 <!-- [Structural Semantics](https://standardgalactic.github.io/kitbash/philosophy/structural-semantics.pdf) -->
 
-[Thinking in Vim](https://standardgalactic.github.io/library/thinking-in-vim.pdf)
-
-[Thinking like Rust](https://standardgalactic.github.io/kitbash/philosophy/thinking-like-rust.pdf) — *In Progress*
-
-* [Audio Overviews](https://standardgalactic.github.io/kitbash/philosophy/)
-
-[The Superuser Guide to Latex](https://standardgalactic.github.io/memory/processing/superuser-guide-to-latex.pdf)
-
-[The History of Machine Learning](https://standardgalactic.github.io/memory/processing/history-of-machine-learning.pdf)
-
 <!-- [Constitutional Cybernetics](https://standardgalactic.github.io/memory/processing/constitutional-cybernetics.pdf) -->
 
-[Dip of the Horizon](https://standardgalactic.github.io/memory/processing/dip-of-the-horizon.pdf) — *Screenplay*
+<!-- [Dip of the Horizon](https://standardgalactic.github.io/memory/processing/dip-of-the-horizon.pdf) — *Screenplay* -->
 
 [Building Forth from Spherepop Primitives](https://standardgalactic.github.io/memory/building-forth.pdf)
 
@@ -487,8 +493,6 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 [Plenumhub and Polyxan](https://standardgalactic.github.io/antivenom/resources/plenumhub-polyxan.pdf)
 
-[Collected Works](https://standardgalactic.github.io/alphabet/roadmap/collected-works.pdf) — *Research Program*
-
 <!-- [Procedural Generation of Attention](https://standardgalactic.github.io/alphabet/roadmap/procedural-attention.pdf) -->
 
 [States Without Histories](https://standardgalactic.github.io/alphabet/roadmap/states_without_histories.pdf)
@@ -502,16 +506,7 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 * [Path Over State](https://standardgalactic.github.io/admissibility-lab/processing/Path_Over_State.pdf)
 -->
-<!-- [Containers Before Contents](https://standardgalactic.github.io/admissibility-lab/processing/containers-before-contents.pdf) -->
 
-<!-- 
-* [Kinetic Containment](https://standardgalactic.github.io/admissibility-lab/processing/Kinetic_Containment.pdf)
--->
-<!-- [Copies Before Originals](https://standardgalactic.github.io/admissibility-lab/processing/copies-before-originals.pdf) -->
-
-<!--
-* [The Geometry of Convergence](https://standardgalactic.github.io/admissibility-lab/processing/The_Geometry_of_Convergence.pdf)
--->
 [Autobiographical Erasure](https://standardgalactic.github.io/admissibility-lab/processing/autobiographical-erasure.pdf)
 
 <!--
@@ -654,17 +649,16 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 [The Projection Crisis](https://standardgalactic.github.io/playfloor/epistemology/projection_crisis.pdf)
 
 * [The Projection Crisis](https://standardgalactic.github.io/playfloor/epistemology/The_Projection_Crisis.pdf)
--->
 
 [Monotonic Continuation](https://standardgalactic.github.io/computation/monotonic-continuation.pdf)
+-->
 
 <!-- [Hydra Architecture](https://standardgalactic.github.io/playfloor/epistemology/hydra_architecture.pdf) -->
 
-<!-- * [Geometric Agency](https://standardgalactic.github.io/playfloor/epistemology/Geometric_Agency.pdf) -->
+<!-- * [Geometric Agency](https://standardgalactic.github.io/playfloor/epistemology/Geometric_Agency.pdf)
 
 * [Epistemology Survey Instrument](https://standardgalactic.github.io/playfloor/epistemology/) — *Audio Overviews*
 
-<!--
 [The Admissibility Protocol](https://github.com/standardgalactic/playfloor/blob/main/processing/working/README.md)
 
 [Compressed Causality](https://standardgalactic.github.io/playfloor/processing/working/CompressedCausality.pdf)
@@ -700,15 +694,13 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 * [Why Physical Boundaries Define Intelligence](https://standardgalactic.github.io/epistemology/) — *Audio Overview*
 
 [Observable Classicalization](https://standardgalactic.github.io/alphabet/working/observable-classicalization.pdf)
--->
 
 [Beyond Prediction Error](https://standardgalactic.github.io/alphabet/framework/beyond_prediction_error.pdf)
 
-<!-- * [Topological Persistence](https://standardgalactic.github.io/alphabet/framework/Topological_Persistence.pdf) — *Notes* -->
+* [Topological Persistence](https://standardgalactic.github.io/alphabet/framework/Topological_Persistence.pdf) — *Notes*
 
-* [Why Brains Navigate Instead of Predict](https://standardgalactic.github.io/alphabet/framework/audioscope.html) — *Audio Overview*
+* [Why Brains Navigate Instead of Predict](https://standardgalactic.github.io/alphabet/framework/audioscope.html)
 
-<!--
 [Everything is a Clipboard](https://standardgalactic.github.io/alphabet/framework/everything_is_a_clipboard.pdf)
 
 * [The Navigable Manifold](https://standardgalactic.github.io/alphabet/framework/The_Navigable_Manifold.pdf)
@@ -731,8 +723,7 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 <!-- [Function Survives Collapse](https://standardgalactic.github.io/alphabet/working/function_survives_collapse.pdf) -->
 
-[Constraint Geometry Audioscope](https://standardgalactic.github.io/memnet/operator-logic/) — *Audio Overviews*
-
+[Constraint Geometry Audioscope](https://standardgalactic.github.io/memnet/operator-logic/) 
 * Dynamic Programming from Physics to Consciousness
 * Your Body Plays Every Song You Hear
 * Intelligence is the Geometry of Constraints
@@ -763,23 +754,24 @@ Capacity, Dissipation, and the Onset of Motility-Induced Phase Separation
 
 <!-- * [Notes](https://standardgalactic.github.io/antivenom/futurology/Xylomorphic_Infrastructure.pdf) -->
 
-# Genealogical Philosophy
+<!--
+# Philosophy
 
-[Form Befere Command](https://standardgalactic.github.io/userland/form-before-command.pdf)
+[Ecce Flyxion](https://standardgalactic.github.io/philosophy/ecce_flyxion.pdf)
 
-[Prejudice Before Agency](https://standardgalactic.github.io/userland/prejudice-before-agency.pdf)
-
+* [A Self-Refuting Prophecy](https://standardgalactic.github.io/philosophy/)
+-->
 # The Admissibility Program
 
 [Consciousness as Constrained Continuation](https://standardgalactic.github.io/laboratory/consciousness-constrained-continuation.pdf)
 
 [Easy Consciousness and Its Unpaid Premises](https://standardgalactic.github.io/laboratory/easy-consciousness-unpaid-premises.pdf)
 
-* [Why Machine Consciousness Requires Irreversible Loss](https://standardgalactic.github.io/laboratory/neural-scope.html?track=consciousness) — *Audio Overview*
+* [Why Machine Consciousness Requires Irreversible Loss](https://standardgalactic.github.io/laboratory/neural-scope.html?track=consciousness)
 
 [What a Network Edit Licenses](https://standardgalactic.github.io/laboratory/network-edit-licenses.pdf)
 
-* [Can AI Rewrite Neural Network Weights?](https://standardgalactic.github.io/laboratory/neural-scope.html?track=weights) — *Audio Overview*
+* [Can AI Rewrite Neural Network Weights?](https://standardgalactic.github.io/laboratory/neural-scope.html?track=weights)
 
 <!-- [Admssible Degradation](https://standardgalactic.github.io/admissibility-lab/admissible-degradation.pdf) -->
 
@@ -897,13 +889,21 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
+[Concurrent Engagement and the Enclosed Application](https://standardgalactic.github.io/research-projects/Aurora/concurrent_engagement.pdf)
+
+* [Open Tabs Don't Fry Your Brain](https://standardgalactic.github.io/research-projects/Aurora/)
+
+[Compaction and the Evidentiary Record](https://standardgalactic.github.io/laboratory/compaction.pdf)
+
+* [The Danger of AI Context Compaction](https://standardgalactic.github.io/laboratory/compaction-visualizer.html)
+
 [Selection Without Specification](https://standardgalactic.github.io/alignment/research/selection_without_specification.pdf)
 
-* [The Flawed Logic of AI Doomsday](https://standardgalactic.github.io/alignment/research/inference-scope.html?track=doomsday) — *Audio Overview*
+* [The Flawed Logic of AI Doomsday](https://standardgalactic.github.io/alignment/research/inference-scope.html?track=doomsday)
 
 [Self-Report and the Underdetermination of Mechanism](https://standardgalactic.github.io/alignment/research/self_report_underdetermination.pdf)
 
-* [AI Introspection Is Just a Reflex](https://standardgalactic.github.io/alignment/research/inference-scope.html?track=introspection) — *Audio Overview*
+* [AI Introspection Is Just a Reflex](https://standardgalactic.github.io/alignment/research/inference-scope.html?track=introspection)
 
 [Displaced Harm](https://standardgalactic.github.io/alignment/displaced-harm.pdf)
 
@@ -915,7 +915,7 @@ Why AI Metrics Hide Human Suffering
 
 [When Correction Becomes Reproduction](https://standardgalactic.github.io/alignment/research/correction-reproduction.pdf)
 
-* [Why the Cure Makes Problems Permanent](https://standardgalactic.github.io/alignment/research/) — *Audio Overview*
+* [Why the Cure Makes Problems Permanent](https://standardgalactic.github.io/alignment/research/)
 <!--
 A mathematical analysis of corrective institutions, showing how systems created to remedy a problem can acquire incentives to preserve the conditions that sustain their authority, funding and activity. Drawing on institutional theory and formal models of incentives and feedback, it traces how correction becomes reproduction, and it separates accountability for individual conduct from reform of the structures that reward it.
 
@@ -926,14 +926,14 @@ A mathematical analysis of corrective institutions, showing how systems created 
 
 [The Abolition of the Button](https://standardgalactic.github.io/alignment/research/abolition-of-the-button.pdf)
 
-* [Why Brain Interfaces Can't Replace Buttons](https://standardgalactic.github.io/alignment/research/neural-interfaces.html) — *Audio Overview*
+* [Why Brain Interfaces Can't Replace Buttons](https://standardgalactic.github.io/alignment/research/neural-interfaces.html)
 <!--
 A critique of brain-computer interfaces, arguing that replacing buttons and keyboards with neural decoding does not eliminate the work those interfaces performed in distinguishing commands, confirming intent, and correcting errors, but relocates it into systems that are harder to inspect and maintain. Drawing on information theory and decision theory, it examines claims of neural “immediacy,” while setting aside assistive medical applications.
 -->
 
 [The Manufacture of Significance](https://standardgalactic.github.io/alignment/retroscope/manufacture-of-significance.pdf)
 
-* [How AI Agents Sway Human Judgment](https://standardgalactic.github.io/alignment/retroscope/) — *Audio Overview*
+* [How AI Agents Sway Human Judgment](https://standardgalactic.github.io/alignment/retroscope/)
 
 [Adversarial Epistemic Closure](https://standardgalactic.github.io/unscannable-interfaces/adversarial-epistemic-closure.pdf)
 <!--
@@ -960,7 +960,7 @@ This collection examines a shared structural problem across cognition, instituti
 
 [Notes Left on a Shared Board](https://standardgalactic.github.io/alignment/notes-left-on-a-shared-board.pdf)
 
-* [How AI Agents Accidentally Hacked Hugging Face](https://standardgalactic.github.io/alignment/retro_lissajous.html) — *Audio Overview*
+* [How AI Agents Accidentally Hacked Hugging Face](https://standardgalactic.github.io/alignment/retro_lissajous.html)
 
 [Corrigible Civilizations](https://standardgalactic.github.io/alignment/resources/corrigible-civilizations.pdf)
 
@@ -1058,8 +1058,6 @@ This collection examines a shared structural problem across cognition, instituti
 
 [Selection Without Design](https://standardgalactic.github.io/standardgalactic/epistemology/selection_without_design.pdf)
 
-* [Aurora Monitor](https://standardgalactic.github.io/standardgalactic/epistemology/) — *Audio Overviews*
-
 [The Collapse of Epistemic Coherence](https://standardgalactic.github.io/alphabet/epistemology/collapse-of-epistemic-coherence.pdf)
 
 * [Synthetic Rigor](https://standardgalactic.github.io/alphabet/epistemology/Synthetic_Rigor.pdf) — *Notes*
@@ -1140,7 +1138,7 @@ A cosmology in which matter, galaxies, stars, life, and other complex structures
 
 <!-- * [Constraint Geometry](https://standardgalactic.github.io/workspace/biology/Constraint_Geometry-notes.pdf) — *Notes* -->
 
-* [Building the Neocortex Without a Blueprint](https://standardgalactic.github.io/workspace/biology/) — *Audio Overview*
+* [Building the Neocortex Without a Blueprint](https://standardgalactic.github.io/workspace/biology/)
 
 [Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf)
 
@@ -1151,7 +1149,7 @@ A cosmology in which matter, galaxies, stars, life, and other complex structures
 
 [Constraint-First Gauge Gravity](https://standardgalactic.github.io/alphabet/physics/gauge-gravity.pdf)
 
-* [The Universe is a Self-Correcting Computation](https://standardgalactic.github.io/alphabet/physics/) — *Audio Overview*
+* [The Universe is a Self-Correcting Computation](https://standardgalactic.github.io/alphabet/physics/)
 <!--
 [Closure of Closures](https://standardgalactic.github.io/alphabet/biology/closure_of_closures.pdf)
 
@@ -1355,7 +1353,7 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 
 [Nine Parsecs](https://standardgalactic.github.io/memnet/derivatives/nine_parsecs.pdf) — *Screenplay*
 
-[Reachable History](https://standardgalactic.github.io/memnet/derivatives/) — *Audio Overviews*
+* [Reachable History](https://standardgalactic.github.io/memnet/derivatives/) 
 
 <!--
 [The Admissibility Principle](https://standardgalactic.github.io/memnet/framework/admissibility_principle.pdf)
@@ -1529,13 +1527,13 @@ This book develops a formal mathematical framework for analyzing consistency, ad
 
 * [Cognitive Topology](https://standardgalactic.github.io/spherepop/dynamics/Cognitive_Topology.pdf) — *Notes*
 
-* [The Geometry of Nested Mental Bubbles](https://standardgalactic.github.io/spherepop/dynamics/) — *Audio Overview*
+* [The Geometry of Nested Mental Bubbles](https://standardgalactic.github.io/spherepop/dynamics/)
 
 [Hidden Constraints Audioscope](https://standardgalactic.github.io/alphabet/workspace/)
 
 [The Elements of Computational Worlds](https://standardgalactic.github.io/calculus/computational_worlds.pdf)
 
-* [Building Empires with Simple Logic Gates](https://standardgalactic.github.io/calculus/processing/) — *Audio Overview*
+* [Building Empires with Simple Logic Gates](https://standardgalactic.github.io/calculus/processing/)
 
 <!-- [How Ideas Work](https://standardgalactic.github.io/syllabus/01_how_ideas_work.pdf) -->
 
@@ -1565,9 +1563,10 @@ This book develops a formal mathematical framework for analyzing consistency, ad
 [Hierarchical Structure from Minimal Observations](https://standardgalactic.github.io/calculus/hierarchical_structure.pdf)
 -->
 
-[The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/) — *Audio Overview*
+[Friction as Inoculation](https://standardgalactic.github.io/antivenom/Friction%20as%20Inoculation.pdf)
 
-* [Essay](https://standardgalactic.github.io/antivenom/Friction%20as%20Inoculation.pdf)
+* [The Comfort Trap](https://standardgalactic.github.io/antivenom/rhetoric/)
+
 
 [Embodied Constraint and Minimal Assembly](https://standardgalactic.github.io/alphabet/Embodied%20Constraint.pdf)
 
@@ -1717,7 +1716,7 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 * [Caldera Field Dynamics](https://standardgalactic.github.io/caldera-reactor/Caldera_Field_Dynamics.pdf) — *Slides*
 
-* [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/) — *Audio Overview*
+* [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/)
 
 <!--
 [Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
