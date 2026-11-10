@@ -101,6 +101,14 @@ Some results could have issues.
 
 # Work in Progress
 
+[Continuity Spaces](https://standardgalactic.github.io/continuity-spaces/continuity-spaces.pdf)
+
+* [Replacing Files and Passwords with Continuity Spaces](https://standardgalactic.github.io/continuity-spaces/)
+
+[Expyrotic Cosmology](https://standardgalactic.github.io/antivenom/expyrotic-cosmology.pdf)
+
+* [How Cosmic Memory Could Replace Inflation](https://standardgalactic.github.io/antivenom/)
+
 [Closure Conditions on the Description of Bounded Systems](https://standardgalactic.github.io/laboratory/markov-blankets/closure-conditions.pdf)
 
 * [Math Cannot Prove You Are an Individual](https://standardgalactic.github.io/laboratory/markov-blankets/)
