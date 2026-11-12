@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Toolchains Are the Real AI Moat</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --case: #26241e;
+    --edge: #635844;
+    --ink: #eee4ce;
+    --muted: #c3b59a;
+    --amber: #e4bc78;
+    --green: #b8e19a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: clamp(12px, 4vw, 48px);
+    background: #171611;
+    color: var(--ink);
+    font: 15px/1.5 ui-monospace, Consolas, monospace;
+  }
+
+  main {
+    max-width: 880px;
+    margin: auto;
+    padding: clamp(16px, 4vw, 36px);
+    background: var(--case);
+    border: 1px solid var(--edge);
+    border-radius: 8px;
+    box-shadow: 0 12px 40px #0006;
+  }
+
+  h1 {
+    margin: 0 0 20px;
+    font: normal clamp(30px, 6vw, 56px)/1.05 Georgia, serif;
+    max-width: 18ch;
+  }
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: clamp(180px, 42vw, 330px);
+    background: #0b120c;
+    border: 6px solid #151611;
+    border-radius: 14px;
+    outline: 1px solid var(--edge);
+  }
+
+  #caption {
+    display: flex;
+    align-items: center;
+    min-height: 5em;
+    margin: 18px 0;
+    padding: 12px 16px;
+    border-left: 2px solid var(--amber);
+    background: #1c1b16;
+    font: clamp(18px, 3vw, 24px)/1.4 Georgia, serif;
+    overflow-wrap: anywhere;
+  }
+
+  #caption:empty::before {
+    content: "\00a0";
+  }
+
+  .controls, .time {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  button, select {
+    min-height: 44px;
+    padding: 6px 12px;
+    border: 1px solid var(--edge);
+    border-radius: 4px;
+    background: #393429;
+    color: var(--ink);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  #play { color: var(--amber); min-width: 7ch; }
+  #seek { width: 100%; margin: 15px 0 4px; accent-color: var(--amber); }
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+  .time { justify-content: space-between; color: var(--muted); }
+  footer { margin-top: 18px; }
+  a { color: var(--amber); text-underline-offset: 4px; }
+  #status { color: var(--muted); font-size: 13px; }
+  #status:empty { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Software Toolchains Are the Real AI Moat</h1>
+  <canvas id="scope" aria-hidden="true"></canvas>
+  <div id="caption" aria-label="Subtitles"></div>
+
+  <div class="controls">
+    <button id="play" type="button">Play</button>
+    <button id="back" type="button" aria-label="Back 10 seconds">−10 s</button>
+    <button id="forward" type="button" aria-label="Forward 10 seconds">+10 s</button>
+    <button id="cc" type="button" aria-pressed="true">CC on</button>
+    <select id="mode" aria-label="Visualization">
+      <option value="scope">Scope</option>
+      <option value="xy">Lissajous</option>
+    </select>
+    <select id="speed" aria-label="Playback speed">
+      <option value=".75">0.75×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.25">1.25×</option>
+      <option value="1.5">1.5×</option>
+      <option value="2">2×</option>
+    </select>
+  </div>
+
+  <input id="seek" type="range" min="0" max="1000" step="1"
+         value="0" aria-label="Playback position" disabled>
+  <div class="time">
+    <span id="elapsed">0:00</span>
+    <span id="total">0:00</span>
+  </div>
+
+  <footer>
+    <a href="https://standardgalactic.github.io/standardgalactic/opinion/compute-access.pdf"
+       target="_blank" rel="noopener"
+       aria-label="Read Compute Access and Research Diversity in a new tab">
+      Read Compute Access and Research Diversity
+    </a>
+    <p id="status" role="status"></p>
+  </footer>
+
+  <audio id="audio" preload="metadata"
+         src="./Software_Toolchains_Are_the_Real_AI_Moat.mp3">
+    <track id="subtitles" kind="subtitles" srclang="en" label="English"
+           src="./Software_Toolchains_Are_the_Real_AI_Moat.vtt">
+  </audio>
+</main>
+
+<script>
+  const byId = id => document.getElementById(id);
+  const audio = byId('audio');
+  const play = byId('play');
+  const seek = byId('seek');
+  const caption = byId('caption');
+  const subtitles = byId('subtitles');
+  const status = byId('status');
+  const canvas = byId('scope');
+  const pen = canvas.getContext('2d');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+
+  let captionsOn = true;
+  let context;
+  let analyser;
+  let samples;
+  let frame = 0;
+  let audioError = '';
+  let captionError = '';
+
+  function showStatus() {
+    status.textContent = [audioError, captionError].filter(Boolean).join(' ');
+  }
+
+  function timeLabel(seconds) {
+    const value = Number.isFinite(seconds) ? Math.floor(seconds) : 0;
+    return `${Math.floor(value / 60)}:${String(value % 60).padStart(2, '0')}`;
+  }
+
+  function updatePosition() {
+    const duration = audio.duration;
+    const ready = Number.isFinite(duration) && duration > 0;
+    seek.disabled = !ready;
+    if (ready) seek.value = audio.currentTime / duration * 1000;
+
+    const elapsed = timeLabel(audio.currentTime);
+    const total = timeLabel(duration);
+    byId('elapsed').textContent = elapsed;
+    byId('total').textContent = total;
+    seek.setAttribute('aria-valuetext', `${elapsed} of ${total}`);
+  }
+
+  function updateCaptions() {
+    const cues = captionsOn ? subtitles.track.activeCues : null;
+    const text = Array.from(cues || [], cue => cue.getCueAsHTML().textContent)
+      .join(' ');
+    if (caption.textContent !== text) caption.textContent = text;
+  }
+
+  subtitles.addEventListener('error', () => {
+    captionError = 'The VTT subtitles could not be loaded.';
+    showStatus();
+  });
+  subtitles.track.addEventListener('cuechange', updateCaptions);
+  subtitles.track.mode = 'hidden';
+
+  byId('cc').onclick = event => {
+    captionsOn = !captionsOn;
+    event.currentTarget.textContent = captionsOn ? 'CC on' : 'CC off';
+    event.currentTarget.setAttribute('aria-pressed', String(captionsOn));
+    updateCaptions();
+  };
+
+  for (const event of ['loadedmetadata', 'durationchange', 'timeupdate', 'seeked']) {
+    audio.addEventListener(event, updatePosition);
+  }
+
+  seek.addEventListener('input', () => {
+    if (!seek.disabled) audio.currentTime = audio.duration * Number(seek.value) / 1000;
+  });
+
+  function skip(seconds) {
+    if (seek.disabled) return;
+    audio.currentTime = Math.max(0, Math.min(audio.duration, audio.currentTime + seconds));
+  }
+
+  byId('back').onclick = () => skip(-10);
+  byId('forward').onclick = () => skip(10);
+  byId('speed').onchange = event => {
+    audio.playbackRate = Number(event.currentTarget.value);
+  };
+
+  async function togglePlayback() {
+    if (!audio.paused) {
+      audio.pause();
+      return;
+    }
+
+    try {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!context && AudioContextClass) {
+        context = new AudioContextClass();
+        analyser = context.createAnalyser();
+        analyser.fftSize = 2048;
+        samples = new Float32Array(analyser.fftSize);
+        const source = context.createMediaElementSource(audio);
+        source.connect(analyser);
+        analyser.connect(context.destination);
+      }
+
+      const resume = context ? context.resume() : Promise.resolve();
+      await Promise.all([resume, audio.play()]);
+      audioError = '';
+    } catch {
+      audioError = 'Could not play the MP3. Check that it is beside this page.';
+    }
+    showStatus();
+  }
+
+  play.addEventListener('click', togglePlayback);
+  audio.addEventListener('error', () => {
+    audioError = 'Could not load the MP3. Check that it is beside this page.';
+    showStatus();
+  });
+
+  function syncPlayback() {
+    play.textContent = audio.ended ? 'Replay' : audio.paused ? 'Play' : 'Pause';
+    redraw();
+  }
+
+  for (const event of ['play', 'pause', 'ended']) {
+    audio.addEventListener(event, syncPlayback);
+  }
+
+  function draw() {
+    frame = 0;
+    if (!pen) return;
+
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    const live = analyser && !audio.paused && !audio.ended && !reducedMotion.matches;
+
+    pen.fillStyle = '#0b120c';
+    pen.fillRect(0, 0, width, height);
+    pen.beginPath();
+    for (let x = width / 2 % 28; x < width; x += 28) {
+      pen.moveTo(x, 0);
+      pen.lineTo(x, height);
+    }
+    for (let y = height / 2 % 28; y < height; y += 28) {
+      pen.moveTo(0, y);
+      pen.lineTo(width, y);
+    }
+    pen.strokeStyle = '#253725';
+    pen.lineWidth = 1;
+    pen.stroke();
+
+    if (live) analyser.getFloatTimeDomainData(samples);
+    const xy = byId('mode').value === 'xy';
+    const amplitude = Math.min(width, height) * .42;
+
+    pen.beginPath();
+    for (let i = 0; i < 512; i++) {
+      const fraction = i / 511;
+      const angle = fraction * Math.PI * 2;
+      const x = xy
+        ? width / 2 + amplitude * (live ? samples[i * 2] : .55 * Math.sin(3 * angle + .5))
+        : fraction * width;
+      const y = height / 2 + amplitude * (live
+        ? samples[i * 2 + (xy ? 96 : 0)]
+        : xy ? .55 * Math.sin(2 * angle) : 0);
+
+      if (i === 0) pen.moveTo(x, y);
+      else pen.lineTo(x, y);
+    }
+    pen.strokeStyle = '#b8e19a';
+    pen.lineWidth = 1.5;
+    pen.stroke();
+
+    if (live) frame = requestAnimationFrame(draw);
+  }
+
+  function redraw() {
+    if (frame) cancelAnimationFrame(frame);
+    draw();
+  }
+
+  new ResizeObserver(() => {
+    const scale = Math.min(devicePixelRatio || 1, 2);
+    canvas.width = Math.round(canvas.clientWidth * scale);
+    canvas.height = Math.round(canvas.clientHeight * scale);
+    if (pen) pen.setTransform(scale, 0, 0, scale, 0, 0);
+    redraw();
+  }).observe(canvas);
+
+  byId('mode').addEventListener('change', redraw);
+  reducedMotion.addEventListener('change', redraw);
+</script>
+</body>
+</html>

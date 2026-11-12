@@ -101,9 +101,51 @@ Some results could have issues.
 
 # Work in Progress
 
+[Unrefusable Prompts](https://standardgalactic.github.io/antivenom/unrefusable-prompts.pdf)
+
+* [How Software Defaults Steal Developer Credit](https://standardgalactic.github.io/antivenom/unrefusable-prompts-oscilloscope.html)
+
+[Relegated Structure](https://standardgalactic.github.io/library/relegated-structure.pdf)
+
+* [Why System 1 and 2 Don't Exist](https://standardgalactic.github.io/library/relegated-structure-oscilloscope.html)
+
+[Artificial Organs and Transhuman Trajectories](https://standardgalactic.github.io/laboratory/artificial-organs-textbook.pdf)
+
+* [The Thermodynamic Limits of Artificial Organs](https://standardgalactic.github.io/laboratory/artificial-organs-visualizer.html)
+
+[Compute Access and Research Diversity](https://standardgalactic.github.io/standardgalactic/opinion/compute-access.pdf)
+
+* [Software Toolchains Are the Real AI Moat](https://standardgalactic.github.io/standardgalactic/opinion/)
+
+[Photonic GPU Cloud](https://standardgalactic.github.io/laboratory/photonic-gpu-cloud.pdf)
+
+* [Hiding AI Supercomputers in Mall Basements](https://standardgalactic.github.io/laboratory/cloud-visualizer.html)
+
+[Sliding Thermal Carriers](https://standardgalactic.github.io/laboratory/sliding-thermal-carriers.pdf)
+
+* [Cooling Processors With Sliding Solid Metal](https://standardgalactic.github.io/laboratory/thermal-visualizer.html)
+
+[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/computing/magnetic-fluidic-computing.pdf)
+
+* [Computing with Circulating Fluid Pods](https://standardgalactic.github.io/library/computing/)
+
+[Proof Abundance](https://standardgalactic.github.io/portable-warrant/proof-abundance.pdf)
+
+* [Why Automated Verification Does Not Equal Understanding](https://standardgalactic.github.io/portable-warrant/proof-abundance-oscilloscope.html)
+
+[Sufficiency Without Standing](https://standardgalactic.github.io/portable-warrant/sufficiency-without-standing.pdf)
+
+* [How Corporate Law Sold Twitter](https://standardgalactic.github.io/portable-warrant/sufficiency-visualizer.html)
+
+[Fold Visualizer](https://standardgalactic.github.io/portable-warrant/fold-visualizer.html)
+
 [Continuity Spaces](https://standardgalactic.github.io/continuity-spaces/continuity-spaces.pdf)
 
 * [Replacing Files and Passwords with Continuity Spaces](https://standardgalactic.github.io/continuity-spaces/)
+
+[Symbolic Correspondence Generator](https://standardgalactic.github.io/correspondence/correspondence-spec.pdf) — *Technical Specification*
+
+* [100,000 Zero Hallucination Emails Without LLMs](https://standardgalactic.github.io/correspondence/)
 
 [Expyrotic Cosmology](https://standardgalactic.github.io/antivenom/expyrotic-cosmology.pdf)
 
@@ -112,6 +154,10 @@ Some results could have issues.
 [Closure Conditions on the Description of Bounded Systems](https://standardgalactic.github.io/laboratory/markov-blankets/closure-conditions.pdf)
 
 * [Math Cannot Prove You Are an Individual](https://standardgalactic.github.io/laboratory/markov-blankets/)
+
+[The Sufficiency of Local Exchange](https://standardgalactic.github.io/kitbash/collective-intelligence/suffiency-of-local-exchange.pdf)
+
+[Symbolic Swarm Specification](https://standardgalactic.github.io/kitbash/collective-intelligence/symbolic-swarm-specification.pdf)
 
 [My Research Frameworks](https://standardgalactic.github.io/voice-cloning/) — *Voice Clone*
 
@@ -139,10 +185,15 @@ Some results could have issues.
 
 * [Pneumatic Paper Robots Without Central Computers](https://standardgalactic.github.io/robotics/synchrony-and-release.html) 
 
+[Constructing Programming Languages from SpherePOP Primitives](https://standardgalactic.github.io/spherepop-kernel/spherepop-languages.pdf)
+
+* [Programming Languages Built on Indestructible Ledgers](https://standardgalactic.github.io/spherepop-kernel/)
+
+<!--
 [Spherepop in Action](https://standardgalactic.github.io/circuit-analysis/spherepop-in-action.pdf)
 
 * [Why Mathematical Circuit Models Fail Reality](https://standardgalactic.github.io/circuit-analysis/)
-
+-->
 [The Architecture of Continuity](https://standardgalactic.github.io/computation/architecture_of_continuity.pdf)
 
 [Magnificant Monotony](https://standardgalactic.github.io/computation/magnificent_monotony.pdf)
@@ -249,6 +300,8 @@ Budgeted Repair and Convention Inheritance in Small Systems
 [Steel Sky](https://standardgalactic.github.io/steel-sky/)
 
 [Generative Film](https://standardgalactic.github.io/kitbash/generative-film/generative-film.pdf)
+
+[Hypernormal Cinema](https://standardgalactic.github.io/kitbash/generative-film/hypernormal-cinema.pdf)
 
 [The Supplied Purpose](https://standardgalactic.github.io/userland/supplied-purpose.pdf)
 
@@ -899,6 +952,14 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
+[Platform Control](https://standardgalactic.github.io/workshop/platform-control.pdf)
+
+* [How Algorithms Auction Your Attention](https://standardgalactic.github.io/workshop/platform-control-visualizer.html)
+
+[Institutional Incentives and the Recurrence of Harm](https://standardgalactic.github.io/alignment/institutional-incentives.pdf)
+
+* [Why Systems Keep Manufacturing Bad Actors](https://standardgalactic.github.io/alignment/index.html) <!-- *Audio Overview* -->
+
 [The Obligation to Grow](https://standardgalactic.github.io/antivenom/obligation-to-grow.pdf)
 
 * [Why Platforms Force You to Grow](https://standardgalactic.github.io/antivenom/obligation-to-grow.html)
@@ -1084,9 +1145,17 @@ This collection examines a shared structural problem across cognition, instituti
 -->
 # Mechanistic Frameworks
 
-[The Smoothness Paradox](https://standardgalactic.github.io/cosmology/smoothness-paradox.pdf)
+[The Smoothness Paradox](https://standardgalactic.github.io/cosmology/smoothness-paradox.pdf) — *New Revision*
 
 A cosmology in which matter, galaxies, stars, life, and other complex structures arise as localized distinctions within a continuous physical plenum and persist through ongoing processes of repair and reconstruction. Cosmic evolution is understood as a changing balance between differentiation and smoothing, with entropy corresponding to the progressive loss of recoverable distinctions and usable gradients. As structure is exhausted toward heat death, the theory asks whether the disappearance of scale, records, and other physical differences could make cosmological continuation possible without requiring the universe to repeat its previous history.
+
+[Where Fields Meet](https://standardgalactic.github.io/cosmology/where-fields-meet.pdf)
+
+* [Physics Without a Spacetime Grid](https://standardgalactic.github.io/cosmology/)
+
+[Hierarchical Synchronization](https://standardgalactic.github.io/workshop/hierarchical-synchronization.pdf)
+
+* [How Local Training Warps Global AI](https://standardgalactic.github.io/workshop/hierarchical-synchronization-visualizer.html)
 
 [Exact Integer Inference](https://standardgalactic.github.io/exact-integer-inference/exact-integer-inference.pdf)
 
@@ -1162,7 +1231,7 @@ A cosmology in which matter, galaxies, stars, life, and other complex structures
 
 * [Building the Neocortex Without a Blueprint](https://standardgalactic.github.io/workspace/biology/)
 
-[Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf)
+[Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf) — *New Revision*
 
 <!-- [The Ecology of Thought](https://standardgalactic.github.io/spherepop/textbook/ecology-of-thought.pdf) -->
 
@@ -1451,6 +1520,8 @@ An exploration of difficulty, abstraction, and intelligence that treats cognitio
 <!-- [Escape Velocity](https://standardgalactic.github.io/antivenom/boundaries/escape_velocity.pdf) -->
 
 # Research Projects
+
+[Blender Experiments](https://github.com/standardgalactic/blender-experiments)
 <!--
 [Univalent Photonics](https://standardgalactic.github.io/alphabet/physics/univalent-photonics.pdf)
 
@@ -1740,17 +1811,6 @@ Updated main website, [provethatyouarenotarobot.com](https://standardgalactic.gi
 
 * [The Caldera Reactor Thinks with Water](https://standardgalactic.github.io/caldera-reactor/)
 
-<!--
-[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/brainstorming-session-detailed.html)
-
-[Magnetic Fluidic Computing](https://standardgalactic.github.io/library/computing/magnetic-fluidic-computing.pdf)
-
-* [Notes](https://standardgalactic.github.io/library/computing/Magnetic_Fluidic_Computing.pdf)
-
-* [Graphic Novel](https://standardgalactic.github.io/library/computing/magnetic-comic.pdf)
-
-* [Audio Overview](https://standardgalactic.github.io/library/computing/)
--->
 [What I'm working on](https://github.com/standardgalactic?tab=repositories&q=&type=source&language=&sort=)
 
 <img src="rate-my-setup.png" width="350">
