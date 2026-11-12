@@ -101,9 +101,27 @@ Some results could have issues.
 
 # Work in Progress
 
+[Relegated Structure](https://standardgalactic.github.io/library/relegated-structure.pdf)
+
+* [Why System 1 and 2 Don't Exist](https://standardgalactic.github.io/library/relegated-structure-oscilloscope.html)
+
+[Proof Abundance](https://standardgalactic.github.io/portable-warrant/proof-abundance.pdf)
+
+* [Why Automated Verification Does Not Equal Understanding](https://standardgalactic.github.io/portable-warrant/proof-abundance-oscilloscope.html)
+
+[Sufficiency Without Standing](https://standardgalactic.github.io/portable-warrant/sufficiency-without-standing.pdf)
+
+* [How Corporate Law Sold Twitter](https://standardgalactic.github.io/portable-warrant/sufficiency-visualizer.html)
+
+[Fold Visualizer](https://standardgalactic.github.io/portable-warrant/fold-visualizer.html)
+
 [Continuity Spaces](https://standardgalactic.github.io/continuity-spaces/continuity-spaces.pdf)
 
 * [Replacing Files and Passwords with Continuity Spaces](https://standardgalactic.github.io/continuity-spaces/)
+
+[Symbolic Correspondence Generator](https://standardgalactic.github.io/correspondence/correspondence-spec.pdf) — *Technical Specification*
+
+* [100,000 Zero Hallucination Emails Without LLMs](https://standardgalactic.github.io/correspondence/)
 
 [Expyrotic Cosmology](https://standardgalactic.github.io/antivenom/expyrotic-cosmology.pdf)
 
@@ -139,10 +157,15 @@ Some results could have issues.
 
 * [Pneumatic Paper Robots Without Central Computers](https://standardgalactic.github.io/robotics/synchrony-and-release.html) 
 
+[Constructing Programming Languages from SpherePOP Primitives](https://standardgalactic.github.io/spherepop-kernel/spherepop-languages.pdf)
+
+* [Programming Languages Built on Indestructible Ledgers](https://standardgalactic.github.io/spherepop-kernel/)
+
+<!--
 [Spherepop in Action](https://standardgalactic.github.io/circuit-analysis/spherepop-in-action.pdf)
 
 * [Why Mathematical Circuit Models Fail Reality](https://standardgalactic.github.io/circuit-analysis/)
-
+-->
 [The Architecture of Continuity](https://standardgalactic.github.io/computation/architecture_of_continuity.pdf)
 
 [Magnificant Monotony](https://standardgalactic.github.io/computation/magnificent_monotony.pdf)
@@ -899,6 +922,14 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
+[Platform Control](https://standardgalactic.github.io/workshop/platform-control.pdf)
+
+* [How Algorithms Auction Your Attention](https://standardgalactic.github.io/workshop/platform-control-visualizer.html)
+
+[Institutional Incentives and the Recurrence of Harm](https://standardgalactic.github.io/alignment/institutional-incentives.pdf)
+
+* [Why Systems Keep Manufacturing Bad Actors](https://standardgalactic.github.io/alignment/index.html) <!-- *Audio Overview* -->
+
 [The Obligation to Grow](https://standardgalactic.github.io/antivenom/obligation-to-grow.pdf)
 
 * [Why Platforms Force You to Grow](https://standardgalactic.github.io/antivenom/obligation-to-grow.html)
@@ -1084,9 +1115,17 @@ This collection examines a shared structural problem across cognition, instituti
 -->
 # Mechanistic Frameworks
 
-[The Smoothness Paradox](https://standardgalactic.github.io/cosmology/smoothness-paradox.pdf)
+[The Smoothness Paradox](https://standardgalactic.github.io/cosmology/smoothness-paradox.pdf) — *New Revision*
 
 A cosmology in which matter, galaxies, stars, life, and other complex structures arise as localized distinctions within a continuous physical plenum and persist through ongoing processes of repair and reconstruction. Cosmic evolution is understood as a changing balance between differentiation and smoothing, with entropy corresponding to the progressive loss of recoverable distinctions and usable gradients. As structure is exhausted toward heat death, the theory asks whether the disappearance of scale, records, and other physical differences could make cosmological continuation possible without requiring the universe to repeat its previous history.
+
+[Where Fields Meet](https://standardgalactic.github.io/cosmology/where-fields-meet.pdf)
+
+* [Physics Without a Spacetime Grid](https://standardgalactic.github.io/cosmology/)
+
+[Hierarchical Synchronization](https://standardgalactic.github.io/workshop/hierarchical-synchronization.pdf)
+
+* [How Local Training Warps Global AI](https://standardgalactic.github.io/workshop/hierarchical-synchronization-visualizer.html)
 
 [Exact Integer Inference](https://standardgalactic.github.io/exact-integer-inference/exact-integer-inference.pdf)
 
@@ -1162,7 +1201,7 @@ A cosmology in which matter, galaxies, stars, life, and other complex structures
 
 * [Building the Neocortex Without a Blueprint](https://standardgalactic.github.io/workspace/biology/)
 
-[Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf)
+[Never Predict Noise](https://standardgalactic.github.io/alphabet/Never-Predict-Noise.pdf) — *New Revision*
 
 <!-- [The Ecology of Thought](https://standardgalactic.github.io/spherepop/textbook/ecology-of-thought.pdf) -->
 
