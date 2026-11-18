@@ -101,6 +101,12 @@ Some results could have issues.
 
 # Work in Progress
 
+[Local Failure Mechanisms and Global Forecasts](https://standardgalactic.github.io/alignment/local-failure-global-forecast.pdf)
+
+* [The Flawed Math of AI Doom Headlines](https://standardgalactic.github.io/alignment/local-failure-oscilloscope.html)
+
+[Lossless Projection](https://standardgalactic.github.io/laboratory/lossless-projection.pdf)
+
 [Evidentiary Authority and the Acceleration of AI](https://standardgalactic.github.io/research/evidentiary-authority.pdf)
 
 * [Why AI Safety Branding Accelerates Risk](https://standardgalactic.github.io/research/?track=1)
@@ -326,8 +332,9 @@ Budgeted Repair and Convention Inheritance in Small Systems
 [Adversaria: A Public Claim Graph](https://github.com/standardgalactic/adversaria) 
 
 [Making Thought Visible](https://github.com/standardgalactic/drawing/blob/main/README.md)
-
+<!--
 [Artificial Meat](https://github.com/standardgalactic/research-projects/blob/main/engineering/README.md)
+-->
 
 [Cutaway Reader](https://github.com/standardgalactic/cutaway-reader/blob/main/README.md)
 
@@ -963,6 +970,14 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 [Audio Overviews](https://standardgalactic.github.io/playfloor/working/)
 -->
 # Alignment Research
+
+[Moral Coherence and the Boundary of the Moral Community](https://standardgalactic.github.io/antivenom/ethics/moral-coherence.pdf)                                  
+
+* [Why Animal Ethics Fail Mathematical Logic](https://standardgalactic.github.io/antivenom/ethics/)
+
+[The Manufacture of Participation](https://standardgalactic.github.io/workshop/manufacture-of-participation.pdf)
+
+* [How Algorithms Turned Creators Into Inventory](https://standardgalactic.github.io/workshop/)
 
 [Platform Control](https://standardgalactic.github.io/workshop/platform-control.pdf)
 
