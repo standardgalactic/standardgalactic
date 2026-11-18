@@ -49,20 +49,8 @@ Play the *[Spellpop](https://standardgalactic.github.io/spherepop/spellpop.html)
 [Arabic Vocabulary](https://standardgalactic.github.io/spherepop/lexicon-terminal-v2.html) 
 
 [Etch-a-Sketch Simulator](https://standardgalactic.github.io/spherepop/etch-pipsqueak.html) 
-
-[Psyonic Visualizer](https://standardgalactic.github.io/standardgalactic/Music/)
-
-
 <!--
-These small browser programs function as experimental interfaces for thinking about computation, language, and geometry rather than as conventional games. Each tool forms a compact interactive system in which the user progressively constrains a space of possibilities through simple actions, demonstrating how structured outcomes emerge from sequences of small decisions.
-
-The vocabulary trainer illustrates this directly. Each round presents several alternatives, and the learner eliminates incorrect possibilities until the correct translation remains — a constraint-selection process rather than brute enumeration. The program's weighted selection mechanism increases a card's weight after errors and reduces it after correct responses, guiding attention toward weaker vocabulary without complex scheduling. Each entry stores the Arabic form, the English translation, a domain tag, and learning state variables, allowing the same dataset to support topology, category theory, linguistics, or any other thematic domain with minimal structural change. The CRT-style interface, scanlines, and phosphor glow reinforce the sense of a small computational instrument rather than a conventional application.
-
-The Etch-Terminal tool follows the same philosophy applied to geometry. Each movement of the virtual knobs adds another constraint to the final curve. The Pipsqueak language extends this by allowing curves to be described symbolically: a short script expands into a deterministic sequence of drawing steps whose construction history can be replayed at any speed.
-
-The session codes used across both tools encode only the information needed to recreate the interaction. A short string functions as a compressed history of the session.
-
-Taken together, these projects treat the user's actions as part of the algorithm and expose the generative process behind the result — sitting somewhere between educational tools, programming toys, and demonstrations of how complex structures arise from simple rule-based interaction.
+[Psyonic Visualizer](https://standardgalactic.github.io/standardgalactic/Music/)
 
 [Old Art Archive](https://standardgalactic.github.io/archive)
 
@@ -70,9 +58,8 @@ Taken together, these projects treat the user's actions as part of the algorithm
 
 *New* [Ephemera](https://github.com/standardgalactic/ephemera)— *Odds and Ends*
 
--->
-
 [Audio Field Monitor](https://standardgalactic.github.io/guardrails/stack/)
+-->
 
 # Parody Music
 
@@ -100,6 +87,76 @@ Some results could have issues.
 --> 
 
 # Work in Progress
+
+[Fluency and Feasibility](https://standardgalactic.github.io/computation/interfaces/fluency-and-feasibility.pdf)
+
+* [The Real Bottleneck in Modern Computing](https://standardgalactic.github.io/computation/interfaces/)
+
+[Confidence Is Not Certification](https://standardgalactic.github.io/computation/epistemology/Confidence_Is_Not_Certification.pdf)
+
+* [Audio Overview](https://standardgalactic.github.io/computation/epistemology/)
+
+[Commercial Light Cones](https://standardgalactic.github.io/economics/commercial-light-cones.pdf)
+
+* [How AI Dissolves Industrial Boundaries](https://standardgalactic.github.io/economics/)
+
+[Spherepop Development Kernel](https://standardgalactic.github.io/spherepop-kernel/development-protocol/spec/spherepop_development_protocol.pdf)
+
+* [The Spherepop Protocol for AI Code Maintenance](https://standardgalactic.github.io/spherepop-kernel/audioscope)
+
+* [Project](https://github.com/standardgalactic/spherepop-kernel/blob/main/development-protocol/README.md)
+
+[Persistence and Accountable Authorship in Language Model Systems](https://standardgalactic.github.io/cognition-research/persistence-authorship.pdf)
+
+* [Why AI Language Models Aren't Authors](https://standardgalactic.github.io/cognition-research/)
+
+[Corporate Authorship and Verification Externalities in Automated Mathematical Research](https://standardgalactic.github.io/research/mathematical-claims.pdf)
+
+* [The Hidden Labor Behind AI Math](https://standardgalactic.github.io/research/audioscope.html)
+
+[Computational Dispossession](https://standardgalactic.github.io/research/computational-dispossession.pdf)
+
+* [Are You Just Renting Your Computer?](https://standardgalactic.github.io/research/computational-dispossession-oscilloscope.html)
+
+[Conditional Optimality](https://standardgalactic.github.io/alignment/conditional-optimality.pdf)
+
+* [The Hidden Trapdoors of Optimization Math](https://standardgalactic.github.io/alignment/conditional-optimality-oscilloscope.html)
+
+[Self-Triggerable Reward](https://standardgalactic.github.io/workshop/self-triggerable-reward.pdf)
+
+* [How Motor Resonance Shapes Human Attraction](https://standardgalactic.github.io/workshop/self-triggerable-reward-oscilloscope.html)
+
+[The Ecology of Neoteny](https://standardgalactic.github.io/alphabet/The_Ecology_of_Neoteny.pdf)
+
+* [Why Adult Curiosity Needs Protected Time](https://standardgalactic.github.io/alphabet/ecology-of-neoteny-oscilloscope.html)
+
+[Deferred Failure](https://standardgalactic.github.io/laboratory/deferred-failure.pdf)
+
+* [Why Replacing Experts With AI Backfires](https://standardgalactic.github.io/laboratory/automation-oscilloscope.html)
+
+<!--
+[Burdens of Proof](https://standardgalactic.github.io/alignment/burdens-of-proof.pdf)
+
+* [Why Max Tegmark's AI Warning Fails](https://standardgalactic.github.io/alignment/burdens-of-proof-oscilloscope.html)
+-->
+[Compressed Records](https://standardgalactic.github.io/blind-spots/compressed-records.pdf)
+
+* [The Mathematics of Information Loss](https://standardgalactic.github.io/blind-spots/?track=information-loss)
+
+<!--
+[The Performance of Legitimacy](https://standardgalactic.github.io/blind-spots/performance-of-legitimacy.pdf)
+
+* [Why Fake Authority Looks Real](https://standardgalactic.github.io/blind-spots/?track=fake-authority)
+-->
+[Question Relative Sufficiency](https://standardgalactic.github.io/blind-spots/question-relative-sufficiency.pdf)
+
+* [Why AI Compression Creates Dangerous Blind Spots](https://standardgalactic.github.io/blind-spots/?track=blind-spots)
+
+[Local Failure Mechanisms and Global Forecasts](https://standardgalactic.github.io/alignment/local-failure-global-forecast.pdf)
+
+* [The Flawed Math of AI Doom Headlines](https://standardgalactic.github.io/alignment/local-failure-oscilloscope.html)
+
+[Lossless Projection](https://standardgalactic.github.io/laboratory/lossless-projection.pdf)
 
 [Evidentiary Authority and the Acceleration of AI](https://standardgalactic.github.io/research/evidentiary-authority.pdf)
 
@@ -251,8 +308,6 @@ Budgeted Repair and Convention Inheritance in Small Systems
 [The Solvency of Appearances](https://standardgalactic.github.io/antivenom/projects/solvency_of_appearances.pdf)
 -->
 
-[The Hotel Question](https://standardgalactic.github.io/golab/the-hotel-question.pdf)
-
 [Swype Hero Specifications](https://standardgalactic.github.io/sandbox/SwypeHero-Specification.pdf)
 
 [The Conditions of Standing](https://standardgalactic.github.io/conditions-of-standing/conditions-of-standing.pdf)
@@ -326,8 +381,9 @@ Budgeted Repair and Convention Inheritance in Small Systems
 [Adversaria: A Public Claim Graph](https://github.com/standardgalactic/adversaria) 
 
 [Making Thought Visible](https://github.com/standardgalactic/drawing/blob/main/README.md)
-
+<!--
 [Artificial Meat](https://github.com/standardgalactic/research-projects/blob/main/engineering/README.md)
+-->
 
 [Cutaway Reader](https://github.com/standardgalactic/cutaway-reader/blob/main/README.md)
 
@@ -964,6 +1020,24 @@ Admissibility Manifolds, Projection Geometry, and the Emergence of Observable Ph
 -->
 # Alignment Research
 
+[Software Degradation](https://standardgalactic.github.io/alignment/software-degradation.pdf)
+
+* [How AI Code Degrades Software Quality](https://standardgalactic.github.io/alignment/software-degradation-oscilloscope.html)
+
+[Representational Complexity](https://standardgalactic.github.io/sandbox/representational-complexity.pdf)
+
+* [Why Seamless Documentaries Distort History](https://standardgalactic.github.io/sandbox/representational-complexity-oscilloscope.html)
+
+An information-theoretic framework for analyzing documentaries, dramatizations, and historical narratives through constrained description length, evidentiary distortion, and grammaticalization. Examines how familiar narrative conventions reduce communicative complexity while increasing hidden burdens of justification, erasing historical distinctions and producing unstable representations of events and individuals.
+
+[Moral Coherence and the Boundary of the Moral Community](https://standardgalactic.github.io/antivenom/ethics/moral-coherence.pdf)                                  
+
+* [Why Animal Ethics Fail Mathematical Logic](https://standardgalactic.github.io/antivenom/ethics/)
+
+[The Manufacture of Participation](https://standardgalactic.github.io/workshop/manufacture-of-participation.pdf)
+
+* [How Algorithms Turned Creators Into Inventory](https://standardgalactic.github.io/workshop/)
+
 [Platform Control](https://standardgalactic.github.io/workshop/platform-control.pdf)
 
 * [How Algorithms Auction Your Attention](https://standardgalactic.github.io/workshop/platform-control-visualizer.html)
@@ -1164,6 +1238,10 @@ A cosmology in which matter, galaxies, stars, life, and other complex structures
 [Where Fields Meet](https://standardgalactic.github.io/cosmology/where-fields-meet.pdf)
 
 * [Physics Without a Spacetime Grid](https://standardgalactic.github.io/cosmology/)
+
+[Computational Obstruction](https://standardgalactic.github.io/laboratory/computational-obstruction.pdf)
+
+* [The Geometry of Computational Obstruction](https://standardgalactic.github.io/laboratory/computational-obstruction-oscilloscope.html)
 
 [Hierarchical Synchronization](https://standardgalactic.github.io/workshop/hierarchical-synchronization.pdf)
 
@@ -1731,10 +1809,6 @@ This book develops a formal mathematical framework for analyzing consistency, ad
 </div>
 
 [Evolutionary Development](https://standardgalactic.github.io/history/Evolutionary%20Development.pdf)
-
-## Generative Art
-
-[Daughters of the Air](https://standardgalactic.github.io/alphabet/video-player.html)
 
 ## <big>Earth Cube Translator</big>
 <div>
